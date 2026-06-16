@@ -4,7 +4,7 @@ import Link from 'next/link'
 export const revalidate = 3600
 
 export const metadata: Metadata = {
-  title: 'About — AudioVisual Nepal | Nepal\'s Leading AV Company',
+  title: 'About — AudioVisual Nepal | Nepal's Leading AV Company',
   description: 'AudioVisual Nepal has been delivering professional audio visual solutions across Nepal since 2010. Learn about our team, mission, and values.',
 }
 
@@ -17,11 +17,11 @@ const TEAM = [
 
 const MILESTONES = [
   { year: '2010', event: 'Founded in Kathmandu with a focus on professional audio systems.' },
-  { year: '2013', event: 'Became authorized distributor for DSPPA — Nepal\'s first PA specialist.' },
+  { year: '2013', event: 'Became authorized distributor for DSPPA — Nepal's first PA specialist.' },
   { year: '2016', event: 'Expanded into video conferencing with Tenveo and Jabra.' },
   { year: '2019', event: 'Crossed 100 completed projects across 30+ districts.' },
   { year: '2022', event: 'Added IP network audio, control systems, and smart room solutions.' },
-  { year: '2024', event: 'Crossed 300+ projects. Nepal\'s most trusted AV solutions company.' },
+  { year: '2024', event: 'Crossed 300+ projects. Nepal's most trusted AV solutions company.' },
 ]
 
 export default function AboutPage() {
@@ -39,6 +39,14 @@ export default function AboutPage() {
           </p>
         </div>
       </section>
+      {/* Breadcrumb */}
+      <nav aria-label="Breadcrumb" style={{ background: '#F5F5F7', padding: '12px 24px', borderBottom: '1px solid #E8E8ED' }}>
+        <div style={{ maxWidth: 1200, margin: '0 auto', fontSize: 13, color: '#6E6E73', display: 'flex', gap: 8, alignItems: 'center' }}>
+          <Link href="/" style={{ color: '#0071E3', textDecoration: 'none' }}>Home</Link>
+          <span aria-hidden="true">›</span>
+          <span style={{ color: '#1D1D1F', fontWeight: 500 }} aria-current="page">About</span>
+        </div>
+      </nav>
 
       {/* Mission & Values */}
       <section style={{ padding: '80px 24px', background: '#FFFFFF' }}>
@@ -54,7 +62,7 @@ export default function AboutPage() {
               {[
                 { icon: '🎯', title: 'Genuine Only', desc: 'We never compromise on product authenticity. Every item is sourced directly from authorized channels.' },
                 { icon: '🤝', title: 'Long-Term Partners', desc: 'We build relationships, not just installations. Our clients stay with us for maintenance and upgrades.' },
-                { icon: '🏆', title: 'Best-in-Class', desc: 'We only recommend what we\'d install ourselves. No overselling, no unnecessary complexity.' },
+                { icon: '🏆', title: 'Best-in-Class', desc: 'We only recommend what we'd install ourselves. No overselling, no unnecessary complexity.' },
               ].map(v => (
                 <div key={v.title} style={{ display: 'flex', gap: 16, alignItems: 'flex-start' }}>
                   <span style={{ fontSize: 24, lineHeight: 1 }}>{v.icon}</span>
