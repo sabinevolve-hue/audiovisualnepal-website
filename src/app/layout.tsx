@@ -4,6 +4,7 @@ import { DEFAULT_SEO, SITE } from '@/lib/constants'
 import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
 import WhatsAppFloat from '@/components/ui/WhatsAppFloat'
+import CookieConsent from '@/components/ui/CookieConsent'
 import './globals.css'
 
 const inter = Inter({
@@ -67,6 +68,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <main>{children}</main>
         <Footer />
         <WhatsAppFloat />
+        <CookieConsent />
       </body>
     </html>
   )
