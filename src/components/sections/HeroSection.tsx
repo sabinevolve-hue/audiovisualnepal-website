@@ -72,9 +72,9 @@ export default function HeroSection() {
         </div>
       </div>
 
-      {/* Scroll indicator */}
+      {/* Scroll indicator — hidden on mobile */}
       <div
-        className="hero-item absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2"
+        className="hero-item absolute bottom-10 left-1/2 -translate-x-1/2 hidden md:flex flex-col items-center gap-2"
         style={{ animationDelay: '500ms' }}
       >
         <span className="text-[11px] text-white/35 uppercase tracking-[0.12em]">Scroll</span>
