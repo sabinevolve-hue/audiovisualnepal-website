@@ -8,9 +8,15 @@ export const revalidate = 3600
 
 type Props = { params: Promise<{ slug: string }> }
 
+export const dynamicParams = true
+
 export async function generateStaticParams() {
-  const slugs = await getPostSlugs()
-  return slugs.map(s => ({ slug: s }))
+  try {
+    const slugs = await getPostSlugs()
+    return slugs.map(s => ({ slug: s }))
+  } catch {
+    return []
+  }
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {

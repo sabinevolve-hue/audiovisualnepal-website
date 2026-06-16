@@ -10,9 +10,15 @@ interface Props {
   params: Promise<{ category: string; slug: string }>
 }
 
+export const dynamicParams = true
+
 export async function generateStaticParams() {
-  const pairs = await getProductSlugs()
-  return pairs.map(p => ({ category: p.category, slug: p.slug }))
+  try {
+    const pairs = await getProductSlugs()
+    return pairs.map(p => ({ category: p.category, slug: p.slug }))
+  } catch {
+    return []
+  }
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {

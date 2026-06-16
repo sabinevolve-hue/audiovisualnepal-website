@@ -8,9 +8,15 @@ export const revalidate = 3600
 
 type Props = { params: Promise<{ category: string }>; searchParams: Promise<{ page?: string; search?: string }> }
 
+export const dynamicParams = true
+
 export async function generateStaticParams() {
-  const cats = await getProductCategories()
-  return cats.map(c => ({ category: c.slug }))
+  try {
+    const cats = await getProductCategories()
+    return cats.map(c => ({ category: c.slug }))
+  } catch {
+    return []
+  }
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
