@@ -19,14 +19,15 @@ export const SITE = {
 
 // ─── NAV ─────────────────────────────────────────────────────────────────────
 
-export const NAV_LINKS = [
+interface NavLink { label: string; href: string; hasDropdown?: boolean }
+export const NAV_LINKS: NavLink[] = [
   { label: 'Solutions', href: '/solutions', hasDropdown: true },
   { label: 'Products',  href: '/products',  hasDropdown: true },
   { label: 'Projects',  href: '/projects' },
   { label: 'Brands',    href: '/brands' },
   { label: 'Blog',      href: '/blog' },
   { label: 'About',     href: '/about' },
-] as const
+]
 
 export const SOLUTIONS_NAV = [
   { label: 'Corporate Offices',     href: '/solutions/corporate',           icon: '🏢' },
