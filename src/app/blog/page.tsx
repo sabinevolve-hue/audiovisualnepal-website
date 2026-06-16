@@ -8,6 +8,51 @@ export const metadata: Metadata = {
   description: 'Expert articles on PA systems, conference setups, IP audio, video conferencing and AV installations across Nepal.',
 }
 
+const STATIC_ARTICLES = [
+  {
+    title: 'How to Choose the Right PA System for Your Venue',
+    category: 'Buying Guide',
+    date: 'May 12, 2025',
+    excerpt: 'From small boardrooms to 1,000-seat auditoriums, we break down wattage, coverage angle, and speaker placement to help you spec the right system.',
+    emoji: '🔊',
+  },
+  {
+    title: 'IP Audio vs Traditional PA: Which is Right for Your Building?',
+    category: 'Technology',
+    date: 'April 28, 2025',
+    excerpt: 'Network-based IP audio offers centralised management and zone flexibility. We compare the two architectures and explain when each makes sense.',
+    emoji: '🌐',
+  },
+  {
+    title: 'Setting Up a Modern Conference Room in Nepal',
+    category: 'Conference Systems',
+    date: 'March 15, 2025',
+    excerpt: 'Our step-by-step guide covers ceiling microphone placement, display sizing, video conferencing codecs and acoustic treatment for Nepali office environments.',
+    emoji: '💼',
+  },
+  {
+    title: 'Top 7 AV Mistakes to Avoid in Hotel Installations',
+    category: 'Case Studies',
+    date: 'February 20, 2025',
+    excerpt: 'Common pitfalls in hospitality AV — from under-spec'd ballroom speakers to poorly placed ceiling tiles — and how to avoid costly re-work.',
+    emoji: '🏨',
+  },
+  {
+    title: 'Voice Evacuation Systems: EN54 Compliance Explained',
+    category: 'Safety Systems',
+    date: 'January 8, 2025',
+    excerpt: 'Nepal's fire safety landscape is evolving. We explain EN54 certification, battery backup requirements and why it matters for commercial buildings.',
+    emoji: '🚨',
+  },
+  {
+    title: 'Shure vs Sennheiser: Wireless Microphone Comparison 2025',
+    category: 'Product Reviews',
+    date: 'December 5, 2024',
+    excerpt: 'We put two flagship wireless systems side-by-side for range, dropout resistance, battery life and value — tested in real Nepali conditions.',
+    emoji: '🎤',
+  },
+]
+
 export const revalidate = 3600 // re-fetch every hour
 
 export default async function BlogPage({
@@ -57,8 +102,26 @@ export default async function BlogPage({
       <section style={{ padding: '80px 24px', background: '#FFFFFF' }}>
         <div style={{ maxWidth: 1100, margin: '0 auto' }}>
           {posts.length === 0 ? (
-            <div style={{ textAlign: 'center', padding: '80px 0', color: '#6E6E73' }}>
-              <p style={{ fontSize: 18 }}>No posts yet — check back soon.</p>
+
+            <div>
+              <p style={{ textAlign: 'center', fontSize: 14, color: '#6E6E73', marginBottom: 40 }}>
+                Expert AV knowledge from the AudioVisual Nepal team
+              </p>
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(320px, 1fr))', gap: 24 }}>
+                {STATIC_ARTICLES.map((post, i) => (
+                  <article key={i} style={cardStyle}>
+                    <div style={{ height: 200, background: 'linear-gradient(135deg, #1D1D1F, #2a2a2d)', borderRadius: '16px 16px 0 0', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 64 }}>
+                      {post.emoji}
+                    </div>
+                    <div style={{ padding: '24px 24px 28px' }}>
+                      <div style={{ fontSize: 12, fontWeight: 600, color: '#0071E3', textTransform: 'uppercase', letterSpacing: '0.06em', marginBottom: 8 }}>{post.category}</div>
+                      <h2 style={{ fontFamily: 'Manrope, sans-serif', fontSize: 18, fontWeight: 700, color: '#1D1D1F', marginBottom: 10, lineHeight: 1.3 }}>{post.title}</h2>
+                      <p style={{ fontSize: 14, color: '#6E6E73', lineHeight: 1.6, marginBottom: 16 }}>{post.excerpt}</p>
+                      <time style={{ fontSize: 12, color: '#6E6E73' }}>{post.date}</time>
+                    </div>
+                  </article>
+                ))}
+              </div>
             </div>
           ) : (
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(320px, 1fr))', gap: 24 }}>

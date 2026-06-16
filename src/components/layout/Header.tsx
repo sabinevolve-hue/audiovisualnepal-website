@@ -6,15 +6,20 @@ import { NAV_LINKS, SOLUTIONS_NAV, PRODUCT_CATEGORIES, SITE } from '@/lib/consta
 import { Menu, X, ChevronDown, Phone } from 'lucide-react'
 
 export default function Header() {
-  const [scrolled, setScrolled]       = useState(false)
-  const [mobileOpen, setMobileOpen]   = useState(false)
-  const [activeDropdown, setActive]   = useState<string | null>(null)
+  const [scrolled, setScrolled]     = useState(false)
+  const [mobileOpen, setMobileOpen] = useState(false)
+  const [activeDropdown, setActive] = useState<string | null>(null)
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 10)
     window.addEventListener('scroll', onScroll, { passive: true })
     return () => window.removeEventListener('scroll', onScroll)
   }, [])
+
+  const navText   = scrolled ? 'text-black/80 hover:text-black' : 'text-white/85 hover:text-white'
+  const logoColor = scrolled ? 'text-[#1D1D1F]' : 'text-white'
+  const phoneColor = scrolled ? 'text-black/70 hover:text-black' : 'text-white/70 hover:text-white'
+  const toggleColor = scrolled ? 'hover:bg-black/5 text-black' : 'hover:bg-white/10 text-white'
 
   return (
     <header
@@ -24,7 +29,7 @@ export default function Header() {
     >
       <nav className="container-site flex items-center justify-between h-14 gap-8">
         {/* Logo */}
-        <Link href="/" className="font-display font-extrabold text-[17px] tracking-tight shrink-0">
+        <Link href="/" className={`font-display font-extrabold text-[17px] tracking-tight shrink-0 transition-colors duration-300 ${logoColor}`}>
           AudioVisual<span className="text-[#0071E3]">Nepal</span>
         </Link>
 
@@ -39,7 +44,7 @@ export default function Header() {
             >
               <Link
                 href={link.href}
-                className="flex items-center gap-1 text-[13px] text-black/80 hover:text-black transition-colors"
+                className={`flex items-center gap-1 text-[13px] transition-colors duration-300 ${navText}`}
               >
                 {link.label}
                 {link.hasDropdown && <ChevronDown size={12} className="mt-0.5" />}
@@ -110,22 +115,19 @@ export default function Header() {
         <div className="hidden lg:flex items-center gap-3">
           <a
             href={`tel:${SITE.phoneRaw}`}
-            className="flex items-center gap-1.5 text-[13px] text-black/70 hover:text-black transition-colors"
+            className={`flex items-center gap-1.5 text-[13px] transition-colors duration-300 ${phoneColor}`}
           >
             <Phone size={13} />
             {SITE.phone}
           </a>
-          <Link
-            href="/contact"
-            className="btn-primary btn-sm"
-          >
+          <Link href="/contact" className="btn-primary btn-sm">
             Get Quote
           </Link>
         </div>
 
         {/* Mobile toggle */}
         <button
-          className="lg:hidden p-2 rounded-lg hover:bg-black/5 transition-colors"
+          className={`lg:hidden p-2 rounded-lg transition-colors ${toggleColor}`}
           onClick={() => setMobileOpen(!mobileOpen)}
           aria-label="Toggle menu"
         >

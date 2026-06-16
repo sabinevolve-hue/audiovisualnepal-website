@@ -1,18 +1,25 @@
-'use client'
-
 import Link from 'next/link'
-import { motion } from 'framer-motion'
-import { ArrowRight, MessageCircle } from 'lucide-react'
-
-const fadeUp = (delay = 0) => ({
-  initial: { opacity: 0, y: 24 },
-  animate: { opacity: 1, y: 0 },
-  transition: { duration: 0.8, delay, ease: [0.25, 0.46, 0.45, 0.94] },
-})
+import { ArrowRight } from 'lucide-react'
 
 export default function HeroSection() {
   return (
     <section className="relative min-h-screen flex items-center justify-center text-center px-6 pt-20 pb-20 overflow-hidden bg-[#000]">
+      <style>{`
+        @keyframes heroFadeUp {
+          from { opacity: 0; transform: translateY(20px); }
+          to   { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes scrollLine {
+          0%   { transform: scaleY(0); transform-origin: top; opacity: 1; }
+          50%  { transform: scaleY(1); transform-origin: top; opacity: 1; }
+          100% { transform: scaleY(1); transform-origin: bottom; opacity: 0; }
+        }
+        .hero-item {
+          opacity: 0;
+          animation: heroFadeUp 0.6s ease forwards;
+        }
+      `}</style>
+
       {/* Background glow */}
       <div
         className="absolute inset-0 pointer-events-none"
@@ -41,46 +48,44 @@ export default function HeroSection() {
 
       {/* Content */}
       <div className="relative z-10 max-w-[900px]">
-        <motion.div {...fadeUp(0.15)} className="eyebrow mb-6">
+        <div className="hero-item eyebrow mb-6" style={{ animationDelay: '0ms' }}>
           Nepal&apos;s Leading AV Solutions Provider
-        </motion.div>
+        </div>
 
-        <motion.h1 {...fadeUp(0.3)} className="heading-hero text-white mb-7">
-          Experience Sound<br />
+        <h1 className="hero-item heading-hero text-white mb-7" style={{ animationDelay: '80ms' }}>
+          Experience Sound &amp; Vision<br />
           <span className="gradient-text">Beyond Expectations.</span>
-        </motion.h1>
+        </h1>
 
-        <motion.p {...fadeUp(0.45)} className="text-[clamp(16px,2.2vw,21px)] text-white/60 leading-relaxed max-w-[680px] mx-auto mb-12">
+        <p className="hero-item text-[clamp(16px,2.2vw,21px)] text-white/60 leading-relaxed max-w-[680px] mx-auto mb-12" style={{ animationDelay: '160ms' }}>
           Professional Audio Visual Solutions for Government, Education,<br className="hidden sm:block" />
           Hospitality and Enterprise Projects Across Nepal.
-        </motion.p>
+        </p>
 
-        <motion.div {...fadeUp(0.6)} className="flex flex-wrap gap-4 justify-center">
+        <div className="hero-item flex flex-wrap gap-4 justify-center" style={{ animationDelay: '240ms' }}>
           <Link href="/solutions" className="btn-primary">
             Explore Solutions <ArrowRight size={16} />
           </Link>
           <Link href="/contact" className="btn-ghost">
             Request Quotation
           </Link>
-        </motion.div>
+        </div>
       </div>
 
       {/* Scroll indicator */}
-      <motion.div
-        className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1.2, duration: 0.8 }}
+      <div
+        className="hero-item absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2"
+        style={{ animationDelay: '500ms' }}
       >
         <span className="text-[11px] text-white/35 uppercase tracking-[0.12em]">Scroll</span>
         <div
           className="w-px h-12"
           style={{
             background: 'linear-gradient(to bottom, rgba(255,255,255,0.4), transparent)',
-            animation: 'scrollAnim 2s ease infinite',
+            animation: 'scrollLine 2s ease infinite',
           }}
         />
-      </motion.div>
+      </div>
     </section>
   )
 }
