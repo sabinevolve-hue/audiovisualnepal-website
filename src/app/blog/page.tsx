@@ -34,14 +34,14 @@ const STATIC_ARTICLES = [
     title: 'Top 7 AV Mistakes to Avoid in Hotel Installations',
     category: 'Case Studies',
     date: 'February 20, 2025',
-    excerpt: 'Common pitfalls in hospitality AV — from under-spec'd ballroom speakers to poorly placed ceiling tiles — and how to avoid costly re-work.',
+    excerpt: 'Common pitfalls in hospitality AV — from under-spec\'d ballroom speakers to poorly placed ceiling tiles — and how to avoid costly re-work.',
     emoji: '🏨',
   },
   {
     title: 'Voice Evacuation Systems: EN54 Compliance Explained',
     category: 'Safety Systems',
     date: 'January 8, 2025',
-    excerpt: 'Nepal's fire safety landscape is evolving. We explain EN54 certification, battery backup requirements and why it matters for commercial buildings.',
+    excerpt: 'Nepal\'s fire safety landscape is evolving. We explain EN54 certification, battery backup requirements and why it matters for commercial buildings.',
     emoji: '🚨',
   },
   {
@@ -53,7 +53,7 @@ const STATIC_ARTICLES = [
   },
 ]
 
-export const revalidate = 3600 // re-fetch every hour
+export const revalidate = 3600
 
 export default async function BlogPage({
   searchParams,
@@ -83,6 +83,15 @@ export default async function BlogPage({
           Expert knowledge on audio visual systems, video conferencing, and AV installations across Nepal.
         </p>
       </section>
+
+      {/* Breadcrumb */}
+      <nav aria-label="Breadcrumb" style={{ background: '#F5F5F7', padding: '12px 24px', borderBottom: '1px solid #E8E8ED' }}>
+        <div style={{ maxWidth: 1200, margin: '0 auto', fontSize: 13, color: '#6E6E73', display: 'flex', gap: 8, alignItems: 'center' }}>
+          <Link href="/" style={{ color: '#0071E3', textDecoration: 'none' }}>Home</Link>
+          <span aria-hidden="true">›</span>
+          <span style={{ color: '#1D1D1F', fontWeight: 500 }} aria-current="page">Blog</span>
+        </div>
+      </nav>
 
       {/* Category Filter */}
       {categories.length > 0 && (
