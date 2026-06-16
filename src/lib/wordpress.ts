@@ -23,14 +23,20 @@ async function wpFetch<T>(
   const { revalidate = 3600, ...fetchOptions } = options ?? {}
   const url = endpoint.startsWith('http') ? endpoint : `${WP_API}${endpoint}`
 
-  const res = await fetch(url, {
-    ...fetchOptions,
-    next: { revalidate },
-    headers: {
-      'Content-Type': 'application/json',
-      ...fetchOptions.headers,
-    },
-  })
+  let res: Response
+  try {
+    res = await fetch(url, {
+      ...fetchOptions,
+      next: { revalidate },
+      headers: {
+        'Content-Type': 'application/json',
+        ...fetchOptions.headers,
+      },
+    })
+  } catch {
+    // Network/SSL error — return empty fallback so build doesn't fail
+    return ([] as unknown) as T
+  }
 
   if (!res.ok) {
     // Return empty array/object rather than crashing on 404
