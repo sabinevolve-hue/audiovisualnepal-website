@@ -13,7 +13,6 @@ export const metadata: Metadata = {
 export default async function BrandsPage() {
   const brands = await getBrands()
 
-  // Static fallback brand data if WordPress has no brands yet
   const fallbackBrands = [
     { name: 'DSPPA', tagline: 'Professional PA & IP Audio Systems', country: 'China', emoji: '🔊' },
     { name: 'Tenveo', tagline: 'AI-Powered Video Conferencing', country: 'China', emoji: '📹' },
@@ -35,9 +34,18 @@ export default async function BrandsPage() {
           World-Class Brands
         </h1>
         <p style={{ fontSize: 18, color: 'rgba(255,255,255,0.55)', maxWidth: 560, margin: '0 auto' }}>
-          We're the authorized distributor for Nepal's most trusted professional AV brands — with genuine products, full warranties, and factory support.
+          We\'re the authorized distributor for Nepal\'s most trusted professional AV brands — with genuine products, full warranties, and factory support.
         </p>
       </section>
+
+      {/* Breadcrumb */}
+      <nav aria-label="Breadcrumb" style={{ background: '#F5F5F7', padding: '12px 24px', borderBottom: '1px solid #E8E8ED' }}>
+        <div style={{ maxWidth: 1200, margin: '0 auto', fontSize: 13, color: '#6E6E73', display: 'flex', gap: 8, alignItems: 'center' }}>
+          <Link href="/" style={{ color: '#0071E3', textDecoration: 'none' }}>Home</Link>
+          <span aria-hidden="true">›</span>
+          <span style={{ color: '#1D1D1F', fontWeight: 500 }} aria-current="page">Brands</span>
+        </div>
+      </nav>
 
       {/* Brands Grid */}
       <section style={{ padding: '80px 24px', background: '#FFFFFF' }}>
@@ -75,7 +83,6 @@ export default async function BrandsPage() {
               })}
             </div>
           ) : (
-            /* Fallback static brands */
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: 20 }}>
               {fallbackBrands.map(brand => (
                 <div key={brand.name}
@@ -117,7 +124,7 @@ export default async function BrandsPage() {
         </div>
       </section>
 
-      {/* Become Partner CTA */}
+      {/* CTA */}
       <section style={{ padding: '80px 24px', background: '#1D1D1F', textAlign: 'center' }}>
         <h2 style={{ fontFamily: 'Manrope, sans-serif', fontSize: 'clamp(28px,4vw,40px)', fontWeight: 800, color: '#FFFFFF', marginBottom: 16, letterSpacing: '-0.03em' }}>
           Looking for a Specific Brand?
