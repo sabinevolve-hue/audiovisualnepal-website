@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { PRODUCT_CATEGORIES } from '@/lib/constants'
 import { getProductCategories } from '@/lib/wordpress'
+import ProductSearch from './ProductSearch'
 
 export const revalidate = 3600
 
@@ -14,13 +15,13 @@ export default async function ProductsPage() {
   const wpCategories = await getProductCategories()
 
   const categories = wpCategories.length > 0
-    ? wpCategories.map(c => ({
+    ? wpCategories.map((c: { name: string; slug: string; count?: number }) => ({
         label: c.name,
         href: `/products/${c.slug}`,
         icon: PRODUCT_CATEGORIES.find(p => p.href.includes(c.slug))?.icon ?? '📦',
-        count: c.count,
+        count: c.count ?? 0,
       }))
-    : PRODUCT_CATEGORIES
+    : PRODUCT_CATEGORIES.map(c => ({ ...c }))
 
   return (
     <main style={{ paddingTop: 80 }}>
@@ -29,27 +30,30 @@ export default async function ProductsPage() {
         <p style={{ fontSize: 13, fontWeight: 600, color: '#0071E3', letterSpacing: '0.08em', textTransform: 'uppercase', marginBottom: 16 }}>Genuine AV Equipment</p>
         <h1 style={{ fontFamily: 'Manrope, sans-serif', fontSize: 'clamp(36px,5vw,60px)', fontWeight: 800, color: '#FFFFFF', letterSpacing: '-0.03em', marginBottom: 20 }}>Professional Products</h1>
         <p style={{ fontSize: 18, color: 'rgba(255,255,255,0.55)', maxWidth: 560, margin: '0 auto 40px' }}>
-          Nepal's widest range of professional audio visual equipment — all genuine, all warranted, all supported.
+          Nepal&apos;s widest range of professional audio visual equipment — all genuine, all warranted, all supported.
         </p>
         <Link href="/contact" style={{ display: 'inline-block', background: '#0071E3', color: '#FFFFFF', padding: '14px 32px', borderRadius: 980, fontSize: 15, fontWeight: 600, textDecoration: 'none' }}>
           Request a Quote
         </Link>
       </section>
 
-      {/* Category Grid */}
+      {/* Breadcrumbs */}
+      <nav aria-label="Breadcrumb" style={{ background: '#F5F5F7', padding: '12px 24px', borderBottom: '1px solid #E8E8ED' }}>
+        <div style={{ maxWidth: 1200, margin: '0 auto', fontSize: 13, color: '#6E6E73', display: 'flex', gap: 8, alignItems: 'center' }}>
+          <Link href="/" style={{ color: '#0071E3', textDecoration: 'none' }}>Home</Link>
+          <span aria-hidden="true">›</span>
+          <span style={{ color: '#1D1D1F', fontWeight: 500 }}>Products</span>
+        </div>
+      </nav>
+
+      {/* Category Grid with Search */}
       <section style={{ padding: '80px 24px', background: '#FFFFFF' }}>
         <div style={{ maxWidth: 1200, margin: '0 auto' }}>
           <h2 style={{ fontFamily: 'Manrope, sans-serif', fontSize: 'clamp(28px,4vw,42px)', fontWeight: 800, color: '#1D1D1F', letterSpacing: '-0.03em', textAlign: 'center', marginBottom: 12 }}>Browse by Category</h2>
-          <p style={{ fontSize: 16, color: '#6E6E73', textAlign: 'center', marginBottom: 56 }}>Click any category to explore our full product range.</p>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(240px, 1fr))', gap: 16 }}>
-            {categories.map((cat) => (
-              <Link key={cat.href} href={cat.href} style={{ textDecoration: 'none', display: 'block', background: '#F5F5F7', borderRadius: 20, padding: '28px 24px', border: '1px solid #E8E8ED' }}>
-                <div style={{ fontSize: 36, marginBottom: 16 }}>{cat.icon}</div>
-                <h3 style={{ fontFamily: 'Manrope, sans-serif', fontSize: 17, fontWeight: 700, color: '#1D1D1F', marginBottom: 8 }}>{cat.label}</h3>
-                <div style={{ marginTop: 16, fontSize: 13, color: '#0071E3', fontWeight: 600 }}>Browse →</div>
-              </Link>
-            ))}
-          </div>
+          <p style={{ fontSize: 16, color: '#6E6E73', textAlign: 'center', marginBottom: 40 }}>
+            {categories.length} categories &middot; {categories.reduce((s: number, c: { count?: number }) => s + (c.count ?? 0), 0)}+ products
+          </p>
+          <ProductSearch categories={categories} />
         </div>
       </section>
 
