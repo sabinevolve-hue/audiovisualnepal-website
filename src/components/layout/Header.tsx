@@ -34,7 +34,7 @@ export default function Header() {
             <li
               key={link.href}
               className="relative"
-              onMouseEnter={() => link.hasDropdown ? setActive(link.label) : setActive(null)}
+              onMouseEnter={() => link?.hasDropdown ? setActive(link.label) : setActive(null)}
               onMouseLeave={() => setActive(null)}
             >
               <Link
@@ -42,7 +42,7 @@ export default function Header() {
                 className="flex items-center gap-1 text-[13px] text-black/80 hover:text-black transition-colors"
               >
                 {link.label}
-                {link.hasDropdown && <ChevronDown size={12} className="mt-0.5" />}
+                {link?.hasDropdown && <ChevronDown size={12} className="mt-0.5" />}
               </Link>
 
               {/* Solutions Dropdown */}
