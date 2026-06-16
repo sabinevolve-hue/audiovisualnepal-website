@@ -1,6 +1,5 @@
-import type { Config } from 'tailwindcss'
-
-const config: Config = {
+/** @type {import('tailwindcss').Config} */
+module.exports = {
   content: [
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
@@ -21,10 +20,6 @@ const config: Config = {
       fontFamily: {
         display: ['Manrope', 'Inter', 'var(--font-sans)', 'sans-serif'],
         body: ['Inter', 'var(--font-sans)', 'sans-serif'],
-      },
-      fontSize: {
-        'hero': ['clamp(42px, 7vw, 88px)', { lineHeight: '1.05', letterSpacing: '-0.03em' }],
-        'section': ['clamp(32px, 4.5vw, 52px)', { lineHeight: '1.1', letterSpacing: '-0.03em' }],
       },
       animation: {
         'fade-up': 'fadeUp 0.8s ease forwards',
@@ -48,11 +43,8 @@ const config: Config = {
       backgroundImage: {
         'hero-gradient': 'linear-gradient(180deg, #000 0%, #0a0a1a 60%, #111827 100%)',
         'cta-gradient': 'linear-gradient(170deg, #0a0a1a 0%, #000520 50%, #000 100%)',
-        'blue-glow': 'radial-gradient(ellipse 80% 50% at 50% 30%, rgba(0,113,227,0.18) 0%, transparent 70%)',
       },
     },
   },
   plugins: [],
 }
-
-export default config
