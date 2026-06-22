@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { ChevronRight, ExternalLink, Phone } from 'lucide-react'
+import { ProductImg } from '@/components/ui/ProductImg'
 import { SITE } from '@/lib/constants'
 import { PRODUCTS_BY_BRAND } from '@/data/products'
 
@@ -217,9 +218,7 @@ export default async function BrandPage({ params }: Props) {
                       style={{ background: 'var(--surface-1)', border: '1px solid var(--border-subtle)', textDecoration: 'none' }}>
                       <div className="h-40 flex items-center justify-center"
                         style={{ background: `linear-gradient(135deg, ${brand.color}18, ${brand.color}08)` }}>
-                        <img src={product.imageUrl} alt={product.name}
-                          style={{ width: '60%', height: '85%', objectFit: 'contain' }}
-                          onError={(e) => { (e.target as HTMLImageElement).style.opacity = '0' }} />
+                        <ProductImg src={product.imageUrl} alt={product.name} style={{ width: '60%', height: '85%', objectFit: 'contain' }} />
                       </div>
                       <div className="p-4">
                         {product.badge && (

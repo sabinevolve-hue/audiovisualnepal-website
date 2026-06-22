@@ -2,6 +2,7 @@ import { Metadata } from 'next'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { ALL_PRODUCTS, getProduct, getRelatedProducts } from '@/data/products'
+import { ProductImg } from '@/components/ui/ProductImg'
 import { SITE } from '@/lib/constants'
 
 export const revalidate = 3600
@@ -75,22 +76,7 @@ export default async function ProductDetailPage({ params }: Props) {
                 </div>
               )}
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src={product.imageUrl}
-                alt={product.name}
-                style={{ width: '75%', height: '75%', objectFit: 'contain' }}
-                onError={(e) => {
-                  const target = e.target as HTMLImageElement
-                  target.style.display = 'none'
-                  const parent = target.parentElement
-                  if (parent) {
-                    const fallback = document.createElement('div')
-                    fallback.style.cssText = `font-size:64px;font-weight:900;color:${brandColor};opacity:0.15;font-family:Manrope,sans-serif;letter-spacing:-0.03em`
-                    fallback.textContent = BRAND_LOGOS[product.brandSlug] || product.brand
-                    parent.appendChild(fallback)
-                  }
-                }}
-              />
+              <ProductImg src={product.imageUrl} alt={product.name} style={{ width: '75%', height: '75%', objectFit: 'contain' }} />
             </div>
 
             {/* Hero Spec Cards */}
@@ -231,7 +217,7 @@ export default async function ProductDetailPage({ params }: Props) {
                       <div style={{ height: 180, background: `linear-gradient(135deg, ${rColor}15, ${rColor}05)`, display: 'flex', alignItems: 'center', justifyContent: 'center', position: 'relative' }}>
                         <div style={{ position: 'absolute', top: 12, right: 12, fontSize: 11, fontWeight: 900, color: rColor, letterSpacing: '0.06em', fontFamily: 'Manrope, sans-serif' }}>{BRAND_LOGOS[rp.brandSlug] || rp.brand}</div>
                         {/* eslint-disable-next-line @next/next/no-img-element */}
-                        <img src={rp.imageUrl} alt={rp.name} style={{ width: '60%', height: '80%', objectFit: 'contain' }} onError={(e) => { (e.target as HTMLImageElement).style.display = 'none' }} />
+                        <ProductImg src={rp.imageUrl} alt={rp.name} style={{ width: '60%', height: '80%', objectFit: 'contain' }} />
                       </div>
                       <div style={{ padding: 20 }}>
                         <div style={{ fontFamily: 'Manrope, sans-serif', fontWeight: 700, fontSize: 15, color: '#111111', marginBottom: 4 }}>{rp.name}</div>
