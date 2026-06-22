@@ -8,15 +8,9 @@ export const revalidate = 3600
 
 type Props = { params: Promise<{ slug: string }> }
 
-export const dynamicParams = true
-
 export async function generateStaticParams() {
-  try {
-    const slugs = await getPostSlugs()
-    return slugs.map(s => ({ slug: s }))
-  } catch {
-    return []
-  }
+  const slugs = await getPostSlugs()
+  return slugs.map(s => ({ slug: s }))
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
@@ -143,7 +137,7 @@ export default async function BlogPostPage({ params }: Props) {
                         <Image src={relThumb} alt={stripHtml(rel.title.rendered)} fill style={{ objectFit: 'cover' }} />
                       </div>
                     ) : (
-                      <div style={{ height: 160, background: '#1D1D1F', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 32 }}>📰</div>
+                      <div style={{ height: 160, background: 'var(--bg-subtle)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 32 }}>📰</div>
                     )}
                     <div style={{ padding: '20px' }}>
                       <h3 style={{ fontFamily: 'Manrope, sans-serif', fontSize: 16, fontWeight: 700, color: '#1D1D1F', lineHeight: 1.3 }}

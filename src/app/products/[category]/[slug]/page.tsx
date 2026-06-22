@@ -2,43 +2,31 @@ import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import Image from 'next/image'
 import Link from 'next/link'
+import { ArrowRight, ChevronRight, Download, MessageCircle } from 'lucide-react'
 import { getProduct, getProductSlugs, getProducts, parseJsonMeta, stripHtml } from '@/lib/wordpress'
+import { SITE } from '@/lib/constants'
 
 export const revalidate = 3600
 
-interface Props {
-  params: Promise<{ category: string; slug: string }>
-}
-
-export const dynamicParams = true
+interface Props { params: Promise<{ category: string; slug: string }> }
 
 export async function generateStaticParams() {
-  try {
-    const pairs = await getProductSlugs()
-    return pairs.map(p => ({ category: p.category, slug: p.slug }))
-  } catch {
-    return []
-  }
+  const pairs = await getProductSlugs()
+  return pairs.map(p => ({ category: p.category, slug: p.slug }))
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug, category } = await params
   const product = await getProduct(slug)
   if (!product) return { title: 'Product — AudioVisual Nepal' }
-  const title    = stripHtml(product.title.rendered)
-  const desc     = product.meta.meta_description || stripHtml(product.excerpt.rendered).slice(0, 160)
+  const title = stripHtml(product.title.rendered)
+  const desc  = product.meta.meta_description || stripHtml(product.excerpt.rendered).slice(0, 160)
   return {
     title: `${title} | ${category.replace(/-/g, ' ')} | AudioVisual Nepal`,
     description: desc || `Buy ${title} in Nepal. Professional grade AV equipment with full warranty and technical support.`,
-    openGraph: {
-      title,
-      description: desc,
-      images: product.featured_image_url ? [product.featured_image_url] : [],
-    },
+    openGraph: { title, description: desc, images: product.featured_image_url ? [product.featured_image_url] : [] },
   }
 }
-
-const TABS = ['Overview', 'Features', 'Specifications', 'Applications', 'FAQ']
 
 export default async function ProductDetailPage({ params }: Props) {
   const { category, slug } = await params
@@ -46,26 +34,24 @@ export default async function ProductDetailPage({ params }: Props) {
     getProduct(slug),
     getProducts({ categorySlug: category, perPage: 4 }),
   ])
-
   if (!product || product.status !== 'publish') notFound()
 
-  const title       = stripHtml(product.title.rendered)
-  const specs       = parseJsonMeta<Array<{label:string;value:string}>>(product.meta.specifications, [])
-  const features    = parseJsonMeta<string[]>(product.meta.features, [])
-  const applications= parseJsonMeta<string[]>(product.meta.applications, [])
-  const relFiltered = related.filter(r => r.slug !== slug).slice(0, 3)
+  const title        = stripHtml(product.title.rendered)
+  const specs        = parseJsonMeta<Array<{ label: string; value: string }>>(product.meta.specifications, [])
+  const features     = parseJsonMeta<string[]>(product.meta.features, [])
+  const applications = parseJsonMeta<string[]>(product.meta.applications, [])
+  const relFiltered  = related.filter(r => r.slug !== slug).slice(0, 3)
 
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://audiovisualnepal.com'
   const jsonLd = {
     '@context': 'https://schema.org',
     '@graph': [
       {
         '@type': 'BreadcrumbList',
         itemListElement: [
-          { '@type': 'ListItem', position: 1, name: 'Home',     item: siteUrl },
-          { '@type': 'ListItem', position: 2, name: 'Products', item: `${siteUrl}/products` },
-          { '@type': 'ListItem', position: 3, name: category,   item: `${siteUrl}/products/${category}` },
-          { '@type': 'ListItem', position: 4, name: title,      item: `${siteUrl}/products/${category}/${slug}` },
+          { '@type': 'ListItem', position: 1, name: 'Home',     item: SITE.url },
+          { '@type': 'ListItem', position: 2, name: 'Products', item: `${SITE.url}/products` },
+          { '@type': 'ListItem', position: 3, name: category,   item: `${SITE.url}/products/${category}` },
+          { '@type': 'ListItem', position: 4, name: title,      item: `${SITE.url}/products/${category}/${slug}` },
         ],
       },
       {
@@ -79,7 +65,7 @@ export default async function ProductDetailPage({ params }: Props) {
           '@type': 'Offer',
           availability: product.meta.in_stock === 'no' ? 'https://schema.org/OutOfStock' : 'https://schema.org/InStock',
           seller: { '@type': 'Organization', name: 'AudioVisual Nepal' },
-          url: `${siteUrl}/products/${category}/${slug}`,
+          url: `${SITE.url}/products/${category}/${slug}`,
         },
       },
     ],
@@ -89,238 +75,256 @@ export default async function ProductDetailPage({ params }: Props) {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
-      {/* Product Hero */}
-      <section style={{ paddingTop: 80, background: '#F5F5F7' }}>
-        <div style={{ maxWidth: 1200, margin: '0 auto', padding: '0 24px' }}>
-          {/* Breadcrumb */}
-          <nav style={{ display: 'flex', gap: 8, fontSize: 13, color: '#6E6E73', padding: '20px 0', flexWrap: 'wrap' }}>
-            <Link href="/" style={{ color: '#0071E3', textDecoration: 'none' }}>Home</Link>
-            <span>/</span>
-            <Link href="/products" style={{ color: '#0071E3', textDecoration: 'none' }}>Products</Link>
-            <span>/</span>
-            <Link href={`/products/${category}`} style={{ color: '#0071E3', textDecoration: 'none', textTransform: 'capitalize' }}>
-              {category.replace(/-/g, ' ')}
-            </Link>
-            <span>/</span>
-            <span style={{ color: '#1D1D1F', fontWeight: 500 }}>{title}</span>
-          </nav>
+      <main style={{ paddingTop: 64, background: 'var(--bg-base)', minHeight: '100vh' }}>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(340px, 1fr))', gap: 64, paddingBottom: 48, alignItems: 'start' }}>
-            {/* Image */}
-            <div style={{ position: 'sticky', top: 88 }}>
-              <div style={{ background: '#FFFFFF', borderRadius: 20, aspectRatio: '1', display: 'flex', alignItems: 'center', justifyContent: 'center', overflow: 'hidden', position: 'relative', boxShadow: '0 2px 20px rgba(0,0,0,0.06)' }}>
-                {product.featured_image_url
-                  ? <Image src={product.featured_image_url} alt={title} fill style={{ objectFit: 'contain', padding: 32 }} priority />
-                  : <span style={{ fontSize: 96 }}>📦</span>}
-                {product.meta.badge && (
-                  <span style={{ position: 'absolute', top: 16, left: 16, background: '#0071E3', color: '#fff', padding: '4px 12px', borderRadius: 980, fontSize: 12, fontWeight: 600 }}>
-                    {product.meta.badge}
-                  </span>
+        {/* ── Hero / Product Info ──────────────────────────────────────────── */}
+        <section
+          className="relative px-6 py-16 overflow-hidden"
+          style={{ borderBottom: '1px solid var(--border-subtle)' }}
+        >
+          {/* Background glow */}
+          <div className="absolute inset-0 pointer-events-none" style={{
+            background: 'radial-gradient(ellipse 60% 50% at 50% 0%, rgba(0,113,227,0.06) 0%, transparent 70%)',
+          }} />
+
+          <div className="container-site relative">
+            {/* Breadcrumb */}
+            <nav className="flex items-center gap-1.5 text-[12px] mb-10 flex-wrap" style={{ color: 'var(--text-tertiary)' }}>
+              <Link href="/" className="hover:text-white transition-colors">Home</Link>
+              <ChevronRight size={12} />
+              <Link href="/products" className="hover:text-white transition-colors">Products</Link>
+              <ChevronRight size={12} />
+              <Link href={`/products/${category}`} className="hover:text-white transition-colors capitalize">
+                {category.replace(/-/g, ' ')}
+              </Link>
+              <ChevronRight size={12} />
+              <span style={{ color: 'var(--text-brand)' }}>{title}</span>
+            </nav>
+
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+              {/* Product Image */}
+              <div className="lg:sticky lg:top-24">
+                <div
+                  className="relative aspect-square rounded-2xl overflow-hidden flex items-center justify-center"
+                  style={{ background: 'var(--surface-2)', border: '1px solid var(--border-default)' }}
+                >
+                  {product.featured_image_url ? (
+                    <Image
+                      src={product.featured_image_url}
+                      alt={title}
+                      fill
+                      className="object-contain p-8"
+                      priority
+                    />
+                  ) : (
+                    <svg viewBox="0 0 64 64" fill="none" className="w-16 h-16 opacity-20">
+                      <rect x="6" y="14" width="52" height="36" rx="4" stroke="white" strokeWidth="2"/>
+                      <path d="M18 14v-4a4 4 0 018 0v4M38 14v-4a4 4 0 018 0v4" stroke="white" strokeWidth="2" strokeLinecap="round"/>
+                    </svg>
+                  )}
+                  {product.meta.badge && (
+                    <span className="absolute top-4 left-4 text-[11px] font-bold px-3 py-1 rounded-full text-white" style={{ background: 'var(--brand)' }}>
+                      {product.meta.badge}
+                    </span>
+                  )}
+                  {product.meta.in_stock === 'no' && (
+                    <span className="absolute top-4 right-4 text-[11px] font-bold px-3 py-1 rounded-full text-white bg-red-500/80">
+                      Out of Stock
+                    </span>
+                  )}
+                </div>
+              </div>
+
+              {/* Product Details */}
+              <div>
+                {product.meta.brand_name && (
+                  <div className="text-[12px] font-bold uppercase tracking-[0.1em] mb-3" style={{ color: 'var(--text-brand)' }}>
+                    {product.meta.brand_name}
+                  </div>
+                )}
+                <h1 className="font-display font-extrabold text-white leading-tight mb-3 tracking-tight" style={{ fontSize: 'clamp(26px,3.5vw,42px)' }}>
+                  {title}
+                </h1>
+                {product.meta.sku && (
+                  <div className="text-[12px] mb-5" style={{ color: 'var(--text-tertiary)' }}>SKU: {product.meta.sku}</div>
+                )}
+                <p className="text-[17px] leading-relaxed mb-8" style={{ color: 'var(--text-secondary)' }}>
+                  {product.meta.short_desc || stripHtml(product.excerpt.rendered)}
+                </p>
+
+                {/* Quick Specs Grid */}
+                {specs.length > 0 && (
+                  <div className="grid grid-cols-2 gap-3 mb-8">
+                    {specs.slice(0, 4).map((s, i) => (
+                      <div key={i} className="rounded-xl p-3.5" style={{ background: 'var(--surface-2)', border: '1px solid var(--border-subtle)' }}>
+                        <div className="text-[11px] mb-1" style={{ color: 'var(--text-tertiary)' }}>{s.label}</div>
+                        <div className="text-[14px] font-semibold text-white">{s.value}</div>
+                      </div>
+                    ))}
+                  </div>
+                )}
+
+                {/* CTAs */}
+                <div className="flex gap-3 flex-wrap mb-6">
+                  <Link
+                    href="/contact"
+                    className="flex-1 flex items-center justify-center gap-2 text-[15px] font-semibold text-white rounded-full py-3.5 px-6 transition-all duration-300 hover:opacity-90 hover:shadow-[var(--shadow-brand)]"
+                    style={{ background: 'var(--brand)', minWidth: 160 }}
+                  >
+                    Request Quote
+                    <ArrowRight size={15} />
+                  </Link>
+                  <a
+                    href={SITE.whatsapp}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-center gap-2 text-[15px] font-semibold text-white rounded-full py-3.5 px-6 transition-all duration-300 hover:opacity-90"
+                    style={{ background: '#25D366' }}
+                  >
+                    <MessageCircle size={15} />
+                    WhatsApp
+                  </a>
+                </div>
+
+                {product.meta.datasheet_url && (
+                  <a
+                    href={product.meta.datasheet_url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 text-[13px] font-semibold transition-colors duration-300 hover:text-white"
+                    style={{ color: 'var(--text-brand)' }}
+                  >
+                    <Download size={13} />
+                    Download Datasheet (PDF)
+                  </a>
                 )}
               </div>
             </div>
+          </div>
+        </section>
 
-            {/* Info */}
-            <div>
-              {product.meta.brand_name && (
-                <div style={{ fontSize: 13, fontWeight: 600, color: '#0071E3', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: 8 }}>
-                  {product.meta.brand_name}
-                </div>
-              )}
-              <h1 style={{ fontFamily: 'Manrope, sans-serif', fontSize: 'clamp(24px,4vw,40px)', fontWeight: 800, color: '#1D1D1F', letterSpacing: '-0.03em', lineHeight: 1.1, marginBottom: 16 }}>
-                {title}
-              </h1>
-              {product.meta.sku && (
-                <div style={{ fontSize: 12, color: '#6E6E73', marginBottom: 16 }}>SKU: {product.meta.sku}</div>
-              )}
-              <p style={{ fontSize: 17, color: '#6E6E73', lineHeight: 1.7, marginBottom: 28 }}>
-                {product.meta.short_desc || stripHtml(product.excerpt.rendered)}
-              </p>
+        {/* ── Content Sections ─────────────────────────────────────────────── */}
+        <section className="px-6 py-16">
+          <div className="container-site">
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
 
-              {/* Quick specs preview */}
-              {specs.length > 0 && (
-                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 10, marginBottom: 28 }}>
-                  {specs.slice(0, 4).map((s, i) => (
-                    <div key={i} style={{ background: '#FFFFFF', borderRadius: 12, padding: '12px 16px' }}>
-                      <div style={{ fontSize: 11, color: '#6E6E73', marginBottom: 2 }}>{s.label}</div>
-                      <div style={{ fontSize: 14, fontWeight: 600, color: '#1D1D1F' }}>{s.value}</div>
+              {/* Main content */}
+              <div className="lg:col-span-2 space-y-10">
+                {/* Overview */}
+                {product.content.rendered && (
+                  <div>
+                    <h2 className="font-display font-bold text-[22px] text-white mb-5">Overview</h2>
+                    <div
+                      className="prose-dark text-[16px] leading-relaxed"
+                      style={{ color: 'var(--text-secondary)' }}
+                      dangerouslySetInnerHTML={{ __html: product.content.rendered }}
+                    />
+                  </div>
+                )}
+
+                {/* Features */}
+                {features.length > 0 && (
+                  <div>
+                    <h2 className="font-display font-bold text-[22px] text-white mb-5">Key Features</h2>
+                    <ul className="space-y-2.5">
+                      {features.map((f, i) => (
+                        <li key={i} className="flex items-start gap-3 text-[15px]" style={{ color: 'var(--text-secondary)' }}>
+                          <svg viewBox="0 0 16 16" fill="none" className="w-4 h-4 mt-0.5 flex-shrink-0">
+                            <circle cx="8" cy="8" r="7" stroke="var(--brand)" strokeWidth="1.5"/>
+                            <path d="M5 8l2 2 4-4" stroke="var(--brand)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                          </svg>
+                          {f}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+
+                {/* Applications */}
+                {applications.length > 0 && (
+                  <div>
+                    <h2 className="font-display font-bold text-[22px] text-white mb-5">Applications</h2>
+                    <div className="flex flex-wrap gap-2.5">
+                      {applications.map((a, i) => (
+                        <span
+                          key={i}
+                          className="px-4 py-1.5 rounded-full text-[13px] font-medium"
+                          style={{ background: 'var(--brand-dim)', color: 'var(--text-brand)', border: '1px solid var(--border-brand)' }}
+                        >
+                          {a}
+                        </span>
+                      ))}
                     </div>
-                  ))}
-                </div>
-              )}
-
-              {/* CTAs */}
-              <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap', marginBottom: 20 }}>
-                <Link href="/contact"
-                  style={{ flex: 1, minWidth: 160, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 8, background: '#0071E3', color: '#FFFFFF', padding: '14px 24px', borderRadius: 980, fontSize: 15, fontWeight: 600, textDecoration: 'none' }}>
-                  Request Quote →
-                </Link>
-                <a href="https://wa.me/9779851081866" target="_blank" rel="noopener noreferrer"
-                  style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 8, background: '#25D366', color: '#FFFFFF', padding: '14px 24px', borderRadius: 980, fontSize: 15, fontWeight: 600, textDecoration: 'none' }}>
-                  WhatsApp
-                </a>
+                  </div>
+                )}
               </div>
 
-              {product.meta.datasheet_url && (
-                <a href={product.meta.datasheet_url} target="_blank" rel="noopener noreferrer"
-                  style={{ display: 'inline-flex', alignItems: 'center', gap: 6, fontSize: 13, color: '#0071E3', textDecoration: 'none', fontWeight: 500 }}>
-                  ↓ Download Datasheet
-                </a>
+              {/* Specifications sidebar */}
+              {specs.length > 0 && (
+                <div>
+                  <div className="rounded-2xl overflow-hidden sticky top-24" style={{ border: '1px solid var(--border-default)' }}>
+                    <div className="px-5 py-4" style={{ background: 'var(--surface-2)', borderBottom: '1px solid var(--border-subtle)' }}>
+                      <h3 className="font-display font-bold text-[16px] text-white">Specifications</h3>
+                    </div>
+                    <div style={{ background: 'var(--surface-1)' }}>
+                      {specs.map((s, i) => (
+                        <div
+                          key={i}
+                          className="flex justify-between gap-4 px-5 py-3 text-[13px]"
+                          style={{ borderBottom: i < specs.length - 1 ? '1px solid var(--border-subtle)' : '' }}
+                        >
+                          <span style={{ color: 'var(--text-tertiary)' }}>{s.label}</span>
+                          <span className="text-white font-medium text-right">{s.value}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </div>
               )}
             </div>
           </div>
-
-          {/* Tab nav */}
-          <nav style={{ display: 'flex', borderBottom: '1px solid rgba(0,0,0,0.08)', overflowX: 'auto' }}>
-            {TABS.map((tab, i) => (
-              <a key={tab} href={`#${tab.toLowerCase()}`}
-                style={{ padding: '16px 24px', fontSize: 14, fontWeight: 500, whiteSpace: 'nowrap', borderBottom: i === 0 ? '2px solid #0071E3' : '2px solid transparent', color: i === 0 ? '#0071E3' : '#6E6E73', textDecoration: 'none' }}>
-                {tab}
-              </a>
-            ))}
-          </nav>
-        </div>
-      </section>
-
-      {/* Overview */}
-      <section id="overview" style={{ padding: '64px 24px', background: '#FFFFFF' }}>
-        <div style={{ maxWidth: 860, margin: '0 auto' }}>
-          <h2 style={{ fontFamily: 'Manrope, sans-serif', fontSize: 28, fontWeight: 800, color: '#1D1D1F', marginBottom: 24 }}>Overview</h2>
-          {product.content.rendered
-            ? <div className="wp-content" style={{ fontSize: 17, lineHeight: 1.75, color: '#1D1D1F' }}
-                dangerouslySetInnerHTML={{ __html: product.content.rendered }} />
-            : <p style={{ fontSize: 17, color: '#6E6E73', lineHeight: 1.75 }}>
-                {product.meta.short_desc || stripHtml(product.excerpt.rendered) || `The ${title} is a professional-grade AV product distributed by AudioVisual Nepal with full manufacturer warranty.`}
-              </p>
-          }
-        </div>
-      </section>
-
-      {/* Features */}
-      {features.length > 0 && (
-        <section id="features" style={{ padding: '64px 24px', background: '#F5F5F7' }}>
-          <div style={{ maxWidth: 1200, margin: '0 auto' }}>
-            <h2 style={{ fontFamily: 'Manrope, sans-serif', fontSize: 28, fontWeight: 800, color: '#1D1D1F', marginBottom: 32 }}>Features</h2>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: 16 }}>
-              {features.map((feat, i) => (
-                <div key={i} style={{ background: '#FFFFFF', borderRadius: 16, padding: '24px', display: 'flex', gap: 16, alignItems: 'flex-start' }}>
-                  <div style={{ width: 20, height: 20, borderRadius: '50%', background: 'rgba(0,113,227,0.1)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0, marginTop: 2 }}>
-                    <span style={{ color: '#0071E3', fontSize: 11, fontWeight: 700 }}>✓</span>
-                  </div>
-                  <span style={{ fontSize: 15, color: '#1D1D1F', lineHeight: 1.5 }}>{feat}</span>
-                </div>
-              ))}
-            </div>
-          </div>
         </section>
-      )}
 
-      {/* Specifications */}
-      {specs.length > 0 && (
-        <section id="specifications" style={{ padding: '64px 24px', background: '#FFFFFF' }}>
-          <div style={{ maxWidth: 860, margin: '0 auto' }}>
-            <h2 style={{ fontFamily: 'Manrope, sans-serif', fontSize: 28, fontWeight: 800, color: '#1D1D1F', marginBottom: 32 }}>Specifications</h2>
-            <div style={{ borderRadius: 16, border: '1px solid #E8E8ED', overflow: 'hidden' }}>
-              {specs.map((spec, i) => (
-                <div key={i} style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', padding: '14px 24px', fontSize: 15, background: i % 2 === 0 ? '#F5F5F7' : '#FFFFFF' }}>
-                  <span style={{ color: '#6E6E73' }}>{spec.label}</span>
-                  <span style={{ fontWeight: 500, color: '#1D1D1F' }}>{spec.value}</span>
-                </div>
-              ))}
+        {/* ── Related Products ─────────────────────────────────────────────── */}
+        {relFiltered.length > 0 && (
+          <section className="px-6 py-16" style={{ borderTop: '1px solid var(--border-subtle)' }}>
+            <div className="container-site">
+              <div className="flex items-center justify-between mb-10">
+                <h2 className="font-display font-bold text-[24px] text-white">Related Products</h2>
+                <Link href={`/products/${category}`} className="text-[13px] font-semibold flex items-center gap-1 hover:text-white transition-colors" style={{ color: 'var(--text-brand)' }}>
+                  View all <ArrowRight size={13} />
+                </Link>
+              </div>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+                {relFiltered.map(r => {
+                  const rTitle = stripHtml(r.title.rendered)
+                  return (
+                    <Link
+                      key={r.id}
+                      href={`/products/${category}/${r.slug}`}
+                      className="group block rounded-2xl overflow-hidden border transition-all duration-300 hover:-translate-y-1"
+                      style={{ background: 'var(--surface-1)', border: '1px solid var(--border-default)' }}
+                    >
+                      <div className="relative h-44 overflow-hidden flex items-center justify-center" style={{ background: 'var(--surface-2)' }}>
+                        {r.featured_image_url ? (
+                          <Image src={r.featured_image_url} alt={rTitle} fill className="object-contain p-4 transition-transform duration-500 group-hover:scale-105" />
+                        ) : (
+                          <div className="text-white/20 text-4xl">📦</div>
+                        )}
+                      </div>
+                      <div className="p-5">
+                        {r.meta.brand_name && <div className="text-[11px] font-bold uppercase tracking-[0.08em] mb-1.5" style={{ color: 'var(--text-brand)' }}>{r.meta.brand_name}</div>}
+                        <h3 className="font-display font-bold text-[15px] text-white line-clamp-2">{rTitle}</h3>
+                      </div>
+                    </Link>
+                  )
+                })}
+              </div>
             </div>
-            <p style={{ fontSize: 12, color: '#6E6E73', marginTop: 12 }}>* Specifications subject to change without notice.</p>
-          </div>
-        </section>
-      )}
+          </section>
+        )}
 
-      {/* Applications */}
-      {applications.length > 0 && (
-        <section id="applications" style={{ padding: '64px 24px', background: '#F5F5F7' }}>
-          <div style={{ maxWidth: 1200, margin: '0 auto' }}>
-            <h2 style={{ fontFamily: 'Manrope, sans-serif', fontSize: 28, fontWeight: 800, color: '#1D1D1F', marginBottom: 32 }}>Applications</h2>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(220px, 1fr))', gap: 14 }}>
-              {applications.map((app, i) => (
-                <div key={i} style={{ background: '#FFFFFF', borderRadius: 14, padding: '18px 20px', display: 'flex', alignItems: 'center', gap: 12 }}>
-                  <div style={{ width: 32, height: 32, borderRadius: '50%', background: 'rgba(0,113,227,0.08)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
-                    <span style={{ color: '#0071E3', fontSize: 12, fontWeight: 700 }}>✓</span>
-                  </div>
-                  <span style={{ fontWeight: 500, fontSize: 14, color: '#1D1D1F' }}>{app}</span>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-      )}
-
-      {/* FAQ placeholder */}
-      <section id="faq" style={{ padding: '64px 24px', background: '#FFFFFF' }}>
-        <div style={{ maxWidth: 860, margin: '0 auto' }}>
-          <h2 style={{ fontFamily: 'Manrope, sans-serif', fontSize: 28, fontWeight: 800, color: '#1D1D1F', marginBottom: 32 }}>FAQ</h2>
-          {[
-            { q: 'Is this covered by manufacturer warranty?', a: 'Yes. All products carry a minimum 1-year manufacturer warranty. As authorized distributors, we handle all warranty claims directly with no hassle for you.' },
-            { q: 'Do you offer installation services?', a: 'Absolutely. We offer full supply-and-install packages across Nepal. Contact us with your floor plan for a complete system design and quotation.' },
-            { q: 'Can I see a demo before purchasing?', a: 'Yes — visit our Kathmandu showroom or request an on-site demonstration for larger projects. Call or WhatsApp us to schedule.' },
-          ].map((faq, i) => (
-            <details key={i} style={{ background: '#F5F5F7', borderRadius: 14, marginBottom: 12, overflow: 'hidden' }}>
-              <summary style={{ padding: '18px 24px', fontSize: 16, fontWeight: 600, color: '#1D1D1F', cursor: 'pointer', listStyle: 'none', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                {faq.q} <span style={{ color: '#0071E3', fontSize: 20 }}>+</span>
-              </summary>
-              <div style={{ padding: '0 24px 18px', fontSize: 15, color: '#6E6E73', lineHeight: 1.65 }}>{faq.a}</div>
-            </details>
-          ))}
-        </div>
-      </section>
-
-      {/* Related Products */}
-      {relFiltered.length > 0 && (
-        <section style={{ padding: '64px 24px', background: '#F5F5F7' }}>
-          <div style={{ maxWidth: 1200, margin: '0 auto' }}>
-            <h2 style={{ fontFamily: 'Manrope, sans-serif', fontSize: 28, fontWeight: 800, color: '#1D1D1F', marginBottom: 32, textAlign: 'center' }}>Related Products</h2>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: 20 }}>
-              {relFiltered.map(rel => {
-                const rTitle = stripHtml(rel.title.rendered)
-                return (
-                  <Link key={rel.id} href={`/products/${category}/${rel.slug}`}
-                    style={{ textDecoration: 'none', background: '#FFFFFF', borderRadius: 16, border: '1px solid #E8E8ED', overflow: 'hidden', display: 'block' }}>
-                    <div style={{ height: 180, background: '#F5F5F7', display: 'flex', alignItems: 'center', justifyContent: 'center', position: 'relative' }}>
-                      {rel.featured_image_url
-                        ? <Image src={rel.featured_image_url} alt={rTitle} fill style={{ objectFit: 'contain', padding: 16 }} />
-                        : <span style={{ fontSize: 48 }}>📦</span>}
-                    </div>
-                    <div style={{ padding: '18px 20px' }}>
-                      {rel.meta.brand_name && <div style={{ fontSize: 11, color: '#0071E3', fontWeight: 600, marginBottom: 4, textTransform: 'uppercase' }}>{rel.meta.brand_name}</div>}
-                      <div style={{ fontFamily: 'Manrope, sans-serif', fontSize: 15, fontWeight: 700, color: '#1D1D1F' }}>{rTitle}</div>
-                    </div>
-                  </Link>
-                )
-              })}
-            </div>
-          </div>
-        </section>
-      )}
-
-      {/* CTA */}
-      <section style={{ padding: '80px 24px', background: '#1D1D1F', textAlign: 'center' }}>
-        <h2 style={{ fontFamily: 'Manrope, sans-serif', fontSize: 'clamp(28px,4vw,42px)', fontWeight: 800, color: '#FFFFFF', marginBottom: 16, letterSpacing: '-0.03em' }}>
-          Need Help Specifying the Right System?
-        </h2>
-        <p style={{ fontSize: 18, color: 'rgba(255,255,255,0.55)', marginBottom: 32 }}>
-          Our engineers will design, supply and install the perfect AV solution for your space.
-        </p>
-        <Link href="/contact"
-          style={{ display: 'inline-block', background: '#0071E3', color: '#FFFFFF', padding: '16px 40px', borderRadius: 980, fontSize: 16, fontWeight: 600, textDecoration: 'none' }}>
-          Get Free Consultation
-        </Link>
-      </section>
-
-      <style>{`
-        .wp-content h2 { font-family: Manrope, sans-serif; font-size: 24px; font-weight: 800; color: #1D1D1F; margin: 32px 0 12px; }
-        .wp-content p { margin-bottom: 18px; }
-        .wp-content ul { padding-left: 24px; margin-bottom: 18px; }
-        .wp-content li { margin-bottom: 8px; }
-        .wp-content a { color: #0071E3; }
-        .wp-content img { width: 100%; height: auto; border-radius: 12px; margin: 20px 0; }
-      `}</style>
+      </main>
     </>
   )
 }

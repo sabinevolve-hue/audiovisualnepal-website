@@ -10,87 +10,109 @@ export const metadata: Metadata = {
   description: 'AudioVisual Nepal is the authorized distributor for DSPPA, Tenveo, Shure, Sennheiser, Biamp, Extron, Crestron, Kramer and more across Nepal.',
 }
 
+const fallbackBrands = [
+  { name: 'DSPPA',          tagline: 'Professional PA & IP Audio Systems',     country: 'China',   emoji: '🔊' },
+  { name: 'Tenveo',         tagline: 'AI-Powered Video Conferencing',           country: 'China',   emoji: '📹' },
+  { name: 'Shure',          tagline: 'Legendary Microphones & Audio',           country: 'USA',     emoji: '🎙️' },
+  { name: 'Sennheiser',     tagline: 'Premium Audio Solutions',                 country: 'Germany', emoji: '🎧' },
+  { name: 'Biamp',          tagline: 'Professional AV Signal Processing',       country: 'USA',     emoji: '🎚️' },
+  { name: 'Extron',         tagline: 'AV Signal Distribution & Control',        country: 'USA',     emoji: '🖥️' },
+  { name: 'Crestron',       tagline: 'Smart Room Automation',                   country: 'USA',     emoji: '🏠' },
+  { name: 'Kramer',         tagline: 'AV Connectivity & Switching',             country: 'Israel',  emoji: '🔗' },
+  { name: 'Yamaha Pro Audio',tagline: 'Mixing Consoles & Amplifiers',           country: 'Japan',   emoji: '🎛️' },
+]
+
 export default async function BrandsPage() {
   const brands = await getBrands()
-
-  const fallbackBrands = [
-    { name: 'DSPPA', tagline: 'Professional PA & IP Audio Systems', country: 'China', emoji: '🔊' },
-    { name: 'Tenveo', tagline: 'AI-Powered Video Conferencing', country: 'China', emoji: '📹' },
-    { name: 'Shure', tagline: 'Legendary Microphones & Audio', country: 'USA', emoji: '🎙️' },
-    { name: 'Sennheiser', tagline: 'Premium Audio Solutions', country: 'Germany', emoji: '🎧' },
-    { name: 'Biamp', tagline: 'Professional AV Signal Processing', country: 'USA', emoji: '🎚️' },
-    { name: 'Extron', tagline: 'AV Signal Distribution & Control', country: 'USA', emoji: '🖥️' },
-    { name: 'Crestron', tagline: 'Smart Room Automation', country: 'USA', emoji: '🏠' },
-    { name: 'Kramer', tagline: 'AV Connectivity & Switching', country: 'Israel', emoji: '🔗' },
-    { name: 'Yamaha Pro Audio', tagline: 'Mixing Consoles & Amplifiers', country: 'Japan', emoji: '🎛️' },
-  ]
 
   return (
     <main style={{ paddingTop: 80 }}>
       {/* Hero */}
-      <section style={{ background: '#1D1D1F', padding: '80px 24px 64px', textAlign: 'center' }}>
-        <p style={{ fontSize: 13, fontWeight: 600, color: '#0071E3', letterSpacing: '0.08em', textTransform: 'uppercase', marginBottom: 16 }}>Authorized Distributor</p>
-        <h1 style={{ fontFamily: 'Manrope, sans-serif', fontSize: 'clamp(36px,5vw,60px)', fontWeight: 800, color: '#FFFFFF', letterSpacing: '-0.03em', marginBottom: 20 }}>
-          World-Class Brands
-        </h1>
-        <p style={{ fontSize: 18, color: 'rgba(255,255,255,0.55)', maxWidth: 560, margin: '0 auto' }}>
-          We\'re the authorized distributor for Nepal\'s most trusted professional AV brands — with genuine products, full warranties, and factory support.
-        </p>
+      <section
+        className="section-padding-sm px-6 text-center"
+        style={{ background: 'var(--bg-subtle)', borderBottom: '1px solid var(--border-subtle)' }}
+      >
+        <div className="container-site">
+          <p className="eyebrow mb-4">Authorized Distributor</p>
+          <h1 className="heading-section mb-4">World-Class Brands</h1>
+          <p className="text-lg max-w-[560px] mx-auto" style={{ color: 'var(--text-secondary)' }}>
+            We&apos;re the authorized distributor for Nepal&apos;s most trusted professional AV brands — genuine products, full warranties, factory support.
+          </p>
+        </div>
       </section>
 
-      {/* Breadcrumb */}
-      <nav aria-label="Breadcrumb" style={{ background: '#F5F5F7', padding: '12px 24px', borderBottom: '1px solid #E8E8ED' }}>
-        <div style={{ maxWidth: 1200, margin: '0 auto', fontSize: 13, color: '#6E6E73', display: 'flex', gap: 8, alignItems: 'center' }}>
-          <Link href="/" style={{ color: '#0071E3', textDecoration: 'none' }}>Home</Link>
-          <span aria-hidden="true">›</span>
-          <span style={{ color: '#1D1D1F', fontWeight: 500 }} aria-current="page">Brands</span>
+      {/* Trust badges */}
+      <section className="px-6 py-6 bg-white" style={{ borderBottom: '1px solid var(--border-subtle)' }}>
+        <div className="container-site flex flex-wrap gap-x-10 gap-y-3 justify-center">
+          {['Genuine Products', 'Full Warranty', 'Factory Training', 'After-Sales Support', 'Certified Engineers'].map(b => (
+            <span key={b} className="flex items-center gap-2 text-[13px] font-medium" style={{ color: 'var(--text-secondary)' }}>
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><circle cx="7" cy="7" r="7" fill="#0071E3" opacity="0.12"/><path d="M4 7l2 2 4-4" stroke="#0071E3" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
+              {b}
+            </span>
+          ))}
         </div>
-      </nav>
+      </section>
 
       {/* Brands Grid */}
-      <section style={{ padding: '80px 24px', background: '#FFFFFF' }}>
-        <div style={{ maxWidth: 1200, margin: '0 auto' }}>
+      <section className="section-padding bg-white px-6">
+        <div className="container-site">
           {brands.length > 0 ? (
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))', gap: 20 }}>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
               {brands.map(brand => {
                 const name = stripHtml(brand.title.rendered)
                 return (
-                  <div key={brand.id}
-                    style={{ background: '#F5F5F7', borderRadius: 20, padding: 32, display: 'flex', flexDirection: 'column', gap: 16, border: '1px solid #E8E8ED' }}>
+                  <div
+                    key={brand.id}
+                    className="rounded-2xl p-7 bg-white transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[var(--shadow-md)]"
+                    style={{ border: '1px solid var(--border-default)' }}
+                  >
                     {brand.featured_image_url ? (
-                      <div style={{ position: 'relative', height: 64, width: 160 }}>
-                        <Image src={brand.featured_image_url} alt={name} fill style={{ objectFit: 'contain' }} />
+                      <div className="relative h-14 w-36 mb-5">
+                        <Image src={brand.featured_image_url} alt={name} fill className="object-contain" />
                       </div>
                     ) : (
-                      <div style={{ fontFamily: 'Manrope, sans-serif', fontSize: 24, fontWeight: 800, color: '#1D1D1F' }}>{name}</div>
-                    )}
-                    {brand.meta.tagline && (
-                      <p style={{ fontSize: 15, color: '#6E6E73', lineHeight: 1.5 }}>{brand.meta.tagline}</p>
-                    )}
-                    {brand.meta.country && (
-                      <div style={{ fontSize: 12, color: '#0071E3', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.06em' }}>
-                        {brand.meta.country}
+                      <div className="font-display font-extrabold text-2xl mb-5" style={{ color: 'var(--text-primary)' }}>
+                        {name}
                       </div>
                     )}
-                    {brand.meta.website_url && (
-                      <a href={brand.meta.website_url} target="_blank" rel="noopener noreferrer"
-                        style={{ fontSize: 13, color: '#0071E3', textDecoration: 'none', fontWeight: 500 }}>
-                        Visit Website →
-                      </a>
+                    {brand.meta?.tagline && (
+                      <p className="text-[14px] leading-relaxed mb-4" style={{ color: 'var(--text-secondary)' }}>
+                        {brand.meta.tagline}
+                      </p>
+                    )}
+                    {brand.meta?.country && (
+                      <span
+                        className="inline-block text-[11px] font-semibold px-2.5 py-0.5 rounded-full"
+                        style={{ background: 'var(--brand-dim)', color: 'var(--brand)' }}
+                      >
+                        {brand.meta.country}
+                      </span>
                     )}
                   </div>
                 )
               })}
             </div>
           ) : (
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: 20 }}>
-              {fallbackBrands.map(brand => (
-                <div key={brand.name}
-                  style={{ background: '#F5F5F7', borderRadius: 20, padding: 32, border: '1px solid #E8E8ED' }}>
-                  <div style={{ fontSize: 36, marginBottom: 12 }}>{brand.emoji}</div>
-                  <h2 style={{ fontFamily: 'Manrope, sans-serif', fontSize: 20, fontWeight: 800, color: '#1D1D1F', marginBottom: 8 }}>{brand.name}</h2>
-                  <p style={{ fontSize: 15, color: '#6E6E73', lineHeight: 1.5, marginBottom: 12 }}>{brand.tagline}</p>
-                  <div style={{ fontSize: 12, color: '#0071E3', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.06em' }}>{brand.country}</div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+              {fallbackBrands.map(b => (
+                <div
+                  key={b.name}
+                  className="rounded-2xl p-7 bg-white transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[var(--shadow-md)]"
+                  style={{ border: '1px solid var(--border-default)' }}
+                >
+                  <div className="text-4xl mb-4">{b.emoji}</div>
+                  <div className="font-display font-extrabold text-xl mb-2" style={{ color: 'var(--text-primary)' }}>
+                    {b.name}
+                  </div>
+                  <p className="text-[14px] leading-relaxed mb-4" style={{ color: 'var(--text-secondary)' }}>
+                    {b.tagline}
+                  </p>
+                  <span
+                    className="inline-block text-[11px] font-semibold px-2.5 py-0.5 rounded-full"
+                    style={{ background: 'var(--brand-dim)', color: 'var(--brand)' }}
+                  >
+                    {b.country}
+                  </span>
                 </div>
               ))}
             </div>
@@ -98,44 +120,13 @@ export default async function BrandsPage() {
         </div>
       </section>
 
-      {/* Why Genuine */}
-      <section style={{ padding: '80px 24px', background: '#F5F5F7' }}>
-        <div style={{ maxWidth: 900, margin: '0 auto', textAlign: 'center' }}>
-          <h2 style={{ fontFamily: 'Manrope, sans-serif', fontSize: 'clamp(28px,4vw,42px)', fontWeight: 800, color: '#1D1D1F', letterSpacing: '-0.03em', marginBottom: 16 }}>
-            Why Buy Genuine?
-          </h2>
-          <p style={{ fontSize: 18, color: '#6E6E73', marginBottom: 48, maxWidth: 540, margin: '0 auto 48px' }}>
-            As authorized distributors, every product we sell is 100% genuine with full manufacturer support.
-          </p>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: 20 }}>
-            {[
-              { icon: '✅', title: 'Genuine Products', desc: 'Direct from manufacturer. No grey market, no counterfeits.' },
-              { icon: '🛡️', title: 'Full Warranty', desc: 'Manufacturer warranty honored in Nepal. We handle all claims.' },
-              { icon: '📞', title: 'Factory Support', desc: 'Access to official tech support and firmware updates.' },
-              { icon: '🔧', title: 'Spare Parts', desc: 'Genuine replacement parts available from our local stock.' },
-            ].map(item => (
-              <div key={item.title} style={{ background: '#FFFFFF', borderRadius: 16, padding: 28, textAlign: 'left' }}>
-                <div style={{ fontSize: 28, marginBottom: 12 }}>{item.icon}</div>
-                <h3 style={{ fontFamily: 'Manrope, sans-serif', fontSize: 16, fontWeight: 700, color: '#1D1D1F', marginBottom: 8 }}>{item.title}</h3>
-                <p style={{ fontSize: 14, color: '#6E6E73', lineHeight: 1.6 }}>{item.desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* CTA */}
-      <section style={{ padding: '80px 24px', background: '#1D1D1F', textAlign: 'center' }}>
-        <h2 style={{ fontFamily: 'Manrope, sans-serif', fontSize: 'clamp(28px,4vw,40px)', fontWeight: 800, color: '#FFFFFF', marginBottom: 16, letterSpacing: '-0.03em' }}>
-          Looking for a Specific Brand?
-        </h2>
-        <p style={{ fontSize: 18, color: 'rgba(255,255,255,0.55)', marginBottom: 32 }}>
-          Contact us — we can source any professional AV brand for your project.
-        </p>
-        <Link href="/contact"
-          style={{ display: 'inline-block', background: '#0071E3', color: '#FFFFFF', padding: '16px 40px', borderRadius: 980, fontSize: 16, fontWeight: 600, textDecoration: 'none' }}>
-          Contact Us
-        </Link>
+      <section className="section-padding-sm px-6 text-center" style={{ background: 'var(--bg-subtle)', borderTop: '1px solid var(--border-subtle)' }}>
+        <div className="container-site">
+          <h2 className="font-display font-bold text-2xl mb-3">Interested in our brands?</h2>
+          <p className="mb-6" style={{ color: 'var(--text-secondary)' }}>Contact us for pricing, availability, and technical specifications.</p>
+          <Link href="/contact" className="btn-primary">Get a Quote</Link>
+        </div>
       </section>
     </main>
   )

@@ -4,7 +4,7 @@ import { DEFAULT_SEO, SITE } from '@/lib/constants'
 import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
 import WhatsAppFloat from '@/components/ui/WhatsAppFloat'
-import CookieConsent from '@/components/ui/CookieConsent'
+import { PageTransition } from '@/components/ui/PageTransition'
 import './globals.css'
 
 const inter = Inter({
@@ -63,12 +63,16 @@ export const viewport: Viewport = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${inter.variable} ${manrope.variable}`}>
-      <body className="font-body bg-white text-brand-black antialiased">
+      <body
+        className="font-body antialiased"
+        style={{ background: 'var(--bg-base)', color: 'var(--text-primary)' }}
+      >
         <Header />
-        <main>{children}</main>
+        <PageTransition>
+          <main>{children}</main>
+        </PageTransition>
         <Footer />
         <WhatsAppFloat />
-        <CookieConsent />
       </body>
     </html>
   )

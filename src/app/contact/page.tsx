@@ -1,7 +1,6 @@
 'use client'
 
 import { useState, FormEvent } from 'react'
-import Link from 'next/link'
 import { SITE, PROJECT_TYPES } from '@/lib/constants'
 import { Phone, Mail, MapPin, MessageCircle, Send, CheckCircle } from 'lucide-react'
 
@@ -35,19 +34,10 @@ export default function ContactPage() {
           <div className="eyebrow mb-4">Get In Touch</div>
           <h1 className="heading-section mb-4">Let&apos;s Design Your<br/>Perfect System</h1>
           <p className="text-lg text-[#6E6E73] max-w-[520px] mx-auto">
-            Share your project details and our engineers will respond within 24 hours with a customized proposal.
+            Share your project details and our engineers will respond within 24 hours with a customised proposal.
           </p>
         </div>
       </section>
-
-      {/* Breadcrumb */}
-      <nav aria-label="Breadcrumb" style={{ background: '#F5F5F7', padding: '12px 24px', borderBottom: '1px solid #E8E8ED' }}>
-        <div style={{ maxWidth: 1200, margin: '0 auto', fontSize: 13, color: '#6E6E73', display: 'flex', gap: 8, alignItems: 'center' }}>
-          <Link href="/" style={{ color: '#0071E3', textDecoration: 'none' }}>Home</Link>
-          <span aria-hidden="true">›</span>
-          <span style={{ color: '#1D1D1F', fontWeight: 500 }} aria-current="page">Contact</span>
-        </div>
-      </nav>
 
       {/* Content */}
       <section className="section-padding bg-white px-6">
@@ -59,23 +49,33 @@ export default function ContactPage() {
               <div>
                 <h2 className="font-display font-bold text-2xl mb-6">Contact Details</h2>
                 <div className="space-y-5">
-                  <a href={`tel:${SITE.phoneRaw}`} className="flex items-start gap-4 group">
+                  <a
+                    href={`tel:${SITE.phoneRaw}`}
+                    className="flex items-start gap-4 group"
+                  >
                     <div className="w-10 h-10 rounded-full bg-[#0071E3]/[0.08] flex items-center justify-center shrink-0 group-hover:bg-[#0071E3]/[0.15] transition-colors">
                       <Phone size={16} className="text-[#0071E3]" />
                     </div>
                     <div>
                       <div className="text-xs text-[#6E6E73] mb-0.5">Call us</div>
-                      <div className="font-semibold text-[#111] group-hover:text-[#0071E3] transition-colors">{SITE.phone}</div>
+                      <div className="font-semibold text-[#111] group-hover:text-[#0071E3] transition-colors">
+                        {SITE.phone}
+                      </div>
                     </div>
                   </a>
 
-                  <a href={`mailto:${SITE.email}`} className="flex items-start gap-4 group">
+                  <a
+                    href={`mailto:${SITE.email}`}
+                    className="flex items-start gap-4 group"
+                  >
                     <div className="w-10 h-10 rounded-full bg-[#0071E3]/[0.08] flex items-center justify-center shrink-0 group-hover:bg-[#0071E3]/[0.15] transition-colors">
                       <Mail size={16} className="text-[#0071E3]" />
                     </div>
                     <div>
                       <div className="text-xs text-[#6E6E73] mb-0.5">Email us</div>
-                      <div className="font-semibold text-[#111] group-hover:text-[#0071E3] transition-colors">{SITE.email}</div>
+                      <div className="font-semibold text-[#111] group-hover:text-[#0071E3] transition-colors">
+                        {SITE.email}
+                      </div>
                     </div>
                   </a>
 
@@ -89,13 +89,20 @@ export default function ContactPage() {
                     </div>
                   </div>
 
-                  <a href={SITE.whatsapp} target="_blank" rel="noopener noreferrer" className="flex items-start gap-4 group">
+                  <a
+                    href={SITE.whatsapp}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-start gap-4 group"
+                  >
                     <div className="w-10 h-10 rounded-full bg-[#25D366]/[0.1] flex items-center justify-center shrink-0 group-hover:bg-[#25D366]/[0.2] transition-colors">
                       <MessageCircle size={16} className="text-[#25D366]" />
                     </div>
                     <div>
                       <div className="text-xs text-[#6E6E73] mb-0.5">WhatsApp</div>
-                      <div className="font-semibold text-[#111] group-hover:text-[#25D366] transition-colors">Chat instantly</div>
+                      <div className="font-semibold text-[#111] group-hover:text-[#25D366] transition-colors">
+                        Chat instantly
+                      </div>
                     </div>
                   </a>
                 </div>
@@ -116,18 +123,9 @@ export default function ContactPage() {
                 </div>
               </div>
 
-              {/* Google Map */}
-              <div className="rounded-2xl overflow-hidden">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.0!2d85.3240!3d27.7172!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19a4e0000001%3A0x0!2sKathmandu%2C+Nepal!5e0!3m2!1sen!2snp!4v1"
-                  width="100%"
-                  height="192"
-                  style={{ border: 0, borderRadius: 16, display: 'block' }}
-                  allowFullScreen
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                  title="AudioVisual Nepal location"
-                />
+              {/* Google Map placeholder */}
+              <div className="bg-[#F5F5F7] rounded-2xl overflow-hidden h-48 flex items-center justify-center text-[#6E6E73] text-sm">
+                📍 Google Map Embed
               </div>
             </div>
 

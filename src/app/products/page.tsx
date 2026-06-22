@@ -1,90 +1,74 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { PRODUCT_CATEGORIES } from '@/lib/constants'
-import { getProductCategories } from '@/lib/wordpress'
-import ProductSearch from './ProductSearch'
+import { ArrowRight } from 'lucide-react'
+
+export const metadata: Metadata = {
+  title: 'Products — AudioVisual Nepal | Professional AV Systems',
+  description: 'Browse professional audio visual systems — PA systems, conference equipment, video walls, digital signage, and more. Authorized distributor in Nepal.',
+}
 
 export const revalidate = 3600
 
-export const metadata: Metadata = {
-  title: 'Products — AudioVisual Nepal | Professional AV Equipment',
-  description: 'Professional audio visual equipment for Nepal — speakers, amplifiers, conference systems, video walls, IP audio, wireless systems and more from authorized brands.',
-}
-
-export default async function ProductsPage() {
-  const wpCategories = await getProductCategories()
-
-  const categories = wpCategories.length > 0
-    ? wpCategories.map((c: { name: string; slug: string; count?: number }) => ({
-        label: c.name,
-        href: `/products/${c.slug}`,
-        icon: PRODUCT_CATEGORIES.find(p => p.href.includes(c.slug))?.icon ?? '📦',
-        count: c.count ?? 0,
-      }))
-    : PRODUCT_CATEGORIES.map(c => ({ ...c }))
-
+export default function ProductsPage() {
   return (
     <main style={{ paddingTop: 80 }}>
       {/* Hero */}
-      <section style={{ background: '#1D1D1F', padding: '80px 24px 64px', textAlign: 'center' }}>
-        <p style={{ fontSize: 13, fontWeight: 600, color: '#0071E3', letterSpacing: '0.08em', textTransform: 'uppercase', marginBottom: 16 }}>Genuine AV Equipment</p>
-        <h1 style={{ fontFamily: 'Manrope, sans-serif', fontSize: 'clamp(36px,5vw,60px)', fontWeight: 800, color: '#FFFFFF', letterSpacing: '-0.03em', marginBottom: 20 }}>Professional Products</h1>
-        <p style={{ fontSize: 18, color: 'rgba(255,255,255,0.55)', maxWidth: 560, margin: '0 auto 40px' }}>
-          Nepal&apos;s widest range of professional audio visual equipment — all genuine, all warranted, all supported.
-        </p>
-        <Link href="/contact" style={{ display: 'inline-block', background: '#0071E3', color: '#FFFFFF', padding: '14px 32px', borderRadius: 980, fontSize: 15, fontWeight: 600, textDecoration: 'none' }}>
-          Request a Quote
-        </Link>
-      </section>
-
-      {/* Breadcrumbs */}
-      <nav aria-label="Breadcrumb" style={{ background: '#F5F5F7', padding: '12px 24px', borderBottom: '1px solid #E8E8ED' }}>
-        <div style={{ maxWidth: 1200, margin: '0 auto', fontSize: 13, color: '#6E6E73', display: 'flex', gap: 8, alignItems: 'center' }}>
-          <Link href="/" style={{ color: '#0071E3', textDecoration: 'none' }}>Home</Link>
-          <span aria-hidden="true">›</span>
-          <span style={{ color: '#1D1D1F', fontWeight: 500 }}>Products</span>
-        </div>
-      </nav>
-
-      {/* Category Grid with Search */}
-      <section style={{ padding: '80px 24px', background: '#FFFFFF' }}>
-        <div style={{ maxWidth: 1200, margin: '0 auto' }}>
-          <h2 style={{ fontFamily: 'Manrope, sans-serif', fontSize: 'clamp(28px,4vw,42px)', fontWeight: 800, color: '#1D1D1F', letterSpacing: '-0.03em', textAlign: 'center', marginBottom: 12 }}>Browse by Category</h2>
-          <p style={{ fontSize: 16, color: '#6E6E73', textAlign: 'center', marginBottom: 40 }}>
-            {categories.length} categories &middot; {categories.reduce((s: number, c: { count?: number }) => s + (c.count ?? 0), 0)}+ products
+      <section className="section-padding-sm bg-[var(--bg-subtle)] px-6" style={{ borderBottom: '1px solid var(--border-subtle)' }}>
+        <div className="container-site text-center">
+          <p className="eyebrow mb-4">Product Catalog</p>
+          <h1 className="heading-section mb-4">Professional AV Systems</h1>
+          <p className="text-lg max-w-[560px] mx-auto" style={{ color: 'var(--text-secondary)' }}>
+            Browse our complete range of audio visual systems — sourced from the world&apos;s leading brands, delivered and installed across Nepal.
           </p>
-          <ProductSearch categories={categories} />
         </div>
       </section>
 
-      {/* Why Buy From Us */}
-      <section style={{ padding: '80px 24px', background: '#F5F5F7' }}>
-        <div style={{ maxWidth: 1000, margin: '0 auto', textAlign: 'center' }}>
-          <h2 style={{ fontFamily: 'Manrope, sans-serif', fontSize: 'clamp(28px,4vw,40px)', fontWeight: 800, color: '#1D1D1F', letterSpacing: '-0.03em', marginBottom: 48 }}>Why AudioVisual Nepal?</h2>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: 20 }}>
-            {[
-              { icon: '✅', title: 'Authorized Dealer', desc: 'Genuine products from official brand distributors. No grey market.' },
-              { icon: '🛡️', title: 'Full Warranty', desc: 'Manufacturer warranty honored in Nepal with local support.' },
-              { icon: '🔧', title: 'Expert Installation', desc: 'Our engineers design and install complete AV systems.' },
-              { icon: '📞', title: 'After-Sales Support', desc: 'AMC, spare parts, and technical support post-installation.' },
-            ].map(item => (
-              <div key={item.title} style={{ background: '#FFFFFF', borderRadius: 16, padding: 28, textAlign: 'left' }}>
-                <div style={{ fontSize: 28, marginBottom: 12 }}>{item.icon}</div>
-                <h3 style={{ fontFamily: 'Manrope, sans-serif', fontSize: 16, fontWeight: 700, color: '#1D1D1F', marginBottom: 8 }}>{item.title}</h3>
-                <p style={{ fontSize: 14, color: '#6E6E73', lineHeight: 1.6 }}>{item.desc}</p>
-              </div>
+      {/* Categories Grid */}
+      <section className="section-padding bg-white px-6">
+        <div className="container-site">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+            {PRODUCT_CATEGORIES.map((cat) => (
+              <Link
+                key={cat.href}
+                href={cat.href}
+                className="group block rounded-2xl p-7 bg-white transition-all duration-300 hover:-translate-y-1 hover:shadow-[var(--shadow-md)]"
+                style={{ border: '1px solid var(--border-default)' }}
+              >
+                <div className="flex items-start justify-between mb-5">
+                  <span className="text-3xl">{cat.icon}</span>
+                  <span
+                    className="w-8 h-8 rounded-full flex items-center justify-center transition-all duration-300 group-hover:translate-x-1"
+                    style={{ background: 'var(--brand-dim)', color: 'var(--brand)' }}
+                  >
+                    <ArrowRight size={14} />
+                  </span>
+                </div>
+                <h2 className="font-display font-bold text-[18px] mb-2" style={{ color: 'var(--text-primary)' }}>
+                  {cat.label}
+                </h2>
+                {cat.description && (
+                  <p className="text-[14px] leading-relaxed line-clamp-2" style={{ color: 'var(--text-secondary)' }}>
+                    {cat.description}
+                  </p>
+                )}
+                <div className="mt-4 text-[13px] font-semibold" style={{ color: 'var(--brand)' }}>
+                  Browse products →
+                </div>
+              </Link>
             ))}
           </div>
         </div>
       </section>
 
-      {/* CTA */}
-      <section style={{ padding: '80px 24px', background: '#1D1D1F', textAlign: 'center' }}>
-        <h2 style={{ fontFamily: 'Manrope, sans-serif', fontSize: 'clamp(28px,4vw,40px)', fontWeight: 800, color: '#FFFFFF', marginBottom: 16, letterSpacing: '-0.03em' }}>Need Help Choosing?</h2>
-        <p style={{ fontSize: 18, color: 'rgba(255,255,255,0.55)', marginBottom: 32 }}>Our AV engineers will recommend the right products for your space and budget.</p>
-        <div style={{ display: 'flex', gap: 16, justifyContent: 'center', flexWrap: 'wrap' }}>
-          <Link href="/contact" style={{ display: 'inline-block', background: '#0071E3', color: '#FFFFFF', padding: '16px 40px', borderRadius: 980, fontSize: 16, fontWeight: 600, textDecoration: 'none' }}>Get Expert Advice</Link>
-          <Link href="/projects" style={{ display: 'inline-block', background: 'transparent', color: '#FFFFFF', padding: '16px 40px', borderRadius: 980, fontSize: 16, fontWeight: 600, textDecoration: 'none', border: '1.5px solid rgba(255,255,255,0.3)' }}>See Projects</Link>
+      {/* Bottom CTA */}
+      <section className="section-padding-sm px-6" style={{ background: 'var(--bg-subtle)', borderTop: '1px solid var(--border-subtle)' }}>
+        <div className="container-site text-center">
+          <h2 className="font-display font-bold text-2xl mb-3">Can&apos;t find what you need?</h2>
+          <p className="mb-6" style={{ color: 'var(--text-secondary)' }}>
+            Our team can source any professional AV product. Contact us with your requirements.
+          </p>
+          <Link href="/contact" className="btn-primary">Request Custom Quote</Link>
         </div>
       </section>
     </main>

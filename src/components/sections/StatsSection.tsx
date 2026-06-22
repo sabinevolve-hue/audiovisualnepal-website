@@ -1,36 +1,30 @@
 'use client'
 
-import { useInView } from 'react-intersection-observer'
-import CountUp from 'react-countup'
 import { STATS } from '@/lib/constants'
+import { NumberFlow } from '@/components/ui/NumberFlow'
+import { RevealSection } from '@/components/ui/RevealSection'
 
 export default function StatsSection() {
-  const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.3 })
-
   return (
-    <section className="bg-[#F5F5F7] py-20" ref={ref}>
+    <section className="py-0" style={{ background: 'var(--bg-subtle)', borderTop: '1px solid var(--border-subtle)', borderBottom: '1px solid var(--border-subtle)' }}>
       <div className="container-site">
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-0.5 rounded-2xl overflow-hidden">
+        <div className="grid grid-cols-2 lg:grid-cols-4">
           {STATS.map((stat, i) => (
-            <div
+            <RevealSection
               key={i}
-              className="bg-white px-8 py-12 text-center hover:-translate-y-1 transition-transform duration-300 group"
+              delay={i * 0.08}
+              className={`py-10 px-6 text-center ${i < STATS.length - 1 ? 'border-r border-[var(--border-subtle)]' : ''}`}
             >
-              <div className="font-display font-extrabold text-[52px] leading-none tracking-[-0.03em] text-[#111] mb-2">
-                {inView ? (
-                  <CountUp
-                    end={stat.value}
-                    duration={1.6}
-                    delay={i * 0.15}
-                    suffix={stat.suffix}
-                    useEasing
-                  />
-                ) : (
-                  <span>0{stat.suffix}</span>
-                )}
+              <div
+                className="font-display font-extrabold leading-none tracking-tight mb-1.5"
+                style={{ fontSize: 'clamp(36px,4.5vw,52px)', color: 'var(--text-primary)' }}
+              >
+                <NumberFlow value={stat.value} suffix={stat.suffix} duration={1600} />
               </div>
-              <div className="text-[15px] text-[#6E6E73]">{stat.label}</div>
-            </div>
+              <div className="text-[14px]" style={{ color: 'var(--text-secondary)' }}>
+                {stat.label}
+              </div>
+            </RevealSection>
           ))}
         </div>
       </div>

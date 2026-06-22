@@ -1,59 +1,49 @@
+'use client'
+
+import { RevealSection, StaggerReveal } from '@/components/ui/RevealSection'
+
 const reasons = [
-  {
-    num: '01',
-    title: '100% Genuine Products',
-    desc: 'Authorized distributor of every brand we carry. Full manufacturer warranty, no grey imports, zero compromises on authenticity.',
-  },
-  {
-    num: '02',
-    title: 'Expert System Engineering',
-    desc: 'Our acoustic engineers design the system for your space — not a one-size-fits-all catalog solution. Site surveys included.',
-  },
-  {
-    num: '03',
-    title: 'End-to-End Project Delivery',
-    desc: 'Design, supply, installation, commissioning and after-sales support. A single point of responsibility from brief to handover.',
-  },
-  {
-    num: '04',
-    title: 'Nationwide Coverage',
-    desc: 'Service teams across all 7 provinces. Rapid response whether you\'re in Kathmandu or the most remote district.',
-  },
+  { icon: '✓', title: '100% Genuine Products', desc: 'Every product sourced directly from authorised manufacturers. No grey-market items — full manufacturer warranty on all goods.' },
+  { icon: '⚙', title: 'Expert Installation', desc: 'Certified engineers handle acoustic design, system integration, commissioning and post-installation support.' },
+  { icon: '🗺', title: 'All 77 Districts', desc: 'Projects delivered nationwide — from Kathmandu to remote municipalities. No location is too far.' },
+  { icon: '⚡', title: 'Fast Delivery', desc: 'Streamlined supply chain and experienced teams mean your project meets its deadline, every time.' },
+  { icon: '🛠', title: 'After-Sales Support', desc: 'Dedicated service team for AMC, warranty claims, spare parts and ongoing technical assistance long after handover.' },
+  { icon: '💰', title: 'Competitive Pricing', desc: 'Direct importer pricing — enterprise-grade AV at the right price for your budget, with no hidden costs.' },
 ]
 
 export default function WhySection() {
   return (
-    <section id="why" className="section-padding bg-white">
+    <section
+      className="section-padding"
+      style={{ background: 'var(--bg-subtle)', borderTop: '1px solid var(--border-subtle)' }}
+    >
       <div className="container-site">
-        <div className="text-center mb-16 reveal">
-          <div className="eyebrow mb-4">Why AudioVisual Nepal</div>
-          <h2 className="heading-section">Built Different.</h2>
-        </div>
+        <RevealSection className="text-center mb-14">
+          <div className="eyebrow mb-3">Why Choose Us</div>
+          <h2 className="heading-section mb-4">The AudioVisual Nepal Difference</h2>
+          <p className="text-[17px] max-w-[480px] mx-auto leading-relaxed" style={{ color: 'var(--text-secondary)' }}>
+            500+ completed projects and counting — here&apos;s why customers trust us.
+          </p>
+        </RevealSection>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-0.5 rounded-2xl overflow-hidden">
+        <StaggerReveal className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4" stagger={0.07}>
           {reasons.map((r, i) => (
             <div
               key={i}
-              className="bg-[#F5F5F7] hover:bg-[#EBEBF0] px-12 py-14 transition-colors duration-300 reveal"
-              style={{
-                borderRadius:
-                  i === 0 ? '20px 0 0 0' :
-                  i === 1 ? '0 20px 0 0' :
-                  i === 2 ? '0 0 0 20px' :
-                  '0 0 20px 0',
-              }}
+              className="bg-white rounded-[var(--radius-xl)] p-7 border transition-all duration-300 hover:shadow-[var(--shadow-md)] hover:-translate-y-0.5"
+              style={{ border: '1px solid var(--border-default)' }}
             >
               <div
-                className="font-display font-extrabold text-[72px] leading-none mb-3 tracking-[-0.04em]"
-                style={{ color: 'rgba(0,113,227,0.12)' }}
+                className="w-10 h-10 rounded-xl flex items-center justify-center mb-5 text-[var(--text-brand)] font-bold text-[18px]"
+                style={{ background: 'var(--brand-dim)' }}
               >
-                {r.num}
+                {r.icon}
               </div>
-              <h3 className="font-display font-bold text-2xl mb-3 text-[#111]">{r.title}</h3>
-              <p className="text-[16px] text-[#6E6E73] leading-[1.7]">{r.desc}</p>
+              <h3 className="font-display font-bold text-[16px] mb-2 text-[var(--text-primary)]">{r.title}</h3>
+              <p className="text-[14px] leading-relaxed" style={{ color: 'var(--text-secondary)' }}>{r.desc}</p>
             </div>
           ))}
-        </div>
+        </StaggerReveal>
       </div>
     </section>
   )
