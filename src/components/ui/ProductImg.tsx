@@ -12,8 +12,9 @@ interface ProductImgProps {
 }
 
 /**
- * Client component — swaps to a branded inline SVG fallback via React state
- * when the external CDN image fails (hotlink protection / unavailable).
+ * Shows a branded placeholder immediately; swaps to the real image only if
+ * it loads successfully. This avoids any flash of broken-image browser UI,
+ * since brand CDNs often block hotlink requests from external domains.
  */
 export function ProductImg({
   src,
@@ -23,52 +24,60 @@ export function ProductImg({
   brandColor = '#0071E3',
   brandName = '',
 }: ProductImgProps) {
-  const [failed, setFailed] = useState(false)
+  const [imageLoaded, setImageLoaded] = useState(false)
+  const label = brandName || alt.slice(0, 14)
 
-  if (failed) {
-    const label = brandName || alt.slice(0, 14)
-    return (
+  return (
+    <div style={{ position: 'relative', width: '100%', height: '100%' }}>
+      {/* Branded placeholder — always visible until image loads */}
       <div
         style={{
-          ...style,
+          position: 'absolute',
+          inset: 0,
           display: 'flex',
           flexDirection: 'column',
           alignItems: 'center',
           justifyContent: 'center',
-          background: `${brandColor}12`,
-          borderRadius: 12,
-          gap: 10,
+          gap: 12,
+          opacity: imageLoaded ? 0 : 1,
+          transition: 'opacity 0.3s ease',
+          pointerEvents: 'none',
         }}
-        className={className}
       >
         {/* Speaker icon */}
-        <svg width="56" height="56" viewBox="0 0 56 56" fill="none">
-          <rect width="56" height="56" rx="14" fill={`${brandColor}20`} />
-          <path d="M20 24L28 18v20l-8-6H14v-8h6z" fill={brandColor} opacity="0.7" />
-          <path d="M32 22c2.5 2 4 4.5 4 6s-1.5 4-4 6" stroke={brandColor} strokeWidth="2.5" strokeLinecap="round" fill="none" opacity="0.8" />
-          <path d="M35 18c4 3 6.5 6 6.5 10s-2.5 7-6.5 10" stroke={brandColor} strokeWidth="2" strokeLinecap="round" fill="none" opacity="0.5" />
+        <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
+          <rect width="60" height="60" rx="16" fill={`${brandColor}20`} />
+          <path d="M21 26L30 20v20l-9-6H15v-8h6z" fill={brandColor} opacity="0.6" />
+          <path d="M34 24c2.8 2.2 4.5 5 4.5 6.5S36.8 35 34 37" stroke={brandColor} strokeWidth="2.5" strokeLinecap="round" fill="none" opacity="0.75" />
+          <path d="M37 20c5 3.5 7.5 6.8 7.5 10.5S42 37 37 40" stroke={brandColor} strokeWidth="2" strokeLinecap="round" fill="none" opacity="0.45" />
         </svg>
         <span style={{
           fontFamily: 'Manrope, system-ui, sans-serif',
           fontWeight: 900,
-          fontSize: 16,
+          fontSize: 15,
+          letterSpacing: '0.06em',
           color: brandColor,
-          letterSpacing: '0.05em',
         }}>
           {label}
         </span>
       </div>
-    )
-  }
 
-  return (
-    // eslint-disable-next-line @next/next/no-img-element
-    <img
-      src={src}
-      alt={alt}
-      style={style}
-      className={className}
-      onError={() => setFailed(true)}
-    />
+      {/* Real image — fades in if it loads */}
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img
+        src={src}
+        alt={alt}
+        style={{
+          ...style,
+          position: 'absolute',
+          inset: 0,
+          opacity: imageLoaded ? 1 : 0,
+          transition: 'opacity 0.3s ease',
+        }}
+        className={className}
+        onLoad={() => setImageLoaded(true)}
+        onError={() => { /* do nothing — placeholder stays visible */ }}
+      />
+    </div>
   )
 }
