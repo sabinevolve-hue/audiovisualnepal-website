@@ -24,7 +24,7 @@ export function AnimatedText({
   const ref = useRef<HTMLDivElement>(null)
   const isInView = useInView(ref, { once, margin: '-60px' })
 
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+
   const Tag = (motion as any)[el]
 
   if (variant === 'fade') {
