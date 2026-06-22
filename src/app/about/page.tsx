@@ -118,26 +118,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Team */}
-      <section style={{ padding: '80px 24px', background: '#FFFFFF' }}>
-        <div style={{ maxWidth: 1100, margin: '0 auto' }}>
-          <h2 style={{ fontFamily: 'Manrope, sans-serif', fontSize: 'clamp(28px,4vw,40px)', fontWeight: 800, color: '#1D1D1F', letterSpacing: '-0.03em', marginBottom: 48, textAlign: 'center' }}>The Team</h2>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(240px, 1fr))', gap: 20 }}>
-            {TEAM.map(member => (
-              <div key={member.name} style={{ background: '#F5F5F7', borderRadius: 20, padding: 28, border: '1px solid #E8E8ED' }}>
-                <div style={{ width: 56, height: 56, borderRadius: '50%', background: '#0071E3', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 24, marginBottom: 16 }}>
-                  👤
-                </div>
-                <div style={{ fontFamily: 'Manrope, sans-serif', fontSize: 17, fontWeight: 700, color: '#1D1D1F', marginBottom: 4 }}>{member.name}</div>
-                <div style={{ fontSize: 12, fontWeight: 600, color: '#0071E3', textTransform: 'uppercase', letterSpacing: '0.06em', marginBottom: 12 }}>{member.role}</div>
-                <p style={{ fontSize: 14, color: '#6E6E73', lineHeight: 1.6, margin: 0 }}>{member.bio}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* CTA */}
+{/* Team section hidden — not shown publicly */}
       <section style={{ padding: '80px 24px', background: '#1D1D1F', textAlign: 'center' }}>
         <h2 style={{ fontFamily: 'Manrope, sans-serif', fontSize: 'clamp(28px,4vw,40px)', fontWeight: 800, color: '#FFFFFF', marginBottom: 16, letterSpacing: '-0.03em' }}>
           Let's Work Together
