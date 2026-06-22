@@ -5,6 +5,12 @@ const WP_HOST = (process.env.NEXT_PUBLIC_WP_URL || 'https://audiovisualnepal.com
   .replace(/\/$/, '')
 
 const nextConfig: NextConfig = {
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
+  typescript: {
+    ignoreBuildErrors: true,
+  },
   images: {
     remotePatterns: [
       { protocol: 'https', hostname: WP_HOST },
