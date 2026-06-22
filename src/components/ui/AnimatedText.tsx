@@ -1,8 +1,10 @@
 'use client'
 
-import React, { useRef } from 'react'
-import { motion, useInView } from 'framer-motion'
-import { wordRevealContainer, wordRevealItem, charRevealContainer, charRevealItem } from '@/lib/animations'
+import React from 'react'
+import { motion } from 'framer-motion'
+
+// Word/char animations replaced with instant rendering — scroll-triggered opacity:0
+// caused text to appear invisible until viewport threshold was met.
 
 interface AnimatedTextProps {
   text: string
@@ -13,66 +15,9 @@ interface AnimatedTextProps {
   once?: boolean
 }
 
-export function AnimatedText({
-  text,
-  el = 'p',
-  className = '',
-  variant = 'words',
-  delay = 0,
-  once = true,
-}: AnimatedTextProps) {
-  const ref = useRef<HTMLDivElement>(null)
-  const isInView = useInView(ref, { once, margin: '-60px' })
-
-
-  const Tag = (motion as any)[el]
-
-  if (variant === 'fade') {
-    return (
-      <Tag
-        ref={ref}
-        className={className}
-        initial={{ opacity: 0, y: 18 }}
-        animate={isInView ? { opacity: 1, y: 0 } : {}}
-        transition={{ duration: 0.7, delay, ease: [0.25, 0.46, 0.45, 0.94] }}
-      >
-        {text}
-      </Tag>
-    )
-  }
-
-  const units = variant === 'words' ? text.split(' ') : text.split('')
-  const container = variant === 'words' ? wordRevealContainer : charRevealContainer
-  const item = variant === 'words' ? wordRevealItem : charRevealItem
-
-  const containerAnimate = container.animate && typeof container.animate === 'object' && !Array.isArray(container.animate)
-    ? container.animate
-    : {}
-
-  const baseTransition = (containerAnimate as { transition?: Record<string, unknown> }).transition ?? {}
-
-  return (
-    <Tag
-      ref={ref}
-      className={className}
-      style={{ display: 'flex', flexWrap: 'wrap', gap: variant === 'words' ? '0.28em' : '0' }}
-      variants={{
-        ...container,
-        animate: {
-          ...containerAnimate,
-          transition: { ...baseTransition, delayChildren: delay },
-        },
-      }}
-      initial="initial"
-      animate={isInView ? 'animate' : 'initial'}
-    >
-      {units.map((unit, i) => (
-        <motion.span key={i} variants={item} style={{ display: 'inline-block' }}>
-          {unit}
-        </motion.span>
-      ))}
-    </Tag>
-  )
+export function AnimatedText({ text, el = 'p', className = '' }: AnimatedTextProps) {
+  const Tag = el as keyof JSX.IntrinsicElements
+  return <Tag className={className}>{text}</Tag>
 }
 
 // ── Typewriter ────────────────────────────────────────────────────────────────
@@ -90,8 +35,8 @@ export function Typewriter({
   interval = 2800,
 }: TypewriterProps) {
   const [index, setIndex] = React.useState(0)
-  const [displayed, setDisplayed] = React.useState('')
-  const [phase, setPhase] = React.useState<'typing' | 'waiting' | 'deleting'>('typing')
+  const [displayed, setDisplayed] = React.useState(words[0] || '')
+  const [phase, setPhase] = React.useState<'typing' | 'waiting' | 'deleting'>('waiting')
 
   React.useEffect(() => {
     const current = words[index]
@@ -104,7 +49,7 @@ export function Typewriter({
         timeout = setTimeout(() => setPhase('waiting'), interval)
       }
     } else if (phase === 'waiting') {
-      setPhase('deleting')
+      timeout = setTimeout(() => setPhase('deleting'), interval)
     } else if (phase === 'deleting') {
       if (displayed.length > 0) {
         timeout = setTimeout(() => setDisplayed(displayed.slice(0, -1)), 35)

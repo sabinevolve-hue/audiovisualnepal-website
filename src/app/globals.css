@@ -15,7 +15,7 @@
 
   /* Backgrounds */
   --bg-base:         #FFFFFF;
-  --bg-subtle:       #F5F5F7;
+  --bg-subtle:       #F2F2F5;
   --bg-muted:        #FAFAFA;
 
   /* Surfaces */
@@ -25,15 +25,15 @@
   --surface-3:       #E0E0E2;
 
   /* Borders */
-  --border-subtle:   rgba(0,0,0,0.06);
-  --border-default:  rgba(0,0,0,0.10);
+  --border-subtle:   rgba(0,0,0,0.09);
+  --border-default:  rgba(0,0,0,0.13);
   --border-strong:   rgba(0,0,0,0.18);
   --border-brand:    rgba(0,113,227,0.25);
 
   /* Text */
   --text-primary:    #1D1D1F;
-  --text-secondary:  #6E6E73;
-  --text-tertiary:   #AEAEB2;
+  --text-secondary:  #48484A;
+  --text-tertiary:   #8E8E93;
   --text-brand:      #0071E3;
 
   /* Shadows */
@@ -83,7 +83,7 @@
 }
 
 @layer components {
-  .container-site { @apply max-w-[1200px] mx-auto px-6; }
+  .container-site { @apply max-w-[1400px] mx-auto px-8; }
 
   /* Buttons */
   .btn-primary {
@@ -112,7 +112,7 @@
   .btn-sm { @apply px-5 py-2 text-[13px]; }
 
   /* Spacing */
-  .section-padding    { @apply py-24; }
+  .section-padding    { @apply py-20; }
   .section-padding-sm { @apply py-16; }
 
   /* Typography */

@@ -1,7 +1,9 @@
 'use client'
 
-import { motion, useInView } from 'framer-motion'
-import { ReactNode, useRef } from 'react'
+import { ReactNode } from 'react'
+
+// Animations replaced with instant-visible — scroll-triggered opacity:0 caused content
+// to appear grey/broken to customers on first scroll. Content is now always visible.
 
 interface RevealSectionProps {
   children: ReactNode
@@ -11,30 +13,10 @@ interface RevealSectionProps {
   once?: boolean
 }
 
-export function RevealSection({
-  children,
-  className = '',
-  delay = 0,
-  distance = 32,
-  once = true,
-}: RevealSectionProps) {
-  const ref = useRef<HTMLDivElement>(null)
-  const isInView = useInView(ref, { once, margin: '-80px' })
-
-  return (
-    <motion.div
-      ref={ref}
-      className={className}
-      initial={{ opacity: 0, y: distance }}
-      animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: distance }}
-      transition={{ duration: 0.7, delay, ease: [0.25, 0.46, 0.45, 0.94] }}
-    >
-      {children}
-    </motion.div>
-  )
+export function RevealSection({ children, className = '' }: RevealSectionProps) {
+  return <div className={className}>{children}</div>
 }
 
-// Staggered reveal for lists / grids
 interface StaggerRevealProps {
   children: ReactNode[]
   className?: string
@@ -43,41 +25,12 @@ interface StaggerRevealProps {
   once?: boolean
 }
 
-export function StaggerReveal({
-  children,
-  className = '',
-  stagger = 0.1,
-  delay = 0,
-  once = true,
-}: StaggerRevealProps) {
-  const ref = useRef<HTMLDivElement>(null)
-  const isInView = useInView(ref, { once, margin: '-80px' })
-
-  const container = {
-    hidden: {},
-    visible: {
-      transition: { staggerChildren: stagger, delayChildren: delay },
-    },
-  }
-
-  const item = {
-    hidden: { opacity: 0, y: 24 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.65, ease: [0.25, 0.46, 0.45, 0.94] } },
-  }
-
+export function StaggerReveal({ children, className = '' }: StaggerRevealProps) {
   return (
-    <motion.div
-      ref={ref}
-      className={className}
-      variants={container}
-      initial="hidden"
-      animate={isInView ? 'visible' : 'hidden'}
-    >
+    <div className={className}>
       {children.map((child, i) => (
-        <motion.div key={i} variants={item}>
-          {child}
-        </motion.div>
+        <div key={i}>{child}</div>
       ))}
-    </motion.div>
+    </div>
   )
 }
