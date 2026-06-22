@@ -62,7 +62,7 @@ export default function AboutPage() {
               {[
                 { icon: '🎯', title: 'Genuine Only', desc: 'We never compromise on product authenticity. Every item is sourced directly from authorized channels.' },
                 { icon: '🤝', title: 'Long-Term Partners', desc: 'We build relationships, not just installations. Our clients stay with us for maintenance and upgrades.' },
-                { icon: '🏆', title: 'Best-in-Class', desc: 'We only recommend what we'd install ourselves. No overselling, no unnecessary complexity.' },
+                { icon: '🏆', title: 'Best-in-Class', desc: "We only recommend what we'd install ourselves. No overselling, no unnecessary complexity." },
               ].map(v => (
                 <div key={v.title} style={{ display: 'flex', gap: 16, alignItems: 'flex-start' }}>
                   <span style={{ fontSize: 24, lineHeight: 1 }}>{v.icon}</span>
