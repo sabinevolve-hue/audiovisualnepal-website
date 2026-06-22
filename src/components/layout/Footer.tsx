@@ -119,7 +119,7 @@ export default function Footer() {
 
             {/* WhatsApp CTA */}
             <a
-              href={`https://wa.me/${SITE.whatsapp}`}
+              href={SITE.whatsapp}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[13px] font-semibold transition-all hover:scale-105"
@@ -142,9 +142,17 @@ export default function Footer() {
           <p className="text-[13px]" style={{ color: 'var(--text-tertiary)' }}>
             © {new Date().getFullYear()} AudioVisual Nepal. All rights reserved.
           </p>
-          <div className="flex items-center gap-6">
+          <div className="flex items-center gap-6 flex-wrap justify-center">
             <Link href="/privacy-policy" className="text-[13px] transition-colors hover:text-[var(--brand)]" style={{ color: 'var(--text-tertiary)' }}>
               Privacy Policy
+            </Link>
+            <span style={{ color: 'var(--border-default)' }}>|</span>
+            <Link href="/terms" className="text-[13px] transition-colors hover:text-[var(--brand)]" style={{ color: 'var(--text-tertiary)' }}>
+              Terms
+            </Link>
+            <span style={{ color: 'var(--border-default)' }}>|</span>
+            <Link href="/cookie-policy" className="text-[13px] transition-colors hover:text-[var(--brand)]" style={{ color: 'var(--text-tertiary)' }}>
+              Cookie Policy
             </Link>
             <span style={{ color: 'var(--border-default)' }}>|</span>
             <Link href="/sitemap.xml" className="text-[13px] transition-colors hover:text-[var(--brand)]" style={{ color: 'var(--text-tertiary)' }}>

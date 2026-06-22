@@ -39,9 +39,9 @@ async function wpFetch<T>(
   }
 
   if (!res.ok) {
-    // Return empty array/object rather than crashing on 404
-    if (res.status === 404) return (Array.isArray([]) ? [] : {}) as T
-    throw new Error(`WP API ${res.status}: ${endpoint}`)
+    // Return empty fallback for any non-200 to prevent page crashes
+    console.warn(`WP API ${res.status}: ${endpoint}`)
+    return ([] as unknown) as T
   }
 
   return res.json()

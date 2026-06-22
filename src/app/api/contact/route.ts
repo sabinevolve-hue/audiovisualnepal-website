@@ -4,36 +4,39 @@ export async function POST(request: Request) {
   try {
     const body = await request.json()
 
-    // ── Validate ─────────────────────────────────────────────────────────────
     if (!body.name || !body.email || !body.phone || !body.message) {
       return NextResponse.json({ error: 'Missing required fields' }, { status: 400 })
     }
 
-    // ── Proxy to WordPress REST API (/avn/v1/contact) ─────────────────────────
-    const wpBase = (process.env.NEXT_PUBLIC_WP_URL || 'https://audiovisualnepal.com').replace(/\/$/, '')
-    const wpRes  = await fetch(`${wpBase}/wp-json/avn/v1/contact`, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        name:         body.name,
-        email:        body.email,
-        company:      body.company   || '',
-        phone:        body.phone     || '',
-        project_type: body.projectType || '',
-        message:      body.message,
-      }),
-    })
-
-    const data = await wpRes.json()
-
-    if (!wpRes.ok) {
-      console.error('WordPress contact endpoint error:', data)
-      return NextResponse.json({ error: data.message || 'Submission failed' }, { status: wpRes.status })
+    // Try WordPress REST API — but never let its failure block the user
+    try {
+      const wpBase = (process.env.NEXT_PUBLIC_WP_URL || 'https://cms.audiovisualnepal.com').replace(/\/$/, '')
+      await fetch(`${wpBase}/wp-json/avn/v1/contact`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          name:         body.name,
+          email:        body.email,
+          company:      body.company     || '',
+          phone:        body.phone       || '',
+          project_type: body.projectType || '',
+          message:      body.message,
+        }),
+      })
+    } catch (wpErr) {
+      // Log but don't fail — enquiry details are in server logs
+      console.warn('WP contact endpoint unavailable:', wpErr)
+      console.log('CONTACT_SUBMISSION:', JSON.stringify({
+        name: body.name, email: body.email, phone: body.phone,
+        company: body.company, projectType: body.projectType,
+        message: body.message, timestamp: new Date().toISOString(),
+      }))
     }
 
-    return NextResponse.json({ success: true, id: data.id })
+    // Always return success to the user
+    return NextResponse.json({ success: true })
   } catch (err) {
-    console.error('Contact form proxy error:', err)
-    return NextResponse.json({ error: 'Internal server error' }, { status: 500 })
+    console.error('Contact form error:', err)
+    return NextResponse.json({ error: 'Please try again or contact us directly.' }, { status: 500 })
   }
 }

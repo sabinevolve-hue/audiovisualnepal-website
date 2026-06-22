@@ -5,10 +5,10 @@ export const SITE = {
   tagline: "Nepal's Leading Professional Audio Visual Solutions Provider",
   url: 'https://audiovisualnepal.com',
   phone: '+977 9762109538',
-  phoneRaw: '9779762109538',
+  phoneRaw: '+9779762109538',
   email: 'info@audiovisualnepal.com',
   address: 'Kathmandu, Nepal',
-  whatsapp: 'https://wa.me/9779762109538',
+  whatsapp: 'https://wa.me/+9779762109538',
   social: {
     facebook: 'https://facebook.com/audiovisualnepal',
     instagram: 'https://instagram.com/audiovisualnepal',
