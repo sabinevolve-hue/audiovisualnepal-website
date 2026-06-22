@@ -8,6 +8,8 @@ import { PRODUCTS_BY_CATEGORY } from '@/data/products'
 
 export const revalidate = 3600
 
+const BRAND_COLORS_MAP: Record<string,string> = { dsppa:'#0071E3', itc:'#E74C3C', shure:'#CC0000', jbl:'#F39C12', bose:'#1D2D44', yamaha:'#27AE60', toa:'#7B2FBE', sennheiser:'#1A6EBF' }
+
 type Props = { params: Promise<{ category: string }>; searchParams: Promise<{ page?: string; search?: string }> }
 
 // Build a static category map from constants as fallback
@@ -183,7 +185,7 @@ export default async function ProductCategoryPage({ params, searchParams }: Prop
                     style={{ background: 'var(--surface-1)', border: '1px solid var(--border-default)', textDecoration: 'none' }}>
                     <div className="relative h-48 flex items-center justify-center"
                       style={{ background: `linear-gradient(135deg, rgba(0,113,227,0.12), rgba(0,113,227,0.04))` }}>
-                      <ProductImg src={product.imageUrl} alt={product.name} style={{ width: '65%', height: '85%', objectFit: 'contain' }} />
+                      <ProductImg src={product.imageUrl} alt={product.name} style={{ width: '65%', height: '85%', objectFit: 'contain' }} brandColor={BRAND_COLORS_MAP[product.brandSlug]} brandName={product.brand} />
                       {product.badge && (
                         <span className="absolute top-3 left-3 px-2 py-0.5 rounded-full text-[10px] font-bold text-white"
                           style={{ background: product.badge === 'Best Seller' ? '#FF9500' : product.badge === 'New' ? '#34C759' : '#0071E3' }}>

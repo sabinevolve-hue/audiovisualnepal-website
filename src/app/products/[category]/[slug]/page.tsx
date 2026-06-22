@@ -76,7 +76,7 @@ export default async function ProductDetailPage({ params }: Props) {
                 </div>
               )}
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <ProductImg src={product.imageUrl} alt={product.name} style={{ width: '75%', height: '75%', objectFit: 'contain' }} />
+              <ProductImg src={product.imageUrl} alt={product.name} style={{ width: '75%', height: '75%', objectFit: 'contain' }} brandColor={brandColor} brandName={BRAND_LOGOS[product.brandSlug] || product.brand} />
             </div>
 
             {/* Hero Spec Cards */}
@@ -217,7 +217,7 @@ export default async function ProductDetailPage({ params }: Props) {
                       <div style={{ height: 180, background: `linear-gradient(135deg, ${rColor}15, ${rColor}05)`, display: 'flex', alignItems: 'center', justifyContent: 'center', position: 'relative' }}>
                         <div style={{ position: 'absolute', top: 12, right: 12, fontSize: 11, fontWeight: 900, color: rColor, letterSpacing: '0.06em', fontFamily: 'Manrope, sans-serif' }}>{BRAND_LOGOS[rp.brandSlug] || rp.brand}</div>
                         {/* eslint-disable-next-line @next/next/no-img-element */}
-                        <ProductImg src={rp.imageUrl} alt={rp.name} style={{ width: '60%', height: '80%', objectFit: 'contain' }} />
+                        <ProductImg src={rp.imageUrl} alt={rp.name} style={{ width: '60%', height: '80%', objectFit: 'contain' }} brandColor={rColor} brandName={BRAND_LOGOS[rp.brandSlug] || rp.brand} />
                       </div>
                       <div style={{ padding: 20 }}>
                         <div style={{ fontFamily: 'Manrope, sans-serif', fontWeight: 700, fontSize: 15, color: '#111111', marginBottom: 4 }}>{rp.name}</div>

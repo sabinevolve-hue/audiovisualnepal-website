@@ -218,7 +218,7 @@ export default async function BrandPage({ params }: Props) {
                       style={{ background: 'var(--surface-1)', border: '1px solid var(--border-subtle)', textDecoration: 'none' }}>
                       <div className="h-40 flex items-center justify-center"
                         style={{ background: `linear-gradient(135deg, ${brand.color}18, ${brand.color}08)` }}>
-                        <ProductImg src={product.imageUrl} alt={product.name} style={{ width: '60%', height: '85%', objectFit: 'contain' }} />
+                        <ProductImg src={product.imageUrl} alt={product.name} style={{ width: '60%', height: '85%', objectFit: 'contain' }} brandColor={brand.color} brandName={brand.name} />
                       </div>
                       <div className="p-4">
                         {product.badge && (
