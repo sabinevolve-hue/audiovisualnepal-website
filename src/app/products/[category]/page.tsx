@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { ChevronRight, Search, Phone } from 'lucide-react'
 import { getProducts, getProductCategories } from '@/lib/wordpress'
 import { PRODUCT_CATEGORIES, SITE } from '@/lib/constants'
+import { PRODUCTS_BY_CATEGORY } from '@/data/products'
 
 export const revalidate = 3600
 
@@ -51,7 +52,7 @@ export default async function ProductCategoryPage({ params, searchParams }: Prop
     )
   }
 
-  // Try to load real products from CMS — gracefully falls back to empty
+  // Try to load real products from CMS — gracefully falls back to static data
   let products: Awaited<ReturnType<typeof getProducts>> = []
   let cmsCategories: Awaited<ReturnType<typeof getProductCategories>> = []
   try {
@@ -60,8 +61,12 @@ export default async function ProductCategoryPage({ params, searchParams }: Prop
       getProducts({ categorySlug: category, page, perPage: 12, search }),
     ])
   } catch {
-    // CMS unavailable — show enquiry UI below
+    // CMS unavailable — use static data
   }
+
+  // Use static product catalog when CMS is empty
+  const staticProducts = PRODUCTS_BY_CATEGORY[category] || []
+  const useStatic = products.length === 0 && staticProducts.length > 0
 
   // Navigation: use static list, merge with any live CMS data
   const navCats = cmsCategories.length > 0
@@ -167,8 +172,46 @@ export default async function ProductCategoryPage({ params, searchParams }: Prop
                 </div>
               )}
             </>
+          ) : useStatic ? (
+            /* Static Product Grid */
+            <div>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
+                {staticProducts.map(product => (
+                  <a key={product.slug} href={`/products/${product.category}/${product.slug}`}
+                    className="group block rounded-2xl overflow-hidden border transition-all duration-300 hover:-translate-y-1.5"
+                    style={{ background: 'var(--surface-1)', border: '1px solid var(--border-default)', textDecoration: 'none' }}>
+                    <div className="relative h-48 flex items-center justify-center"
+                      style={{ background: `linear-gradient(135deg, rgba(0,113,227,0.12), rgba(0,113,227,0.04))` }}>
+                      <img src={product.imageUrl} alt={product.name}
+                        style={{ width: '65%', height: '85%', objectFit: 'contain' }}
+                        onError={(e) => { (e.target as HTMLImageElement).style.opacity = '0' }} />
+                      {product.badge && (
+                        <span className="absolute top-3 left-3 px-2 py-0.5 rounded-full text-[10px] font-bold text-white"
+                          style={{ background: product.badge === 'Best Seller' ? '#FF9500' : product.badge === 'New' ? '#34C759' : '#0071E3' }}>
+                          {product.badge}
+                        </span>
+                      )}
+                    </div>
+                    <div className="p-4">
+                      <div className="text-[11px] font-bold uppercase tracking-[0.08em] mb-1.5" style={{ color: 'var(--text-brand)' }}>{product.brand}</div>
+                      <h2 className="font-bold text-[15px] text-white mb-1 leading-snug">{product.name}</h2>
+                      <div className="text-[12px] mb-3" style={{ color: 'var(--text-tertiary)' }}>{product.subcategory}</div>
+                      {product.specs.filter(s => s.highlight).slice(0, 2).map(spec => (
+                        <span key={spec.label} className="inline-block mr-1.5 mb-1.5 px-2 py-0.5 rounded-full text-[11px] font-semibold"
+                          style={{ background: 'rgba(0,113,227,0.12)', color: 'var(--text-brand)' }}>
+                          {spec.value}
+                        </span>
+                      ))}
+                      <div className="mt-3 text-[13px] font-semibold" style={{ color: 'var(--text-brand)' }}>
+                        View Details →
+                      </div>
+                    </div>
+                  </a>
+                ))}
+              </div>
+            </div>
           ) : (
-            /* Enquiry CTA — shown when CMS has no products yet */
+            /* Enquiry CTA — shown when no products in CMS or static data */
             <div className="max-w-2xl mx-auto text-center py-16">
               <div className="w-20 h-20 rounded-2xl mx-auto mb-8 flex items-center justify-center text-4xl"
                 style={{ background: 'var(--surface-1)', border: '1px solid var(--border-subtle)' }}>

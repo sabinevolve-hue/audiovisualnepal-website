@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { ChevronRight, ExternalLink, Phone } from 'lucide-react'
 import { SITE } from '@/lib/constants'
+import { PRODUCTS_BY_BRAND } from '@/data/products'
 
 export const revalidate = 86400
 
@@ -120,6 +121,7 @@ export default async function BrandPage({ params }: Props) {
   const brand = BRAND_DATA[slug as BrandSlug]
   if (!brand) notFound()
 
+  const brandProducts = PRODUCTS_BY_BRAND[slug] || []
   const otherBrands = Object.entries(BRAND_DATA).filter(([s]) => s !== slug)
 
   return (
@@ -203,6 +205,48 @@ export default async function BrandPage({ params }: Props) {
                 ))}
               </div>
             </div>
+
+            {/* Product Grid */}
+            {brandProducts.length > 0 && (
+              <div>
+                <h2 className="text-[24px] font-bold text-white mb-6">Featured Products</h2>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  {brandProducts.map(product => (
+                    <a key={product.slug} href={`/products/${product.category}/${product.slug}`}
+                      className="block rounded-2xl overflow-hidden transition-all hover:-translate-y-1 hover:shadow-xl"
+                      style={{ background: 'var(--surface-1)', border: '1px solid var(--border-subtle)', textDecoration: 'none' }}>
+                      <div className="h-40 flex items-center justify-center"
+                        style={{ background: `linear-gradient(135deg, ${brand.color}18, ${brand.color}08)` }}>
+                        <img src={product.imageUrl} alt={product.name}
+                          style={{ width: '60%', height: '85%', objectFit: 'contain' }}
+                          onError={(e) => { (e.target as HTMLImageElement).style.opacity = '0' }} />
+                      </div>
+                      <div className="p-4">
+                        {product.badge && (
+                          <span className="inline-block px-2 py-0.5 rounded-full text-[10px] font-bold mb-2"
+                            style={{ background: `${brand.color}25`, color: brand.color }}>
+                            {product.badge}
+                          </span>
+                        )}
+                        <div className="text-[15px] font-bold text-white mb-1">{product.name}</div>
+                        <div className="text-[12px] mb-3" style={{ color: 'var(--text-tertiary)' }}>{product.subcategory}</div>
+                        <div className="text-[13px] leading-relaxed line-clamp-2" style={{ color: 'var(--text-secondary)' }}>{product.tagline}</div>
+                        {product.specs.filter(s => s.highlight).slice(0,2).length > 0 && (
+                          <div className="flex gap-2 mt-3 flex-wrap">
+                            {product.specs.filter(s => s.highlight).slice(0,2).map(spec => (
+                              <span key={spec.label} className="px-2 py-1 rounded-lg text-[11px] font-semibold"
+                                style={{ background: `${brand.color}15`, color: brand.color }}>
+                                {spec.value}
+                              </span>
+                            ))}
+                          </div>
+                        )}
+                      </div>
+                    </a>
+                  ))}
+                </div>
+              </div>
+            )}
           </div>
 
           {/* Sidebar */}
