@@ -1,7 +1,7 @@
 'use client'
 
+import React, { useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
-import { useRef } from 'react'
 import { wordRevealContainer, wordRevealItem, charRevealContainer, charRevealItem } from '@/lib/animations'
 
 interface AnimatedTextProps {
@@ -21,10 +21,11 @@ export function AnimatedText({
   delay = 0,
   once = true,
 }: AnimatedTextProps) {
-  const ref = useRef<HTMLElement>(null)
+  const ref = useRef<HTMLDivElement>(null)
   const isInView = useInView(ref, { once, margin: '-60px' })
 
-  const Tag = motion[el] as React.ElementType
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const Tag = (motion as any)[el]
 
   if (variant === 'fade') {
     return (
@@ -44,12 +45,24 @@ export function AnimatedText({
   const container = variant === 'words' ? wordRevealContainer : charRevealContainer
   const item = variant === 'words' ? wordRevealItem : charRevealItem
 
+  const containerAnimate = container.animate && typeof container.animate === 'object' && !Array.isArray(container.animate)
+    ? container.animate
+    : {}
+
+  const baseTransition = (containerAnimate as { transition?: Record<string, unknown> }).transition ?? {}
+
   return (
     <Tag
-      ref={ref as React.RefObject<HTMLParagraphElement>}
+      ref={ref}
       className={className}
       style={{ display: 'flex', flexWrap: 'wrap', gap: variant === 'words' ? '0.28em' : '0' }}
-      variants={{ ...container, animate: { ...container.animate, transition: { ...(container.animate as { transition?: object }).transition, delayChildren: delay } } }}
+      variants={{
+        ...container,
+        animate: {
+          ...containerAnimate,
+          transition: { ...baseTransition, delayChildren: delay },
+        },
+      }}
       initial="initial"
       animate={isInView ? 'animate' : 'initial'}
     >
@@ -116,5 +129,3 @@ export function Typewriter({
     </span>
   )
 }
-
-import React from 'react'
