@@ -4,7 +4,7 @@ import Link from 'next/link'
 export const revalidate = 3600
 
 export const metadata: Metadata = {
-  title: 'About — AudioVisual Nepal | Nepal's Leading AV Company',
+  title: "About — AudioVisual Nepal | Nepal's Leading AV Company",
   description: 'AudioVisual Nepal has been delivering professional audio visual solutions across Nepal since 2010. Learn about our team, mission, and values.',
 }
 
@@ -17,11 +17,11 @@ const TEAM = [
 
 const MILESTONES = [
   { year: '2010', event: 'Founded in Kathmandu with a focus on professional audio systems.' },
-  { year: '2013', event: 'Became authorized distributor for DSPPA — Nepal's first PA specialist.' },
+  { year: '2013', event: "Became authorized distributor for DSPPA — Nepal's first PA specialist." },
   { year: '2016', event: 'Expanded into video conferencing with Tenveo and Jabra.' },
   { year: '2019', event: 'Crossed 100 completed projects across 30+ districts.' },
   { year: '2022', event: 'Added IP network audio, control systems, and smart room solutions.' },
-  { year: '2024', event: 'Crossed 300+ projects. Nepal's most trusted AV solutions company.' },
+  { year: '2024', event: "Crossed 300+ projects. Nepal's most trusted AV solutions company." },
 ]
 
 export default function AboutPage() {
