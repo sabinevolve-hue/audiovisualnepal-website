@@ -4,20 +4,21 @@ import Link from 'next/link'
 import { BRANDS } from '@/lib/constants'
 import { InfiniteMarquee } from '@/components/ui/InfiniteMarquee'
 
-// Brand colors & styles that make each pill visually distinct
-const BRAND_STYLES: Record<string, { color: string; bg: string; border: string; weight: string }> = {
-  'DSPPA':      { color: '#0071E3', bg: '#EBF4FF', border: '#C0DCFF', weight: '900' },
-  'ITC':        { color: '#CC2200', bg: '#FFF0EE', border: '#FFCCC4', weight: '900' },
-  'Shure':      { color: '#B30000', bg: '#FFF0F0', border: '#FFC5C5', weight: '800' },
-  'JBL':        { color: '#CC6600', bg: '#FFF8EC', border: '#FFD999', weight: '900' },
-  'Bose':       { color: '#1D2D44', bg: '#F0F2F5', border: '#C5CDD8', weight: '800' },
-  'Yamaha':     { color: '#1A7A3C', bg: '#EDFAF3', border: '#B3E8CA', weight: '800' },
-  'TOA':        { color: '#6B1FA0', bg: '#F6EEFF', border: '#DDB8FF', weight: '800' },
-  'Sennheiser': { color: '#0F5FA0', bg: '#EBF3FF', border: '#BEDAFF', weight: '700' },
+// Official brand logo image URLs (SVG/PNG from brand press kits or Wikipedia commons)
+const BRAND_LOGOS: Record<string, { logo: string; color: string; bg: string; border: string }> = {
+  'DSPPA':      { logo: 'https://www.dsppatech.com/static/images/logo.png',                                                                 color: '#0071E3', bg: 'rgba(0,113,227,0.08)',    border: 'rgba(0,113,227,0.18)' },
+  'ITC':        { logo: 'https://www.itc-pub.com/images/logo.png',                                                                          color: '#CC2200', bg: 'rgba(204,34,0,0.08)',     border: 'rgba(204,34,0,0.18)' },
+  'Shure':      { logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Shure_logo.svg/320px-Shure_logo.svg.png',               color: '#B30000', bg: 'rgba(179,0,0,0.08)',      border: 'rgba(179,0,0,0.18)' },
+  'JBL':        { logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/JBL_logo.svg/320px-JBL_logo.svg.png',                  color: '#FF6B00', bg: 'rgba(255,107,0,0.08)',    border: 'rgba(255,107,0,0.18)' },
+  'Bose':       { logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Bose_logo.svg/320px-Bose_logo.svg.png',                color: '#E8E8E8', bg: 'rgba(232,232,232,0.06)',   border: 'rgba(232,232,232,0.15)' },
+  'Yamaha':     { logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Yamaha_logo.svg/320px-Yamaha_logo.svg.png',            color: '#1A7A3C', bg: 'rgba(26,122,60,0.08)',     border: 'rgba(26,122,60,0.18)' },
+  'TOA':        { logo: 'https://www.toa.com.sg/wp-content/themes/toa/img/toa-logo-white.png',                                             color: '#A855F7', bg: 'rgba(168,85,247,0.08)',   border: 'rgba(168,85,247,0.18)' },
+  'Sennheiser': { logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Sennheiser_logo.svg/320px-Sennheiser_logo.svg.png',   color: '#60A5FA', bg: 'rgba(96,165,250,0.08)',   border: 'rgba(96,165,250,0.18)' },
 }
 
-function BrandPill({ brand, large = false }: { brand: typeof BRANDS[number]; large?: boolean }) {
-  const style = BRAND_STYLES[brand.name] || { color: '#333', bg: '#F5F5F7', border: '#E0E0E5', weight: '700' }
+function BrandCard({ brand, large = false }: { brand: typeof BRANDS[number]; large?: boolean }) {
+  const style = BRAND_LOGOS[brand.name] || { logo: '', color: '#94A3B8', bg: 'rgba(255,255,255,0.05)', border: 'rgba(255,255,255,0.1)' }
+
   return (
     <Link
       href={brand.href}
@@ -27,37 +28,43 @@ function BrandPill({ brand, large = false }: { brand: typeof BRANDS[number]; lar
         flexDirection: 'column',
         alignItems: 'center',
         justifyContent: 'center',
-        padding: large ? '14px 32px' : '10px 24px',
+        gap: 10,
+        padding: large ? '18px 36px' : '14px 28px',
         borderRadius: 16,
         background: style.bg,
-        border: `1.5px solid ${style.border}`,
-        minWidth: large ? 160 : 130,
+        border: `1px solid ${style.border}`,
+        minWidth: large ? 180 : 150,
+        minHeight: large ? 90 : 76,
         textDecoration: 'none',
         transition: 'all 0.2s',
-        gap: 3,
       }}
       onMouseEnter={e => {
         const el = e.currentTarget as HTMLAnchorElement
-        el.style.boxShadow = `0 4px 20px ${style.color}22`
+        el.style.background = `${style.bg.replace('0.08', '0.15').replace('0.06', '0.12')}`
         el.style.borderColor = style.color
+        el.style.boxShadow = `0 4px 20px ${style.color}20, 0 0 0 1px ${style.color}30`
+        el.style.transform = 'translateY(-2px)'
       }}
       onMouseLeave={e => {
         const el = e.currentTarget as HTMLAnchorElement
-        el.style.boxShadow = 'none'
+        el.style.background = style.bg
         el.style.borderColor = style.border
+        el.style.boxShadow = 'none'
+        el.style.transform = 'none'
       }}
     >
+      {/* Brand name as styled text (logo fallback) */}
       <span style={{
-        fontFamily: 'Manrope, sans-serif',
-        fontWeight: style.weight,
-        fontSize: large ? 20 : 15,
+        fontFamily: 'var(--font-display), Manrope, sans-serif',
+        fontWeight: 900,
+        fontSize: large ? 22 : 17,
         color: style.color,
         letterSpacing: brand.name === 'Sennheiser' ? '-0.01em' : '0.04em',
         lineHeight: 1,
       }}>
         {brand.name}
       </span>
-      <span style={{ fontSize: 10, color: '#8E8E93', fontWeight: 500, marginTop: 2 }}>
+      <span style={{ fontSize: 10, color: 'rgba(148,163,184,0.7)', fontWeight: 500, textTransform: 'uppercase', letterSpacing: '0.06em' }}>
         {brand.category}
       </span>
     </Link>
@@ -66,24 +73,24 @@ function BrandPill({ brand, large = false }: { brand: typeof BRANDS[number]; lar
 
 export default function BrandsSection() {
   return (
-    <section className="py-20 bg-white" style={{ borderTop: '1px solid #EBEBEB' }}>
-      <div className="container-site mb-12 text-center">
-        <div className="eyebrow mb-3">Trusted Partners</div>
-        <h2 className="heading-section mb-4">World-Class Brands</h2>
-        <p className="text-[17px] max-w-[480px] mx-auto leading-relaxed" style={{ color: 'var(--text-secondary)' }}>
+    <section className="py-20" style={{ background: '#060D1A', borderTop: '1px solid rgba(255,255,255,0.05)' }}>
+      <div className="container-site mb-14 text-center">
+        <div style={{ fontSize: 11, fontWeight: 700, letterSpacing: '0.12em', textTransform: 'uppercase', color: '#60A5FA', marginBottom: 12 }}>Trusted Partners</div>
+        <h2 style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(32px,4vw,52px)', fontWeight: 900, letterSpacing: '-0.03em', color: '#FFFFFF', marginBottom: 16 }}>World-Class Brands</h2>
+        <p style={{ fontSize: 17, maxWidth: 480, margin: '0 auto', lineHeight: 1.65, color: '#64748B' }}>
           Authorised distributor for industry-leading manufacturers — every product is genuine with full warranty.
         </p>
       </div>
 
       <InfiniteMarquee speed={28} direction="left" className="mb-3">
         {BRANDS.map((brand) => (
-          <BrandPill key={brand.name} brand={brand} large />
+          <BrandCard key={brand.name} brand={brand} large />
         ))}
       </InfiniteMarquee>
 
       <InfiniteMarquee speed={20} direction="right">
         {[...BRANDS].reverse().map((brand) => (
-          <BrandPill key={brand.name} brand={brand} />
+          <BrandCard key={brand.name} brand={brand} />
         ))}
       </InfiniteMarquee>
     </section>

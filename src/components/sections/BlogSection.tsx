@@ -1,7 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { ArrowRight } from 'lucide-react'
-import { RevealSection, StaggerReveal } from '@/components/ui/RevealSection'
 
 interface BlogPost {
   id: number; slug: string
@@ -10,52 +9,57 @@ interface BlogPost {
 }
 interface BlogSectionProps { posts: BlogPost[]; stripHtml: (h: string) => string }
 
+// Fallback thumbnails for posts without featured images
+const FALLBACK_THUMBS = [
+  'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=600&q=80',
+  'https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&w=600&q=80',
+  'https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?auto=format&fit=crop&w=600&q=80',
+]
+
 export default function BlogSection({ posts, stripHtml }: BlogSectionProps) {
   return (
-    <section className="section-padding bg-white" style={{ borderTop: '1px solid var(--border-subtle)' }}>
+    <section className="section-padding" style={{ background: '#060D1A', borderTop: '1px solid rgba(255,255,255,0.05)' }}>
       <div className="container-site">
-        <RevealSection className="flex flex-col sm:flex-row items-start sm:items-end justify-between gap-6 mb-14">
+        <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'flex-end', justifyContent: 'space-between', gap: 24, marginBottom: 48, flexWrap: 'wrap' }}>
           <div>
-            <div className="eyebrow mb-3">Knowledge Base</div>
-            <h2 className="heading-section">AV Insights &amp; Guides</h2>
+            <div style={{ fontSize: 11, fontWeight: 700, letterSpacing: '0.12em', textTransform: 'uppercase', color: '#60A5FA', marginBottom: 12 }}>Knowledge Base</div>
+            <h2 style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(28px,4vw,44px)', fontWeight: 900, letterSpacing: '-0.03em', color: '#FFFFFF', lineHeight: 1.1 }}>AV Insights &amp; Guides</h2>
           </div>
-          <Link href="/blog" className="flex items-center gap-1.5 text-[14px] font-semibold text-[var(--text-brand)] hover:gap-2.5 transition-all duration-200 flex-shrink-0 pb-1">
+          <Link href="/blog" style={{ display: 'inline-flex', alignItems: 'center', gap: 6, fontSize: 14, fontWeight: 600, color: '#3B82F6', textDecoration: 'none', whiteSpace: 'nowrap' }}>
             View all <ArrowRight size={14} />
           </Link>
-        </RevealSection>
+        </div>
 
-        <StaggerReveal className="grid grid-cols-1 md:grid-cols-3 gap-4" stagger={0.09}>
-          {posts.map((post) => {
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+          {posts.map((post, idx) => {
             const title   = stripHtml(post.title.rendered)
-            const thumb   = post._embedded?.['wp:featuredmedia']?.[0]?.source_url
-            const excerpt = stripHtml(post.excerpt.rendered).slice(0, 100)
+            const thumb   = post._embedded?.['wp:featuredmedia']?.[0]?.source_url || FALLBACK_THUMBS[idx % 3]
+            const excerpt = stripHtml(post.excerpt.rendered).slice(0, 110)
             return (
               <Link
                 key={post.id}
                 href={`/blog/${post.slug}`}
-                className="group block rounded-[var(--radius-xl)] overflow-hidden border bg-white transition-all duration-300 hover:shadow-[var(--shadow-md)] hover:-translate-y-1"
-                style={{ border: '1px solid var(--border-default)' }}
+                style={{ display: 'block', borderRadius: 20, overflow: 'hidden', border: '1px solid rgba(255,255,255,0.07)', background: '#111827', textDecoration: 'none', transition: 'all 0.25s' }}
+                onMouseEnter={e => { const el = e.currentTarget as HTMLAnchorElement; el.style.transform = 'translateY(-3px)'; el.style.boxShadow = '0 12px 40px rgba(0,0,0,0.4)'; el.style.borderColor = 'rgba(59,130,246,0.25)' }}
+                onMouseLeave={e => { const el = e.currentTarget as HTMLAnchorElement; el.style.transform = 'none'; el.style.boxShadow = 'none'; el.style.borderColor = 'rgba(255,255,255,0.07)' }}
               >
-                <div className="relative h-44 overflow-hidden bg-[var(--bg-subtle)]">
-                  {thumb ? (
-                    <Image src={thumb} alt={title} fill className="object-cover transition-transform duration-500 group-hover:scale-[1.03]" />
-                  ) : (
-                    <div className="h-full flex items-center justify-center text-4xl">📰</div>
-                  )}
+                <div style={{ position: 'relative', height: 180, overflow: 'hidden', background: '#1F2937' }}>
+                  <Image src={thumb} alt={title} fill style={{ objectFit: 'cover', transition: 'transform 0.4s ease' }} />
+                  <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(17,24,39,0.6) 0%, transparent 60%)' }} />
                 </div>
-                <div className="p-5">
-                  <h3 className="font-display font-bold text-[16px] text-[var(--text-primary)] mb-2 leading-snug line-clamp-2 group-hover:text-[var(--text-brand)] transition-colors">
+                <div style={{ padding: '20px 22px 22px' }}>
+                  <h3 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 15, color: '#F1F5F9', marginBottom: 8, lineHeight: 1.4, display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical', overflow: 'hidden' }}>
                     {title}
                   </h3>
-                  <p className="text-[13px] leading-relaxed mb-3 line-clamp-2" style={{ color: 'var(--text-secondary)' }}>{excerpt}…</p>
-                  <span className="text-[13px] font-semibold text-[var(--text-brand)] inline-flex items-center gap-1 group-hover:gap-1.5 transition-all duration-200">
+                  <p style={{ fontSize: 13, lineHeight: 1.6, color: '#64748B', marginBottom: 14, display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical', overflow: 'hidden' }}>{excerpt}…</p>
+                  <span style={{ display: 'inline-flex', alignItems: 'center', gap: 4, fontSize: 13, fontWeight: 600, color: '#3B82F6' }}>
                     Read more <ArrowRight size={12} />
                   </span>
                 </div>
               </Link>
             )
           })}
-        </StaggerReveal>
+        </div>
       </div>
     </section>
   )
