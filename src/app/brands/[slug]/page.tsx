@@ -99,6 +99,50 @@ const BRAND_DATA = {
     highlights: ['German Engineering Excellence', 'Broadcast Industry Standard', 'EW Wireless — Global Benchmark', '75+ Years of Innovation'],
     color: '#2980B9',
   },
+  biamp: {
+    name: 'Biamp',
+    tagline: 'Engineered for Every Space',
+    country: 'USA',
+    website: 'https://www.biamp.com',
+    founded: '1976',
+    description: "Biamp is a leading provider of professional AV signal processing and management systems. Their Tesira audio platform and Devio conferencing solutions are the gold standard for enterprise boardrooms, higher education, and large-scale AV installations requiring networked audio over Dante or AVB.",
+    categories: ['DSP Processors', 'Conference Systems', 'Amplifiers', 'Paging Systems', 'Dante Networking'],
+    highlights: ['Tesira Platform Leader', 'Dante & AVB Native', 'Enterprise AV Standard', 'Global Installation Base'],
+    color: '#F59E0B',
+  },
+  extron: {
+    name: 'Extron',
+    tagline: 'AV Control & Distribution Leaders',
+    country: 'USA',
+    website: 'https://www.extron.com',
+    founded: '1983',
+    description: "Extron Electronics is a leading manufacturer of professional AV system integration products including signal switchers, scalers, amplifiers, and control systems. Their XTP and DTP distribution systems and TouchLink Pro touchpanels are deployed in thousands of corporate, education, and government AV systems worldwide.",
+    categories: ['Signal Switchers', 'AV Scalers', 'Control Systems', 'Signal Distribution', 'Room Control Panels'],
+    highlights: ['Industry AV Standard', '40+ Years Engineering', 'TouchLink Pro Control', 'HDMI & HDBaseT Expert'],
+    color: '#10B981',
+  },
+  crestron: {
+    name: 'Crestron',
+    tagline: 'The Home & Office of the Future',
+    country: 'USA',
+    website: 'https://www.crestron.com',
+    founded: '1971',
+    description: "Crestron Electronics is the world's leading manufacturer of advanced control and automation systems. From simple room control to complex enterprise AV distribution, Crestron's DM NVX AV-over-IP, Flex conferencing, and automation platforms power the smart buildings, boardrooms, and command centres of Fortune 500 companies worldwide.",
+    categories: ['AV Control Systems', 'Room Scheduling', 'AV-over-IP', 'Smart Building Automation', 'Digital Media Distribution'],
+    highlights: ['World #1 AV Control', '50+ Years Innovation', 'Fortune 500 Trusted', 'DM NVX AV-over-IP Leader'],
+    color: '#60A5FA',
+  },
+  kramer: {
+    name: 'Kramer',
+    tagline: 'AV Connectivity & Switching',
+    country: 'Israel',
+    website: 'https://www.kramerav.com',
+    founded: '1981',
+    description: "Kramer Electronics is a global leader in AV signal management solutions — HDMI switchers, matrix routers, signal extenders, distribution amplifiers, and AV-over-IP. Kramer's VIA presentation systems and AOCH/XL cables are trusted in education, corporate, and broadcast environments in over 70 countries.",
+    categories: ['HDMI Switchers', 'Matrix Routers', 'Signal Extenders', 'AV-over-IP', 'Wireless Presentation'],
+    highlights: ['40+ Years AV Expertise', 'Deployed in 70+ Countries', 'VIA Collaboration Leader', '4K & HDR Expert'],
+    color: '#F97316',
+  },
 }
 
 type BrandSlug = keyof typeof BRAND_DATA
@@ -112,8 +156,17 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const brand = BRAND_DATA[slug as BrandSlug]
   if (!brand) return { title: 'Brand — AudioVisual Nepal' }
   return {
-    title: `${brand.name} — Authorised Dealer in Nepal | AudioVisual Nepal`,
-    description: `${brand.name} authorised dealer in Nepal. ${brand.description.slice(0, 120)}...`,
+    title: `${brand.name} Authorised Dealer Nepal | AudioVisual Nepal`,
+    description: `${brand.name} authorised dealer in Nepal. ${brand.description.slice(0, 140)}`,
+    alternates: { canonical: `https://audiovisualnepal.com/brands/${slug}` },
+    openGraph: {
+      title: `${brand.name} — Official Distributor in Nepal | AudioVisual Nepal`,
+      description: `${brand.name} authorised dealer in Nepal. ${brand.description.slice(0, 140)}`,
+      url: `https://audiovisualnepal.com/brands/${slug}`,
+      siteName: 'AudioVisual Nepal',
+      images: [{ url: '/og-image.svg', width: 1200, height: 630, alt: `${brand.name} — AudioVisual Nepal` }],
+      type: 'website',
+    },
   }
 }
 

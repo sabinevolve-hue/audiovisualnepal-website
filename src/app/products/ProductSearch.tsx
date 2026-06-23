@@ -1,3 +1,4 @@
+import { CategoryIcon } from '@/lib/icons'
 'use client'
 
 import { useState, useMemo } from 'react'
@@ -53,7 +54,7 @@ export default function ProductSearch({ categories }: { categories: Category[] }
             style={{ textDecoration: 'none', display: 'block', background: 'rgba(255,255,255,0.03)', borderRadius: 20, padding: '28px 24px', border: '1px solid rgba(255,255,255,0.07)', transition: 'all 0.2s' }}
             onMouseEnter={e => { const el = e.currentTarget as HTMLElement; el.style.background = 'rgba(59,130,246,0.08)'; el.style.borderColor = 'rgba(59,130,246,0.3)'; el.style.transform = 'translateY(-2px)' }}
             onMouseLeave={e => { const el = e.currentTarget as HTMLElement; el.style.background = 'rgba(255,255,255,0.03)'; el.style.borderColor = 'rgba(255,255,255,0.07)'; el.style.transform = 'none' }}>
-            <div style={{ fontSize: 36, marginBottom: 16 }}>{cat.icon}</div>
+            <div style={{ marginBottom: 16, color: '#3B82F6', display: 'flex' }}><CategoryIcon name={cat.icon} size={28} /></div>
             <h3 style={{ fontFamily: 'Manrope, sans-serif', fontSize: 17, fontWeight: 700, color: '#FFFFFF', marginBottom: 6 }}>{cat.label}</h3>
             {cat.count ? <p style={{ fontSize: 13, color: '#64748B', marginBottom: 12 }}>{cat.count} products</p> : null}
             <div style={{ fontSize: 13, color: '#3B82F6', fontWeight: 600 }}>Browse →</div>

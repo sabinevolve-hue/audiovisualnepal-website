@@ -1,11 +1,21 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import { CategoryIcon } from '@/lib/icons'
 import { PRODUCT_CATEGORIES } from '@/lib/constants'
 import { ArrowRight } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'Products — AudioVisual Nepal | Professional AV Systems',
   description: 'Browse professional audio visual systems — PA systems, conference equipment, video walls, digital signage, and more.',
+  openGraph: {
+    title: 'Professional AV Products Nepal — Speakers, Amplifiers, Conference Systems',
+    description: 'Browse 35+ categories of professional AV equipment in Nepal. PA systems, ceiling speakers, conference systems, IP network audio, wireless microphones and more.',
+    url: 'https://audiovisualnepal.com/products',
+    siteName: 'AudioVisual Nepal',
+    images: [{ url: '/og-image.svg', width: 1200, height: 630, alt: 'AudioVisual Nepal' }],
+    type: 'website',
+  },
+  alternates: { canonical: 'https://audiovisualnepal.com/products' },
 }
 
 export const revalidate = 3600
@@ -34,7 +44,7 @@ export default function ProductsPage() {
             {PRODUCT_CATEGORIES.map(cat => (
               <Link key={cat.href} href={cat.href} style={{ textDecoration: 'none', display: 'block', background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.07)', borderRadius: 20, padding: '32px', transition: 'all 0.2s' }}>
                 <div style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', marginBottom: 20 }}>
-                  <span style={{ fontSize: 36 }}>{cat.icon}</span>
+                  <span style={{ color: '#3B82F6', display: 'flex' }}><CategoryIcon name={cat.icon} size={28} /></span>
                   <span style={{ width: 32, height: 32, background: 'rgba(59,130,246,0.1)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#3B82F6' }}>
                     <ArrowRight size={14} />
                   </span>

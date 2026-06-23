@@ -6,6 +6,15 @@ import { getPosts, getCategories, stripHtml } from '@/lib/wordpress'
 export const metadata: Metadata = {
   title: 'Blog — AudioVisual Nepal | AV Tips, Guides & Industry News',
   description: 'Expert articles on PA systems, conference setups, IP audio, video conferencing and AV installations across Nepal.',
+  openGraph: {
+    title: 'AV Insights & Guides — AudioVisual Nepal Blog',
+    description: 'Expert guides on PA systems, conference room design, IP audio networks, voice evacuation and professional AV best practices for Nepal.',
+    url: 'https://audiovisualnepal.com/blog',
+    siteName: 'AudioVisual Nepal',
+    images: [{ url: '/og-image.svg', width: 1200, height: 630, alt: 'AudioVisual Nepal' }],
+    type: 'website',
+  },
+  alternates: { canonical: 'https://audiovisualnepal.com/blog' },
 }
 
 export const revalidate = 3600

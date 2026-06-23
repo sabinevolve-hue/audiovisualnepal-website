@@ -1,7 +1,6 @@
 'use client'
 
 import React from 'react'
-import { motion } from 'framer-motion'
 
 // Word/char animations replaced with instant rendering — scroll-triggered opacity:0
 // caused text to appear invisible until viewport threshold was met.
@@ -64,13 +63,17 @@ export function Typewriter({
   return (
     <span className={className}>
       {displayed}
-      <motion.span
-        animate={{ opacity: [1, 0] }}
-        transition={{ duration: 0.5, repeat: Infinity, repeatType: 'reverse' }}
-        style={{ color: cursorColor }}
+      <span
+        style={{
+          color: cursorColor,
+          animation: 'avn-cursor-blink 1s step-start infinite',
+          display: 'inline-block',
+        }}
+        aria-hidden="true"
       >
         |
-      </motion.span>
+        <style>{`@keyframes avn-cursor-blink { 0%,100%{opacity:1} 50%{opacity:0} }`}</style>
+      </span>
     </span>
   )
 }

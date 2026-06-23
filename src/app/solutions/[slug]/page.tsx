@@ -12,7 +12,7 @@ const SOLUTION_DATA: Record<string, {
   projects: { title: string; location: string }[];
 }> = {
   'corporate': {
-    label: 'Corporate Offices', icon: '🏢',
+    label: 'Corporate Offices', icon: (<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>),
     tagline: 'Smart Workplaces. Seamless Collaboration.',
     desc: 'Modern corporate environments demand AV that just works — one-touch meeting rooms, crystal-clear video conferencing, background music, and digital signage that reinforces your brand.',
     systems: [
@@ -29,7 +29,7 @@ const SOLUTION_DATA: Record<string, {
     ],
   },
   'government': {
-    label: 'Government Projects', icon: '🏛️',
+    label: 'Government Projects', icon: (<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8"><path d="M3 22h18M4 9h16M2 9l10-7 10 7M6 9v13M18 9v13M10 13h4v9h-4z"/></svg>),
     tagline: 'Reliable AV for Public Service.',
     desc: 'Government institutions need robust, secure, and maintainable AV systems — from parliament chambers to district offices and public service centers.',
     systems: [
@@ -46,7 +46,7 @@ const SOLUTION_DATA: Record<string, {
     ],
   },
   'education': {
-    label: 'Education', icon: '🎓',
+    label: 'Education', icon: (<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>),
     tagline: 'Learning Spaces That Inspire.',
     desc: 'Schools and universities need AV that enhances learning — from interactive classroom displays to campus-wide PA and auditorium sound systems that fill the room without feedback.',
     systems: [
@@ -63,7 +63,7 @@ const SOLUTION_DATA: Record<string, {
     ],
   },
   'hotels': {
-    label: 'Hotels & Hospitality', icon: '🏨',
+    label: 'Hotels & Hospitality', icon: (<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8"><path d="M3 22V8h18v14M3 8V5h18v3M12 2v3M7 8v3h3V8M14 8v3h3V8M7 15h3v7H7zM14 15h3v7h-3z"/></svg>),
     tagline: 'Create Experiences. Delight Every Guest.',
     desc: 'From intimate restaurants to grand ballrooms, hotels need AV that creates atmosphere, handles events, and keeps guests entertained — with systems that are easy for staff to operate.',
     systems: [
@@ -80,7 +80,7 @@ const SOLUTION_DATA: Record<string, {
     ],
   },
   'hospitals': {
-    label: 'Hospitals', icon: '🏥',
+    label: 'Hospitals', icon: (<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M12 8v8M8 12h8"/></svg>),
     tagline: 'Calm, Clear. Exactly When It Matters.',
     desc: 'Hospitals need AV that communicates clearly in critical moments — emergency PA, patient information displays, and nurse call systems that integrate with clinical workflows.',
     systems: [
@@ -114,7 +114,7 @@ const SOLUTION_DATA: Record<string, {
     ],
   },
   'transportation': {
-    label: 'Transportation', icon: '✈️',
+    label: 'Transportation', icon: (<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8"><path d="M17.8 19.2L16 11l3.5-3.5C21 6 21 4 19.5 2.5S18 1 16.5 2.5L13 6 4.8 6.2C3.2 6.2 1.5 7.4 1.5 9s0 2.8 1.5 3.5L9 12l-2 3.5L5 16.5l1.5 1.5 1.5-1.5 3.5-2 .3 6c.7 1.5 2 2.5 3.5 2.5s2.8-1.5 3-3z"/></svg>),
     tagline: 'Announce Clearly. Inform Instantly.',
     desc: 'Airports, bus parks, and railway stations demand reliable PA with clear intelligibility, FIDS integration, and fail-safe emergency broadcasting.',
     systems: [
@@ -231,7 +231,7 @@ export default async function SolutionPage({ params }: Props) {
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(260px, 1fr))', gap: 14 }}>
             {data.projects.map(proj => (
               <div key={proj.title} style={{ background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.07)', borderRadius: 14, padding: '20px 24px', display: 'flex', alignItems: 'center', gap: 16 }}>
-                <div style={{ width: 40, height: 40, borderRadius: '50%', background: 'rgba(59,130,246,0.15)', border: '1px solid rgba(59,130,246,0.3)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 18, flexShrink: 0 }}>🏗️</div>
+                <div style={{ width: 40, height: 40, borderRadius: '50%', background: 'rgba(59,130,246,0.15)', border: '1px solid rgba(59,130,246,0.3)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0, color: '#3B82F6' }}><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8"><rect x="2" y="7" width="20" height="15" rx="1"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/><line x1="12" y1="12" x2="12" y2="16"/><line x1="10" y1="14" x2="14" y2="14"/></svg></div>
                 <div>
                   <div style={{ fontFamily: 'Manrope, sans-serif', fontSize: 14, fontWeight: 700, color: '#FFFFFF', marginBottom: 2 }}>{proj.title}</div>
                   <div style={{ fontSize: 12, color: '#94A3B8' }}>{proj.location}</div>

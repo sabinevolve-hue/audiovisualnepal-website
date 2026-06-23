@@ -8,6 +8,15 @@ export const revalidate = 3600
 export const metadata: Metadata = {
   title: 'Brands — AudioVisual Nepal | Authorized Distributor',
   description: 'AudioVisual Nepal is the authorized distributor for DSPPA, Tenveo, Shure, Sennheiser, Biamp, Extron, Crestron, Kramer and more across Nepal.',
+  openGraph: {
+    title: 'Authorised AV Brands in Nepal — AudioVisual Nepal Distributor',
+    description: 'Official authorised distributor for DSPPA, ITC, Shure, JBL, Bose, Yamaha, TOA, Sennheiser and more in Nepal. Genuine products, full manufacturer warranty.',
+    url: 'https://audiovisualnepal.com/brands',
+    siteName: 'AudioVisual Nepal',
+    images: [{ url: '/og-image.svg', width: 1200, height: 630, alt: 'AudioVisual Nepal' }],
+    type: 'website',
+  },
+  alternates: { canonical: 'https://audiovisualnepal.com/brands' },
 }
 
 // Brand accent colours for card styling

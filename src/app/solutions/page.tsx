@@ -7,6 +7,15 @@ export const revalidate = 3600
 export const metadata: Metadata = {
   title: 'Solutions — AudioVisual Nepal | AV for Every Industry',
   description: 'Professional AV solutions for corporate offices, government, education, hotels, hospitals, religious venues and more across Nepal.',
+  openGraph: {
+    title: 'AV Solutions for Every Sector — AudioVisual Nepal',
+    description: 'Professional audio visual solutions for corporate offices, government, education, hotels, hospitals, religious venues and transportation hubs across Nepal.',
+    url: 'https://audiovisualnepal.com/solutions',
+    siteName: 'AudioVisual Nepal',
+    images: [{ url: '/og-image.svg', width: 1200, height: 630, alt: 'AudioVisual Nepal' }],
+    type: 'website',
+  },
+  alternates: { canonical: 'https://audiovisualnepal.com/solutions' },
 }
 
 const SOLUTION_DETAILS: Record<string, { desc: string; systems: string[] }> = {

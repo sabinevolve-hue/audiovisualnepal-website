@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from 'react'
 
 function AnimatedStat({ value, suffix, label }: { value: number; suffix: string; label: string }) {
   const ref = useRef<HTMLDivElement>(null)
-  const [displayed, setDisplayed] = useState(0)
+  const [displayed, setDisplayed] = useState(value)  // start at real value for SSR
   const started = useRef(false)
 
   useEffect(() => {
@@ -14,12 +14,13 @@ function AnimatedStat({ value, suffix, label }: { value: number; suffix: string;
       ([entry]) => {
         if (entry.isIntersecting && !started.current) {
           started.current = true
-          const duration = 1800
+          const duration = 1400
+          const startVal = Math.round(value * 0.4)  // start from 40% of target
           const start = performance.now()
           const ease = (t: number) => 1 - Math.pow(1 - t, 3)
           const tick = (now: number) => {
             const p = Math.min((now - start) / duration, 1)
-            setDisplayed(Math.round(ease(p) * value))
+            setDisplayed(Math.round(startVal + ease(p) * (value - startVal)))
             if (p < 1) requestAnimationFrame(tick)
           }
           requestAnimationFrame(tick)

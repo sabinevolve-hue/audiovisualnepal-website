@@ -44,9 +44,6 @@ export const metadata: Metadata = {
     description: DEFAULT_SEO.description,
     images: ['/og-image.svg'],
   },
-  alternates: {
-    canonical: SITE.url,
-  },
   robots: {
     index: true,
     follow: true,
@@ -55,7 +52,7 @@ export const metadata: Metadata = {
 }
 
 export const viewport: Viewport = {
-  themeColor: '#0071E3',
+  themeColor: '#3B82F6',
   width: 'device-width',
   initialScale: 1,
 }
