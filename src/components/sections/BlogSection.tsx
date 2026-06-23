@@ -3,13 +3,14 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { ArrowRight } from 'lucide-react'
+import { stripHtml } from '@/lib/wordpress'
 
 interface BlogPost {
   id: number; slug: string
   title: { rendered: string }; excerpt: { rendered: string }
   _embedded?: { 'wp:featuredmedia'?: Array<{ source_url: string }> }
 }
-interface BlogSectionProps { posts: BlogPost[]; stripHtml: (h: string) => string }
+interface BlogSectionProps { posts: BlogPost[] }
 
 // Fallback thumbnails for posts without featured images
 const FALLBACK_THUMBS = [
@@ -18,7 +19,7 @@ const FALLBACK_THUMBS = [
   'https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?auto=format&fit=crop&w=600&q=80',
 ]
 
-export default function BlogSection({ posts, stripHtml }: BlogSectionProps) {
+export default function BlogSection({ posts }: BlogSectionProps) {
   return (
     <section className="section-padding" style={{ background: '#060D1A', borderTop: '1px solid rgba(255,255,255,0.05)' }}>
       <div className="container-site">

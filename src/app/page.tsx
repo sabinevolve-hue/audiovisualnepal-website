@@ -9,7 +9,7 @@ import FeaturedProjects from '@/components/sections/FeaturedProjects'
 import CTASection from '@/components/sections/CTASection'
 import BlogSection from '@/components/sections/BlogSection'
 import { DEFAULT_SEO, SITE } from '@/lib/constants'
-import { getProjects, getPosts, getBrands, stripHtml } from '@/lib/wordpress'
+import { getProjects, getPosts, getBrands } from '@/lib/wordpress'
 
 export const revalidate = 3600
 
@@ -61,7 +61,7 @@ export default async function HomePage() {
       <BrandsSection />
       <FeaturedProjects />
       <WhySection />
-      {posts.length > 0 && <BlogSection posts={posts} stripHtml={stripHtml} />}
+      {posts.length > 0 && <BlogSection posts={posts} />}
       <CTASection />
     </>
   )
