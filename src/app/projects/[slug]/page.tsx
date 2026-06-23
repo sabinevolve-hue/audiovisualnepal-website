@@ -184,7 +184,7 @@ export default async function ProjectDetailPage({ params }: Props) {
                   <Link
                     key={rel.id}
                     href={`/projects/${rel.slug}`}
-                    className="block rounded-2xl overflow-hidden bg-white transition-all hover:-translate-y-0.5 hover:shadow-[var(--shadow-md)]"
+                    className="block rounded-2xl overflow-hidden transition-all hover:-translate-y-0.5" style={{ background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.08)" }}
                     style={{ border: '1px solid var(--border-default)', textDecoration: 'none' }}
                   >
                     <div className="relative h-44">

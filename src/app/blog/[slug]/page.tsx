@@ -106,7 +106,7 @@ export default async function BlogPostPage({ params }: Props) {
         )}
 
         {/* CTA */}
-        <div style={{ marginTop: 48, background: 'linear-gradient(135deg, #0071E3, #005BB5)', borderRadius: 20, padding: '40px 40px', color: '#FFFFFF', textAlign: 'center' }}>
+        <div style={{ marginTop: 48, background: 'linear-gradient(135deg, #1E3A5F 0%, #0A1628 100%)', borderRadius: 20, padding: '40px 40px', color: '#FFFFFF', textAlign: 'center' }}>
           <h3 style={{ fontFamily: 'Manrope, sans-serif', fontSize: 24, fontWeight: 800, marginBottom: 12 }}>
             Need AV Solutions for Your Project?
           </h3>
@@ -114,7 +114,7 @@ export default async function BlogPostPage({ params }: Props) {
             Talk to our engineers. We'll design the perfect system for your space.
           </p>
           <Link href="/contact"
-            style={{ display: 'inline-block', background: '#FFFFFF', color: '#3B82F6', padding: '12px 28px', borderRadius: 980, fontSize: 15, fontWeight: 600, textDecoration: 'none' }}>
+            style={{ display: 'inline-block', background: '#3B82F6', color: '#FFFFFF', padding: '12px 28px', borderRadius: 980, fontSize: 15, fontWeight: 600, textDecoration: 'none' }}>
             Get Free Consultation
           </Link>
         </div>
@@ -131,7 +131,7 @@ export default async function BlogPostPage({ params }: Props) {
               {relFiltered.map(rel => {
                 const relThumb = rel._embedded?.['wp:featuredmedia']?.[0]?.source_url
                 return (
-                  <Link key={rel.id} href={`/blog/${rel.slug}`} style={{ textDecoration: 'none', display: 'block', background: '#FFFFFF', borderRadius: 16, overflow: 'hidden', border: '1px solid #E8E8ED' }}>
+                  <Link key={rel.id} href={`/blog/${rel.slug}`} style={{ textDecoration: 'none', display: 'block', background: 'rgba(255,255,255,0.04)', borderRadius: 16, overflow: 'hidden', border: '1px solid rgba(255,255,255,0.08)' }}>
                     {relThumb ? (
                       <div style={{ position: 'relative', height: 160 }}>
                         <Image src={relThumb} alt={stripHtml(rel.title.rendered)} fill style={{ objectFit: 'cover' }} />
@@ -152,18 +152,18 @@ export default async function BlogPostPage({ params }: Props) {
       )}
 
       <style>{`
-        .wp-content h2 { font-family: Manrope, sans-serif; font-size: 28px; font-weight: 800; color: #1D1D1F; margin: 40px 0 16px; letter-spacing: -0.02em; }
-        .wp-content h3 { font-family: Manrope, sans-serif; font-size: 22px; font-weight: 700; color: #1D1D1F; margin: 32px 0 12px; }
+        .wp-content h2 { font-family: Manrope, sans-serif; font-size: 28px; font-weight: 800; color: #FFFFFF; margin: 40px 0 16px; letter-spacing: -0.02em; }
+        .wp-content h3 { font-family: Manrope, sans-serif; font-size: 22px; font-weight: 700; color: #FFFFFF; margin: 32px 0 12px; }
         .wp-content p  { margin-bottom: 20px; }
         .wp-content ul, .wp-content ol { padding-left: 24px; margin-bottom: 20px; }
         .wp-content li { margin-bottom: 8px; }
-        .wp-content a  { color: #0071E3; }
+        .wp-content a  { color: #3B82F6; }
         .wp-content img { width: 100%; height: auto; border-radius: 12px; margin: 24px 0; }
-        .wp-content blockquote { border-left: 3px solid #0071E3; padding: 16px 24px; margin: 24px 0; background: #F5F5F7; border-radius: 0 12px 12px 0; font-style: italic; color: #6E6E73; }
-        .wp-content code { font-family: monospace; background: #F5F5F7; padding: 2px 8px; border-radius: 4px; font-size: 14px; }
+        .wp-content blockquote { border-left: 3px solid #3B82F6; padding: 16px 24px; margin: 24px 0; background: rgba(59,130,246,0.06); border-radius: 0 12px 12px 0; font-style: italic; color: #94A3B8; }
+        .wp-content code { font-family: monospace; background: rgba(255,255,255,0.08); color: #60A5FA; padding: 2px 8px; border-radius: 4px; font-size: 14px; }
         .wp-content table { width: 100%; border-collapse: collapse; margin: 24px 0; }
-        .wp-content table th, .wp-content table td { padding: 12px 16px; border: 1px solid #E8E8ED; font-size: 14px; }
-        .wp-content table th { background: #F5F5F7; font-weight: 600; }
+        .wp-content table th, .wp-content table td { padding: 12px 16px; border: 1px solid rgba(255,255,255,0.08); font-size: 14px; color: #CBD5E1; }
+        .wp-content table th { background: rgba(255,255,255,0.06); font-weight: 600; color: #FFFFFF; }
       `}</style>
     </main>
   )

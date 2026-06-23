@@ -188,7 +188,7 @@ export default async function ProductCategoryPage({ params, searchParams }: Prop
                       <ProductImg src={product.imageUrl} alt={product.name} style={{ width: '65%', height: '85%', objectFit: 'contain' }} brandColor={BRAND_COLORS_MAP[product.brandSlug]} brandName={product.brand} />
                       {product.badge && (
                         <span className="absolute top-3 left-3 px-2 py-0.5 rounded-full text-[10px] font-bold text-white"
-                          style={{ background: product.badge === 'Best Seller' ? '#FF9500' : product.badge === 'New' ? '#34C759' : '#0071E3' }}>
+                          style={{ background: product.badge === 'Best Seller' ? '#FF9500' : product.badge === 'New' ? '#34C759' : '#3B82F6' }}>
                           {product.badge}
                         </span>
                       )}

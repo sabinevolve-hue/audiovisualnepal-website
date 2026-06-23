@@ -183,7 +183,7 @@ export default async function SolutionPage({ params }: Props) {
       {/* Hero */}
       <section style={{ background: 'linear-gradient(180deg, #0A1628 0%, #060D1A 100%)', padding: '100px 24px 80px', position: 'relative', overflow: 'hidden' }}>
         <div style={{ maxWidth: 860, margin: '0 auto' }}>
-          <p style={{ fontSize: 13, fontWeight: 600, color: '#0071E3', letterSpacing: '0.08em', textTransform: 'uppercase', marginBottom: 16 }}>
+          <p style={{ fontSize: 13, fontWeight: 600, color: '#3B82F6', letterSpacing: '0.08em', textTransform: 'uppercase', marginBottom: 16 }}>
             <Link href="/solutions" style={{ color: '#3B82F6', textDecoration: 'none' }}>Solutions</Link>
             {' / '}{data.label}
           </p>

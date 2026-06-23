@@ -20,7 +20,7 @@ const BRAND_DATA = {
     description: 'DSPPA is one of the largest professional audio manufacturers in Asia, specializing in IP network audio, PA systems, conference systems, and voice evacuation solutions. With 30+ years of manufacturing experience, DSPPA products are deployed in airports, universities, hotels, and government facilities across 100+ countries.',
     categories: ['IP Network Audio', 'PA Systems', 'Conference Systems', 'Voice Evacuation', 'Amplifiers', 'Ceiling Speakers', 'Column Speakers'],
     highlights: ['ISO 9001:2015 Certified', '30+ Years Manufacturing', 'CE & FCC Approved', 'Deployed in 100+ Countries'],
-    color: '#0071E3',
+    color: '#3B82F6',
   },
   itc: {
     name: 'ITC',
