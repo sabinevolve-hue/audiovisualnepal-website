@@ -10,16 +10,34 @@ export const metadata: Metadata = {
   description: 'AudioVisual Nepal is the authorized distributor for DSPPA, Tenveo, Shure, Sennheiser, Biamp, Extron, Crestron, Kramer and more across Nepal.',
 }
 
+// Brand accent colours for card styling
+const BRAND_ACCENTS: Record<string, { color: string; bg: string; border: string }> = {
+  'DSPPA':           { color: '#3B82F6', bg: 'rgba(59,130,246,0.07)',   border: 'rgba(59,130,246,0.18)' },
+  'Tenveo':          { color: '#8B5CF6', bg: 'rgba(139,92,246,0.07)',   border: 'rgba(139,92,246,0.18)' },
+  'Shure':           { color: '#EF4444', bg: 'rgba(204,0,0,0.07)',      border: 'rgba(204,0,0,0.18)' },
+  'Sennheiser':      { color: '#94A3B8', bg: 'rgba(148,163,184,0.05)', border: 'rgba(148,163,184,0.15)' },
+  'Biamp':           { color: '#F59E0B', bg: 'rgba(245,158,11,0.07)',   border: 'rgba(245,158,11,0.18)' },
+  'Extron':          { color: '#10B981', bg: 'rgba(16,185,129,0.07)',   border: 'rgba(16,185,129,0.18)' },
+  'Crestron':        { color: '#60A5FA', bg: 'rgba(96,165,250,0.07)',   border: 'rgba(96,165,250,0.18)' },
+  'Kramer':          { color: '#F97316', bg: 'rgba(249,115,22,0.07)',   border: 'rgba(249,115,22,0.18)' },
+  'Yamaha Pro Audio':{ color: '#22C55E', bg: 'rgba(34,197,94,0.07)',    border: 'rgba(34,197,94,0.18)' },
+  'ITC':             { color: '#EF4444', bg: 'rgba(239,68,68,0.07)',    border: 'rgba(239,68,68,0.18)' },
+  'JBL':             { color: '#FF6600', bg: 'rgba(255,102,0,0.07)',    border: 'rgba(255,102,0,0.18)' },
+  'Bose':            { color: '#CBD5E1', bg: 'rgba(203,213,225,0.05)', border: 'rgba(203,213,225,0.12)' },
+  'TOA':             { color: '#60A5FA', bg: 'rgba(96,165,250,0.07)',   border: 'rgba(96,165,250,0.18)' },
+  'Yamaha':          { color: '#22C55E', bg: 'rgba(34,197,94,0.07)',    border: 'rgba(34,197,94,0.18)' },
+}
+
 const fallbackBrands = [
-  { name: 'DSPPA',           tagline: 'Professional PA & IP Audio Systems',   country: 'China',   emoji: '🔊' },
-  { name: 'Tenveo',          tagline: 'AI-Powered Video Conferencing',         country: 'China',   emoji: '📹' },
-  { name: 'Shure',           tagline: 'Legendary Microphones & Audio',         country: 'USA',     emoji: '🎙️' },
-  { name: 'Sennheiser',      tagline: 'Premium Audio Solutions',               country: 'Germany', emoji: '🎧' },
-  { name: 'Biamp',           tagline: 'Professional AV Signal Processing',     country: 'USA',     emoji: '🎚️' },
-  { name: 'Extron',          tagline: 'AV Signal Distribution & Control',      country: 'USA',     emoji: '🖥️' },
-  { name: 'Crestron',        tagline: 'Smart Room Automation',                 country: 'USA',     emoji: '🏠' },
-  { name: 'Kramer',          tagline: 'AV Connectivity & Switching',           country: 'Israel',  emoji: '🔗' },
-  { name: 'Yamaha Pro Audio', tagline: 'Mixing Consoles & Amplifiers',         country: 'Japan',   emoji: '🎛️' },
+  { name: 'DSPPA',           tagline: 'Professional PA & IP Audio Systems',   country: 'China',   slug: 'dsppa' },
+  { name: 'Tenveo',          tagline: 'AI-Powered Video Conferencing',         country: 'China',   slug: 'tenveo' },
+  { name: 'Shure',           tagline: 'Legendary Microphones & Audio',         country: 'USA',     slug: 'shure' },
+  { name: 'Sennheiser',      tagline: 'Premium Audio Solutions',               country: 'Germany', slug: 'sennheiser' },
+  { name: 'Biamp',           tagline: 'Professional AV Signal Processing',     country: 'USA',     slug: 'biamp' },
+  { name: 'Extron',          tagline: 'AV Signal Distribution & Control',      country: 'USA',     slug: 'extron' },
+  { name: 'Crestron',        tagline: 'Smart Room Automation',                 country: 'USA',     slug: 'crestron' },
+  { name: 'Kramer',          tagline: 'AV Connectivity & Switching',           country: 'Israel',  slug: 'kramer' },
+  { name: 'Yamaha Pro Audio', tagline: 'Mixing Consoles & Amplifiers',         country: 'Japan',   slug: 'yamaha' },
 ]
 
 export default async function BrandsPage() {
@@ -80,12 +98,20 @@ export default async function BrandsPage() {
           ) : (
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))', gap: 20 }}>
               {fallbackBrands.map(b => (
-                <div key={b.name} style={{ background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.07)', borderRadius: 20, padding: '32px' }}>
-                  <div style={{ fontSize: 40, marginBottom: 16 }}>{b.emoji}</div>
-                  <div style={{ fontFamily: 'Manrope, sans-serif', fontSize: 20, fontWeight: 800, color: '#FFFFFF', marginBottom: 10 }}>{b.name}</div>
+                <Link key={b.name} href={`/brands/${b.slug}`} style={{ background: BRAND_ACCENTS[b.name]?.bg || 'rgba(255,255,255,0.03)', border: `1px solid ${BRAND_ACCENTS[b.name]?.border || 'rgba(255,255,255,0.07)'}`, borderRadius: 20, padding: '32px', textDecoration: 'none', display: 'block', transition: 'all 0.2s' }}>
+                  {/* SVG wordmark */}
+                  <div style={{ marginBottom: 20 }}>
+                    <svg width="auto" height="38" viewBox="0 0 220 38" style={{ overflow: 'visible' }}>
+                      <text x="0" y="30" fontFamily="'Arial Black',Arial,sans-serif" fontWeight="900"
+                        fontSize="28" fill={BRAND_ACCENTS[b.name]?.color || '#94A3B8'} letterSpacing="-0.5">{b.name}</text>
+                    </svg>
+                  </div>
                   <p style={{ fontSize: 14, color: '#94A3B8', lineHeight: 1.65, marginBottom: 16 }}>{b.tagline}</p>
-                  <span style={{ display: 'inline-block', fontSize: 11, fontWeight: 600, padding: '4px 12px', borderRadius: 980, background: 'rgba(59,130,246,0.1)', color: '#60A5FA', border: '1px solid rgba(59,130,246,0.2)' }}>{b.country}</span>
-                </div>
+                  <span style={{ display: 'inline-flex', alignItems: 'center', gap: 6, fontSize: 11, fontWeight: 600, padding: '5px 14px', borderRadius: 980, background: 'rgba(59,130,246,0.1)', color: '#60A5FA', border: '1px solid rgba(59,130,246,0.2)' }}>
+                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><circle cx="5" cy="5" r="4.5" stroke="#3B82F6" strokeWidth="1"/><circle cx="5" cy="5" r="2" fill="#3B82F6" opacity="0.4"/></svg>
+                    {b.country}
+                  </span>
+                </Link>
               ))}
             </div>
           )}
