@@ -259,7 +259,7 @@ export default async function BrandPage({ params }: Props) {
               </p>
               <a href={`tel:${SITE.phoneRaw}`}
                 className="flex items-center gap-3 p-4 rounded-xl mb-3 transition-all hover:-translate-y-0.5"
-                style={{ background: 'rgba(0,113,227,0.1)', border: '1px solid rgba(0,113,227,0.2)' }}>
+                style={{ background: 'rgba(59,130,246,0.1)', border: '1px solid rgba(59,130,246,0.2)' }}>
                 <Phone size={18} style={{ color: 'var(--brand)' }} />
                 <div>
                   <div className="text-[11px]" style={{ color: 'var(--text-tertiary)' }}>Call now</div>

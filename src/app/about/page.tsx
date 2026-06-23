@@ -5,15 +5,8 @@ export const revalidate = 3600
 
 export const metadata: Metadata = {
   title: "About — AudioVisual Nepal | Nepal's Leading AV Company",
-  description: 'AudioVisual Nepal has been delivering professional audio visual solutions across Nepal since 2010. Learn about our team, mission, and values.',
+  description: 'AudioVisual Nepal has been delivering professional audio visual solutions across Nepal since 2010.',
 }
-
-const TEAM = [
-  { name: 'Sabin Adhikari', role: 'Managing Director', bio: 'AV industry veteran with 15+ years delivering enterprise solutions across Nepal and South Asia.' },
-  { name: 'Technical Team', role: 'AV Engineers', bio: 'Certified engineers with expertise in PA systems, video conferencing, control systems, and network audio.' },
-  { name: 'Project Team', role: 'Project Managers', bio: 'End-to-end project delivery — from site survey and design to installation and commissioning.' },
-  { name: 'Support Team', role: 'After-Sales Support', bio: 'Dedicated support team for AMC, spare parts, and ongoing technical assistance.' },
-]
 
 const MILESTONES = [
   { year: '2010', event: 'Founded in Kathmandu with a focus on professional audio systems.' },
@@ -26,61 +19,25 @@ const MILESTONES = [
 
 export default function AboutPage() {
   return (
-    <main style={{ paddingTop: 80 }}>
+    <main style={{ paddingTop: 80, background: '#060D1A' }}>
       {/* Hero */}
-      <section style={{ background: '#1D1D1F', padding: '80px 24px 64px' }}>
-        <div style={{ maxWidth: 800, margin: '0 auto', textAlign: 'center' }}>
-          <p style={{ fontSize: 13, fontWeight: 600, color: '#0071E3', letterSpacing: '0.08em', textTransform: 'uppercase', marginBottom: 16 }}>Our Story</p>
-          <h1 style={{ fontFamily: 'Manrope, sans-serif', fontSize: 'clamp(36px,5vw,60px)', fontWeight: 800, color: '#FFFFFF', letterSpacing: '-0.03em', marginBottom: 20 }}>
-            Nepal's Leading AV Company
+      <section style={{ padding: '100px 24px 80px', background: 'linear-gradient(180deg, #0A1628 0%, #060D1A 100%)', textAlign: 'center', position: 'relative', overflow: 'hidden' }}>
+        <div style={{ position: 'absolute', inset: 0, backgroundImage: 'linear-gradient(rgba(59,130,246,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(59,130,246,0.04) 1px, transparent 1px)', backgroundSize: '60px 60px', pointerEvents: 'none' }} />
+        <div style={{ maxWidth: 800, margin: '0 auto', position: 'relative' }}>
+          <p style={{ fontSize: 12, fontWeight: 700, color: '#3B82F6', letterSpacing: '0.15em', textTransform: 'uppercase', marginBottom: 20 }}>Our Story</p>
+          <h1 style={{ fontFamily: 'Manrope, sans-serif', fontSize: 'clamp(40px,6vw,68px)', fontWeight: 800, color: '#FFFFFF', letterSpacing: '-0.03em', lineHeight: 1.05, marginBottom: 24 }}>
+            Nepal&apos;s Most Trusted<br />AV Company
           </h1>
-          <p style={{ fontSize: 18, color: 'rgba(255,255,255,0.55)', lineHeight: 1.7 }}>
-            For over a decade, AudioVisual Nepal has been designing and delivering professional audio visual systems — from village community halls to five-star hotel ballrooms, from government boardrooms to university campuses.
+          <p style={{ fontSize: 19, color: '#94A3B8', lineHeight: 1.75, maxWidth: 620, margin: '0 auto' }}>
+            For over a decade, AudioVisual Nepal has designed and delivered professional audio visual systems — from village community halls to five-star hotel ballrooms.
           </p>
-        </div>
-      </section>
-      {/* Breadcrumb */}
-      <nav aria-label="Breadcrumb" style={{ background: '#F5F5F7', padding: '12px 24px', borderBottom: '1px solid #E8E8ED' }}>
-        <div style={{ maxWidth: 1200, margin: '0 auto', fontSize: 13, color: '#6E6E73', display: 'flex', gap: 8, alignItems: 'center' }}>
-          <Link href="/" style={{ color: '#0071E3', textDecoration: 'none' }}>Home</Link>
-          <span aria-hidden="true">›</span>
-          <span style={{ color: '#1D1D1F', fontWeight: 500 }} aria-current="page">About</span>
-        </div>
-      </nav>
-
-      {/* Mission & Values */}
-      <section style={{ padding: '80px 24px', background: '#FFFFFF' }}>
-        <div style={{ maxWidth: 1100, margin: '0 auto' }}>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: 40, alignItems: 'start' }}>
-            <div>
-              <h2 style={{ fontFamily: 'Manrope, sans-serif', fontSize: 'clamp(24px,3vw,36px)', fontWeight: 800, color: '#1D1D1F', letterSpacing: '-0.03em', marginBottom: 20 }}>Our Mission</h2>
-              <p style={{ fontSize: 17, color: '#6E6E73', lineHeight: 1.8 }}>
-                To make world-class professional audio visual technology accessible to every organization in Nepal — with genuine products, expert design, and reliable long-term support.
-              </p>
-            </div>
-            <div style={{ display: 'grid', gap: 16 }}>
-              {[
-                { icon: '🎯', title: 'Genuine Only', desc: 'We never compromise on product authenticity. Every item is sourced directly from authorized channels.' },
-                { icon: '🤝', title: 'Long-Term Partners', desc: 'We build relationships, not just installations. Our clients stay with us for maintenance and upgrades.' },
-                { icon: '🏆', title: 'Best-in-Class', desc: "We only recommend what we'd install ourselves. No overselling, no unnecessary complexity." },
-              ].map(v => (
-                <div key={v.title} style={{ display: 'flex', gap: 16, alignItems: 'flex-start' }}>
-                  <span style={{ fontSize: 24, lineHeight: 1 }}>{v.icon}</span>
-                  <div>
-                    <div style={{ fontFamily: 'Manrope, sans-serif', fontSize: 15, fontWeight: 700, color: '#1D1D1F', marginBottom: 4 }}>{v.title}</div>
-                    <div style={{ fontSize: 14, color: '#6E6E73', lineHeight: 1.6 }}>{v.desc}</div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
         </div>
       </section>
 
       {/* Stats */}
-      <section style={{ padding: '64px 24px', background: '#0071E3' }}>
+      <section style={{ padding: '72px 24px', background: '#0A0F1E', borderTop: '1px solid rgba(255,255,255,0.05)', borderBottom: '1px solid rgba(255,255,255,0.05)' }}>
         <div style={{ maxWidth: 1000, margin: '0 auto' }}>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(160px, 1fr))', gap: 32, textAlign: 'center' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(160px, 1fr))', gap: 40, textAlign: 'center' }}>
             {[
               { num: '300+', label: 'Projects Completed' },
               { num: '14+', label: 'Years in Nepal' },
@@ -88,29 +45,59 @@ export default function AboutPage() {
               { num: '20+', label: 'Brand Partners' },
             ].map(stat => (
               <div key={stat.label}>
-                <div style={{ fontFamily: 'Manrope, sans-serif', fontSize: 48, fontWeight: 800, color: '#FFFFFF', letterSpacing: '-0.04em', lineHeight: 1 }}>{stat.num}</div>
-                <div style={{ fontSize: 14, color: 'rgba(255,255,255,0.75)', marginTop: 8, fontWeight: 500 }}>{stat.label}</div>
+                <div style={{ fontFamily: 'Manrope, sans-serif', fontSize: 52, fontWeight: 800, color: '#3B82F6', letterSpacing: '-0.04em', lineHeight: 1 }}>{stat.num}</div>
+                <div style={{ fontSize: 14, color: '#94A3B8', marginTop: 10, fontWeight: 500 }}>{stat.label}</div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Mission & Values */}
+      <section style={{ padding: '96px 24px', background: '#060D1A' }}>
+        <div style={{ maxWidth: 1200, margin: '0 auto' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: 64, alignItems: 'start' }}>
+            <div>
+              <p style={{ fontSize: 12, fontWeight: 700, color: '#3B82F6', letterSpacing: '0.15em', textTransform: 'uppercase', marginBottom: 16 }}>Our Mission</p>
+              <h2 style={{ fontFamily: 'Manrope, sans-serif', fontSize: 'clamp(28px,3.5vw,42px)', fontWeight: 800, color: '#FFFFFF', letterSpacing: '-0.03em', marginBottom: 20, lineHeight: 1.15 }}>
+                Making World-Class AV Accessible
+              </h2>
+              <p style={{ fontSize: 17, color: '#94A3B8', lineHeight: 1.85 }}>
+                To make world-class professional audio visual technology accessible to every organization in Nepal — with genuine products, expert design, and reliable long-term support.
+              </p>
+            </div>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
+              {[
+                { title: 'Genuine Only', desc: 'We never compromise on product authenticity. Every item is sourced directly from authorized channels with full manufacturer warranty.' },
+                { title: 'Long-Term Partners', desc: 'We build relationships, not just installations. Our clients stay with us for maintenance, upgrades, and expansions.' },
+                { title: 'Best-in-Class', desc: "We only recommend what we'd install ourselves. No overselling, no unnecessary complexity — just the right solution." },
+              ].map(v => (
+                <div key={v.title} style={{ background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.07)', borderRadius: 16, padding: '24px 28px' }}>
+                  <div style={{ fontFamily: 'Manrope, sans-serif', fontSize: 16, fontWeight: 700, color: '#FFFFFF', marginBottom: 8 }}>{v.title}</div>
+                  <div style={{ fontSize: 14, color: '#94A3B8', lineHeight: 1.7 }}>{v.desc}</div>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
 
       {/* Timeline */}
-      <section style={{ padding: '80px 24px', background: '#F5F5F7' }}>
+      <section style={{ padding: '96px 24px', background: '#0A0F1E' }}>
         <div style={{ maxWidth: 800, margin: '0 auto' }}>
-          <h2 style={{ fontFamily: 'Manrope, sans-serif', fontSize: 'clamp(28px,4vw,40px)', fontWeight: 800, color: '#1D1D1F', letterSpacing: '-0.03em', marginBottom: 48, textAlign: 'center' }}>Our Journey</h2>
+          <div style={{ textAlign: 'center', marginBottom: 64 }}>
+            <p style={{ fontSize: 12, fontWeight: 700, color: '#3B82F6', letterSpacing: '0.15em', textTransform: 'uppercase', marginBottom: 16 }}>Since 2010</p>
+            <h2 style={{ fontFamily: 'Manrope, sans-serif', fontSize: 'clamp(28px,4vw,44px)', fontWeight: 800, color: '#FFFFFF', letterSpacing: '-0.03em' }}>Our Journey</h2>
+          </div>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 0 }}>
             {MILESTONES.map((m, i) => (
-              <div key={m.year} style={{ display: 'flex', gap: 24, alignItems: 'flex-start', paddingBottom: i < MILESTONES.length - 1 ? 32 : 0 }}>
-                <div style={{ flexShrink: 0, textAlign: 'center' }}>
-                  <div style={{ fontFamily: 'Manrope, sans-serif', fontSize: 15, fontWeight: 800, color: '#0071E3', width: 52 }}>{m.year}</div>
-                  {i < MILESTONES.length - 1 && (
-                    <div style={{ width: 2, height: 32, background: '#E8E8ED', margin: '8px auto 0' }} />
-                  )}
+              <div key={m.year} style={{ display: 'flex', gap: 28, alignItems: 'flex-start', paddingBottom: i < MILESTONES.length - 1 ? 36 : 0 }}>
+                <div style={{ flexShrink: 0, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+                  <div style={{ fontFamily: 'Manrope, sans-serif', fontSize: 13, fontWeight: 800, color: '#3B82F6', width: 56, textAlign: 'center', background: 'rgba(59,130,246,0.1)', border: '1px solid rgba(59,130,246,0.3)', borderRadius: 8, padding: '4px 0' }}>{m.year}</div>
+                  {i < MILESTONES.length - 1 && <div style={{ width: 1, flex: 1, minHeight: 36, background: 'rgba(59,130,246,0.2)', marginTop: 8 }} />}
                 </div>
-                <div style={{ background: '#FFFFFF', borderRadius: 12, padding: '16px 20px', flex: 1, border: '1px solid #E8E8ED' }}>
-                  <p style={{ fontSize: 15, color: '#1D1D1F', lineHeight: 1.6, margin: 0 }}>{m.event}</p>
+                <div style={{ background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.07)', borderRadius: 14, padding: '16px 22px', flex: 1 }}>
+                  <p style={{ fontSize: 15, color: '#CBD5E1', lineHeight: 1.65, margin: 0 }}>{m.event}</p>
                 </div>
               </div>
             ))}
@@ -118,21 +105,18 @@ export default function AboutPage() {
         </div>
       </section>
 
-{/* Team section hidden — not shown publicly */}
-      <section style={{ padding: '80px 24px', background: '#1D1D1F', textAlign: 'center' }}>
-        <h2 style={{ fontFamily: 'Manrope, sans-serif', fontSize: 'clamp(28px,4vw,40px)', fontWeight: 800, color: '#FFFFFF', marginBottom: 16, letterSpacing: '-0.03em' }}>
-          Let's Work Together
+      {/* CTA */}
+      <section style={{ padding: '96px 24px', background: 'linear-gradient(135deg, #0A1628 0%, #060D1A 100%)', textAlign: 'center', borderTop: '1px solid rgba(255,255,255,0.05)' }}>
+        <p style={{ fontSize: 12, fontWeight: 700, color: '#3B82F6', letterSpacing: '0.15em', textTransform: 'uppercase', marginBottom: 20 }}>Work With Us</p>
+        <h2 style={{ fontFamily: 'Manrope, sans-serif', fontSize: 'clamp(28px,4vw,48px)', fontWeight: 800, color: '#FFFFFF', marginBottom: 16, letterSpacing: '-0.03em' }}>
+          Let&apos;s Build Something Great
         </h2>
-        <p style={{ fontSize: 18, color: 'rgba(255,255,255,0.55)', marginBottom: 32 }}>
-          Tell us about your project — we'll design a solution that fits your space and budget.
+        <p style={{ fontSize: 18, color: '#94A3B8', maxWidth: 480, margin: '0 auto 40px' }}>
+          Tell us about your project — we&apos;ll design a solution that fits your space and budget.
         </p>
         <div style={{ display: 'flex', gap: 16, justifyContent: 'center', flexWrap: 'wrap' }}>
-          <Link href="/contact" style={{ display: 'inline-block', background: '#0071E3', color: '#FFFFFF', padding: '16px 40px', borderRadius: 980, fontSize: 16, fontWeight: 600, textDecoration: 'none' }}>
-            Get in Touch
-          </Link>
-          <Link href="/projects" style={{ display: 'inline-block', background: 'transparent', color: '#FFFFFF', padding: '16px 40px', borderRadius: 980, fontSize: 16, fontWeight: 600, textDecoration: 'none', border: '1.5px solid rgba(255,255,255,0.3)' }}>
-            View Projects
-          </Link>
+          <Link href="/contact" style={{ display: 'inline-block', background: '#3B82F6', color: '#FFFFFF', padding: '16px 40px', borderRadius: 980, fontSize: 16, fontWeight: 600, textDecoration: 'none' }}>Get in Touch</Link>
+          <Link href="/projects" style={{ display: 'inline-block', background: 'transparent', color: '#FFFFFF', padding: '16px 40px', borderRadius: 980, fontSize: 16, fontWeight: 600, textDecoration: 'none', border: '1.5px solid rgba(255,255,255,0.2)' }}>View Projects</Link>
         </div>
       </section>
     </main>

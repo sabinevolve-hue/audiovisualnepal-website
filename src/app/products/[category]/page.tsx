@@ -81,7 +81,7 @@ export default async function ProductCategoryPage({ params, searchParams }: Prop
 
       {/* Hero */}
       <section className="relative py-20 px-6 overflow-hidden"
-        style={{ background: 'linear-gradient(180deg, rgba(0,113,227,0.08) 0%, transparent 100%)', borderBottom: '1px solid var(--border-subtle)' }}>
+        style={{ background: 'linear-gradient(180deg, #0A1628 0%, #060D1A 100%)', borderBottom: '1px solid rgba(255,255,255,0.05)' }}>
         <div className="container-site relative">
           <nav className="flex items-center gap-1.5 text-[12px] mb-8" style={{ color: 'var(--text-tertiary)' }}>
             <Link href="/" className="hover:text-white transition-colors">Home</Link>
@@ -99,7 +99,7 @@ export default async function ProductCategoryPage({ params, searchParams }: Prop
 
       {/* Category Nav */}
       <div className="sticky top-16 z-40 px-6 py-3 overflow-x-auto"
-        style={{ background: 'rgba(6,6,10,0.92)', backdropFilter: 'blur(16px)', borderBottom: '1px solid var(--border-subtle)' }}>
+        style={{ background: 'rgba(6,13,26,0.95)', backdropFilter: 'blur(16px)', borderBottom: '1px solid var(--border-subtle)' }}>
         <div className="container-site flex gap-2 flex-nowrap">
           {navCats.map((c) => {
             const slug = 'slug' in c ? c.slug : (c as {href:string}).href?.replace('/products/','')

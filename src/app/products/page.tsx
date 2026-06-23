@@ -5,56 +5,45 @@ import { ArrowRight } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'Products — AudioVisual Nepal | Professional AV Systems',
-  description: 'Browse professional audio visual systems — PA systems, conference equipment, video walls, digital signage, and more. Authorized distributor in Nepal.',
+  description: 'Browse professional audio visual systems — PA systems, conference equipment, video walls, digital signage, and more.',
 }
 
 export const revalidate = 3600
 
 export default function ProductsPage() {
   return (
-    <main style={{ paddingTop: 80 }}>
+    <main style={{ paddingTop: 80, background: '#060D1A' }}>
       {/* Hero */}
-      <section className="section-padding-sm bg-[var(--bg-subtle)] px-6" style={{ borderBottom: '1px solid var(--border-subtle)' }}>
-        <div className="container-site text-center">
-          <p className="eyebrow mb-4">Product Catalog</p>
-          <h1 className="heading-section mb-4">Professional AV Systems</h1>
-          <p className="text-lg max-w-[560px] mx-auto" style={{ color: 'var(--text-secondary)' }}>
+      <section style={{ padding: '100px 24px 80px', background: 'linear-gradient(180deg, #0A1628 0%, #060D1A 100%)', textAlign: 'center', position: 'relative', overflow: 'hidden' }}>
+        <div style={{ position: 'absolute', inset: 0, backgroundImage: 'linear-gradient(rgba(59,130,246,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(59,130,246,0.04) 1px, transparent 1px)', backgroundSize: '60px 60px', pointerEvents: 'none' }} />
+        <div style={{ maxWidth: 700, margin: '0 auto', position: 'relative' }}>
+          <p style={{ fontSize: 12, fontWeight: 700, color: '#3B82F6', letterSpacing: '0.15em', textTransform: 'uppercase', marginBottom: 20 }}>Product Catalog</p>
+          <h1 style={{ fontFamily: 'Manrope, sans-serif', fontSize: 'clamp(36px,5vw,64px)', fontWeight: 800, color: '#FFFFFF', letterSpacing: '-0.03em', lineHeight: 1.05, marginBottom: 20 }}>
+            Professional AV Systems
+          </h1>
+          <p style={{ fontSize: 18, color: '#94A3B8', lineHeight: 1.7, maxWidth: 540, margin: '0 auto' }}>
             Browse our complete range of audio visual systems — sourced from the world&apos;s leading brands, delivered and installed across Nepal.
           </p>
         </div>
       </section>
 
       {/* Categories Grid */}
-      <section className="section-padding bg-white px-6">
-        <div className="container-site">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-            {PRODUCT_CATEGORIES.map((cat) => (
-              <Link
-                key={cat.href}
-                href={cat.href}
-                className="group block rounded-2xl p-7 bg-white transition-all duration-300 hover:-translate-y-1 hover:shadow-[var(--shadow-md)]"
-                style={{ border: '1px solid var(--border-default)' }}
-              >
-                <div className="flex items-start justify-between mb-5">
-                  <span className="text-3xl">{cat.icon}</span>
-                  <span
-                    className="w-8 h-8 rounded-full flex items-center justify-center transition-all duration-300 group-hover:translate-x-1"
-                    style={{ background: 'var(--brand-dim)', color: 'var(--brand)' }}
-                  >
+      <section style={{ padding: '80px 24px', background: '#060D1A' }}>
+        <div style={{ maxWidth: 1200, margin: '0 auto' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))', gap: 20 }}>
+            {PRODUCT_CATEGORIES.map(cat => (
+              <Link key={cat.href} href={cat.href} style={{ textDecoration: 'none', display: 'block', background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.07)', borderRadius: 20, padding: '32px', transition: 'all 0.2s' }}>
+                <div style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', marginBottom: 20 }}>
+                  <span style={{ fontSize: 36 }}>{cat.icon}</span>
+                  <span style={{ width: 32, height: 32, background: 'rgba(59,130,246,0.1)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#3B82F6' }}>
                     <ArrowRight size={14} />
                   </span>
                 </div>
-                <h2 className="font-display font-bold text-[18px] mb-2" style={{ color: 'var(--text-primary)' }}>
-                  {cat.label}
-                </h2>
+                <h2 style={{ fontFamily: 'Manrope, sans-serif', fontSize: 18, fontWeight: 700, color: '#FFFFFF', marginBottom: 10 }}>{cat.label}</h2>
                 {cat.description && (
-                  <p className="text-[14px] leading-relaxed line-clamp-2" style={{ color: 'var(--text-secondary)' }}>
-                    {cat.description}
-                  </p>
+                  <p style={{ fontSize: 14, color: '#94A3B8', lineHeight: 1.65, marginBottom: 16 }}>{cat.description}</p>
                 )}
-                <div className="mt-4 text-[13px] font-semibold" style={{ color: 'var(--brand)' }}>
-                  Browse products →
-                </div>
+                <div style={{ fontSize: 13, fontWeight: 600, color: '#3B82F6' }}>Browse products →</div>
               </Link>
             ))}
           </div>
@@ -62,13 +51,11 @@ export default function ProductsPage() {
       </section>
 
       {/* Bottom CTA */}
-      <section className="section-padding-sm px-6" style={{ background: 'var(--bg-subtle)', borderTop: '1px solid var(--border-subtle)' }}>
-        <div className="container-site text-center">
-          <h2 className="font-display font-bold text-2xl mb-3">Can&apos;t find what you need?</h2>
-          <p className="mb-6" style={{ color: 'var(--text-secondary)' }}>
-            Our team can source any professional AV product. Contact us with your requirements.
-          </p>
-          <Link href="/contact" className="btn-primary">Request Custom Quote</Link>
+      <section style={{ padding: '80px 24px', background: '#0A0F1E', textAlign: 'center', borderTop: '1px solid rgba(255,255,255,0.05)' }}>
+        <div style={{ maxWidth: 600, margin: '0 auto' }}>
+          <h2 style={{ fontFamily: 'Manrope, sans-serif', fontSize: 28, fontWeight: 800, color: '#FFFFFF', marginBottom: 12 }}>Can&apos;t find what you need?</h2>
+          <p style={{ fontSize: 16, color: '#94A3B8', marginBottom: 32 }}>Our team can source any professional AV product. Contact us with your requirements.</p>
+          <Link href="/contact" style={{ display: 'inline-block', background: '#3B82F6', color: '#FFFFFF', padding: '16px 40px', borderRadius: 980, fontSize: 16, fontWeight: 600, textDecoration: 'none' }}>Request Custom Quote</Link>
         </div>
       </section>
     </main>

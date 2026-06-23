@@ -12,7 +12,7 @@ export default function NotFound() {
       {/* Background glow */}
       <div style={{
         position: 'absolute', inset: 0, pointerEvents: 'none',
-        background: 'radial-gradient(ellipse 70% 50% at 50% 40%, rgba(0,113,227,0.15) 0%, transparent 70%)',
+        background: 'radial-gradient(ellipse 70% 50% at 50% 40%, rgba(59,130,246,0.15) 0%, transparent 70%)',
       }} />
 
       <div style={{ position: 'relative', zIndex: 1, maxWidth: 560 }}>
@@ -43,7 +43,7 @@ export default function NotFound() {
 
         {/* Quick links */}
         <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap', marginBottom: 48 }}>
-          <Link href="/" style={{ display: 'inline-block', background: '#0071E3', color: '#FFFFFF', padding: '13px 28px', borderRadius: 980, fontSize: 15, fontWeight: 600, textDecoration: 'none' }}>
+          <Link href="/" style={{ display: 'inline-block', background: '#3B82F6', color: '#FFFFFF', padding: '13px 28px', borderRadius: 980, fontSize: 15, fontWeight: 600, textDecoration: 'none' }}>
             ← Back to Home
           </Link>
           <Link href="/contact" style={{ display: 'inline-block', background: 'rgba(255,255,255,0.08)', color: '#FFFFFF', padding: '13px 28px', borderRadius: 980, fontSize: 15, fontWeight: 600, textDecoration: 'none', border: '1px solid rgba(255,255,255,0.12)' }}>

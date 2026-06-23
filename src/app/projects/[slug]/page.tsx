@@ -57,7 +57,7 @@ export default async function ProjectDetailPage({ params }: Props) {
       </nav>
 
       {/* Hero */}
-      <section className="section-padding-sm px-6" style={{ background: 'var(--bg-subtle)', borderBottom: '1px solid var(--border-subtle)' }}>
+      <section className="section-padding-sm px-6" style={{ background: 'linear-gradient(180deg, #0A1628 0%, #060D1A 100%)', borderBottom: '1px solid rgba(255,255,255,0.06)' }}>
         <div className="container-site">
           <Link href="/projects" className="inline-flex items-center gap-1.5 text-[13px] mb-6 transition-colors hover:text-[var(--brand)]"
             style={{ color: 'var(--text-secondary)', textDecoration: 'none' }}>
@@ -92,7 +92,7 @@ export default async function ProjectDetailPage({ params }: Props) {
       )}
 
       {/* Project Meta Strip */}
-      <section className="px-6 py-6 bg-white" style={{ borderBottom: '1px solid var(--border-subtle)' }}>
+      <section className="px-6 py-6" style={{ background: '#0A0F1E', borderBottom: '1px solid rgba(255,255,255,0.06)' }}>
         <div className="container-site flex gap-10 flex-wrap">
           {[
             { label: 'Client',    value: project.meta.client },
@@ -113,7 +113,7 @@ export default async function ProjectDetailPage({ params }: Props) {
       </section>
 
       {/* Content */}
-      <section className="section-padding px-6 bg-white">
+      <section className="section-padding px-6" style={{ background: '#060D1A' }}>
         <div className="container-site max-w-[860px]">
           {project.meta.challenge && (
             <div className="rounded-2xl p-8 mb-10" style={{ background: 'var(--bg-subtle)', border: '1px solid var(--border-subtle)' }}>
@@ -157,7 +157,7 @@ export default async function ProjectDetailPage({ params }: Props) {
       {/* CTA */}
       <section
         className="section-padding-sm px-6 text-center"
-        style={{ background: 'linear-gradient(135deg, #EFF6FF 0%, #DBEAFE 100%)', borderTop: '1px solid var(--border-subtle)' }}
+        style={{ background: 'linear-gradient(135deg, #0A1628 0%, #060D1A 100%)', borderTop: '1px solid rgba(255,255,255,0.06)' }}
       >
         <div className="container-site">
           <h2 className="font-display font-bold text-3xl mb-3" style={{ color: 'var(--text-primary)' }}>

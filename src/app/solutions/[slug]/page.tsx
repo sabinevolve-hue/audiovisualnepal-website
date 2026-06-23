@@ -169,33 +169,33 @@ export default async function SolutionPage({ params }: Props) {
 
   if (!data) {
     return (
-      <main style={{ paddingTop: 80, minHeight: '60vh', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+      <main style={{ paddingTop: 80, minHeight: '60vh', display: 'flex', alignItems: 'center', justifyContent: 'center', background: '#060D1A' }}>
         <div style={{ textAlign: 'center' }}>
-          <h1 style={{ fontFamily: 'Manrope, sans-serif', fontSize: 32, fontWeight: 800 }}>Solution not found</h1>
-          <Link href="/solutions" style={{ color: '#0071E3' }}>← All Solutions</Link>
+          <h1 style={{ fontFamily: 'Manrope, sans-serif', fontSize: 32, fontWeight: 800, color: '#FFFFFF' }}>Solution not found</h1>
+          <Link href="/solutions" style={{ color: '#3B82F6' }}>← All Solutions</Link>
         </div>
       </main>
     )
   }
 
   return (
-    <main style={{ paddingTop: 80 }}>
+    <main style={{ paddingTop: 80, background: '#060D1A' }}>
       {/* Hero */}
-      <section style={{ background: '#1D1D1F', padding: '80px 24px 64px' }}>
+      <section style={{ background: 'linear-gradient(180deg, #0A1628 0%, #060D1A 100%)', padding: '100px 24px 80px', position: 'relative', overflow: 'hidden' }}>
         <div style={{ maxWidth: 860, margin: '0 auto' }}>
           <p style={{ fontSize: 13, fontWeight: 600, color: '#0071E3', letterSpacing: '0.08em', textTransform: 'uppercase', marginBottom: 16 }}>
-            <Link href="/solutions" style={{ color: '#0071E3', textDecoration: 'none' }}>Solutions</Link>
+            <Link href="/solutions" style={{ color: '#3B82F6', textDecoration: 'none' }}>Solutions</Link>
             {' / '}{data.label}
           </p>
           <div style={{ fontSize: 56, marginBottom: 20 }}>{data.icon}</div>
           <h1 style={{ fontFamily: 'Manrope, sans-serif', fontSize: 'clamp(32px,5vw,52px)', fontWeight: 800, color: '#FFFFFF', letterSpacing: '-0.03em', marginBottom: 16 }}>
             {data.tagline}
           </h1>
-          <p style={{ fontSize: 18, color: 'rgba(255,255,255,0.55)', lineHeight: 1.7, maxWidth: 640 }}>
+          <p style={{ fontSize: 18, color: '#94A3B8', lineHeight: 1.7, maxWidth: 640 }}>
             {data.desc}
           </p>
           <div style={{ marginTop: 36, display: 'flex', gap: 14, flexWrap: 'wrap' }}>
-            <Link href="/contact" style={{ display: 'inline-block', background: '#0071E3', color: '#FFFFFF', padding: '14px 32px', borderRadius: 980, fontSize: 15, fontWeight: 600, textDecoration: 'none' }}>
+            <Link href="/contact" style={{ display: 'inline-block', background: '#3B82F6', color: '#FFFFFF', padding: '14px 32px', borderRadius: 980, fontSize: 15, fontWeight: 600, textDecoration: 'none' }}>
               Request a Quote
             </Link>
             <Link href="/projects" style={{ display: 'inline-block', background: 'transparent', color: '#FFFFFF', padding: '14px 32px', borderRadius: 980, fontSize: 15, fontWeight: 600, textDecoration: 'none', border: '1.5px solid rgba(255,255,255,0.3)' }}>
@@ -206,16 +206,16 @@ export default async function SolutionPage({ params }: Props) {
       </section>
 
       {/* Systems */}
-      <section style={{ padding: '80px 24px', background: '#FFFFFF' }}>
+      <section style={{ padding: '80px 24px', background: '#060D1A' }}>
         <div style={{ maxWidth: 1100, margin: '0 auto' }}>
-          <h2 style={{ fontFamily: 'Manrope, sans-serif', fontSize: 'clamp(24px,3.5vw,36px)', fontWeight: 800, color: '#1D1D1F', letterSpacing: '-0.03em', marginBottom: 48 }}>
+          <h2 style={{ fontFamily: 'Manrope, sans-serif', fontSize: 'clamp(24px,3.5vw,36px)', fontWeight: 800, color: '#FFFFFF', letterSpacing: '-0.03em', marginBottom: 48 }}>
             Systems We Design
           </h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))', gap: 16 }}>
             {data.systems.map(sys => (
-              <div key={sys.name} style={{ background: '#F5F5F7', borderRadius: 16, padding: 24, border: '1px solid #E8E8ED' }}>
-                <div style={{ fontFamily: 'Manrope, sans-serif', fontSize: 16, fontWeight: 700, color: '#1D1D1F', marginBottom: 8 }}>{sys.name}</div>
-                <p style={{ fontSize: 14, color: '#6E6E73', lineHeight: 1.6, margin: 0 }}>{sys.desc}</p>
+              <div key={sys.name} style={{ background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.07)', borderRadius: 16, padding: 24 }}>
+                <div style={{ fontFamily: 'Manrope, sans-serif', fontSize: 16, fontWeight: 700, color: '#FFFFFF', marginBottom: 8 }}>{sys.name}</div>
+                <p style={{ fontSize: 14, color: '#94A3B8', lineHeight: 1.6, margin: 0 }}>{sys.desc}</p>
               </div>
             ))}
           </div>
@@ -223,18 +223,18 @@ export default async function SolutionPage({ params }: Props) {
       </section>
 
       {/* Reference Projects */}
-      <section style={{ padding: '64px 24px', background: '#F5F5F7' }}>
+      <section style={{ padding: '64px 24px', background: '#0A0F1E', borderTop: '1px solid rgba(255,255,255,0.05)' }}>
         <div style={{ maxWidth: 1100, margin: '0 auto' }}>
-          <h2 style={{ fontFamily: 'Manrope, sans-serif', fontSize: 'clamp(24px,3.5vw,36px)', fontWeight: 800, color: '#1D1D1F', letterSpacing: '-0.03em', marginBottom: 32 }}>
+          <h2 style={{ fontFamily: 'Manrope, sans-serif', fontSize: 'clamp(24px,3.5vw,36px)', fontWeight: 800, color: '#FFFFFF', letterSpacing: '-0.03em', marginBottom: 32 }}>
             Reference Projects
           </h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(260px, 1fr))', gap: 14 }}>
             {data.projects.map(proj => (
-              <div key={proj.title} style={{ background: '#FFFFFF', borderRadius: 14, padding: '20px 24px', border: '1px solid #E8E8ED', display: 'flex', alignItems: 'center', gap: 16 }}>
-                <div style={{ width: 40, height: 40, borderRadius: '50%', background: '#0071E3', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 18, flexShrink: 0 }}>🏗️</div>
+              <div key={proj.title} style={{ background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.07)', borderRadius: 14, padding: '20px 24px', display: 'flex', alignItems: 'center', gap: 16 }}>
+                <div style={{ width: 40, height: 40, borderRadius: '50%', background: 'rgba(59,130,246,0.15)', border: '1px solid rgba(59,130,246,0.3)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 18, flexShrink: 0 }}>🏗️</div>
                 <div>
-                  <div style={{ fontFamily: 'Manrope, sans-serif', fontSize: 14, fontWeight: 700, color: '#1D1D1F', marginBottom: 2 }}>{proj.title}</div>
-                  <div style={{ fontSize: 12, color: '#6E6E73' }}>{proj.location}</div>
+                  <div style={{ fontFamily: 'Manrope, sans-serif', fontSize: 14, fontWeight: 700, color: '#FFFFFF', marginBottom: 2 }}>{proj.title}</div>
+                  <div style={{ fontSize: 12, color: '#94A3B8' }}>{proj.location}</div>
                 </div>
               </div>
             ))}
@@ -248,12 +248,12 @@ export default async function SolutionPage({ params }: Props) {
       </section>
 
       {/* Other Solutions */}
-      <section style={{ padding: '64px 24px', background: '#FFFFFF' }}>
+      <section style={{ padding: '64px 24px', background: '#060D1A', borderTop: '1px solid rgba(255,255,255,0.05)' }}>
         <div style={{ maxWidth: 1100, margin: '0 auto' }}>
-          <h2 style={{ fontFamily: 'Manrope, sans-serif', fontSize: 22, fontWeight: 800, color: '#1D1D1F', marginBottom: 24 }}>Other Solutions</h2>
+          <h2 style={{ fontFamily: 'Manrope, sans-serif', fontSize: 22, fontWeight: 800, color: '#FFFFFF', marginBottom: 24 }}>Other Solutions</h2>
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: 10 }}>
             {SOLUTIONS_NAV.filter(s => s.href !== `/solutions/${slug}`).map(s => (
-              <Link key={s.href} href={s.href} style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: '#F5F5F7', borderRadius: 980, padding: '8px 18px', fontSize: 13, fontWeight: 500, color: '#1D1D1F', textDecoration: 'none', border: '1px solid #E8E8ED' }}>
+              <Link key={s.href} href={s.href} style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: 'rgba(255,255,255,0.04)', borderRadius: 980, padding: '8px 18px', fontSize: 13, fontWeight: 500, color: '#CBD5E1', textDecoration: 'none', border: '1px solid rgba(255,255,255,0.08)' }}>
                 <span>{s.icon}</span>{s.label}
               </Link>
             ))}
@@ -262,14 +262,14 @@ export default async function SolutionPage({ params }: Props) {
       </section>
 
       {/* CTA */}
-      <section style={{ padding: '80px 24px', background: '#1D1D1F', textAlign: 'center' }}>
+      <section style={{ padding: '96px 24px', background: 'linear-gradient(135deg, #0A1628 0%, #060D1A 100%)', textAlign: 'center', borderTop: '1px solid rgba(255,255,255,0.05)' }}>
         <h2 style={{ fontFamily: 'Manrope, sans-serif', fontSize: 'clamp(28px,4vw,40px)', fontWeight: 800, color: '#FFFFFF', marginBottom: 16, letterSpacing: '-0.03em' }}>
           Have a {data.label} Project?
         </h2>
-        <p style={{ fontSize: 18, color: 'rgba(255,255,255,0.55)', marginBottom: 32 }}>
+        <p style={{ fontSize: 18, color: '#94A3B8', marginBottom: 32 }}>
           Share your requirements and we'll design a system that fits your space perfectly.
         </p>
-        <Link href="/contact" style={{ display: 'inline-block', background: '#0071E3', color: '#FFFFFF', padding: '16px 40px', borderRadius: 980, fontSize: 16, fontWeight: 600, textDecoration: 'none' }}>
+        <Link href="/contact" style={{ display: 'inline-block', background: '#3B82F6', color: '#FFFFFF', padding: '16px 40px', borderRadius: 980, fontSize: 16, fontWeight: 600, textDecoration: 'none' }}>
           Get a Free Consultation
         </Link>
       </section>

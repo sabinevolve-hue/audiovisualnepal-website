@@ -11,42 +11,42 @@ export const metadata: Metadata = {
 }
 
 const fallbackBrands = [
-  { name: 'DSPPA',          tagline: 'Professional PA & IP Audio Systems',     country: 'China',   emoji: '🔊' },
-  { name: 'Tenveo',         tagline: 'AI-Powered Video Conferencing',           country: 'China',   emoji: '📹' },
-  { name: 'Shure',          tagline: 'Legendary Microphones & Audio',           country: 'USA',     emoji: '🎙️' },
-  { name: 'Sennheiser',     tagline: 'Premium Audio Solutions',                 country: 'Germany', emoji: '🎧' },
-  { name: 'Biamp',          tagline: 'Professional AV Signal Processing',       country: 'USA',     emoji: '🎚️' },
-  { name: 'Extron',         tagline: 'AV Signal Distribution & Control',        country: 'USA',     emoji: '🖥️' },
-  { name: 'Crestron',       tagline: 'Smart Room Automation',                   country: 'USA',     emoji: '🏠' },
-  { name: 'Kramer',         tagline: 'AV Connectivity & Switching',             country: 'Israel',  emoji: '🔗' },
-  { name: 'Yamaha Pro Audio',tagline: 'Mixing Consoles & Amplifiers',           country: 'Japan',   emoji: '🎛️' },
+  { name: 'DSPPA',           tagline: 'Professional PA & IP Audio Systems',   country: 'China',   emoji: '🔊' },
+  { name: 'Tenveo',          tagline: 'AI-Powered Video Conferencing',         country: 'China',   emoji: '📹' },
+  { name: 'Shure',           tagline: 'Legendary Microphones & Audio',         country: 'USA',     emoji: '🎙️' },
+  { name: 'Sennheiser',      tagline: 'Premium Audio Solutions',               country: 'Germany', emoji: '🎧' },
+  { name: 'Biamp',           tagline: 'Professional AV Signal Processing',     country: 'USA',     emoji: '🎚️' },
+  { name: 'Extron',          tagline: 'AV Signal Distribution & Control',      country: 'USA',     emoji: '🖥️' },
+  { name: 'Crestron',        tagline: 'Smart Room Automation',                 country: 'USA',     emoji: '🏠' },
+  { name: 'Kramer',          tagline: 'AV Connectivity & Switching',           country: 'Israel',  emoji: '🔗' },
+  { name: 'Yamaha Pro Audio', tagline: 'Mixing Consoles & Amplifiers',         country: 'Japan',   emoji: '🎛️' },
 ]
 
 export default async function BrandsPage() {
   const brands = await getBrands()
 
   return (
-    <main style={{ paddingTop: 80 }}>
+    <main style={{ paddingTop: 80, background: '#060D1A' }}>
       {/* Hero */}
-      <section
-        className="section-padding-sm px-6 text-center"
-        style={{ background: 'var(--bg-subtle)', borderBottom: '1px solid var(--border-subtle)' }}
-      >
-        <div className="container-site">
-          <p className="eyebrow mb-4">Authorized Distributor</p>
-          <h1 className="heading-section mb-4">World-Class Brands</h1>
-          <p className="text-lg max-w-[560px] mx-auto" style={{ color: 'var(--text-secondary)' }}>
+      <section style={{ padding: '100px 24px 80px', background: 'linear-gradient(180deg, #0A1628 0%, #060D1A 100%)', textAlign: 'center', position: 'relative', overflow: 'hidden' }}>
+        <div style={{ position: 'absolute', inset: 0, backgroundImage: 'linear-gradient(rgba(59,130,246,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(59,130,246,0.04) 1px, transparent 1px)', backgroundSize: '60px 60px', pointerEvents: 'none' }} />
+        <div style={{ maxWidth: 700, margin: '0 auto', position: 'relative' }}>
+          <p style={{ fontSize: 12, fontWeight: 700, color: '#3B82F6', letterSpacing: '0.15em', textTransform: 'uppercase', marginBottom: 20 }}>Authorized Distributor</p>
+          <h1 style={{ fontFamily: 'Manrope, sans-serif', fontSize: 'clamp(36px,5vw,64px)', fontWeight: 800, color: '#FFFFFF', letterSpacing: '-0.03em', lineHeight: 1.05, marginBottom: 20 }}>
+            World-Class Brands
+          </h1>
+          <p style={{ fontSize: 18, color: '#94A3B8', lineHeight: 1.7, maxWidth: 560, margin: '0 auto' }}>
             We&apos;re the authorized distributor for Nepal&apos;s most trusted professional AV brands — genuine products, full warranties, factory support.
           </p>
         </div>
       </section>
 
       {/* Trust badges */}
-      <section className="px-6 py-6 bg-white" style={{ borderBottom: '1px solid var(--border-subtle)' }}>
-        <div className="container-site flex flex-wrap gap-x-10 gap-y-3 justify-center">
+      <section style={{ padding: '24px', background: '#0A0F1E', borderBottom: '1px solid rgba(255,255,255,0.05)' }}>
+        <div style={{ maxWidth: 1200, margin: '0 auto', display: 'flex', flexWrap: 'wrap', gap: 24, justifyContent: 'center' }}>
           {['Genuine Products', 'Full Warranty', 'Factory Training', 'After-Sales Support', 'Certified Engineers'].map(b => (
-            <span key={b} className="flex items-center gap-2 text-[13px] font-medium" style={{ color: 'var(--text-secondary)' }}>
-              <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><circle cx="7" cy="7" r="7" fill="#0071E3" opacity="0.12"/><path d="M4 7l2 2 4-4" stroke="#0071E3" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
+            <span key={b} style={{ display: 'flex', alignItems: 'center', gap: 8, fontSize: 13, fontWeight: 500, color: '#94A3B8' }}>
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><circle cx="7" cy="7" r="7" fill="#3B82F6" fillOpacity="0.15"/><path d="M4 7l2 2 4-4" stroke="#3B82F6" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
               {b}
             </span>
           ))}
@@ -54,65 +54,37 @@ export default async function BrandsPage() {
       </section>
 
       {/* Brands Grid */}
-      <section className="section-padding bg-white px-6">
-        <div className="container-site">
+      <section style={{ padding: '80px 24px', background: '#060D1A' }}>
+        <div style={{ maxWidth: 1200, margin: '0 auto' }}>
           {brands.length > 0 ? (
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))', gap: 20 }}>
               {brands.map(brand => {
                 const name = stripHtml(brand.title.rendered)
                 return (
-                  <div
-                    key={brand.id}
-                    className="rounded-2xl p-7 bg-white transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[var(--shadow-md)]"
-                    style={{ border: '1px solid var(--border-default)' }}
-                  >
+                  <div key={brand.id} style={{ background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.07)', borderRadius: 20, padding: '32px' }}>
                     {brand.featured_image_url ? (
-                      <div className="relative h-14 w-36 mb-5">
-                        <Image src={brand.featured_image_url} alt={name} fill className="object-contain" />
+                      <div style={{ position: 'relative', height: 56, width: 144, marginBottom: 20 }}>
+                        <Image src={brand.featured_image_url} alt={name} fill style={{ objectFit: 'contain' }} />
                       </div>
                     ) : (
-                      <div className="font-display font-extrabold text-2xl mb-5" style={{ color: 'var(--text-primary)' }}>
-                        {name}
-                      </div>
+                      <div style={{ fontFamily: 'Manrope, sans-serif', fontSize: 24, fontWeight: 800, color: '#FFFFFF', marginBottom: 20 }}>{name}</div>
                     )}
-                    {brand.meta?.tagline && (
-                      <p className="text-[14px] leading-relaxed mb-4" style={{ color: 'var(--text-secondary)' }}>
-                        {brand.meta.tagline}
-                      </p>
-                    )}
+                    {brand.meta?.tagline && <p style={{ fontSize: 14, color: '#94A3B8', lineHeight: 1.65, marginBottom: 16 }}>{brand.meta.tagline}</p>}
                     {brand.meta?.country && (
-                      <span
-                        className="inline-block text-[11px] font-semibold px-2.5 py-0.5 rounded-full"
-                        style={{ background: 'var(--brand-dim)', color: 'var(--brand)' }}
-                      >
-                        {brand.meta.country}
-                      </span>
+                      <span style={{ display: 'inline-block', fontSize: 11, fontWeight: 600, padding: '4px 12px', borderRadius: 980, background: 'rgba(59,130,246,0.1)', color: '#60A5FA', border: '1px solid rgba(59,130,246,0.2)' }}>{brand.meta.country}</span>
                     )}
                   </div>
                 )
               })}
             </div>
           ) : (
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))', gap: 20 }}>
               {fallbackBrands.map(b => (
-                <div
-                  key={b.name}
-                  className="rounded-2xl p-7 bg-white transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[var(--shadow-md)]"
-                  style={{ border: '1px solid var(--border-default)' }}
-                >
-                  <div className="text-4xl mb-4">{b.emoji}</div>
-                  <div className="font-display font-extrabold text-xl mb-2" style={{ color: 'var(--text-primary)' }}>
-                    {b.name}
-                  </div>
-                  <p className="text-[14px] leading-relaxed mb-4" style={{ color: 'var(--text-secondary)' }}>
-                    {b.tagline}
-                  </p>
-                  <span
-                    className="inline-block text-[11px] font-semibold px-2.5 py-0.5 rounded-full"
-                    style={{ background: 'var(--brand-dim)', color: 'var(--brand)' }}
-                  >
-                    {b.country}
-                  </span>
+                <div key={b.name} style={{ background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.07)', borderRadius: 20, padding: '32px' }}>
+                  <div style={{ fontSize: 40, marginBottom: 16 }}>{b.emoji}</div>
+                  <div style={{ fontFamily: 'Manrope, sans-serif', fontSize: 20, fontWeight: 800, color: '#FFFFFF', marginBottom: 10 }}>{b.name}</div>
+                  <p style={{ fontSize: 14, color: '#94A3B8', lineHeight: 1.65, marginBottom: 16 }}>{b.tagline}</p>
+                  <span style={{ display: 'inline-block', fontSize: 11, fontWeight: 600, padding: '4px 12px', borderRadius: 980, background: 'rgba(59,130,246,0.1)', color: '#60A5FA', border: '1px solid rgba(59,130,246,0.2)' }}>{b.country}</span>
                 </div>
               ))}
             </div>
@@ -121,11 +93,11 @@ export default async function BrandsPage() {
       </section>
 
       {/* CTA */}
-      <section className="section-padding-sm px-6 text-center" style={{ background: 'var(--bg-subtle)', borderTop: '1px solid var(--border-subtle)' }}>
-        <div className="container-site">
-          <h2 className="font-display font-bold text-2xl mb-3">Interested in our brands?</h2>
-          <p className="mb-6" style={{ color: 'var(--text-secondary)' }}>Contact us for pricing, availability, and technical specifications.</p>
-          <Link href="/contact" className="btn-primary">Get a Quote</Link>
+      <section style={{ padding: '80px 24px', background: '#0A0F1E', textAlign: 'center', borderTop: '1px solid rgba(255,255,255,0.05)' }}>
+        <div style={{ maxWidth: 600, margin: '0 auto' }}>
+          <h2 style={{ fontFamily: 'Manrope, sans-serif', fontSize: 28, fontWeight: 800, color: '#FFFFFF', marginBottom: 12 }}>Interested in our brands?</h2>
+          <p style={{ fontSize: 16, color: '#94A3B8', marginBottom: 32 }}>Contact us for pricing, availability, and technical specifications.</p>
+          <Link href="/contact" style={{ display: 'inline-block', background: '#3B82F6', color: '#FFFFFF', padding: '16px 40px', borderRadius: 980, fontSize: 16, fontWeight: 600, textDecoration: 'none' }}>Get a Quote</Link>
         </div>
       </section>
     </main>

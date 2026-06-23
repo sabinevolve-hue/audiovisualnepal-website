@@ -4,250 +4,157 @@ import { useState, FormEvent } from 'react'
 import { SITE, PROJECT_TYPES } from '@/lib/constants'
 import { Phone, Mail, MapPin, MessageCircle, Send, CheckCircle } from 'lucide-react'
 
+const darkCard = { background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.07)', borderRadius: 16 }
+const inputStyle = {
+  width: '100%',
+  background: 'rgba(255,255,255,0.05)',
+  border: '1px solid rgba(255,255,255,0.1)',
+  borderRadius: 12,
+  padding: '14px 16px',
+  fontSize: 15,
+  color: '#FFFFFF',
+  outline: 'none',
+  boxSizing: 'border-box' as const,
+}
+
 export default function ContactPage() {
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle')
-  const [form, setForm] = useState({
-    name: '', company: '', email: '', phone: '', projectType: '', message: '',
-  })
+  const [form, setForm] = useState({ name: '', company: '', email: '', phone: '', projectType: '', message: '' })
 
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault()
     setStatus('loading')
     try {
-      const res = await fetch('/api/contact', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(form),
-      })
-      if (res.ok) { setStatus('success') }
-      else        { setStatus('error') }
-    } catch {
-      setStatus('error')
-    }
+      const res = await fetch('/api/contact', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(form) })
+      setStatus(res.ok ? 'success' : 'error')
+    } catch { setStatus('error') }
   }
 
   return (
-    <>
+    <main style={{ paddingTop: 80, background: '#060D1A' }}>
       {/* Hero */}
-      <section className="pt-32 pb-20 bg-[#F5F5F7] px-6">
-        <div className="container-site text-center">
-          <div className="eyebrow mb-4">Get In Touch</div>
-          <h1 className="heading-section mb-4">Let&apos;s Design Your<br/>Perfect System</h1>
-          <p className="text-lg text-[#6E6E73] max-w-[520px] mx-auto">
+      <section style={{ padding: '100px 24px 80px', background: 'linear-gradient(180deg, #0A1628 0%, #060D1A 100%)', textAlign: 'center', position: 'relative', overflow: 'hidden' }}>
+        <div style={{ position: 'absolute', inset: 0, backgroundImage: 'linear-gradient(rgba(59,130,246,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(59,130,246,0.04) 1px, transparent 1px)', backgroundSize: '60px 60px', pointerEvents: 'none' }} />
+        <div style={{ maxWidth: 680, margin: '0 auto', position: 'relative' }}>
+          <p style={{ fontSize: 12, fontWeight: 700, color: '#3B82F6', letterSpacing: '0.15em', textTransform: 'uppercase', marginBottom: 20 }}>Get In Touch</p>
+          <h1 style={{ fontFamily: 'Manrope, sans-serif', fontSize: 'clamp(36px,5vw,60px)', fontWeight: 800, color: '#FFFFFF', letterSpacing: '-0.03em', lineHeight: 1.08, marginBottom: 20 }}>
+            Let&apos;s Design Your<br />Perfect System
+          </h1>
+          <p style={{ fontSize: 18, color: '#94A3B8', lineHeight: 1.7 }}>
             Share your project details and our engineers will respond within 24 hours with a customised proposal.
           </p>
         </div>
       </section>
 
       {/* Content */}
-      <section className="section-padding bg-white px-6">
-        <div className="container-site">
-          <div className="grid lg:grid-cols-5 gap-16">
+      <section style={{ padding: '80px 24px', background: '#060D1A' }}>
+        <div style={{ maxWidth: 1200, margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: 48, alignItems: 'start' }}>
 
-            {/* Contact info sidebar */}
-            <div className="lg:col-span-2 space-y-8">
+          {/* Sidebar */}
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 20 }}>
+            <h2 style={{ fontFamily: 'Manrope, sans-serif', fontSize: 22, fontWeight: 700, color: '#FFFFFF', marginBottom: 8 }}>Contact Details</h2>
+
+            {[
+              { href: `tel:${SITE.phoneRaw}`, icon: <Phone size={16} color="#3B82F6" />, label: 'Call us', value: SITE.phone },
+              { href: `mailto:${SITE.email}`, icon: <Mail size={16} color="#3B82F6" />, label: 'Email us', value: SITE.email },
+            ].map(item => (
+              <a key={item.label} href={item.href} style={{ ...darkCard, padding: '20px 24px', display: 'flex', alignItems: 'center', gap: 16, textDecoration: 'none' }}>
+                <div style={{ width: 40, height: 40, background: 'rgba(59,130,246,0.12)', borderRadius: 10, display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+                  {item.icon}
+                </div>
+                <div>
+                  <div style={{ fontSize: 12, color: '#64748B', marginBottom: 3 }}>{item.label}</div>
+                  <div style={{ fontSize: 15, fontWeight: 600, color: '#E2E8F0' }}>{item.value}</div>
+                </div>
+              </a>
+            ))}
+
+            <div style={{ ...darkCard, padding: '20px 24px', display: 'flex', alignItems: 'center', gap: 16 }}>
+              <div style={{ width: 40, height: 40, background: 'rgba(59,130,246,0.12)', borderRadius: 10, display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+                <MapPin size={16} color="#3B82F6" />
+              </div>
               <div>
-                <h2 className="font-display font-bold text-2xl mb-6">Contact Details</h2>
-                <div className="space-y-5">
-                  <a
-                    href={`tel:${SITE.phoneRaw}`}
-                    className="flex items-start gap-4 group"
-                  >
-                    <div className="w-10 h-10 rounded-full bg-[#0071E3]/[0.08] flex items-center justify-center shrink-0 group-hover:bg-[#0071E3]/[0.15] transition-colors">
-                      <Phone size={16} className="text-[#0071E3]" />
-                    </div>
-                    <div>
-                      <div className="text-xs text-[#6E6E73] mb-0.5">Call us</div>
-                      <div className="font-semibold text-[#111] group-hover:text-[#0071E3] transition-colors">
-                        {SITE.phone}
-                      </div>
-                    </div>
-                  </a>
-
-                  <a
-                    href={`mailto:${SITE.email}`}
-                    className="flex items-start gap-4 group"
-                  >
-                    <div className="w-10 h-10 rounded-full bg-[#0071E3]/[0.08] flex items-center justify-center shrink-0 group-hover:bg-[#0071E3]/[0.15] transition-colors">
-                      <Mail size={16} className="text-[#0071E3]" />
-                    </div>
-                    <div>
-                      <div className="text-xs text-[#6E6E73] mb-0.5">Email us</div>
-                      <div className="font-semibold text-[#111] group-hover:text-[#0071E3] transition-colors">
-                        {SITE.email}
-                      </div>
-                    </div>
-                  </a>
-
-                  <div className="flex items-start gap-4">
-                    <div className="w-10 h-10 rounded-full bg-[#0071E3]/[0.08] flex items-center justify-center shrink-0">
-                      <MapPin size={16} className="text-[#0071E3]" />
-                    </div>
-                    <div>
-                      <div className="text-xs text-[#6E6E73] mb-0.5">Visit us</div>
-                      <div className="font-semibold text-[#111]">Kathmandu, Nepal</div>
-                    </div>
-                  </div>
-
-                  <a
-                    href={SITE.whatsapp}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-start gap-4 group"
-                  >
-                    <div className="w-10 h-10 rounded-full bg-[#25D366]/[0.1] flex items-center justify-center shrink-0 group-hover:bg-[#25D366]/[0.2] transition-colors">
-                      <MessageCircle size={16} className="text-[#25D366]" />
-                    </div>
-                    <div>
-                      <div className="text-xs text-[#6E6E73] mb-0.5">WhatsApp</div>
-                      <div className="font-semibold text-[#111] group-hover:text-[#25D366] transition-colors">
-                        Chat instantly
-                      </div>
-                    </div>
-                  </a>
-                </div>
-              </div>
-
-              {/* Office hours */}
-              <div className="bg-[#F5F5F7] rounded-2xl p-6">
-                <h3 className="font-display font-bold text-lg mb-4">Office Hours</h3>
-                <div className="space-y-2 text-sm">
-                  <div className="flex justify-between">
-                    <span className="text-[#6E6E73]">Sunday – Friday</span>
-                    <span className="font-medium">9:00 AM – 6:00 PM</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span className="text-[#6E6E73]">Saturday</span>
-                    <span className="font-medium">10:00 AM – 4:00 PM</span>
-                  </div>
-                </div>
-              </div>
-
-              {/* Google Map placeholder */}
-              <div className="bg-[#F5F5F7] rounded-2xl overflow-hidden h-48 flex items-center justify-center text-[#6E6E73] text-sm">
-                📍 Google Map Embed
+                <div style={{ fontSize: 12, color: '#64748B', marginBottom: 3 }}>Visit us</div>
+                <div style={{ fontSize: 15, fontWeight: 600, color: '#E2E8F0' }}>Kathmandu, Nepal</div>
               </div>
             </div>
 
-            {/* Form */}
-            <div className="lg:col-span-3">
-              {status === 'success' ? (
-                <div className="flex flex-col items-center justify-center text-center py-20">
-                  <CheckCircle size={56} className="text-[#0071E3] mb-6" />
-                  <h3 className="font-display font-bold text-2xl mb-3">Message Received!</h3>
-                  <p className="text-[#6E6E73] max-w-sm">
-                    Thank you for reaching out. Our team will review your requirements and respond within 24 hours.
-                  </p>
+            <a href={SITE.whatsapp} target="_blank" rel="noopener noreferrer" style={{ ...darkCard, padding: '20px 24px', display: 'flex', alignItems: 'center', gap: 16, textDecoration: 'none' }}>
+              <div style={{ width: 40, height: 40, background: 'rgba(37,211,102,0.12)', borderRadius: 10, display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+                <MessageCircle size={16} color="#25D366" />
+              </div>
+              <div>
+                <div style={{ fontSize: 12, color: '#64748B', marginBottom: 3 }}>WhatsApp</div>
+                <div style={{ fontSize: 15, fontWeight: 600, color: '#E2E8F0' }}>Chat instantly</div>
+              </div>
+            </a>
+
+            <div style={{ ...darkCard, padding: '24px' }}>
+              <h3 style={{ fontFamily: 'Manrope, sans-serif', fontSize: 16, fontWeight: 700, color: '#FFFFFF', marginBottom: 16 }}>Office Hours</h3>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
+                <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: 14 }}>
+                  <span style={{ color: '#94A3B8' }}>Sunday – Friday</span>
+                  <span style={{ color: '#E2E8F0', fontWeight: 500 }}>9:00 AM – 6:00 PM</span>
                 </div>
-              ) : (
-                <form onSubmit={handleSubmit} className="space-y-5">
-                  <div className="grid sm:grid-cols-2 gap-5">
-                    <div>
-                      <label className="block text-sm font-medium text-[#111] mb-2">
-                        Full Name <span className="text-[#0071E3]">*</span>
-                      </label>
-                      <input
-                        type="text"
-                        required
-                        value={form.name}
-                        onChange={(e) => setForm({ ...form, name: e.target.value })}
-                        className="w-full bg-[#F5F5F7] border border-transparent rounded-xl px-4 py-3 text-[15px] text-[#111] placeholder-[#6E6E73] focus:outline-none focus:border-[#0071E3] focus:bg-white transition-colors"
-                        placeholder="Your full name"
-                      />
-                    </div>
-                    <div>
-                      <label className="block text-sm font-medium text-[#111] mb-2">Company / Organization</label>
-                      <input
-                        type="text"
-                        value={form.company}
-                        onChange={(e) => setForm({ ...form, company: e.target.value })}
-                        className="w-full bg-[#F5F5F7] border border-transparent rounded-xl px-4 py-3 text-[15px] text-[#111] placeholder-[#6E6E73] focus:outline-none focus:border-[#0071E3] focus:bg-white transition-colors"
-                        placeholder="Company name (optional)"
-                      />
-                    </div>
-                  </div>
-
-                  <div className="grid sm:grid-cols-2 gap-5">
-                    <div>
-                      <label className="block text-sm font-medium text-[#111] mb-2">
-                        Email <span className="text-[#0071E3]">*</span>
-                      </label>
-                      <input
-                        type="email"
-                        required
-                        value={form.email}
-                        onChange={(e) => setForm({ ...form, email: e.target.value })}
-                        className="w-full bg-[#F5F5F7] border border-transparent rounded-xl px-4 py-3 text-[15px] text-[#111] placeholder-[#6E6E73] focus:outline-none focus:border-[#0071E3] focus:bg-white transition-colors"
-                        placeholder="you@company.com"
-                      />
-                    </div>
-                    <div>
-                      <label className="block text-sm font-medium text-[#111] mb-2">
-                        Phone <span className="text-[#0071E3]">*</span>
-                      </label>
-                      <input
-                        type="tel"
-                        required
-                        value={form.phone}
-                        onChange={(e) => setForm({ ...form, phone: e.target.value })}
-                        className="w-full bg-[#F5F5F7] border border-transparent rounded-xl px-4 py-3 text-[15px] text-[#111] placeholder-[#6E6E73] focus:outline-none focus:border-[#0071E3] focus:bg-white transition-colors"
-                        placeholder="+977 98XXXXXXXX"
-                      />
-                    </div>
-                  </div>
-
-                  <div>
-                    <label className="block text-sm font-medium text-[#111] mb-2">
-                      Project Type <span className="text-[#0071E3]">*</span>
-                    </label>
-                    <select
-                      required
-                      value={form.projectType}
-                      onChange={(e) => setForm({ ...form, projectType: e.target.value })}
-                      className="w-full bg-[#F5F5F7] border border-transparent rounded-xl px-4 py-3 text-[15px] text-[#111] focus:outline-none focus:border-[#0071E3] focus:bg-white transition-colors appearance-none"
-                    >
-                      <option value="">Select project type</option>
-                      {PROJECT_TYPES.map((t) => (
-                        <option key={t} value={t}>{t}</option>
-                      ))}
-                    </select>
-                  </div>
-
-                  <div>
-                    <label className="block text-sm font-medium text-[#111] mb-2">
-                      Project Details <span className="text-[#0071E3]">*</span>
-                    </label>
-                    <textarea
-                      required
-                      rows={5}
-                      value={form.message}
-                      onChange={(e) => setForm({ ...form, message: e.target.value })}
-                      className="w-full bg-[#F5F5F7] border border-transparent rounded-xl px-4 py-3 text-[15px] text-[#111] placeholder-[#6E6E73] focus:outline-none focus:border-[#0071E3] focus:bg-white transition-colors resize-none"
-                      placeholder="Describe your space, number of rooms, approximate area, and what you're trying to achieve..."
-                    />
-                  </div>
-
-                  {status === 'error' && (
-                    <p className="text-red-500 text-sm">
-                      Something went wrong. Please try again or WhatsApp us directly.
-                    </p>
-                  )}
-
-                  <button
-                    type="submit"
-                    disabled={status === 'loading'}
-                    className="btn-primary w-full justify-center disabled:opacity-60 disabled:cursor-not-allowed"
-                  >
-                    {status === 'loading' ? 'Sending...' : (
-                      <><Send size={16} /> Send Message</>
-                    )}
-                  </button>
-                </form>
-              )}
+                <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: 14 }}>
+                  <span style={{ color: '#94A3B8' }}>Saturday</span>
+                  <span style={{ color: '#E2E8F0', fontWeight: 500 }}>10:00 AM – 4:00 PM</span>
+                </div>
+              </div>
             </div>
+          </div>
+
+          {/* Form */}
+          <div style={{ ...darkCard, padding: '40px 36px' }}>
+            {status === 'success' ? (
+              <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', textAlign: 'center', padding: '48px 0' }}>
+                <CheckCircle size={56} color="#3B82F6" style={{ marginBottom: 24 }} />
+                <h3 style={{ fontFamily: 'Manrope, sans-serif', fontSize: 24, fontWeight: 700, color: '#FFFFFF', marginBottom: 12 }}>Message Received!</h3>
+                <p style={{ color: '#94A3B8', maxWidth: 320 }}>Our team will review your requirements and respond within 24 hours.</p>
+              </div>
+            ) : (
+              <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: 20 }}>
+                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16 }}>
+                  <div>
+                    <label style={{ display: 'block', fontSize: 13, fontWeight: 600, color: '#CBD5E1', marginBottom: 8 }}>Full Name <span style={{ color: '#3B82F6' }}>*</span></label>
+                    <input type="text" required value={form.name} onChange={e => setForm({ ...form, name: e.target.value })} placeholder="Your full name" style={inputStyle} />
+                  </div>
+                  <div>
+                    <label style={{ display: 'block', fontSize: 13, fontWeight: 600, color: '#CBD5E1', marginBottom: 8 }}>Company</label>
+                    <input type="text" value={form.company} onChange={e => setForm({ ...form, company: e.target.value })} placeholder="Optional" style={inputStyle} />
+                  </div>
+                </div>
+                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16 }}>
+                  <div>
+                    <label style={{ display: 'block', fontSize: 13, fontWeight: 600, color: '#CBD5E1', marginBottom: 8 }}>Email <span style={{ color: '#3B82F6' }}>*</span></label>
+                    <input type="email" required value={form.email} onChange={e => setForm({ ...form, email: e.target.value })} placeholder="you@company.com" style={inputStyle} />
+                  </div>
+                  <div>
+                    <label style={{ display: 'block', fontSize: 13, fontWeight: 600, color: '#CBD5E1', marginBottom: 8 }}>Phone <span style={{ color: '#3B82F6' }}>*</span></label>
+                    <input type="tel" required value={form.phone} onChange={e => setForm({ ...form, phone: e.target.value })} placeholder="+977 98XXXXXXXX" style={inputStyle} />
+                  </div>
+                </div>
+                <div>
+                  <label style={{ display: 'block', fontSize: 13, fontWeight: 600, color: '#CBD5E1', marginBottom: 8 }}>Project Type <span style={{ color: '#3B82F6' }}>*</span></label>
+                  <select required value={form.projectType} onChange={e => setForm({ ...form, projectType: e.target.value })} style={{ ...inputStyle, appearance: 'none' as const }}>
+                    <option value="" style={{ background: '#111827' }}>Select project type</option>
+                    {PROJECT_TYPES.map(t => <option key={t} value={t} style={{ background: '#111827' }}>{t}</option>)}
+                  </select>
+                </div>
+                <div>
+                  <label style={{ display: 'block', fontSize: 13, fontWeight: 600, color: '#CBD5E1', marginBottom: 8 }}>Project Details <span style={{ color: '#3B82F6' }}>*</span></label>
+                  <textarea required rows={5} value={form.message} onChange={e => setForm({ ...form, message: e.target.value })} placeholder="Describe your space, number of rooms, and what you're trying to achieve..." style={{ ...inputStyle, resize: 'none' }} />
+                </div>
+                {status === 'error' && <p style={{ color: '#F87171', fontSize: 14 }}>Something went wrong. Please try again or WhatsApp us directly.</p>}
+                <button type="submit" disabled={status === 'loading'} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 8, background: '#3B82F6', color: '#FFFFFF', border: 'none', borderRadius: 12, padding: '16px 32px', fontSize: 16, fontWeight: 600, cursor: 'pointer', opacity: status === 'loading' ? 0.6 : 1 }}>
+                  <Send size={16} />
+                  {status === 'loading' ? 'Sending...' : 'Send Message'}
+                </button>
+              </form>
+            )}
           </div>
         </div>
       </section>
-    </>
+    </main>
   )
 }

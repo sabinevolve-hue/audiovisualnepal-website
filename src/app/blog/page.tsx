@@ -10,11 +10,7 @@ export const metadata: Metadata = {
 
 export const revalidate = 3600
 
-export default async function BlogPage({
-  searchParams,
-}: {
-  searchParams: Promise<{ page?: string; category?: string }>
-}) {
+export default async function BlogPage({ searchParams }: { searchParams: Promise<{ page?: string; category?: string }> }) {
   const params  = await searchParams
   const page    = Number(params.page ?? 1)
   const catSlug = params.category
@@ -25,16 +21,16 @@ export default async function BlogPage({
   ])
 
   return (
-    <main style={{ paddingTop: 80 }}>
+    <main style={{ paddingTop: 80, background: '#060D1A' }}>
       {/* Hero */}
-      <section
-        className="section-padding-sm px-6 text-center"
-        style={{ background: 'var(--bg-subtle)', borderBottom: '1px solid var(--border-subtle)' }}
-      >
-        <div className="container-site">
-          <p className="eyebrow mb-4">Knowledge Base</p>
-          <h1 className="heading-section mb-4">AV Insights &amp; Guides</h1>
-          <p className="text-lg max-w-[520px] mx-auto" style={{ color: 'var(--text-secondary)' }}>
+      <section style={{ padding: '100px 24px 80px', background: 'linear-gradient(180deg, #0A1628 0%, #060D1A 100%)', textAlign: 'center', position: 'relative', overflow: 'hidden' }}>
+        <div style={{ position: 'absolute', inset: 0, backgroundImage: 'linear-gradient(rgba(59,130,246,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(59,130,246,0.04) 1px, transparent 1px)', backgroundSize: '60px 60px', pointerEvents: 'none' }} />
+        <div style={{ maxWidth: 700, margin: '0 auto', position: 'relative' }}>
+          <p style={{ fontSize: 12, fontWeight: 700, color: '#3B82F6', letterSpacing: '0.15em', textTransform: 'uppercase', marginBottom: 20 }}>Knowledge Base</p>
+          <h1 style={{ fontFamily: 'Manrope, sans-serif', fontSize: 'clamp(36px,5vw,64px)', fontWeight: 800, color: '#FFFFFF', letterSpacing: '-0.03em', lineHeight: 1.05, marginBottom: 20 }}>
+            AV Insights &amp; Guides
+          </h1>
+          <p style={{ fontSize: 18, color: '#94A3B8', lineHeight: 1.7, maxWidth: 520, margin: '0 auto' }}>
             Expert knowledge on audio visual systems, video conferencing, and AV installations across Nepal.
           </p>
         </div>
@@ -42,94 +38,43 @@ export default async function BlogPage({
 
       {/* Category Filter */}
       {categories.length > 0 && (
-        <section
-          className="px-6 py-4"
-          style={{ background: 'var(--bg-subtle)', borderBottom: '1px solid var(--border-subtle)' }}
-        >
-          <div className="container-site flex gap-2 flex-wrap justify-center">
-            <Link
-              href="/blog"
-              className="px-4 py-1.5 rounded-full text-[13px] font-medium transition-colors"
-              style={{
-                background: !catSlug ? 'var(--brand)' : 'white',
-                color: !catSlug ? 'white' : 'var(--text-secondary)',
-                border: `1px solid ${!catSlug ? 'var(--brand)' : 'var(--border-default)'}`,
-                textDecoration: 'none',
-              }}
-            >
-              All
-            </Link>
+        <section style={{ padding: '20px 24px', background: '#0A0F1E', borderBottom: '1px solid rgba(255,255,255,0.05)' }}>
+          <div style={{ maxWidth: 1200, margin: '0 auto', display: 'flex', gap: 8, flexWrap: 'wrap', justifyContent: 'center' }}>
+            <Link href="/blog" style={{ padding: '8px 20px', borderRadius: 980, fontSize: 13, fontWeight: 600, textDecoration: 'none', background: !catSlug ? '#3B82F6' : 'rgba(255,255,255,0.05)', color: !catSlug ? '#FFFFFF' : '#94A3B8', border: `1px solid ${!catSlug ? '#3B82F6' : 'rgba(255,255,255,0.1)'}` }}>All</Link>
             {categories.map(cat => (
-              <Link
-                key={cat.id}
-                href={`/blog?category=${cat.slug}`}
-                className="px-4 py-1.5 rounded-full text-[13px] font-medium transition-colors"
-                style={{
-                  background: catSlug === cat.slug ? 'var(--brand)' : 'white',
-                  color: catSlug === cat.slug ? 'white' : 'var(--text-secondary)',
-                  border: `1px solid ${catSlug === cat.slug ? 'var(--brand)' : 'var(--border-default)'}`,
-                  textDecoration: 'none',
-                }}
-              >
-                {cat.name}
-              </Link>
+              <Link key={cat.id} href={`/blog?category=${cat.slug}`} style={{ padding: '8px 20px', borderRadius: 980, fontSize: 13, fontWeight: 600, textDecoration: 'none', background: catSlug === cat.slug ? '#3B82F6' : 'rgba(255,255,255,0.05)', color: catSlug === cat.slug ? '#FFFFFF' : '#94A3B8', border: `1px solid ${catSlug === cat.slug ? '#3B82F6' : 'rgba(255,255,255,0.1)'}` }}>{cat.name}</Link>
             ))}
           </div>
         </section>
       )}
 
       {/* Posts Grid */}
-      <section className="section-padding bg-white px-6">
-        <div className="container-site">
+      <section style={{ padding: '80px 24px', background: '#060D1A' }}>
+        <div style={{ maxWidth: 1200, margin: '0 auto' }}>
           {posts.length === 0 ? (
-            <div className="text-center py-20" style={{ color: 'var(--text-secondary)' }}>
-              <p className="text-lg">No posts yet — check back soon.</p>
+            <div style={{ textAlign: 'center', padding: '80px 0', color: '#94A3B8' }}>
+              <p style={{ fontSize: 18 }}>No posts yet — check back soon.</p>
             </div>
           ) : (
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(340px, 1fr))', gap: 20 }}>
               {posts.map(post => {
                 const thumb   = post._embedded?.['wp:featuredmedia']?.[0]?.source_url
                 const excerpt = stripHtml(post.excerpt.rendered).slice(0, 130) + '…'
                 const date    = new Date(post.date).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' })
-
                 return (
-                  <article
-                    key={post.id}
-                    className="group rounded-2xl overflow-hidden bg-white transition-all duration-300 hover:-translate-y-1 hover:shadow-[var(--shadow-md)]"
-                    style={{ border: '1px solid var(--border-default)' }}
-                  >
-                    <div className="relative h-48 overflow-hidden">
+                  <article key={post.id} style={{ background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.07)', borderRadius: 20, overflow: 'hidden' }}>
+                    <div style={{ position: 'relative', height: 200 }}>
                       {thumb ? (
-                        <Image
-                          src={thumb}
-                          alt={stripHtml(post.title.rendered)}
-                          fill
-                          className="object-cover transition-transform duration-500 group-hover:scale-105"
-                        />
+                        <Image src={thumb} alt={stripHtml(post.title.rendered)} fill style={{ objectFit: 'cover' }} />
                       ) : (
-                        <div
-                          className="h-full w-full flex items-center justify-center text-4xl"
-                          style={{ background: 'var(--bg-subtle)' }}
-                        >
-                          📰
-                        </div>
+                        <div style={{ height: '100%', background: '#0A0F1E', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 40 }}>📰</div>
                       )}
                     </div>
-                    <div className="p-6">
-                      <p className="text-[12px] font-medium mb-3" style={{ color: 'var(--text-tertiary)' }}>{date}</p>
-                      <h2 className="font-display font-bold text-[16px] leading-snug mb-2 line-clamp-2" style={{ color: 'var(--text-primary)' }}>
-                        {stripHtml(post.title.rendered)}
-                      </h2>
-                      <p className="text-[14px] leading-relaxed line-clamp-3 mb-4" style={{ color: 'var(--text-secondary)' }}>
-                        {excerpt}
-                      </p>
-                      <Link
-                        href={`/blog/${post.slug}`}
-                        className="text-[13px] font-semibold transition-colors"
-                        style={{ color: 'var(--brand)', textDecoration: 'none' }}
-                      >
-                        Read more →
-                      </Link>
+                    <div style={{ padding: '24px' }}>
+                      <p style={{ fontSize: 12, color: '#64748B', marginBottom: 10 }}>{date}</p>
+                      <h2 style={{ fontFamily: 'Manrope, sans-serif', fontSize: 17, fontWeight: 700, color: '#FFFFFF', lineHeight: 1.4, marginBottom: 10 }}>{stripHtml(post.title.rendered)}</h2>
+                      <p style={{ fontSize: 14, color: '#94A3B8', lineHeight: 1.65, marginBottom: 16 }}>{excerpt}</p>
+                      <Link href={`/blog/${post.slug}`} style={{ fontSize: 13, fontWeight: 600, color: '#3B82F6', textDecoration: 'none' }}>Read more →</Link>
                     </div>
                   </article>
                 )

@@ -8,23 +8,19 @@ export const revalidate = 3600
 
 export const metadata: Metadata = {
   title: 'Projects — AudioVisual Nepal | Case Studies & Installations',
-  description: 'Real AV installations across Nepal — hotels, corporate offices, schools, hospitals and more. See our portfolio of completed projects.',
+  description: 'Real AV installations across Nepal — hotels, corporate offices, schools, hospitals and more.',
 }
 
 const fallbackProjects = [
-  { title: 'Grand Hyatt Conference Centre', location: 'Kathmandu', type: 'Hotel', color: '#0071E3', emoji: '🏨' },
-  { title: 'Nepal Telecom HQ Boardrooms', location: 'Kathmandu', type: 'Corporate', color: '#34C759', emoji: '🏢' },
-  { title: 'Tribhuvan University Auditorium', location: 'Kirtipur', type: 'Education', color: '#FF9500', emoji: '🎓' },
-  { title: 'Bir Hospital ICU System', location: 'Kathmandu', type: 'Healthcare', color: '#FF3B30', emoji: '🏥' },
-  { title: 'Pokhara Convention Centre', location: 'Pokhara', type: 'Events', color: '#AF52DE', emoji: '🎪' },
-  { title: 'Nepal Army HQ PA System', location: 'Kathmandu', type: 'Government', color: '#5856D6', emoji: '🏛️' },
+  { title: 'Grand Hyatt Conference Centre', location: 'Kathmandu', type: 'Hotel',      img: 'https://images.unsplash.com/photo-1577962917302-cd874c4e31d2?w=600&q=80' },
+  { title: 'Nepal Telecom HQ Boardrooms',   location: 'Kathmandu', type: 'Corporate',  img: 'https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&q=80' },
+  { title: 'Tribhuvan University Auditorium', location: 'Kirtipur', type: 'Education', img: 'https://images.unsplash.com/photo-1535016120720-40c646be5580?w=600&q=80' },
+  { title: 'Bir Hospital ICU PA System',    location: 'Kathmandu', type: 'Healthcare', img: 'https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=600&q=80' },
+  { title: 'Pokhara Convention Centre',     location: 'Pokhara',   type: 'Events',     img: 'https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?w=600&q=80' },
+  { title: 'Nepal Army HQ PA System',       location: 'Kathmandu', type: 'Government', img: 'https://images.unsplash.com/photo-1551818255-e6e10975bc17?w=600&q=80' },
 ]
 
-export default async function ProjectsPage({
-  searchParams,
-}: {
-  searchParams: Promise<{ industry?: string; page?: string }>
-}) {
+export default async function ProjectsPage({ searchParams }: { searchParams: Promise<{ industry?: string; page?: string }> }) {
   const sp       = await searchParams
   const industry = sp.industry
   const page     = Number(sp.page ?? 1)
@@ -35,16 +31,16 @@ export default async function ProjectsPage({
   ])
 
   return (
-    <main style={{ paddingTop: 80 }}>
+    <main style={{ paddingTop: 80, background: '#060D1A' }}>
       {/* Hero */}
-      <section
-        className="section-padding-sm px-6 text-center"
-        style={{ background: 'var(--bg-subtle)', borderBottom: '1px solid var(--border-subtle)' }}
-      >
-        <div className="container-site">
-          <p className="eyebrow mb-4">Our Portfolio</p>
-          <h1 className="heading-section mb-4">Projects &amp; Case Studies</h1>
-          <p className="text-lg max-w-[520px] mx-auto" style={{ color: 'var(--text-secondary)' }}>
+      <section style={{ padding: '100px 24px 80px', background: 'linear-gradient(180deg, #0A1628 0%, #060D1A 100%)', textAlign: 'center', position: 'relative', overflow: 'hidden' }}>
+        <div style={{ position: 'absolute', inset: 0, backgroundImage: 'linear-gradient(rgba(59,130,246,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(59,130,246,0.04) 1px, transparent 1px)', backgroundSize: '60px 60px', pointerEvents: 'none' }} />
+        <div style={{ maxWidth: 700, margin: '0 auto', position: 'relative' }}>
+          <p style={{ fontSize: 12, fontWeight: 700, color: '#3B82F6', letterSpacing: '0.15em', textTransform: 'uppercase', marginBottom: 20 }}>Our Portfolio</p>
+          <h1 style={{ fontFamily: 'Manrope, sans-serif', fontSize: 'clamp(36px,5vw,64px)', fontWeight: 800, color: '#FFFFFF', letterSpacing: '-0.03em', lineHeight: 1.05, marginBottom: 20 }}>
+            Projects &amp; Case Studies
+          </h1>
+          <p style={{ fontSize: 18, color: '#94A3B8', lineHeight: 1.7, maxWidth: 520, margin: '0 auto' }}>
             From hotel ballrooms to corporate boardrooms — see how we&apos;ve transformed spaces across Nepal.
           </p>
         </div>
@@ -52,105 +48,59 @@ export default async function ProjectsPage({
 
       {/* Industry Filter */}
       {industries.length > 0 && (
-        <section className="px-6 py-4 bg-white" style={{ borderBottom: '1px solid var(--border-subtle)' }}>
-          <div className="container-site flex gap-2 flex-wrap justify-center">
-            <Link
-              href="/projects"
-              className="px-4 py-1.5 rounded-full text-[13px] font-medium"
-              style={{
-                background: !industry ? 'var(--brand)' : 'white',
-                color: !industry ? 'white' : 'var(--text-secondary)',
-                border: `1px solid ${!industry ? 'var(--brand)' : 'var(--border-default)'}`,
-                textDecoration: 'none',
-              }}
-            >
-              All Projects
-            </Link>
+        <section style={{ padding: '20px 24px', background: '#0A0F1E', borderBottom: '1px solid rgba(255,255,255,0.05)' }}>
+          <div style={{ maxWidth: 1200, margin: '0 auto', display: 'flex', gap: 8, flexWrap: 'wrap', justifyContent: 'center' }}>
+            <Link href="/projects" style={{ padding: '8px 20px', borderRadius: 980, fontSize: 13, fontWeight: 600, textDecoration: 'none', background: !industry ? '#3B82F6' : 'rgba(255,255,255,0.05)', color: !industry ? '#FFFFFF' : '#94A3B8', border: `1px solid ${!industry ? '#3B82F6' : 'rgba(255,255,255,0.1)'}` }}>All Projects</Link>
             {industries.map(ind => (
-              <Link
-                key={ind.id}
-                href={`/projects?industry=${ind.slug}`}
-                className="px-4 py-1.5 rounded-full text-[13px] font-medium"
-                style={{
-                  background: industry === ind.slug ? 'var(--brand)' : 'white',
-                  color: industry === ind.slug ? 'white' : 'var(--text-secondary)',
-                  border: `1px solid ${industry === ind.slug ? 'var(--brand)' : 'var(--border-default)'}`,
-                  textDecoration: 'none',
-                }}
-              >
-                {ind.name}
-              </Link>
+              <Link key={ind.id} href={`/projects?industry=${ind.slug}`} style={{ padding: '8px 20px', borderRadius: 980, fontSize: 13, fontWeight: 600, textDecoration: 'none', background: industry === ind.slug ? '#3B82F6' : 'rgba(255,255,255,0.05)', color: industry === ind.slug ? '#FFFFFF' : '#94A3B8', border: `1px solid ${industry === ind.slug ? '#3B82F6' : 'rgba(255,255,255,0.1)'}` }}>{ind.name}</Link>
             ))}
           </div>
         </section>
       )}
 
       {/* Projects Grid */}
-      <section className="section-padding bg-white px-6">
-        <div className="container-site">
+      <section style={{ padding: '80px 24px', background: '#060D1A' }}>
+        <div style={{ maxWidth: 1200, margin: '0 auto' }}>
           {projects.length > 0 ? (
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(340px, 1fr))', gap: 20 }}>
               {projects.map(project => {
                 const title    = stripHtml(project.title.rendered)
                 const excerpt  = stripHtml(project.excerpt?.rendered ?? '').slice(0, 120) + '…'
                 const location = project.meta?.location ?? 'Nepal'
                 const thumb    = project.featured_image_url
-
                 return (
-                  <Link
-                    key={project.id}
-                    href={`/projects/${project.slug}`}
-                    className="group block rounded-2xl overflow-hidden bg-white transition-all duration-300 hover:-translate-y-1 hover:shadow-[var(--shadow-md)]"
-                    style={{ border: '1px solid var(--border-default)', textDecoration: 'none' }}
-                  >
-                    <div className="relative h-52 overflow-hidden bg-[var(--bg-subtle)]">
+                  <Link key={project.id} href={`/projects/${project.slug}`} style={{ textDecoration: 'none', display: 'block', background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.07)', borderRadius: 20, overflow: 'hidden' }}>
+                    <div style={{ position: 'relative', height: 220 }}>
                       {thumb ? (
-                        <Image src={thumb} alt={title} fill className="object-cover transition-transform duration-500 group-hover:scale-105" />
+                        <Image src={thumb} alt={title} fill style={{ objectFit: 'cover' }} />
                       ) : (
-                        <div className="h-full w-full flex items-center justify-center text-5xl" style={{ background: 'var(--bg-subtle)' }}>🏗️</div>
+                        <div style={{ height: '100%', background: '#0A0F1E', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 48 }}>🏗️</div>
                       )}
                     </div>
-                    <div className="p-6">
-                      <div className="flex items-center gap-1.5 mb-3 text-[12px]" style={{ color: 'var(--text-tertiary)' }}>
-                        <MapPin size={11} />
-                        {location}
+                    <div style={{ padding: '24px' }}>
+                      <div style={{ display: 'flex', alignItems: 'center', gap: 6, fontSize: 12, color: '#64748B', marginBottom: 10 }}>
+                        <MapPin size={11} />{location}
                       </div>
-                      <h2 className="font-display font-bold text-[16px] leading-snug mb-2 line-clamp-2" style={{ color: 'var(--text-primary)' }}>
-                        {title}
-                      </h2>
-                      <p className="text-[13px] leading-relaxed line-clamp-2 mb-4" style={{ color: 'var(--text-secondary)' }}>
-                        {excerpt}
-                      </p>
-                      <span className="text-[13px] font-semibold flex items-center gap-1 transition-colors group-hover:gap-2" style={{ color: 'var(--brand)' }}>
-                        View project <ArrowRight size={13} />
-                      </span>
+                      <h2 style={{ fontFamily: 'Manrope, sans-serif', fontSize: 16, fontWeight: 700, color: '#FFFFFF', lineHeight: 1.4, marginBottom: 8 }}>{title}</h2>
+                      <p style={{ fontSize: 13, color: '#94A3B8', lineHeight: 1.65, marginBottom: 16 }}>{excerpt}</p>
+                      <span style={{ fontSize: 13, fontWeight: 600, color: '#3B82F6', display: 'flex', alignItems: 'center', gap: 4 }}>View project <ArrowRight size={13} /></span>
                     </div>
                   </Link>
                 )
               })}
             </div>
           ) : (
-            /* Static fallback */
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(340px, 1fr))', gap: 20 }}>
               {fallbackProjects.map(p => (
-                <div
-                  key={p.title}
-                  className="rounded-2xl overflow-hidden bg-white"
-                  style={{ border: '1px solid var(--border-default)' }}
-                >
-                  <div className="h-48 flex items-center justify-center text-5xl" style={{ background: `${p.color}12` }}>
-                    {p.emoji}
+                <div key={p.title} style={{ background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.07)', borderRadius: 20, overflow: 'hidden' }}>
+                  <div style={{ position: 'relative', height: 220 }}>
+                    <Image src={p.img} alt={p.title} fill style={{ objectFit: 'cover' }} />
+                    <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(6,13,26,0.8) 0%, transparent 50%)' }} />
                   </div>
-                  <div className="p-6">
-                    <div className="flex items-center gap-1.5 mb-3">
-                      <span className="text-[11px] font-semibold px-2 py-0.5 rounded-full" style={{ background: `${p.color}15`, color: p.color }}>
-                        {p.type}
-                      </span>
-                    </div>
-                    <h2 className="font-display font-bold text-[16px] mb-2" style={{ color: 'var(--text-primary)' }}>{p.title}</h2>
-                    <p className="text-[13px] flex items-center gap-1" style={{ color: 'var(--text-secondary)' }}>
-                      <MapPin size={11} />{p.location}
-                    </p>
+                  <div style={{ padding: '24px' }}>
+                    <span style={{ display: 'inline-block', fontSize: 11, fontWeight: 600, padding: '3px 10px', borderRadius: 980, background: 'rgba(59,130,246,0.1)', color: '#60A5FA', border: '1px solid rgba(59,130,246,0.2)', marginBottom: 12 }}>{p.type}</span>
+                    <h2 style={{ fontFamily: 'Manrope, sans-serif', fontSize: 16, fontWeight: 700, color: '#FFFFFF', marginBottom: 8 }}>{p.title}</h2>
+                    <p style={{ fontSize: 13, color: '#94A3B8', display: 'flex', alignItems: 'center', gap: 4 }}><MapPin size={11} />{p.location}</p>
                   </div>
                 </div>
               ))}
