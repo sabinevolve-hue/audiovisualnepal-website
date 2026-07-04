@@ -1,7 +1,7 @@
 import { Metadata } from 'next'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
-import { ALL_PRODUCTS, getProduct, getRelatedProducts } from '@/data/products'
+import { ALL_PRODUCTS, getProductBySlug as getProduct, getRelatedProducts } from '@/data/products'
 import { ProductImg } from '@/components/ui/ProductImg'
 import { SITE } from '@/lib/constants'
 
