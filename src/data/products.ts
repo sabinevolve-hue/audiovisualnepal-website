@@ -1189,31 +1189,6 @@ const TENVEO: Product[] = [
     warranty: "3 Years", relatedSlugs: ["tenveo-m5b", "tenveo-cc600"]
   },
   {
-    id: "tenveo-m5b", slug: "tenveo-m5b",
-    name: "Tenveo M5B", brand: "Tenveo", brandSlug: "tenveo",
-    category: "conference-audio", subcategory: "USB Speakerphone",
-    tagline: "4-Mic USB Speakerphone — 6m Pickup, 8000mAh Battery",
-    badge: "Popular",
-    imageUrl: "https://www.tenveocamera.com/cdn/shop/files/M5B.png?v=1731638015",
-    imageFallback: "#0EA5E9",
-    description: "Professional speakerphone with 4 high-fidelity omnidirectional microphones, 360° pickup up to 6m. USB, Bluetooth and 3.5mm connectivity. 8000mAh battery for 27-hour talk time. DSP noise cancellation and echo suppression. Works with all UC platforms on Windows, Mac, Android and Linux.",
-    keyFeatures: [
-      { title: "4 Omnidirectional Mics", desc: "360° pickup at 6m — no one gets cut off, even at the far end of the table." },
-      { title: "27-Hour Talk Time", desc: "8000mAh battery lasts multiple full days of meetings on a single charge." },
-      { title: "Triple Connectivity", desc: "USB, Bluetooth and 3.5mm cover any device — phone, tablet or laptop." },
-    ],
-    specs: [
-      { label: "Microphones", value: "4 Omnidirectional", highlight: true },
-      { label: "Pickup Range", value: "6m", highlight: true },
-      { label: "Battery", value: "8000mAh / 27-hour talk", highlight: true, group: "Power" },
-
-      { label: "Connection", value: "USB + Bluetooth + 3.5mm" },
-      { label: "Compatibility", value: "All UC platforms" },
-    ],
-    applications: ["Corporate", "Education", "Government"],
-    warranty: "3 Years", relatedSlugs: ["tenveo-m3b", "tenveo-cc600", "tenveo-vhd612a"]
-  },
-  {
     id: "tenveo-kb200pro", slug: "tenveo-kb200pro",
     name: "Tenveo KB200 Pro", brand: "Tenveo", brandSlug: "tenveo",
     category: "camera-controllers", subcategory: "PTZ Keyboard Controller",
