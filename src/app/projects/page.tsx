@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   description: 'Real AV installations across Nepal — hotels, corporate offices, schools, hospitals and more.',
   openGraph: {
     title: 'AV Projects Portfolio — 500+ Installations Across Nepal',
-    description: 'Explore AudioVisual Nepal's completed projects — from Nepal Parliament to five-star hotels. PA systems, conference halls, IP audio and voice evacuation nationwide.',
+    description: "Explore AudioVisual Nepal's completed projects — from Nepal Parliament to five-star hotels. PA systems, conference halls, IP audio and voice evacuation nationwide.",
     url: 'https://audiovisualnepal.com/projects',
     siteName: 'AudioVisual Nepal',
     images: [{ url: '/og-image.svg', width: 1200, height: 630, alt: 'AudioVisual Nepal' }],
