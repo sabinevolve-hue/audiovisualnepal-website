@@ -54,7 +54,7 @@ const DSPPA: Product[] = [
     category: "voice-evacuation", subcategory: "Integrated Voice Evacuation",
     tagline: "8-Zone 500W EN54 Voice Evacuation PA System",
     badge: "Best Seller",
-    imageUrl: "https://www.dsppatech.com/Public/img/product/PAVA9500.png",
+    imageUrl: "https://www.dsppatech.com/uploads/image/20240910/11/8-zones-voice-alarm-fire-evacuation-system-host.jpg",
     imageFallback: "#0B1E3D",
     description: "The PAVA9500 is DSPPA's flagship integrated voice evacuation system, EN54-16 compliant, delivering 500W across 8 independent speaker zones. Supports up to 160 zones via expansion, with dual amplifier failover and full line supervision. Ideal for large government buildings, hospitals, hotels and campuses.",
     keyFeatures: [
@@ -97,7 +97,7 @@ const DSPPA: Product[] = [
     category: "voice-evacuation", subcategory: "Dante Voice Evacuation",
     tagline: "Dante-Networked 8-Zone 500W Voice Evacuation System",
     badge: "New",
-    imageUrl: "https://www.dsppatech.com/Public/img/product/PAVA8500.png",
+    imageUrl: "https://www.dsppatech.com/uploads/image/20240823/11/pava8500-8-zones-voice-evacuation-system.jpg",
     imageFallback: "#0B1E3D",
     description: "The PAVA8500 brings Dante audio networking to EN54-compliant voice evacuation. 8 zones expandable to 160, with built-in 500W digital amplifier, Dante protocol support, and battery backup monitoring. The PAVA8008 remote paging station enables distributed operation across large facilities.",
     keyFeatures: [
@@ -138,7 +138,7 @@ const DSPPA: Product[] = [
     category: "voice-evacuation", subcategory: "Compact Wall-mount VA",
     tagline: "4-Zone 600W Compact Wall-mount Voice Alarm System",
     badge: "Popular",
-    imageUrl: "https://www.dsppatech.com/Public/img/product/PAVA4600.png",
+    imageUrl: "https://www.dsppatech.com/uploads/image/20210119/14/pava4600-1.jpg",
     imageFallback: "#0B1E3D",
     description: "Compact wall-mount voice evacuation solution for smaller buildings. 600W across 4 zones with automatic main/standby amplifier switching. Supports AC and DC24V power supply, built-in battery charger, and speaker line detection. Perfect for offices, retail, small hotels and educational facilities.",
     keyFeatures: [
@@ -169,7 +169,7 @@ const DSPPA: Product[] = [
     category: "amplifiers", subcategory: "Mixer Amplifier",
     tagline: "250W Digital Mixer Amplifier with USB, FM & Bluetooth",
     badge: "Best Seller",
-    imageUrl: "https://www.dsppatech.com/Public/img/product/DMA250U.png",
+    imageUrl: "https://www.dsppatech.com/uploads/image/20231107/14/digital-mixer-amplifier-1.jpg",
     imageFallback: "#1E3A5F",
     description: "Professional 250W mixer amplifier with 70V/100V and 4–16Ω output, 3 mic inputs, 2 AUX inputs, USB, FM and Bluetooth. LCD display shows working status, with rack-mount handles for standard 19\" rack. Available in 60W to 650W versions (DMA60U–DMA650U).",
     keyFeatures: [
@@ -204,7 +204,7 @@ const DSPPA: Product[] = [
     category: "amplifiers", subcategory: "Matrix Amplifier",
     tagline: "6×120W Digital Audio Matrix Amplifier with Touch Control",
     badge: "Featured",
-    imageUrl: "https://www.dsppatech.com/Public/img/product/DMA6112.png",
+    imageUrl: "https://www.dsppatech.com/uploads/image/20240924/19/240w-6-zone-audio-matrix-amplifier-1.jpg",
     imageFallback: "#1E3A5F",
     description: "6-zone digital audio matrix amplifier delivering 6×120W (or 6×240W for DMA6124) with 4.3\" touch screen control. Supports USB, Bluetooth, SD card and FM input. Each zone has independent volume control, with chime and alarm functions. Ideal for multi-zone commercial environments.",
     keyFeatures: [
@@ -236,7 +236,7 @@ const DSPPA: Product[] = [
     name: "DSPPA DMA6250U", brand: "DSPPA", brandSlug: "dsppa",
     category: "amplifiers", subcategory: "Integrated Mixer Amplifier",
     tagline: "6-Zone 250W Integrated Mixer Amplifier with Remote Paging",
-    imageUrl: "https://www.dsppatech.com/Public/img/product/DMA6250U.png",
+    imageUrl: "https://www.dsppatech.com/uploads/image/20220801/15/dma6250u-2.jpg",
     imageFallback: "#1E3A5F",
     description: "250W 6-zone integrated mixer amplifier with 4 mic, 4 AUX inputs, USB/FM/Bluetooth/TF card. Supports up to 6 remote paging microphones via dual RJ45. Built-in chime, priority MIC and 19\" rack mount. Available in 250W, 350W, 500W and 650W.",
     keyFeatures: [
@@ -265,7 +265,7 @@ const DSPPA: Product[] = [
     category: "ip-network-audio", subcategory: "IP Network PA Server",
     tagline: "IP Network PA Management Server — 17\" Touch Screen",
     badge: "Featured",
-    imageUrl: "https://www.dsppatech.com/Public/img/product/MAG6182II.png",
+    imageUrl: "https://www.dsppatech.com/uploads/image/20220722/17/mag6182ii.jpg",
     imageFallback: "#0B1E3D",
     description: "Central management server for DSPPA MAG6000 IP Network PA systems. Industrial circuit board, 17\" true-color touch screen, dual-server redundancy with automatic backup. Supports TTS announcements in Chinese and English, scheduled broadcasts, recording and full web-based remote monitoring.",
     keyFeatures: [
@@ -297,7 +297,7 @@ const DSPPA: Product[] = [
     name: "DSPPA MAG6806", brand: "DSPPA", brandSlug: "dsppa",
     category: "ip-network-audio", subcategory: "IP Network Amplifier",
     tagline: "60W IP Network Digital Power Amplifier",
-    imageUrl: "https://www.dsppatech.com/Public/img/product/MAG6806.png",
+    imageUrl: "https://www.dsppatech.com/uploads/image/20220722/17/ip-network-audio-terminal.jpg",
     imageFallback: "#0B1E3D",
     description: "Rack-mount IP network amplifier for MAG6000 distributed PA systems. 60W at 100V with TCP/IP control, built-in media player (USB/SD), AUX and EMC inputs. Available in 60W, 120W, 250W, 350W, 650W versions. Digital display shows system status and time.",
     keyFeatures: [
@@ -328,7 +328,7 @@ const DSPPA: Product[] = [
     category: "ceiling-speakers", subcategory: "Frameless Ceiling Speaker",
     tagline: "6W 6.5\" Frameless Ceiling Speaker — 100V & 4Ω",
     badge: "Best Seller",
-    imageUrl: "https://www.dsppatech.com/Public/img/product/DSP6011.png",
+    imageUrl: "https://www.dsppatech.com/uploads/image/20221125/10/dsp6011-600-6.jpg",
     imageFallback: "#2563EB",
     description: "Standard commercial ceiling speaker for background music and PA systems. 6W with 100V transformer taps (3W–6W) and 4Ω direct output. Frameless aluminum grille, spring-clip installation — no screws required. 90Hz–15kHz frequency response, 90dB sensitivity.",
     keyFeatures: [
@@ -362,7 +362,7 @@ const DSPPA: Product[] = [
     name: "DSPPA DSP5211", brand: "DSPPA", brandSlug: "dsppa",
     category: "ceiling-speakers", subcategory: "Coaxial Ceiling Speaker",
     tagline: "10W 6.5\" Coaxial Frameless Ceiling Speaker",
-    imageUrl: "https://www.dsppatech.com/Public/img/product/DSP5211.png",
+    imageUrl: "https://www.dsppatech.com/uploads/image/20250626/10w-coaxial-frame-less-ceiling-speaker.webp",
     imageFallback: "#2563EB",
     description: "High-performance coaxial ceiling speaker with 6.5\" woofer and 0.75\" tweeter for extended frequency response. 10W with 100V taps (3W/6W/10W). 93dB sensitivity, 90Hz–18kHz response. Aluminum grille, spring-clip mounting. Ideal for boardrooms and premium hospitality spaces.",
     keyFeatures: [
@@ -394,7 +394,7 @@ const DSPPA: Product[] = [
     name: "DSPPA DSP255II", brand: "DSPPA", brandSlug: "dsppa",
     category: "column-speakers", subcategory: "Waterproof Column Speaker",
     tagline: "30W Waterproof Column Speaker — Indoor & Outdoor",
-    imageUrl: "https://www.dsppatech.com/Public/img/product/DSP255II.png",
+    imageUrl: "https://www.dsppatech.com/uploads/image/20231113/20/outdoor-waterproof-column-speaker.jpg",
     imageFallback: "#2563EB",
     description: "30W waterproof column speaker with dual 3\" woofers and 1\" tweeter. Aluminum housing with waterproof drivers — built for outdoor courtyards, covered walkways, transit platforms and sports facilities. 100V and 70V compatible with bracket included.",
     keyFeatures: [
@@ -422,7 +422,7 @@ const DSPPA: Product[] = [
     name: "DSPPA DSP161HD", brand: "DSPPA", brandSlug: "dsppa",
     category: "horn-speakers", subcategory: "Hi-Fi Horn Speaker",
     tagline: "25W High-Fidelity Outdoor Horn Speaker — IP66",
-    imageUrl: "https://www.dsppatech.com/Public/img/product/DSP161HD.png",
+    imageUrl: "https://www.dsppatech.com/uploads/image/20231012/14/45w-high-fidelity-horn-speaker-1.jpg",
     imageFallback: "#2563EB",
     description: "Hi-Fi two-way horn speaker with built-in 70V/100V transformer, IP66 waterproof rating and high-quality alloy-aluminum housing. Wide frequency response and high sensitivity for outdoor background music and paging at railway stations, shopping malls, parking lots and factories.",
     keyFeatures: [
@@ -454,7 +454,7 @@ const INFOBIT: Product[] = [
     category: "video-conferencing", subcategory: "All-in-One Video Bar",
     tagline: "4K All-in-One Conference Video Bar with AI Auto-Framing",
     badge: "Best Seller",
-    imageUrl: "https://www.infobitav.com/wp-content/uploads/2024/09/iVB50-D1.webp",
+    imageUrl: "https://www.infobitav.com/wp-content/uploads/2024/08/iCam-VB50-B1-scaled.webp",
     imageFallback: "#6366F1",
     description: "The iCam VB50 combines a 4K camera, microphone array and speaker into a single USB bar — plug-in and your meeting room is ready. AI auto-framing tracks active speakers, 5× digital zoom, 120° wide-angle lens, and Bluetooth. Works with Zoom, Teams, WebEx and all major UC platforms.",
     keyFeatures: [
@@ -485,7 +485,7 @@ const INFOBIT: Product[] = [
     category: "video-conferencing", subcategory: "All-in-One Video Bar",
     tagline: "4K Conference Video Bar with 5m Pickup & Expansion Mic",
     badge: "Popular",
-    imageUrl: "https://www.infobitav.com/wp-content/uploads/2024/09/iVB60-D1.webp",
+    imageUrl: "https://www.infobitav.com/wp-content/uploads/2024/08/iCam-VB60-B1-scaled.webp",
     imageFallback: "#6366F1",
     description: "Upgraded from VB50 with speaker voice tracking, 5m pickup, USB HID support and daisy-chainable expansion microphones up to 4 units via RJ45. Ideal for medium-large meeting rooms. Works with Zoom Rooms, Teams Rooms and WebEx Devices.",
     keyFeatures: [
@@ -512,7 +512,7 @@ const INFOBIT: Product[] = [
     category: "video-conferencing", subcategory: "BYOD/BYOM Video Bar",
     tagline: "4K All-in-One BYOD/BYOM Bar with Wireless Presentation",
     badge: "New",
-    imageUrl: "https://www.infobitav.com/wp-content/uploads/2024/09/iCam-VB70-D1.webp",
+    imageUrl: "https://www.infobitav.com/wp-content/uploads/2024/08/iCam-VB70-B1-1.jpg",
     imageFallback: "#6366F1",
     description: "The VB80 is InfoBit's premium video bar — 4K with 120° FOV, 4× MEMS microphone array (8m range), HDMI wired BYOD, wireless Airplay/Miracast BYOM, and Android OS for standalone operation. Up to 5 expansion mics, WiFi, and iShare MC dongle support.",
     keyFeatures: [
@@ -539,7 +539,7 @@ const INFOBIT: Product[] = [
     category: "conference-cameras", subcategory: "4K PTZ Camera",
     tagline: "4K UHD AI Auto-Tracking PTZ Conference Camera",
     badge: "Featured",
-    imageUrl: "https://www.infobitav.com/wp-content/uploads/2024/09/iCam-P30-D1.webp",
+    imageUrl: "https://www.infobitav.com/wp-content/uploads/2024/08/iCam-P30-B1-scaled.webp",
     imageFallback: "#6366F1",
     description: "Professional 4K PTZ camera with AI-based human body detection for automatic target tracking. 12× optical zoom, 80.8° HFOV. Outputs via USB 3.0, HDMI and Ethernet. Compatible with Zoom, Teams, WebEx. Ideal for lecture halls, broadcast studios and large boardrooms.",
     keyFeatures: [
@@ -570,7 +570,7 @@ const INFOBIT: Product[] = [
     name: "InfoBit iCam P40", brand: "InfoBit", brandSlug: "infobit",
     category: "conference-cameras", subcategory: "PTZ Lecturer Tracking",
     tagline: "Dual-Lens AI Lecturer Tracking PTZ Camera — 1080P60 SDI",
-    imageUrl: "https://www.infobitav.com/wp-content/uploads/2024/09/iCam-P40-D1.webp",
+    imageUrl: "https://www.infobitav.com/wp-content/uploads/2024/08/iCam-P40-B1-scaled.webp",
     imageFallback: "#6366F1",
     description: "Specialized dual-lens PTZ for lecture capture and distance learning. AI human body detection locks onto the presenter and adjusts pan/tilt/zoom automatically — even adjusts for the lecturer's height. Dedicated 1080P60 SDI tracking output plus wide overview output.",
     keyFeatures: [
@@ -598,7 +598,7 @@ const INFOBIT: Product[] = [
     category: "wireless-presentation", subcategory: "Wireless Presentation System",
     tagline: "4K60 Wireless Presentation — 0.1s Latency, 16 Users",
     badge: "Best Seller",
-    imageUrl: "https://www.infobitav.com/wp-content/uploads/2024/09/iShare-X200-D1.webp",
+    imageUrl: "https://www.infobitav.com/wp-content/uploads/2024/11/iShare-X200-B-scaled.webp",
     imageFallback: "#6366F1",
     description: "Enterprise-grade wireless presentation system with 4K60Hz output, dual WiFi, 0.1-second mirroring latency and 30m range. Supports USB-A, HDMI and USB-C dongles, portrait and landscape screens, and up to 16 simultaneous users. Built-in whiteboard and annotation tools.",
     keyFeatures: [
@@ -624,7 +624,7 @@ const INFOBIT: Product[] = [
     name: "InfoBit iWall 204", brand: "InfoBit", brandSlug: "infobit",
     category: "video-walls", subcategory: "4K Video Wall Controller",
     tagline: "4K60 2×4 HDMI Video Wall Controller with TCP/IP Control",
-    imageUrl: "https://www.infobitav.com/wp-content/uploads/2024/09/iWall-204-D1.webp",
+    imageUrl: "https://www.infobitav.com/wp-content/uploads/2024/09/iWall-204-B-scaled.webp",
     imageFallback: "#6366F1",
     description: "2-input, 4-output HDMI video wall controller with 4K60Hz input and output. Supports flexible M×N video wall configurations up to 6×6, RS232 and TCP/IP control. Built-in audio de-embedding. Ideal for control rooms, lobbies and multi-display signage walls.",
     keyFeatures: [
@@ -650,7 +650,7 @@ const INFOBIT: Product[] = [
     name: "InfoBit iWall 109", brand: "InfoBit", brandSlug: "infobit",
     category: "video-walls", subcategory: "Video Wall Controller",
     tagline: "1×9 4K30 Video Wall Controller — Plug-and-Play",
-    imageUrl: "https://www.infobitav.com/wp-content/uploads/2024/09/iWall-109-D1.webp",
+    imageUrl: "https://www.infobitav.com/wp-content/uploads/2024/09/iwall-109-b.png",
     imageFallback: "#6366F1",
     description: "Ultra-simple 1-input to 9-output video wall controller. Plug-and-play with IR remote control and multiple preset video wall modes. Supports 8/10/12-bit deep color. Perfect for retail, hospitality and public space multi-screen setups without complex configuration.",
     keyFeatures: [
@@ -675,7 +675,7 @@ const INFOBIT: Product[] = [
     category: "conference-audio", subcategory: "USB Speakerphone",
     tagline: "8-Element Beamforming Speakerphone — 5m Range, 5-Unit Cascade",
     badge: "Popular",
-    imageUrl: "https://www.infobitav.com/wp-content/uploads/2024/09/iSpeaker-M500-D1.webp",
+    imageUrl: "https://www.infobitav.com/wp-content/uploads/2024/08/iSpeaker-M500-B-scaled.webp",
     imageFallback: "#6366F1",
     description: "Professional USB omnidirectional speakerphone with 8-element beamforming microphone array, full-duplex communication, and echo cancellation with AGC. Up to 5 units daisy-chainable for large conference rooms up to 100 sqm. Works with all UC platforms.",
     keyFeatures: [
@@ -701,7 +701,7 @@ const INFOBIT: Product[] = [
     category: "av-switching", subcategory: "HDMI Matrix Switcher",
     tagline: "4K60 HDMI 2×6 Seamless Matrix Switcher with Dante DSP",
     badge: "New",
-    imageUrl: "https://www.infobitav.com/wp-content/uploads/2024/09/iSwitch-265-D1.webp",
+    imageUrl: "https://www.infobitav.com/wp-content/uploads/2024/09/iSwitch-265-B-scaled.webp",
     imageFallback: "#6366F1",
     description: "Advanced 6-input, 4-output seamless matrix switcher (iMatrix C604) with Dante audio networking and onboard DSP. Full USB-C input with 4K60, USB 3.1, network and 60W PD charging. Seamless switching, USB host switching, and 4K60 4:4:4 HDCP 2.2 compliant.",
     keyFeatures: [
