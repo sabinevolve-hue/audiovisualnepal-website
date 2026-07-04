@@ -84,7 +84,6 @@ const DSPPA: Product[] = [
     ],
     applications: ["Government", "Hospital", "Hotel", "Education", "Transportation"],
     warranty: "2 Years",
-    priceNPR: "NPR 4,50,000",
     brandProductUrl: "https://www.dsppatech.com/product/pava9500/",
     downloads: [
       { label: "PAVA9500 Product Brochure", url: "https://www.dsppatech.com/product/pava9500/", type: "brochure" as const },
@@ -126,7 +125,6 @@ const DSPPA: Product[] = [
     ],
     applications: ["Government", "Hospital", "Hotel", "Education"],
     warranty: "2 Years",
-    priceNPR: "NPR 5,20,000",
     brandProductUrl: "https://www.dsppatech.com/product/pava8500/",
     downloads: [
       { label: "PAVA8500 Product Page", url: "https://www.dsppatech.com/product/pava8500/", type: "brochure" as const },
@@ -164,7 +162,6 @@ const DSPPA: Product[] = [
     ],
     applications: ["Corporate", "Education", "Religious", "Hotel"],
     warranty: "2 Years", relatedSlugs: ["dsppa-pava9500", "dsppa-dma250u"]
-    priceNPR: "NPR 1,80,000",
   },
   {
     id: "dsppa-dma250u", slug: "dsppa-dma250u",
@@ -200,7 +197,6 @@ const DSPPA: Product[] = [
     ],
     applications: ["Corporate", "Hotel", "Religious", "Education", "Transportation"],
     warranty: "2 Years", relatedSlugs: ["dsppa-dma6112", "dsppa-dma6250u", "dsppa-pava9500"]
-    priceNPR: "NPR 45,000",
   },
   {
     id: "dsppa-dma6112", slug: "dsppa-dma6112",
@@ -234,7 +230,6 @@ const DSPPA: Product[] = [
     ],
     applications: ["Hotel", "Corporate", "Religious", "Education"],
     warranty: "2 Years", relatedSlugs: ["dsppa-dma250u", "dsppa-dma6250u"]
-    priceNPR: "NPR 95,000",
   },
   {
     id: "dsppa-dma6250u", slug: "dsppa-dma6250u",
@@ -263,7 +258,6 @@ const DSPPA: Product[] = [
     ],
     applications: ["Corporate", "Hotel", "Government", "Transportation"],
     warranty: "2 Years", relatedSlugs: ["dsppa-dma6112", "dsppa-dma250u"]
-    priceNPR: "NPR 1,20,000",
   },
   {
     id: "dsppa-mag6182ii", slug: "dsppa-mag6182ii",
@@ -297,7 +291,6 @@ const DSPPA: Product[] = [
     ],
     applications: ["Transportation", "Government", "Education", "Hospital"],
     warranty: "2 Years", relatedSlugs: ["dsppa-mag6806", "dsppa-pava9500"]
-    priceNPR: "NPR 3,50,000",
   },
   {
     id: "dsppa-mag6806", slug: "dsppa-mag6806",
@@ -328,7 +321,6 @@ const DSPPA: Product[] = [
     ],
     applications: ["Hotel", "Transportation", "Corporate", "Education"],
     warranty: "2 Years", relatedSlugs: ["dsppa-mag6182ii", "dsppa-dsp6011"]
-    priceNPR: "NPR 55,000",
   },
   {
     id: "dsppa-dsp6011", slug: "dsppa-dsp6011",
@@ -364,7 +356,6 @@ const DSPPA: Product[] = [
     ],
     applications: ["Hotel", "Corporate", "Education", "Hospital", "Religious"],
     warranty: "2 Years", relatedSlugs: ["dsppa-dsp5211", "dsppa-mag6806"]
-    priceNPR: "NPR 8,500",
   },
   {
     id: "dsppa-dsp5211", slug: "dsppa-dsp5211",
@@ -397,7 +388,6 @@ const DSPPA: Product[] = [
     ],
     applications: ["Corporate", "Hotel", "Government", "Education"],
     warranty: "2 Years", relatedSlugs: ["dsppa-dsp6011", "dsppa-dsp255ii"]
-    priceNPR: "NPR 12,000",
   },
   {
     id: "dsppa-dsp255ii", slug: "dsppa-dsp255ii",
@@ -426,7 +416,6 @@ const DSPPA: Product[] = [
     ],
     applications: ["Transportation", "Education", "Government", "Stadium"],
     warranty: "2 Years", relatedSlugs: ["dsppa-dsp6011", "dsppa-dsp161hd"]
-    priceNPR: "NPR 22,000",
   },
   {
     id: "dsppa-dsp161hd", slug: "dsppa-dsp161hd",
@@ -454,7 +443,6 @@ const DSPPA: Product[] = [
     ],
     applications: ["Transportation", "Stadium", "Government", "Education"],
     warranty: "2 Years", relatedSlugs: ["dsppa-dsp255ii", "dsppa-dsp6011"]
-    priceNPR: "NPR 18,000",
   },
 ]
 
@@ -490,7 +478,6 @@ const INFOBIT: Product[] = [
     ],
     applications: ["Corporate", "Education", "Government", "Hotel"],
     warranty: "2 Years", relatedSlugs: ["infobit-vb60", "infobit-vb80", "infobit-icam-p30"]
-    priceNPR: "NPR 85,000",
   },
   {
     id: "infobit-vb60", slug: "infobit-vb60",
@@ -518,7 +505,6 @@ const INFOBIT: Product[] = [
     ],
     applications: ["Corporate", "Government", "Education"],
     warranty: "2 Years", relatedSlugs: ["infobit-vb50", "infobit-vb80"]
-    priceNPR: "NPR 1,25,000",
   },
   {
     id: "infobit-vb80", slug: "infobit-vb80",
@@ -546,7 +532,6 @@ const INFOBIT: Product[] = [
     ],
     applications: ["Corporate", "Government"],
     warranty: "2 Years", relatedSlugs: ["infobit-vb50", "infobit-vb60", "infobit-ishare-x200"]
-    priceNPR: "NPR 1,85,000",
   },
   {
     id: "infobit-icam-p30", slug: "infobit-icam-p30",
@@ -579,7 +564,6 @@ const INFOBIT: Product[] = [
     ],
     applications: ["Education", "Government", "Corporate", "Religious"],
     warranty: "2 Years", relatedSlugs: ["infobit-icam-p40", "infobit-vb50"]
-    priceNPR: "NPR 1,20,000",
   },
   {
     id: "infobit-icam-p40", slug: "infobit-icam-p40",
@@ -607,7 +591,6 @@ const INFOBIT: Product[] = [
     ],
     applications: ["Education", "Government", "Religious"],
     warranty: "2 Years", relatedSlugs: ["infobit-icam-p30", "infobit-vb60"]
-    priceNPR: "NPR 1,85,000",
   },
   {
     id: "infobit-ishare-x200", slug: "infobit-ishare-x200",
@@ -635,7 +618,6 @@ const INFOBIT: Product[] = [
     ],
     applications: ["Corporate", "Education", "Government", "Hotel"],
     warranty: "2 Years", relatedSlugs: ["infobit-vb50", "infobit-vb80", "infobit-iwall-204"]
-    priceNPR: "NPR 1,50,000",
   },
   {
     id: "infobit-iwall-204", slug: "infobit-iwall-204",
@@ -662,7 +644,6 @@ const INFOBIT: Product[] = [
     ],
     applications: ["Corporate", "Government", "Hotel", "Transportation"],
     warranty: "2 Years", relatedSlugs: ["infobit-iwall-109", "infobit-ishare-x200"]
-    priceNPR: "NPR 3,80,000",
   },
   {
     id: "infobit-iwall-109", slug: "infobit-iwall-109",
@@ -687,7 +668,6 @@ const INFOBIT: Product[] = [
     ],
     applications: ["Hotel", "Corporate", "Transportation", "Religious"],
     warranty: "2 Years", relatedSlugs: ["infobit-iwall-204", "infobit-ishare-x200"]
-    priceNPR: "NPR 2,20,000",
   },
   {
     id: "infobit-ispeaker-m500", slug: "infobit-ispeaker-m500",
@@ -714,7 +694,6 @@ const INFOBIT: Product[] = [
     ],
     applications: ["Corporate", "Government", "Education"],
     warranty: "2 Years", relatedSlugs: ["infobit-vb50", "infobit-vb60"]
-    priceNPR: "NPR 45,000",
   },
   {
     id: "infobit-iswitch-265", slug: "infobit-iswitch-265",
@@ -742,7 +721,6 @@ const INFOBIT: Product[] = [
     ],
     applications: ["Corporate", "Education", "Government"],
     warranty: "2 Years", relatedSlugs: ["infobit-ishare-x200", "infobit-vb80"]
-    priceNPR: "NPR 2,50,000",
   },
 ]
 
@@ -775,7 +753,6 @@ const TENVEO: Product[] = [
     ],
     applications: ["Corporate", "Education", "Government"],
     warranty: "3 Years", relatedSlugs: ["tenveo-vhd612a", "tenveo-m5b"]
-    priceNPR: "NPR 1,20,000",
   },
   {
     id: "tenveo-vhd612a", slug: "tenveo-vhd612a",
@@ -811,7 +788,6 @@ const TENVEO: Product[] = [
     ],
     applications: ["Corporate", "Education", "Government", "Religious"],
     warranty: "3 Years", relatedSlugs: ["tenveo-vhd620a", "tenveo-uv620a", "tenveo-cc600"]
-    priceNPR: "NPR 1,85,000",
   },
   {
     id: "tenveo-vhd620a", slug: "tenveo-vhd620a",
@@ -842,7 +818,6 @@ const TENVEO: Product[] = [
     ],
     applications: ["Education", "Government", "Religious", "Corporate"],
     warranty: "3 Years", relatedSlugs: ["tenveo-vhd612a", "tenveo-uv620a"]
-    priceNPR: "NPR 2,50,000",
   },
   {
     id: "tenveo-uv620a", slug: "tenveo-uv620a",
@@ -876,7 +851,6 @@ const TENVEO: Product[] = [
     ],
     applications: ["Education", "Government", "Corporate", "Religious"],
     warranty: "3 Years", relatedSlugs: ["tenveo-vhd620a", "tenveo-vhd612a", "tenveo-kb200pro"]
-    priceNPR: "NPR 2,80,000",
   },
   {
     id: "tenveo-va612ex", slug: "tenveo-va612ex",
@@ -902,7 +876,6 @@ const TENVEO: Product[] = [
     ],
     applications: ["Corporate", "Education", "Government"],
     warranty: "3 Years", relatedSlugs: ["tenveo-vhd612a", "tenveo-m5b"]
-    priceNPR: "NPR 1,20,000",
   },
   {
     id: "tenveo-m3b", slug: "tenveo-m3b",
@@ -927,7 +900,6 @@ const TENVEO: Product[] = [
     ],
     applications: ["Corporate", "Education"],
     warranty: "3 Years", relatedSlugs: ["tenveo-m5b", "tenveo-cc600"]
-    priceNPR: "NPR 45,000",
   },
   {
     id: "tenveo-m5b", slug: "tenveo-m5b",
@@ -953,7 +925,6 @@ const TENVEO: Product[] = [
     ],
     applications: ["Corporate", "Education", "Government"],
     warranty: "3 Years", relatedSlugs: ["tenveo-m3b", "tenveo-cc600", "tenveo-vhd612a"]
-    priceNPR: "NPR 65,000",
   },
   {
     id: "tenveo-kb200pro", slug: "tenveo-kb200pro",
@@ -983,7 +954,6 @@ const TENVEO: Product[] = [
     ],
     applications: ["Education", "Religious", "Corporate", "Government"],
     warranty: "3 Years", relatedSlugs: ["tenveo-uv620a", "tenveo-vhd620a"]
-    priceNPR: "NPR 85,000",
   },
   {
     id: "tenveo-nv20a-ai", slug: "tenveo-nv20a-ai",
@@ -1012,7 +982,6 @@ const TENVEO: Product[] = [
     ],
     applications: ["Education", "Corporate", "Government"],
     warranty: "3 Years", relatedSlugs: ["tenveo-vhd620a", "tenveo-uv620a"]
-    priceNPR: "NPR 2,20,000",
   },
   {
     id: "tenveo-x60ndi", slug: "tenveo-x60ndi",
@@ -1040,7 +1009,6 @@ const TENVEO: Product[] = [
     ],
     applications: ["Corporate", "Education", "Religious"],
     warranty: "3 Years", relatedSlugs: ["tenveo-uv620a", "tenveo-vhd620a"]
-    priceNPR: "NPR 3,80,000",
   },
 ]
 
@@ -1078,7 +1046,6 @@ const FOCUS: Product[] = [
     ],
     applications: ["Government", "Education", "Religious", "Corporate"],
     warranty: "1 Year", relatedSlugs: ["focus-st200", "focus-st400", "focus-fk535n"]
-    priceNPR: "NPR 2,80,000",
   },
   {
     id: "focus-st200", slug: "focus-st200",
@@ -1108,7 +1075,6 @@ const FOCUS: Product[] = [
     ],
     applications: ["Government", "Education", "Corporate", "Religious"],
     warranty: "1 Year", relatedSlugs: ["focus-st100", "focus-st400"]
-    priceNPR: "NPR 3,50,000",
   },
   {
     id: "focus-st400", slug: "focus-st400",
@@ -1134,7 +1100,6 @@ const FOCUS: Product[] = [
     ],
     applications: ["Government", "Education", "Religious"],
     warranty: "1 Year", relatedSlugs: ["focus-st100", "focus-st200", "focus-fk535n"]
-    priceNPR: "NPR 4,80,000",
   },
   {
     id: "focus-fk535n", slug: "focus-fk535n",
@@ -1162,7 +1127,6 @@ const FOCUS: Product[] = [
     ],
     applications: ["Education", "Religious", "Corporate"],
     warranty: "1 Year", relatedSlugs: ["focus-st100", "focus-fk500n"]
-    priceNPR: "NPR 2,20,000",
   },
   {
     id: "focus-fk500n", slug: "focus-fk500n",
@@ -1187,7 +1151,6 @@ const FOCUS: Product[] = [
     ],
     applications: ["Education", "Religious", "Corporate", "Government"],
     warranty: "1 Year", relatedSlugs: ["focus-fk535n", "focus-st100"]
-    priceNPR: "NPR 1,85,000",
   },
   {
     id: "focus-st600", slug: "focus-st600",
@@ -1212,7 +1175,6 @@ const FOCUS: Product[] = [
     ],
     applications: ["Government", "Corporate", "Education"],
     warranty: "1 Year", relatedSlugs: ["focus-st400", "focus-st200"]
-    priceNPR: "NPR 5,50,000",
   },
 ]
 

@@ -216,10 +216,6 @@ export default async function ProductCategoryPage({ params, searchParams }: Prop
                             ))}
                           </div>
                         )}
-                        {/* NPR price */}
-                        {product.priceNPR && (
-                          <p style={{ fontSize: 14, fontWeight: 700, color: '#0B1E3D', marginBottom: 12 }}>NPR {product.priceNPR}</p>
-                        )}
                         <div style={{ display: 'flex', alignItems: 'center', gap: 4, fontSize: 13, fontWeight: 600, color: '#2563EB' }}>
                           View Details <ArrowRight size={13} />
                         </div>
