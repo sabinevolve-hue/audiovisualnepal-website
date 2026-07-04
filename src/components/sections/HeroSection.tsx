@@ -86,35 +86,14 @@ export default function HeroSection() {
             style={{
               display: 'inline-flex', alignItems: 'center', gap: 8,
               padding: '14px 30px', borderRadius: 999,
-              background: 'rgba(11,30,61,0.05)', color: '#0B1E3D',
-              fontSize: 15, fontWeight: 600, textDecoration: 'none',
-              border: '1.5px solid rgba(11,30,61,0.14)',
+              background: 'transparent', color: '#0B1E3D',
+              fontSize: 15, fontWeight: 700, textDecoration: 'none',
+              border: '2px solid #0B1E3D',
             }}
           >
             Request Quotation
           </Link>
         </div>
-
-        {/* Stats row */}
-        <div style={{ marginTop: 60, display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '16px 56px', paddingTop: 44, borderTop: '1px solid rgba(11,30,61,0.08)' }}>
-          {[
-            { n: '500+', l: 'Projects Delivered' },
-            { n: '77',   l: 'Districts Covered' },
-            { n: '100%', l: 'Genuine Products' },
-            { n: '4',    l: 'Premium Brands' },
-          ].map(({ n, l }) => (
-            <div key={l} style={{ textAlign: 'center' }}>
-              <div style={{ fontFamily: 'var(--font-display)', fontWeight: 900, fontSize: 30, color: '#0B1E3D', letterSpacing: '-0.03em', lineHeight: 1 }}>{n}</div>
-              <div style={{ fontSize: 11, color: '#94A3B8', marginTop: 5, letterSpacing: '0.06em', textTransform: 'uppercase', fontWeight: 600 }}>{l}</div>
-            </div>
-          ))}
-        </div>
-      </div>
-
-      {/* Scroll indicator */}
-      <div style={{ position: 'absolute', bottom: 28, left: '50%', transform: 'translateX(-50%)', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 8 }}>
-        <span style={{ fontSize: 9, color: '#94A3B8', letterSpacing: '0.12em', textTransform: 'uppercase', fontWeight: 600 }}>Scroll</span>
-        <div style={{ width: 1, height: 32, background: 'linear-gradient(to bottom, rgba(37,99,235,0.5), transparent)' }} />
       </div>
     </section>
   )

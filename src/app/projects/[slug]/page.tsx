@@ -21,7 +21,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const title = stripHtml(project.title.rendered)
   const desc  = project.meta.meta_description || stripHtml(project.excerpt.rendered).slice(0, 160)
   return {
-    title: `${title} — AudioVisual Nepal Case Study`,
+    title: `${title} — Case Study`,
     description: desc,
     openGraph: { title, description: desc, images: project.featured_image_url ? [project.featured_image_url] : [] },
   }
@@ -57,7 +57,7 @@ export default async function ProjectDetailPage({ params }: Props) {
       </nav>
 
       {/* Hero */}
-      <section className="section-padding-sm px-6" style={{ background: 'linear-gradient(180deg, #0A1628 0%, #060D1A 100%)', borderBottom: '1px solid rgba(255,255,255,0.06)' }}>
+      <section className="section-padding-sm px-6" style={{ background: 'linear-gradient(180deg, #F0F4F8 0%, #FFFFFF 100%)', borderBottom: '1px solid rgba(255,255,255,0.06)' }}>
         <div className="container-site">
           <Link href="/projects" className="inline-flex items-center gap-1.5 text-[13px] mb-6 transition-colors hover:text-[var(--brand)]"
             style={{ color: 'var(--text-secondary)', textDecoration: 'none' }}>
@@ -92,7 +92,7 @@ export default async function ProjectDetailPage({ params }: Props) {
       )}
 
       {/* Project Meta Strip */}
-      <section className="px-6 py-6" style={{ background: '#0A0F1E', borderBottom: '1px solid rgba(255,255,255,0.06)' }}>
+      <section className="px-6 py-6" style={{ background: '#F1F5F9', borderBottom: '1px solid rgba(255,255,255,0.06)' }}>
         <div className="container-site flex gap-10 flex-wrap">
           {[
             { label: 'Client',    value: project.meta.client },
@@ -113,7 +113,7 @@ export default async function ProjectDetailPage({ params }: Props) {
       </section>
 
       {/* Content */}
-      <section className="section-padding px-6" style={{ background: '#060D1A' }}>
+      <section className="section-padding px-6" style={{ background: '#FFFFFF' }}>
         <div className="container-site max-w-[860px]">
           {project.meta.challenge && (
             <div className="rounded-2xl p-8 mb-10" style={{ background: 'var(--bg-subtle)', border: '1px solid var(--border-subtle)' }}>
@@ -157,7 +157,7 @@ export default async function ProjectDetailPage({ params }: Props) {
       {/* CTA */}
       <section
         className="section-padding-sm px-6 text-center"
-        style={{ background: 'linear-gradient(135deg, #0A1628 0%, #060D1A 100%)', borderTop: '1px solid rgba(255,255,255,0.06)' }}
+        style={{ background: 'linear-gradient(135deg, #F0F4F8 0%, #FFFFFF 100%)', borderTop: '1px solid rgba(255,255,255,0.06)' }}
       >
         <div className="container-site">
           <h2 className="font-display font-bold text-3xl mb-3" style={{ color: 'var(--text-primary)' }}>
@@ -184,7 +184,7 @@ export default async function ProjectDetailPage({ params }: Props) {
                   <Link
                     key={rel.id}
                     href={`/projects/${rel.slug}`}
-                    className="block rounded-2xl overflow-hidden transition-all hover:-translate-y-0.5" style={{ background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.08)" }}
+                    className="block rounded-2xl overflow-hidden transition-all hover:-translate-y-0.5" style={{ background: "rgba(255,255,255,0.04)", border: "1px solid rgba(11,30,61,0.08)" }}
                     style={{ border: '1px solid var(--border-default)', textDecoration: 'none' }}
                   >
                     <div className="relative h-44">

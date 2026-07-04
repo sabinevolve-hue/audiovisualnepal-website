@@ -4,7 +4,7 @@ import Link from 'next/link'
 export const revalidate = 3600
 
 export const metadata: Metadata = {
-  title: "About — AudioVisual Nepal | Nepal's Leading AV Company",
+  title: "About | Nepal's Leading AV Company",
   description: 'AudioVisual Nepal has been delivering professional audio visual solutions across Nepal since 2010.',
   openGraph: {
     title: "About AudioVisual Nepal — Nepal's Leading AV Company",
@@ -28,23 +28,23 @@ const MILESTONES = [
 
 export default function AboutPage() {
   return (
-    <main style={{ paddingTop: 80, background: '#060D1A' }}>
+    <main style={{ paddingTop: 80, background: '#FFFFFF' }}>
       {/* Hero */}
-      <section style={{ padding: '100px 24px 80px', background: 'linear-gradient(180deg, #0A1628 0%, #060D1A 100%)', textAlign: 'center', position: 'relative', overflow: 'hidden' }}>
-        <div style={{ position: 'absolute', inset: 0, backgroundImage: 'linear-gradient(rgba(59,130,246,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(59,130,246,0.04) 1px, transparent 1px)', backgroundSize: '60px 60px', pointerEvents: 'none' }} />
+      <section style={{ padding: '100px 24px 80px', background: 'linear-gradient(180deg, #F0F4F8 0%, #FFFFFF 100%)', textAlign: 'center', position: 'relative', overflow: 'hidden' }}>
+        <div style={{ position: 'absolute', inset: 0, backgroundImage: 'linear-gradient(rgba(37,99,235,0.06) 1px, transparent 1px), linear-gradient(90deg, rgba(37,99,235,0.06) 1px, transparent 1px)', backgroundSize: '60px 60px', pointerEvents: 'none' }} />
         <div style={{ maxWidth: 800, margin: '0 auto', position: 'relative' }}>
           <p style={{ fontSize: 12, fontWeight: 700, color: '#3B82F6', letterSpacing: '0.15em', textTransform: 'uppercase', marginBottom: 20 }}>Our Story</p>
-          <h1 style={{ fontFamily: 'Manrope, sans-serif', fontSize: 'clamp(40px,6vw,68px)', fontWeight: 800, color: '#FFFFFF', letterSpacing: '-0.03em', lineHeight: 1.05, marginBottom: 24 }}>
+          <h1 style={{ fontFamily: 'Manrope, sans-serif', fontSize: 'clamp(40px,6vw,68px)', fontWeight: 800, color: '#0B1E3D', letterSpacing: '-0.03em', lineHeight: 1.05, marginBottom: 24 }}>
             Nepal&apos;s Most Trusted<br />AV Company
           </h1>
-          <p style={{ fontSize: 19, color: '#94A3B8', lineHeight: 1.75, maxWidth: 620, margin: '0 auto' }}>
+          <p style={{ fontSize: 19, color: '#64748B', lineHeight: 1.75, maxWidth: 620, margin: '0 auto' }}>
             For over a decade, AudioVisual Nepal has designed and delivered professional audio visual systems — from village community halls to five-star hotel ballrooms.
           </p>
         </div>
       </section>
 
       {/* Stats */}
-      <section style={{ padding: '72px 24px', background: '#0A0F1E', borderTop: '1px solid rgba(255,255,255,0.05)', borderBottom: '1px solid rgba(255,255,255,0.05)' }}>
+      <section style={{ padding: '72px 24px', background: '#F1F5F9', borderTop: '1px solid rgba(11,30,61,0.05)', borderBottom: '1px solid rgba(11,30,61,0.05)' }}>
         <div style={{ maxWidth: 1000, margin: '0 auto' }}>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(160px, 1fr))', gap: 40, textAlign: 'center' }}>
             {[
@@ -55,7 +55,7 @@ export default function AboutPage() {
             ].map(stat => (
               <div key={stat.label}>
                 <div style={{ fontFamily: 'Manrope, sans-serif', fontSize: 52, fontWeight: 800, color: '#3B82F6', letterSpacing: '-0.04em', lineHeight: 1 }}>{stat.num}</div>
-                <div style={{ fontSize: 14, color: '#94A3B8', marginTop: 10, fontWeight: 500 }}>{stat.label}</div>
+                <div style={{ fontSize: 14, color: '#64748B', marginTop: 10, fontWeight: 500 }}>{stat.label}</div>
               </div>
             ))}
           </div>
@@ -63,15 +63,15 @@ export default function AboutPage() {
       </section>
 
       {/* Mission & Values */}
-      <section style={{ padding: '96px 24px', background: '#060D1A' }}>
+      <section style={{ padding: '96px 24px', background: '#FFFFFF' }}>
         <div style={{ maxWidth: 1200, margin: '0 auto' }}>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: 64, alignItems: 'start' }}>
             <div>
               <p style={{ fontSize: 12, fontWeight: 700, color: '#3B82F6', letterSpacing: '0.15em', textTransform: 'uppercase', marginBottom: 16 }}>Our Mission</p>
-              <h2 style={{ fontFamily: 'Manrope, sans-serif', fontSize: 'clamp(28px,3.5vw,42px)', fontWeight: 800, color: '#FFFFFF', letterSpacing: '-0.03em', marginBottom: 20, lineHeight: 1.15 }}>
+              <h2 style={{ fontFamily: 'Manrope, sans-serif', fontSize: 'clamp(28px,3.5vw,42px)', fontWeight: 800, color: '#0B1E3D', letterSpacing: '-0.03em', marginBottom: 20, lineHeight: 1.15 }}>
                 Making World-Class AV Accessible
               </h2>
-              <p style={{ fontSize: 17, color: '#94A3B8', lineHeight: 1.85 }}>
+              <p style={{ fontSize: 17, color: '#64748B', lineHeight: 1.85 }}>
                 To make world-class professional audio visual technology accessible to every organization in Nepal — with genuine products, expert design, and reliable long-term support.
               </p>
             </div>
@@ -81,9 +81,9 @@ export default function AboutPage() {
                 { title: 'Long-Term Partners', desc: 'We build relationships, not just installations. Our clients stay with us for maintenance, upgrades, and expansions.' },
                 { title: 'Best-in-Class', desc: "We only recommend what we'd install ourselves. No overselling, no unnecessary complexity — just the right solution." },
               ].map(v => (
-                <div key={v.title} style={{ background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.07)', borderRadius: 16, padding: '24px 28px' }}>
-                  <div style={{ fontFamily: 'Manrope, sans-serif', fontSize: 16, fontWeight: 700, color: '#FFFFFF', marginBottom: 8 }}>{v.title}</div>
-                  <div style={{ fontSize: 14, color: '#94A3B8', lineHeight: 1.7 }}>{v.desc}</div>
+                <div key={v.title} style={{ background: '#FFFFFF', border: '1px solid rgba(11,30,61,0.1)', borderRadius: 16, padding: '24px 28px' }}>
+                  <div style={{ fontFamily: 'Manrope, sans-serif', fontSize: 16, fontWeight: 700, color: '#0B1E3D', marginBottom: 8 }}>{v.title}</div>
+                  <div style={{ fontSize: 14, color: '#64748B', lineHeight: 1.7 }}>{v.desc}</div>
                 </div>
               ))}
             </div>
@@ -92,21 +92,21 @@ export default function AboutPage() {
       </section>
 
       {/* Timeline */}
-      <section style={{ padding: '96px 24px', background: '#0A0F1E' }}>
+      <section style={{ padding: '96px 24px', background: '#F1F5F9' }}>
         <div style={{ maxWidth: 800, margin: '0 auto' }}>
           <div style={{ textAlign: 'center', marginBottom: 64 }}>
             <p style={{ fontSize: 12, fontWeight: 700, color: '#3B82F6', letterSpacing: '0.15em', textTransform: 'uppercase', marginBottom: 16 }}>Since 2010</p>
-            <h2 style={{ fontFamily: 'Manrope, sans-serif', fontSize: 'clamp(28px,4vw,44px)', fontWeight: 800, color: '#FFFFFF', letterSpacing: '-0.03em' }}>Our Journey</h2>
+            <h2 style={{ fontFamily: 'Manrope, sans-serif', fontSize: 'clamp(28px,4vw,44px)', fontWeight: 800, color: '#0B1E3D', letterSpacing: '-0.03em' }}>Our Journey</h2>
           </div>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 0 }}>
             {MILESTONES.map((m, i) => (
               <div key={m.year} style={{ display: 'flex', gap: 28, alignItems: 'flex-start', paddingBottom: i < MILESTONES.length - 1 ? 36 : 0 }}>
                 <div style={{ flexShrink: 0, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                  <div style={{ fontFamily: 'Manrope, sans-serif', fontSize: 13, fontWeight: 800, color: '#3B82F6', width: 56, textAlign: 'center', background: 'rgba(59,130,246,0.1)', border: '1px solid rgba(59,130,246,0.3)', borderRadius: 8, padding: '4px 0' }}>{m.year}</div>
+                  <div style={{ fontFamily: 'Manrope, sans-serif', fontSize: 13, fontWeight: 800, color: '#3B82F6', width: 56, textAlign: 'center', background: 'rgba(37,99,235,0.1)', border: '1px solid rgba(59,130,246,0.3)', borderRadius: 8, padding: '4px 0' }}>{m.year}</div>
                   {i < MILESTONES.length - 1 && <div style={{ width: 1, flex: 1, minHeight: 36, background: 'rgba(59,130,246,0.2)', marginTop: 8 }} />}
                 </div>
-                <div style={{ background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.07)', borderRadius: 14, padding: '16px 22px', flex: 1 }}>
-                  <p style={{ fontSize: 15, color: '#CBD5E1', lineHeight: 1.65, margin: 0 }}>{m.event}</p>
+                <div style={{ background: '#FFFFFF', border: '1px solid rgba(11,30,61,0.1)', borderRadius: 14, padding: '16px 22px', flex: 1 }}>
+                  <p style={{ fontSize: 15, color: '#475569', lineHeight: 1.65, margin: 0 }}>{m.event}</p>
                 </div>
               </div>
             ))}
@@ -115,17 +115,17 @@ export default function AboutPage() {
       </section>
 
       {/* CTA */}
-      <section style={{ padding: '96px 24px', background: 'linear-gradient(135deg, #0A1628 0%, #060D1A 100%)', textAlign: 'center', borderTop: '1px solid rgba(255,255,255,0.05)' }}>
+      <section style={{ padding: '96px 24px', background: 'linear-gradient(135deg, #F0F4F8 0%, #FFFFFF 100%)', textAlign: 'center', borderTop: '1px solid rgba(11,30,61,0.05)' }}>
         <p style={{ fontSize: 12, fontWeight: 700, color: '#3B82F6', letterSpacing: '0.15em', textTransform: 'uppercase', marginBottom: 20 }}>Work With Us</p>
-        <h2 style={{ fontFamily: 'Manrope, sans-serif', fontSize: 'clamp(28px,4vw,48px)', fontWeight: 800, color: '#FFFFFF', marginBottom: 16, letterSpacing: '-0.03em' }}>
+        <h2 style={{ fontFamily: 'Manrope, sans-serif', fontSize: 'clamp(28px,4vw,48px)', fontWeight: 800, color: '#0B1E3D', marginBottom: 16, letterSpacing: '-0.03em' }}>
           Let&apos;s Build Something Great
         </h2>
-        <p style={{ fontSize: 18, color: '#94A3B8', maxWidth: 480, margin: '0 auto 40px' }}>
+        <p style={{ fontSize: 18, color: '#64748B', maxWidth: 480, margin: '0 auto 40px' }}>
           Tell us about your project — we&apos;ll design a solution that fits your space and budget.
         </p>
         <div style={{ display: 'flex', gap: 16, justifyContent: 'center', flexWrap: 'wrap' }}>
-          <Link href="/contact" style={{ display: 'inline-block', background: '#3B82F6', color: '#FFFFFF', padding: '16px 40px', borderRadius: 980, fontSize: 16, fontWeight: 600, textDecoration: 'none' }}>Get in Touch</Link>
-          <Link href="/projects" style={{ display: 'inline-block', background: 'transparent', color: '#FFFFFF', padding: '16px 40px', borderRadius: 980, fontSize: 16, fontWeight: 600, textDecoration: 'none', border: '1.5px solid rgba(255,255,255,0.2)' }}>View Projects</Link>
+          <Link href="/contact" style={{ display: 'inline-block', background: '#3B82F6', color: '#0B1E3D', padding: '16px 40px', borderRadius: 980, fontSize: 16, fontWeight: 600, textDecoration: 'none' }}>Get in Touch</Link>
+          <Link href="/projects" style={{ display: 'inline-block', background: 'transparent', color: '#0B1E3D', padding: '16px 40px', borderRadius: 980, fontSize: 16, fontWeight: 600, textDecoration: 'none', border: '1.5px solid rgba(11,30,61,0.15)' }}>View Projects</Link>
         </div>
       </section>
     </main>

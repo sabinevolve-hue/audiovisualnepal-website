@@ -156,9 +156,9 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params
   const data = SOLUTION_DATA[slug]
-  if (!data) return { title: 'Solutions — AudioVisual Nepal' }
+  if (!data) return { title: 'Solutions' }
   return {
-    title: `${data.label} AV Solutions — AudioVisual Nepal`,
+    title: `${data.label} AV Solutions`,
     description: data.desc,
   }
 }
@@ -169,9 +169,9 @@ export default async function SolutionPage({ params }: Props) {
 
   if (!data) {
     return (
-      <main style={{ paddingTop: 80, minHeight: '60vh', display: 'flex', alignItems: 'center', justifyContent: 'center', background: '#060D1A' }}>
+      <main style={{ paddingTop: 80, minHeight: '60vh', display: 'flex', alignItems: 'center', justifyContent: 'center', background: '#FFFFFF' }}>
         <div style={{ textAlign: 'center' }}>
-          <h1 style={{ fontFamily: 'Manrope, sans-serif', fontSize: 32, fontWeight: 800, color: '#FFFFFF' }}>Solution not found</h1>
+          <h1 style={{ fontFamily: 'Manrope, sans-serif', fontSize: 32, fontWeight: 800, color: '#0B1E3D' }}>Solution not found</h1>
           <Link href="/solutions" style={{ color: '#3B82F6' }}>← All Solutions</Link>
         </div>
       </main>
@@ -179,26 +179,26 @@ export default async function SolutionPage({ params }: Props) {
   }
 
   return (
-    <main style={{ paddingTop: 80, background: '#060D1A' }}>
+    <main style={{ paddingTop: 80, background: '#FFFFFF' }}>
       {/* Hero */}
-      <section style={{ background: 'linear-gradient(180deg, #0A1628 0%, #060D1A 100%)', padding: '100px 24px 80px', position: 'relative', overflow: 'hidden' }}>
+      <section style={{ background: 'linear-gradient(180deg, #F0F4F8 0%, #FFFFFF 100%)', padding: '100px 24px 80px', position: 'relative', overflow: 'hidden' }}>
         <div style={{ maxWidth: 860, margin: '0 auto' }}>
           <p style={{ fontSize: 13, fontWeight: 600, color: '#3B82F6', letterSpacing: '0.08em', textTransform: 'uppercase', marginBottom: 16 }}>
             <Link href="/solutions" style={{ color: '#3B82F6', textDecoration: 'none' }}>Solutions</Link>
             {' / '}{data.label}
           </p>
           <div style={{ fontSize: 56, marginBottom: 20 }}>{data.icon}</div>
-          <h1 style={{ fontFamily: 'Manrope, sans-serif', fontSize: 'clamp(32px,5vw,52px)', fontWeight: 800, color: '#FFFFFF', letterSpacing: '-0.03em', marginBottom: 16 }}>
+          <h1 style={{ fontFamily: 'Manrope, sans-serif', fontSize: 'clamp(32px,5vw,52px)', fontWeight: 800, color: '#0B1E3D', letterSpacing: '-0.03em', marginBottom: 16 }}>
             {data.tagline}
           </h1>
-          <p style={{ fontSize: 18, color: '#94A3B8', lineHeight: 1.7, maxWidth: 640 }}>
+          <p style={{ fontSize: 18, color: '#64748B', lineHeight: 1.7, maxWidth: 640 }}>
             {data.desc}
           </p>
           <div style={{ marginTop: 36, display: 'flex', gap: 14, flexWrap: 'wrap' }}>
-            <Link href="/contact" style={{ display: 'inline-block', background: '#3B82F6', color: '#FFFFFF', padding: '14px 32px', borderRadius: 980, fontSize: 15, fontWeight: 600, textDecoration: 'none' }}>
+            <Link href="/contact" style={{ display: 'inline-block', background: '#3B82F6', color: '#0B1E3D', padding: '14px 32px', borderRadius: 980, fontSize: 15, fontWeight: 600, textDecoration: 'none' }}>
               Request a Quote
             </Link>
-            <Link href="/projects" style={{ display: 'inline-block', background: 'transparent', color: '#FFFFFF', padding: '14px 32px', borderRadius: 980, fontSize: 15, fontWeight: 600, textDecoration: 'none', border: '1.5px solid rgba(255,255,255,0.3)' }}>
+            <Link href="/projects" style={{ display: 'inline-block', background: 'transparent', color: '#0B1E3D', padding: '14px 32px', borderRadius: 980, fontSize: 15, fontWeight: 600, textDecoration: 'none', border: '1.5px solid rgba(255,255,255,0.3)' }}>
               See Our Projects
             </Link>
           </div>
@@ -206,16 +206,16 @@ export default async function SolutionPage({ params }: Props) {
       </section>
 
       {/* Systems */}
-      <section style={{ padding: '80px 24px', background: '#060D1A' }}>
+      <section style={{ padding: '80px 24px', background: '#FFFFFF' }}>
         <div style={{ maxWidth: 1100, margin: '0 auto' }}>
-          <h2 style={{ fontFamily: 'Manrope, sans-serif', fontSize: 'clamp(24px,3.5vw,36px)', fontWeight: 800, color: '#FFFFFF', letterSpacing: '-0.03em', marginBottom: 48 }}>
+          <h2 style={{ fontFamily: 'Manrope, sans-serif', fontSize: 'clamp(24px,3.5vw,36px)', fontWeight: 800, color: '#0B1E3D', letterSpacing: '-0.03em', marginBottom: 48 }}>
             Systems We Design
           </h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))', gap: 16 }}>
             {data.systems.map(sys => (
-              <div key={sys.name} style={{ background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.07)', borderRadius: 16, padding: 24 }}>
-                <div style={{ fontFamily: 'Manrope, sans-serif', fontSize: 16, fontWeight: 700, color: '#FFFFFF', marginBottom: 8 }}>{sys.name}</div>
-                <p style={{ fontSize: 14, color: '#94A3B8', lineHeight: 1.6, margin: 0 }}>{sys.desc}</p>
+              <div key={sys.name} style={{ background: '#FFFFFF', border: '1px solid rgba(11,30,61,0.1)', borderRadius: 16, padding: 24 }}>
+                <div style={{ fontFamily: 'Manrope, sans-serif', fontSize: 16, fontWeight: 700, color: '#0B1E3D', marginBottom: 8 }}>{sys.name}</div>
+                <p style={{ fontSize: 14, color: '#64748B', lineHeight: 1.6, margin: 0 }}>{sys.desc}</p>
               </div>
             ))}
           </div>
@@ -223,18 +223,18 @@ export default async function SolutionPage({ params }: Props) {
       </section>
 
       {/* Reference Projects */}
-      <section style={{ padding: '64px 24px', background: '#0A0F1E', borderTop: '1px solid rgba(255,255,255,0.05)' }}>
+      <section style={{ padding: '64px 24px', background: '#F1F5F9', borderTop: '1px solid rgba(11,30,61,0.05)' }}>
         <div style={{ maxWidth: 1100, margin: '0 auto' }}>
-          <h2 style={{ fontFamily: 'Manrope, sans-serif', fontSize: 'clamp(24px,3.5vw,36px)', fontWeight: 800, color: '#FFFFFF', letterSpacing: '-0.03em', marginBottom: 32 }}>
+          <h2 style={{ fontFamily: 'Manrope, sans-serif', fontSize: 'clamp(24px,3.5vw,36px)', fontWeight: 800, color: '#0B1E3D', letterSpacing: '-0.03em', marginBottom: 32 }}>
             Reference Projects
           </h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(260px, 1fr))', gap: 14 }}>
             {data.projects.map(proj => (
-              <div key={proj.title} style={{ background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.07)', borderRadius: 14, padding: '20px 24px', display: 'flex', alignItems: 'center', gap: 16 }}>
+              <div key={proj.title} style={{ background: '#FFFFFF', border: '1px solid rgba(11,30,61,0.1)', borderRadius: 14, padding: '20px 24px', display: 'flex', alignItems: 'center', gap: 16 }}>
                 <div style={{ width: 40, height: 40, borderRadius: '50%', background: 'rgba(59,130,246,0.15)', border: '1px solid rgba(59,130,246,0.3)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0, color: '#3B82F6' }}><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8"><rect x="2" y="7" width="20" height="15" rx="1"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/><line x1="12" y1="12" x2="12" y2="16"/><line x1="10" y1="14" x2="14" y2="14"/></svg></div>
                 <div>
-                  <div style={{ fontFamily: 'Manrope, sans-serif', fontSize: 14, fontWeight: 700, color: '#FFFFFF', marginBottom: 2 }}>{proj.title}</div>
-                  <div style={{ fontSize: 12, color: '#94A3B8' }}>{proj.location}</div>
+                  <div style={{ fontFamily: 'Manrope, sans-serif', fontSize: 14, fontWeight: 700, color: '#0B1E3D', marginBottom: 2 }}>{proj.title}</div>
+                  <div style={{ fontSize: 12, color: '#64748B' }}>{proj.location}</div>
                 </div>
               </div>
             ))}
@@ -248,12 +248,12 @@ export default async function SolutionPage({ params }: Props) {
       </section>
 
       {/* Other Solutions */}
-      <section style={{ padding: '64px 24px', background: '#060D1A', borderTop: '1px solid rgba(255,255,255,0.05)' }}>
+      <section style={{ padding: '64px 24px', background: '#FFFFFF', borderTop: '1px solid rgba(11,30,61,0.05)' }}>
         <div style={{ maxWidth: 1100, margin: '0 auto' }}>
-          <h2 style={{ fontFamily: 'Manrope, sans-serif', fontSize: 22, fontWeight: 800, color: '#FFFFFF', marginBottom: 24 }}>Other Solutions</h2>
+          <h2 style={{ fontFamily: 'Manrope, sans-serif', fontSize: 22, fontWeight: 800, color: '#0B1E3D', marginBottom: 24 }}>Other Solutions</h2>
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: 10 }}>
             {SOLUTIONS_NAV.filter(s => s.href !== `/solutions/${slug}`).map(s => (
-              <Link key={s.href} href={s.href} style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: 'rgba(255,255,255,0.04)', borderRadius: 980, padding: '8px 18px', fontSize: 13, fontWeight: 500, color: '#CBD5E1', textDecoration: 'none', border: '1px solid rgba(255,255,255,0.08)' }}>
+              <Link key={s.href} href={s.href} style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: 'rgba(255,255,255,0.04)', borderRadius: 980, padding: '8px 18px', fontSize: 13, fontWeight: 500, color: '#475569', textDecoration: 'none', border: '1px solid rgba(11,30,61,0.08)' }}>
                 <span>{s.icon}</span>{s.label}
               </Link>
             ))}
@@ -262,14 +262,14 @@ export default async function SolutionPage({ params }: Props) {
       </section>
 
       {/* CTA */}
-      <section style={{ padding: '96px 24px', background: 'linear-gradient(135deg, #0A1628 0%, #060D1A 100%)', textAlign: 'center', borderTop: '1px solid rgba(255,255,255,0.05)' }}>
-        <h2 style={{ fontFamily: 'Manrope, sans-serif', fontSize: 'clamp(28px,4vw,40px)', fontWeight: 800, color: '#FFFFFF', marginBottom: 16, letterSpacing: '-0.03em' }}>
+      <section style={{ padding: '96px 24px', background: 'linear-gradient(135deg, #F0F4F8 0%, #FFFFFF 100%)', textAlign: 'center', borderTop: '1px solid rgba(11,30,61,0.05)' }}>
+        <h2 style={{ fontFamily: 'Manrope, sans-serif', fontSize: 'clamp(28px,4vw,40px)', fontWeight: 800, color: '#0B1E3D', marginBottom: 16, letterSpacing: '-0.03em' }}>
           Have a {data.label} Project?
         </h2>
-        <p style={{ fontSize: 18, color: '#94A3B8', marginBottom: 32 }}>
+        <p style={{ fontSize: 18, color: '#64748B', marginBottom: 32 }}>
           Share your requirements and we'll design a system that fits your space perfectly.
         </p>
-        <Link href="/contact" style={{ display: 'inline-block', background: '#3B82F6', color: '#FFFFFF', padding: '16px 40px', borderRadius: 980, fontSize: 16, fontWeight: 600, textDecoration: 'none' }}>
+        <Link href="/contact" style={{ display: 'inline-block', background: '#3B82F6', color: '#0B1E3D', padding: '16px 40px', borderRadius: 980, fontSize: 16, fontWeight: 600, textDecoration: 'none' }}>
           Get a Free Consultation
         </Link>
       </section>

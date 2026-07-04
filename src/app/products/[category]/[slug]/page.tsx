@@ -18,7 +18,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const product = getProduct(slug)
   if (!product) return { title: 'Product Not Found' }
   return {
-    title: `${product.name} — ${product.subcategory} | AudioVisual Nepal`,
+    title: `${product.name} — ${product.subcategory}`,
     description: product.description.slice(0, 155),
   }
 }
@@ -44,10 +44,10 @@ export default async function ProductDetailPage({ params }: Props) {
   const allSpecs = product.specs
 
   return (
-    <main style={{ background: '#060D1A', minHeight: '100vh', paddingTop: 80 }}>
+    <main style={{ background: '#FFFFFF', minHeight: '100vh', paddingTop: 80 }}>
 
       {/* Breadcrumb */}
-      <div style={{ padding: '12px 24px', borderBottom: '1px solid rgba(255,255,255,0.06)', background: '#0A0F1E' }}>
+      <div style={{ padding: '12px 24px', borderBottom: '1px solid rgba(255,255,255,0.06)', background: '#F1F5F9' }}>
         <div style={{ maxWidth: 1280, margin: '0 auto', display: 'flex', gap: 8, alignItems: 'center', fontSize: 13, color: '#64748B', flexWrap: 'wrap' }}>
           <Link href="/" style={{ color: '#3B82F6', textDecoration: 'none' }}>Home</Link>
           <span>›</span>
@@ -55,12 +55,12 @@ export default async function ProductDetailPage({ params }: Props) {
           <span>›</span>
           <Link href={`/products/${product.category}`} style={{ color: '#3B82F6', textDecoration: 'none', textTransform: 'capitalize' }}>{product.category.replace(/-/g, ' ')}</Link>
           <span>›</span>
-          <span style={{ color: '#E2E8F0', fontWeight: 500 }}>{product.name}</span>
+          <span style={{ color: '#334155', fontWeight: 500 }}>{product.name}</span>
         </div>
       </div>
 
       {/* Hero */}
-      <section style={{ padding: '48px 24px 0', background: '#060D1A' }}>
+      <section style={{ padding: '48px 24px 0', background: '#FFFFFF' }}>
         <div style={{ maxWidth: 1280, margin: '0 auto', display: 'grid', gridTemplateColumns: '1fr 1.1fr', gap: 64, alignItems: 'start' }}>
 
           {/* Left — Image */}
@@ -99,23 +99,23 @@ export default async function ProductDetailPage({ params }: Props) {
               <Link href={`/brands/${product.brandSlug}`} style={{ display: 'inline-flex', alignItems: 'center', gap: 6, background: brandColor, color: '#fff', padding: '5px 14px', borderRadius: 980, fontSize: 12, fontWeight: 800, letterSpacing: '0.06em', textDecoration: 'none' }}>
                 {BRAND_LOGOS[product.brandSlug] || product.brand}
               </Link>
-              <span style={{ display: 'inline-block', background: 'rgba(255,255,255,0.06)', color: '#94A3B8', padding: '5px 14px', borderRadius: 980, fontSize: 12, fontWeight: 500 }}>
+              <span style={{ display: 'inline-block', background: 'rgba(255,255,255,0.06)', color: '#64748B', padding: '5px 14px', borderRadius: 980, fontSize: 12, fontWeight: 500 }}>
                 {product.subcategory}
               </span>
             </div>
 
-            <h1 style={{ fontFamily: 'Manrope, sans-serif', fontSize: 'clamp(28px,3.5vw,42px)', fontWeight: 900, color: '#FFFFFF', letterSpacing: '-0.03em', lineHeight: 1.1, marginBottom: 10 }}>
+            <h1 style={{ fontFamily: 'Manrope, sans-serif', fontSize: 'clamp(28px,3.5vw,42px)', fontWeight: 900, color: '#0B1E3D', letterSpacing: '-0.03em', lineHeight: 1.1, marginBottom: 10 }}>
               {product.name}
             </h1>
             <p style={{ fontSize: 18, color: brandColor, fontWeight: 600, marginBottom: 20, lineHeight: 1.4 }}>{product.tagline}</p>
-            <p style={{ fontSize: 15, color: '#94A3B8', lineHeight: 1.75, marginBottom: 32 }}>{product.description}</p>
+            <p style={{ fontSize: 15, color: '#64748B', lineHeight: 1.75, marginBottom: 32 }}>{product.description}</p>
 
             {/* Segment Tags */}
             <div style={{ marginBottom: 36 }}>
               <div style={{ fontSize: 11, fontWeight: 700, color: '#64748B', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: 10 }}>Ideal For</div>
               <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap' }}>
                 {product.applications.map(app => (
-                  <span key={app} style={{ background: 'rgba(255,255,255,0.05)', color: '#CBD5E1', padding: '6px 14px', borderRadius: 980, fontSize: 12, fontWeight: 500, border: '1px solid rgba(255,255,255,0.1)' }}>{app}</span>
+                  <span key={app} style={{ background: '#FFFFFF', color: '#475569', padding: '6px 14px', borderRadius: 980, fontSize: 12, fontWeight: 500, border: '1px solid rgba(11,30,61,0.1)' }}>{app}</span>
                 ))}
               </div>
             </div>
@@ -134,7 +134,7 @@ export default async function ProductDetailPage({ params }: Props) {
                 Call Us
               </a>
               <Link href="/contact"
-                style={{ display: 'flex', alignItems: 'center', gap: 8, background: '#3B82F6', color: '#FFFFFF', padding: '14px 28px', borderRadius: 980, fontSize: 15, fontWeight: 600, textDecoration: 'none' }}>
+                style={{ display: 'flex', alignItems: 'center', gap: 8, background: '#3B82F6', color: '#0B1E3D', padding: '14px 28px', borderRadius: 980, fontSize: 15, fontWeight: 600, textDecoration: 'none' }}>
                 Request Quote
               </Link>
             </div>
@@ -146,23 +146,23 @@ export default async function ProductDetailPage({ params }: Props) {
       <div style={{ height: 1, background: 'rgba(255,255,255,0.06)', margin: '0 24px' }} />
 
       {/* Key Features + Full Specs */}
-      <section style={{ padding: '64px 24px', background: '#060D1A' }}>
+      <section style={{ padding: '64px 24px', background: '#FFFFFF' }}>
         <div style={{ maxWidth: 1280, margin: '0 auto', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 64 }}>
 
           {/* Key Features */}
           <div>
-            <h2 style={{ fontFamily: 'Manrope, sans-serif', fontSize: 28, fontWeight: 800, color: '#FFFFFF', letterSpacing: '-0.02em', marginBottom: 28 }}>
+            <h2 style={{ fontFamily: 'Manrope, sans-serif', fontSize: 28, fontWeight: 800, color: '#0B1E3D', letterSpacing: '-0.02em', marginBottom: 28 }}>
               Key Features
             </h2>
             <div style={{ display: 'flex', flexDirection: 'column', gap: 14 }}>
               {product.keyFeatures.map((f, i) => (
-                <div key={i} style={{ display: 'flex', gap: 16, alignItems: 'flex-start', padding: 20, background: 'rgba(255,255,255,0.03)', borderRadius: 16, border: '1px solid rgba(255,255,255,0.07)' }}>
+                <div key={i} style={{ display: 'flex', gap: 16, alignItems: 'flex-start', padding: 20, background: '#FFFFFF', borderRadius: 16, border: '1px solid rgba(11,30,61,0.1)' }}>
                   <div style={{ width: 34, height: 34, borderRadius: '50%', background: `${brandColor}15`, display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0, border: `1.5px solid ${brandColor}25` }}>
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke={brandColor} strokeWidth="2.5"><polyline points="20 6 9 17 4 12"/></svg>
                   </div>
                   <div>
-                    <div style={{ fontFamily: 'Manrope, sans-serif', fontWeight: 700, fontSize: 14, color: '#FFFFFF', marginBottom: 4 }}>{f.title}</div>
-                    <div style={{ fontSize: 13, color: '#94A3B8', lineHeight: 1.65 }}>{f.desc}</div>
+                    <div style={{ fontFamily: 'Manrope, sans-serif', fontWeight: 700, fontSize: 14, color: '#0B1E3D', marginBottom: 4 }}>{f.title}</div>
+                    <div style={{ fontSize: 13, color: '#64748B', lineHeight: 1.65 }}>{f.desc}</div>
                   </div>
                 </div>
               ))}
@@ -171,28 +171,28 @@ export default async function ProductDetailPage({ params }: Props) {
 
           {/* Technical Specs */}
           <div>
-            <h2 style={{ fontFamily: 'Manrope, sans-serif', fontSize: 28, fontWeight: 800, color: '#FFFFFF', letterSpacing: '-0.02em', marginBottom: 28 }}>
+            <h2 style={{ fontFamily: 'Manrope, sans-serif', fontSize: 28, fontWeight: 800, color: '#0B1E3D', letterSpacing: '-0.02em', marginBottom: 28 }}>
               Technical Specifications
             </h2>
-            <div style={{ border: '1px solid rgba(255,255,255,0.08)', borderRadius: 18, overflow: 'hidden' }}>
+            <div style={{ border: '1px solid rgba(11,30,61,0.08)', borderRadius: 18, overflow: 'hidden' }}>
               {allSpecs.map((spec, i) => (
-                <div key={spec.label} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '13px 20px', background: spec.highlight ? `${brandColor}12` : i % 2 === 0 ? 'rgba(255,255,255,0.02)' : 'transparent', borderBottom: i < allSpecs.length - 1 ? '1px solid rgba(255,255,255,0.05)' : 'none', gap: 16, borderLeft: spec.highlight ? `3px solid ${brandColor}` : '3px solid transparent' }}>
-                  <span style={{ fontSize: 13, color: '#94A3B8', fontWeight: 500, flexShrink: 0 }}>{spec.label}</span>
+                <div key={spec.label} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '13px 20px', background: spec.highlight ? `${brandColor}12` : i % 2 === 0 ? 'rgba(255,255,255,0.02)' : 'transparent', borderBottom: i < allSpecs.length - 1 ? '1px solid rgba(11,30,61,0.05)' : 'none', gap: 16, borderLeft: spec.highlight ? `3px solid ${brandColor}` : '3px solid transparent' }}>
+                  <span style={{ fontSize: 13, color: '#64748B', fontWeight: 500, flexShrink: 0 }}>{spec.label}</span>
                   <span style={{ fontSize: 13, color: spec.highlight ? brandColor : '#E2E8F0', fontWeight: spec.highlight ? 700 : 500, textAlign: 'right' }}>{spec.value}</span>
                 </div>
               ))}
-              <div style={{ padding: '14px 20px', background: 'rgba(255,255,255,0.04)', borderTop: '1px solid rgba(255,255,255,0.08)' }}>
+              <div style={{ padding: '14px 20px', background: 'rgba(255,255,255,0.04)', borderTop: '1px solid rgba(11,30,61,0.08)' }}>
                 <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: 13 }}>
-                  <span style={{ color: '#94A3B8', fontWeight: 500 }}>Warranty</span>
-                  <span style={{ color: '#E2E8F0', fontWeight: 700 }}>{product.warranty}</span>
+                  <span style={{ color: '#64748B', fontWeight: 500 }}>Warranty</span>
+                  <span style={{ color: '#334155', fontWeight: 700 }}>{product.warranty}</span>
                 </div>
               </div>
             </div>
 
             {/* CTA card */}
             <div style={{ marginTop: 20, background: `linear-gradient(135deg, ${brandColor}12, ${brandColor}06)`, border: `1.5px solid ${brandColor}25`, borderRadius: 18, padding: 28, textAlign: 'center' }}>
-              <div style={{ fontFamily: 'Manrope, sans-serif', fontWeight: 700, fontSize: 16, color: '#FFFFFF', marginBottom: 8 }}>Need the full datasheet or a demo?</div>
-              <p style={{ fontSize: 13, color: '#94A3B8', marginBottom: 18, lineHeight: 1.6 }}>Our engineers will send technical specs and arrange an on-site demonstration.</p>
+              <div style={{ fontFamily: 'Manrope, sans-serif', fontWeight: 700, fontSize: 16, color: '#0B1E3D', marginBottom: 8 }}>Need the full datasheet or a demo?</div>
+              <p style={{ fontSize: 13, color: '#64748B', marginBottom: 18, lineHeight: 1.6 }}>Our engineers will send technical specs and arrange an on-site demonstration.</p>
               <Link href="/contact" style={{ display: 'inline-block', background: brandColor, color: '#fff', padding: '11px 26px', borderRadius: 980, fontSize: 13, fontWeight: 700, textDecoration: 'none', boxShadow: `0 4px 20px ${brandColor}40` }}>
                 Request Datasheet
               </Link>
@@ -203,9 +203,9 @@ export default async function ProductDetailPage({ params }: Props) {
 
       {/* Related Products */}
       {related.length > 0 && (
-        <section style={{ padding: '48px 24px 80px', background: '#0A0F1E', borderTop: '1px solid rgba(255,255,255,0.05)' }}>
+        <section style={{ padding: '48px 24px 80px', background: '#F1F5F9', borderTop: '1px solid rgba(11,30,61,0.05)' }}>
           <div style={{ maxWidth: 1280, margin: '0 auto' }}>
-            <h2 style={{ fontFamily: 'Manrope, sans-serif', fontSize: 26, fontWeight: 800, color: '#FFFFFF', letterSpacing: '-0.02em', marginBottom: 28 }}>
+            <h2 style={{ fontFamily: 'Manrope, sans-serif', fontSize: 26, fontWeight: 800, color: '#0B1E3D', letterSpacing: '-0.02em', marginBottom: 28 }}>
               Related Products
             </h2>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: 20 }}>
@@ -213,15 +213,15 @@ export default async function ProductDetailPage({ params }: Props) {
                 const rColor = BRAND_COLORS[rp.brandSlug] || '#0071E3'
                 return (
                   <Link key={rp.slug} href={`/products/${rp.category}/${rp.slug}`} style={{ textDecoration: 'none' }}>
-                    <div style={{ background: 'rgba(255,255,255,0.03)', borderRadius: 20, overflow: 'hidden', border: '1px solid rgba(255,255,255,0.08)', height: '100%' }}>
+                    <div style={{ background: '#FFFFFF', borderRadius: 20, overflow: 'hidden', border: '1px solid rgba(11,30,61,0.08)', height: '100%' }}>
                       <div style={{ height: 180, background: `linear-gradient(135deg, ${rColor}15, ${rColor}05)`, display: 'flex', alignItems: 'center', justifyContent: 'center', position: 'relative' }}>
                         <div style={{ position: 'absolute', top: 12, right: 12, fontSize: 11, fontWeight: 900, color: rColor, letterSpacing: '0.06em', fontFamily: 'Manrope, sans-serif' }}>{BRAND_LOGOS[rp.brandSlug] || rp.brand}</div>
                         {/* eslint-disable-next-line @next/next/no-img-element */}
                         <ProductImg src={rp.imageUrl} alt={rp.name} style={{ width: '60%', height: '80%', objectFit: 'contain' }} brandColor={rColor} brandName={BRAND_LOGOS[rp.brandSlug] || rp.brand} />
                       </div>
                       <div style={{ padding: 20 }}>
-                        <div style={{ fontFamily: 'Manrope, sans-serif', fontWeight: 700, fontSize: 15, color: '#FFFFFF', marginBottom: 4 }}>{rp.name}</div>
-                        <div style={{ fontSize: 13, color: '#94A3B8' }}>{rp.subcategory}</div>
+                        <div style={{ fontFamily: 'Manrope, sans-serif', fontWeight: 700, fontSize: 15, color: '#0B1E3D', marginBottom: 4 }}>{rp.name}</div>
+                        <div style={{ fontSize: 13, color: '#64748B' }}>{rp.subcategory}</div>
                       </div>
                     </div>
                   </Link>

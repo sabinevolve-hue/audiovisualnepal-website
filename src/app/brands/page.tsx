@@ -5,7 +5,7 @@ import { ArrowRight } from 'lucide-react'
 export const revalidate = 86400
 
 export const metadata: Metadata = {
-  title: 'Our Brands — AudioVisual Nepal | Authorized Distributor',
+  title: 'Our Brands | Authorized AV Distributor Nepal',
   description: 'AudioVisual Nepal is the authorized distributor for DSPPA, InfoBit, Tenveo and Focus (GZFocus) in Nepal. Genuine products, full manufacturer warranty.',
   openGraph: {
     title: 'Authorised AV Brands in Nepal — DSPPA, InfoBit, Tenveo, Focus',

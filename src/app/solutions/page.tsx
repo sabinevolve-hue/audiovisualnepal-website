@@ -5,10 +5,10 @@ import { SOLUTIONS_NAV } from '@/lib/constants'
 export const revalidate = 3600
 
 export const metadata: Metadata = {
-  title: 'Solutions — AudioVisual Nepal | AV for Every Industry',
+  title: 'Solutions | AV for Every Industry',
   description: 'Professional AV solutions for corporate offices, government, education, hotels, hospitals, religious venues and more across Nepal.',
   openGraph: {
-    title: 'AV Solutions for Every Sector — AudioVisual Nepal',
+    title: 'AV Solutions for Every Sector',
     description: 'Professional audio visual solutions for corporate offices, government, education, hotels, hospitals, religious venues and transportation hubs across Nepal.',
     url: 'https://audiovisualnepal.com/solutions',
     siteName: 'AudioVisual Nepal',
@@ -31,37 +31,37 @@ const SOLUTION_DETAILS: Record<string, { desc: string; systems: string[] }> = {
 
 export default function SolutionsPage() {
   return (
-    <main style={{ paddingTop: 80, background: '#060D1A' }}>
+    <main style={{ paddingTop: 80, background: '#FFFFFF' }}>
       {/* Hero */}
-      <section style={{ padding: '100px 24px 80px', background: 'linear-gradient(180deg, #0A1628 0%, #060D1A 100%)', textAlign: 'center', position: 'relative', overflow: 'hidden' }}>
-        <div style={{ position: 'absolute', inset: 0, backgroundImage: 'linear-gradient(rgba(59,130,246,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(59,130,246,0.04) 1px, transparent 1px)', backgroundSize: '60px 60px', pointerEvents: 'none' }} />
+      <section style={{ padding: '100px 24px 80px', background: 'linear-gradient(180deg, #F0F4F8 0%, #FFFFFF 100%)', textAlign: 'center', position: 'relative', overflow: 'hidden' }}>
+        <div style={{ position: 'absolute', inset: 0, backgroundImage: 'linear-gradient(rgba(37,99,235,0.06) 1px, transparent 1px), linear-gradient(90deg, rgba(37,99,235,0.06) 1px, transparent 1px)', backgroundSize: '60px 60px', pointerEvents: 'none' }} />
         <div style={{ maxWidth: 700, margin: '0 auto', position: 'relative' }}>
           <p style={{ fontSize: 12, fontWeight: 700, color: '#3B82F6', letterSpacing: '0.15em', textTransform: 'uppercase', marginBottom: 20 }}>Industry Solutions</p>
-          <h1 style={{ fontFamily: 'Manrope, sans-serif', fontSize: 'clamp(36px,5vw,64px)', fontWeight: 800, color: '#FFFFFF', letterSpacing: '-0.03em', lineHeight: 1.05, marginBottom: 20 }}>
+          <h1 style={{ fontFamily: 'Manrope, sans-serif', fontSize: 'clamp(36px,5vw,64px)', fontWeight: 800, color: '#0B1E3D', letterSpacing: '-0.03em', lineHeight: 1.05, marginBottom: 20 }}>
             Solutions for Every Space
           </h1>
-          <p style={{ fontSize: 18, color: '#94A3B8', lineHeight: 1.7, maxWidth: 580, margin: '0 auto' }}>
+          <p style={{ fontSize: 18, color: '#64748B', lineHeight: 1.7, maxWidth: 580, margin: '0 auto' }}>
             From government boardrooms to hotel ballrooms — we design and deliver complete AV systems for every environment.
           </p>
         </div>
       </section>
 
       {/* Solutions Grid */}
-      <section style={{ padding: '80px 24px', background: '#060D1A' }}>
+      <section style={{ padding: '80px 24px', background: '#FFFFFF' }}>
         <div style={{ maxWidth: 1200, margin: '0 auto' }}>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(320px, 1fr))', gap: 20 }}>
             {SOLUTIONS_NAV.map(sol => {
               const detail = SOLUTION_DETAILS[sol.href]
               return (
-                <Link key={sol.href} href={sol.href} style={{ textDecoration: 'none', display: 'block', background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.07)', borderRadius: 20, padding: '32px', transition: 'all 0.2s' }}>
+                <Link key={sol.href} href={sol.href} style={{ textDecoration: 'none', display: 'block', background: '#FFFFFF', border: '1px solid rgba(11,30,61,0.1)', borderRadius: 20, padding: '32px', transition: 'all 0.2s' }}>
                   <div style={{ fontSize: 40, marginBottom: 20 }}>{sol.icon}</div>
-                  <h2 style={{ fontFamily: 'Manrope, sans-serif', fontSize: 20, fontWeight: 800, color: '#FFFFFF', marginBottom: 10 }}>{sol.label}</h2>
+                  <h2 style={{ fontFamily: 'Manrope, sans-serif', fontSize: 20, fontWeight: 800, color: '#0B1E3D', marginBottom: 10 }}>{sol.label}</h2>
                   {detail && (
                     <>
-                      <p style={{ fontSize: 14, color: '#94A3B8', lineHeight: 1.65, marginBottom: 16 }}>{detail.desc}</p>
+                      <p style={{ fontSize: 14, color: '#64748B', lineHeight: 1.65, marginBottom: 16 }}>{detail.desc}</p>
                       <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6 }}>
                         {detail.systems.slice(0, 3).map(s => (
-                          <span key={s} style={{ fontSize: 12, background: 'rgba(59,130,246,0.1)', border: '1px solid rgba(59,130,246,0.2)', borderRadius: 980, padding: '3px 10px', color: '#60A5FA', fontWeight: 500 }}>{s}</span>
+                          <span key={s} style={{ fontSize: 12, background: 'rgba(37,99,235,0.1)', border: '1px solid rgba(59,130,246,0.2)', borderRadius: 980, padding: '3px 10px', color: '#60A5FA', fontWeight: 500 }}>{s}</span>
                         ))}
                       </div>
                     </>
@@ -75,11 +75,11 @@ export default function SolutionsPage() {
       </section>
 
       {/* Process */}
-      <section style={{ padding: '80px 24px', background: '#0A0F1E', borderTop: '1px solid rgba(255,255,255,0.05)' }}>
+      <section style={{ padding: '80px 24px', background: '#F1F5F9', borderTop: '1px solid rgba(11,30,61,0.05)' }}>
         <div style={{ maxWidth: 1100, margin: '0 auto', textAlign: 'center' }}>
           <p style={{ fontSize: 12, fontWeight: 700, color: '#3B82F6', letterSpacing: '0.15em', textTransform: 'uppercase', marginBottom: 16 }}>How We Work</p>
-          <h2 style={{ fontFamily: 'Manrope, sans-serif', fontSize: 'clamp(28px,4vw,40px)', fontWeight: 800, color: '#FFFFFF', letterSpacing: '-0.03em', marginBottom: 12 }}>Our Process</h2>
-          <p style={{ fontSize: 16, color: '#94A3B8', marginBottom: 56 }}>From brief to commissioning — we own the entire delivery.</p>
+          <h2 style={{ fontFamily: 'Manrope, sans-serif', fontSize: 'clamp(28px,4vw,40px)', fontWeight: 800, color: '#0B1E3D', letterSpacing: '-0.03em', marginBottom: 12 }}>Our Process</h2>
+          <p style={{ fontSize: 16, color: '#64748B', marginBottom: 56 }}>From brief to commissioning — we own the entire delivery.</p>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))', gap: 16 }}>
             {[
               { step: '01', title: 'Site Survey', desc: 'We visit your space, understand acoustics, layout, and usage requirements.' },
@@ -89,10 +89,10 @@ export default function SolutionsPage() {
               { step: '05', title: 'Commission', desc: 'Full testing, tuning, and user training before handover.' },
               { step: '06', title: 'Support', desc: 'AMC, warranty, and ongoing support after go-live.' },
             ].map(p => (
-              <div key={p.step} style={{ background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.07)', borderRadius: 16, padding: 24, textAlign: 'left' }}>
+              <div key={p.step} style={{ background: '#FFFFFF', border: '1px solid rgba(11,30,61,0.1)', borderRadius: 16, padding: 24, textAlign: 'left' }}>
                 <div style={{ fontFamily: 'Manrope, sans-serif', fontSize: 28, fontWeight: 800, color: '#3B82F6', marginBottom: 12 }}>{p.step}</div>
-                <div style={{ fontFamily: 'Manrope, sans-serif', fontSize: 15, fontWeight: 700, color: '#FFFFFF', marginBottom: 8 }}>{p.title}</div>
-                <p style={{ fontSize: 13, color: '#94A3B8', lineHeight: 1.65, margin: 0 }}>{p.desc}</p>
+                <div style={{ fontFamily: 'Manrope, sans-serif', fontSize: 15, fontWeight: 700, color: '#0B1E3D', marginBottom: 8 }}>{p.title}</div>
+                <p style={{ fontSize: 13, color: '#64748B', lineHeight: 1.65, margin: 0 }}>{p.desc}</p>
               </div>
             ))}
           </div>
@@ -100,10 +100,10 @@ export default function SolutionsPage() {
       </section>
 
       {/* CTA */}
-      <section style={{ padding: '96px 24px', background: 'linear-gradient(135deg, #0A1628 0%, #060D1A 100%)', textAlign: 'center', borderTop: '1px solid rgba(255,255,255,0.05)' }}>
-        <h2 style={{ fontFamily: 'Manrope, sans-serif', fontSize: 'clamp(28px,4vw,48px)', fontWeight: 800, color: '#FFFFFF', marginBottom: 16, letterSpacing: '-0.03em' }}>Ready to Get Started?</h2>
-        <p style={{ fontSize: 18, color: '#94A3B8', maxWidth: 480, margin: '0 auto 40px' }}>Share your project requirements and we&apos;ll put together a design and quotation.</p>
-        <Link href="/contact" style={{ display: 'inline-block', background: '#3B82F6', color: '#FFFFFF', padding: '16px 40px', borderRadius: 980, fontSize: 16, fontWeight: 600, textDecoration: 'none' }}>Request a Quotation</Link>
+      <section style={{ padding: '96px 24px', background: 'linear-gradient(135deg, #F0F4F8 0%, #FFFFFF 100%)', textAlign: 'center', borderTop: '1px solid rgba(11,30,61,0.05)' }}>
+        <h2 style={{ fontFamily: 'Manrope, sans-serif', fontSize: 'clamp(28px,4vw,48px)', fontWeight: 800, color: '#0B1E3D', marginBottom: 16, letterSpacing: '-0.03em' }}>Ready to Get Started?</h2>
+        <p style={{ fontSize: 18, color: '#64748B', maxWidth: 480, margin: '0 auto 40px' }}>Share your project requirements and we&apos;ll put together a design and quotation.</p>
+        <Link href="/contact" style={{ display: 'inline-block', background: '#3B82F6', color: '#0B1E3D', padding: '16px 40px', borderRadius: 980, fontSize: 16, fontWeight: 600, textDecoration: 'none' }}>Request a Quotation</Link>
       </section>
     </main>
   )

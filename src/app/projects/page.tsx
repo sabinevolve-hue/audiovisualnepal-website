@@ -7,7 +7,7 @@ import { MapPin, ArrowRight } from 'lucide-react'
 export const revalidate = 3600
 
 export const metadata: Metadata = {
-  title: 'Projects — AudioVisual Nepal | Case Studies & Installations',
+  title: 'Projects | Case Studies & Installations',
   description: 'Real AV installations across Nepal — hotels, corporate offices, schools, hospitals and more.',
   openGraph: {
     title: 'AV Projects Portfolio — 500+ Installations Across Nepal',
@@ -40,16 +40,16 @@ export default async function ProjectsPage({ searchParams }: { searchParams: Pro
   ])
 
   return (
-    <main style={{ paddingTop: 80, background: '#060D1A' }}>
+    <main style={{ paddingTop: 80, background: '#FFFFFF' }}>
       {/* Hero */}
-      <section style={{ padding: '100px 24px 80px', background: 'linear-gradient(180deg, #0A1628 0%, #060D1A 100%)', textAlign: 'center', position: 'relative', overflow: 'hidden' }}>
-        <div style={{ position: 'absolute', inset: 0, backgroundImage: 'linear-gradient(rgba(59,130,246,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(59,130,246,0.04) 1px, transparent 1px)', backgroundSize: '60px 60px', pointerEvents: 'none' }} />
+      <section style={{ padding: '100px 24px 80px', background: 'linear-gradient(180deg, #F0F4F8 0%, #FFFFFF 100%)', textAlign: 'center', position: 'relative', overflow: 'hidden' }}>
+        <div style={{ position: 'absolute', inset: 0, backgroundImage: 'linear-gradient(rgba(37,99,235,0.06) 1px, transparent 1px), linear-gradient(90deg, rgba(37,99,235,0.06) 1px, transparent 1px)', backgroundSize: '60px 60px', pointerEvents: 'none' }} />
         <div style={{ maxWidth: 700, margin: '0 auto', position: 'relative' }}>
           <p style={{ fontSize: 12, fontWeight: 700, color: '#3B82F6', letterSpacing: '0.15em', textTransform: 'uppercase', marginBottom: 20 }}>Our Portfolio</p>
-          <h1 style={{ fontFamily: 'Manrope, sans-serif', fontSize: 'clamp(36px,5vw,64px)', fontWeight: 800, color: '#FFFFFF', letterSpacing: '-0.03em', lineHeight: 1.05, marginBottom: 20 }}>
+          <h1 style={{ fontFamily: 'Manrope, sans-serif', fontSize: 'clamp(36px,5vw,64px)', fontWeight: 800, color: '#0B1E3D', letterSpacing: '-0.03em', lineHeight: 1.05, marginBottom: 20 }}>
             Projects &amp; Case Studies
           </h1>
-          <p style={{ fontSize: 18, color: '#94A3B8', lineHeight: 1.7, maxWidth: 520, margin: '0 auto' }}>
+          <p style={{ fontSize: 18, color: '#64748B', lineHeight: 1.7, maxWidth: 520, margin: '0 auto' }}>
             From hotel ballrooms to corporate boardrooms — see how we&apos;ve transformed spaces across Nepal.
           </p>
         </div>
@@ -57,18 +57,18 @@ export default async function ProjectsPage({ searchParams }: { searchParams: Pro
 
       {/* Industry Filter */}
       {industries.length > 0 && (
-        <section style={{ padding: '20px 24px', background: '#0A0F1E', borderBottom: '1px solid rgba(255,255,255,0.05)' }}>
+        <section style={{ padding: '20px 24px', background: '#F1F5F9', borderBottom: '1px solid rgba(11,30,61,0.05)' }}>
           <div style={{ maxWidth: 1200, margin: '0 auto', display: 'flex', gap: 8, flexWrap: 'wrap', justifyContent: 'center' }}>
-            <Link href="/projects" style={{ padding: '8px 20px', borderRadius: 980, fontSize: 13, fontWeight: 600, textDecoration: 'none', background: !industry ? '#3B82F6' : 'rgba(255,255,255,0.05)', color: !industry ? '#FFFFFF' : '#94A3B8', border: `1px solid ${!industry ? '#3B82F6' : 'rgba(255,255,255,0.1)'}` }}>All Projects</Link>
+            <Link href="/projects" style={{ padding: '8px 20px', borderRadius: 980, fontSize: 13, fontWeight: 600, textDecoration: 'none', background: !industry ? '#3B82F6' : 'rgba(11,30,61,0.05)', color: !industry ? '#FFFFFF' : '#94A3B8', border: `1px solid ${!industry ? '#3B82F6' : 'rgba(11,30,61,0.1)'}` }}>All Projects</Link>
             {industries.map(ind => (
-              <Link key={ind.id} href={`/projects?industry=${ind.slug}`} style={{ padding: '8px 20px', borderRadius: 980, fontSize: 13, fontWeight: 600, textDecoration: 'none', background: industry === ind.slug ? '#3B82F6' : 'rgba(255,255,255,0.05)', color: industry === ind.slug ? '#FFFFFF' : '#94A3B8', border: `1px solid ${industry === ind.slug ? '#3B82F6' : 'rgba(255,255,255,0.1)'}` }}>{ind.name}</Link>
+              <Link key={ind.id} href={`/projects?industry=${ind.slug}`} style={{ padding: '8px 20px', borderRadius: 980, fontSize: 13, fontWeight: 600, textDecoration: 'none', background: industry === ind.slug ? '#3B82F6' : 'rgba(11,30,61,0.05)', color: industry === ind.slug ? '#FFFFFF' : '#94A3B8', border: `1px solid ${industry === ind.slug ? '#3B82F6' : 'rgba(11,30,61,0.1)'}` }}>{ind.name}</Link>
             ))}
           </div>
         </section>
       )}
 
       {/* Projects Grid */}
-      <section style={{ padding: '80px 24px', background: '#060D1A' }}>
+      <section style={{ padding: '80px 24px', background: '#FFFFFF' }}>
         <div style={{ maxWidth: 1200, margin: '0 auto' }}>
           {projects.length > 0 ? (
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(340px, 1fr))', gap: 20 }}>
@@ -78,20 +78,20 @@ export default async function ProjectsPage({ searchParams }: { searchParams: Pro
                 const location = project.meta?.location ?? 'Nepal'
                 const thumb    = project.featured_image_url
                 return (
-                  <Link key={project.id} href={`/projects/${project.slug}`} style={{ textDecoration: 'none', display: 'block', background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.07)', borderRadius: 20, overflow: 'hidden' }}>
+                  <Link key={project.id} href={`/projects/${project.slug}`} style={{ textDecoration: 'none', display: 'block', background: '#FFFFFF', border: '1px solid rgba(11,30,61,0.1)', borderRadius: 20, overflow: 'hidden' }}>
                     <div style={{ position: 'relative', height: 220 }}>
                       {thumb ? (
                         <Image src={thumb} alt={title} fill style={{ objectFit: 'cover' }} />
                       ) : (
-                        <div style={{ height: '100%', background: '#0A0F1E', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 48 }}>🏗️</div>
+                        <div style={{ height: '100%', background: '#F1F5F9', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 48 }}>🏗️</div>
                       )}
                     </div>
                     <div style={{ padding: '24px' }}>
                       <div style={{ display: 'flex', alignItems: 'center', gap: 6, fontSize: 12, color: '#64748B', marginBottom: 10 }}>
                         <MapPin size={11} />{location}
                       </div>
-                      <h2 style={{ fontFamily: 'Manrope, sans-serif', fontSize: 16, fontWeight: 700, color: '#FFFFFF', lineHeight: 1.4, marginBottom: 8 }}>{title}</h2>
-                      <p style={{ fontSize: 13, color: '#94A3B8', lineHeight: 1.65, marginBottom: 16 }}>{excerpt}</p>
+                      <h2 style={{ fontFamily: 'Manrope, sans-serif', fontSize: 16, fontWeight: 700, color: '#0B1E3D', lineHeight: 1.4, marginBottom: 8 }}>{title}</h2>
+                      <p style={{ fontSize: 13, color: '#64748B', lineHeight: 1.65, marginBottom: 16 }}>{excerpt}</p>
                       <span style={{ fontSize: 13, fontWeight: 600, color: '#3B82F6', display: 'flex', alignItems: 'center', gap: 4 }}>View project <ArrowRight size={13} /></span>
                     </div>
                   </Link>
@@ -101,15 +101,15 @@ export default async function ProjectsPage({ searchParams }: { searchParams: Pro
           ) : (
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(340px, 1fr))', gap: 20 }}>
               {fallbackProjects.map(p => (
-                <div key={p.title} style={{ background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.07)', borderRadius: 20, overflow: 'hidden' }}>
+                <div key={p.title} style={{ background: '#FFFFFF', border: '1px solid rgba(11,30,61,0.1)', borderRadius: 20, overflow: 'hidden' }}>
                   <div style={{ position: 'relative', height: 220 }}>
                     <Image src={p.img} alt={p.title} fill style={{ objectFit: 'cover' }} />
                     <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(6,13,26,0.8) 0%, transparent 50%)' }} />
                   </div>
                   <div style={{ padding: '24px' }}>
-                    <span style={{ display: 'inline-block', fontSize: 11, fontWeight: 600, padding: '3px 10px', borderRadius: 980, background: 'rgba(59,130,246,0.1)', color: '#60A5FA', border: '1px solid rgba(59,130,246,0.2)', marginBottom: 12 }}>{p.type}</span>
-                    <h2 style={{ fontFamily: 'Manrope, sans-serif', fontSize: 16, fontWeight: 700, color: '#FFFFFF', marginBottom: 8 }}>{p.title}</h2>
-                    <p style={{ fontSize: 13, color: '#94A3B8', display: 'flex', alignItems: 'center', gap: 4 }}><MapPin size={11} />{p.location}</p>
+                    <span style={{ display: 'inline-block', fontSize: 11, fontWeight: 600, padding: '3px 10px', borderRadius: 980, background: 'rgba(37,99,235,0.1)', color: '#60A5FA', border: '1px solid rgba(59,130,246,0.2)', marginBottom: 12 }}>{p.type}</span>
+                    <h2 style={{ fontFamily: 'Manrope, sans-serif', fontSize: 16, fontWeight: 700, color: '#0B1E3D', marginBottom: 8 }}>{p.title}</h2>
+                    <p style={{ fontSize: 13, color: '#64748B', display: 'flex', alignItems: 'center', gap: 4 }}><MapPin size={11} />{p.location}</p>
                   </div>
                 </div>
               ))}

@@ -89,7 +89,7 @@ export default async function HomePage() {
       <BrandsSection />
       <FeaturedProjects />
       <WhySection />
-      {posts.length > 0 && <BlogSection posts={posts} />}
+      {realPosts.length >= 2 && <BlogSection posts={realPosts.slice(0, 3)} />}
       <CTASection />
     </>
   )

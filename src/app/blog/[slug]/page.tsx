@@ -20,7 +20,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const title   = stripHtml(post.title.rendered)
   const excerpt = stripHtml(post.excerpt.rendered).slice(0, 160)
   return {
-    title: `${title} — AudioVisual Nepal`,
+    title: `${title}`,
     description: excerpt,
     openGraph: {
       title,
@@ -46,9 +46,9 @@ export default async function BlogPostPage({ params }: Props) {
   const relFiltered  = relatedPosts.filter(r => r.slug !== slug).slice(0, 3)
 
   return (
-    <main style={{ paddingTop: 80, background: '#060D1A' }}>
+    <main style={{ paddingTop: 80, background: '#FFFFFF' }}>
       {/* Breadcrumb */}
-      <div style={{ background: '#0A0F1E', padding: '12px 24px', borderBottom: '1px solid rgba(255,255,255,0.06)' }}>
+      <div style={{ background: '#F1F5F9', padding: '12px 24px', borderBottom: '1px solid rgba(255,255,255,0.06)' }}>
         <div style={{ maxWidth: 800, margin: '0 auto', fontSize: 13, color: '#64748B' }}>
           <Link href="/" style={{ color: '#3B82F6', textDecoration: 'none' }}>Home</Link>
           {' / '}
@@ -59,7 +59,7 @@ export default async function BlogPostPage({ params }: Props) {
       </div>
 
       {/* Article */}
-      <article style={{ maxWidth: 800, margin: '0 auto', padding: '64px 24px', color: '#E2E8F0' }}>
+      <article style={{ maxWidth: 800, margin: '0 auto', padding: '64px 24px', color: '#334155' }}>
         {/* Category */}
         {categories.length > 0 && (
           <div style={{ fontSize: 13, fontWeight: 600, color: '#3B82F6', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: 16 }}>
@@ -68,15 +68,15 @@ export default async function BlogPostPage({ params }: Props) {
         )}
 
         {/* Title */}
-        <h1 style={{ fontFamily: 'Manrope, Inter, sans-serif', fontSize: 'clamp(28px, 4vw, 48px)', fontWeight: 800, color: '#FFFFFF', letterSpacing: '-0.03em', lineHeight: 1.1, marginBottom: 20 }}>
+        <h1 style={{ fontFamily: 'Manrope, Inter, sans-serif', fontSize: 'clamp(28px, 4vw, 48px)', fontWeight: 800, color: '#0B1E3D', letterSpacing: '-0.03em', lineHeight: 1.1, marginBottom: 20 }}>
           {title}
         </h1>
 
         {/* Meta */}
-        <div style={{ display: 'flex', alignItems: 'center', gap: 16, marginBottom: 40, paddingBottom: 28, borderBottom: '1px solid rgba(255,255,255,0.08)', flexWrap: 'wrap' }}>
-          <time style={{ fontSize: 14, color: '#94A3B8' }}>{publishDate}</time>
-          <span style={{ fontSize: 14, color: '#94A3B8' }}>·</span>
-          <span style={{ fontSize: 14, color: '#94A3B8' }}>AudioVisual Nepal</span>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 16, marginBottom: 40, paddingBottom: 28, borderBottom: '1px solid rgba(11,30,61,0.08)', flexWrap: 'wrap' }}>
+          <time style={{ fontSize: 14, color: '#64748B' }}>{publishDate}</time>
+          <span style={{ fontSize: 14, color: '#64748B' }}>·</span>
+          <span style={{ fontSize: 14, color: '#64748B' }}>AudioVisual Nepal</span>
         </div>
 
         {/* Featured Image */}
@@ -89,16 +89,16 @@ export default async function BlogPostPage({ params }: Props) {
         {/* Content */}
         <div
           className="wp-content"
-          style={{ fontSize: 17, lineHeight: 1.75, color: '#CBD5E1' }}
+          style={{ fontSize: 17, lineHeight: 1.75, color: '#475569' }}
           dangerouslySetInnerHTML={{ __html: post.content.rendered }}
         />
 
         {/* Tags */}
         {categories.length > 0 && (
-          <div style={{ marginTop: 48, paddingTop: 28, borderTop: '1px solid rgba(255,255,255,0.08)', display: 'flex', gap: 8, flexWrap: 'wrap' }}>
+          <div style={{ marginTop: 48, paddingTop: 28, borderTop: '1px solid rgba(11,30,61,0.08)', display: 'flex', gap: 8, flexWrap: 'wrap' }}>
             {categories.map(cat => (
               <Link key={cat.id} href={`/blog?category=${cat.slug}`}
-                style={{ padding: '5px 14px', background: 'rgba(255,255,255,0.04)', borderRadius: 980, fontSize: 13, color: '#CBD5E1', textDecoration: 'none', fontWeight: 500 }}>
+                style={{ padding: '5px 14px', background: '#F8FAFC', borderRadius: 980, fontSize: 13, color: '#475569', textDecoration: 'none', fontWeight: 500 }}>
                 {cat.name}
               </Link>
             ))}
@@ -106,7 +106,7 @@ export default async function BlogPostPage({ params }: Props) {
         )}
 
         {/* CTA */}
-        <div style={{ marginTop: 48, background: 'linear-gradient(135deg, #1E3A5F 0%, #0A1628 100%)', borderRadius: 20, padding: '40px 40px', color: '#FFFFFF', textAlign: 'center' }}>
+        <div style={{ marginTop: 48, background: 'linear-gradient(135deg, #1E3A5F 0%, #0A1628 100%)', borderRadius: 20, padding: '40px 40px', color: '#0B1E3D', textAlign: 'center' }}>
           <h3 style={{ fontFamily: 'Manrope, sans-serif', fontSize: 24, fontWeight: 800, marginBottom: 12 }}>
             Need AV Solutions for Your Project?
           </h3>
@@ -114,7 +114,7 @@ export default async function BlogPostPage({ params }: Props) {
             Talk to our engineers. We'll design the perfect system for your space.
           </p>
           <Link href="/contact"
-            style={{ display: 'inline-block', background: '#3B82F6', color: '#FFFFFF', padding: '12px 28px', borderRadius: 980, fontSize: 15, fontWeight: 600, textDecoration: 'none' }}>
+            style={{ display: 'inline-block', background: '#3B82F6', color: '#0B1E3D', padding: '12px 28px', borderRadius: 980, fontSize: 15, fontWeight: 600, textDecoration: 'none' }}>
             Get Free Consultation
           </Link>
         </div>
@@ -122,25 +122,25 @@ export default async function BlogPostPage({ params }: Props) {
 
       {/* Related Posts */}
       {relFiltered.length > 0 && (
-        <section style={{ background: 'rgba(255,255,255,0.04)', padding: '64px 24px' }}>
+        <section style={{ background: '#F8FAFC', padding: '64px 24px' }}>
           <div style={{ maxWidth: 1100, margin: '0 auto' }}>
-            <h2 style={{ fontFamily: 'Manrope, sans-serif', fontSize: 28, fontWeight: 800, color: '#CBD5E1', marginBottom: 32, textAlign: 'center' }}>
+            <h2 style={{ fontFamily: 'Manrope, sans-serif', fontSize: 28, fontWeight: 800, color: '#475569', marginBottom: 32, textAlign: 'center' }}>
               More Articles
             </h2>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))', gap: 20 }}>
               {relFiltered.map(rel => {
                 const relThumb = rel._embedded?.['wp:featuredmedia']?.[0]?.source_url
                 return (
-                  <Link key={rel.id} href={`/blog/${rel.slug}`} style={{ textDecoration: 'none', display: 'block', background: 'rgba(255,255,255,0.04)', borderRadius: 16, overflow: 'hidden', border: '1px solid rgba(255,255,255,0.08)' }}>
+                  <Link key={rel.id} href={`/blog/${rel.slug}`} style={{ textDecoration: 'none', display: 'block', background: '#F8FAFC', borderRadius: 16, overflow: 'hidden', border: '1px solid rgba(11,30,61,0.08)' }}>
                     {relThumb ? (
                       <div style={{ position: 'relative', height: 160 }}>
                         <Image src={relThumb} alt={stripHtml(rel.title.rendered)} fill style={{ objectFit: 'cover' }} />
                       </div>
                     ) : (
-                      <div style={{ height: 160, background: '#0A0F1E', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 32 }}>📰</div>
+                      <div style={{ height: 160, background: '#F1F5F9', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 32 }}>📰</div>
                     )}
                     <div style={{ padding: '20px' }}>
-                      <h3 style={{ fontFamily: 'Manrope, sans-serif', fontSize: 16, fontWeight: 700, color: '#CBD5E1', lineHeight: 1.3 }}
+                      <h3 style={{ fontFamily: 'Manrope, sans-serif', fontSize: 16, fontWeight: 700, color: '#475569', lineHeight: 1.3 }}
                         dangerouslySetInnerHTML={{ __html: rel.title.rendered }} />
                     </div>
                   </Link>
@@ -160,9 +160,9 @@ export default async function BlogPostPage({ params }: Props) {
         .wp-content a  { color: #3B82F6; }
         .wp-content img { width: 100%; height: auto; border-radius: 12px; margin: 24px 0; }
         .wp-content blockquote { border-left: 3px solid #3B82F6; padding: 16px 24px; margin: 24px 0; background: rgba(59,130,246,0.06); border-radius: 0 12px 12px 0; font-style: italic; color: #94A3B8; }
-        .wp-content code { font-family: monospace; background: rgba(255,255,255,0.08); color: #60A5FA; padding: 2px 8px; border-radius: 4px; font-size: 14px; }
+        .wp-content code { font-family: monospace; background: rgba(11,30,61,0.08); color: #60A5FA; padding: 2px 8px; border-radius: 4px; font-size: 14px; }
         .wp-content table { width: 100%; border-collapse: collapse; margin: 24px 0; }
-        .wp-content table th, .wp-content table td { padding: 12px 16px; border: 1px solid rgba(255,255,255,0.08); font-size: 14px; color: #CBD5E1; }
+        .wp-content table th, .wp-content table td { padding: 12px 16px; border: 1px solid rgba(11,30,61,0.08); font-size: 14px; color: #CBD5E1; }
         .wp-content table th { background: rgba(255,255,255,0.06); font-weight: 600; color: #FFFFFF; }
       `}</style>
     </main>

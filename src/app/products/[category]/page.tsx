@@ -29,9 +29,9 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { category } = await params
   const cat = STATIC_CATS.find(c => c.slug === category)
-  if (!cat) return { title: 'Products — AudioVisual Nepal' }
+  if (!cat) return { title: 'Products' }
   return {
-    title: `${cat.name} — AudioVisual Nepal`,
+    title: `${cat.name} Products`,
     description: `Professional ${cat.name.toLowerCase()} for Nepal. Genuine products from authorised brands — full manufacturer warranty, expert support, nationwide delivery.`,
   }
 }
@@ -81,7 +81,7 @@ export default async function ProductCategoryPage({ params, searchParams }: Prop
 
       {/* Hero */}
       <section className="relative py-20 px-6 overflow-hidden"
-        style={{ background: 'linear-gradient(180deg, #0A1628 0%, #060D1A 100%)', borderBottom: '1px solid rgba(255,255,255,0.05)' }}>
+        style={{ background: 'linear-gradient(180deg, #F0F4F8 0%, #FFFFFF 100%)', borderBottom: '1px solid rgba(11,30,61,0.05)' }}>
         <div className="container-site relative">
           <nav className="flex items-center gap-1.5 text-[12px] mb-8" style={{ color: 'var(--text-tertiary)' }}>
             <Link href="/" className="hover:text-white transition-colors">Home</Link>

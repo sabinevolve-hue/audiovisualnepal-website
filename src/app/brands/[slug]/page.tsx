@@ -66,13 +66,13 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params
   const brand = BRAND_DATA[slug as BrandSlug]
-  if (!brand) return { title: 'Brand — AudioVisual Nepal' }
+  if (!brand) return { title: 'Brand' }
   return {
-    title: `${brand.name} Authorised Dealer Nepal | AudioVisual Nepal`,
+    title: `${brand.name} Authorised Dealer Nepal`,
     description: `${brand.name} authorised dealer in Nepal. ${brand.description.slice(0, 140)}`,
     alternates: { canonical: `https://audiovisualnepal.com/brands/${slug}` },
     openGraph: {
-      title: `${brand.name} — Official Distributor in Nepal | AudioVisual Nepal`,
+      title: `${brand.name} — Official Distributor in Nepal`,
       description: `${brand.name} authorised dealer in Nepal. ${brand.description.slice(0, 140)}`,
       url: `https://audiovisualnepal.com/brands/${slug}`,
       siteName: 'AudioVisual Nepal',
