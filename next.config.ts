@@ -20,6 +20,12 @@ const nextConfig: NextConfig = {
       { protocol: 'https', hostname: 'cdn.sanity.io' },
       { protocol: 'https', hostname: 'images.unsplash.com' },
       { protocol: 'https', hostname: 'secure.gravatar.com' },
+      // Manufacturer CDN domains for product images
+      { protocol: 'https', hostname: 'img03.71360.com' },
+      { protocol: 'https', hostname: 'www.tenveo-video-conference.com' },
+      { protocol: 'https', hostname: 'www.tenveocamera.com' },
+      { protocol: 'https', hostname: 'www.infobitav.com' },
+      { protocol: 'https', hostname: 'www.dsppatech.com' },
     ],
   },
   async headers() {
