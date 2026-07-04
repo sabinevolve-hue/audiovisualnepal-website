@@ -10,6 +10,7 @@ export interface ProductSpec {
   label: string
   value: string
   highlight?: boolean
+  group?: string
 }
 
 export interface ProductDownload {
@@ -64,17 +65,26 @@ const DSPPA: Product[] = [
       { title: "Priority Paging", desc: "Live microphone and emergency signals override background music across selected or all zones instantly." },
     ],
     specs: [
-      { label: "Zones", value: "8 (expandable to 160)", highlight: true },
-      { label: "Amplifier Power", value: "500W Main + 500W Backup", highlight: true },
-      { label: "Standard", value: "EN54-16 Certified", highlight: true },
-      { label: "Mic Inputs", value: "2 Balanced" },
-      { label: "AUX Inputs", value: "4 Analog" },
-      { label: "Transmission", value: "CAN Bus, up to 800m" },
-      { label: "Speaker Output", value: "100V Bridge, AB Line" },
-      { label: "Network", value: "Dual RJ45" },
+      { label: "Zones", value: "8 (expandable to 160)", highlight: true, group: "Output" },
+
+      { label: "Amplifier Power", value: "500W Main + 500W Backup", highlight: true, group: "Output" },
+
+      { label: "Standard", value: "EN54-16 Certified", highlight: true, group: "Standard" },
+
+      { label: "Mic Inputs", value: "2 Balanced", group: "Input" },
+
+      { label: "AUX Inputs", value: "4 Analog", group: "Input" },
+
+      { label: "Transmission", value: "CAN Bus, up to 800m", group: "Connectivity" },
+
+      { label: "Speaker Output", value: "100V Bridge, AB Line", group: "Output" },
+
+      { label: "Network", value: "Dual RJ45", group: "Connectivity" },
+
     ],
     applications: ["Government", "Hospital", "Hotel", "Education", "Transportation"],
     warranty: "2 Years",
+    priceNPR: "NPR 4,50,000",
     brandProductUrl: "https://www.dsppatech.com/product/pava9500/",
     downloads: [
       { label: "PAVA9500 Product Brochure", url: "https://www.dsppatech.com/product/pava9500/", type: "brochure" as const },
@@ -99,16 +109,24 @@ const DSPPA: Product[] = [
       { title: "DC Battery Backup", desc: "Battery monitoring with automatic AC-to-DC failover maintains broadcast during power outages." },
     ],
     specs: [
-      { label: "Zones", value: "8 (expandable to 160)", highlight: true },
-      { label: "Amplifier", value: "500W Digital", highlight: true },
-      { label: "Protocol", value: "Dante + EN54-16", highlight: true },
-      { label: "AUX Inputs", value: "6 channels" },
-      { label: "Dry Contact I/O", value: "8 triggers" },
-      { label: "Speaker Output", value: "100V AB Line with supervision" },
-      { label: "Battery", value: "DC backup monitoring" },
+      { label: "Zones", value: "8 (expandable to 160)", highlight: true, group: "Output" },
+
+      { label: "Amplifier", value: "500W Digital", highlight: true, group: "Output" },
+
+      { label: "Protocol", value: "Dante + EN54-16", highlight: true, group: "Connectivity" },
+
+      { label: "AUX Inputs", value: "6 channels", group: "Input" },
+
+      { label: "Dry Contact I/O", value: "8 triggers", group: "Input" },
+
+      { label: "Speaker Output", value: "100V AB Line with supervision", group: "Output" },
+
+      { label: "Battery", value: "DC backup monitoring", group: "Power" },
+
     ],
     applications: ["Government", "Hospital", "Hotel", "Education"],
     warranty: "2 Years",
+    priceNPR: "NPR 5,20,000",
     brandProductUrl: "https://www.dsppatech.com/product/pava8500/",
     downloads: [
       { label: "PAVA8500 Product Page", url: "https://www.dsppatech.com/product/pava8500/", type: "brochure" as const },
@@ -133,14 +151,20 @@ const DSPPA: Product[] = [
       { title: "Emergency Button", desc: "One-touch emergency broadcast triggers rapid voice alarm across all zones." },
     ],
     specs: [
-      { label: "Zones", value: "4 Independent", highlight: true },
-      { label: "Power", value: "600W (Main + Standby)", highlight: true },
-      { label: "Speaker Output", value: "100V, AB Line" },
-      { label: "Power Supply", value: "AC220V + DC24V Backup" },
-      { label: "Battery Charger", value: "Built-in 24V" },
+      { label: "Zones", value: "4 Independent", highlight: true, group: "Output" },
+
+      { label: "Power", value: "600W (Main + Standby)", highlight: true, group: "Output" },
+
+      { label: "Speaker Output", value: "100V, AB Line", group: "Output" },
+
+      { label: "Power Supply", value: "AC220V + DC24V Backup", group: "Power" },
+
+      { label: "Battery Charger", value: "Built-in 24V", group: "Power" },
+
     ],
     applications: ["Corporate", "Education", "Religious", "Hotel"],
     warranty: "2 Years", relatedSlugs: ["dsppa-pava9500", "dsppa-dma250u"]
+    priceNPR: "NPR 1,80,000",
   },
   {
     id: "dsppa-dma250u", slug: "dsppa-dma250u",
@@ -159,16 +183,24 @@ const DSPPA: Product[] = [
       { title: "19\" Rack Mount", desc: "Standard rack handles and 1.5U form factor for clean AV rack installations." },
     ],
     specs: [
-      { label: "Output Power", value: "250W RMS (60–650W range)", highlight: true },
-      { label: "Speaker Output", value: "70V / 100V / 4–16Ω", highlight: true },
-      { label: "Inputs", value: "3 Mic, 2 AUX, USB, FM, BT", highlight: true },
-      { label: "Phantom Power", value: "48V (Mic 2–3)" },
-      { label: "SNR", value: "≥60dB" },
-      { label: "THD", value: "<0.5% @1kHz" },
-      { label: "Rack Mount", value: "Standard 19\"" },
+      { label: "Output Power", value: "250W RMS (60–650W range)", highlight: true, group: "Output" },
+
+      { label: "Speaker Output", value: "70V / 100V / 4–16Ω", highlight: true, group: "Output" },
+
+      { label: "Inputs", value: "3 Mic, 2 AUX, USB, FM, BT", highlight: true, group: "Input" },
+
+      { label: "Phantom Power", value: "48V (Mic 2–3)", group: "Input" },
+
+      { label: "SNR", value: "≥60dB", group: "Audio" },
+
+      { label: "THD", value: "<0.5% @1kHz", group: "Audio" },
+
+      { label: "Rack Mount", value: "Standard 19\"", group: "Physical" },
+
     ],
     applications: ["Corporate", "Hotel", "Religious", "Education", "Transportation"],
     warranty: "2 Years", relatedSlugs: ["dsppa-dma6112", "dsppa-dma6250u", "dsppa-pava9500"]
+    priceNPR: "NPR 45,000",
   },
   {
     id: "dsppa-dma6112", slug: "dsppa-dma6112",
@@ -187,15 +219,22 @@ const DSPPA: Product[] = [
       { title: "USB / BT / SD / FM", desc: "Full media playback without an external source — built into the amplifier." },
     ],
     specs: [
-      { label: "Output Power", value: "6×120W / 6×240W", highlight: true },
-      { label: "Zones", value: "6 Independent", highlight: true },
-      { label: "Display", value: "4.3\" Touch Screen", highlight: true },
-      { label: "Speaker Output", value: "100V" },
-      { label: "Inputs", value: "2 AUX, 2 Mic/Line, USB, BT, SD, FM" },
-      { label: "Phantom Power", value: "48V (Mic 2–4)" },
+      { label: "Output Power", value: "6×120W / 6×240W", highlight: true, group: "Output" },
+
+      { label: "Zones", value: "6 Independent", highlight: true, group: "Output" },
+
+      { label: "Display", value: "4.3\" Touch Screen", highlight: true, group: "Control" },
+
+      { label: "Speaker Output", value: "100V", group: "Output" },
+
+      { label: "Inputs", value: "2 AUX, 2 Mic/Line, USB, BT, SD, FM", group: "Input" },
+
+      { label: "Phantom Power", value: "48V (Mic 2–4)", group: "Input" },
+
     ],
     applications: ["Hotel", "Corporate", "Religious", "Education"],
     warranty: "2 Years", relatedSlugs: ["dsppa-dma250u", "dsppa-dma6250u"]
+    priceNPR: "NPR 95,000",
   },
   {
     id: "dsppa-dma6250u", slug: "dsppa-dma6250u",
@@ -212,14 +251,19 @@ const DSPPA: Product[] = [
       { title: "Priority Broadcast", desc: "Emergency input automatically overrides all sources for life-safety announcements." },
     ],
     specs: [
-      { label: "Output Power", value: "250W–650W (4 tiers)", highlight: true },
-      { label: "Zones", value: "6 with individual volume", highlight: true },
+      { label: "Output Power", value: "250W–650W (4 tiers)", highlight: true, group: "Output" },
+
+      { label: "Zones", value: "6 with individual volume", highlight: true, group: "Output" },
+
       { label: "Remote Paging", value: "Up to 6 stations", highlight: true },
-      { label: "Inputs", value: "4 Mic (48V), 4 AUX, USB, FM, BT, TF" },
-      { label: "Speaker Output", value: "70V / 100V / 4–16Ω" },
+      { label: "Inputs", value: "4 Mic (48V), 4 AUX, USB, FM, BT, TF", group: "Input" },
+
+      { label: "Speaker Output", value: "70V / 100V / 4–16Ω", group: "Output" },
+
     ],
     applications: ["Corporate", "Hotel", "Government", "Transportation"],
     warranty: "2 Years", relatedSlugs: ["dsppa-dma6112", "dsppa-dma250u"]
+    priceNPR: "NPR 1,20,000",
   },
   {
     id: "dsppa-mag6182ii", slug: "dsppa-mag6182ii",
@@ -238,15 +282,22 @@ const DSPPA: Product[] = [
       { title: "Remote Web Control", desc: "Full configuration and monitoring from any browser on the network." },
     ],
     specs: [
-      { label: "Display", value: "17\" True Color Touch Screen", highlight: true },
-      { label: "Redundancy", value: "Dual Server + Auto Backup", highlight: true },
-      { label: "Zones", value: "Unlimited (software)", highlight: true },
-      { label: "TTS", value: "Chinese & English" },
-      { label: "Storage", value: "SD Card Recording" },
-      { label: "Control", value: "Local + Web Browser" },
+      { label: "Display", value: "17\" True Color Touch Screen", highlight: true, group: "Control" },
+
+      { label: "Redundancy", value: "Dual Server + Auto Backup", highlight: true, group: "Standard" },
+
+      { label: "Zones", value: "Unlimited (software)", highlight: true, group: "Output" },
+
+      { label: "TTS", value: "Chinese & English", group: "Control" },
+
+      { label: "Storage", value: "SD Card Recording", group: "Media" },
+
+      { label: "Control", value: "Local + Web Browser", group: "Connectivity" },
+
     ],
     applications: ["Transportation", "Government", "Education", "Hospital"],
     warranty: "2 Years", relatedSlugs: ["dsppa-mag6806", "dsppa-pava9500"]
+    priceNPR: "NPR 3,50,000",
   },
   {
     id: "dsppa-mag6806", slug: "dsppa-mag6806",
@@ -263,15 +314,21 @@ const DSPPA: Product[] = [
       { title: "EMC Emergency Override", desc: "Dedicated EMC input ensures emergency broadcasts override all content instantly." },
     ],
     specs: [
-      { label: "RMS Power", value: "60W (120/250/350/650W available)", highlight: true },
+      { label: "RMS Power", value: "60W (120/250/350/650W available)", highlight: true, group: "Output" },
+
       { label: "Output", value: "100V @90% efficiency", highlight: true },
-      { label: "Network", value: "TCP/IP 10/100M adaptive" },
-      { label: "Inputs", value: "1 AUX, 1 Mic, 1 EMC" },
-      { label: "Media", value: "USB + SD card" },
-      { label: "Rack Mount", value: "1U 19\"" },
+      { label: "Network", value: "TCP/IP 10/100M adaptive", group: "Connectivity" },
+
+      { label: "Inputs", value: "1 AUX, 1 Mic, 1 EMC", group: "Input" },
+
+      { label: "Media", value: "USB + SD card", group: "Media" },
+
+      { label: "Rack Mount", value: "1U 19\"", group: "Physical" },
+
     ],
     applications: ["Hotel", "Transportation", "Corporate", "Education"],
     warranty: "2 Years", relatedSlugs: ["dsppa-mag6182ii", "dsppa-dsp6011"]
+    priceNPR: "NPR 55,000",
   },
   {
     id: "dsppa-dsp6011", slug: "dsppa-dsp6011",
@@ -288,17 +345,26 @@ const DSPPA: Product[] = [
       { title: "Aluminum Grille", desc: "Durable aluminum grille resists corrosion in humid environments — hotels, hospitals, spas." },
     ],
     specs: [
-      { label: "RMS Power", value: "6W", highlight: true },
-      { label: "100V Taps", value: "3W / 6W", highlight: true },
-      { label: "Driver", value: "6.5\" Full Range" },
-      { label: "Sensitivity", value: "90dB (1W/1m)" },
-      { label: "Max SPL", value: "97±2dB" },
-      { label: "Frequency", value: "110Hz–15kHz" },
-      { label: "Cut-out", value: "Ø165–170mm" },
-      { label: "Grille", value: "Aluminum, White" },
+      { label: "RMS Power", value: "6W", highlight: true, group: "Output" },
+
+      { label: "100V Taps", value: "3W / 6W", highlight: true, group: "Output" },
+
+      { label: "Driver", value: "6.5\" Full Range", group: "Audio" },
+
+      { label: "Sensitivity", value: "90dB (1W/1m)", group: "Audio" },
+
+      { label: "Max SPL", value: "97±2dB", group: "Audio" },
+
+      { label: "Frequency", value: "110Hz–15kHz", group: "Audio" },
+
+      { label: "Cut-out", value: "Ø165–170mm", group: "Physical" },
+
+      { label: "Grille", value: "Aluminum, White", group: "Physical" },
+
     ],
     applications: ["Hotel", "Corporate", "Education", "Hospital", "Religious"],
     warranty: "2 Years", relatedSlugs: ["dsppa-dsp5211", "dsppa-mag6806"]
+    priceNPR: "NPR 8,500",
   },
   {
     id: "dsppa-dsp5211", slug: "dsppa-dsp5211",
@@ -314,16 +380,24 @@ const DSPPA: Product[] = [
       { title: "93dB Sensitivity", desc: "High sensitivity means less amplifier power is needed — reduces system cost and heat." },
     ],
     specs: [
-      { label: "RMS Power", value: "10W", highlight: true },
-      { label: "100V Taps", value: "3W / 6W / 10W", highlight: true },
-      { label: "Drivers", value: "6.5\" + 0.75\" Coaxial", highlight: true },
-      { label: "Sensitivity", value: "93dB (1W/1m)" },
-      { label: "Max SPL", value: "103±2dB" },
-      { label: "Frequency", value: "90Hz–18kHz" },
-      { label: "Cut-out", value: "Ø165–170mm" },
+      { label: "RMS Power", value: "10W", highlight: true, group: "Output" },
+
+      { label: "100V Taps", value: "3W / 6W / 10W", highlight: true, group: "Output" },
+
+      { label: "Drivers", value: "6.5\" + 0.75\" Coaxial", highlight: true, group: "Audio" },
+
+      { label: "Sensitivity", value: "93dB (1W/1m)", group: "Audio" },
+
+      { label: "Max SPL", value: "103±2dB", group: "Audio" },
+
+      { label: "Frequency", value: "90Hz–18kHz", group: "Audio" },
+
+      { label: "Cut-out", value: "Ø165–170mm", group: "Physical" },
+
     ],
     applications: ["Corporate", "Hotel", "Government", "Education"],
     warranty: "2 Years", relatedSlugs: ["dsppa-dsp6011", "dsppa-dsp255ii"]
+    priceNPR: "NPR 12,000",
   },
   {
     id: "dsppa-dsp255ii", slug: "dsppa-dsp255ii",
@@ -339,14 +413,20 @@ const DSPPA: Product[] = [
       { title: "Bracket Included", desc: "Wall-mount bracket included — adjustable tilt for optimal coverage angle." },
     ],
     specs: [
-      { label: "RMS Power", value: "30W", highlight: true },
-      { label: "Drivers", value: "2×3\" Woofer + 1\" Tweeter", highlight: true },
-      { label: "100V Taps", value: "8W / 15W / 30W" },
-      { label: "70V Taps", value: "8W / 15W" },
-      { label: "Weather", value: "Waterproof Aluminum" },
+      { label: "RMS Power", value: "30W", highlight: true, group: "Output" },
+
+      { label: "Drivers", value: "2×3\" Woofer + 1\" Tweeter", highlight: true, group: "Audio" },
+
+      { label: "100V Taps", value: "8W / 15W / 30W", group: "Output" },
+
+      { label: "70V Taps", value: "8W / 15W", group: "Output" },
+
+      { label: "Weather", value: "Waterproof Aluminum", group: "Physical" },
+
     ],
     applications: ["Transportation", "Education", "Government", "Stadium"],
     warranty: "2 Years", relatedSlugs: ["dsppa-dsp6011", "dsppa-dsp161hd"]
+    priceNPR: "NPR 22,000",
   },
   {
     id: "dsppa-dsp161hd", slug: "dsppa-dsp161hd",
@@ -362,14 +442,19 @@ const DSPPA: Product[] = [
       { title: "100V Transformer Built-in", desc: "Direct connection to 70V/100V PA systems — no external matching transformer required." },
     ],
     specs: [
-      { label: "RMS Power", value: "25W", highlight: true },
-      { label: "Weather Rating", value: "IP66", highlight: true },
-      { label: "100V Taps", value: "Multiple" },
-      { label: "Housing", value: "Alloy Aluminum" },
+      { label: "RMS Power", value: "25W", highlight: true, group: "Output" },
+
+      { label: "Weather Rating", value: "IP66", highlight: true, group: "Physical" },
+
+      { label: "100V Taps", value: "Multiple", group: "Output" },
+
+      { label: "Housing", value: "Alloy Aluminum", group: "Physical" },
+
       { label: "Design", value: "2-Way Hi-Fi" },
     ],
     applications: ["Transportation", "Stadium", "Government", "Education"],
     warranty: "2 Years", relatedSlugs: ["dsppa-dsp255ii", "dsppa-dsp6011"]
+    priceNPR: "NPR 18,000",
   },
 ]
 
@@ -392,16 +477,20 @@ const INFOBIT: Product[] = [
       { title: "HDMI 2.0 Out", desc: "Direct HDMI output to display — works without a PC for dedicated room systems." },
     ],
     specs: [
-      { label: "Resolution", value: "4K UHD 30fps", highlight: true },
+      { label: "Resolution", value: "4K UHD 30fps", highlight: true, group: "Video" },
+
       { label: "Zoom", value: "5× Digital", highlight: true },
       { label: "HFOV", value: "110°", highlight: true },
       { label: "Sound Pickup", value: "6m range" },
-      { label: "USB", value: "3.0 Host + Device" },
-      { label: "HDMI", value: "2.0 Output" },
+      { label: "USB", value: "3.0 Host + Device", group: "Connectivity" },
+
+      { label: "HDMI", value: "2.0 Output", group: "Connectivity" },
+
       { label: "Bluetooth", value: "Supported" },
     ],
     applications: ["Corporate", "Education", "Government", "Hotel"],
     warranty: "2 Years", relatedSlugs: ["infobit-vb60", "infobit-vb80", "infobit-icam-p30"]
+    priceNPR: "NPR 85,000",
   },
   {
     id: "infobit-vb60", slug: "infobit-vb60",
@@ -419,7 +508,8 @@ const INFOBIT: Product[] = [
       { title: "USB HID Support", desc: "Full USB HID for Teams Rooms and Zoom Rooms certified deployments." },
     ],
     specs: [
-      { label: "Resolution", value: "4K UHD 30fps", highlight: true },
+      { label: "Resolution", value: "4K UHD 30fps", highlight: true, group: "Video" },
+
       { label: "HFOV", value: "107°", highlight: true },
       { label: "Sound Pickup", value: "5m (up to 4 expansion mics)", highlight: true },
       { label: "Expansion Mics", value: "Up to 4 via RJ45" },
@@ -428,6 +518,7 @@ const INFOBIT: Product[] = [
     ],
     applications: ["Corporate", "Government", "Education"],
     warranty: "2 Years", relatedSlugs: ["infobit-vb50", "infobit-vb80"]
+    priceNPR: "NPR 1,25,000",
   },
   {
     id: "infobit-vb80", slug: "infobit-vb80",
@@ -445,7 +536,8 @@ const INFOBIT: Product[] = [
       { title: "5 Expansion Mics", desc: "Up to 5 RJ45 expansion microphones for very large conference rooms." },
     ],
     specs: [
-      { label: "Resolution", value: "4K UHD 30fps", highlight: true },
+      { label: "Resolution", value: "4K UHD 30fps", highlight: true, group: "Video" },
+
       { label: "HFOV", value: "107.5°", highlight: true },
       { label: "Mic Range", value: "8m (up to 5 expansion mics)", highlight: true },
       { label: "Wireless BYOD", value: "Airplay + Miracast" },
@@ -454,6 +546,7 @@ const INFOBIT: Product[] = [
     ],
     applications: ["Corporate", "Government"],
     warranty: "2 Years", relatedSlugs: ["infobit-vb50", "infobit-vb60", "infobit-ishare-x200"]
+    priceNPR: "NPR 1,85,000",
   },
   {
     id: "infobit-icam-p30", slug: "infobit-icam-p30",
@@ -471,16 +564,22 @@ const INFOBIT: Product[] = [
       { title: "255 Presets", desc: "Store and recall up to 255 camera positions for automated shot control." },
     ],
     specs: [
-      { label: "Resolution", value: "4K UHD @60fps", highlight: true },
-      { label: "Optical Zoom", value: "12×", highlight: true },
+      { label: "Resolution", value: "4K UHD @60fps", highlight: true, group: "Video" },
+
+      { label: "Optical Zoom", value: "12×", highlight: true, group: "Video" },
+
       { label: "HFOV", value: "80.8°", highlight: true },
-      { label: "Sensor", value: "1/2.8\" CMOS, 2.14MP" },
+      { label: "Sensor", value: "1/2.8\" CMOS, 2.14MP", group: "Video" },
+
       { label: "Outputs", value: "USB 3.0 + HDMI + IP" },
-      { label: "Presets", value: "255" },
-      { label: "Control", value: "RS232, IP, IR Remote" },
+      { label: "Presets", value: "255", group: "AI" },
+
+      { label: "Control", value: "RS232, IP, IR Remote", group: "Connectivity" },
+
     ],
     applications: ["Education", "Government", "Corporate", "Religious"],
     warranty: "2 Years", relatedSlugs: ["infobit-icam-p40", "infobit-vb50"]
+    priceNPR: "NPR 1,20,000",
   },
   {
     id: "infobit-icam-p40", slug: "infobit-icam-p40",
@@ -498,13 +597,17 @@ const INFOBIT: Product[] = [
     ],
     specs: [
       { label: "Tracking Output", value: "1080P60 3G-SDI", highlight: true },
-      { label: "Optical Zoom", value: "20×", highlight: true },
+      { label: "Optical Zoom", value: "20×", highlight: true, group: "Video" },
+
       { label: "Outputs", value: "3G-SDI, HDMI, USB3.0, Ethernet" },
-      { label: "AI Tracking", value: "Body Detection (no face required)" },
-      { label: "Control", value: "RS232, RS485, IP" },
+      { label: "AI Tracking", value: "Body Detection (no face required)", group: "AI" },
+
+      { label: "Control", value: "RS232, RS485, IP", group: "Connectivity" },
+
     ],
     applications: ["Education", "Government", "Religious"],
     warranty: "2 Years", relatedSlugs: ["infobit-icam-p30", "infobit-vb60"]
+    priceNPR: "NPR 1,85,000",
   },
   {
     id: "infobit-ishare-x200", slug: "infobit-ishare-x200",
@@ -532,6 +635,7 @@ const INFOBIT: Product[] = [
     ],
     applications: ["Corporate", "Education", "Government", "Hotel"],
     warranty: "2 Years", relatedSlugs: ["infobit-vb50", "infobit-vb80", "infobit-iwall-204"]
+    priceNPR: "NPR 1,50,000",
   },
   {
     id: "infobit-iwall-204", slug: "infobit-iwall-204",
@@ -548,14 +652,17 @@ const INFOBIT: Product[] = [
       { title: "TCP/IP + RS232 Control", desc: "Full API control for AV control systems (Crestron, AMX, Extron compatible)." },
     ],
     specs: [
-      { label: "Inputs", value: "2× HDMI 4K60", highlight: true },
+      { label: "Inputs", value: "2× HDMI 4K60", highlight: true, group: "Input" },
+
       { label: "Outputs", value: "4× HDMI 4K60", highlight: true },
       { label: "Max Wall Config", value: "M×N up to 6×6", highlight: true },
-      { label: "Control", value: "TCP/IP + RS232" },
+      { label: "Control", value: "TCP/IP + RS232", group: "Connectivity" },
+
       { label: "Audio Out", value: "Phoenix + 3.5mm" },
     ],
     applications: ["Corporate", "Government", "Hotel", "Transportation"],
     warranty: "2 Years", relatedSlugs: ["infobit-iwall-109", "infobit-ishare-x200"]
+    priceNPR: "NPR 3,80,000",
   },
   {
     id: "infobit-iwall-109", slug: "infobit-iwall-109",
@@ -571,13 +678,16 @@ const INFOBIT: Product[] = [
       { title: "Deep Color", desc: "8/10/12-bit deep color support for accurate, vibrant display reproduction." },
     ],
     specs: [
-      { label: "Inputs", value: "1× HDMI 4K30", highlight: true },
+      { label: "Inputs", value: "1× HDMI 4K30", highlight: true, group: "Input" },
+
       { label: "Outputs", value: "9× HDMI 1080P", highlight: true },
       { label: "Deep Color", value: "8/10/12-bit" },
-      { label: "Control", value: "IR Remote" },
+      { label: "Control", value: "IR Remote", group: "Connectivity" },
+
     ],
     applications: ["Hotel", "Corporate", "Transportation", "Religious"],
     warranty: "2 Years", relatedSlugs: ["infobit-iwall-204", "infobit-ishare-x200"]
+    priceNPR: "NPR 2,20,000",
   },
   {
     id: "infobit-ispeaker-m500", slug: "infobit-ispeaker-m500",
@@ -604,6 +714,7 @@ const INFOBIT: Product[] = [
     ],
     applications: ["Corporate", "Government", "Education"],
     warranty: "2 Years", relatedSlugs: ["infobit-vb50", "infobit-vb60"]
+    priceNPR: "NPR 45,000",
   },
   {
     id: "infobit-iswitch-265", slug: "infobit-iswitch-265",
@@ -621,14 +732,17 @@ const INFOBIT: Product[] = [
       { title: "USB Host Extension", desc: "Route USB peripherals (webcam, keyboard) to any source in the matrix." },
     ],
     specs: [
-      { label: "Inputs", value: "6 (incl. USB-C)", highlight: true },
+      { label: "Inputs", value: "6 (incl. USB-C)", highlight: true, group: "Input" },
+
       { label: "Outputs", value: "4× HDMI 4K60", highlight: true },
       { label: "Audio", value: "Dante + DSP", highlight: true },
       { label: "USB-C PD", value: "60W Charging" },
-      { label: "HDCP", value: "2.2 Compliant" },
+      { label: "HDCP", value: "2.2 Compliant", group: "Video" },
+
     ],
     applications: ["Corporate", "Education", "Government"],
     warranty: "2 Years", relatedSlugs: ["infobit-ishare-x200", "infobit-vb80"]
+    priceNPR: "NPR 2,50,000",
   },
 ]
 
@@ -651,14 +765,17 @@ const TENVEO: Product[] = [
       { title: "Plug-and-Play USB", desc: "No drivers or software required — connects instantly to any Windows or Mac laptop." },
     ],
     specs: [
-      { label: "Resolution", value: "4K UHD", highlight: true },
+      { label: "Resolution", value: "4K UHD", highlight: true, group: "Video" },
+
       { label: "Field of View", value: "360°", highlight: true },
       { label: "Connection", value: "USB" },
-      { label: "Microphone", value: "Omnidirectional" },
+      { label: "Microphone", value: "Omnidirectional", group: "Audio" },
+
       { label: "Compatibility", value: "Zoom, Teams, WebEx, Google Meet" },
     ],
     applications: ["Corporate", "Education", "Government"],
     warranty: "3 Years", relatedSlugs: ["tenveo-vhd612a", "tenveo-m5b"]
+    priceNPR: "NPR 1,20,000",
   },
   {
     id: "tenveo-vhd612a", slug: "tenveo-vhd612a",
@@ -677,17 +794,24 @@ const TENVEO: Product[] = [
       { title: "Smooth & Silent PTZ", desc: "Precision motor drive — no noise or jitter during pan, tilt or zoom movements." },
     ],
     specs: [
-      { label: "Optical Zoom", value: "12×", highlight: true },
-      { label: "Resolution", value: "1080P Full HD", highlight: true },
+      { label: "Optical Zoom", value: "12×", highlight: true, group: "Video" },
+
+      { label: "Resolution", value: "1080P Full HD", highlight: true, group: "Video" },
+
       { label: "Outputs", value: "USB + HDMI + SDI + RJ45", highlight: true },
-      { label: "Sensor", value: "2.38MP 1/2.8\" CMOS" },
+      { label: "Sensor", value: "2.38MP 1/2.8\" CMOS", group: "Video" },
+
       { label: "Wide Angle", value: "77.5°" },
-      { label: "Digital Zoom", value: "8×" },
-      { label: "Presets", value: "10 (IR) / 256 (RS232)" },
-      { label: "Control", value: "RS232, RS485, USB, IP" },
+      { label: "Digital Zoom", value: "8×", group: "Video" },
+
+      { label: "Presets", value: "10 (IR) / 256 (RS232)", group: "AI" },
+
+      { label: "Control", value: "RS232, RS485, USB, IP", group: "Connectivity" },
+
     ],
     applications: ["Corporate", "Education", "Government", "Religious"],
     warranty: "3 Years", relatedSlugs: ["tenveo-vhd620a", "tenveo-uv620a", "tenveo-cc600"]
+    priceNPR: "NPR 1,85,000",
   },
   {
     id: "tenveo-vhd620a", slug: "tenveo-vhd620a",
@@ -704,16 +828,21 @@ const TENVEO: Product[] = [
       { title: "Reverse Mountable", desc: "Ceiling and wall mount support with reverse mounting for inverted ceiling installation." },
     ],
     specs: [
-      { label: "Optical Zoom", value: "20×", highlight: true },
-      { label: "Resolution", value: "1080P Full HD", highlight: true },
+      { label: "Optical Zoom", value: "20×", highlight: true, group: "Video" },
+
+      { label: "Resolution", value: "1080P Full HD", highlight: true, group: "Video" },
+
       { label: "Encoding", value: "H.264 / H.265", highlight: true },
-      { label: "Sensor", value: "2.38MP 1/2.8\" CMOS" },
+      { label: "Sensor", value: "2.38MP 1/2.8\" CMOS", group: "Video" },
+
       { label: "Wide Angle", value: "69.5°" },
       { label: "Outputs", value: "HDMI, USB, SDI, IP" },
-      { label: "Control", value: "RS232, RS485, USB, IP" },
+      { label: "Control", value: "RS232, RS485, USB, IP", group: "Connectivity" },
+
     ],
     applications: ["Education", "Government", "Religious", "Corporate"],
     warranty: "3 Years", relatedSlugs: ["tenveo-vhd612a", "tenveo-uv620a"]
+    priceNPR: "NPR 2,50,000",
   },
   {
     id: "tenveo-uv620a", slug: "tenveo-uv620a",
@@ -732,16 +861,22 @@ const TENVEO: Product[] = [
       { title: "PoE Powered", desc: "Single CAT cable for power + data — simplifies installation, eliminates power cables." },
     ],
     specs: [
-      { label: "Resolution", value: "4K UHD @60fps", highlight: true },
-      { label: "Optical Zoom", value: "20×", highlight: true },
-      { label: "Sensor", value: "8.29MP Sony 1/1.8\"", highlight: true },
+      { label: "Resolution", value: "4K UHD @60fps", highlight: true, group: "Video" },
+
+      { label: "Optical Zoom", value: "20×", highlight: true, group: "Video" },
+
+      { label: "Sensor", value: "8.29MP Sony 1/1.8\"", highlight: true, group: "Video" },
+
       { label: "SDI Output", value: "1080P60 3G-SDI" },
       { label: "Protocols", value: "NDI|HX2, SRT, ONVIF, RTSP, RTMP" },
-      { label: "Power", value: "PoE (IEEE 802.3at)" },
-      { label: "AI Tracking", value: "Auto Frame + Presenter + Zone" },
+      { label: "Power", value: "PoE (IEEE 802.3at)", group: "Output" },
+
+      { label: "AI Tracking", value: "Auto Frame + Presenter + Zone", group: "AI" },
+
     ],
     applications: ["Education", "Government", "Corporate", "Religious"],
     warranty: "3 Years", relatedSlugs: ["tenveo-vhd620a", "tenveo-vhd612a", "tenveo-kb200pro"]
+    priceNPR: "NPR 2,80,000",
   },
   {
     id: "tenveo-va612ex", slug: "tenveo-va612ex",
@@ -762,10 +897,12 @@ const TENVEO: Product[] = [
       { label: "Pickup Radius", value: "9m omnidirectional", highlight: true },
       { label: "Outputs", value: "HDMI, USB" },
       { label: "Encoding", value: "H.264, H.265, MJPG" },
-      { label: "Control", value: "VISCA, Pelco-D, Pelco-P" },
+      { label: "Control", value: "VISCA, Pelco-D, Pelco-P", group: "Connectivity" },
+
     ],
     applications: ["Corporate", "Education", "Government"],
     warranty: "3 Years", relatedSlugs: ["tenveo-vhd612a", "tenveo-m5b"]
+    priceNPR: "NPR 1,20,000",
   },
   {
     id: "tenveo-m3b", slug: "tenveo-m3b",
@@ -784,11 +921,13 @@ const TENVEO: Product[] = [
       { label: "Microphones", value: "2 Omnidirectional", highlight: true },
       { label: "Pickup Range", value: "5m (up to 5 people)", highlight: true },
       { label: "Connection", value: "USB-C + Bluetooth + 3.5mm" },
-      { label: "Battery", value: "6 hours" },
+      { label: "Battery", value: "6 hours", group: "Power" },
+
       { label: "Compatibility", value: "Zoom, Teams, WebEx, Google Meet" },
     ],
     applications: ["Corporate", "Education"],
     warranty: "3 Years", relatedSlugs: ["tenveo-m5b", "tenveo-cc600"]
+    priceNPR: "NPR 45,000",
   },
   {
     id: "tenveo-m5b", slug: "tenveo-m5b",
@@ -807,12 +946,14 @@ const TENVEO: Product[] = [
     specs: [
       { label: "Microphones", value: "4 Omnidirectional", highlight: true },
       { label: "Pickup Range", value: "6m", highlight: true },
-      { label: "Battery", value: "8000mAh / 27-hour talk", highlight: true },
+      { label: "Battery", value: "8000mAh / 27-hour talk", highlight: true, group: "Power" },
+
       { label: "Connection", value: "USB + Bluetooth + 3.5mm" },
       { label: "Compatibility", value: "All UC platforms" },
     ],
     applications: ["Corporate", "Education", "Government"],
     warranty: "3 Years", relatedSlugs: ["tenveo-m3b", "tenveo-cc600", "tenveo-vhd612a"]
+    priceNPR: "NPR 65,000",
   },
   {
     id: "tenveo-kb200pro", slug: "tenveo-kb200pro",
@@ -829,15 +970,20 @@ const TENVEO: Product[] = [
       { title: "7 Camera Quick-Select", desc: "Instant recall of up to 7 cameras — critical for fast-paced live production." },
     ],
     specs: [
-      { label: "Display", value: "5\" LCD, 4-split screens", highlight: true },
+      { label: "Display", value: "5\" LCD, 4-split screens", highlight: true, group: "Control" },
+
       { label: "Protocols", value: "NDI, ONVIF, VISCA, Pelco-P/D", highlight: true },
       { label: "Camera Buttons", value: "7 quick-select", highlight: true },
-      { label: "Control", value: "4D Joystick + Knob" },
-      { label: "PoE", value: "Supported" },
-      { label: "Presets", value: "255" },
+      { label: "Control", value: "4D Joystick + Knob", group: "Connectivity" },
+
+      { label: "PoE", value: "Supported", group: "Connectivity" },
+
+      { label: "Presets", value: "255", group: "AI" },
+
     ],
     applications: ["Education", "Religious", "Corporate", "Government"],
     warranty: "3 Years", relatedSlugs: ["tenveo-uv620a", "tenveo-vhd620a"]
+    priceNPR: "NPR 85,000",
   },
   {
     id: "tenveo-nv20a-ai", slug: "tenveo-nv20a-ai",
@@ -853,15 +999,20 @@ const TENVEO: Product[] = [
       { title: "Quad Output", desc: "USB, SDI, HDMI and IP simultaneously — connect to any recording or switching system." },
     ],
     specs: [
-      { label: "Optical Zoom", value: "20×", highlight: true },
-      { label: "Resolution", value: "1080P Full HD" },
-      { label: "AI Tracking", value: "Yes", highlight: true },
+      { label: "Optical Zoom", value: "20×", highlight: true, group: "Video" },
+
+      { label: "Resolution", value: "1080P Full HD", group: "Video" },
+
+      { label: "AI Tracking", value: "Yes", highlight: true, group: "AI" },
+
       { label: "Outputs", value: "USB + SDI + HDMI + IP" },
-      { label: "Power", value: "PoE 802.3af" },
+      { label: "Power", value: "PoE 802.3af", group: "Output" },
+
       { label: "Protocols", value: "RTSP, RTMP, ONVIF, GB28181" },
     ],
     applications: ["Education", "Corporate", "Government"],
     warranty: "3 Years", relatedSlugs: ["tenveo-vhd620a", "tenveo-uv620a"]
+    priceNPR: "NPR 2,20,000",
   },
   {
     id: "tenveo-x60ndi", slug: "tenveo-x60ndi",
@@ -878,15 +1029,18 @@ const TENVEO: Product[] = [
       { title: "AI Presenter Tracking", desc: "Automatically follows and frames the presenter throughout a session." },
     ],
     specs: [
-      { label: "Sensor", value: "8.29MP Sony 1/2.8\"", highlight: true },
+      { label: "Sensor", value: "8.29MP Sony 1/2.8\"", highlight: true, group: "Video" },
+
       { label: "NDI", value: "NDI|HX2 Full Support", highlight: true },
-      { label: "Optical Zoom", value: "20×" },
+      { label: "Optical Zoom", value: "20×", group: "Video" },
+
       { label: "Outputs", value: "HDMI + USB3.0 + SDI + IP" },
       { label: "Audio", value: "Line In/Out 3.5mm" },
       { label: "Protocols", value: "NDI|HX2, SRT, RTSP, RTMP, ONVIF" },
     ],
     applications: ["Corporate", "Education", "Religious"],
     warranty: "3 Years", relatedSlugs: ["tenveo-uv620a", "tenveo-vhd620a"]
+    priceNPR: "NPR 3,80,000",
   },
 ]
 
@@ -919,10 +1073,12 @@ const FOCUS: Product[] = [
       { label: "Material", value: "Sapele Wood + Aluminum + Steel" },
       { label: "Color", value: "Chinese Red & Black" },
       { label: "Size (Folded)", value: "750×620×1110mm" },
-      { label: "Power", value: "110–240V 50–60Hz" },
+      { label: "Power", value: "110–240V 50–60Hz", group: "Output" },
+
     ],
     applications: ["Government", "Education", "Religious", "Corporate"],
     warranty: "1 Year", relatedSlugs: ["focus-st200", "focus-st400", "focus-fk535n"]
+    priceNPR: "NPR 2,80,000",
   },
   {
     id: "focus-st200", slug: "focus-st200",
@@ -952,6 +1108,7 @@ const FOCUS: Product[] = [
     ],
     applications: ["Government", "Education", "Corporate", "Religious"],
     warranty: "1 Year", relatedSlugs: ["focus-st100", "focus-st400"]
+    priceNPR: "NPR 3,50,000",
   },
   {
     id: "focus-st400", slug: "focus-st400",
@@ -972,10 +1129,12 @@ const FOCUS: Product[] = [
       { label: "Height Adjustment", value: "Electric, 200mm" },
       { label: "Microphones", value: "2× Professional Gooseneck" },
       { label: "Material", value: "Premium Sapele Wood" },
-      { label: "Power", value: "110–240V 50–60Hz" },
+      { label: "Power", value: "110–240V 50–60Hz", group: "Output" },
+
     ],
     applications: ["Government", "Education", "Religious"],
     warranty: "1 Year", relatedSlugs: ["focus-st100", "focus-st200", "focus-fk535n"]
+    priceNPR: "NPR 4,80,000",
   },
   {
     id: "focus-fk535n", slug: "focus-fk535n",
@@ -992,14 +1151,18 @@ const FOCUS: Product[] = [
       { title: "OPS Computer", desc: "Intel-based OPS module with Windows — pre-installed and ready to use." },
     ],
     specs: [
-      { label: "Form Factor", value: "Compact Smart Podium", highlight: true },
+      { label: "Form Factor", value: "Compact Smart Podium", highlight: true, group: "Physical" },
+
       { label: "Computer", value: "OPS Intel (i5 or i7)", highlight: true },
-      { label: "Microphone", value: "Gooseneck Professional" },
+      { label: "Microphone", value: "Gooseneck Professional", group: "Audio" },
+
       { label: "Material", value: "Aluminum + Wood" },
-      { label: "Power", value: "110–240V" },
+      { label: "Power", value: "110–240V", group: "Output" },
+
     ],
     applications: ["Education", "Religious", "Corporate"],
     warranty: "1 Year", relatedSlugs: ["focus-st100", "focus-fk500n"]
+    priceNPR: "NPR 2,20,000",
   },
   {
     id: "focus-fk500n", slug: "focus-fk500n",
@@ -1015,13 +1178,16 @@ const FOCUS: Product[] = [
       { title: "Durable Construction", desc: "Aluminum and wood construction built for years of daily use." },
     ],
     specs: [
-      { label: "Form Factor", value: "Entry Smart Podium", highlight: true },
+      { label: "Form Factor", value: "Entry Smart Podium", highlight: true, group: "Physical" },
+
       { label: "Computer", value: "OPS Intel i5" },
-      { label: "Microphone", value: "Built-in Professional" },
+      { label: "Microphone", value: "Built-in Professional", group: "Audio" },
+
       { label: "Material", value: "Aluminum + Wood" },
     ],
     applications: ["Education", "Religious", "Corporate", "Government"],
     warranty: "1 Year", relatedSlugs: ["focus-fk535n", "focus-st100"]
+    priceNPR: "NPR 1,85,000",
   },
   {
     id: "focus-st600", slug: "focus-st600",
@@ -1038,13 +1204,15 @@ const FOCUS: Product[] = [
       { title: "Large Touch Display", desc: "Bigger interactive screen for comfortable presentation control." },
     ],
     specs: [
-      { label: "Form Factor", value: "Premium Smart Podium", highlight: true },
+      { label: "Form Factor", value: "Premium Smart Podium", highlight: true, group: "Physical" },
+
       { label: "Computer", value: "Intel i7, 16GB, 512GB SSD", highlight: true },
       { label: "Height Adjustment", value: "Electric, Extended range" },
       { label: "Material", value: "Premium Sapele Wood" },
     ],
     applications: ["Government", "Corporate", "Education"],
     warranty: "1 Year", relatedSlugs: ["focus-st400", "focus-st200"]
+    priceNPR: "NPR 5,50,000",
   },
 ]
 

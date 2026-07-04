@@ -121,7 +121,16 @@ export default async function ProductDetailPage({ params }: Props) {
             <h1 style={{ fontFamily: 'Manrope, sans-serif', fontSize: 'clamp(26px,3.2vw,40px)', fontWeight: 900, color: '#0B1E3D', letterSpacing: '-0.03em', lineHeight: 1.1, marginBottom: 10 }}>
               {product.name}
             </h1>
-            <p style={{ fontSize: 17, color: brandColor, fontWeight: 600, marginBottom: 18, lineHeight: 1.4 }}>{product.tagline}</p>
+            <p style={{ fontSize: 17, color: brandColor, fontWeight: 600, marginBottom: 14, lineHeight: 1.4 }}>{product.tagline}</p>
+
+            {/* NPR Price */}
+            {product.priceNPR && (
+              <div style={{ display: 'flex', alignItems: 'baseline', gap: 10, marginBottom: 18, padding: '12px 16px', background: '#F8FAFC', borderRadius: 12, border: '1px solid rgba(11,30,61,0.08)' }}>
+                <span style={{ fontFamily: 'Manrope, sans-serif', fontSize: 24, fontWeight: 900, color: '#0B1E3D', letterSpacing: '-0.02em' }}>{product.priceNPR}</span>
+                <span style={{ fontSize: 12, color: '#64748B', fontWeight: 500 }}>Indicative price · Final quote on request</span>
+              </div>
+            )}
+
             <p style={{ fontSize: 15, color: '#475569', lineHeight: 1.8, marginBottom: 28 }}>{product.description}</p>
 
             {/* Applications */}
@@ -235,18 +244,60 @@ export default async function ProductDetailPage({ params }: Props) {
             <h2 style={{ fontFamily: 'Manrope, sans-serif', fontSize: 'clamp(26px,3vw,36px)', fontWeight: 800, color: '#0B1E3D', letterSpacing: '-0.02em' }}>Specifications</h2>
           </div>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 32, alignItems: 'start' }}>
-            {/* Specs table */}
+            {/* Apple-style grouped specs table */}
             <div style={{ border: '1px solid rgba(11,30,61,0.1)', borderRadius: 16, overflow: 'hidden', background: '#FFFFFF' }}>
               <div style={{ padding: '14px 20px', background: `${brandColor}08`, borderBottom: `2px solid ${brandColor}20` }}>
                 <span style={{ fontSize: 13, fontWeight: 700, color: '#0B1E3D' }}>Technical Parameters</span>
               </div>
-              {product.specs.map((spec, i) => (
-                <div key={spec.label} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '12px 20px', background: spec.highlight ? `${brandColor}06` : i % 2 === 0 ? '#FFFFFF' : '#FAFAFA', borderBottom: i < product.specs.length - 1 ? '1px solid rgba(11,30,61,0.05)' : 'none', borderLeft: spec.highlight ? `3px solid ${brandColor}` : '3px solid transparent', gap: 16 }}>
-                  <span style={{ fontSize: 13, color: '#64748B', fontWeight: 500, flexShrink: 0 }}>{spec.label}</span>
-                  <span style={{ fontSize: 13, color: spec.highlight ? brandColor : '#1E293B', fontWeight: spec.highlight ? 700 : 500, textAlign: 'right' }}>{spec.value}</span>
-                </div>
-              ))}
-              <div style={{ padding: '12px 20px', background: '#F1F5F9', display: 'flex', justifyContent: 'space-between', borderTop: '1px solid rgba(11,30,61,0.08)' }}>
+              {(() => {
+                // Group specs by spec.group — Apple MacBook Air style
+                const groups: Record<string, typeof product.specs> = {}
+                const ungrouped: typeof product.specs = []
+                product.specs.forEach(s => {
+                  if (s.group) {
+                    if (!groups[s.group]) groups[s.group] = []
+                    groups[s.group].push(s)
+                  } else {
+                    ungrouped.push(s)
+                  }
+                })
+                const hasGroups = Object.keys(groups).length > 0
+                return (
+                  <>
+                    {hasGroups ? (
+                      <>
+                        {Object.entries(groups).map(([groupName, groupSpecs]) => (
+                          <div key={groupName}>
+                            <div style={{ padding: '8px 20px', background: `${brandColor}08`, borderBottom: '1px solid rgba(11,30,61,0.06)', borderTop: '1px solid rgba(11,30,61,0.06)' }}>
+                              <span style={{ fontSize: 10, fontWeight: 700, color: brandColor, letterSpacing: '0.1em', textTransform: 'uppercase' }}>{groupName}</span>
+                            </div>
+                            {groupSpecs.map((spec, i) => (
+                              <div key={spec.label} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '11px 20px', background: spec.highlight ? `${brandColor}06` : i % 2 === 0 ? '#FFFFFF' : '#FAFAFA', borderBottom: '1px solid rgba(11,30,61,0.04)', borderLeft: spec.highlight ? `3px solid ${brandColor}` : '3px solid transparent', gap: 16 }}>
+                                <span style={{ fontSize: 13, color: '#64748B', fontWeight: 500, flexShrink: 0 }}>{spec.label}</span>
+                                <span style={{ fontSize: 13, color: spec.highlight ? brandColor : '#1E293B', fontWeight: spec.highlight ? 700 : 500, textAlign: 'right' }}>{spec.value}</span>
+                              </div>
+                            ))}
+                          </div>
+                        ))}
+                        {ungrouped.map((spec, i) => (
+                          <div key={spec.label} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '11px 20px', background: i % 2 === 0 ? '#FFFFFF' : '#FAFAFA', borderBottom: '1px solid rgba(11,30,61,0.04)', borderLeft: '3px solid transparent', gap: 16 }}>
+                            <span style={{ fontSize: 13, color: '#64748B', fontWeight: 500, flexShrink: 0 }}>{spec.label}</span>
+                            <span style={{ fontSize: 13, color: '#1E293B', fontWeight: 500, textAlign: 'right' }}>{spec.value}</span>
+                          </div>
+                        ))}
+                      </>
+                    ) : (
+                      product.specs.map((spec, i) => (
+                        <div key={spec.label} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '12px 20px', background: spec.highlight ? `${brandColor}06` : i % 2 === 0 ? '#FFFFFF' : '#FAFAFA', borderBottom: '1px solid rgba(11,30,61,0.05)', borderLeft: spec.highlight ? `3px solid ${brandColor}` : '3px solid transparent', gap: 16 }}>
+                          <span style={{ fontSize: 13, color: '#64748B', fontWeight: 500, flexShrink: 0 }}>{spec.label}</span>
+                          <span style={{ fontSize: 13, color: spec.highlight ? brandColor : '#1E293B', fontWeight: spec.highlight ? 700 : 500, textAlign: 'right' }}>{spec.value}</span>
+                        </div>
+                      ))
+                    )}
+                  </>
+                )
+              })()}
+              <div style={{ padding: '12px 20px', background: '#F0FDF4', display: 'flex', justifyContent: 'space-between', borderTop: '1px solid #BBF7D0' }}>
                 <span style={{ fontSize: 13, color: '#64748B', fontWeight: 500 }}>Warranty</span>
                 <span style={{ fontSize: 13, color: '#059669', fontWeight: 700 }}>{product.warranty}</span>
               </div>
