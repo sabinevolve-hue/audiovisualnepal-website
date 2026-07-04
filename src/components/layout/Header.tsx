@@ -6,6 +6,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { NAV_LINKS, SOLUTIONS_NAV, PRODUCT_CATEGORIES, SITE } from '@/lib/constants'
 import { Menu, X, ChevronDown, Phone } from 'lucide-react'
 import { ScrollProgress } from '@/components/ui/ScrollProgress'
+import { CategoryIcon } from '@/lib/icons'
 
 const SOL_ICONS: Record<string, JSX.Element> = {
   '/solutions/corporate': <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>,
@@ -120,7 +121,7 @@ export default function Header() {
                               onMouseEnter={e => { (e.currentTarget as HTMLAnchorElement).style.background = 'rgba(37,99,235,0.05)'; (e.currentTarget as HTMLAnchorElement).style.color = '#0B1E3D' }}
                               onMouseLeave={e => { (e.currentTarget as HTMLAnchorElement).style.background = 'transparent'; (e.currentTarget as HTMLAnchorElement).style.color = '#475569' }}
                             >
-                              <span style={{ fontSize: 14 }}>{cat.icon}</span>
+                              <CategoryIcon name={cat.icon} size={16} className="text-blue-600" />
                               <span style={{ fontSize: 12, fontWeight: 500 }}>{cat.label}</span>
                             </Link>
                           ))}
