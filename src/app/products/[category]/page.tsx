@@ -1,26 +1,25 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { ChevronRight, Search, Phone } from 'lucide-react'
+import { ArrowRight, ChevronRight } from 'lucide-react'
 import { ProductImg } from '@/components/ui/ProductImg'
-import { getProducts, getProductCategories } from '@/lib/wordpress'
-import { PRODUCT_CATEGORIES, SITE } from '@/lib/constants'
-import { PRODUCTS_BY_CATEGORY } from '@/data/products'
+import { PRODUCT_CATEGORIES } from '@/lib/constants'
+import { PRODUCTS_BY_CATEGORY, ALL_PRODUCTS } from '@/data/products'
 
 export const revalidate = 3600
 
-const BRAND_COLORS_MAP: Record<string,string> = { dsppa:'#DC2626', infobit:'#6366F1', tenveo:'#0891B2', focus:'#1E40AF' }
+const BRAND_COLORS: Record<string, string> = {
+  dsppa: '#DC2626', infobit: '#6366F1', tenveo: '#0891B2', focus: '#1E40AF',
+}
 
-type Props = { params: Promise<{ category: string }>; searchParams: Promise<{ page?: string; search?: string }> }
-
-// Build a static category map from constants as fallback
 const STATIC_CATS = PRODUCT_CATEGORIES.map((c, i) => ({
   id: i + 1,
   name: c.label,
   slug: c.href.replace('/products/', ''),
-  description: '',
+  description: c.description,
   count: c.count,
-  link: c.href,
 }))
+
+type Props = { params: Promise<{ category: string }>; searchParams: Promise<{ brand?: string; application?: string }> }
 
 export async function generateStaticParams() {
   return STATIC_CATS.map(c => ({ category: c.slug }))
@@ -31,250 +30,216 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const cat = STATIC_CATS.find(c => c.slug === category)
   if (!cat) return { title: 'Products' }
   return {
-    title: `${cat.name} Products`,
-    description: `Professional ${cat.name.toLowerCase()} for Nepal. Genuine products from authorised brands — full manufacturer warranty, expert support, nationwide delivery.`,
+    title: `${cat.name} — Professional AV Nepal`,
+    description: cat.description || `Professional ${cat.name.toLowerCase()} for Nepal — genuine products, manufacturer warranty, expert support, nationwide delivery.`,
   }
+}
+
+// Application → colour
+const APP_COLORS: Record<string, string> = {
+  Corporate: '#6366F1', Government: '#0891B2', Education: '#16A34A',
+  Hotel: '#D97706', Hospital: '#DC2626', Religious: '#7C3AED',
+  Transportation: '#0B1E3D', Stadium: '#EA580C',
 }
 
 export default async function ProductCategoryPage({ params, searchParams }: Props) {
   const { category } = await params
-  const sp     = await searchParams
-  const page   = Number(sp.page ?? 1)
-  const search = sp.search
+  const sp = await searchParams
+  const activeBrand = sp.brand?.toLowerCase()
+  const activeApp   = sp.application
 
-  // Use static category as primary source — no API crash risk
   const cat = STATIC_CATS.find(c => c.slug === category)
   if (!cat) {
     return (
-      <main style={{ paddingTop: 80, minHeight: '100vh', background: 'var(--bg-base)' }}>
-        <div className="container-site py-24 text-center">
-          <h1 className="heading-section text-white mb-4">Category Not Found</h1>
-          <Link href="/products" className="btn-primary">Browse All Products</Link>
+      <main style={{ paddingTop: 80, minHeight: '100vh', background: '#FFFFFF' }}>
+        <div style={{ maxWidth: 600, margin: '120px auto', textAlign: 'center' }}>
+          <h1 style={{ fontFamily: 'Manrope, sans-serif', fontSize: 32, fontWeight: 800, color: '#0B1E3D', marginBottom: 16 }}>Category Not Found</h1>
+          <Link href="/products" style={{ color: '#2563EB', fontWeight: 600 }}>Browse All Products →</Link>
         </div>
       </main>
     )
   }
 
-  // Try to load real products from CMS — gracefully falls back to static data
-  let products: Awaited<ReturnType<typeof getProducts>> = []
-  let cmsCategories: Awaited<ReturnType<typeof getProductCategories>> = []
-  try {
-    ;[cmsCategories, products] = await Promise.all([
-      getProductCategories(),
-      getProducts({ categorySlug: category, page, perPage: 12, search }),
-    ])
-  } catch {
-    // CMS unavailable — use static data
-  }
+  // Products for this category
+  const allForCat = PRODUCTS_BY_CATEGORY[category] || []
 
-  // Use static product catalog when CMS is empty
-  const staticProducts = PRODUCTS_BY_CATEGORY[category] || []
-  const useStatic = products.length === 0 && staticProducts.length > 0
+  // Filter
+  let products = allForCat
+  if (activeBrand) products = products.filter(p => p.brandSlug === activeBrand)
+  if (activeApp)   products = products.filter(p => p.applications.includes(activeApp as never))
 
-  // Navigation: use static list, merge with any live CMS data
-  const navCats = cmsCategories.length > 0
-    ? cmsCategories
-    : STATIC_CATS
+  // Sidebar data — brands & applications available in this category
+  const brandsInCat    = [...new Set(allForCat.map(p => p.brandSlug))]
+  const appsInCat      = [...new Set(allForCat.flatMap(p => p.applications))]
+
+  // Sibling categories for breadcrumb nav
+  const siblings = STATIC_CATS.slice(0, 6)
 
   return (
-    <main style={{ paddingTop: 64, background: 'var(--bg-base)', minHeight: '100vh' }}>
+    <main style={{ paddingTop: 80, background: '#FFFFFF', minHeight: '100vh' }}>
 
-      {/* Hero */}
-      <section className="relative py-20 px-6 overflow-hidden"
-        style={{ background: 'linear-gradient(180deg, #F0F4F8 0%, #FFFFFF 100%)', borderBottom: '1px solid rgba(11,30,61,0.05)' }}>
-        <div className="container-site relative">
-          <nav className="flex items-center gap-1.5 text-[12px] mb-8" style={{ color: 'var(--text-tertiary)' }}>
-            <Link href="/" className="hover:text-white transition-colors">Home</Link>
-            <ChevronRight size={12} />
-            <Link href="/products" className="hover:text-white transition-colors">Products</Link>
-            <ChevronRight size={12} />
-            <span style={{ color: 'var(--text-brand)' }}>{cat.name}</span>
-          </nav>
-          <h1 className="heading-section text-white mb-4">{cat.name}</h1>
-          <p className="text-[18px] max-w-[520px]" style={{ color: 'var(--text-secondary)' }}>
-            Genuine {cat.name.toLowerCase()} from authorised brands — full manufacturer warranty, expert support.
-          </p>
-        </div>
-      </section>
-
-      {/* Category Nav */}
-      <div className="sticky top-16 z-40 px-6 py-3 overflow-x-auto"
-        style={{ background: 'rgba(6,13,26,0.95)', backdropFilter: 'blur(16px)', borderBottom: '1px solid var(--border-subtle)' }}>
-        <div className="container-site flex gap-2 flex-nowrap">
-          {navCats.map((c) => {
-            const slug = 'slug' in c ? c.slug : (c as {href:string}).href?.replace('/products/','')
-            const name = 'name' in c ? c.name : (c as {label:string}).label
-            return (
-              <Link key={slug} href={`/products/${slug}`}
-                className="flex-shrink-0 px-4 py-1.5 rounded-full text-[12px] font-semibold transition-all duration-200 whitespace-nowrap"
-                style={slug === category
-                  ? { background: 'var(--brand)', color: '#fff' }
-                  : { background: 'var(--surface-1)', color: 'var(--text-secondary)', border: '1px solid var(--border-subtle)' }}>
-                {name}
-              </Link>
-            )
-          })}
+      {/* ── Breadcrumb ────────────────────────────────────────────── */}
+      <div style={{ padding: '12px 24px', background: '#F8FAFC', borderBottom: '1px solid rgba(11,30,61,0.07)' }}>
+        <div style={{ maxWidth: 1280, margin: '0 auto', display: 'flex', gap: 6, alignItems: 'center', fontSize: 13, color: '#64748B', flexWrap: 'wrap' }}>
+          <Link href="/" style={{ color: '#64748B', textDecoration: 'none' }}>Home</Link>
+          <ChevronRight size={13} color="#CBD5E1" />
+          <Link href="/products" style={{ color: '#64748B', textDecoration: 'none' }}>Products</Link>
+          <ChevronRight size={13} color="#CBD5E1" />
+          <span style={{ color: '#0B1E3D', fontWeight: 600 }}>{cat.name}</span>
         </div>
       </div>
 
-      {/* Products Grid or Enquiry CTA */}
-      <section className="section-padding px-6">
-        <div className="container-site">
+      {/* ── Hero strip ────────────────────────────────────────────── */}
+      <section style={{ padding: '48px 24px 40px', background: 'linear-gradient(180deg, #F0F4F8 0%, #FFFFFF 100%)' }}>
+        <div style={{ maxWidth: 1280, margin: '0 auto' }}>
+          <h1 style={{ fontFamily: 'Manrope, sans-serif', fontSize: 'clamp(28px,4vw,44px)', fontWeight: 800, color: '#0B1E3D', marginBottom: 10 }}>{cat.name}</h1>
+          <p style={{ fontSize: 16, color: '#64748B', maxWidth: 560, lineHeight: 1.65 }}>{cat.description}</p>
+        </div>
+      </section>
 
-          {products.length > 0 ? (
-            <>
-              {/* Search */}
-              <form method="GET" className="flex gap-3 mb-12 max-w-md">
-                <div className="flex-1 relative">
-                  <Search size={15} className="absolute left-4 top-1/2 -translate-y-1/2" style={{ color: 'var(--text-tertiary)' }} />
-                  <input type="text" name="search" defaultValue={search}
-                    placeholder={`Search ${cat.name.toLowerCase()}…`}
-                    className="w-full pl-10 pr-4 py-2.5 rounded-full text-[14px] outline-none border focus:border-[var(--brand)] transition-colors"
-                    style={{ background: 'var(--surface-1)', border: '1px solid var(--border-default)', color: 'var(--text-primary)' }} />
+      {/* ── Main: sidebar + grid ───────────────────────────────────── */}
+      <section style={{ padding: '32px 24px 80px' }}>
+        <div style={{ maxWidth: 1280, margin: '0 auto', display: 'grid', gridTemplateColumns: '220px 1fr', gap: 32, alignItems: 'start' }}>
+
+          {/* ── Sidebar ─────────────────────────────────────────── */}
+          <aside style={{ position: 'sticky', top: 96 }}>
+            {/* Filter by Brand */}
+            {brandsInCat.length > 1 && (
+              <div style={{ marginBottom: 28 }}>
+                <p style={{ fontSize: 11, fontWeight: 700, color: '#94A3B8', letterSpacing: '0.1em', textTransform: 'uppercase', marginBottom: 10 }}>Brand</p>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: 4 }}>
+                  <Link href={`/products/${category}`} style={{ display: 'flex', alignItems: 'center', gap: 8, padding: '7px 10px', borderRadius: 8, fontSize: 13, fontWeight: !activeBrand ? 700 : 500, color: !activeBrand ? '#0B1E3D' : '#64748B', background: !activeBrand ? '#F1F5F9' : 'transparent', textDecoration: 'none' }}>
+                    All Brands <span style={{ marginLeft: 'auto', fontSize: 11, color: '#94A3B8' }}>{allForCat.length}</span>
+                  </Link>
+                  {brandsInCat.map(b => {
+                    const count = allForCat.filter(p => p.brandSlug === b).length
+                    const isActive = activeBrand === b
+                    return (
+                      <Link key={b} href={`/products/${category}?brand=${b}`} style={{ display: 'flex', alignItems: 'center', gap: 8, padding: '7px 10px', borderRadius: 8, fontSize: 13, fontWeight: isActive ? 700 : 500, color: isActive ? (BRAND_COLORS[b] || '#0B1E3D') : '#64748B', background: isActive ? (BRAND_COLORS[b] + '12') : 'transparent', textDecoration: 'none' }}>
+                        <span style={{ width: 8, height: 8, borderRadius: '50%', background: BRAND_COLORS[b] || '#64748B', flexShrink: 0 }} />
+                        {b.charAt(0).toUpperCase() + b.slice(1)}
+                        <span style={{ marginLeft: 'auto', fontSize: 11, color: '#94A3B8' }}>{count}</span>
+                      </Link>
+                    )
+                  })}
                 </div>
-                <button type="submit"
-                  className="px-6 py-2.5 rounded-full text-[14px] font-semibold text-white transition-all hover:opacity-90"
-                  style={{ background: 'var(--brand)' }}>Search</button>
-              </form>
+              </div>
+            )}
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
+            {/* Filter by Application */}
+            {appsInCat.length > 1 && (
+              <div style={{ marginBottom: 28 }}>
+                <p style={{ fontSize: 11, fontWeight: 700, color: '#94A3B8', letterSpacing: '0.1em', textTransform: 'uppercase', marginBottom: 10 }}>Application</p>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: 4 }}>
+                  <Link href={`/products/${category}${activeBrand ? `?brand=${activeBrand}` : ''}`} style={{ padding: '7px 10px', borderRadius: 8, fontSize: 13, fontWeight: !activeApp ? 700 : 500, color: !activeApp ? '#0B1E3D' : '#64748B', background: !activeApp ? '#F1F5F9' : 'transparent', textDecoration: 'none', display: 'block' }}>
+                    All Applications
+                  </Link>
+                  {appsInCat.map(app => {
+                    const isActive = activeApp === app
+                    const params = new URLSearchParams()
+                    if (activeBrand) params.set('brand', activeBrand)
+                    params.set('application', app)
+                    return (
+                      <Link key={app} href={`/products/${category}?${params}`} style={{ display: 'flex', alignItems: 'center', gap: 8, padding: '7px 10px', borderRadius: 8, fontSize: 13, fontWeight: isActive ? 700 : 500, color: isActive ? '#0B1E3D' : '#64748B', background: isActive ? '#F1F5F9' : 'transparent', textDecoration: 'none' }}>
+                        <span style={{ width: 8, height: 8, borderRadius: '50%', background: APP_COLORS[app] || '#64748B', flexShrink: 0 }} />
+                        {app}
+                      </Link>
+                    )
+                  })}
+                </div>
+              </div>
+            )}
+
+            {/* All Categories quick nav */}
+            <div style={{ borderTop: '1px solid rgba(11,30,61,0.08)', paddingTop: 20 }}>
+              <p style={{ fontSize: 11, fontWeight: 700, color: '#94A3B8', letterSpacing: '0.1em', textTransform: 'uppercase', marginBottom: 10 }}>Categories</p>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: 3 }}>
+                {STATIC_CATS.map(c => (
+                  <Link key={c.slug} href={`/products/${c.slug}`} style={{ padding: '6px 10px', borderRadius: 8, fontSize: 13, fontWeight: c.slug === category ? 700 : 400, color: c.slug === category ? '#2563EB' : '#64748B', background: c.slug === category ? '#EFF6FF' : 'transparent', textDecoration: 'none' }}>
+                    {c.name}
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </aside>
+
+          {/* ── Product Grid ─────────────────────────────────────── */}
+          <div>
+            {/* Result count + active filters */}
+            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 20, flexWrap: 'wrap', gap: 10 }}>
+              <p style={{ fontSize: 14, color: '#64748B', margin: 0 }}>
+                Showing <strong style={{ color: '#0B1E3D' }}>{products.length}</strong> product{products.length !== 1 ? 's' : ''}
+                {activeBrand && <> in <strong style={{ color: BRAND_COLORS[activeBrand] || '#0B1E3D' }}>{activeBrand.charAt(0).toUpperCase() + activeBrand.slice(1)}</strong></>}
+                {activeApp && <> for <strong style={{ color: '#0B1E3D' }}>{activeApp}</strong></>}
+              </p>
+              {(activeBrand || activeApp) && (
+                <Link href={`/products/${category}`} style={{ fontSize: 13, color: '#64748B', textDecoration: 'underline' }}>Clear filters</Link>
+              )}
+            </div>
+
+            {products.length === 0 ? (
+              <div style={{ textAlign: 'center', padding: '60px 24px', background: '#F8FAFC', borderRadius: 16 }}>
+                <p style={{ fontSize: 16, color: '#64748B', marginBottom: 16 }}>No products match this filter.</p>
+                <Link href={`/products/${category}`} style={{ color: '#2563EB', fontWeight: 600, textDecoration: 'none' }}>Clear filters →</Link>
+              </div>
+            ) : (
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: 20 }}>
                 {products.map(product => {
-                  const title = product.title.rendered.replace(/<[^>]+>/g, '')
+                  const bc = BRAND_COLORS[product.brandSlug] || '#2563EB'
+                  const heroSpecs = product.specs.filter(s => s.highlight).slice(0, 2)
                   return (
-                    <Link key={product.id} href={`/products/${category}/${product.slug}`}
-                      className="group block rounded-2xl overflow-hidden border transition-all duration-300 hover:-translate-y-1.5"
-                      style={{ background: 'var(--surface-1)', border: '1px solid var(--border-default)' }}>
-                      <div className="relative h-52 flex items-center justify-center" style={{ background: 'var(--surface-2)' }}>
-                        {product.featured_image_url
-                          ? <img src={product.featured_image_url} alt={title} className="object-contain p-4 w-full h-full transition-transform duration-500 group-hover:scale-105" />
-                          : <div className="w-12 h-12 opacity-20 text-4xl flex items-center justify-center">📦</div>}
+                    <Link key={product.id} href={`/products/${product.category}/${product.slug}`} style={{ textDecoration: 'none', display: 'block', background: '#FFFFFF', border: '1px solid rgba(11,30,61,0.09)', borderRadius: 16, overflow: 'hidden', transition: 'all 0.2s' }}>
+                      {/* Image */}
+                      <div style={{ aspectRatio: '16/9', background: '#F8FAFC', position: 'relative', overflow: 'hidden' }}>
+                        <ProductImg src={product.imageUrl} alt={product.name} fill style={{ objectFit: 'cover' }} />
+                        {/* Brand badge */}
+                        <div style={{ position: 'absolute', top: 10, left: 10 }}>
+                          <span style={{ background: bc, color: '#FFFFFF', fontSize: 10, fontWeight: 700, padding: '3px 8px', borderRadius: 6, letterSpacing: '0.05em' }}>{product.brand}</span>
+                        </div>
+                        {/* Badge */}
+                        {product.badge && (
+                          <div style={{ position: 'absolute', top: 10, right: 10 }}>
+                            <span style={{ background: '#0B1E3D', color: '#FFFFFF', fontSize: 10, fontWeight: 700, padding: '3px 8px', borderRadius: 6 }}>{product.badge}</span>
+                          </div>
+                        )}
                       </div>
-                      <div className="p-5">
-                        {product.meta.brand_name && <div className="text-[11px] font-bold uppercase tracking-[0.08em] mb-2" style={{ color: 'var(--text-brand)' }}>{product.meta.brand_name}</div>}
-                        <h2 className="font-bold text-[15px] text-white mb-2 leading-snug line-clamp-2">{title}</h2>
-                        {product.meta.sku && <div className="text-[11px] mb-3" style={{ color: 'var(--text-tertiary)' }}>SKU: {product.meta.sku}</div>}
-                        <div className="mt-4 flex items-center gap-1 text-[13px] font-semibold" style={{ color: 'var(--text-brand)' }}>
-                          View Details →
+                      {/* Info */}
+                      <div style={{ padding: '18px 20px' }}>
+                        <p style={{ fontSize: 12, color: '#64748B', marginBottom: 4 }}>{product.subcategory}</p>
+                        <h3 style={{ fontFamily: 'Manrope, sans-serif', fontSize: 16, fontWeight: 700, color: '#0B1E3D', marginBottom: 6, lineHeight: 1.3 }}>{product.name}</h3>
+                        <p style={{ fontSize: 13, color: '#64748B', marginBottom: 14, lineHeight: 1.5 }}>{product.tagline}</p>
+                        {/* Key specs */}
+                        {heroSpecs.length > 0 && (
+                          <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6, marginBottom: 14 }}>
+                            {heroSpecs.map(s => (
+                              <span key={s.label} style={{ fontSize: 11, background: bc + '12', color: bc, fontWeight: 600, padding: '3px 8px', borderRadius: 6 }}>{s.value}</span>
+                            ))}
+                          </div>
+                        )}
+                        {/* NPR price */}
+                        {product.priceNPR && (
+                          <p style={{ fontSize: 14, fontWeight: 700, color: '#0B1E3D', marginBottom: 12 }}>NPR {product.priceNPR}</p>
+                        )}
+                        <div style={{ display: 'flex', alignItems: 'center', gap: 4, fontSize: 13, fontWeight: 600, color: '#2563EB' }}>
+                          View Details <ArrowRight size={13} />
                         </div>
                       </div>
                     </Link>
                   )
                 })}
               </div>
+            )}
 
-              {products.length === 12 && (
-                <div className="flex gap-3 justify-center mt-16">
-                  {page > 1 && (
-                    <Link href={`/products/${category}?page=${page - 1}${search ? `&search=${search}` : ''}`}
-                      className="px-6 py-2.5 rounded-full text-[14px] font-semibold transition-all hover:text-white"
-                      style={{ border: '1px solid var(--border-default)', color: 'var(--text-secondary)' }}>← Previous</Link>
-                  )}
-                  <Link href={`/products/${category}?page=${page + 1}${search ? `&search=${search}` : ''}`}
-                    className="px-6 py-2.5 rounded-full text-[14px] font-semibold text-white transition-all hover:opacity-90"
-                    style={{ background: 'var(--brand)' }}>Next Page →</Link>
-                </div>
-              )}
-            </>
-          ) : useStatic ? (
-            /* Static Product Grid */
-            <div>
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
-                {staticProducts.map(product => (
-                  <a key={product.slug} href={`/products/${product.category}/${product.slug}`}
-                    className="group block rounded-2xl overflow-hidden border transition-all duration-300 hover:-translate-y-1.5"
-                    style={{ background: 'var(--surface-1)', border: '1px solid var(--border-default)', textDecoration: 'none' }}>
-                    <div className="relative h-48 flex items-center justify-center"
-                      style={{ background: `linear-gradient(135deg, rgba(0,113,227,0.12), rgba(0,113,227,0.04))` }}>
-                      <ProductImg src={product.imageUrl} alt={product.name} style={{ width: '65%', height: '85%', objectFit: 'contain' }} brandColor={BRAND_COLORS_MAP[product.brandSlug]} brandName={product.brand} />
-                      {product.badge && (
-                        <span className="absolute top-3 left-3 px-2 py-0.5 rounded-full text-[10px] font-bold text-white"
-                          style={{ background: product.badge === 'Best Seller' ? '#FF9500' : product.badge === 'New' ? '#34C759' : '#3B82F6' }}>
-                          {product.badge}
-                        </span>
-                      )}
-                    </div>
-                    <div className="p-4">
-                      <div className="text-[11px] font-bold uppercase tracking-[0.08em] mb-1.5" style={{ color: 'var(--text-brand)' }}>{product.brand}</div>
-                      <h2 className="font-bold text-[15px] text-white mb-1 leading-snug">{product.name}</h2>
-                      <div className="text-[12px] mb-3" style={{ color: 'var(--text-tertiary)' }}>{product.subcategory}</div>
-                      {product.specs.filter(s => s.highlight).slice(0, 2).map(spec => (
-                        <span key={spec.label} className="inline-block mr-1.5 mb-1.5 px-2 py-0.5 rounded-full text-[11px] font-semibold"
-                          style={{ background: 'rgba(0,113,227,0.12)', color: 'var(--text-brand)' }}>
-                          {spec.value}
-                        </span>
-                      ))}
-                      <div className="mt-3 text-[13px] font-semibold" style={{ color: 'var(--text-brand)' }}>
-                        View Details →
-                      </div>
-                    </div>
-                  </a>
-                ))}
+            {/* CTA */}
+            <div style={{ marginTop: 48, padding: '32px', background: '#F8FAFC', borderRadius: 16, textAlign: 'center' }}>
+              <h3 style={{ fontFamily: 'Manrope, sans-serif', fontSize: 18, fontWeight: 700, color: '#0B1E3D', marginBottom: 8 }}>Need help choosing?</h3>
+              <p style={{ fontSize: 14, color: '#64748B', marginBottom: 20 }}>Our engineers can recommend the right product for your project and budget.</p>
+              <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
+                <Link href="/contact" style={{ background: '#2563EB', color: '#FFFFFF', padding: '12px 28px', borderRadius: 980, fontSize: 14, fontWeight: 600, textDecoration: 'none' }}>Request a Quote</Link>
+                <Link href="/contact" style={{ background: '#FFFFFF', color: '#0B1E3D', padding: '12px 24px', borderRadius: 980, fontSize: 14, fontWeight: 600, textDecoration: 'none', border: '1px solid rgba(11,30,61,0.15)' }}>WhatsApp Us</Link>
               </div>
             </div>
-          ) : (
-            /* Enquiry CTA — shown when no products in CMS or static data */
-            <div className="max-w-2xl mx-auto text-center py-16">
-              <div className="w-20 h-20 rounded-2xl mx-auto mb-8 flex items-center justify-center text-4xl"
-                style={{ background: 'var(--surface-1)', border: '1px solid var(--border-subtle)' }}>
-                🎙️
-              </div>
-              <h2 className="text-[28px] font-bold text-white mb-4">
-                {cat.count}+ {cat.name} Available
-              </h2>
-              <p className="text-[17px] mb-10" style={{ color: 'var(--text-secondary)' }}>
-                Our full {cat.name.toLowerCase()} catalog is available. Contact us for specifications, pricing, and availability — we&apos;ll respond within the hour.
-              </p>
-
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-12">
-                <a href={`tel:${SITE.phoneRaw}`}
-                  className="flex items-center gap-4 p-6 rounded-2xl transition-all hover:-translate-y-1"
-                  style={{ background: 'var(--surface-1)', border: '1px solid var(--border-subtle)' }}>
-                  <div className="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0"
-                    style={{ background: 'rgba(0,113,227,0.15)' }}>
-                    <Phone size={20} style={{ color: 'var(--brand)' }} />
-                  </div>
-                  <div className="text-left">
-                    <div className="text-[13px] mb-1" style={{ color: 'var(--text-tertiary)' }}>Call us directly</div>
-                    <div className="text-[16px] font-semibold text-white">{SITE.phone}</div>
-                  </div>
-                </a>
-
-                <a href={SITE.whatsapp} target="_blank" rel="noopener noreferrer"
-                  className="flex items-center gap-4 p-6 rounded-2xl transition-all hover:-translate-y-1"
-                  style={{ background: 'var(--surface-1)', border: '1px solid var(--border-subtle)' }}>
-                  <div className="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0"
-                    style={{ background: 'rgba(37,211,102,0.15)' }}>
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="#25D366"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-                  </div>
-                  <div className="text-left">
-                    <div className="text-[13px] mb-1" style={{ color: 'var(--text-tertiary)' }}>WhatsApp us</div>
-                    <div className="text-[16px] font-semibold text-white">Chat Now</div>
-                  </div>
-                </a>
-              </div>
-
-              <Link href="/contact"
-                className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full text-[15px] font-semibold text-white transition-all hover:opacity-90"
-                style={{ background: 'var(--brand)' }}>
-                Send an Enquiry →
-              </Link>
-
-              <p className="text-[13px] mt-6" style={{ color: 'var(--text-tertiary)' }}>
-                Also browse our other categories below
-              </p>
-
-              <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 mt-6">
-                {STATIC_CATS.filter(c => c.slug !== category).slice(0, 6).map(c => (
-                  <Link key={c.slug} href={`/products/${c.slug}`}
-                    className="p-4 rounded-xl text-[13px] font-medium transition-all hover:-translate-y-0.5 text-left"
-                    style={{ background: 'var(--surface-1)', border: '1px solid var(--border-subtle)', color: 'var(--text-secondary)' }}>
-                    {c.name}
-                    <span className="block text-[11px] mt-0.5" style={{ color: 'var(--text-tertiary)' }}>{c.count} products</span>
-                  </Link>
-                ))}
-              </div>
-            </div>
-          )}
+          </div>
         </div>
       </section>
     </main>

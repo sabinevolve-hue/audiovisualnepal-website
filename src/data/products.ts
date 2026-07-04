@@ -12,6 +12,13 @@ export interface ProductSpec {
   highlight?: boolean
 }
 
+export interface ProductDownload {
+  label: string
+  url: string
+  type: 'brochure' | 'datasheet' | 'manual' | 'catalog' | 'guide'
+  fileSize?: string
+}
+
 export interface Product {
   id: string
   slug: string
@@ -30,6 +37,12 @@ export interface Product {
   applications: Segment[]
   warranty: string
   relatedSlugs: string[]
+  downloads?: ProductDownload[]
+  brandProductUrl?: string
+  priceNPR?: string
+  videoUrl?: string
+  gallery?: string[]
+  pdfUrl?: string
 }
 
 // ─── DSPPA ──────────────────────────────────────────────────────────────────
@@ -61,7 +74,13 @@ const DSPPA: Product[] = [
       { label: "Network", value: "Dual RJ45" },
     ],
     applications: ["Government", "Hospital", "Hotel", "Education", "Transportation"],
-    warranty: "2 Years", relatedSlugs: ["dsppa-pava8500", "dsppa-pava4600", "dsppa-dma6112"]
+    warranty: "2 Years",
+    brandProductUrl: "https://www.dsppatech.com/product/pava9500/",
+    downloads: [
+      { label: "PAVA9500 Product Brochure", url: "https://www.dsppatech.com/product/pava9500/", type: "brochure" as const },
+      { label: "DSPPA PAVA Series Catalog", url: "https://www.dsppatech.com/category/voice-alarm-system/", type: "catalog" as const },
+    ],
+    relatedSlugs: ["dsppa-pava8500", "dsppa-pava4600", "dsppa-dma6112"]
   },
   {
     id: "dsppa-pava8500", slug: "dsppa-pava8500",
@@ -89,7 +108,13 @@ const DSPPA: Product[] = [
       { label: "Battery", value: "DC backup monitoring" },
     ],
     applications: ["Government", "Hospital", "Hotel", "Education"],
-    warranty: "2 Years", relatedSlugs: ["dsppa-pava9500", "dsppa-pava4600"]
+    warranty: "2 Years",
+    brandProductUrl: "https://www.dsppatech.com/product/pava8500/",
+    downloads: [
+      { label: "PAVA8500 Product Page", url: "https://www.dsppatech.com/product/pava8500/", type: "brochure" as const },
+      { label: "DSPPA Dante VA Catalog", url: "https://www.dsppatech.com/category/voice-alarm-system/", type: "catalog" as const },
+    ],
+    relatedSlugs: ["dsppa-pava9500", "dsppa-pava4600"]
   },
   {
     id: "dsppa-pava4600", slug: "dsppa-pava4600",
