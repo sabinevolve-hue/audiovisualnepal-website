@@ -1608,3 +1608,4 @@ export function getRelatedProducts(product: Product): Product[] {
 export function getProductsBySegment(segment: Segment): Product[] {
   return ALL_PRODUCTS.filter(p => p.applications.includes(segment))
 }
+
