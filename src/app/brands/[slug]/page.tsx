@@ -181,9 +181,9 @@ export default async function BrandPage({ params }: Props) {
                     <a key={product.slug} href={`/products/${product.category}/${product.slug}`}
                       className="block rounded-2xl overflow-hidden transition-all hover:-translate-y-1"
                       style={{ background: '#FFFFFF', border: '1.5px solid rgba(11,30,61,0.08)', boxShadow: '0 1px 6px rgba(11,30,61,0.05)', textDecoration: 'none' }}>
-                      <div className="h-40 flex items-center justify-center"
+                      <div className="h-40 relative overflow-hidden"
                         style={{ background: `linear-gradient(135deg, ${brand.color}08, ${brand.color}04)` }}>
-                        <ProductImg src={product.imageUrl} alt={product.name} style={{ width: '60%', height: '85%', objectFit: 'contain' }} brandColor={brand.color} brandName={brand.name} />
+                        <ProductImg src={product.imageUrl} alt={product.name} objectFit="contain" brandColor={brand.color} brandName={brand.name} />
                       </div>
                       <div className="p-4">
                         {product.badge && (
