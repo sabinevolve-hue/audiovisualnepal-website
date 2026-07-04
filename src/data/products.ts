@@ -54,7 +54,7 @@ const DSPPA: Product[] = [
     category: "voice-evacuation", subcategory: "Integrated Voice Evacuation",
     tagline: "8-Zone 500W EN54 Voice Evacuation PA System",
     badge: "Best Seller",
-    imageUrl: "https://www.dsppatech.com/uploads/image/20240910/11/8-zones-voice-alarm-fire-evacuation-system-host.jpg",
+    imageUrl: "/images/products/dsppa/dsppa-pava9500/main.jpg",
     imageFallback: "#0B1E3D",
     description: "The PAVA9500 is DSPPA's flagship integrated voice evacuation system, EN54-16 compliant, delivering 500W across 8 independent speaker zones. Supports up to 160 zones via expansion, with dual amplifier failover and full line supervision. Ideal for large government buildings, hospitals, hotels and campuses.",
     keyFeatures: [
@@ -97,7 +97,7 @@ const DSPPA: Product[] = [
     category: "voice-evacuation", subcategory: "Dante Voice Evacuation",
     tagline: "Dante-Networked 8-Zone 500W Voice Evacuation System",
     badge: "New",
-    imageUrl: "https://www.dsppatech.com/uploads/image/20240823/11/pava8500-8-zones-voice-evacuation-system.jpg",
+    imageUrl: "/images/products/dsppa/dsppa-pava8500/main.jpg",
     imageFallback: "#0B1E3D",
     description: "The PAVA8500 brings Dante audio networking to EN54-compliant voice evacuation. 8 zones expandable to 160, with built-in 500W digital amplifier, Dante protocol support, and battery backup monitoring. The PAVA8008 remote paging station enables distributed operation across large facilities.",
     keyFeatures: [
@@ -138,7 +138,7 @@ const DSPPA: Product[] = [
     category: "voice-evacuation", subcategory: "Compact Wall-mount VA",
     tagline: "4-Zone 600W Compact Wall-mount Voice Alarm System",
     badge: "Popular",
-    imageUrl: "https://www.dsppatech.com/uploads/image/20210119/14/pava4600-1.jpg",
+    imageUrl: "/images/products/dsppa/dsppa-pava4600/main.jpg",
     imageFallback: "#0B1E3D",
     description: "Compact wall-mount voice evacuation solution for smaller buildings. 600W across 4 zones with automatic main/standby amplifier switching. Supports AC and DC24V power supply, built-in battery charger, and speaker line detection. Perfect for offices, retail, small hotels and educational facilities.",
     keyFeatures: [
@@ -169,7 +169,7 @@ const DSPPA: Product[] = [
     category: "amplifiers", subcategory: "Mixer Amplifier",
     tagline: "250W Digital Mixer Amplifier with USB, FM & Bluetooth",
     badge: "Best Seller",
-    imageUrl: "https://www.dsppatech.com/uploads/image/20231107/14/digital-mixer-amplifier-1.jpg",
+    imageUrl: "/images/products/dsppa/dsppa-dma250u/main.jpg",
     imageFallback: "#1E3A5F",
     description: "Professional 250W mixer amplifier with 70V/100V and 4–16Ω output, 3 mic inputs, 2 AUX inputs, USB, FM and Bluetooth. LCD display shows working status, with rack-mount handles for standard 19\" rack. Available in 60W to 650W versions (DMA60U–DMA650U).",
     keyFeatures: [
@@ -204,7 +204,7 @@ const DSPPA: Product[] = [
     category: "amplifiers", subcategory: "Matrix Amplifier",
     tagline: "6×120W Digital Audio Matrix Amplifier with Touch Control",
     badge: "Featured",
-    imageUrl: "https://www.dsppatech.com/uploads/image/20240924/19/240w-6-zone-audio-matrix-amplifier-1.jpg",
+    imageUrl: "/images/products/dsppa/dsppa-dma6112/main.jpg",
     imageFallback: "#1E3A5F",
     description: "6-zone digital audio matrix amplifier delivering 6×120W (or 6×240W for DMA6124) with 4.3\" touch screen control. Supports USB, Bluetooth, SD card and FM input. Each zone has independent volume control, with chime and alarm functions. Ideal for multi-zone commercial environments.",
     keyFeatures: [
@@ -236,7 +236,7 @@ const DSPPA: Product[] = [
     name: "DSPPA DMA6250U", brand: "DSPPA", brandSlug: "dsppa",
     category: "amplifiers", subcategory: "Integrated Mixer Amplifier",
     tagline: "6-Zone 250W Integrated Mixer Amplifier with Remote Paging",
-    imageUrl: "https://www.dsppatech.com/uploads/image/20220801/15/dma6250u-2.jpg",
+    imageUrl: "/images/products/dsppa/dsppa-dma6250u/main.jpg",
     imageFallback: "#1E3A5F",
     description: "250W 6-zone integrated mixer amplifier with 4 mic, 4 AUX inputs, USB/FM/Bluetooth/TF card. Supports up to 6 remote paging microphones via dual RJ45. Built-in chime, priority MIC and 19\" rack mount. Available in 250W, 350W, 500W and 650W.",
     keyFeatures: [
@@ -265,7 +265,7 @@ const DSPPA: Product[] = [
     category: "ip-network-audio", subcategory: "IP Network PA Server",
     tagline: "IP Network PA Management Server — 17\" Touch Screen",
     badge: "Featured",
-    imageUrl: "https://www.dsppatech.com/uploads/image/20220722/17/mag6182ii.jpg",
+    imageUrl: "/images/products/dsppa/dsppa-mag6182ii-pro/gallery-0.jpg",
     imageFallback: "#0B1E3D",
     description: "Central management server for DSPPA MAG6000 IP Network PA systems. Industrial circuit board, 17\" true-color touch screen, dual-server redundancy with automatic backup. Supports TTS announcements in Chinese and English, scheduled broadcasts, recording and full web-based remote monitoring.",
     keyFeatures: [
@@ -297,7 +297,7 @@ const DSPPA: Product[] = [
     name: "DSPPA MAG6806", brand: "DSPPA", brandSlug: "dsppa",
     category: "ip-network-audio", subcategory: "IP Network Amplifier",
     tagline: "60W IP Network Digital Power Amplifier",
-    imageUrl: "https://www.dsppatech.com/uploads/image/20220722/17/ip-network-audio-terminal.jpg",
+    imageUrl: "/images/products/dsppa/dsppa-mag6806/main.jpg",
     imageFallback: "#0B1E3D",
     description: "Rack-mount IP network amplifier for MAG6000 distributed PA systems. 60W at 100V with TCP/IP control, built-in media player (USB/SD), AUX and EMC inputs. Available in 60W, 120W, 250W, 350W, 650W versions. Digital display shows system status and time.",
     keyFeatures: [
@@ -328,7 +328,7 @@ const DSPPA: Product[] = [
     category: "ceiling-speakers", subcategory: "Frameless Ceiling Speaker",
     tagline: "6W 6.5\" Frameless Ceiling Speaker — 100V & 4Ω",
     badge: "Best Seller",
-    imageUrl: "https://www.dsppatech.com/uploads/image/20221125/10/dsp6011-600-6.jpg",
+    imageUrl: "/images/products/dsppa/dsppa-dsp6011/main.jpg",
     imageFallback: "#2563EB",
     description: "Standard commercial ceiling speaker for background music and PA systems. 6W with 100V transformer taps (3W–6W) and 4Ω direct output. Frameless aluminum grille, spring-clip installation — no screws required. 90Hz–15kHz frequency response, 90dB sensitivity.",
     keyFeatures: [
@@ -362,7 +362,7 @@ const DSPPA: Product[] = [
     name: "DSPPA DSP5211", brand: "DSPPA", brandSlug: "dsppa",
     category: "ceiling-speakers", subcategory: "Coaxial Ceiling Speaker",
     tagline: "10W 6.5\" Coaxial Frameless Ceiling Speaker",
-    imageUrl: "https://www.dsppatech.com/uploads/image/20250626/10w-coaxial-frame-less-ceiling-speaker.webp",
+    imageUrl: "/images/products/dsppa/dsppa-dsp5211/main.webp",
     imageFallback: "#2563EB",
     description: "High-performance coaxial ceiling speaker with 6.5\" woofer and 0.75\" tweeter for extended frequency response. 10W with 100V taps (3W/6W/10W). 93dB sensitivity, 90Hz–18kHz response. Aluminum grille, spring-clip mounting. Ideal for boardrooms and premium hospitality spaces.",
     keyFeatures: [
@@ -394,7 +394,7 @@ const DSPPA: Product[] = [
     name: "DSPPA DSP255II", brand: "DSPPA", brandSlug: "dsppa",
     category: "column-speakers", subcategory: "Waterproof Column Speaker",
     tagline: "30W Waterproof Column Speaker — Indoor & Outdoor",
-    imageUrl: "https://www.dsppatech.com/uploads/image/20231113/20/outdoor-waterproof-column-speaker.jpg",
+    imageUrl: "/images/products/dsppa/dsppa-dsp255ii/main.jpg",
     imageFallback: "#2563EB",
     description: "30W waterproof column speaker with dual 3\" woofers and 1\" tweeter. Aluminum housing with waterproof drivers — built for outdoor courtyards, covered walkways, transit platforms and sports facilities. 100V and 70V compatible with bracket included.",
     keyFeatures: [
@@ -422,7 +422,7 @@ const DSPPA: Product[] = [
     name: "DSPPA DSP161HD", brand: "DSPPA", brandSlug: "dsppa",
     category: "horn-speakers", subcategory: "Hi-Fi Horn Speaker",
     tagline: "25W High-Fidelity Outdoor Horn Speaker — IP66",
-    imageUrl: "https://www.dsppatech.com/uploads/image/20231012/14/45w-high-fidelity-horn-speaker-1.jpg",
+    imageUrl: "/images/products/dsppa/dsppa-dsp161hd/main.jpg",
     imageFallback: "#2563EB",
     description: "Hi-Fi two-way horn speaker with built-in 70V/100V transformer, IP66 waterproof rating and high-quality alloy-aluminum housing. Wide frequency response and high sensitivity for outdoor background music and paging at railway stations, shopping malls, parking lots and factories.",
     keyFeatures: [
@@ -452,7 +452,7 @@ const DSPPA: Product[] = [
     category: "ip-network-audio", subcategory: "IP Network PA Server",
     tagline: "IP Network PA System Host — 10,000 Terminals · SIP · Emergency Broadcast",
     badge: "Featured" as const,
-    imageUrl: "https://www.dsppatech.com/uploads/image/20230927/10/ip-audio-system.jpg",
+    imageUrl: "/images/products/dsppa/dsppa-dsp9100h/gallery-0.jpg",
     imageFallback: "#DC2626",
     description: "The DSP9100H is the central server and management host for DSPPA's DSP9100 IP Network PA System, controlling up to 10,000 IP audio terminals across any LAN or WAN. Uses standard TCP/IP and SIP protocols — no proprietary cabling. Broadcast tasks including scheduled announcements, live paging, emergency alarms and background music zones are managed through a Windows software interface. Emergency broadcast automatically overrides all other audio across selected or all zones. Ideal for universities, hospitals, airports, transit hubs and government campuses.",
     keyFeatures: [
@@ -479,7 +479,7 @@ const DSPPA: Product[] = [
     relatedSlugs: ["dsppa-pava9500", "dsppa-pava8500", "dsppa-mag6182ii"],
     brandProductUrl: "https://www.dsppatech.com/product/ip-audio-system/",
     gallery: [
-      "https://www.dsppatech.com/uploads/image/20230927/10/ip-audio-system.jpg",
+      "/images/products/dsppa/dsppa-dsp9100h/gallery-0.jpg",
     ],
   },
   // ── MAG6182II Pro: IP Network Amplifier 180W 6-Zone ──────────────────────
@@ -488,7 +488,7 @@ const DSPPA: Product[] = [
     name: "DSPPA MAG6182II Pro", brand: "DSPPA", brandSlug: "dsppa",
     category: "ip-network-audio", subcategory: "IP Network Amplifier",
     tagline: "IP Network Amplifier — 180W · 6 Zones · Dante · PoE Output",
-    imageUrl: "https://www.dsppatech.com/uploads/image/20220722/17/mag6182ii.jpg",
+    imageUrl: "/images/products/dsppa/dsppa-mag6182ii-pro/gallery-0.jpg",
     imageFallback: "#DC2626",
     description: "The MAG6182II Pro is DSPPA's professional IP network-enabled amplifier for the MAG6000 and DSP9100 system families. Delivering 180W across 6 independent speaker zones, it receives audio streams directly over Ethernet — no dedicated audio cabling from server room to each floor. Native Dante audio-over-IP routing. Built-in PoE input powers connected IP microphones and paging stations. Suitable for hospitality, retail, corporate campuses and education facilities.",
     keyFeatures: [
@@ -513,7 +513,7 @@ const DSPPA: Product[] = [
     relatedSlugs: ["dsppa-mag6806", "dsppa-dsp9100h", "dsppa-pava9500"],
     brandProductUrl: "https://www.dsppatech.com/product/ip-audio-system/mag6000-ip-network-pa-system/",
     gallery: [
-      "https://www.dsppatech.com/uploads/image/20220722/17/mag6182ii.jpg",
+      "/images/products/dsppa/dsppa-mag6182ii-pro/gallery-0.jpg",
     ],
   },
 ]
@@ -526,7 +526,7 @@ const INFOBIT: Product[] = [
     category: "video-conferencing", subcategory: "All-in-One Video Bar",
     tagline: "4K All-in-One Conference Video Bar with AI Auto-Framing",
     badge: "Best Seller",
-    imageUrl: "https://www.infobitav.com/wp-content/uploads/2024/08/iCam-VB50-B1-scaled.webp",
+    imageUrl: "/images/products/infobit/infobit-vb50/main.webp",
     imageFallback: "#6366F1",
     description: "The iCam VB50 combines a 4K camera, microphone array and speaker into a single USB bar — plug-in and your meeting room is ready. AI auto-framing tracks active speakers, 5× digital zoom, 120° wide-angle lens, and Bluetooth. Works with Zoom, Teams, WebEx and all major UC platforms.",
     keyFeatures: [
@@ -557,7 +557,7 @@ const INFOBIT: Product[] = [
     category: "video-conferencing", subcategory: "All-in-One Video Bar",
     tagline: "4K Conference Video Bar with 5m Pickup & Expansion Mic",
     badge: "Popular",
-    imageUrl: "https://www.infobitav.com/wp-content/uploads/2024/08/iCam-VB60-B1-scaled.webp",
+    imageUrl: "/images/products/infobit/infobit-vb60/main.webp",
     imageFallback: "#6366F1",
     description: "Upgraded from VB50 with speaker voice tracking, 5m pickup, USB HID support and daisy-chainable expansion microphones up to 4 units via RJ45. Ideal for medium-large meeting rooms. Works with Zoom Rooms, Teams Rooms and WebEx Devices.",
     keyFeatures: [
@@ -584,7 +584,7 @@ const INFOBIT: Product[] = [
     category: "video-conferencing", subcategory: "BYOD/BYOM Video Bar",
     tagline: "4K All-in-One BYOD/BYOM Bar with Wireless Presentation",
     badge: "New",
-    imageUrl: "https://www.infobitav.com/wp-content/uploads/2024/08/iCam-VB70-B1-1.jpg",
+    imageUrl: "/images/products/infobit/infobit-vb80/main.jpg",
     imageFallback: "#6366F1",
     description: "The VB80 is InfoBit's premium video bar — 4K with 120° FOV, 4× MEMS microphone array (8m range), HDMI wired BYOD, wireless Airplay/Miracast BYOM, and Android OS for standalone operation. Up to 5 expansion mics, WiFi, and iShare MC dongle support.",
     keyFeatures: [
@@ -611,7 +611,7 @@ const INFOBIT: Product[] = [
     category: "conference-cameras", subcategory: "4K PTZ Camera",
     tagline: "4K UHD AI Auto-Tracking PTZ Conference Camera",
     badge: "Featured",
-    imageUrl: "https://www.infobitav.com/wp-content/uploads/2024/08/iCam-P30-B1-scaled.webp",
+    imageUrl: "/images/products/infobit/infobit-icam-p30/main.webp",
     imageFallback: "#6366F1",
     description: "Professional 4K PTZ camera with AI-based human body detection for automatic target tracking. 12× optical zoom, 80.8° HFOV. Outputs via USB 3.0, HDMI and Ethernet. Compatible with Zoom, Teams, WebEx. Ideal for lecture halls, broadcast studios and large boardrooms.",
     keyFeatures: [
@@ -642,7 +642,7 @@ const INFOBIT: Product[] = [
     name: "InfoBit iCam P40", brand: "InfoBit", brandSlug: "infobit",
     category: "conference-cameras", subcategory: "PTZ Lecturer Tracking",
     tagline: "Dual-Lens AI Lecturer Tracking PTZ Camera — 1080P60 SDI",
-    imageUrl: "https://www.infobitav.com/wp-content/uploads/2024/08/iCam-P40-B1-scaled.webp",
+    imageUrl: "/images/products/infobit/infobit-icam-p40/main.webp",
     imageFallback: "#6366F1",
     description: "Specialized dual-lens PTZ for lecture capture and distance learning. AI human body detection locks onto the presenter and adjusts pan/tilt/zoom automatically — even adjusts for the lecturer's height. Dedicated 1080P60 SDI tracking output plus wide overview output.",
     keyFeatures: [
@@ -670,7 +670,7 @@ const INFOBIT: Product[] = [
     category: "wireless-presentation", subcategory: "Wireless Presentation System",
     tagline: "4K60 Wireless Presentation — 0.1s Latency, 16 Users",
     badge: "Best Seller",
-    imageUrl: "https://www.infobitav.com/wp-content/uploads/2024/11/iShare-X200-B-scaled.webp",
+    imageUrl: "/images/products/infobit/infobit-ishare-x200/main.webp",
     imageFallback: "#6366F1",
     description: "Enterprise-grade wireless presentation system with 4K60Hz output, dual WiFi, 0.1-second mirroring latency and 30m range. Supports USB-A, HDMI and USB-C dongles, portrait and landscape screens, and up to 16 simultaneous users. Built-in whiteboard and annotation tools.",
     keyFeatures: [
@@ -696,7 +696,7 @@ const INFOBIT: Product[] = [
     name: "InfoBit iWall 204", brand: "InfoBit", brandSlug: "infobit",
     category: "video-walls", subcategory: "4K Video Wall Controller",
     tagline: "4K60 2×4 HDMI Video Wall Controller with TCP/IP Control",
-    imageUrl: "https://www.infobitav.com/wp-content/uploads/2024/09/iWall-204-B-scaled.webp",
+    imageUrl: "/images/products/infobit/infobit-iwall-204/main.webp",
     imageFallback: "#6366F1",
     description: "2-input, 4-output HDMI video wall controller with 4K60Hz input and output. Supports flexible M×N video wall configurations up to 6×6, RS232 and TCP/IP control. Built-in audio de-embedding. Ideal for control rooms, lobbies and multi-display signage walls.",
     keyFeatures: [
@@ -722,7 +722,7 @@ const INFOBIT: Product[] = [
     name: "InfoBit iWall 109", brand: "InfoBit", brandSlug: "infobit",
     category: "video-walls", subcategory: "Video Wall Controller",
     tagline: "1×9 4K30 Video Wall Controller — Plug-and-Play",
-    imageUrl: "https://www.infobitav.com/wp-content/uploads/2024/09/iwall-109-b.png",
+    imageUrl: "/images/products/infobit/infobit-iwall-109/main.png",
     imageFallback: "#6366F1",
     description: "Ultra-simple 1-input to 9-output video wall controller. Plug-and-play with IR remote control and multiple preset video wall modes. Supports 8/10/12-bit deep color. Perfect for retail, hospitality and public space multi-screen setups without complex configuration.",
     keyFeatures: [
@@ -747,7 +747,7 @@ const INFOBIT: Product[] = [
     category: "conference-audio", subcategory: "USB Speakerphone",
     tagline: "8-Element Beamforming Speakerphone — 5m Range, 5-Unit Cascade",
     badge: "Popular",
-    imageUrl: "https://www.infobitav.com/wp-content/uploads/2024/08/iSpeaker-M500-B-scaled.webp",
+    imageUrl: "/images/products/infobit/infobit-ispeaker-m500/main.webp",
     imageFallback: "#6366F1",
     description: "Professional USB omnidirectional speakerphone with 8-element beamforming microphone array, full-duplex communication, and echo cancellation with AGC. Up to 5 units daisy-chainable for large conference rooms up to 100 sqm. Works with all UC platforms.",
     keyFeatures: [
@@ -773,7 +773,7 @@ const INFOBIT: Product[] = [
     category: "av-switching", subcategory: "HDMI Matrix Switcher",
     tagline: "4K60 HDMI 2×6 Seamless Matrix Switcher with Dante DSP",
     badge: "New",
-    imageUrl: "https://www.infobitav.com/wp-content/uploads/2024/09/iSwitch-265-B-scaled.webp",
+    imageUrl: "/images/products/infobit/infobit-iswitch-265/main.webp",
     imageFallback: "#6366F1",
     description: "Advanced 6-input, 4-output seamless matrix switcher (iMatrix C604) with Dante audio networking and onboard DSP. Full USB-C input with 4K60, USB 3.1, network and 60W PD charging. Seamless switching, USB host switching, and 4K60 4:4:4 HDCP 2.2 compliant.",
     keyFeatures: [
@@ -851,7 +851,7 @@ const INFOBIT: Product[] = [
     name: "InfoBit iCam VB40", brand: "InfoBit", brandSlug: "infobit",
     category: "video-conferencing", subcategory: "All-in-One Video Bar",
     tagline: "USB Video Bar — 4K Camera + Mic Array + Speaker · One Cable",
-    imageUrl: "https://www.infobitav.com/wp-content/uploads/2024/08/iCam-VB40-B1-scaled.webp",
+    imageUrl: "/images/products/infobit/infobit-icam-vb40/gallery-0.webp",
     imageFallback: "#6366F1",
     description: "The iCam VB40 integrates a 4K camera, beamforming microphone array and speaker into a single USB device that sits on or above any display. One USB-C cable to a meeting room PC and you're ready for Zoom, Teams or any conferencing platform instantly. AI Auto Framing, AEC and noise suppression. Ideal for huddle rooms and executive offices.",
     keyFeatures: [
@@ -874,7 +874,7 @@ const INFOBIT: Product[] = [
     relatedSlugs: ["infobit-vb50", "infobit-vb80", "infobit-icam-pt40"],
     brandProductUrl: "https://www.infobitav.com/icam-vb40/",
     gallery: [
-      "https://www.infobitav.com/wp-content/uploads/2024/08/iCam-VB40-B1-scaled.webp",
+      "/images/products/infobit/infobit-icam-vb40/gallery-0.webp",
     ],
   },
   // ── iCam VB80: 4K AI Video Bar + Dante ───────────────────────────────────
@@ -917,7 +917,7 @@ const INFOBIT: Product[] = [
     category: "wireless-presentation", subcategory: "Multi-Source Wireless Presentation",
     tagline: "4-Screen Wireless Presentation — 4 Simultaneous Sources · BYOD Ready",
     badge: "Featured" as const,
-    imageUrl: "https://www.infobitav.com/wp-content/uploads/2024/09/iShare-X400-B-scaled.webp",
+    imageUrl: "/images/products/infobit/infobit-ishare-x400/gallery-0.webp",
     imageFallback: "#6366F1",
     description: "The iShare X400 supports four simultaneous content sources on a quad-split display. Up to four presenters share their screens at once — ideal for team reviews, collaborative workshops and multi-source training. BYOD via USB-C, HDMI transmitters and the iShare app on smartphones and tablets. Moderator control selects which source goes full-screen. Annotation tools let participants mark up shared content from any device.",
     keyFeatures: [
@@ -940,7 +940,7 @@ const INFOBIT: Product[] = [
     relatedSlugs: ["infobit-ishare-x200", "infobit-vb50"],
     brandProductUrl: "https://www.infobitav.com/ishare-x400/",
     gallery: [
-      "https://www.infobitav.com/wp-content/uploads/2024/09/iShare-X400-B-scaled.webp",
+      "/images/products/infobit/infobit-ishare-x400/gallery-0.webp",
     ],
   },
   // ── iMatrix HU44: 4K 4x4 HDMI+USB Matrix ────────────────────────────────
@@ -1019,7 +1019,7 @@ const TENVEO: Product[] = [
     category: "conference-cameras", subcategory: "360° All-in-One Camera",
     tagline: "4K 360° All-in-One Conference Webcam with Auto-Framing",
     badge: "Best Seller",
-    imageUrl: "https://www.tenveocamera.com/cdn/shop/files/VL12U-4K.png?v=1755849705",
+    imageUrl: "/images/products/tenveo/tenveo-cc600/main.png",
     imageFallback: "#0EA5E9",
     description: "The CC600 is a 4K 360-degree all-in-one conference camera with omnidirectional microphone, designed for small to medium meeting rooms. Auto-framing adjusts to keep all participants in view. Portable, compact design — works with any UC platform via USB. No drivers needed.",
     keyFeatures: [
@@ -1047,7 +1047,7 @@ const TENVEO: Product[] = [
     category: "conference-cameras", subcategory: "PTZ Camera",
     tagline: "12× Optical Zoom HD PTZ Camera — USB/HDMI/SDI/IP",
     badge: "Popular",
-    imageUrl: "https://www.tenveocamera.com/cdn/shop/files/VHD12u_36b44805-66e6-433b-b18f-e43cf8f5b225.png?v=1762936588",
+    imageUrl: "/images/products/tenveo/tenveo-vhd612a/main.png",
     imageFallback: "#0EA5E9",
     description: "Professional 1080P PTZ conference camera with 12× optical zoom, 8× digital zoom and 77.5° wide angle. Quad output: USB, HDMI, SDI and IP/RJ45 simultaneously. RS232/RS485/USB control, 10 IR presets (256 via RS232). Ideal for medium-to-large conference rooms and live streaming.",
     keyFeatures: [
@@ -1081,7 +1081,7 @@ const TENVEO: Product[] = [
     name: "Tenveo VHD620A", brand: "Tenveo", brandSlug: "tenveo",
     category: "conference-cameras", subcategory: "PTZ Camera",
     tagline: "20× Optical Zoom HD PTZ Camera — HDMI/USB/SDI/IP",
-    imageUrl: "https://www.tenveocamera.com/cdn/shop/files/VHD620A_N.png?v=1755848552",
+    imageUrl: "/images/products/tenveo/tenveo-vhd620a/main.png",
     imageFallback: "#0EA5E9",
     description: "Extended-reach PTZ camera with 20× optical zoom and 69.5° wide angle for large auditoriums and lecture halls. H.264/H.265 video encoding, simultaneous HDMI/USB/SDI/IP outputs, ceiling and wall mount support. NDI optional for broadcast-grade IP production.",
     keyFeatures: [
@@ -1112,7 +1112,7 @@ const TENVEO: Product[] = [
     category: "conference-cameras", subcategory: "4K AI PTZ Camera",
     tagline: "4K@60fps AI Auto-Tracking 20× PTZ Camera with NDI",
     badge: "Featured",
-    imageUrl: "https://www.tenveocamera.com/cdn/shop/files/NVMAX620A.png?v=1755075496",
+    imageUrl: "/images/products/tenveo/tenveo-uv620a/main.png",
     imageFallback: "#0EA5E9",
     description: "Flagship 4K AI tracking PTZ camera with 8.29MP 1/1.8\" Sony CMOS sensor delivering 4K@60fps on HDMI/USB/IP and 1080P60 on 3G-SDI. AI auto-tracking with Auto Framing, Presenter Tracking and Zone Tracking. NDI|HX2, SRT, ONVIF, RTSP, RTMP support.",
     keyFeatures: [
@@ -1145,7 +1145,7 @@ const TENVEO: Product[] = [
     category: "video-conferencing", subcategory: "Conference Group Kit",
     tagline: "4K 12× PTZ + Speakerphone Conference Group Kit",
     badge: "New",
-    imageUrl: "https://www.tenveocamera.com/cdn/shop/files/VHD20H4KAN.png?v=1763023426",
+    imageUrl: "/images/products/tenveo/tenveo-va612ex/main.png",
     imageFallback: "#0EA5E9",
     description: "Complete conference room group kit: 4K 12× optical zoom PTZ camera with HDMI/USB output plus omnidirectional speakerphone with 9m pickup radius, HUB and all-in-one DP interface. AI tracking built-in. Designed for medium-to-large meeting rooms that need a single-box solution.",
     keyFeatures: [
@@ -1169,7 +1169,7 @@ const TENVEO: Product[] = [
     name: "Tenveo M3B", brand: "Tenveo", brandSlug: "tenveo",
     category: "conference-audio", subcategory: "Bluetooth Speakerphone",
     tagline: "USB-C & Bluetooth Speakerphone — 5m Pickup, Up to 5 People",
-    imageUrl: "https://www.tenveocamera.com/cdn/shop/files/M3B.png?v=1731638000",
+    imageUrl: "/images/products/tenveo/tenveo-m3b/main.png",
     imageFallback: "#0EA5E9",
     description: "Compact speakerphone with 2 omnidirectional microphones, 5m pickup range for up to 5 people. Connects via USB-C, Bluetooth (with dongle) or 3.5mm. Works with Zoom, Teams, Skype, Google Meet. LED indicators, 6-hour battery, plug-and-play on Windows, Mac, Android and Linux.",
     keyFeatures: [
@@ -1193,7 +1193,7 @@ const TENVEO: Product[] = [
     name: "Tenveo KB200 Pro", brand: "Tenveo", brandSlug: "tenveo",
     category: "camera-controllers", subcategory: "PTZ Keyboard Controller",
     tagline: "Professional PTZ Camera Keyboard Controller — NDI, ONVIF, 5\" LCD",
-    imageUrl: "https://www.tenveocamera.com/cdn/shop/files/KB200PRO.png?v=1731638462",
+    imageUrl: "/images/products/tenveo/tenveo-kb200pro/main.png",
     imageFallback: "#0EA5E9",
     description: "Advanced PTZ controller with 5\" industrial LCD (4-split screen), 4D joystick, ONVIF/NDI/VISCA/PELCO-P/D support, independent IP control, up to 7 quick-select camera buttons and knob-based zoom/speed control. Ideal for live events, broadcasts and large lecture halls.",
     keyFeatures: [
@@ -1222,7 +1222,7 @@ const TENVEO: Product[] = [
     name: "Tenveo NV20A AI", brand: "Tenveo", brandSlug: "tenveo",
     category: "conference-cameras", subcategory: "AI Tracking PTZ Camera",
     tagline: "20× AI Auto-Tracking PTZ — USB/SDI/HDMI/IP with PoE",
-    imageUrl: "https://www.tenveocamera.com/cdn/shop/files/VX20_4K_1.png?v=1763025106",
+    imageUrl: "/images/products/tenveo/tenveo-nv20a-ai/main.png",
     imageFallback: "#0EA5E9",
     description: "Full-featured 1080P AI tracking PTZ with 20× optical zoom, 65° wide angle and PoE power supply. Quad output: USB 3.0, SDI, HDMI and IP. RTSP, RTMP, ONVIF, GB28181 streaming protocols. VISCA over IP control. Perfect for mid-budget AI tracking installations.",
     keyFeatures: [
@@ -1251,7 +1251,7 @@ const TENVEO: Product[] = [
     category: "conference-cameras", subcategory: "NDI PTZ Camera",
     tagline: "4K NDI PTZ Camera — 8.29MP Sony Sensor, AI Tracking",
     badge: "New",
-    imageUrl: "https://www.tenveocamera.com/cdn/shop/files/X60.png?v=1774944844",
+    imageUrl: "/images/products/tenveo/tenveo-x60ndi/main.png",
     imageFallback: "#0EA5E9",
     description: "Professional-grade NDI PTZ camera with 8.29MP Sony 1/2.8\" CMOS sensor, AI tracking, 20× optical zoom and 51.9° wide angle. Full NDI|HX2, RTSP, RTMP, VISCA over IP, SRT protocol support. HDMI, USB 3.0, SDI, IP output with 3.5mm audio I/O.",
     keyFeatures: [
@@ -1280,7 +1280,7 @@ const TENVEO: Product[] = [
     category: "conference-cameras", subcategory: "4K PTZ Camera",
     tagline: "4K 12X NDI|HX2 PTZ Camera — HDMI · SDI · USB3 · PoE",
     badge: "Best Seller" as const,
-    imageUrl: "https://www.tenveo-video-conference.com/uploads/12429/page/full-featured-4k-12x-optical-zoom-ndi-poe-sdi2ce97.jpg",
+    imageUrl: "/images/products/tenveo/tenveo-uv612a-4k/gallery-0.jpg",
     imageFallback: "#0891B2",
     description: "The UV612A-4K is Tenveo's flagship 4K NDI conference camera, built around a Sony IMX415 1/2.8\" CMOS sensor delivering 8.29MP resolution at 4K60fps. 12x optical zoom (f=3.42–40.02mm, F1.88–F3.77) covers boardroom wide shots at 80.56° to tight close-ups at 7.89°. NDI|HX2, simultaneous HDMI, 3G-SDI, USB3.0 and IP streaming. PoE IEEE802.3at. VISCA/Pelco-D/Pelco-P via RS-232 and RS-485, 255 presets. Ideal for houses of worship, lecture capture, live streaming and corporate conferencing.",
     keyFeatures: [
@@ -1321,7 +1321,7 @@ const TENVEO: Product[] = [
     relatedSlugs: ["tenveo-vhd620a", "tenveo-uv620a"],
     brandProductUrl: "https://www.tenveo-video-conference.com/4k-camera/full-featured-4k-12x-optical-zoom-ndi-poe-sdi.html",
     gallery: [
-      "https://www.tenveo-video-conference.com/uploads/12429/page/full-featured-4k-12x-optical-zoom-ndi-poe-sdi2ce97.jpg",
+      "/images/products/tenveo/tenveo-uv612a-4k/gallery-0.jpg",
     ],
   },
   // ── VX20M-4K: 20x AI Tracking, Sony, NDI|HX2, Tally ─────────────────────
@@ -1331,7 +1331,7 @@ const TENVEO: Product[] = [
     category: "conference-cameras", subcategory: "AI Tracking PTZ Camera",
     tagline: "4K 20X AI Auto Tracking PTZ — Sony Sensor · NDI|HX2 · PoE · Tally",
     badge: "New" as const,
-    imageUrl: "https://www.tenveo-video-conference.com/uploads/12429/page/new-released-tenveo-vx20m-4k-20x-optical-zoomda04f.jpg",
+    imageUrl: "/images/products/tenveo/tenveo-vx20m-4k/gallery-0.jpg",
     imageFallback: "#0891B2",
     description: "The VX20M-4K combines a Sony 1/2.8\" CMOS sensor with 20x optical zoom and AI-powered presenter tracking for 4K UHD video in large rooms. AI Auto Framing keeps the presenter centred automatically. 20x zoom (f=4.95–99mm, 51.9°–3.0° H-FOV) covers large lecture halls from the back row. Simultaneous HDMI, 3G-SDI, USB3.0 and IP streaming. NDI|HX2 optional. Tally lamp (green/red/white) supports live multi-camera production. 255 presets, PoE IEEE802.3af.",
     keyFeatures: [
@@ -1366,7 +1366,7 @@ const TENVEO: Product[] = [
     relatedSlugs: ["tenveo-uv612a-4k", "tenveo-vhd620a"],
     brandProductUrl: "https://www.tenveo-video-conference.com/4k-camera/new-released-tenveo-vx20m-4k-20x-optical-zoom.html",
     gallery: [
-      "https://www.tenveo-video-conference.com/uploads/12429/page/new-released-tenveo-vx20m-4k-20x-optical-zoomda04f.jpg",
+      "/images/products/tenveo/tenveo-vx20m-4k/gallery-0.jpg",
     ],
   },
   // ── M5B: BT5.0 Speakerphone, 4-mic, 6M, 8000mAh ────────────────────────
@@ -1376,7 +1376,7 @@ const TENVEO: Product[] = [
     category: "conference-audio", subcategory: "Bluetooth Speakerphone",
     tagline: "USB/Bluetooth Speakerphone — 6M 360° Pickup · 8000mAh · AEC",
     badge: "Popular" as const,
-    imageUrl: "https://www.tenveo-video-conference.com/uploads/12429/page/bluetooth-wireless-conference-speakerphone310e3.jpg",
+    imageUrl: "/images/products/tenveo/tenveo-m5b/gallery-0.jpg",
     imageFallback: "#0891B2",
     description: "The TEVO-M5B is a portable conference speakerphone for rooms up to 20 people. Four omnidirectional microphones capture voices from 6 metres in any direction. Full-duplex AEC and adaptive noise suppression eliminate echo and background noise. Connect via USB-C, Bluetooth 5.0, 2.4GHz dongle or 3.5mm. The 8000mAh battery delivers up to 24 hours of call time. Compatible with Zoom, Teams, Webex, Google Meet and every major UC platform.",
     keyFeatures: [
@@ -1410,7 +1410,7 @@ const TENVEO: Product[] = [
     relatedSlugs: ["tenveo-uv612a-4k", "tenveo-vx20m-4k", "tenveo-cc600"],
     brandProductUrl: "https://www.tenveo-video-conference.com/speakerphones/bluetooth-wireless-conference-speakerphone.html",
     gallery: [
-      "https://www.tenveo-video-conference.com/uploads/12429/page/bluetooth-wireless-conference-speakerphone310e3.jpg",
+      "/images/products/tenveo/tenveo-m5b/gallery-0.jpg",
     ],
   },
 ]
@@ -1423,7 +1423,7 @@ const FOCUS: Product[] = [
     category: "smart-podiums", subcategory: "Premium Smart Podium",
     tagline: "Electric Height-Adjustable Smart Podium with 23.8\" Touch Screen",
     badge: "Best Seller",
-    imageUrl: "https://img03.71360.com/w3/2vzk06/20240810/dd6c822824ff9e40be609268bf53cdbc.jpg",
+    imageUrl: "/images/products/focus/focus-fk500n/main.jpg",
     imageFallback: "#1E40AF",
     description: "The ST100 is a premium all-in-one smart podium crafted from solid Sapele wood with electric height adjustment (200mm lift range). Integrates a 23.8\" touch screen, 18.5\" advertising screen, OPS computer (Intel i5/i7, 16GB, 512GB SSD), dual gooseneck microphones and magnetic timer.",
     keyFeatures: [
@@ -1456,7 +1456,7 @@ const FOCUS: Product[] = [
     category: "smart-podiums", subcategory: "Premium Smart Podium",
     tagline: "Smart Podium with 33\" Advertising Screen & Wireless Charging",
     badge: "Featured",
-    imageUrl: "https://img03.71360.com/w3/2vzk06/20240810/7616046b3e0a35d57be45893ed46105e.jpg",
+    imageUrl: "/images/products/focus/focus-st600/main.jpg",
     imageFallback: "#1E40AF",
     description: "Upgraded ST200 features a 21.5\" touch screen plus a large 33\" built-in advertising screen, wireless phone charging module, dual 65cm gooseneck mics, mini keyboard and aluminum volume knob. Same OPS computer as ST100. Solid Sapele wood in walnut and black finish.",
     keyFeatures: [
@@ -1484,7 +1484,7 @@ const FOCUS: Product[] = [
     name: "Focus Smart Podium ST400", brand: "Focus", brandSlug: "focus",
     category: "smart-podiums", subcategory: "Premium Smart Podium",
     tagline: "Full-Featured Smart Podium with Dual Touch Screens",
-    imageUrl: "https://img03.71360.com/w3/2vzk06/20240810/dd6c822824ff9e40be609268bf53cdbc.jpg",
+    imageUrl: "/images/products/focus/focus-fk500n/main.jpg",
     imageFallback: "#1E40AF",
     description: "ST400 is Focus's flagship podium with dual interactive touch screens, advanced AV integration and premium Sapele wood construction. Designed for parliament halls, large auditoriums and flagship university lecture theatres where nothing less than the best will do.",
     keyFeatures: [
@@ -1510,7 +1510,7 @@ const FOCUS: Product[] = [
     category: "smart-podiums", subcategory: "Compact Smart Podium",
     tagline: "Compact Smart Podium with Integrated AV & Touch Control",
     badge: "Popular",
-    imageUrl: "https://img03.71360.com/w3/2vzk06/20240810/7616046b3e0a35d57be45893ed46105e.jpg",
+    imageUrl: "/images/products/focus/focus-st600/main.jpg",
     imageFallback: "#1E40AF",
     description: "Compact and cost-effective smart podium integrating touch screen, OPS computer and microphone in a slimmer profile. Ideal for schools, churches and training rooms where space is limited but full smart podium capability is needed.",
     keyFeatures: [
@@ -1536,7 +1536,7 @@ const FOCUS: Product[] = [
     name: "Focus Smart Podium FK500N", brand: "Focus", brandSlug: "focus",
     category: "smart-podiums", subcategory: "Compact Smart Podium",
     tagline: "Entry Smart Podium with Touch Screen & Built-in Microphone",
-    imageUrl: "https://img03.71360.com/w3/2vzk06/20240810/dd6c822824ff9e40be609268bf53cdbc.jpg",
+    imageUrl: "/images/products/focus/focus-fk500n/main.jpg",
     imageFallback: "#1E40AF",
     description: "Entry-level smart podium offering core functionality — touch screen, OPS computer and professional microphone — at the most accessible price point. Suitable for training rooms, conference halls and worship spaces that are upgrading from traditional lecterns.",
     keyFeatures: [
@@ -1561,7 +1561,7 @@ const FOCUS: Product[] = [
     category: "smart-podiums", subcategory: "Premium Smart Podium",
     tagline: "Premium Conference Podium with Advanced AV Integration",
     badge: "New",
-    imageUrl: "https://img03.71360.com/w3/2vzk06/20240810/7616046b3e0a35d57be45893ed46105e.jpg",
+    imageUrl: "/images/products/focus/focus-st600/main.jpg",
     imageFallback: "#1E40AF",
     description: "The ST600 combines the ST series' premium craftsmanship with enhanced AV control capability — larger display, extended height adjustment and comprehensive connectivity for integration with room control systems. Perfect for VIP boardrooms and high-profile government facilities.",
     keyFeatures: [
