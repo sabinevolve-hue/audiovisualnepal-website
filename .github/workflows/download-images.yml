@@ -1,0 +1,34 @@
+name: Download & Localize Product Images
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'src/data/products.ts'
+
+jobs:
+  download-images:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Download product images from manufacturer CDNs
+        run: node scripts/download-images.mjs
+
+      - name: Patch products.ts with local image paths
+        run: node scripts/apply-image-replacements.mjs
+
+      - name: Commit & push images
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add public/images src/data/products.ts
+          git diff --staged --quiet && echo "Nothing to commit" || \
+            git commit -m "chore: auto-download & localize product images [skip ci]" && git push
