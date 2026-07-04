@@ -1,138 +1,161 @@
 import type { Metadata } from 'next'
-import Image from 'next/image'
 import Link from 'next/link'
-import { getBrands, stripHtml } from '@/lib/wordpress'
+import { ArrowRight } from 'lucide-react'
 
-export const revalidate = 3600
+export const revalidate = 86400
 
 export const metadata: Metadata = {
-  title: 'Brands — AudioVisual Nepal | Authorized Distributor',
-  description: 'AudioVisual Nepal is the authorized distributor for DSPPA, Tenveo, Shure, Sennheiser, Biamp, Extron, Crestron, Kramer and more across Nepal.',
+  title: 'Our Brands — AudioVisual Nepal | Authorized Distributor',
+  description: 'AudioVisual Nepal is the authorized distributor for DSPPA, InfoBit, Tenveo and Focus (GZFocus) in Nepal. Genuine products, full manufacturer warranty.',
   openGraph: {
-    title: 'Authorised AV Brands in Nepal — AudioVisual Nepal Distributor',
-    description: 'Official authorised distributor for DSPPA, ITC, Shure, JBL, Bose, Yamaha, TOA, Sennheiser and more in Nepal. Genuine products, full manufacturer warranty.',
+    title: 'Authorised AV Brands in Nepal — DSPPA, InfoBit, Tenveo, Focus',
+    description: 'Official authorised distributor for DSPPA, InfoBit, Tenveo and Focus in Nepal. Genuine products, full manufacturer warranty.',
     url: 'https://audiovisualnepal.com/brands',
     siteName: 'AudioVisual Nepal',
-    images: [{ url: '/og-image.svg', width: 1200, height: 630, alt: 'AudioVisual Nepal' }],
+    images: [{ url: '/og-image.svg', width: 1200, height: 630, alt: 'AudioVisual Nepal Brands' }],
     type: 'website',
   },
   alternates: { canonical: 'https://audiovisualnepal.com/brands' },
 }
 
-// Brand accent colours for card styling
-const BRAND_ACCENTS: Record<string, { color: string; bg: string; border: string }> = {
-  'DSPPA':           { color: '#3B82F6', bg: 'rgba(59,130,246,0.07)',   border: 'rgba(59,130,246,0.18)' },
-  'Tenveo':          { color: '#8B5CF6', bg: 'rgba(139,92,246,0.07)',   border: 'rgba(139,92,246,0.18)' },
-  'Shure':           { color: '#EF4444', bg: 'rgba(204,0,0,0.07)',      border: 'rgba(204,0,0,0.18)' },
-  'Sennheiser':      { color: '#94A3B8', bg: 'rgba(148,163,184,0.05)', border: 'rgba(148,163,184,0.15)' },
-  'Biamp':           { color: '#F59E0B', bg: 'rgba(245,158,11,0.07)',   border: 'rgba(245,158,11,0.18)' },
-  'Extron':          { color: '#10B981', bg: 'rgba(16,185,129,0.07)',   border: 'rgba(16,185,129,0.18)' },
-  'Crestron':        { color: '#60A5FA', bg: 'rgba(96,165,250,0.07)',   border: 'rgba(96,165,250,0.18)' },
-  'Kramer':          { color: '#F97316', bg: 'rgba(249,115,22,0.07)',   border: 'rgba(249,115,22,0.18)' },
-  'Yamaha Pro Audio':{ color: '#22C55E', bg: 'rgba(34,197,94,0.07)',    border: 'rgba(34,197,94,0.18)' },
-  'ITC':             { color: '#EF4444', bg: 'rgba(239,68,68,0.07)',    border: 'rgba(239,68,68,0.18)' },
-  'JBL':             { color: '#FF6600', bg: 'rgba(255,102,0,0.07)',    border: 'rgba(255,102,0,0.18)' },
-  'Bose':            { color: '#CBD5E1', bg: 'rgba(203,213,225,0.05)', border: 'rgba(203,213,225,0.12)' },
-  'TOA':             { color: '#60A5FA', bg: 'rgba(96,165,250,0.07)',   border: 'rgba(96,165,250,0.18)' },
-  'Yamaha':          { color: '#22C55E', bg: 'rgba(34,197,94,0.07)',    border: 'rgba(34,197,94,0.18)' },
-}
-
-const fallbackBrands = [
-  { name: 'DSPPA',           tagline: 'Professional PA & IP Audio Systems',   country: 'China',   slug: 'dsppa' },
-  { name: 'Tenveo',          tagline: 'AI-Powered Video Conferencing',         country: 'China',   slug: 'tenveo' },
-  { name: 'Shure',           tagline: 'Legendary Microphones & Audio',         country: 'USA',     slug: 'shure' },
-  { name: 'Sennheiser',      tagline: 'Premium Audio Solutions',               country: 'Germany', slug: 'sennheiser' },
-  { name: 'Biamp',           tagline: 'Professional AV Signal Processing',     country: 'USA',     slug: 'biamp' },
-  { name: 'Extron',          tagline: 'AV Signal Distribution & Control',      country: 'USA',     slug: 'extron' },
-  { name: 'Crestron',        tagline: 'Smart Room Automation',                 country: 'USA',     slug: 'crestron' },
-  { name: 'Kramer',          tagline: 'AV Connectivity & Switching',           country: 'Israel',  slug: 'kramer' },
-  { name: 'Yamaha Pro Audio', tagline: 'Mixing Consoles & Amplifiers',         country: 'Japan',   slug: 'yamaha' },
+const brands = [
+  {
+    name: 'DSPPA',
+    slug: 'dsppa',
+    tagline: "Asia's Leading PA & Voice Evacuation Manufacturer",
+    description: 'IP network audio, EN54 voice evacuation, mixer amplifiers, ceiling speakers and PA systems. 35+ years of manufacturing with deployments in 100+ countries.',
+    categories: ['IP Network Audio', 'Voice Evacuation', 'Amplifiers', 'Ceiling Speakers', 'Column Speakers'],
+    country: 'China', founded: '1988',
+    color: '#DC2626', products: 12,
+  },
+  {
+    name: 'InfoBit',
+    slug: 'infobit',
+    tagline: 'Enterprise Conference AV & Collaboration',
+    description: '4K video conference bars, AI PTZ cameras, wireless presentation systems, video wall controllers and HDMI matrix switchers. Zoom & Teams Rooms certified.',
+    categories: ['Conference Video Bars', 'PTZ Cameras', 'Wireless Presentation', 'Video Walls', 'AV Switching'],
+    country: 'China', founded: '2012',
+    color: '#6366F1', products: 10,
+  },
+  {
+    name: 'Tenveo',
+    slug: 'tenveo',
+    tagline: 'AI-Tracking PTZ Cameras & Video Conferencing',
+    description: 'AI auto-tracking PTZ cameras (4K@60fps, NDI|HX2), conference group kits, USB speakerphones and PTZ keyboard controllers. 3-year warranty on all products.',
+    categories: ['AI PTZ Cameras', 'Conference Cameras', 'Conference Kits', 'Speakerphones', 'Controllers'],
+    country: 'China', founded: '2010',
+    color: '#0891B2', products: 10,
+  },
+  {
+    name: 'Focus',
+    slug: 'focus',
+    tagline: 'Premium Smart Podiums for Education & Government',
+    description: 'Electric height-adjustable smart podiums with Sapele wood, built-in Intel OPS computers, 23.8" touch screens and dual gooseneck microphones. Made for parliament halls and university auditoriums.',
+    categories: ['Smart Podiums', 'Digital Lecterns', 'Touch Screen Podiums'],
+    country: 'China', founded: '2008',
+    color: '#1E40AF', products: 6,
+  },
 ]
 
-export default async function BrandsPage() {
-  const brands = await getBrands()
-
+export default function BrandsPage() {
   return (
-    <main style={{ paddingTop: 80, background: '#060D1A' }}>
+    <main style={{ paddingTop: 64, background: '#FFFFFF', minHeight: '100vh' }}>
+
       {/* Hero */}
-      <section style={{ padding: '100px 24px 80px', background: 'linear-gradient(180deg, #0A1628 0%, #060D1A 100%)', textAlign: 'center', position: 'relative', overflow: 'hidden' }}>
-        <div style={{ position: 'absolute', inset: 0, backgroundImage: 'linear-gradient(rgba(59,130,246,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(59,130,246,0.04) 1px, transparent 1px)', backgroundSize: '60px 60px', pointerEvents: 'none' }} />
-        <div style={{ maxWidth: 700, margin: '0 auto', position: 'relative' }}>
-          <p style={{ fontSize: 12, fontWeight: 700, color: '#3B82F6', letterSpacing: '0.15em', textTransform: 'uppercase', marginBottom: 20 }}>Authorized Distributor</p>
-          <h1 style={{ fontFamily: 'Manrope, sans-serif', fontSize: 'clamp(36px,5vw,64px)', fontWeight: 800, color: '#FFFFFF', letterSpacing: '-0.03em', lineHeight: 1.05, marginBottom: 20 }}>
-            World-Class Brands
+      <section style={{ padding: '64px 24px 48px', background: 'linear-gradient(180deg, #F8FAFC 0%, #FFFFFF 100%)', borderBottom: '1px solid rgba(11,30,61,0.07)' }}>
+        <div className="container-site text-center" style={{ maxWidth: 680 }}>
+          <div style={{ fontSize: 11, fontWeight: 700, letterSpacing: '0.12em', textTransform: 'uppercase', color: '#2563EB', marginBottom: 14 }}>Our Technology Partners</div>
+          <h1 style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(32px,5vw,56px)', fontWeight: 900, letterSpacing: '-0.03em', color: '#0B1E3D', marginBottom: 16 }}>
+            4 World-Class Brands
           </h1>
-          <p style={{ fontSize: 18, color: '#94A3B8', lineHeight: 1.7, maxWidth: 560, margin: '0 auto' }}>
-            We&apos;re the authorized distributor for Nepal&apos;s most trusted professional AV brands — genuine products, full warranties, factory support.
+          <p style={{ fontSize: 17, lineHeight: 1.75, color: '#475569' }}>
+            Authorised distributor for four specialised AV manufacturers — every product is genuine with full manufacturer warranty and local after-sales support.
           </p>
         </div>
       </section>
 
-      {/* Trust badges */}
-      <section style={{ padding: '24px', background: '#0A0F1E', borderBottom: '1px solid rgba(255,255,255,0.05)' }}>
-        <div style={{ maxWidth: 1200, margin: '0 auto', display: 'flex', flexWrap: 'wrap', gap: 24, justifyContent: 'center' }}>
-          {['Genuine Products', 'Full Warranty', 'Factory Training', 'After-Sales Support', 'Certified Engineers'].map(b => (
-            <span key={b} style={{ display: 'flex', alignItems: 'center', gap: 8, fontSize: 13, fontWeight: 500, color: '#94A3B8' }}>
-              <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><circle cx="7" cy="7" r="7" fill="#3B82F6" fillOpacity="0.15"/><path d="M4 7l2 2 4-4" stroke="#3B82F6" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
-              {b}
-            </span>
-          ))}
-        </div>
-      </section>
-
       {/* Brands Grid */}
-      <section style={{ padding: '80px 24px', background: '#060D1A' }}>
-        <div style={{ maxWidth: 1200, margin: '0 auto' }}>
-          {brands.length > 0 ? (
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))', gap: 20 }}>
-              {brands.map(brand => {
-                const name = stripHtml(brand.title.rendered)
-                return (
-                  <div key={brand.id} style={{ background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.07)', borderRadius: 20, padding: '32px' }}>
-                    {brand.featured_image_url ? (
-                      <div style={{ position: 'relative', height: 56, width: 144, marginBottom: 20 }}>
-                        <Image src={brand.featured_image_url} alt={name} fill style={{ objectFit: 'contain' }} />
-                      </div>
-                    ) : (
-                      <div style={{ fontFamily: 'Manrope, sans-serif', fontSize: 24, fontWeight: 800, color: '#FFFFFF', marginBottom: 20 }}>{name}</div>
-                    )}
-                    {brand.meta?.tagline && <p style={{ fontSize: 14, color: '#94A3B8', lineHeight: 1.65, marginBottom: 16 }}>{brand.meta.tagline}</p>}
-                    {brand.meta?.country && (
-                      <span style={{ display: 'inline-block', fontSize: 11, fontWeight: 600, padding: '4px 12px', borderRadius: 980, background: 'rgba(59,130,246,0.1)', color: '#60A5FA', border: '1px solid rgba(59,130,246,0.2)' }}>{brand.meta.country}</span>
-                    )}
+      <section style={{ padding: '64px 24px' }}>
+        <div className="container-site">
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 32 }}>
+            {brands.map((brand, i) => (
+              <div
+                key={brand.slug}
+                style={{
+                  display: 'grid',
+                  gridTemplateColumns: '1fr 2fr',
+                  gap: 40,
+                  padding: '40px',
+                  borderRadius: 24,
+                  background: '#FFFFFF',
+                  border: '1.5px solid rgba(11,30,61,0.08)',
+                  boxShadow: '0 2px 12px rgba(11,30,61,0.06)',
+                }}
+              >
+                {/* Brand identity */}
+                <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+                  <div>
+                    <div style={{ width: 72, height: 72, borderRadius: 18, background: brand.color, display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 900, fontSize: 28, color: '#FFFFFF', marginBottom: 20 }}>
+                      {brand.name.charAt(0)}
+                    </div>
+                    <h2 style={{ fontFamily: 'var(--font-display)', fontSize: 32, fontWeight: 900, color: '#0B1E3D', letterSpacing: '-0.03em', marginBottom: 6 }}>{brand.name}</h2>
+                    <p style={{ fontSize: 14, color: brand.color, fontWeight: 600, marginBottom: 16 }}>{brand.tagline}</p>
+                    <div style={{ display: 'flex', gap: 16, fontSize: 12, color: '#94A3B8' }}>
+                      <span>{brand.country}</span>
+                      <span>Est. {brand.founded}</span>
+                      <span style={{ color: brand.color, fontWeight: 600 }}>{brand.products} products</span>
+                    </div>
                   </div>
-                )
-              })}
-            </div>
-          ) : (
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))', gap: 20 }}>
-              {fallbackBrands.map(b => (
-                <Link key={b.name} href={`/brands/${b.slug}`} style={{ background: BRAND_ACCENTS[b.name]?.bg || 'rgba(255,255,255,0.03)', border: `1px solid ${BRAND_ACCENTS[b.name]?.border || 'rgba(255,255,255,0.07)'}`, borderRadius: 20, padding: '32px', textDecoration: 'none', display: 'block', transition: 'all 0.2s' }}>
-                  {/* SVG wordmark */}
-                  <div style={{ marginBottom: 20 }}>
-                    <svg width="auto" height="38" viewBox="0 0 220 38" style={{ overflow: 'visible' }}>
-                      <text x="0" y="30" fontFamily="'Arial Black',Arial,sans-serif" fontWeight="900"
-                        fontSize="28" fill={BRAND_ACCENTS[b.name]?.color || '#94A3B8'} letterSpacing="-0.5">{b.name}</text>
-                    </svg>
+                  <Link
+                    href={`/brands/${brand.slug}`}
+                    style={{ display: 'inline-flex', alignItems: 'center', gap: 6, marginTop: 28, padding: '10px 22px', borderRadius: 999, background: brand.color, color: '#FFFFFF', fontSize: 14, fontWeight: 700, textDecoration: 'none' }}
+                  >
+                    View Catalog <ArrowRight size={13} />
+                  </Link>
+                </div>
+
+                {/* Brand details */}
+                <div>
+                  <p style={{ fontSize: 15, lineHeight: 1.75, color: '#475569', marginBottom: 24 }}>{brand.description}</p>
+                  <div style={{ marginBottom: 0 }}>
+                    <div style={{ fontSize: 11, fontWeight: 700, letterSpacing: '0.08em', textTransform: 'uppercase', color: '#94A3B8', marginBottom: 12 }}>Product Categories</div>
+                    <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8 }}>
+                      {brand.categories.map(c => (
+                        <span key={c} style={{ fontSize: 12, padding: '5px 12px', borderRadius: 999, background: `${brand.color}0D`, color: brand.color, border: `1px solid ${brand.color}25`, fontWeight: 600 }}>
+                          {c}
+                        </span>
+                      ))}
+                    </div>
                   </div>
-                  <p style={{ fontSize: 14, color: '#94A3B8', lineHeight: 1.65, marginBottom: 16 }}>{b.tagline}</p>
-                  <span style={{ display: 'inline-flex', alignItems: 'center', gap: 6, fontSize: 11, fontWeight: 600, padding: '5px 14px', borderRadius: 980, background: 'rgba(59,130,246,0.1)', color: '#60A5FA', border: '1px solid rgba(59,130,246,0.2)' }}>
-                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><circle cx="5" cy="5" r="4.5" stroke="#3B82F6" strokeWidth="1"/><circle cx="5" cy="5" r="2" fill="#3B82F6" opacity="0.4"/></svg>
-                    {b.country}
-                  </span>
-                </Link>
-              ))}
-            </div>
-          )}
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
-      {/* CTA */}
-      <section style={{ padding: '80px 24px', background: '#0A0F1E', textAlign: 'center', borderTop: '1px solid rgba(255,255,255,0.05)' }}>
-        <div style={{ maxWidth: 600, margin: '0 auto' }}>
-          <h2 style={{ fontFamily: 'Manrope, sans-serif', fontSize: 28, fontWeight: 800, color: '#FFFFFF', marginBottom: 12 }}>Interested in our brands?</h2>
-          <p style={{ fontSize: 16, color: '#94A3B8', marginBottom: 32 }}>Contact us for pricing, availability, and technical specifications.</p>
-          <Link href="/contact" style={{ display: 'inline-block', background: '#3B82F6', color: '#FFFFFF', padding: '16px 40px', borderRadius: 980, fontSize: 16, fontWeight: 600, textDecoration: 'none' }}>Get a Quote</Link>
+      {/* Trust section */}
+      <section style={{ padding: '48px 24px 64px', background: '#F8FAFC', borderTop: '1px solid rgba(11,30,61,0.07)' }}>
+        <div className="container-site text-center">
+          <h2 style={{ fontFamily: 'var(--font-display)', fontSize: 28, fontWeight: 800, color: '#0B1E3D', marginBottom: 32 }}>Our Brand Commitment</h2>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: 20, maxWidth: 800, margin: '0 auto' }}>
+            {[
+              { title: 'Authorised Distributor', desc: 'Official distributor — not grey market' },
+              { title: 'Full Warranty', desc: 'Manufacturer warranty on every product' },
+              { title: 'Genuine Products', desc: '100% authentic, verified at import' },
+              { title: 'After-Sales Support', desc: 'Local AMC, service and spare parts' },
+            ].map(item => (
+              <div key={item.title} style={{ padding: '24px', background: '#FFFFFF', borderRadius: 16, border: '1.5px solid rgba(11,30,61,0.08)', textAlign: 'center' }}>
+                <div style={{ width: 36, height: 36, borderRadius: '50%', background: 'rgba(37,99,235,0.08)', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 12px' }}>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2563EB" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                    <polyline points="20 6 9 17 4 12"/>
+                  </svg>
+                </div>
+                <div style={{ fontSize: 14, fontWeight: 700, color: '#0B1E3D', marginBottom: 4 }}>{item.title}</div>
+                <div style={{ fontSize: 12, color: '#64748B' }}>{item.desc}</div>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
     </main>

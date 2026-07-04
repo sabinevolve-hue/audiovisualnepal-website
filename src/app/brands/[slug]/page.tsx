@@ -13,135 +13,47 @@ type Props = { params: Promise<{ slug: string }> }
 const BRAND_DATA = {
   dsppa: {
     name: 'DSPPA',
-    tagline: "China's Leading Professional Audio Brand",
+    tagline: "Asia's Leading PA & IP Network Audio Manufacturer",
     country: 'China',
     website: 'https://www.dsppatech.com',
-    founded: '1989',
-    description: 'DSPPA is one of the largest professional audio manufacturers in Asia, specializing in IP network audio, PA systems, conference systems, and voice evacuation solutions. With 30+ years of manufacturing experience, DSPPA products are deployed in airports, universities, hotels, and government facilities across 100+ countries.',
-    categories: ['IP Network Audio', 'PA Systems', 'Conference Systems', 'Voice Evacuation', 'Amplifiers', 'Ceiling Speakers', 'Column Speakers'],
-    highlights: ['ISO 9001:2015 Certified', '30+ Years Manufacturing', 'CE & FCC Approved', 'Deployed in 100+ Countries'],
-    color: '#3B82F6',
+    founded: '1988',
+    description: "DSPPA (Guangzhou DSPPA Audio Co., Ltd.) is one of Asia's largest professional audio manufacturers. Specialising in IP network audio, voice evacuation systems, PA amplifiers and ceiling speakers, DSPPA products are deployed in airports, universities, hospitals and government facilities across 100+ countries. Their EN54-certified voice evacuation systems are a benchmark for life-safety installations.",
+    categories: ['IP Network Audio', 'Voice Evacuation (EN54)', 'Mixer Amplifiers', 'Ceiling Speakers', 'Column Speakers', 'Horn Speakers', 'Remote Paging Stations'],
+    highlights: ['EN54-16 Voice Evacuation Certified', '35+ Years Manufacturing', 'ISO 9001:2015 Certified', 'Deployed in 100+ Countries'],
+    color: '#DC2626',
   },
-  itc: {
-    name: 'ITC',
-    tagline: 'Professional Conference & PA Systems',
+  infobit: {
+    name: 'InfoBit',
+    tagline: 'Enterprise Conference AV & Collaboration',
     country: 'China',
-    website: 'https://www.itc-pub.com',
-    founded: '1993',
-    description: "ITC is a leading manufacturer of professional audio and conference systems. Known for their high-reliability conference discussion units, simultaneous interpretation systems, and digital PA solutions. ITC products are trusted in parliament buildings, boardrooms, and large conference venues worldwide.",
-    categories: ['Conference Systems', 'Discussion Units', 'Interpretation Systems', 'PA Systems', 'Amplifiers', 'Wireless Microphones'],
-    highlights: ['ISO 9001 Certified', 'Used in Parliament Buildings', 'Advanced DSP Technology', 'Wide Range Conference Solutions'],
-    color: '#E74C3C',
+    website: 'https://www.infobitav.com',
+    founded: '2012',
+    description: "InfoBit is a professional AV manufacturer specialising in conference room solutions. Their product range covers 4K video conference bars, PTZ cameras with AI tracking, wireless presentation systems (iShare), video wall controllers (iWall), and USB speakerphones. InfoBit products are Zoom Rooms, Teams Rooms and Webex certified — trusted by Fortune 500 companies and government agencies globally.",
+    categories: ['Conference Video Bars', 'AI PTZ Cameras', 'Wireless Presentation', 'Video Wall Controllers', 'HDMI Matrix Switchers', 'USB Speakerphones'],
+    highlights: ['Zoom & Teams Rooms Certified', 'Dante Audio Integration', '4K60 Throughout', '10-Year Enterprise Track Record'],
+    color: '#6366F1',
   },
-  shure: {
-    name: 'Shure',
-    tagline: 'The World Standard in Microphones',
-    country: 'USA',
-    website: 'https://www.shure.com',
-    founded: '1925',
-    description: "Shure Incorporated is an American audio products corporation. Founded in 1925, Shure is known for manufacturing microphones and audio electronics including phono cartridges, discussion systems, and digital signal processing. The SM58 and SM57 are the world's most iconic microphones, trusted by artists and broadcasters globally.",
-    categories: ['Wireless Microphone Systems', 'Wired Microphones', 'Conference Systems', 'In-Ear Monitors', 'DSP Systems'],
-    highlights: ['100 Years of Innovation', 'Grammy Award Technology', 'SM58 — Most Iconic Mic', 'Trusted by World Leaders'],
-    color: '#CC0000',
+  tenveo: {
+    name: 'Tenveo',
+    tagline: 'AI-Tracking PTZ Cameras & Video Conferencing',
+    country: 'China',
+    website: 'https://www.tenveo.com',
+    founded: '2010',
+    description: "Tenveo is a leading manufacturer of professional PTZ conference cameras and video conferencing equipment. Known for their AI auto-tracking cameras (the UV620A achieving 4K@60fps with NDI|HX2), Tenveo serves education institutions, houses of worship, government chambers and corporate offices. Their products support all major protocols: NDI, RTMP, RTSP, SRT, ONVIF and GB28181.",
+    categories: ['AI Auto-Tracking PTZ Cameras', 'All-in-One Conference Bars', 'USB Speakerphones', 'NDI PTZ Cameras', 'PTZ Keyboard Controllers', 'Conference Room Kits'],
+    highlights: ['4K@60fps AI Tracking', 'NDI|HX2 Native Support', 'PoE Powered Cameras', '3-Year Warranty'],
+    color: '#0891B2',
   },
-  jbl: {
-    name: 'JBL',
-    tagline: 'Professional Audio. Legendary Sound.',
-    country: 'USA',
-    website: 'https://www.jblpro.com',
-    founded: '1946',
-    description: "JBL Professional has been at the forefront of audio innovation since 1946. With products ranging from portable PA systems to permanent install loudspeakers and subwoofers, JBL Professional delivers the high-quality audio performance required by touring artists, live sound engineers, and fixed installation professionals worldwide.",
-    categories: ['Professional Loudspeakers', 'Subwoofers', 'Line Arrays', 'Portable PA Systems', 'Install Speakers', 'Amplifiers'],
-    highlights: ['75+ Years in Audio', 'Live Sound Industry Standard', 'Harman/Samsung Group', 'Worldwide Tour Standard'],
-    color: '#F39C12',
-  },
-  bose: {
-    name: 'Bose',
-    tagline: 'Better Sound Through Research',
-    country: 'USA',
-    website: 'https://www.bose.com/pro',
-    founded: '1964',
-    description: "Bose Professional produces powerful, intelligible sound systems for commercial, government, and enterprise customers. Their FreeSpace, RoomMatch, and ControlSpace systems are engineered for speech intelligibility and uniform coverage in challenging acoustic environments — from boardrooms to stadiums.",
-    categories: ['Commercial Audio Systems', 'Ceiling Speakers', 'Subwoofers', 'DSP Processors', 'Amplifiers', 'Conference Systems'],
-    highlights: ['60 Years of Research', 'RoomMatch Modular Arrays', 'ControlSpace DSP', 'Premium Enterprise Audio'],
-    color: '#2C3E50',
-  },
-  yamaha: {
-    name: 'Yamaha',
-    tagline: 'Pro Audio Mixing & Signal Processing',
-    country: 'Japan',
-    website: 'https://www.yamahapro.com',
-    founded: '1887',
-    description: "Yamaha Professional Audio creates mixers, amplifiers, speakers, and signal processors for live sound, installation, and recording applications. The Yamaha TF, QL, and CL series digital mixing consoles are industry standards used in theatres, houses of worship, corporate AV, and broadcast.",
-    categories: ['Digital Mixers', 'Power Amplifiers', 'Signal Processors', 'Install Speakers', 'Conference Systems'],
-    highlights: ['135+ Years of Excellence', 'CL Series Pro Standard', 'TF Series Compact Mixer', 'Industry-Leading DSP'],
-    color: '#27AE60',
-  },
-  toa: {
-    name: 'TOA',
-    tagline: 'PA & Voice Evacuation Specialists',
-    country: 'Japan',
-    website: 'https://www.toa.com.sg',
-    founded: '1934',
-    description: "TOA Corporation has been a pioneer in public address and voice evacuation systems since 1934. TOA's EN54-certified emergency voice alarm systems, IP network speakers, and amplifiers are specified in airports, train stations, hospitals, and shopping malls across Asia. A benchmark for reliability in life-safety audio.",
-    categories: ['Voice Evacuation Systems', 'PA Systems', 'IP Network Audio', 'Amplifiers', 'Horn Speakers', 'Column Speakers'],
-    highlights: ['EN54 Life Safety Certified', 'Deployed in Major Airports', '90 Years Manufacturing', 'IP Network Audio Pioneer'],
-    color: '#8E44AD',
-  },
-  sennheiser: {
-    name: 'Sennheiser',
-    tagline: 'Shaping the Future of Audio',
-    country: 'Germany',
-    website: 'https://www.sennheiser.com',
-    founded: '1945',
-    description: "Sennheiser is one of the world's leading manufacturers of headphones, microphones, and wireless transmission systems. Their evolution and MKH series microphones are studio benchmarks, while the EW and XSW wireless series are trusted in broadcast, live performance, and corporate AV environments worldwide.",
-    categories: ['Wireless Microphone Systems', 'Lavalier Microphones', 'Headset Microphones', 'Conference Microphones', 'Headphones'],
-    highlights: ['German Engineering Excellence', 'Broadcast Industry Standard', 'EW Wireless — Global Benchmark', '75+ Years of Innovation'],
-    color: '#2980B9',
-  },
-  biamp: {
-    name: 'Biamp',
-    tagline: 'Engineered for Every Space',
-    country: 'USA',
-    website: 'https://www.biamp.com',
-    founded: '1976',
-    description: "Biamp is a leading provider of professional AV signal processing and management systems. Their Tesira audio platform and Devio conferencing solutions are the gold standard for enterprise boardrooms, higher education, and large-scale AV installations requiring networked audio over Dante or AVB.",
-    categories: ['DSP Processors', 'Conference Systems', 'Amplifiers', 'Paging Systems', 'Dante Networking'],
-    highlights: ['Tesira Platform Leader', 'Dante & AVB Native', 'Enterprise AV Standard', 'Global Installation Base'],
-    color: '#F59E0B',
-  },
-  extron: {
-    name: 'Extron',
-    tagline: 'AV Control & Distribution Leaders',
-    country: 'USA',
-    website: 'https://www.extron.com',
-    founded: '1983',
-    description: "Extron Electronics is a leading manufacturer of professional AV system integration products including signal switchers, scalers, amplifiers, and control systems. Their XTP and DTP distribution systems and TouchLink Pro touchpanels are deployed in thousands of corporate, education, and government AV systems worldwide.",
-    categories: ['Signal Switchers', 'AV Scalers', 'Control Systems', 'Signal Distribution', 'Room Control Panels'],
-    highlights: ['Industry AV Standard', '40+ Years Engineering', 'TouchLink Pro Control', 'HDMI & HDBaseT Expert'],
-    color: '#10B981',
-  },
-  crestron: {
-    name: 'Crestron',
-    tagline: 'The Home & Office of the Future',
-    country: 'USA',
-    website: 'https://www.crestron.com',
-    founded: '1971',
-    description: "Crestron Electronics is the world's leading manufacturer of advanced control and automation systems. From simple room control to complex enterprise AV distribution, Crestron's DM NVX AV-over-IP, Flex conferencing, and automation platforms power the smart buildings, boardrooms, and command centres of Fortune 500 companies worldwide.",
-    categories: ['AV Control Systems', 'Room Scheduling', 'AV-over-IP', 'Smart Building Automation', 'Digital Media Distribution'],
-    highlights: ['World #1 AV Control', '50+ Years Innovation', 'Fortune 500 Trusted', 'DM NVX AV-over-IP Leader'],
-    color: '#60A5FA',
-  },
-  kramer: {
-    name: 'Kramer',
-    tagline: 'AV Connectivity & Switching',
-    country: 'Israel',
-    website: 'https://www.kramerav.com',
-    founded: '1981',
-    description: "Kramer Electronics is a global leader in AV signal management solutions — HDMI switchers, matrix routers, signal extenders, distribution amplifiers, and AV-over-IP. Kramer's VIA presentation systems and AOCH/XL cables are trusted in education, corporate, and broadcast environments in over 70 countries.",
-    categories: ['HDMI Switchers', 'Matrix Routers', 'Signal Extenders', 'AV-over-IP', 'Wireless Presentation'],
-    highlights: ['40+ Years AV Expertise', 'Deployed in 70+ Countries', 'VIA Collaboration Leader', '4K & HDR Expert'],
-    color: '#F97316',
+  focus: {
+    name: 'Focus',
+    tagline: 'Premium Smart Podiums for Education & Government',
+    country: 'China',
+    website: 'https://www.gzfocus.com',
+    founded: '2008',
+    description: "GZFocus (Guangzhou Focus Technology) specialises in premium smart podiums and digital lecterns for government halls, university auditoriums and corporate boardrooms. Their ST series features electric height adjustment, fully bonded touch screens, built-in OPS computers (Intel i5/i7) and Sapele wood construction. The FK series provides a more compact option for classrooms and training rooms.",
+    categories: ['Electric Height-Adjustable Smart Podiums', 'Compact Smart Podiums', 'Digital Lecterns', 'OPS Computer Integration', 'Touch Screen Podiums'],
+    highlights: ['Sapele Wood Handcrafted', 'Electric 200mm Height Adjustment', 'Intel OPS Computer Built-in', '23.8" Fully Bonded Touch Screen'],
+    color: '#1E40AF',
   },
 }
 
@@ -179,18 +91,18 @@ export default async function BrandPage({ params }: Props) {
   const otherBrands = Object.entries(BRAND_DATA).filter(([s]) => s !== slug)
 
   return (
-    <main style={{ paddingTop: 64, background: 'var(--bg-base)', minHeight: '100vh' }}>
+    <main style={{ paddingTop: 64, background: '#FFFFFF', minHeight: '100vh' }}>
 
       {/* Hero */}
-      <section className="relative py-20 px-6 overflow-hidden"
-        style={{ background: `linear-gradient(180deg, ${brand.color}18 0%, transparent 100%)`, borderBottom: '1px solid var(--border-subtle)' }}>
+      <section className="relative py-16 px-6 overflow-hidden"
+        style={{ background: `linear-gradient(180deg, ${brand.color}08 0%, #FFFFFF 100%)`, borderBottom: '1px solid rgba(11,30,61,0.08)' }}>
         <div className="container-site relative">
-          <nav className="flex items-center gap-1.5 text-[12px] mb-8" style={{ color: 'var(--text-tertiary)' }}>
-            <Link href="/" className="hover:text-white transition-colors">Home</Link>
+          <nav className="flex items-center gap-1.5 text-[12px] mb-8" style={{ color: '#94A3B8' }}>
+            <Link href="/" style={{ color: '#94A3B8', textDecoration: 'none' }} className="hover:text-[#0B1E3D] transition-colors">Home</Link>
             <ChevronRight size={12} />
-            <Link href="/brands" className="hover:text-white transition-colors">Brands</Link>
+            <Link href="/brands" style={{ color: '#94A3B8', textDecoration: 'none' }} className="hover:text-[#0B1E3D] transition-colors">Brands</Link>
             <ChevronRight size={12} />
-            <span style={{ color: 'var(--text-brand)' }}>{brand.name}</span>
+            <span style={{ color: brand.color }}>{brand.name}</span>
           </nav>
 
           <div className="flex items-start gap-8 flex-wrap">
@@ -200,15 +112,15 @@ export default async function BrandPage({ params }: Props) {
             </div>
             <div className="flex-1 min-w-[280px]">
               <div className="flex items-center gap-3 mb-2">
-                <h1 className="text-[40px] font-black text-white">{brand.name}</h1>
+                <h1 style={{ fontFamily: 'var(--font-display)', fontSize: 40, fontWeight: 900, color: '#0B1E3D', letterSpacing: '-0.03em' }}>{brand.name}</h1>
                 <a href={brand.website} target="_blank" rel="noopener noreferrer"
-                  className="flex items-center gap-1 text-[12px] px-3 py-1 rounded-full transition-colors hover:text-white"
-                  style={{ border: '1px solid var(--border-default)', color: 'var(--text-secondary)' }}>
+                  className="flex items-center gap-1 text-[12px] px-3 py-1 rounded-full transition-colors hover:text-[#0B1E3D]"
+                  style={{ border: '1px solid rgba(11,30,61,0.12)', color: '#64748B', textDecoration: 'none' }}>
                   <ExternalLink size={11} /> Website
                 </a>
               </div>
-              <p className="text-[20px] mb-3" style={{ color: 'var(--text-brand)' }}>{brand.tagline}</p>
-              <p className="text-[14px]" style={{ color: 'var(--text-secondary)' }}>
+              <p className="text-[18px] mb-2" style={{ color: brand.color, fontWeight: 600 }}>{brand.tagline}</p>
+              <p className="text-[14px]" style={{ color: '#64748B' }}>
                 Founded {brand.founded} · {brand.country} · Authorised dealer in Nepal
               </p>
             </div>
@@ -224,24 +136,24 @@ export default async function BrandPage({ params }: Props) {
 
             {/* About */}
             <div>
-              <h2 className="text-[24px] font-bold text-white mb-4">About {brand.name}</h2>
-              <p className="text-[16px] leading-relaxed" style={{ color: 'var(--text-secondary)' }}>{brand.description}</p>
+              <h2 style={{ fontFamily: 'var(--font-display)', fontSize: 24, fontWeight: 800, color: '#0B1E3D', marginBottom: 16 }}>About {brand.name}</h2>
+              <p style={{ fontSize: 16, lineHeight: 1.75, color: '#475569' }}>{brand.description}</p>
             </div>
 
             {/* Key Highlights */}
             <div>
-              <h2 className="text-[24px] font-bold text-white mb-6">Why {brand.name}?</h2>
+              <h2 style={{ fontFamily: 'var(--font-display)', fontSize: 24, fontWeight: 800, color: '#0B1E3D', marginBottom: 20 }}>Why {brand.name}?</h2>
               <div className="grid grid-cols-2 gap-4">
                 {brand.highlights.map((h, i) => (
                   <div key={i} className="flex items-start gap-3 p-4 rounded-xl"
-                    style={{ background: 'var(--surface-1)', border: '1px solid var(--border-subtle)' }}>
+                    style={{ background: '#F8FAFC', border: '1.5px solid rgba(11,30,61,0.07)' }}>
                     <div className="w-5 h-5 rounded-full flex-shrink-0 mt-0.5 flex items-center justify-center"
                       style={{ background: brand.color }}>
                       <svg width="10" height="8" viewBox="0 0 10 8" fill="none">
                         <path d="M1 4L3.5 6.5L9 1" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                       </svg>
                     </div>
-                    <span className="text-[14px] text-white font-medium">{h}</span>
+                    <span style={{ fontSize: 14, color: '#0B1E3D', fontWeight: 600 }}>{h}</span>
                   </div>
                 ))}
               </div>
@@ -249,11 +161,11 @@ export default async function BrandPage({ params }: Props) {
 
             {/* Product Categories */}
             <div>
-              <h2 className="text-[24px] font-bold text-white mb-6">{brand.name} Products We Supply</h2>
+              <h2 style={{ fontFamily: 'var(--font-display)', fontSize: 24, fontWeight: 800, color: '#0B1E3D', marginBottom: 20 }}>{brand.name} Products We Supply</h2>
               <div className="flex flex-wrap gap-2">
                 {brand.categories.map((c, i) => (
                   <span key={i} className="px-4 py-2 rounded-full text-[13px] font-medium"
-                    style={{ background: `${brand.color}20`, color: brand.color, border: `1px solid ${brand.color}40` }}>
+                    style={{ background: `${brand.color}10`, color: brand.color, border: `1px solid ${brand.color}30` }}>
                     {c}
                   </span>
                 ))}
@@ -263,31 +175,31 @@ export default async function BrandPage({ params }: Props) {
             {/* Product Grid */}
             {brandProducts.length > 0 && (
               <div>
-                <h2 className="text-[24px] font-bold text-white mb-6">Featured Products</h2>
+                <h2 style={{ fontFamily: 'var(--font-display)', fontSize: 24, fontWeight: 800, color: '#0B1E3D', marginBottom: 20 }}>Featured Products</h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   {brandProducts.map(product => (
                     <a key={product.slug} href={`/products/${product.category}/${product.slug}`}
-                      className="block rounded-2xl overflow-hidden transition-all hover:-translate-y-1 hover:shadow-xl"
-                      style={{ background: 'var(--surface-1)', border: '1px solid var(--border-subtle)', textDecoration: 'none' }}>
+                      className="block rounded-2xl overflow-hidden transition-all hover:-translate-y-1"
+                      style={{ background: '#FFFFFF', border: '1.5px solid rgba(11,30,61,0.08)', boxShadow: '0 1px 6px rgba(11,30,61,0.05)', textDecoration: 'none' }}>
                       <div className="h-40 flex items-center justify-center"
-                        style={{ background: `linear-gradient(135deg, ${brand.color}18, ${brand.color}08)` }}>
+                        style={{ background: `linear-gradient(135deg, ${brand.color}08, ${brand.color}04)` }}>
                         <ProductImg src={product.imageUrl} alt={product.name} style={{ width: '60%', height: '85%', objectFit: 'contain' }} brandColor={brand.color} brandName={brand.name} />
                       </div>
                       <div className="p-4">
                         {product.badge && (
                           <span className="inline-block px-2 py-0.5 rounded-full text-[10px] font-bold mb-2"
-                            style={{ background: `${brand.color}25`, color: brand.color }}>
+                            style={{ background: `${brand.color}15`, color: brand.color }}>
                             {product.badge}
                           </span>
                         )}
-                        <div className="text-[15px] font-bold text-white mb-1">{product.name}</div>
-                        <div className="text-[12px] mb-3" style={{ color: 'var(--text-tertiary)' }}>{product.subcategory}</div>
-                        <div className="text-[13px] leading-relaxed line-clamp-2" style={{ color: 'var(--text-secondary)' }}>{product.tagline}</div>
+                        <div style={{ fontSize: 15, fontWeight: 700, color: '#0B1E3D', marginBottom: 4 }}>{product.name}</div>
+                        <div style={{ fontSize: 12, color: '#94A3B8', marginBottom: 8 }}>{product.subcategory}</div>
+                        <div style={{ fontSize: 13, lineHeight: 1.55, color: '#475569' }}>{product.tagline}</div>
                         {product.specs.filter(s => s.highlight).slice(0,2).length > 0 && (
                           <div className="flex gap-2 mt-3 flex-wrap">
                             {product.specs.filter(s => s.highlight).slice(0,2).map(spec => (
                               <span key={spec.label} className="px-2 py-1 rounded-lg text-[11px] font-semibold"
-                                style={{ background: `${brand.color}15`, color: brand.color }}>
+                                style={{ background: `${brand.color}10`, color: brand.color }}>
                                 {spec.value}
                               </span>
                             ))}
@@ -305,50 +217,50 @@ export default async function BrandPage({ params }: Props) {
           <div className="space-y-6">
 
             {/* Enquiry Card */}
-            <div className="rounded-2xl p-6" style={{ background: 'var(--surface-1)', border: '1px solid var(--border-subtle)' }}>
-              <h3 className="text-[18px] font-bold text-white mb-2">Get {brand.name} Products</h3>
-              <p className="text-[14px] mb-6" style={{ color: 'var(--text-secondary)' }}>
+            <div className="rounded-2xl p-6" style={{ background: '#F8FAFC', border: '1.5px solid rgba(11,30,61,0.08)' }}>
+              <h3 style={{ fontSize: 18, fontWeight: 700, color: '#0B1E3D', marginBottom: 8 }}>Get {brand.name} Products</h3>
+              <p style={{ fontSize: 14, color: '#475569', marginBottom: 20, lineHeight: 1.65 }}>
                 We stock genuine {brand.name} products with full warranty. Contact us for pricing and availability.
               </p>
               <a href={`tel:${SITE.phoneRaw}`}
                 className="flex items-center gap-3 p-4 rounded-xl mb-3 transition-all hover:-translate-y-0.5"
-                style={{ background: 'rgba(59,130,246,0.1)', border: '1px solid rgba(59,130,246,0.2)' }}>
-                <Phone size={18} style={{ color: 'var(--brand)' }} />
+                style={{ background: 'rgba(37,99,235,0.06)', border: '1px solid rgba(37,99,235,0.15)', textDecoration: 'none' }}>
+                <Phone size={18} style={{ color: '#2563EB' }} />
                 <div>
-                  <div className="text-[11px]" style={{ color: 'var(--text-tertiary)' }}>Call now</div>
-                  <div className="text-[14px] font-semibold text-white">{SITE.phone}</div>
+                  <div style={{ fontSize: 11, color: '#94A3B8' }}>Call now</div>
+                  <div style={{ fontSize: 14, fontWeight: 600, color: '#0B1E3D' }}>{SITE.phone}</div>
                 </div>
               </a>
               <a href={SITE.whatsapp} target="_blank" rel="noopener noreferrer"
                 className="flex items-center gap-3 p-4 rounded-xl mb-4 transition-all hover:-translate-y-0.5"
-                style={{ background: 'rgba(37,211,102,0.1)', border: '1px solid rgba(37,211,102,0.2)' }}>
+                style={{ background: 'rgba(37,211,102,0.06)', border: '1px solid rgba(37,211,102,0.2)', textDecoration: 'none' }}>
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="#25D366"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
                 <div>
-                  <div className="text-[11px]" style={{ color: 'var(--text-tertiary)' }}>WhatsApp us</div>
-                  <div className="text-[14px] font-semibold text-white">Chat Now</div>
+                  <div style={{ fontSize: 11, color: '#94A3B8' }}>WhatsApp us</div>
+                  <div style={{ fontSize: 14, fontWeight: 600, color: '#0B1E3D' }}>Chat Now</div>
                 </div>
               </a>
               <Link href="/contact"
                 className="block text-center w-full px-6 py-3 rounded-full text-[14px] font-semibold text-white transition-all hover:opacity-90"
-                style={{ background: 'var(--brand)' }}>
+                style={{ background: '#2563EB' }}>
                 Send Enquiry
               </Link>
             </div>
 
             {/* Other Brands */}
-            <div className="rounded-2xl p-6" style={{ background: 'var(--surface-1)', border: '1px solid var(--border-subtle)' }}>
-              <h3 className="text-[16px] font-bold text-white mb-4">Other Brands We Carry</h3>
+            <div className="rounded-2xl p-6" style={{ background: '#F8FAFC', border: '1.5px solid rgba(11,30,61,0.08)' }}>
+              <h3 style={{ fontSize: 16, fontWeight: 700, color: '#0B1E3D', marginBottom: 16 }}>Other Brands We Carry</h3>
               <div className="space-y-2">
-                {otherBrands.slice(0, 5).map(([s, b]) => (
+                {otherBrands.map(([s, b]) => (
                   <Link key={s} href={`/brands/${s}`}
                     className="flex items-center justify-between p-3 rounded-xl text-[14px] transition-all hover:-translate-y-0.5"
-                    style={{ background: 'var(--bg-base)', border: '1px solid var(--border-subtle)' }}>
-                    <span className="font-medium text-white">{b.name}</span>
-                    <span className="text-[12px]" style={{ color: 'var(--text-tertiary)' }}>{b.country}</span>
+                    style={{ background: '#FFFFFF', border: '1.5px solid rgba(11,30,61,0.08)', textDecoration: 'none' }}>
+                    <span style={{ fontWeight: 600, color: '#0B1E3D' }}>{b.name}</span>
+                    <span style={{ fontSize: 12, color: '#94A3B8' }}>{b.country}</span>
                   </Link>
                 ))}
-                <Link href="/brands" className="block text-center text-[13px] mt-3 transition-colors hover:text-white"
-                  style={{ color: 'var(--text-brand)' }}>
+                <Link href="/brands" className="block text-center text-[13px] mt-3 transition-colors"
+                  style={{ color: '#2563EB', textDecoration: 'none' }}>
                   View all brands →
                 </Link>
               </div>

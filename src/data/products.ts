@@ -1,6 +1,6 @@
-// AVN Static Product Catalog
-// Source: Official brand websites (dsppatech.com, itc-pub.com, shure.com, jblpro.com, pro.bose.com, yamahapro.com, toa.com.sg, sennheiser.com)
-// Images: Replace placeholder URLs with real product photos from brand CDNs.
+// AVN Product Catalog — 4 Focus Brands
+// DSPPA · InfoBit · Tenveo · Focus (GZFocus)
+// Sources: Official PDFs, brand websites
 
 export type Segment =
   | "Corporate" | "Government" | "Education" | "Hotel"
@@ -34,86 +34,1012 @@ export interface Product {
 
 // ─── DSPPA ──────────────────────────────────────────────────────────────────
 const DSPPA: Product[] = [
-  { id:"dsppa-mag6621n", slug:"dsppa-mag6621n", name:"DSPPA MAG6621N", brand:"DSPPA", brandSlug:"dsppa", category:"ip-network-audio", subcategory:"IP Network Terminal", tagline:"Smart IP Ceiling Speaker with Built-in Amplifier", badge:"Best Seller", imageUrl:"https://www.dsppatech.com/uploads/product/20210901/16/MAG6621N.jpg", imageFallback:"#0071E3", description:"Fully addressable IP network PA terminal combining a 6W amplifier and 6.5\" full-range driver in one ceiling enclosure. Ideal for hotels, schools, offices, and transit hubs requiring individual zone control over a standard IP network.", keyFeatures:[{title:"Full IP Control",desc:"Each unit is individually addressable over TCP/IP LAN — no dedicated PA wiring required."},{title:"Built-in 6W Amplifier",desc:"Integrated Class D amp eliminates external amplifier racks — reduces cost and cabling."},{title:"Emergency Priority",desc:"Fire alarm input triggers mandatory override broadcast across all zones instantly."},{title:"PoE+ Powered",desc:"Single CAT6 cable carries both data and power — IEEE 802.3at compliant."},{title:"Easy Zone Management",desc:"Group into unlimited zones via DSPPA software without hardware changes."}], specs:[{label:"Power Output",value:"6W RMS",highlight:true},{label:"Driver Size",value:"6.5\" Full Range",highlight:true},{label:"Frequency Response",value:"80Hz – 18kHz",highlight:true},{label:"SPL (1W/1m)",value:"88 dB"},{label:"Network",value:"TCP/IP, 100Mbps"},{label:"Power Supply",value:"PoE+ (802.3at), 25W max"},{label:"Cut-out Diameter",value:"200mm"},{label:"Enclosure",value:"ABS + Steel Grille, White"}], applications:["Hotel","Education","Corporate","Transportation","Hospital"], warranty:"2 Years", relatedSlugs:["dsppa-mag848n","dsppa-pc1060b","dsppa-dc2406n"] },
-  { id:"dsppa-mag848n", slug:"dsppa-mag848n", name:"DSPPA MAG848N", brand:"DSPPA", brandSlug:"dsppa", category:"ip-network-audio", subcategory:"IP Network PA Controller", tagline:"8-Zone IP Network PA Management Server", badge:"Featured", imageUrl:"https://www.dsppatech.com/uploads/product/20210901/16/MAG848N.jpg", imageFallback:"#0071E3", description:"Central brain of DSPPA IP Network PA system, managing up to 1,000+ IP terminals across 8 independent zones. Supports scheduled broadcasts, live paging, background music, and emergency announcements via web-based interface.", keyFeatures:[{title:"8 Independent Zones",desc:"Control volume, scheduling, and content independently per zone."},{title:"Web-Based Management",desc:"Full configuration and monitoring via any web browser on the network."},{title:"TTS Announcements",desc:"Text-to-speech engine creates automated announcements in multiple languages."},{title:"SNMP Monitoring",desc:"Enterprise-grade SNMP for IT infrastructure monitoring and fault alerting."}], specs:[{label:"Max Terminals",value:"1,000+",highlight:true},{label:"Zones",value:"8 Independent",highlight:true},{label:"Audio Outputs",value:"8 × Balanced XLR",highlight:true},{label:"Network",value:"Gigabit Ethernet"},{label:"Scheduling",value:"Up to 1,000 timed events"},{label:"Storage",value:"32GB SD Card"},{label:"Rack Mount",value:"1U 19\""}], applications:["Hotel","Education","Transportation","Government","Hospital"], warranty:"2 Years", relatedSlugs:["dsppa-mag6621n","dsppa-dc2406n"] },
-  { id:"dsppa-pc1060b", slug:"dsppa-pc1060b", name:"DSPPA PC1060B", brand:"DSPPA", brandSlug:"dsppa", category:"ceiling-speakers", subcategory:"Passive Ceiling Speaker", tagline:"10\" High-Output Commercial Ceiling Speaker", badge:"Popular", imageUrl:"https://www.dsppatech.com/uploads/product/20210901/16/PC1060B.jpg", imageFallback:"#34C759", description:"High-performance 10\" two-way commercial ceiling speaker for large open areas. Coaxial driver configuration and steel backcan deliver clear, uniform sound in halls, lobbies, retail spaces, and transportation terminals.", keyFeatures:[{title:"10\" Coaxial Driver",desc:"Wide-dispersion design provides uniform 120° sound coverage."},{title:"60W Power Handling",desc:"Handles up to 60W continuous programme power for large halls."},{title:"100V Line Compatible",desc:"Built-in multi-tap transformer for direct connection to 70V/100V PA systems."},{title:"Steel Backcan",desc:"Enclosed backcan prevents acoustic bleed-through to adjacent spaces."}], specs:[{label:"Driver",value:"10\" Coaxial",highlight:true},{label:"Power (100V)",value:"60W / 30W / 15W",highlight:true},{label:"Sensitivity",value:"92 dB (1W/1m)",highlight:true},{label:"Frequency Response",value:"60Hz – 18kHz ±3dB"},{label:"Max SPL",value:"110 dB"},{label:"Cut-out Diameter",value:"270mm"}], applications:["Hotel","Corporate","Education","Religious","Transportation"], warranty:"2 Years", relatedSlugs:["dsppa-mag6621n","dsppa-dsp8060"] },
-  { id:"dsppa-dsp8060", slug:"dsppa-dsp8060", name:"DSPPA DSP8060", brand:"DSPPA", brandSlug:"dsppa", category:"amplifiers", subcategory:"Mixer Amplifier", tagline:"60W 4-Zone Mixer Amplifier with DSP", imageUrl:"https://www.dsppatech.com/uploads/product/20210901/16/DSP8060.jpg", imageFallback:"#FF9500", description:"Professional 60W 4-zone mixer amplifier with onboard DSP, 6 audio inputs, and built-in USB/SD media player. Designed for small to medium commercial installations — retail, restaurants, meeting rooms, and lobbies.", keyFeatures:[{title:"4 Independent Zones",desc:"Control volume, EQ, and source independently for up to 4 speaker zones."},{title:"Onboard DSP",desc:"31-band graphic EQ and parametric EQ per zone for room tuning."},{title:"Priority MIC",desc:"Dedicated priority PA mic input with auto-ducking background music."},{title:"USB/Bluetooth Ready",desc:"Built-in USB media player and optional Bluetooth input."}], specs:[{label:"Output Power",value:"60W RMS",highlight:true},{label:"Output Zones",value:"4 Independent",highlight:true},{label:"THD",value:"<0.5%",highlight:true},{label:"Frequency Response",value:"20Hz – 20kHz ±1dB"},{label:"SNR",value:">80dB"},{label:"Output",value:"70V / 100V / 4Ω–16Ω"},{label:"Rack Mount",value:"1U 19\""}], applications:["Corporate","Hotel","Religious","Education"], warranty:"2 Years", relatedSlugs:["dsppa-pc1060b","dsppa-mag848n"] },
-  { id:"dsppa-dc2406n", slug:"dsppa-dc2406n", name:"DSPPA DC2406N", brand:"DSPPA", brandSlug:"dsppa", category:"ip-network-audio", subcategory:"IP Paging Microphone", tagline:"IP Network Paging & Intercom Microphone Station", badge:"Featured", imageUrl:"https://www.dsppatech.com/uploads/product/20210901/16/DC2406N.jpg", imageFallback:"#5AC8FA", description:"Desktop IP network paging microphone with 3.5\" colour LCD display, 24-zone selection matrix, and one-touch emergency broadcast. Ideal for nurse stations, reception desks, airport gates, and school offices.", keyFeatures:[{title:"24-Zone Selection",desc:"Select any combination of up to 24 zones for targeted paging."},{title:"LCD Status Display",desc:"3.5\" colour display shows zone status and system alerts."},{title:"One-Touch Emergency",desc:"Dedicated button broadcasts to all zones instantly."},{title:"PoE Powered",desc:"Single CAT6 cable — no separate power supply required."}], specs:[{label:"Zones",value:"Up to 24 selectable",highlight:true},{label:"Display",value:"3.5\" Colour LCD",highlight:true},{label:"Mic Type",value:"400mm Gooseneck Condenser"},{label:"Network",value:"TCP/IP, 100Mbps"},{label:"Power",value:"PoE (802.3af), 12W"}], applications:["Hospital","Transportation","Education","Government"], warranty:"2 Years", relatedSlugs:["dsppa-mag848n","dsppa-mag6621n"] },
-  { id:"dsppa-dsp1166", slug:"dsppa-dsp1166", name:"DSPPA DSP1166", brand:"DSPPA", brandSlug:"dsppa", category:"column-speakers", subcategory:"Column Speaker", tagline:"60W Line Array Column Speaker — Wide Coverage", imageUrl:"https://www.dsppatech.com/uploads/product/20210901/16/DSP1166.jpg", imageFallback:"#4CD964", description:"60W six-driver line array column with 120° horizontal coverage and tight 30° vertical control. Perfect for reverberant spaces — churches, lecture halls, station platforms, and covered outdoor areas.", keyFeatures:[{title:"6 × 4\" Line Array",desc:"Tight vertical control with 30° coverage — minimal ceiling reflections."},{title:"120° Horizontal",desc:"Wide horizontal dispersion ensures front-to-back uniformity."},{title:"IP44 Rated",desc:"Semi-outdoor use — covered patios, transit shelters, outdoor stage monitors."}], specs:[{label:"Drivers",value:"6 × 4\" Full Range",highlight:true},{label:"Power (100V)",value:"60W / 30W / 15W",highlight:true},{label:"Horizontal Coverage",value:"120° (-6dB)",highlight:true},{label:"Vertical Coverage",value:"30° (-6dB)"},{label:"Sensitivity",value:"94 dB (1W/1m)"},{label:"Max SPL",value:"112 dB"},{label:"Weather Rating",value:"IP44"},{label:"Dimensions",value:"100 × 700 × 95mm"}], applications:["Religious","Transportation","Education","Government"], warranty:"2 Years", relatedSlugs:["dsppa-dsp8060","dsppa-pc1060b"] },
+  {
+    id: "dsppa-pava9500", slug: "dsppa-pava9500",
+    name: "DSPPA PAVA9500", brand: "DSPPA", brandSlug: "dsppa",
+    category: "voice-evacuation", subcategory: "Integrated Voice Evacuation",
+    tagline: "8-Zone 500W EN54 Voice Evacuation PA System",
+    badge: "Best Seller",
+    imageUrl: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80",
+    imageFallback: "#0B1E3D",
+    description: "The PAVA9500 is DSPPA's flagship integrated voice evacuation system, EN54-16 compliant, delivering 500W across 8 independent speaker zones. Supports up to 160 zones via expansion, with dual amplifier failover and full line supervision. Ideal for large government buildings, hospitals, hotels and campuses.",
+    keyFeatures: [
+      { title: "EN54-16 Certified", desc: "Fully compliant with European fire alarm and voice evacuation standards — accepted for life-safety installations." },
+      { title: "8 Zones, 500W Main + 500W Backup", desc: "Built-in main and standby amplifier with automatic fault-switching ensures uninterrupted emergency broadcast." },
+      { title: "Expandable to 160 Zones", desc: "Cascade expansion amplifiers (PAVA9500E) over CAN bus — covers the largest complexes from a single host." },
+      { title: "Speaker Line Detection", desc: "Continuous open-circuit and short-circuit monitoring on all speaker lines with fault reporting." },
+      { title: "Priority Paging", desc: "Live microphone and emergency signals override background music across selected or all zones instantly." },
+    ],
+    specs: [
+      { label: "Zones", value: "8 (expandable to 160)", highlight: true },
+      { label: "Amplifier Power", value: "500W Main + 500W Backup", highlight: true },
+      { label: "Standard", value: "EN54-16 Certified", highlight: true },
+      { label: "Mic Inputs", value: "2 Balanced" },
+      { label: "AUX Inputs", value: "4 Analog" },
+      { label: "Transmission", value: "CAN Bus, up to 800m" },
+      { label: "Speaker Output", value: "100V Bridge, AB Line" },
+      { label: "Network", value: "Dual RJ45" },
+    ],
+    applications: ["Government", "Hospital", "Hotel", "Education", "Transportation"],
+    warranty: "2 Years", relatedSlugs: ["dsppa-pava8500", "dsppa-pava4600", "dsppa-dma6112"]
+  },
+  {
+    id: "dsppa-pava8500", slug: "dsppa-pava8500",
+    name: "DSPPA PAVA8500", brand: "DSPPA", brandSlug: "dsppa",
+    category: "voice-evacuation", subcategory: "Dante Voice Evacuation",
+    tagline: "Dante-Networked 8-Zone 500W Voice Evacuation System",
+    badge: "New",
+    imageUrl: "https://images.unsplash.com/photo-1478737270239-2f02b77fc618?auto=format&fit=crop&w=800&q=80",
+    imageFallback: "#0B1E3D",
+    description: "The PAVA8500 brings Dante audio networking to EN54-compliant voice evacuation. 8 zones expandable to 160, with built-in 500W digital amplifier, Dante protocol support, and battery backup monitoring. The PAVA8008 remote paging station enables distributed operation across large facilities.",
+    keyFeatures: [
+      { title: "Dante Protocol", desc: "Integrates seamlessly with Dante AV networks — ideal for modern AV-over-IP infrastructure." },
+      { title: "EN54-16 Compliant", desc: "Meets European life-safety standards for voice alarm control and indicating equipment." },
+      { title: "One-Button Alarm", desc: "Built-in EVAC message and chime trigger from any paging station with a single button." },
+      { title: "EMC Monitoring", desc: "Real-time monitoring with EMC microphone for emergency situation verification." },
+      { title: "DC Battery Backup", desc: "Battery monitoring with automatic AC-to-DC failover maintains broadcast during power outages." },
+    ],
+    specs: [
+      { label: "Zones", value: "8 (expandable to 160)", highlight: true },
+      { label: "Amplifier", value: "500W Digital", highlight: true },
+      { label: "Protocol", value: "Dante + EN54-16", highlight: true },
+      { label: "AUX Inputs", value: "6 channels" },
+      { label: "Dry Contact I/O", value: "8 triggers" },
+      { label: "Speaker Output", value: "100V AB Line with supervision" },
+      { label: "Battery", value: "DC backup monitoring" },
+    ],
+    applications: ["Government", "Hospital", "Hotel", "Education"],
+    warranty: "2 Years", relatedSlugs: ["dsppa-pava9500", "dsppa-pava4600"]
+  },
+  {
+    id: "dsppa-pava4600", slug: "dsppa-pava4600",
+    name: "DSPPA PAVA4600", brand: "DSPPA", brandSlug: "dsppa",
+    category: "voice-evacuation", subcategory: "Compact Wall-mount VA",
+    tagline: "4-Zone 600W Compact Wall-mount Voice Alarm System",
+    badge: "Popular",
+    imageUrl: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80",
+    imageFallback: "#0B1E3D",
+    description: "Compact wall-mount voice evacuation solution for smaller buildings. 600W across 4 zones with automatic main/standby amplifier switching. Supports AC and DC24V power supply, built-in battery charger, and speaker line detection. Perfect for offices, retail, small hotels and educational facilities.",
+    keyFeatures: [
+      { title: "600W Dual Amplifier", desc: "Built-in main and standby 600W digital amplifiers — automatic failover on fault detection." },
+      { title: "4 Independent Zones", desc: "AB line speaker output for 4 zones with individual power switch and volume control." },
+      { title: "Line Detection", desc: "Monitors all speaker lines for light load, overload and short-circuit conditions." },
+      { title: "AC/DC Power", desc: "Operates on mains AC with automatic DC24V battery backup — built-in charger." },
+      { title: "Emergency Button", desc: "One-touch emergency broadcast triggers rapid voice alarm across all zones." },
+    ],
+    specs: [
+      { label: "Zones", value: "4 Independent", highlight: true },
+      { label: "Power", value: "600W (Main + Standby)", highlight: true },
+      { label: "Speaker Output", value: "100V, AB Line" },
+      { label: "Power Supply", value: "AC220V + DC24V Backup" },
+      { label: "Battery Charger", value: "Built-in 24V" },
+    ],
+    applications: ["Corporate", "Education", "Religious", "Hotel"],
+    warranty: "2 Years", relatedSlugs: ["dsppa-pava9500", "dsppa-dma250u"]
+  },
+  {
+    id: "dsppa-dma250u", slug: "dsppa-dma250u",
+    name: "DSPPA DMA250U", brand: "DSPPA", brandSlug: "dsppa",
+    category: "amplifiers", subcategory: "Mixer Amplifier",
+    tagline: "250W Digital Mixer Amplifier with USB, FM & Bluetooth",
+    badge: "Best Seller",
+    imageUrl: "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?auto=format&fit=crop&w=800&q=80",
+    imageFallback: "#1E3A5F",
+    description: "Professional 250W mixer amplifier with 70V/100V and 4–16Ω output, 3 mic inputs, 2 AUX inputs, USB, FM and Bluetooth. LCD display shows working status, with rack-mount handles for standard 19\" rack. Available in 60W to 650W versions (DMA60U–DMA650U).",
+    keyFeatures: [
+      { title: "70V/100V & Low-Z Output", desc: "Dual output modes cover constant-voltage distributed systems and 4–16Ω direct speaker loads." },
+      { title: "USB / FM / Bluetooth", desc: "Built-in media player, FM tuner and Bluetooth for flexible music source routing." },
+      { title: "3 Mic + 2 AUX Inputs", desc: "Mic 2–3 with 48V phantom power for condenser microphones." },
+      { title: "Priority MIC", desc: "Mic 1 with priority ducking — live announcements automatically lower background music." },
+      { title: "19\" Rack Mount", desc: "Standard rack handles and 1.5U form factor for clean AV rack installations." },
+    ],
+    specs: [
+      { label: "Output Power", value: "250W RMS (60–650W range)", highlight: true },
+      { label: "Speaker Output", value: "70V / 100V / 4–16Ω", highlight: true },
+      { label: "Inputs", value: "3 Mic, 2 AUX, USB, FM, BT", highlight: true },
+      { label: "Phantom Power", value: "48V (Mic 2–3)" },
+      { label: "SNR", value: "≥60dB" },
+      { label: "THD", value: "<0.5% @1kHz" },
+      { label: "Rack Mount", value: "Standard 19\"" },
+    ],
+    applications: ["Corporate", "Hotel", "Religious", "Education", "Transportation"],
+    warranty: "2 Years", relatedSlugs: ["dsppa-dma6112", "dsppa-dma6250u", "dsppa-pava9500"]
+  },
+  {
+    id: "dsppa-dma6112", slug: "dsppa-dma6112",
+    name: "DSPPA DMA6112", brand: "DSPPA", brandSlug: "dsppa",
+    category: "amplifiers", subcategory: "Matrix Amplifier",
+    tagline: "6×120W Digital Audio Matrix Amplifier with Touch Control",
+    badge: "Featured",
+    imageUrl: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80",
+    imageFallback: "#1E3A5F",
+    description: "6-zone digital audio matrix amplifier delivering 6×120W (or 6×240W for DMA6124) with 4.3\" touch screen control. Supports USB, Bluetooth, SD card and FM input. Each zone has independent volume control, with chime and alarm functions. Ideal for multi-zone commercial environments.",
+    keyFeatures: [
+      { title: "6 Independent Zones", desc: "Each zone has individual volume control and on/off — perfect for restaurants, hotels, retail." },
+      { title: "4.3\" Touch Screen", desc: "Intuitive touch-panel control with included stylus for easy configuration." },
+      { title: "6×120W / 6×240W", desc: "Available in two power tiers for small-to-medium and large commercial installations." },
+      { title: "Mic with Phantom Power", desc: "Mic 2–4 configurable as XLR with 48V phantom power for professional microphones." },
+      { title: "USB / BT / SD / FM", desc: "Full media playback without an external source — built into the amplifier." },
+    ],
+    specs: [
+      { label: "Output Power", value: "6×120W / 6×240W", highlight: true },
+      { label: "Zones", value: "6 Independent", highlight: true },
+      { label: "Display", value: "4.3\" Touch Screen", highlight: true },
+      { label: "Speaker Output", value: "100V" },
+      { label: "Inputs", value: "2 AUX, 2 Mic/Line, USB, BT, SD, FM" },
+      { label: "Phantom Power", value: "48V (Mic 2–4)" },
+    ],
+    applications: ["Hotel", "Corporate", "Religious", "Education"],
+    warranty: "2 Years", relatedSlugs: ["dsppa-dma250u", "dsppa-dma6250u"]
+  },
+  {
+    id: "dsppa-dma6250u", slug: "dsppa-dma6250u",
+    name: "DSPPA DMA6250U", brand: "DSPPA", brandSlug: "dsppa",
+    category: "amplifiers", subcategory: "Integrated Mixer Amplifier",
+    tagline: "6-Zone 250W Integrated Mixer Amplifier with Remote Paging",
+    imageUrl: "https://images.unsplash.com/photo-1478737270239-2f02b77fc618?auto=format&fit=crop&w=800&q=80",
+    imageFallback: "#1E3A5F",
+    description: "250W 6-zone integrated mixer amplifier with 4 mic, 4 AUX inputs, USB/FM/Bluetooth/TF card. Supports up to 6 remote paging microphones via dual RJ45. Built-in chime, priority MIC and 19\" rack mount. Available in 250W, 350W, 500W and 650W.",
+    keyFeatures: [
+      { title: "6 Remote Paging Mics", desc: "DMA20 or compatible paging stations connect via dual RJ45 for distributed announcement." },
+      { title: "4 MIC + 4 AUX Inputs", desc: "Phantom power 48V on mics 2–4, XLR/Phoenix inputs for flexible connectivity." },
+      { title: "Full Media Sources", desc: "USB, FM, Bluetooth and TF card with built-in chime for paging announcements." },
+      { title: "Priority Broadcast", desc: "Emergency input automatically overrides all sources for life-safety announcements." },
+    ],
+    specs: [
+      { label: "Output Power", value: "250W–650W (4 tiers)", highlight: true },
+      { label: "Zones", value: "6 with individual volume", highlight: true },
+      { label: "Remote Paging", value: "Up to 6 stations", highlight: true },
+      { label: "Inputs", value: "4 Mic (48V), 4 AUX, USB, FM, BT, TF" },
+      { label: "Speaker Output", value: "70V / 100V / 4–16Ω" },
+    ],
+    applications: ["Corporate", "Hotel", "Government", "Transportation"],
+    warranty: "2 Years", relatedSlugs: ["dsppa-dma6112", "dsppa-dma250u"]
+  },
+  {
+    id: "dsppa-mag6182ii", slug: "dsppa-mag6182ii",
+    name: "DSPPA MAG6182II", brand: "DSPPA", brandSlug: "dsppa",
+    category: "ip-network-audio", subcategory: "IP Network PA Server",
+    tagline: "IP Network PA Management Server — 17\" Touch Screen",
+    badge: "Featured",
+    imageUrl: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80",
+    imageFallback: "#0B1E3D",
+    description: "Central management server for DSPPA MAG6000 IP Network PA systems. Industrial circuit board, 17\" true-color touch screen, dual-server redundancy with automatic backup. Supports TTS announcements in Chinese and English, scheduled broadcasts, recording and full web-based remote monitoring.",
+    keyFeatures: [
+      { title: "17\" Touch Screen", desc: "Large industrial-grade color touchscreen for intuitive system management." },
+      { title: "Dual Server Redundancy", desc: "2 servers + 1 database ensure zero single-point-of-failure for mission-critical PA." },
+      { title: "TTS Announcements", desc: "Built-in text-to-speech in Chinese and English generates automated timed broadcasts." },
+      { title: "Unlimited Zones", desc: "No zone hardware limit — add zones via software as your installation grows." },
+      { title: "Remote Web Control", desc: "Full configuration and monitoring from any browser on the network." },
+    ],
+    specs: [
+      { label: "Display", value: "17\" True Color Touch Screen", highlight: true },
+      { label: "Redundancy", value: "Dual Server + Auto Backup", highlight: true },
+      { label: "Zones", value: "Unlimited (software)", highlight: true },
+      { label: "TTS", value: "Chinese & English" },
+      { label: "Storage", value: "SD Card Recording" },
+      { label: "Control", value: "Local + Web Browser" },
+    ],
+    applications: ["Transportation", "Government", "Education", "Hospital"],
+    warranty: "2 Years", relatedSlugs: ["dsppa-mag6806", "dsppa-pava9500"]
+  },
+  {
+    id: "dsppa-mag6806", slug: "dsppa-mag6806",
+    name: "DSPPA MAG6806", brand: "DSPPA", brandSlug: "dsppa",
+    category: "ip-network-audio", subcategory: "IP Network Amplifier",
+    tagline: "60W IP Network Digital Power Amplifier",
+    imageUrl: "https://images.unsplash.com/photo-1535223289429-462dc99e4d34?auto=format&fit=crop&w=800&q=80",
+    imageFallback: "#0B1E3D",
+    description: "Rack-mount IP network amplifier for MAG6000 distributed PA systems. 60W at 100V with TCP/IP control, built-in media player (USB/SD), AUX and EMC inputs. Available in 60W, 120W, 250W, 350W, 650W versions. Digital display shows system status and time.",
+    keyFeatures: [
+      { title: "60W–650W Range", desc: "One product family from MAG6806 to MAG6865 — select power for each zone's speaker load." },
+      { title: "TCP/IP Control", desc: "Self-adaptive 10/100M network for integration with MAG6182II management server." },
+      { title: "Built-in Media Player", desc: "USB and SD card slots for local audio playback without a network source." },
+      { title: "EMC Emergency Override", desc: "Dedicated EMC input ensures emergency broadcasts override all content instantly." },
+    ],
+    specs: [
+      { label: "RMS Power", value: "60W (120/250/350/650W available)", highlight: true },
+      { label: "Output", value: "100V @90% efficiency", highlight: true },
+      { label: "Network", value: "TCP/IP 10/100M adaptive" },
+      { label: "Inputs", value: "1 AUX, 1 Mic, 1 EMC" },
+      { label: "Media", value: "USB + SD card" },
+      { label: "Rack Mount", value: "1U 19\"" },
+    ],
+    applications: ["Hotel", "Transportation", "Corporate", "Education"],
+    warranty: "2 Years", relatedSlugs: ["dsppa-mag6182ii", "dsppa-dsp6011"]
+  },
+  {
+    id: "dsppa-dsp6011", slug: "dsppa-dsp6011",
+    name: "DSPPA DSP6011", brand: "DSPPA", brandSlug: "dsppa",
+    category: "ceiling-speakers", subcategory: "Frameless Ceiling Speaker",
+    tagline: "6W 6.5\" Frameless Ceiling Speaker — 100V & 4Ω",
+    badge: "Best Seller",
+    imageUrl: "https://images.unsplash.com/photo-1545127398-14699f92334b?auto=format&fit=crop&w=800&q=80",
+    imageFallback: "#2563EB",
+    description: "Standard commercial ceiling speaker for background music and PA systems. 6W with 100V transformer taps (3W–6W) and 4Ω direct output. Frameless aluminum grille, spring-clip installation — no screws required. 90Hz–15kHz frequency response, 90dB sensitivity.",
+    keyFeatures: [
+      { title: "Dual Input Mode", desc: "100V constant-voltage transformer taps AND direct 4Ω input — works with any amplifier type." },
+      { title: "Spring-Clip Installation", desc: "Tool-free mounting into 165–170mm cutout — saves installation time." },
+      { title: "Aluminum Grille", desc: "Durable aluminum grille resists corrosion in humid environments — hotels, hospitals, spas." },
+    ],
+    specs: [
+      { label: "RMS Power", value: "6W", highlight: true },
+      { label: "100V Taps", value: "3W / 6W", highlight: true },
+      { label: "Driver", value: "6.5\" Full Range" },
+      { label: "Sensitivity", value: "90dB (1W/1m)" },
+      { label: "Max SPL", value: "97±2dB" },
+      { label: "Frequency", value: "110Hz–15kHz" },
+      { label: "Cut-out", value: "Ø165–170mm" },
+      { label: "Grille", value: "Aluminum, White" },
+    ],
+    applications: ["Hotel", "Corporate", "Education", "Hospital", "Religious"],
+    warranty: "2 Years", relatedSlugs: ["dsppa-dsp5211", "dsppa-mag6806"]
+  },
+  {
+    id: "dsppa-dsp5211", slug: "dsppa-dsp5211",
+    name: "DSPPA DSP5211", brand: "DSPPA", brandSlug: "dsppa",
+    category: "ceiling-speakers", subcategory: "Coaxial Ceiling Speaker",
+    tagline: "10W 6.5\" Coaxial Frameless Ceiling Speaker",
+    imageUrl: "https://images.unsplash.com/photo-1545127398-14699f92334b?auto=format&fit=crop&w=800&q=80",
+    imageFallback: "#2563EB",
+    description: "High-performance coaxial ceiling speaker with 6.5\" woofer and 0.75\" tweeter for extended frequency response. 10W with 100V taps (3W/6W/10W). 93dB sensitivity, 90Hz–18kHz response. Aluminum grille, spring-clip mounting. Ideal for boardrooms and premium hospitality spaces.",
+    keyFeatures: [
+      { title: "Coaxial 2-Way Design", desc: "6.5\" woofer + 0.75\" tweeter delivers extended high-frequency clarity versus single-driver designs." },
+      { title: "10W with 3-Tap Transformer", desc: "100V taps at 3W, 6W and 10W allow fine-tuning of zone volume without a controller." },
+      { title: "93dB Sensitivity", desc: "High sensitivity means less amplifier power is needed — reduces system cost and heat." },
+    ],
+    specs: [
+      { label: "RMS Power", value: "10W", highlight: true },
+      { label: "100V Taps", value: "3W / 6W / 10W", highlight: true },
+      { label: "Drivers", value: "6.5\" + 0.75\" Coaxial", highlight: true },
+      { label: "Sensitivity", value: "93dB (1W/1m)" },
+      { label: "Max SPL", value: "103±2dB" },
+      { label: "Frequency", value: "90Hz–18kHz" },
+      { label: "Cut-out", value: "Ø165–170mm" },
+    ],
+    applications: ["Corporate", "Hotel", "Government", "Education"],
+    warranty: "2 Years", relatedSlugs: ["dsppa-dsp6011", "dsppa-dsp255ii"]
+  },
+  {
+    id: "dsppa-dsp255ii", slug: "dsppa-dsp255ii",
+    name: "DSPPA DSP255II", brand: "DSPPA", brandSlug: "dsppa",
+    category: "column-speakers", subcategory: "Waterproof Column Speaker",
+    tagline: "30W Waterproof Column Speaker — Indoor & Outdoor",
+    imageUrl: "https://images.unsplash.com/photo-1493558103817-58b2924bce98?auto=format&fit=crop&w=800&q=80",
+    imageFallback: "#2563EB",
+    description: "30W waterproof column speaker with dual 3\" woofers and 1\" tweeter. Aluminum housing with waterproof drivers — built for outdoor courtyards, covered walkways, transit platforms and sports facilities. 100V and 70V compatible with bracket included.",
+    keyFeatures: [
+      { title: "Waterproof Design", desc: "Waterproof drivers and aluminum housing for permanent outdoor and semi-outdoor installation." },
+      { title: "Column Dispersion", desc: "Narrow vertical, wide horizontal pattern reduces ceiling reflection and improves speech clarity." },
+      { title: "Bracket Included", desc: "Wall-mount bracket included — adjustable tilt for optimal coverage angle." },
+    ],
+    specs: [
+      { label: "RMS Power", value: "30W", highlight: true },
+      { label: "Drivers", value: "2×3\" Woofer + 1\" Tweeter", highlight: true },
+      { label: "100V Taps", value: "8W / 15W / 30W" },
+      { label: "70V Taps", value: "8W / 15W" },
+      { label: "Weather", value: "Waterproof Aluminum" },
+    ],
+    applications: ["Transportation", "Education", "Government", "Stadium"],
+    warranty: "2 Years", relatedSlugs: ["dsppa-dsp6011", "dsppa-dsp161hd"]
+  },
+  {
+    id: "dsppa-dsp161hd", slug: "dsppa-dsp161hd",
+    name: "DSPPA DSP161HD", brand: "DSPPA", brandSlug: "dsppa",
+    category: "horn-speakers", subcategory: "Hi-Fi Horn Speaker",
+    tagline: "25W High-Fidelity Outdoor Horn Speaker — IP66",
+    imageUrl: "https://images.unsplash.com/photo-1493558103817-58b2924bce98?auto=format&fit=crop&w=800&q=80",
+    imageFallback: "#2563EB",
+    description: "Hi-Fi two-way horn speaker with built-in 70V/100V transformer, IP66 waterproof rating and high-quality alloy-aluminum housing. Wide frequency response and high sensitivity for outdoor background music and paging at railway stations, shopping malls, parking lots and factories.",
+    keyFeatures: [
+      { title: "IP66 Waterproof", desc: "Fully weatherproof for permanent outdoor installation — rain, dust and UV resistant." },
+      { title: "Hi-Fi Two-Way", desc: "Dual-driver design provides clear, wide-frequency audio — not just voice-grade horn clarity." },
+      { title: "100V Transformer Built-in", desc: "Direct connection to 70V/100V PA systems — no external matching transformer required." },
+    ],
+    specs: [
+      { label: "RMS Power", value: "25W", highlight: true },
+      { label: "Weather Rating", value: "IP66", highlight: true },
+      { label: "100V Taps", value: "Multiple" },
+      { label: "Housing", value: "Alloy Aluminum" },
+      { label: "Design", value: "2-Way Hi-Fi" },
+    ],
+    applications: ["Transportation", "Stadium", "Government", "Education"],
+    warranty: "2 Years", relatedSlugs: ["dsppa-dsp255ii", "dsppa-dsp6011"]
+  },
 ]
 
-// ─── ITC ────────────────────────────────────────────────────────────────────
-const ITC: Product[] = [
-  { id:"itc-t6300", slug:"itc-t6300", name:"ITC T-6300", brand:"ITC", brandSlug:"itc", category:"conference-systems", subcategory:"Digital Conference System", tagline:"Professional Digital Wired Conference System", badge:"Best Seller", imageUrl:"https://www.itc-pub.com/uploads/allimg/conference/T-6300.jpg", imageFallback:"#E74C3C", description:"Professional wired digital conference system with HTLP protocol. Manages up to 4,096 units per controller with chairman override, simultaneous interpretation, auto camera tracking, and voting support.", keyFeatures:[{title:"HTLP Protocol",desc:"High-speed conference bus carries audio and control on single CAT5 cable — up to 200m."},{title:"Chairman Override",desc:"Chairman unit can mute all delegates and take the floor instantly."},{title:"4,096 Unit Capacity",desc:"Single controller manages up to 4,096 delegate + chairman units."},{title:"Interpretation Ready",desc:"Direct connection to ITC interpretation consoles — 32 simultaneous language channels."}], specs:[{label:"System Capacity",value:"Up to 4,096 units",highlight:true},{label:"Microphone Type",value:"20mm Cardioid Condenser",highlight:true},{label:"Frequency Response",value:"60Hz – 16kHz"},{label:"SNR",value:">85 dB"},{label:"Cable Protocol",value:"HTLP over CAT5/CAT6"},{label:"Max Cable Run",value:"200m per segment"},{label:"Housing",value:"Aluminium alloy"}], applications:["Government","Corporate","Education","Hotel"], warranty:"2 Years", relatedSlugs:["itc-ts0680","itc-t6700"] },
-  { id:"itc-ts0680", slug:"itc-ts0680", name:"ITC TS-0680", brand:"ITC", brandSlug:"itc", category:"conference-systems", subcategory:"Wireless Conference System", tagline:"6GHz Digital Wireless Conference — Zero Latency", badge:"New", imageUrl:"https://www.itc-pub.com/uploads/allimg/conference/TS-0680.jpg", imageFallback:"#E74C3C", description:"Operates on the 6GHz band delivering near-zero latency digital wireless conference audio with 128-bit AES encryption. Up to 80 wireless units per base station with automatic frequency hopping — ideal for hybrid meeting rooms.", keyFeatures:[{title:"6GHz Band",desc:"Uncluttered 6GHz WiFi6E spectrum avoids interference from phones and WiFi."},{title:"128-bit AES Encryption",desc:"Military-grade encryption on all audio transmissions."},{title:"80 Units per AP",desc:"Single access point manages up to 80 wireless units simultaneously."},{title:"<2ms Latency",desc:"Near-zero audio latency — no perceptible delay."}], specs:[{label:"Frequency Band",value:"6GHz (WiFi 6E)",highlight:true},{label:"Units per AP",value:"Up to 80",highlight:true},{label:"Battery Life",value:"8 Hours",highlight:true},{label:"Latency",value:"<2ms"},{label:"Encryption",value:"AES 128-bit"},{label:"SNR",value:">90dB"},{label:"Charging",value:"USB-C, 5V/2A"}], applications:["Corporate","Government","Hotel","Education"], warranty:"2 Years", relatedSlugs:["itc-t6300","itc-t6700"] },
-  { id:"itc-t6700", slug:"itc-t6700", name:"ITC T-6700", brand:"ITC", brandSlug:"itc", category:"conference-systems", subcategory:"Interpretation System", tagline:"32-Channel Simultaneous Interpretation System", badge:"Featured", imageUrl:"https://www.itc-pub.com/uploads/allimg/conference/T-6700.jpg", imageFallback:"#E74C3C", description:"32-language simultaneous interpretation system with dedicated interpreter booths, delegate IR receivers, and 1U rack-mount distribution hub. ISO 20109 and IEC 60914 compliant. Deployed in Nepal Parliament and SAARC conferences.", keyFeatures:[{title:"32 Language Channels",desc:"Up to 32 simultaneous interpretation channels for international conferences."},{title:"ISO 20109 Compliant",desc:"Meets the international standard for remote interpretation."},{title:"Delegate Receivers",desc:"IR wireless receivers let every delegate choose their preferred language."},{title:"Redundant Audio Path",desc:"Automatic failover ensures no interpretation loss during critical sessions."}], specs:[{label:"Language Channels",value:"32 (expandable)",highlight:true},{label:"Transmission",value:"IR Wireless, 2–8MHz",highlight:true},{label:"SNR",value:">80dB"},{label:"Standard",value:"ISO 20109, IEC 60914"},{label:"Hub Rack",value:"1U 19\""}], applications:["Government","Hotel","Education"], warranty:"2 Years", relatedSlugs:["itc-t6300","itc-ts0680"] },
-  { id:"itc-va1032h", slug:"itc-va1032h", name:"ITC VA-1032H", brand:"ITC", brandSlug:"itc", category:"amplifiers", subcategory:"Mixer Amplifier", tagline:"320W 4-Zone Matrix Mixer Amplifier", imageUrl:"https://www.itc-pub.com/uploads/allimg/amplifier/VA-1032H.jpg", imageFallback:"#E74C3C", description:"320W matrix mixer amplifier with 10 inputs and 4 zone outputs. Remote volume control bus, priority MIC input with auto-ducking, USB/Bluetooth player, and speaker line fault detection.", keyFeatures:[{title:"320W Total Power",desc:"4 × 80W independent zone amplifiers for 4 separate speaker circuits."},{title:"10 × 4 Matrix Routing",desc:"Route any of 10 inputs to any combination of 4 output zones."},{title:"Remote Volume Control",desc:"4 remote volume ports for wall-plate controllers per zone."},{title:"Fault Detection",desc:"Speaker line fault detection with LED indicators warns of open circuits."}], specs:[{label:"Total Output Power",value:"320W (4 × 80W)",highlight:true},{label:"Zones",value:"4 Independent",highlight:true},{label:"Inputs",value:"10 (2 MIC, 4 LINE, USB, BT)",highlight:true},{label:"THD",value:"<0.3%"},{label:"SNR",value:">85dB"},{label:"Output Options",value:"4Ω / 8Ω / 70V / 100V per zone"},{label:"Rack Mount",value:"2U 19\""}], applications:["Hotel","Corporate","Education","Religious","Transportation"], warranty:"2 Years", relatedSlugs:["itc-t6300","dsppa-dsp8060"] },
+// ─── INFOBIT ─────────────────────────────────────────────────────────────────
+const INFOBIT: Product[] = [
+  {
+    id: "infobit-vb50", slug: "infobit-vb50",
+    name: "InfoBit iCam VB50", brand: "InfoBit", brandSlug: "infobit",
+    category: "video-conferencing", subcategory: "All-in-One Video Bar",
+    tagline: "4K All-in-One Conference Video Bar with AI Auto-Framing",
+    badge: "Best Seller",
+    imageUrl: "https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?auto=format&fit=crop&w=800&q=80",
+    imageFallback: "#6366F1",
+    description: "The iCam VB50 combines a 4K camera, microphone array and speaker into a single USB bar — plug-in and your meeting room is ready. AI auto-framing tracks active speakers, 5× digital zoom, 120° wide-angle lens, and Bluetooth. Works with Zoom, Teams, WebEx and all major UC platforms.",
+    keyFeatures: [
+      { title: "4K + AI Auto-Framing", desc: "Automatically frames and tracks participants — no manual camera adjustment needed." },
+      { title: "6m Sound Pickup", desc: "Integrated microphone array covers medium meeting rooms up to 25 sqm." },
+      { title: "Single USB 3.0 Connection", desc: "One cable powers and connects — plug-and-play with any laptop or room PC." },
+      { title: "Bluetooth Supported", desc: "Connect mobile phones directly to the bar for wireless audio." },
+      { title: "HDMI 2.0 Out", desc: "Direct HDMI output to display — works without a PC for dedicated room systems." },
+    ],
+    specs: [
+      { label: "Resolution", value: "4K UHD 30fps", highlight: true },
+      { label: "Zoom", value: "5× Digital", highlight: true },
+      { label: "HFOV", value: "110°", highlight: true },
+      { label: "Sound Pickup", value: "6m range" },
+      { label: "USB", value: "3.0 Host + Device" },
+      { label: "HDMI", value: "2.0 Output" },
+      { label: "Bluetooth", value: "Supported" },
+    ],
+    applications: ["Corporate", "Education", "Government", "Hotel"],
+    warranty: "2 Years", relatedSlugs: ["infobit-vb60", "infobit-vb80", "infobit-icam-p30"]
+  },
+  {
+    id: "infobit-vb60", slug: "infobit-vb60",
+    name: "InfoBit iCam VB60", brand: "InfoBit", brandSlug: "infobit",
+    category: "video-conferencing", subcategory: "All-in-One Video Bar",
+    tagline: "4K Conference Video Bar with 5m Pickup & Expansion Mic",
+    badge: "Popular",
+    imageUrl: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=800&q=80",
+    imageFallback: "#6366F1",
+    description: "Upgraded from VB50 with speaker voice tracking, 5m pickup, USB HID support and daisy-chainable expansion microphones up to 4 units via RJ45. Ideal for medium-large meeting rooms. Works with Zoom Rooms, Teams Rooms and WebEx Devices.",
+    keyFeatures: [
+      { title: "Speaker Voice Tracking", desc: "Camera automatically follows the active speaker — keeps remote participants engaged." },
+      { title: "5m Pickup Range", desc: "Covers meeting rooms up to 30 sqm without additional microphones." },
+      { title: "4× Daisy-Chain Mics", desc: "Expand coverage by chaining up to 4 expansion microphones via RJ45." },
+      { title: "USB HID Support", desc: "Full USB HID for Teams Rooms and Zoom Rooms certified deployments." },
+    ],
+    specs: [
+      { label: "Resolution", value: "4K UHD 30fps", highlight: true },
+      { label: "HFOV", value: "107°", highlight: true },
+      { label: "Sound Pickup", value: "5m (up to 4 expansion mics)", highlight: true },
+      { label: "Expansion Mics", value: "Up to 4 via RJ45" },
+      { label: "USB HID", value: "Supported" },
+      { label: "Zoom", value: "5× Digital" },
+    ],
+    applications: ["Corporate", "Government", "Education"],
+    warranty: "2 Years", relatedSlugs: ["infobit-vb50", "infobit-vb80"]
+  },
+  {
+    id: "infobit-vb80", slug: "infobit-vb80",
+    name: "InfoBit iCam VB80", brand: "InfoBit", brandSlug: "infobit",
+    category: "video-conferencing", subcategory: "BYOD/BYOM Video Bar",
+    tagline: "4K All-in-One BYOD/BYOM Bar with Wireless Presentation",
+    badge: "New",
+    imageUrl: "https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?auto=format&fit=crop&w=800&q=80",
+    imageFallback: "#6366F1",
+    description: "The VB80 is InfoBit's premium video bar — 4K with 120° FOV, 4× MEMS microphone array (8m range), HDMI wired BYOD, wireless Airplay/Miracast BYOM, and Android OS for standalone operation. Up to 5 expansion mics, WiFi, and iShare MC dongle support.",
+    keyFeatures: [
+      { title: "Wireless BYOD via Airplay/Miracast", desc: "Present wirelessly from any device — no dongle required for most platforms." },
+      { title: "8m Microphone Range", desc: "4× MEMS digital mic arrays cover large boardrooms up to 50 sqm." },
+      { title: "Android OS On-board", desc: "Runs Zoom Rooms or Teams Rooms natively — no external PC required." },
+      { title: "5 Expansion Mics", desc: "Up to 5 RJ45 expansion microphones for very large conference rooms." },
+    ],
+    specs: [
+      { label: "Resolution", value: "4K UHD 30fps", highlight: true },
+      { label: "HFOV", value: "107.5°", highlight: true },
+      { label: "Mic Range", value: "8m (up to 5 expansion mics)", highlight: true },
+      { label: "Wireless BYOD", value: "Airplay + Miracast" },
+      { label: "OS", value: "Android (built-in)" },
+      { label: "Camera Presets", value: "3" },
+    ],
+    applications: ["Corporate", "Government"],
+    warranty: "2 Years", relatedSlugs: ["infobit-vb50", "infobit-vb60", "infobit-ishare-x200"]
+  },
+  {
+    id: "infobit-icam-p30", slug: "infobit-icam-p30",
+    name: "InfoBit iCam P30", brand: "InfoBit", brandSlug: "infobit",
+    category: "conference-cameras", subcategory: "4K PTZ Camera",
+    tagline: "4K UHD AI Auto-Tracking PTZ Conference Camera",
+    badge: "Featured",
+    imageUrl: "https://images.unsplash.com/photo-1502920514313-52581002a659?auto=format&fit=crop&w=800&q=80",
+    imageFallback: "#6366F1",
+    description: "Professional 4K PTZ camera with AI-based human body detection for automatic target tracking. 12× optical zoom, 80.8° HFOV. Outputs via USB 3.0, HDMI and Ethernet. Compatible with Zoom, Teams, WebEx. Ideal for lecture halls, broadcast studios and large boardrooms.",
+    keyFeatures: [
+      { title: "AI Auto-Tracking", desc: "Deep learning human body detection — tracks presenter even without face-to-camera." },
+      { title: "4K@60fps + 12× Optical", desc: "Ultra-sharp 4K output at 60fps with smooth 12× optical zoom for distant subjects." },
+      { title: "Triple Output", desc: "Simultaneous USB 3.0, HDMI and IP (Ethernet) outputs for flexible integration." },
+      { title: "255 Presets", desc: "Store and recall up to 255 camera positions for automated shot control." },
+    ],
+    specs: [
+      { label: "Resolution", value: "4K UHD @60fps", highlight: true },
+      { label: "Optical Zoom", value: "12×", highlight: true },
+      { label: "HFOV", value: "80.8°", highlight: true },
+      { label: "Sensor", value: "1/2.8\" CMOS, 2.14MP" },
+      { label: "Outputs", value: "USB 3.0 + HDMI + IP" },
+      { label: "Presets", value: "255" },
+      { label: "Control", value: "RS232, IP, IR Remote" },
+    ],
+    applications: ["Education", "Government", "Corporate", "Religious"],
+    warranty: "2 Years", relatedSlugs: ["infobit-icam-p40", "infobit-vb50"]
+  },
+  {
+    id: "infobit-icam-p40", slug: "infobit-icam-p40",
+    name: "InfoBit iCam P40", brand: "InfoBit", brandSlug: "infobit",
+    category: "conference-cameras", subcategory: "PTZ Lecturer Tracking",
+    tagline: "Dual-Lens AI Lecturer Tracking PTZ Camera — 1080P60 SDI",
+    imageUrl: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=800&q=80",
+    imageFallback: "#6366F1",
+    description: "Specialized dual-lens PTZ for lecture capture and distance learning. AI human body detection locks onto the presenter and adjusts pan/tilt/zoom automatically — even adjusts for the lecturer's height. Dedicated 1080P60 SDI tracking output plus wide overview output.",
+    keyFeatures: [
+      { title: "AI Lecturer Tracking", desc: "Automatically follows the lecturer's movement across the stage — no camera operator needed." },
+      { title: "Dual-Lens System", desc: "Separate tracking and overview lenses allow simultaneous tight close-up and wide room shot." },
+      { title: "1080P60 SDI Tracking Output", desc: "Broadcast-grade SDI output for recording systems and live streaming encoders." },
+      { title: "Height Auto-Adjust", desc: "Adapts framing based on the lecturer's height — consistent shots regardless of presenter." },
+    ],
+    specs: [
+      { label: "Tracking Output", value: "1080P60 3G-SDI", highlight: true },
+      { label: "Optical Zoom", value: "20×", highlight: true },
+      { label: "Outputs", value: "3G-SDI, HDMI, USB3.0, Ethernet" },
+      { label: "AI Tracking", value: "Body Detection (no face required)" },
+      { label: "Control", value: "RS232, RS485, IP" },
+    ],
+    applications: ["Education", "Government", "Religious"],
+    warranty: "2 Years", relatedSlugs: ["infobit-icam-p30", "infobit-vb60"]
+  },
+  {
+    id: "infobit-ishare-x200", slug: "infobit-ishare-x200",
+    name: "InfoBit iShare X200", brand: "InfoBit", brandSlug: "infobit",
+    category: "wireless-presentation", subcategory: "Wireless Presentation System",
+    tagline: "4K60 Wireless Presentation — 0.1s Latency, 16 Users",
+    badge: "Best Seller",
+    imageUrl: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=800&q=80",
+    imageFallback: "#6366F1",
+    description: "Enterprise-grade wireless presentation system with 4K60Hz output, dual WiFi, 0.1-second mirroring latency and 30m range. Supports USB-A, HDMI and USB-C dongles, portrait and landscape screens, and up to 16 simultaneous users. Built-in whiteboard and annotation tools.",
+    keyFeatures: [
+      { title: "0.1s Ultra-Low Latency", desc: "Essentially zero perceptible lag — no more awkward delays during presentations." },
+      { title: "4K60Hz Output", desc: "Full 4K resolution at 60fps — crisp visuals on any 4K display." },
+      { title: "16 Simultaneous Users", desc: "Up to 16 participants can connect at once — host selects whose screen to show." },
+      { title: "Instant Show/Hide", desc: "One-button screen sharing — no software to install on presenter's device." },
+      { title: "Dual WiFi", desc: "Dual-band WiFi ensures reliable connection in crowded RF environments." },
+    ],
+    specs: [
+      { label: "Output Resolution", value: "4K UHD @60Hz", highlight: true },
+      { label: "Latency", value: "0.1 seconds", highlight: true },
+      { label: "Max Users", value: "16 simultaneous", highlight: true },
+      { label: "Range", value: "30m wireless" },
+      { label: "Dongles", value: "USB-A, HDMI, USB-C" },
+      { label: "Tools", value: "Whiteboard, Annotation" },
+    ],
+    applications: ["Corporate", "Education", "Government", "Hotel"],
+    warranty: "2 Years", relatedSlugs: ["infobit-vb50", "infobit-vb80", "infobit-iwall-204"]
+  },
+  {
+    id: "infobit-iwall-204", slug: "infobit-iwall-204",
+    name: "InfoBit iWall 204", brand: "InfoBit", brandSlug: "infobit",
+    category: "video-walls", subcategory: "4K Video Wall Controller",
+    tagline: "4K60 2×4 HDMI Video Wall Controller with TCP/IP Control",
+    imageUrl: "https://images.unsplash.com/photo-1497366754035-f200968a6e23?auto=format&fit=crop&w=800&q=80",
+    imageFallback: "#6366F1",
+    description: "2-input, 4-output HDMI video wall controller with 4K60Hz input and output. Supports flexible M×N video wall configurations up to 6×6, RS232 and TCP/IP control. Built-in audio de-embedding. Ideal for control rooms, lobbies and multi-display signage walls.",
+    keyFeatures: [
+      { title: "4K60 In and Out", desc: "Full 4K60Hz on both inputs and outputs — no resolution compromise across the wall." },
+      { title: "Flexible M×N Layouts", desc: "Configure any video wall layout up to 6×6 via web interface or RS232." },
+      { title: "Audio De-embedding", desc: "Extract audio from HDMI signal to 3-pin phoenix or 3.5mm output." },
+      { title: "TCP/IP + RS232 Control", desc: "Full API control for AV control systems (Crestron, AMX, Extron compatible)." },
+    ],
+    specs: [
+      { label: "Inputs", value: "2× HDMI 4K60", highlight: true },
+      { label: "Outputs", value: "4× HDMI 4K60", highlight: true },
+      { label: "Max Wall Config", value: "M×N up to 6×6", highlight: true },
+      { label: "Control", value: "TCP/IP + RS232" },
+      { label: "Audio Out", value: "Phoenix + 3.5mm" },
+    ],
+    applications: ["Corporate", "Government", "Hotel", "Transportation"],
+    warranty: "2 Years", relatedSlugs: ["infobit-iwall-109", "infobit-ishare-x200"]
+  },
+  {
+    id: "infobit-iwall-109", slug: "infobit-iwall-109",
+    name: "InfoBit iWall 109", brand: "InfoBit", brandSlug: "infobit",
+    category: "video-walls", subcategory: "Video Wall Controller",
+    tagline: "1×9 4K30 Video Wall Controller — Plug-and-Play",
+    imageUrl: "https://images.unsplash.com/photo-1497366754035-f200968a6e23?auto=format&fit=crop&w=800&q=80",
+    imageFallback: "#6366F1",
+    description: "Ultra-simple 1-input to 9-output video wall controller. Plug-and-play with IR remote control and multiple preset video wall modes. Supports 8/10/12-bit deep color. Perfect for retail, hospitality and public space multi-screen setups without complex configuration.",
+    keyFeatures: [
+      { title: "1 Input → 9 Displays", desc: "Drive up to 9 screens from a single HDMI source — create impressive video walls effortlessly." },
+      { title: "Plug-and-Play", desc: "No software needed — preset wall modes selectable via IR remote." },
+      { title: "Deep Color", desc: "8/10/12-bit deep color support for accurate, vibrant display reproduction." },
+    ],
+    specs: [
+      { label: "Inputs", value: "1× HDMI 4K30", highlight: true },
+      { label: "Outputs", value: "9× HDMI 1080P", highlight: true },
+      { label: "Deep Color", value: "8/10/12-bit" },
+      { label: "Control", value: "IR Remote" },
+    ],
+    applications: ["Hotel", "Corporate", "Transportation", "Religious"],
+    warranty: "2 Years", relatedSlugs: ["infobit-iwall-204", "infobit-ishare-x200"]
+  },
+  {
+    id: "infobit-ispeaker-m500", slug: "infobit-ispeaker-m500",
+    name: "InfoBit iSpeaker M500", brand: "InfoBit", brandSlug: "infobit",
+    category: "conference-audio", subcategory: "USB Speakerphone",
+    tagline: "8-Element Beamforming Speakerphone — 5m Range, 5-Unit Cascade",
+    badge: "Popular",
+    imageUrl: "https://images.unsplash.com/photo-1487611459768-bd414656ea10?auto=format&fit=crop&w=800&q=80",
+    imageFallback: "#6366F1",
+    description: "Professional USB omnidirectional speakerphone with 8-element beamforming microphone array, full-duplex communication, and echo cancellation with AGC. Up to 5 units daisy-chainable for large conference rooms up to 100 sqm. Works with all UC platforms.",
+    keyFeatures: [
+      { title: "8-Element Beamforming", desc: "Electronically steerable beam focuses on the active speaker, rejecting noise from other directions." },
+      { title: "5-Unit Daisy Chain", desc: "Chain up to 5 iSpeaker M500 units to cover rooms up to 100 sqm uniformly." },
+      { title: "Echo Cancellation + AGC", desc: "DSP processing eliminates echo and automatically adjusts gain for consistent voice levels." },
+      { title: "Full Duplex", desc: "Both sides can speak simultaneously — no half-duplex cutting or clipping." },
+    ],
+    specs: [
+      { label: "Microphones", value: "8-element Beamforming", highlight: true },
+      { label: "Pickup Range", value: "5m radius", highlight: true },
+      { label: "Cascade", value: "Up to 5 units", highlight: true },
+      { label: "Connection", value: "USB Type-C" },
+      { label: "Coverage", value: "Up to 100 sqm" },
+      { label: "Participants", value: "20+" },
+    ],
+    applications: ["Corporate", "Government", "Education"],
+    warranty: "2 Years", relatedSlugs: ["infobit-vb50", "infobit-vb60"]
+  },
+  {
+    id: "infobit-iswitch-265", slug: "infobit-iswitch-265",
+    name: "InfoBit iSwitch 265", brand: "InfoBit", brandSlug: "infobit",
+    category: "av-switching", subcategory: "HDMI Matrix Switcher",
+    tagline: "4K60 HDMI 2×6 Seamless Matrix Switcher with Dante DSP",
+    badge: "New",
+    imageUrl: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80",
+    imageFallback: "#6366F1",
+    description: "Advanced 6-input, 4-output seamless matrix switcher (iMatrix C604) with Dante audio networking and onboard DSP. Full USB-C input with 4K60, USB 3.1, network and 60W PD charging. Seamless switching, USB host switching, and 4K60 4:4:4 HDCP 2.2 compliant.",
+    keyFeatures: [
+      { title: "USB-C with 60W PD", desc: "Full-featured USB-C input: 4K60 video + data + 60W charging — one cable for laptops." },
+      { title: "Dante Audio Integration", desc: "Built-in Dante audio processing for integration with networked audio systems." },
+      { title: "Seamless Switching", desc: "No black screen or flicker between source switches — critical for presentations." },
+      { title: "USB Host Extension", desc: "Route USB peripherals (webcam, keyboard) to any source in the matrix." },
+    ],
+    specs: [
+      { label: "Inputs", value: "6 (incl. USB-C)", highlight: true },
+      { label: "Outputs", value: "4× HDMI 4K60", highlight: true },
+      { label: "Audio", value: "Dante + DSP", highlight: true },
+      { label: "USB-C PD", value: "60W Charging" },
+      { label: "HDCP", value: "2.2 Compliant" },
+    ],
+    applications: ["Corporate", "Education", "Government"],
+    warranty: "2 Years", relatedSlugs: ["infobit-ishare-x200", "infobit-vb80"]
+  },
 ]
 
-// ─── SHURE ──────────────────────────────────────────────────────────────────
-const SHURE: Product[] = [
-  { id:"shure-sm58", slug:"shure-sm58", name:"Shure SM58-LC", brand:"Shure", brandSlug:"shure", category:"microphones", subcategory:"Dynamic Vocal Microphone", tagline:"The World\'s Most Popular Vocal Microphone", badge:"Best Seller", imageUrl:"https://pubs.shure.com/guide/sm58/en-US/content/images/SM58_Top.png", imageFallback:"#CC0000", description:"The Shure SM58 has been the industry standard for live vocal performances since 1966. Cardioid polar pattern, pneumatic shockmount, and hardened steel body — the definitive live vocal microphone for stages, podiums, and houses of worship worldwide.", keyFeatures:[{title:"Cardioid Polar Pattern",desc:"Focused pickup rejects off-axis feedback on the loudest stages."},{title:"Pneumatic Shock Mount",desc:"Internal shockmount filters handling noise from the audio signal."},{title:"Built-in Wind/Pop Filter",desc:"Spherical mesh grille reduces breath pops and wind noise."},{title:"Legendary Build Quality",desc:"Hardened steel body survives decades of touring abuse. Limited lifetime warranty."}], specs:[{label:"Element Type",value:"Dynamic (Moving Coil)",highlight:true},{label:"Polar Pattern",value:"Cardioid",highlight:true},{label:"Frequency Response",value:"50Hz – 15kHz",highlight:true},{label:"Output Impedance",value:"150Ω"},{label:"Connector",value:"3-pin XLR (balanced)"},{label:"Phantom Power",value:"Not required"},{label:"Weight",value:"298g"}], applications:["Corporate","Religious","Education","Hotel","Stadium"], warranty:"Limited Lifetime", relatedSlugs:["shure-sm57","shure-blx24sm58"] },
-  { id:"shure-sm57", slug:"shure-sm57", name:"Shure SM57-LC", brand:"Shure", brandSlug:"shure", category:"microphones", subcategory:"Dynamic Instrument Microphone", tagline:"The Standard for Instrument & Podium Miking", badge:"Popular", imageUrl:"https://pubs.shure.com/guide/sm57/en-US/content/images/SM57_45deg.png", imageFallback:"#CC0000", description:"The world\'s best-selling instrument microphone. Contoured frequency response and tight cardioid pattern — specified at the White House podium and on every Grammy stage. Handles up to 160dB SPL without distortion.", keyFeatures:[{title:"Contoured Response",desc:"Presence peak ideal for instruments and podiums — cuts through any mix."},{title:"High SPL Handling",desc:"Handles drumkits, guitar amplifiers, and brass without distortion — 160dB SPL."},{title:"Uniform Off-Axis Rejection",desc:"Consistent rejection minimises bleed from adjacent sources."}], specs:[{label:"Element Type",value:"Dynamic (Moving Coil)",highlight:true},{label:"Polar Pattern",value:"Cardioid",highlight:true},{label:"Frequency Response",value:"40Hz – 15kHz",highlight:true},{label:"SPL Handling",value:">160 dB SPL"},{label:"Connector",value:"3-pin XLR (balanced)"},{label:"Weight",value:"284g"}], applications:["Corporate","Government","Religious","Education","Stadium"], warranty:"Limited Lifetime", relatedSlugs:["shure-sm58","shure-blx24sm58"] },
-  { id:"shure-blx24sm58", slug:"shure-blx24sm58", name:"Shure BLX24/SM58", brand:"Shure", brandSlug:"shure", category:"wireless-systems", subcategory:"Wireless Handheld System", tagline:"Wireless SM58 Performance — Ready in 60 Seconds", badge:"Best Seller", imageUrl:"https://pubs.shure.com/guide/blx/en-US/content/images/BLX24_SM58.png", imageFallback:"#CC0000", description:"The BLX24/SM58 brings the legendary SM58 into the wireless era. QuickScan auto-frequency selection, 14 channels per band, 100m range, 8-hour battery. Perfect for presentations, worship, and corporate events.", keyFeatures:[{title:"SM58 Capsule",desc:"Genuine SM58 capsule — identical vocal response to the wired original."},{title:"QuickScan Auto-Tune",desc:"One-button auto-scan finds the clearest frequency in under 3 seconds."},{title:"100m Range",desc:"Covers large stages, auditoriums, and outdoor events."},{title:"8-Hour Battery Life",desc:"Runs 8 hours on 2 × AA alkaline batteries."}], specs:[{label:"RF Band",value:"H9: 512–542 MHz",highlight:true},{label:"Channels",value:"14 per band",highlight:true},{label:"Range",value:"Up to 100m",highlight:true},{label:"Battery Life",value:"8 Hours (2 × AA)"},{label:"Dynamic Range",value:">100 dB"},{label:"Latency",value:"2.9ms"},{label:"Receiver Type",value:"True Diversity"}], applications:["Corporate","Religious","Education","Hotel","Stadium"], warranty:"2 Years", relatedSlugs:["shure-sm58","shure-blx288sm58"] },
-  { id:"shure-blx288sm58", slug:"shure-blx288sm58", name:"Shure BLX288/SM58", brand:"Shure", brandSlug:"shure", category:"wireless-systems", subcategory:"Dual Wireless Handheld System", tagline:"Dual-Channel Wireless — Two SM58s, One Receiver", badge:"Featured", imageUrl:"https://pubs.shure.com/guide/blx/en-US/content/images/BLX288_SM58.png", imageFallback:"#CC0000", description:"Two SM58 wireless transmitters with dual-receiver chassis in a single 1U rack space. Ideal for worship teams, panel discussions, and corporate events with two presenters.", keyFeatures:[{title:"Dual SM58 System",desc:"Two complete wireless systems with independent frequency and gain control."},{title:"Single 1U Rack Space",desc:"Both receivers in one chassis — half the rack space versus two separate units."},{title:"Independent Outputs",desc:"Two balanced XLR outputs for separate mixer channel control."}], specs:[{label:"Channels",value:"2 independent",highlight:true},{label:"Rack Space",value:"1U",highlight:true},{label:"Battery Life",value:"8 Hours each"},{label:"Range",value:"Up to 100m"},{label:"Outputs",value:"2 × balanced XLR"}], applications:["Corporate","Religious","Education","Hotel"], warranty:"2 Years", relatedSlugs:["shure-blx24sm58","shure-sm58"] },
-  { id:"shure-mxa310", slug:"shure-mxa310", name:"Shure MXA310", brand:"Shure", brandSlug:"shure", category:"conference-systems", subcategory:"Table Array Microphone", tagline:"Steerable Table Array for Executive Boardrooms", badge:"New", imageUrl:"https://pubs.shure.com/guide/mxa310/en-US/content/images/MXA310_Hero.png", imageFallback:"#CC0000", description:"Premium boardroom table array with four steerable cardioid beams covering 360°. IntelliMix DSP provides AEC, noise reduction, and AGC. Connects via single PoE+ cable with native Dante audio networking.", keyFeatures:[{title:"4-Beam Steerable Array",desc:"4 independent cardioid beams cover the full 360° around a conference table."},{title:"IntelliMix DSP Onboard",desc:"AEC, noise reduction, and AGC built in — no external DSP required."},{title:"Dante Audio Networking",desc:"Native Dante IP audio transport over standard LAN."},{title:"PoE+ Single Cable",desc:"One CAT6 cable carries power, audio, and control — zero visible cabling."}], specs:[{label:"Beams",value:"4 Steerable Cardioid",highlight:true},{label:"Coverage",value:"360° around table",highlight:true},{label:"Network Audio",value:"Dante (2ch in / 4ch out)",highlight:true},{label:"DSP",value:"AEC, NR, AGC, HPF"},{label:"Power",value:"PoE+ (802.3at)"},{label:"Diameter",value:"172mm"}], applications:["Corporate","Government","Education"], warranty:"2 Years", relatedSlugs:["itc-t6300","itc-ts0680"] },
+// ─── TENVEO ─────────────────────────────────────────────────────────────────
+const TENVEO: Product[] = [
+  {
+    id: "tenveo-cc600", slug: "tenveo-cc600",
+    name: "Tenveo CC600", brand: "Tenveo", brandSlug: "tenveo",
+    category: "conference-cameras", subcategory: "360° All-in-One Camera",
+    tagline: "4K 360° All-in-One Conference Webcam with Auto-Framing",
+    badge: "Best Seller",
+    imageUrl: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=800&q=80",
+    imageFallback: "#0EA5E9",
+    description: "The CC600 is a 4K 360-degree all-in-one conference camera with omnidirectional microphone, designed for small to medium meeting rooms. Auto-framing adjusts to keep all participants in view. Portable, compact design — works with any UC platform via USB. No drivers needed.",
+    keyFeatures: [
+      { title: "360° Field of View", desc: "Full panoramic coverage — everyone in the room is visible without camera repositioning." },
+      { title: "4K UHD CMOS", desc: "High-resolution sensor with minimal distortion across the full 360° view." },
+      { title: "Auto-Framing", desc: "Automatically adjusts digital zoom and crop to keep active participants centered." },
+      { title: "Omnidirectional Microphone", desc: "Integrated omni microphone picks up voices from all directions simultaneously." },
+      { title: "Plug-and-Play USB", desc: "No drivers or software required — connects instantly to any Windows or Mac laptop." },
+    ],
+    specs: [
+      { label: "Resolution", value: "4K UHD", highlight: true },
+      { label: "Field of View", value: "360°", highlight: true },
+      { label: "Connection", value: "USB" },
+      { label: "Microphone", value: "Omnidirectional" },
+      { label: "Compatibility", value: "Zoom, Teams, WebEx, Google Meet" },
+    ],
+    applications: ["Corporate", "Education", "Government"],
+    warranty: "3 Years", relatedSlugs: ["tenveo-vhd612a", "tenveo-m5b"]
+  },
+  {
+    id: "tenveo-vhd612a", slug: "tenveo-vhd612a",
+    name: "Tenveo VHD612A", brand: "Tenveo", brandSlug: "tenveo",
+    category: "conference-cameras", subcategory: "PTZ Camera",
+    tagline: "12× Optical Zoom HD PTZ Camera — USB/HDMI/SDI/IP",
+    badge: "Popular",
+    imageUrl: "https://images.unsplash.com/photo-1502920514313-52581002a659?auto=format&fit=crop&w=800&q=80",
+    imageFallback: "#0EA5E9",
+    description: "Professional 1080P PTZ conference camera with 12× optical zoom, 8× digital zoom and 77.5° wide angle. Quad output: USB, HDMI, SDI and IP/RJ45 simultaneously. RS232/RS485/USB control, 10 IR presets (256 via RS232). Ideal for medium-to-large conference rooms and live streaming.",
+    keyFeatures: [
+      { title: "12× Optical + 8× Digital Zoom", desc: "Total 96× zoom range for precise framing of presenters at any distance." },
+      { title: "Quad Output", desc: "USB, HDMI, 3G-SDI and IP outputs available simultaneously — connect to any system." },
+      { title: "RS232/RS485 Control", desc: "Professional PTZ control via serial and IP — compatible with all major control systems." },
+      { title: "256 Presets", desc: "Store 256 camera positions for automated multi-angle production workflows." },
+      { title: "Smooth & Silent PTZ", desc: "Precision motor drive — no noise or jitter during pan, tilt or zoom movements." },
+    ],
+    specs: [
+      { label: "Optical Zoom", value: "12×", highlight: true },
+      { label: "Resolution", value: "1080P Full HD", highlight: true },
+      { label: "Outputs", value: "USB + HDMI + SDI + RJ45", highlight: true },
+      { label: "Sensor", value: "2.38MP 1/2.8\" CMOS" },
+      { label: "Wide Angle", value: "77.5°" },
+      { label: "Digital Zoom", value: "8×" },
+      { label: "Presets", value: "10 (IR) / 256 (RS232)" },
+      { label: "Control", value: "RS232, RS485, USB, IP" },
+    ],
+    applications: ["Corporate", "Education", "Government", "Religious"],
+    warranty: "3 Years", relatedSlugs: ["tenveo-vhd620a", "tenveo-uv620a", "tenveo-cc600"]
+  },
+  {
+    id: "tenveo-vhd620a", slug: "tenveo-vhd620a",
+    name: "Tenveo VHD620A", brand: "Tenveo", brandSlug: "tenveo",
+    category: "conference-cameras", subcategory: "PTZ Camera",
+    tagline: "20× Optical Zoom HD PTZ Camera — HDMI/USB/SDI/IP",
+    imageUrl: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=800&q=80",
+    imageFallback: "#0EA5E9",
+    description: "Extended-reach PTZ camera with 20× optical zoom and 69.5° wide angle for large auditoriums and lecture halls. H.264/H.265 video encoding, simultaneous HDMI/USB/SDI/IP outputs, ceiling and wall mount support. NDI optional for broadcast-grade IP production.",
+    keyFeatures: [
+      { title: "20× Optical Zoom", desc: "Ideal for large rooms — clearly frame a speaker at 20–30m without quality loss." },
+      { title: "H.264/H.265 Encoding", desc: "Efficient video compression for low-bandwidth IP streaming and recording." },
+      { title: "NDI Optional", desc: "Optional NDI|HX support for integration into professional broadcast IP workflows." },
+      { title: "Reverse Mountable", desc: "Ceiling and wall mount support with reverse mounting for inverted ceiling installation." },
+    ],
+    specs: [
+      { label: "Optical Zoom", value: "20×", highlight: true },
+      { label: "Resolution", value: "1080P Full HD", highlight: true },
+      { label: "Encoding", value: "H.264 / H.265", highlight: true },
+      { label: "Sensor", value: "2.38MP 1/2.8\" CMOS" },
+      { label: "Wide Angle", value: "69.5°" },
+      { label: "Outputs", value: "HDMI, USB, SDI, IP" },
+      { label: "Control", value: "RS232, RS485, USB, IP" },
+    ],
+    applications: ["Education", "Government", "Religious", "Corporate"],
+    warranty: "3 Years", relatedSlugs: ["tenveo-vhd612a", "tenveo-uv620a"]
+  },
+  {
+    id: "tenveo-uv620a", slug: "tenveo-uv620a",
+    name: "Tenveo UV620A", brand: "Tenveo", brandSlug: "tenveo",
+    category: "conference-cameras", subcategory: "4K AI PTZ Camera",
+    tagline: "4K@60fps AI Auto-Tracking 20× PTZ Camera with NDI",
+    badge: "Featured",
+    imageUrl: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=800&q=80",
+    imageFallback: "#0EA5E9",
+    description: "Flagship 4K AI tracking PTZ camera with 8.29MP 1/1.8\" Sony CMOS sensor delivering 4K@60fps on HDMI/USB/IP and 1080P60 on 3G-SDI. AI auto-tracking with Auto Framing, Presenter Tracking and Zone Tracking. NDI|HX2, SRT, ONVIF, RTSP, RTMP support.",
+    keyFeatures: [
+      { title: "4K@60fps High Frame Rate", desc: "Ultra-smooth 4K video at 60fps — eliminates motion blur in fast-paced presentations." },
+      { title: "AI Triple Tracking Modes", desc: "Auto Framing, Presenter Tracking and Zone Tracking — adapts to any presentation style." },
+      { title: "NDI|HX2 + SRT", desc: "Professional IP production protocols for broadcast, streaming and AV-over-IP systems." },
+      { title: "8.29MP Sony CMOS", desc: "Large 1/1.8\" Sony sensor for exceptional low-light performance in any room." },
+      { title: "PoE Powered", desc: "Single CAT cable for power + data — simplifies installation, eliminates power cables." },
+    ],
+    specs: [
+      { label: "Resolution", value: "4K UHD @60fps", highlight: true },
+      { label: "Optical Zoom", value: "20×", highlight: true },
+      { label: "Sensor", value: "8.29MP Sony 1/1.8\"", highlight: true },
+      { label: "SDI Output", value: "1080P60 3G-SDI" },
+      { label: "Protocols", value: "NDI|HX2, SRT, ONVIF, RTSP, RTMP" },
+      { label: "Power", value: "PoE (IEEE 802.3at)" },
+      { label: "AI Tracking", value: "Auto Frame + Presenter + Zone" },
+    ],
+    applications: ["Education", "Government", "Corporate", "Religious"],
+    warranty: "3 Years", relatedSlugs: ["tenveo-vhd620a", "tenveo-vhd612a", "tenveo-kb200pro"]
+  },
+  {
+    id: "tenveo-va612ex", slug: "tenveo-va612ex",
+    name: "Tenveo VA612EX", brand: "Tenveo", brandSlug: "tenveo",
+    category: "video-conferencing", subcategory: "Conference Group Kit",
+    tagline: "4K 12× PTZ + Speakerphone Conference Group Kit",
+    badge: "New",
+    imageUrl: "https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?auto=format&fit=crop&w=800&q=80",
+    imageFallback: "#0EA5E9",
+    description: "Complete conference room group kit: 4K 12× optical zoom PTZ camera with HDMI/USB output plus omnidirectional speakerphone with 9m pickup radius, HUB and all-in-one DP interface. AI tracking built-in. Designed for medium-to-large meeting rooms that need a single-box solution.",
+    keyFeatures: [
+      { title: "Complete Room Kit", desc: "Camera + speakerphone + HUB in one package — ready to deploy in under 30 minutes." },
+      { title: "9m Pickup Radius", desc: "Speakerphone covers large rooms without additional microphone expansion." },
+      { title: "4K 12× AI Tracking", desc: "PTZ camera with AI presenter tracking automatically keeps the speaker in frame." },
+    ],
+    specs: [
+      { label: "Camera", value: "4K 12× Optical Zoom PTZ", highlight: true },
+      { label: "Pickup Radius", value: "9m omnidirectional", highlight: true },
+      { label: "Outputs", value: "HDMI, USB" },
+      { label: "Encoding", value: "H.264, H.265, MJPG" },
+      { label: "Control", value: "VISCA, Pelco-D, Pelco-P" },
+    ],
+    applications: ["Corporate", "Education", "Government"],
+    warranty: "3 Years", relatedSlugs: ["tenveo-vhd612a", "tenveo-m5b"]
+  },
+  {
+    id: "tenveo-m3b", slug: "tenveo-m3b",
+    name: "Tenveo M3B", brand: "Tenveo", brandSlug: "tenveo",
+    category: "conference-audio", subcategory: "Bluetooth Speakerphone",
+    tagline: "USB-C & Bluetooth Speakerphone — 5m Pickup, Up to 5 People",
+    imageUrl: "https://images.unsplash.com/photo-1487611459768-bd414656ea10?auto=format&fit=crop&w=800&q=80",
+    imageFallback: "#0EA5E9",
+    description: "Compact speakerphone with 2 omnidirectional microphones, 5m pickup range for up to 5 people. Connects via USB-C, Bluetooth (with dongle) or 3.5mm. Works with Zoom, Teams, Skype, Google Meet. LED indicators, 6-hour battery, plug-and-play on Windows, Mac, Android and Linux.",
+    keyFeatures: [
+      { title: "3 Connection Options", desc: "USB-C, Bluetooth dongle and 3.5mm jack — works with laptops, phones and tablets." },
+      { title: "5m Coverage", desc: "Covers small to medium meeting rooms up to 20 sqm with 2 omnidirectional mics." },
+      { title: "6-Hour Battery", desc: "Full-day meeting without plugging in — USB-C charging for quick top-up." },
+    ],
+    specs: [
+      { label: "Microphones", value: "2 Omnidirectional", highlight: true },
+      { label: "Pickup Range", value: "5m (up to 5 people)", highlight: true },
+      { label: "Connection", value: "USB-C + Bluetooth + 3.5mm" },
+      { label: "Battery", value: "6 hours" },
+      { label: "Compatibility", value: "Zoom, Teams, WebEx, Google Meet" },
+    ],
+    applications: ["Corporate", "Education"],
+    warranty: "3 Years", relatedSlugs: ["tenveo-m5b", "tenveo-cc600"]
+  },
+  {
+    id: "tenveo-m5b", slug: "tenveo-m5b",
+    name: "Tenveo M5B", brand: "Tenveo", brandSlug: "tenveo",
+    category: "conference-audio", subcategory: "USB Speakerphone",
+    tagline: "4-Mic USB Speakerphone — 6m Pickup, 8000mAh Battery",
+    badge: "Popular",
+    imageUrl: "https://images.unsplash.com/photo-1487611459768-bd414656ea10?auto=format&fit=crop&w=800&q=80",
+    imageFallback: "#0EA5E9",
+    description: "Professional speakerphone with 4 high-fidelity omnidirectional microphones, 360° pickup up to 6m. USB, Bluetooth and 3.5mm connectivity. 8000mAh battery for 27-hour talk time. DSP noise cancellation and echo suppression. Works with all UC platforms on Windows, Mac, Android and Linux.",
+    keyFeatures: [
+      { title: "4 Omnidirectional Mics", desc: "360° pickup at 6m — no one gets cut off, even at the far end of the table." },
+      { title: "27-Hour Talk Time", desc: "8000mAh battery lasts multiple full days of meetings on a single charge." },
+      { title: "Triple Connectivity", desc: "USB, Bluetooth and 3.5mm cover any device — phone, tablet or laptop." },
+    ],
+    specs: [
+      { label: "Microphones", value: "4 Omnidirectional", highlight: true },
+      { label: "Pickup Range", value: "6m", highlight: true },
+      { label: "Battery", value: "8000mAh / 27-hour talk", highlight: true },
+      { label: "Connection", value: "USB + Bluetooth + 3.5mm" },
+      { label: "Compatibility", value: "All UC platforms" },
+    ],
+    applications: ["Corporate", "Education", "Government"],
+    warranty: "3 Years", relatedSlugs: ["tenveo-m3b", "tenveo-cc600", "tenveo-vhd612a"]
+  },
+  {
+    id: "tenveo-kb200pro", slug: "tenveo-kb200pro",
+    name: "Tenveo KB200 Pro", brand: "Tenveo", brandSlug: "tenveo",
+    category: "camera-controllers", subcategory: "PTZ Keyboard Controller",
+    tagline: "Professional PTZ Camera Keyboard Controller — NDI, ONVIF, 5\" LCD",
+    imageUrl: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80",
+    imageFallback: "#0EA5E9",
+    description: "Advanced PTZ controller with 5\" industrial LCD (4-split screen), 4D joystick, ONVIF/NDI/VISCA/PELCO-P/D support, independent IP control, up to 7 quick-select camera buttons and knob-based zoom/speed control. Ideal for live events, broadcasts and large lecture halls.",
+    keyFeatures: [
+      { title: "5\" 4-Split LCD", desc: "Monitor up to 4 camera feeds simultaneously on the built-in screen." },
+      { title: "NDI + ONVIF + VISCA", desc: "Controls all major PTZ camera protocols — single controller for mixed camera systems." },
+      { title: "4D Joystick", desc: "Smooth 4D joystick with variable speed for precise Pan, Tilt, Zoom and Focus." },
+      { title: "7 Camera Quick-Select", desc: "Instant recall of up to 7 cameras — critical for fast-paced live production." },
+    ],
+    specs: [
+      { label: "Display", value: "5\" LCD, 4-split screens", highlight: true },
+      { label: "Protocols", value: "NDI, ONVIF, VISCA, Pelco-P/D", highlight: true },
+      { label: "Camera Buttons", value: "7 quick-select", highlight: true },
+      { label: "Control", value: "4D Joystick + Knob" },
+      { label: "PoE", value: "Supported" },
+      { label: "Presets", value: "255" },
+    ],
+    applications: ["Education", "Religious", "Corporate", "Government"],
+    warranty: "3 Years", relatedSlugs: ["tenveo-uv620a", "tenveo-vhd620a"]
+  },
+  {
+    id: "tenveo-nv20a-ai", slug: "tenveo-nv20a-ai",
+    name: "Tenveo NV20A AI", brand: "Tenveo", brandSlug: "tenveo",
+    category: "conference-cameras", subcategory: "AI Tracking PTZ Camera",
+    tagline: "20× AI Auto-Tracking PTZ — USB/SDI/HDMI/IP with PoE",
+    imageUrl: "https://images.unsplash.com/photo-1502920514313-52581002a659?auto=format&fit=crop&w=800&q=80",
+    imageFallback: "#0EA5E9",
+    description: "Full-featured 1080P AI tracking PTZ with 20× optical zoom, 65° wide angle and PoE power supply. Quad output: USB 3.0, SDI, HDMI and IP. RTSP, RTMP, ONVIF, GB28181 streaming protocols. VISCA over IP control. Perfect for mid-budget AI tracking installations.",
+    keyFeatures: [
+      { title: "AI Auto-Tracking", desc: "Tracks presenters automatically — reduces need for a dedicated camera operator." },
+      { title: "PoE Powered", desc: "Single CAT cable runs power and data — no power supply or separate cable required." },
+      { title: "Quad Output", desc: "USB, SDI, HDMI and IP simultaneously — connect to any recording or switching system." },
+    ],
+    specs: [
+      { label: "Optical Zoom", value: "20×", highlight: true },
+      { label: "Resolution", value: "1080P Full HD" },
+      { label: "AI Tracking", value: "Yes", highlight: true },
+      { label: "Outputs", value: "USB + SDI + HDMI + IP" },
+      { label: "Power", value: "PoE 802.3af" },
+      { label: "Protocols", value: "RTSP, RTMP, ONVIF, GB28181" },
+    ],
+    applications: ["Education", "Corporate", "Government"],
+    warranty: "3 Years", relatedSlugs: ["tenveo-vhd620a", "tenveo-uv620a"]
+  },
+  {
+    id: "tenveo-x60ndi", slug: "tenveo-x60ndi",
+    name: "Tenveo X60 NDI", brand: "Tenveo", brandSlug: "tenveo",
+    category: "conference-cameras", subcategory: "NDI PTZ Camera",
+    tagline: "4K NDI PTZ Camera — 8.29MP Sony Sensor, AI Tracking",
+    badge: "New",
+    imageUrl: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=800&q=80",
+    imageFallback: "#0EA5E9",
+    description: "Professional-grade NDI PTZ camera with 8.29MP Sony 1/2.8\" CMOS sensor, AI tracking, 20× optical zoom and 51.9° wide angle. Full NDI|HX2, RTSP, RTMP, VISCA over IP, SRT protocol support. HDMI, USB 3.0, SDI, IP output with 3.5mm audio I/O.",
+    keyFeatures: [
+      { title: "8.29MP Sony Sensor", desc: "Large 1/2.8\" Sony CMOS delivers exceptional image quality even in low light." },
+      { title: "Full NDI|HX2", desc: "Native NDI for seamless integration with NewTek/vMix/OBS production environments." },
+      { title: "AI Presenter Tracking", desc: "Automatically follows and frames the presenter throughout a session." },
+    ],
+    specs: [
+      { label: "Sensor", value: "8.29MP Sony 1/2.8\"", highlight: true },
+      { label: "NDI", value: "NDI|HX2 Full Support", highlight: true },
+      { label: "Optical Zoom", value: "20×" },
+      { label: "Outputs", value: "HDMI + USB3.0 + SDI + IP" },
+      { label: "Audio", value: "Line In/Out 3.5mm" },
+      { label: "Protocols", value: "NDI|HX2, SRT, RTSP, RTMP, ONVIF" },
+    ],
+    applications: ["Corporate", "Education", "Religious"],
+    warranty: "3 Years", relatedSlugs: ["tenveo-uv620a", "tenveo-vhd620a"]
+  },
 ]
 
-// ─── JBL PROFESSIONAL ───────────────────────────────────────────────────────
-const JBL: Product[] = [
-  { id:"jbl-control25", slug:"jbl-control25", name:"JBL Control 25-1", brand:"JBL", brandSlug:"jbl", category:"speakers", subcategory:"Surface-Mount Install Speaker", tagline:"Professional 2-Way Surface-Mount — Indoor & Outdoor", badge:"Best Seller", imageUrl:"https://www.jblpro.com/ProductAttachments/CONTROL25-1_WH-14.jpg", imageFallback:"#F39C12", description:"The world\'s most popular professional installed speaker. 5.25\" woofer and 0.75\" soft-dome tweeter with IP44-rated enclosure providing 120°×120° wide dispersion — indoor and outdoor installations worldwide.", keyFeatures:[{title:"IP44 Weather Rating",desc:"UV-resistant sealed enclosure handles outdoor areas and coastal humidity."},{title:"120°×120° Coverage",desc:"Wide symmetrical dispersion provides even coverage without hot spots."},{title:"Transformer-Ready",desc:"Optional 70V/100V transformer tap for long-run distributed PA systems."},{title:"Rotatable Grille",desc:"Rotates 90° for landscape or portrait orientation."}], specs:[{label:"Woofer",value:"5.25\" (133mm)",highlight:true},{label:"Power Handling (AES)",value:"150W AES, 600W Peak",highlight:true},{label:"Sensitivity (1W/1m)",value:"91 dB",highlight:true},{label:"Frequency Response",value:"65Hz – 20kHz (-6dB)"},{label:"Coverage",value:"120° × 120°"},{label:"Max SPL",value:"113 dB"},{label:"Weather Rating",value:"IP44"}], applications:["Hotel","Corporate","Education","Religious","Transportation"], warranty:"2 Years", relatedSlugs:["jbl-control14ct","jbl-cbt50la"] },
-  { id:"jbl-control14ct", slug:"jbl-control14ct", name:"JBL Control 14C/T", brand:"JBL", brandSlug:"jbl", category:"ceiling-speakers", subcategory:"Ceiling Install Speaker", tagline:"4\" Commercial Ceiling Speaker with 70V Transformer", badge:"Popular", imageUrl:"https://www.jblpro.com/ProductAttachments/Control14CT-14.jpg", imageFallback:"#F39C12", description:"Versatile 4\" ceiling speaker with pre-installed multi-tap 70V/100V transformer, paintable grille, and adjustable HF EQ. Go-to choice for hotels, retail, offices, and multi-zone PA installations.", keyFeatures:[{title:"Pre-Installed Transformer",desc:"Factory-installed multi-tap transformer with 70V/100V selection — no external box."},{title:"Adjustable HF EQ",desc:"Front-accessible HF adjustment compensates for bright or absorptive room acoustics."},{title:"Magnetic Grille",desc:"Snap-on magnetic grille removable without tools for tap changes."}], specs:[{label:"Driver",value:"4\" (100mm) Full Range",highlight:true},{label:"Power Taps (70V)",value:"15W / 7.5W / 3.75W",highlight:true},{label:"Sensitivity (1W/1m)",value:"88 dB",highlight:true},{label:"Frequency Response",value:"90Hz – 20kHz"},{label:"Max SPL",value:"100 dB"},{label:"Cut-out Diameter",value:"127mm"}], applications:["Hotel","Corporate","Education","Transportation","Hospital"], warranty:"2 Years", relatedSlugs:["jbl-control25","jbl-cbt50la"] },
-  { id:"jbl-prx915", slug:"jbl-prx915", name:"JBL PRX915", brand:"JBL", brandSlug:"jbl", category:"pa-systems", subcategory:"Powered PA Speaker", tagline:"2,000W 15\" Powered Two-Way PA Speaker", badge:"Featured", imageUrl:"https://www.jblpro.com/ProductAttachments/PRX915-14.jpg", imageFallback:"#F39C12", description:"2,000W peak Crown-amplified PA speaker with DSP onboard. Bluetooth control via JBL Pro Connect app. Ideal for events, corporate productions, worship, and live performances across Nepal.", keyFeatures:[{title:"2,000W Crown Amplifier",desc:"Crown amplification delivers 2,000W peak — same technology as JBL touring arrays."},{title:"Bluetooth DSP Control",desc:"Full EQ, delay, and crossover via the free JBL Pro Connect app."},{title:"136 dB Max SPL",desc:"Fills large venues with clean, powerful PA audio."}], specs:[{label:"Peak Power",value:"2,000W",highlight:true},{label:"Woofer",value:"15\" JBL",highlight:true},{label:"Max SPL",value:"136 dB",highlight:true},{label:"Frequency Response",value:"50Hz – 20kHz (-6dB)"},{label:"Coverage (H × V)",value:"90° × 50°"},{label:"Weight",value:"19.8kg"}], applications:["Corporate","Hotel","Religious","Stadium","Education"], warranty:"2 Years", relatedSlugs:["jbl-control25","jbl-cbt50la"] },
-  { id:"jbl-cbt50la", slug:"jbl-cbt50la", name:"JBL CBT 50LA", brand:"JBL", brandSlug:"jbl", category:"column-speakers", subcategory:"Constant Beamwidth Column", tagline:"CBT Technology — Constant Coverage Across Frequency", badge:"Featured", imageUrl:"https://www.jblpro.com/ProductAttachments/CBT50LA-1-14.jpg", imageFallback:"#F39C12", description:"Patented Constant Beamwidth Technology keeps vertical coverage angle constant at 25° from 500Hz to 16kHz — essential for reverberant venues like churches, halls, and transit stations. IP53 rated for covered outdoor use.", keyFeatures:[{title:"Constant Beamwidth Technology",desc:"Patented CBT maintains 25° vertical coverage from 500Hz–16kHz — unprecedented uniformity."},{title:"16 × 2.5\" Array",desc:"16 neodymium drivers deliver 115 dB max SPL with low distortion."},{title:"IP53 All-Weather",desc:"Weather protection for covered outdoor installations."}], specs:[{label:"Drivers",value:"16 × 2.5\" Neodymium",highlight:true},{label:"Vertical Coverage (CBT)",value:"25° (constant, 500Hz–16kHz)",highlight:true},{label:"Horizontal Coverage",value:"120°",highlight:true},{label:"Max SPL",value:"115 dB"},{label:"Power Taps (70V)",value:"60W / 30W"},{label:"Weather Rating",value:"IP53"},{label:"Dimensions",value:"152 × 770 × 130mm"}], applications:["Religious","Transportation","Education","Corporate","Government"], warranty:"2 Years", relatedSlugs:["jbl-control25","jbl-prx915"] },
+// ─── FOCUS (GZFocus Smart Podiums) ───────────────────────────────────────────
+const FOCUS: Product[] = [
+  {
+    id: "focus-st100", slug: "focus-st100",
+    name: "Focus Smart Podium ST100", brand: "Focus", brandSlug: "focus",
+    category: "smart-podiums", subcategory: "Premium Smart Podium",
+    tagline: "Electric Height-Adjustable Smart Podium with 23.8\" Touch Screen",
+    badge: "Best Seller",
+    imageUrl: "https://img03.71360.com/w3/2vzk06/20240810/dd6c822824ff9e40be609268bf53cdbc.jpg",
+    imageFallback: "#1E40AF",
+    description: "The ST100 is a premium all-in-one smart podium crafted from solid Sapele wood with electric height adjustment (200mm lift range). Integrates a 23.8\" touch screen, 18.5\" advertising screen, OPS computer (Intel i5/i7, 16GB, 512GB SSD), dual gooseneck microphones and magnetic timer.",
+    keyFeatures: [
+      { title: "Electric Height Adjustment", desc: "200mm motorized lift range — accommodates speakers of all heights at the push of a button." },
+      { title: "23.8\" Fully Bonded Touch Screen", desc: "10-point touch, fully bonded for anti-glare clarity — control presentations directly from the podium." },
+      { title: "18.5\" Advertising Screen", desc: "Rear-facing acrylic advertising display for branding or session information." },
+      { title: "OPS Computer Built-in", desc: "Intel i5/i7-11th Gen, 16GB DDR4, 512GB SSD, Windows 10 — fully self-contained computing." },
+      { title: "Dual Gooseneck Microphones", desc: "Two 60cm professional gooseneck mics ensure clear voice capture at any podium position." },
+      { title: "Sapele Wood Construction", desc: "Pure handmade solid wood carving — elegant enough for parliament halls and boardrooms." },
+    ],
+    specs: [
+      { label: "Touch Screen", value: "23.8\", 10-point, Fully Bonded", highlight: true },
+      { label: "Advertising Screen", value: "18.5\" Rear Display", highlight: true },
+      { label: "Computer", value: "Intel i5/i7-11, 16GB, 512GB SSD", highlight: true },
+      { label: "Height Adjustment", value: "Electric, 200mm range" },
+      { label: "Microphones", value: "2× 60cm Gooseneck" },
+      { label: "Interfaces", value: "USB×2, HDMI×1, Power Socket×1" },
+      { label: "Material", value: "Sapele Wood + Aluminum + Steel" },
+      { label: "Color", value: "Chinese Red & Black" },
+      { label: "Size (Folded)", value: "750×620×1110mm" },
+      { label: "Power", value: "110–240V 50–60Hz" },
+    ],
+    applications: ["Government", "Education", "Religious", "Corporate"],
+    warranty: "1 Year", relatedSlugs: ["focus-st200", "focus-st400", "focus-fk535n"]
+  },
+  {
+    id: "focus-st200", slug: "focus-st200",
+    name: "Focus Smart Podium ST200", brand: "Focus", brandSlug: "focus",
+    category: "smart-podiums", subcategory: "Premium Smart Podium",
+    tagline: "Smart Podium with 33\" Advertising Screen & Wireless Charging",
+    badge: "Featured",
+    imageUrl: "https://img03.71360.com/w3/2vzk06/20240810/7616046b3e0a35d57be45893ed46105e.jpg",
+    imageFallback: "#1E40AF",
+    description: "Upgraded ST200 features a 21.5\" touch screen plus a large 33\" built-in advertising screen, wireless phone charging module, dual 65cm gooseneck mics, mini keyboard and aluminum volume knob. Same OPS computer as ST100. Solid Sapele wood in walnut and black finish.",
+    keyFeatures: [
+      { title: "33\" Built-in Advertising Screen", desc: "Large rear display dominates the room — perfect for branding in government halls and universities." },
+      { title: "Wireless Phone Charging", desc: "Built-in Qi wireless charging module keeps the speaker's phone topped up at the podium." },
+      { title: "21.5\" Touch Screen", desc: "10-point touch for controlling presentations, media and podium functions." },
+      { title: "Mini Keyboard + Volume Knob", desc: "Aluminum volume adjustment knob and built-in mini keyboard for intuitive podium control." },
+    ],
+    specs: [
+      { label: "Touch Screen", value: "21.5\", 10-point, Fully Bonded", highlight: true },
+      { label: "Advertising Screen", value: "33\" Built-in", highlight: true },
+      { label: "Wireless Charging", value: "Built-in Qi module", highlight: true },
+      { label: "Computer", value: "Intel i5/i7-11, 16GB, 512GB SSD" },
+      { label: "Height Adjustment", value: "Electric, 200mm" },
+      { label: "Microphones", value: "2× 65cm Gooseneck" },
+      { label: "Material", value: "Sapele Wood + Aluminum" },
+      { label: "Color", value: "Walnut & Black" },
+      { label: "Size (Folded)", value: "750×680×1000mm" },
+    ],
+    applications: ["Government", "Education", "Corporate", "Religious"],
+    warranty: "1 Year", relatedSlugs: ["focus-st100", "focus-st400"]
+  },
+  {
+    id: "focus-st400", slug: "focus-st400",
+    name: "Focus Smart Podium ST400", brand: "Focus", brandSlug: "focus",
+    category: "smart-podiums", subcategory: "Premium Smart Podium",
+    tagline: "Full-Featured Smart Podium with Dual Touch Screens",
+    imageUrl: "https://images.unsplash.com/photo-1431540015161-0bf868a2d407?auto=format&fit=crop&w=800&q=80",
+    imageFallback: "#1E40AF",
+    description: "ST400 is Focus's flagship podium with dual interactive touch screens, advanced AV integration and premium Sapele wood construction. Designed for parliament halls, large auditoriums and flagship university lecture theatres where nothing less than the best will do.",
+    keyFeatures: [
+      { title: "Dual Interactive Displays", desc: "Two touch screens give the presenter simultaneous access to content and system controls." },
+      { title: "Full AV Integration", desc: "Integrates with room AV systems — control projectors, screens and audio from the podium." },
+      { title: "Premium Craftsmanship", desc: "Hand-carved Sapele wood — a statement piece for high-visibility environments." },
+    ],
+    specs: [
+      { label: "Screens", value: "Dual Touch Displays", highlight: true },
+      { label: "Computer", value: "Intel i7-11, 16GB, 512GB SSD", highlight: true },
+      { label: "Height Adjustment", value: "Electric, 200mm" },
+      { label: "Microphones", value: "2× Professional Gooseneck" },
+      { label: "Material", value: "Premium Sapele Wood" },
+      { label: "Power", value: "110–240V 50–60Hz" },
+    ],
+    applications: ["Government", "Education", "Religious"],
+    warranty: "1 Year", relatedSlugs: ["focus-st100", "focus-st200", "focus-fk535n"]
+  },
+  {
+    id: "focus-fk535n", slug: "focus-fk535n",
+    name: "Focus Smart Podium FK535N 2.0", brand: "Focus", brandSlug: "focus",
+    category: "smart-podiums", subcategory: "Compact Smart Podium",
+    tagline: "Compact Smart Podium with Integrated AV & Touch Control",
+    badge: "Popular",
+    imageUrl: "https://images.unsplash.com/photo-1431540015161-0bf868a2d407?auto=format&fit=crop&w=800&q=80",
+    imageFallback: "#1E40AF",
+    description: "Compact and cost-effective smart podium integrating touch screen, OPS computer and microphone in a slimmer profile. Ideal for schools, churches and training rooms where space is limited but full smart podium capability is needed.",
+    keyFeatures: [
+      { title: "Compact Footprint", desc: "Slimmer profile than the ST series — fits smaller stages and platform areas." },
+      { title: "Touch Screen Control", desc: "Full touch screen for presentation control and system management." },
+      { title: "OPS Computer", desc: "Intel-based OPS module with Windows — pre-installed and ready to use." },
+    ],
+    specs: [
+      { label: "Form Factor", value: "Compact Smart Podium", highlight: true },
+      { label: "Computer", value: "OPS Intel (i5 or i7)", highlight: true },
+      { label: "Microphone", value: "Gooseneck Professional" },
+      { label: "Material", value: "Aluminum + Wood" },
+      { label: "Power", value: "110–240V" },
+    ],
+    applications: ["Education", "Religious", "Corporate"],
+    warranty: "1 Year", relatedSlugs: ["focus-st100", "focus-fk500n"]
+  },
+  {
+    id: "focus-fk500n", slug: "focus-fk500n",
+    name: "Focus Smart Podium FK500N", brand: "Focus", brandSlug: "focus",
+    category: "smart-podiums", subcategory: "Compact Smart Podium",
+    tagline: "Entry Smart Podium with Touch Screen & Built-in Microphone",
+    imageUrl: "https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=800&q=80",
+    imageFallback: "#1E40AF",
+    description: "Entry-level smart podium offering core functionality — touch screen, OPS computer and professional microphone — at the most accessible price point. Suitable for training rooms, conference halls and worship spaces that are upgrading from traditional lecterns.",
+    keyFeatures: [
+      { title: "Essential Smart Features", desc: "Touch screen + computer + mic in one unit — everything needed for modern presentations." },
+      { title: "Easy Installation", desc: "Arrives fully assembled and pre-configured — plug in and start presenting." },
+      { title: "Durable Construction", desc: "Aluminum and wood construction built for years of daily use." },
+    ],
+    specs: [
+      { label: "Form Factor", value: "Entry Smart Podium", highlight: true },
+      { label: "Computer", value: "OPS Intel i5" },
+      { label: "Microphone", value: "Built-in Professional" },
+      { label: "Material", value: "Aluminum + Wood" },
+    ],
+    applications: ["Education", "Religious", "Corporate", "Government"],
+    warranty: "1 Year", relatedSlugs: ["focus-fk535n", "focus-st100"]
+  },
+  {
+    id: "focus-st600", slug: "focus-st600",
+    name: "Focus Smart Podium ST600", brand: "Focus", brandSlug: "focus",
+    category: "smart-podiums", subcategory: "Premium Smart Podium",
+    tagline: "Premium Conference Podium with Advanced AV Integration",
+    badge: "New",
+    imageUrl: "https://images.unsplash.com/photo-1431540015161-0bf868a2d407?auto=format&fit=crop&w=800&q=80",
+    imageFallback: "#1E40AF",
+    description: "The ST600 combines the ST series' premium craftsmanship with enhanced AV control capability — larger display, extended height adjustment and comprehensive connectivity for integration with room control systems. Perfect for VIP boardrooms and high-profile government facilities.",
+    keyFeatures: [
+      { title: "Extended AV Control", desc: "Integrates with room automation systems for one-touch control of all AV equipment." },
+      { title: "Premium Materials", desc: "Sapele wood with enhanced metalwork for the most demanding environments." },
+      { title: "Large Touch Display", desc: "Bigger interactive screen for comfortable presentation control." },
+    ],
+    specs: [
+      { label: "Form Factor", value: "Premium Smart Podium", highlight: true },
+      { label: "Computer", value: "Intel i7, 16GB, 512GB SSD", highlight: true },
+      { label: "Height Adjustment", value: "Electric, Extended range" },
+      { label: "Material", value: "Premium Sapele Wood" },
+    ],
+    applications: ["Government", "Corporate", "Education"],
+    warranty: "1 Year", relatedSlugs: ["focus-st400", "focus-st200"]
+  },
 ]
 
-// ─── BOSE PROFESSIONAL ──────────────────────────────────────────────────────
-const BOSE: Product[] = [
-  { id:"bose-ds16se", slug:"bose-ds16se", name:"Bose FreeSpace DS 16SE", brand:"Bose", brandSlug:"bose", category:"speakers", subcategory:"Surface-Mount Install Speaker", tagline:"Premium Small-Format Surface-Mount Speaker", badge:"Best Seller", imageUrl:"https://assets.bose.com/content/dam/Bose_DAM/Web/pro/global/products/loudspeakers/ds_16se/01_DS16SE_WH_Hero.jpg", imageFallback:"#2C3E50", description:"Compact surface-mount speaker with Bose EMB driver technology delivering 160° wide dispersion, IP55 weather rating, and 70V/100V compatibility — deployed in luxury hotels, retail flagships, and executive boardrooms worldwide.", keyFeatures:[{title:"EMB Driver Technology",desc:"Bose Electro-Mechanical Blocking driver delivers better bass extension and efficiency."},{title:"160° Wide Dispersion",desc:"Exceptionally wide coverage — fewer speakers needed to cover the same area."},{title:"IP55 All-Weather",desc:"IP55 ingress protection for covered outdoor and semi-outdoor installations."}], specs:[{label:"Power Handling",value:"16W RMS",highlight:true},{label:"Coverage Angle",value:"160°",highlight:true},{label:"Frequency Response",value:"100Hz – 17kHz",highlight:true},{label:"Sensitivity (1W/1m)",value:"86 dB"},{label:"Max SPL",value:"98 dB"},{label:"Weather Rating",value:"IP55"},{label:"Dimensions",value:"120 × 120 × 87mm"}], applications:["Hotel","Corporate","Transportation","Hospital","Education"], warranty:"2 Years", relatedSlugs:["bose-ds40se","bose-pm8500n"] },
-  { id:"bose-ds40se", slug:"bose-ds40se", name:"Bose FreeSpace DS 40SE", brand:"Bose", brandSlug:"bose", category:"ceiling-speakers", subcategory:"Flush-Mount Ceiling Speaker", tagline:"40W Ceiling Speaker with Superior Speech Intelligibility", badge:"Popular", imageUrl:"https://assets.bose.com/content/dam/Bose_DAM/Web/pro/global/products/loudspeakers/ds_40se/01_DS40SE_WH_Hero.jpg", imageFallback:"#2C3E50", description:"Professional flush-mount ceiling speaker tuned for maximum STI (speech transmission index) scores in difficult acoustic conditions. 6.5\" woofer with vented enclosure extends bass to 80Hz without a backcan.", keyFeatures:[{title:"High STI Speech Clarity",desc:"Tuned for maximum speech intelligibility — critical for paging in reverberant spaces."},{title:"Vented Enclosure",desc:"Bass port extends low-frequency response to 80Hz without requiring a backcan."},{title:"Multi-Tap Transformer",desc:"40W/20W/10W taps for 70V/100V systems."}], specs:[{label:"Power Handling",value:"40W RMS",highlight:true},{label:"Frequency Response",value:"80Hz – 18kHz",highlight:true},{label:"Sensitivity (1W/1m)",value:"90 dB",highlight:true},{label:"Max SPL",value:"106 dB"},{label:"Woofer",value:"6.5\" (165mm)"},{label:"Cut-out Diameter",value:"175mm"}], applications:["Hotel","Corporate","Hospital","Transportation","Education"], warranty:"2 Years", relatedSlugs:["bose-ds16se","bose-pm8500n"] },
-  { id:"bose-pm8500n", slug:"bose-pm8500n", name:"Bose PowerMatch PM8500N", brand:"Bose", brandSlug:"bose", category:"amplifiers", subcategory:"Networked Power Amplifier", tagline:"8-Channel 500W Networked Amplifier with ControlSpace", badge:"Featured", imageUrl:"https://assets.bose.com/content/dam/Bose_DAM/Web/pro/global/products/amplifiers/powermatch/PM8500N_Hero.jpg", imageFallback:"#2C3E50", description:"8-channel 500W/channel network-enabled power amplifier with onboard DSP and Dante 64×64 audio networking. Designed for large-scale commercial installations — shopping malls, airports, convention centres, luxury hotels.", keyFeatures:[{title:"8 × 500W Independent Channels",desc:"4,000W total output with dedicated DSP processing per channel."},{title:"Dante Audio Networking",desc:"64 × 64 audio channels over standard IP — eliminates analogue snake cables."},{title:"Fault Monitoring",desc:"Real-time temperature, clip, and speaker line fault monitoring with SNMP alerts."},{title:"Class D Efficiency",desc:">80% efficiency — dramatically reducing heat output and operating costs."}], specs:[{label:"Channels",value:"8 Independent",highlight:true},{label:"Power per Channel",value:"500W @ 4Ω / 250W @ 8Ω",highlight:true},{label:"Network Audio",value:"Dante 64 × 64",highlight:true},{label:"THD+N",value:"<0.1%"},{label:"SNR",value:">112 dB"},{label:"Rack Space",value:"2U 19\""}], applications:["Hotel","Transportation","Corporate","Government","Stadium"], warranty:"2 Years", relatedSlugs:["bose-ds16se","bose-ds40se"] },
-]
-
-// ─── YAMAHA PRO AUDIO ────────────────────────────────────────────────────────
-const YAMAHA: Product[] = [
-  { id:"yamaha-tf1", slug:"yamaha-tf1", name:"Yamaha TF1", brand:"Yamaha", brandSlug:"yamaha", category:"mixers", subcategory:"Digital Mixing Console", tagline:"16-Fader Digital Mixer with TouchFlow Operation", badge:"Best Seller", imageUrl:"https://usa.yamaha.com/files/69682_00_hero.jpg", imageFallback:"#27AE60", description:"16-input digital mixing console featuring TouchFlow Operation — 7\" multi-touch display combined with physical faders. Yamaha D-PRE preamps, Dan Dugan auto-mixer, Wi-Fi control via StageMix iPad app. The benchmark for live sound in Nepal.", keyFeatures:[{title:"TouchFlow Operation",desc:"7\" multi-touch display — swipe and tap to navigate any parameter instantly."},{title:"Yamaha D-PRE Preamps",desc:"16 onboard D-PRE preamps — same technology as Yamaha\'s flagship consoles."},{title:"StageMix iPad Control",desc:"Full remote mix control from an iPad via Wi-Fi."},{title:"Dan Dugan Auto-Mixer",desc:"Built-in automixer for multi-microphone discussions — prevents feedback."}], specs:[{label:"Input Channels",value:"16 Mono + 1 Stereo",highlight:true},{label:"Mix Buses",value:"10 Mix + 3 Matrix + 1 Stereo",highlight:true},{label:"D-PRE Preamps",value:"16 onboard",highlight:true},{label:"EQ",value:"4-band parametric per channel"},{label:"Effects",value:"6 dedicated SPX effects"},{label:"Display",value:"7\" Capacitive Touch"},{label:"Weight",value:"16.5kg"}], applications:["Corporate","Religious","Education","Hotel","Stadium"], warranty:"2 Years", relatedSlugs:["yamaha-tf3","yamaha-mg10xu"] },
-  { id:"yamaha-tf3", slug:"yamaha-tf3", name:"Yamaha TF3", brand:"Yamaha", brandSlug:"yamaha", category:"mixers", subcategory:"Digital Mixing Console", tagline:"24-Fader Mid-Size Digital Console for Events", badge:"Featured", imageUrl:"https://usa.yamaha.com/files/69683_00_hero.jpg", imageFallback:"#27AE60", description:"24 input channels with 25-fader surface, built-in 16-track USB recorder, and Centralogic workflow. For large worship services, festivals, and corporate events requiring professional live mixing.", keyFeatures:[{title:"24 Input Channels",desc:"24 mono + 3 stereo inputs with full D-PRE preamp complement."},{title:"Built-in 16-Track Recorder",desc:"Record 16 channels simultaneously to USB storage."},{title:"Centralogic Section",desc:"8-fader bank allows instant access to any channel without bank switching."}], specs:[{label:"Input Channels",value:"24 Mono + 3 Stereo",highlight:true},{label:"Mix Buses",value:"20 Mix + 4 Matrix",highlight:true},{label:"D-PRE Preamps",value:"24 onboard",highlight:true},{label:"USB Recorder",value:"16-track simultaneous"},{label:"Weight",value:"21.5kg"}], applications:["Religious","Corporate","Education","Hotel","Stadium"], warranty:"2 Years", relatedSlugs:["yamaha-tf1","yamaha-xmv4140"] },
-  { id:"yamaha-mg10xu", slug:"yamaha-mg10xu", name:"Yamaha MG10XU", brand:"Yamaha", brandSlug:"yamaha", category:"mixers", subcategory:"Compact Analogue Mixer", tagline:"10-Channel Mixer with USB and Effects", badge:"Popular", imageUrl:"https://usa.yamaha.com/files/67382_00_hero.jpg", imageFallback:"#27AE60", description:"10-channel compact analogue mixer with 24 onboard SPX effects, 2-channel USB audio interface, and Yamaha D-PRE preamps. Perfect for small boardrooms, classrooms, and live streaming setups.", keyFeatures:[{title:"4 D-PRE Inputs",desc:"Class-A discrete D-PRE preamps on first 4 channels."},{title:"2-Channel USB Interface",desc:"Built-in 2-in/2-out USB — record directly to laptop without extra hardware."},{title:"SPX Digital Effects",desc:"24 SPX onboard effects including hall reverb, chorus, and delay."}], specs:[{label:"Mono Inputs",value:"4 (XLR/TRS combo)",highlight:true},{label:"USB",value:"2 in / 2 out",highlight:true},{label:"D-PRE Preamps",value:"4 channels"},{label:"Effects",value:"24 SPX programs"},{label:"Weight",value:"2.2kg"}], applications:["Corporate","Education","Religious","Hotel"], warranty:"1 Year", relatedSlugs:["yamaha-tf1","yamaha-xmv4140"] },
-  { id:"yamaha-xmv4140", slug:"yamaha-xmv4140", name:"Yamaha XMV4140", brand:"Yamaha", brandSlug:"yamaha", category:"amplifiers", subcategory:"Install Power Amplifier", tagline:"4-Channel 140W Install Amplifier — Auto-Standby", badge:"Featured", imageUrl:"https://usa.yamaha.com/files/88049_00_hero.jpg", imageFallback:"#27AE60", description:"4-channel 140W/channel install amplifier with auto-standby — powers on when audio is detected, off after silence. Per-channel 5-band PEQ, delay up to 600ms, and optional Dante network card.", keyFeatures:[{title:"Auto-Standby Circuit",desc:"Auto power-on on signal; auto power-off after 10 minutes of silence. <0.5W standby."},{title:"Dante Network Ready",desc:"Optional Dante card slot for direct IP audio input."},{title:"EQ / Delay per Channel",desc:"5-band PEQ and delay (up to 600ms) per output channel."}], specs:[{label:"Channels",value:"4",highlight:true},{label:"Output Power (8Ω)",value:"140W × 4",highlight:true},{label:"Output Power (4Ω)",value:"220W × 4",highlight:true},{label:"THD+N",value:"<0.08%"},{label:"SNR",value:">110 dB"},{label:"Rack Space",value:"1U 19\""}], applications:["Hotel","Corporate","Education","Transportation","Hospital"], warranty:"2 Years", relatedSlugs:["yamaha-tf1","yamaha-mg10xu"] },
-]
-
-// ─── TOA ────────────────────────────────────────────────────────────────────
-const TOA: Product[] = [
-  { id:"toa-vx2000", slug:"toa-vx2000", name:"TOA VX-2000 Series", brand:"TOA", brandSlug:"toa", category:"voice-evacuation", subcategory:"EN54 Voice Alarm System", tagline:"EN54-16 Certified Voice Evacuation — Life Safety Standard", badge:"Featured", imageUrl:"https://www.toa.com.sg/wp-content/uploads/products/vx2000/VX-2000.jpg", imageFallback:"#8E44AD", description:"Fully EN54-16 certified voice alarm and emergency evacuation system with automatic fault monitoring, zone-by-zone alarm broadcasting, and fire panel integration. Deployed in airports, hospitals, shopping malls, and high-rise buildings.", keyFeatures:[{title:"EN54-16 Certified",desc:"Full voice alarm certification — legally required in commercial buildings exceeding 18m height."},{title:"Dual Amplifier Redundancy",desc:"Automatic standby switchover within 500ms of primary amplifier failure."},{title:"Fire Panel Integration",desc:"Direct integration with Notifier, Honeywell, Bosch, and other fire alarm systems."},{title:"100 Pre-Recorded Messages",desc:"Multi-language evacuation messages for instant zone-triggered playback."}], specs:[{label:"Certification",value:"EN54-16 (Voice Alarm)",highlight:true},{label:"Amplifier Power",value:"250W / 500W / 1,000W",highlight:true},{label:"Zones",value:"Up to 240 zones",highlight:true},{label:"Standby Switchover",value:"<500ms"},{label:"Standards",value:"EN54-16, BS5839, ISO 7240"}], applications:["Transportation","Hospital","Hotel","Government","Education"], warranty:"3 Years", relatedSlugs:["toa-n8000","toa-sc630"] },
-  { id:"toa-n8000", slug:"toa-n8000", name:"TOA N-8000 Series", brand:"TOA", brandSlug:"toa", category:"ip-network-audio", subcategory:"IP Network PA System", tagline:"Enterprise IP Network PA — Infinite Zone Scalability", badge:"Best Seller", imageUrl:"https://www.toa.com.sg/wp-content/uploads/products/n8000/N-8000.jpg", imageFallback:"#8E44AD", description:"TOA\'s flagship enterprise IP network PA system. Server-client architecture scales from 10 to 10,000+ endpoints. N+1 server redundancy, LDAP integration, AES-256 encryption, and REST API for BMS integration.", keyFeatures:[{title:"Unlimited Zone Scalability",desc:"Scales from 10 to 10,000+ endpoints across a single IP network."},{title:"N+1 Server Redundancy",desc:"Hot-standby server takes over in under 1 second on primary failure."},{title:"AES-256 Encryption",desc:"All audio and control traffic encrypted — prevents unauthorised broadcasts."},{title:"SIP Phone Paging",desc:"Page from any SIP softphone — no dedicated paging station required."}], specs:[{label:"Architecture",value:"Server-Client IP",highlight:true},{label:"Max Endpoints",value:"Unlimited (scalable)",highlight:true},{label:"Audio Quality",value:"48kHz / 24-bit",highlight:true},{label:"Encryption",value:"AES-256"},{label:"Integration",value:"REST API, SIP, SNMP, LDAP"},{label:"Latency",value:"<100ms end-to-end"}], applications:["Transportation","Government","Education","Hospital","Hotel"], warranty:"3 Years", relatedSlugs:["toa-vx2000","toa-sc630"] },
-  { id:"toa-sc630", slug:"toa-sc630", name:"TOA SC-630", brand:"TOA", brandSlug:"toa", category:"column-speakers", subcategory:"Column Speaker", tagline:"60W Weather-Resistant Column Speaker", badge:"Popular", imageUrl:"https://www.toa.com.sg/wp-content/uploads/products/sc630/SC-630.jpg", imageFallback:"#8E44AD", description:"60W column speaker with 6 × 4\" drivers providing precise vertical control (30°) and wide horizontal coverage (100°). IP55 rated for outdoor transit areas, station platforms, and covered walkways.", keyFeatures:[{title:"6 × 4\" Column Array",desc:"Excellent horizontal spread with controlled vertical throw for outdoor areas."},{title:"IP55 Weather Protection",desc:"Waterproof, dust-proof, UV-stable polycarbonate cabinet."},{title:"High Intelligibility Design",desc:"TOA acoustic engineering optimises STI-PA scores exceeding 0.6 in outdoor environments."}], specs:[{label:"Drivers",value:"6 × 4\" Full Range",highlight:true},{label:"Power (100V)",value:"60W / 30W / 15W",highlight:true},{label:"Weather Rating",value:"IP55",highlight:true},{label:"Sensitivity (1W/1m)",value:"96 dB"},{label:"Max SPL",value:"113 dB"},{label:"Horizontal Coverage",value:"100°"},{label:"Vertical Coverage",value:"30°"},{label:"Dimensions",value:"96 × 680 × 93mm"}], applications:["Transportation","Government","Education","Hospital"], warranty:"3 Years", relatedSlugs:["toa-vx2000","toa-n8000"] },
-  { id:"toa-a2060", slug:"toa-a2060", name:"TOA A-2060", brand:"TOA", brandSlug:"toa", category:"amplifiers", subcategory:"Zone Mixer Amplifier", tagline:"60W Compact Mixer Amplifier — Industry Standard", badge:"Best Seller", imageUrl:"https://www.toa.com.sg/wp-content/uploads/products/a2060/A-2060.jpg", imageFallback:"#8E44AD", description:"Compact 60W mixer amplifier — the backbone of commercial PA systems across Asia for over 30 years. 4 audio inputs, priority MIC, 100V line output. Half-rack width chassis fits two side-by-side in a standard 19\" rack.", keyFeatures:[{title:"4 Audio Inputs",desc:"2 MIC, 1 AUX, 1 MIC/LINE with priority — covers all sources for a small installation."},{title:"Priority Microphone",desc:"Dedicated priority PA mic input overrides all other sources for announcements."},{title:"30-Year Proven Reliability",desc:"TOA A-Series amplifiers have been the Asian commercial PA standard since the 1980s."}], specs:[{label:"Output Power",value:"60W RMS",highlight:true},{label:"Output",value:"100V / 70V / 4Ω / 8Ω",highlight:true},{label:"Inputs",value:"2 × MIC + 1 × AUX",highlight:true},{label:"THD",value:"<1%"},{label:"Chassis",value:"1/2 rack width, 1U"},{label:"Dimensions",value:"210 × 44 × 265mm"}], applications:["Education","Religious","Corporate","Hotel"], warranty:"2 Years", relatedSlugs:["toa-sc630","toa-n8000"] },
-]
-
-// ─── SENNHEISER ──────────────────────────────────────────────────────────────
-const SENNHEISER: Product[] = [
-  { id:"sennheiser-ew100g4935s", slug:"sennheiser-ew100g4935s", name:"Sennheiser EW 100 G4-935-S", brand:"Sennheiser", brandSlug:"sennheiser", category:"wireless-systems", subcategory:"Wireless Vocal System", tagline:"Entry Pro Wireless with Cardioid Dynamic Capsule", badge:"Best Seller", imageUrl:"https://assets.sennheiser.com/img/17854/x1_desktop_sennheiser-ew-100-g4-935-s.jpg", imageFallback:"#2980B9", description:"Sennheiser\'s best-selling entry-professional wireless vocal system. 935 capsule with 88MHz bandwidth, Easy Pairing, 20 channel-bank presets, and 8-hour battery. Default choice for Nepal\'s corporate events, worship teams, and live productions.", keyFeatures:[{title:"935 Dynamic Capsule",desc:"Proven cardioid dynamic capsule with warm, powerful vocals and natural feedback rejection."},{title:"88MHz Scanning Bandwidth",desc:"Up to 12 simultaneously compatible channels in any given country band."},{title:"Easy Set Sync",desc:"One-button IR sync between transmitter and receiver in under 5 seconds."},{title:"8 Hours Runtime",desc:"Standard AA batteries power a full event day without battery change."}], specs:[{label:"RF Band",value:"Band B (626–668 MHz)",highlight:true},{label:"Bandwidth",value:"88 MHz",highlight:true},{label:"Battery Life",value:"Up to 8h (2×AA)",highlight:true},{label:"Simultaneous Channels",value:"Up to 12"},{label:"Dynamic Range",value:">110 dB"},{label:"Latency",value:"3.6ms"}], applications:["Corporate","Religious","Education","Hotel","Stadium"], warranty:"2 Years", relatedSlugs:["sennheiser-xsw2835","sennheiser-ew300g4"] },
-  { id:"sennheiser-ew300g4", slug:"sennheiser-ew300g4", name:"Sennheiser EW 300 G4", brand:"Sennheiser", brandSlug:"sennheiser", category:"wireless-systems", subcategory:"Wireless Professional System", tagline:"Mid-Pro Wireless — Higher RF Output, Lower Noise Floor", badge:"Featured", imageUrl:"https://assets.sennheiser.com/img/23754/x1_desktop_sennheiser-ew-300-g4.jpg", imageFallback:"#2980B9", description:"30mW RF power, better receiver noise floor, and optional Dante-ready receiver. Bridges entry EW 100 and broadcast EW 500. Choice of 935, 945, or 865 capsule heads. Ideal for large conferences requiring high RF reliability.", keyFeatures:[{title:"30mW RF Power",desc:"Double the RF output of EW 100 G4 — longer range and better obstruction penetration."},{title:"Capsule Choice",desc:"935 (dynamic), 945 (supercardioid), or 865 (condenser) capsule heads."},{title:"Dante Option",desc:"Optional Dante module in receiver for direct IP audio integration."}], specs:[{label:"RF Output Power",value:"10mW / 30mW",highlight:true},{label:"Bandwidth",value:"88 MHz",highlight:true},{label:"Battery Life",value:"Up to 8h",highlight:true},{label:"Dynamic Range",value:">110 dB"},{label:"Simultaneous Channels",value:"Up to 12"}], applications:["Corporate","Government","Religious","Education","Hotel"], warranty:"2 Years", relatedSlugs:["sennheiser-ew100g4935s","sennheiser-xsw2835"] },
-  { id:"sennheiser-xsw2835", slug:"sennheiser-xsw2835", name:"Sennheiser XSW 2-835", brand:"Sennheiser", brandSlug:"sennheiser", category:"wireless-systems", subcategory:"Compact Wireless System", tagline:"Compact Wireless Vocal — Plug In and Perform", badge:"Popular", imageUrl:"https://assets.sennheiser.com/img/21988/x1_desktop_sennheiser-xsw-2-835.jpg", imageFallback:"#2980B9", description:"Sennheiser\'s most accessible professional wireless system with genuine e835 capsule. Auto-scan frequency selection, 1-touch pairing — ready in under 30 seconds. Ideal for schools, houses of worship, and community events.", keyFeatures:[{title:"e835 Capsule Head",desc:"Genuine Sennheiser e835 cardioid dynamic capsule used by touring artists worldwide."},{title:"1-Touch Pairing",desc:"Automatic frequency scan and sync — ready in under 30 seconds from unboxing."},{title:"Dual Outputs",desc:"XLR balanced + 6.3mm unbalanced — connects to any mixer, PA, or amplifier."}], specs:[{label:"Capsule",value:"e835 Cardioid Dynamic",highlight:true},{label:"Battery Life",value:"7h (2×AA)",highlight:true},{label:"Range",value:"Up to 80m",highlight:true},{label:"Outputs",value:"XLR balanced + 6.3mm unbalanced"},{label:"THD",value:"<0.9%"}], applications:["Education","Religious","Corporate","Hotel"], warranty:"2 Years", relatedSlugs:["sennheiser-ew100g4935s","sennheiser-ew300g4"] },
-  { id:"sennheiser-tcc2", slug:"sennheiser-tcc2", name:"Sennheiser TeamConnect Ceiling 2", brand:"Sennheiser", brandSlug:"sennheiser", category:"conference-systems", subcategory:"Ceiling Array Microphone", tagline:"Invisible Conference Microphone — Zero Table Footprint", badge:"New", imageUrl:"https://assets.sennheiser.com/img/26014/x1_desktop_sennheiser-teamconnect-ceiling-2.jpg", imageFallback:"#2980B9", description:"Ceiling-mounted 28-element MEMS beamforming array for 360° conference pickup. Covers rooms up to 100m². Certified for Microsoft Teams, Zoom, Cisco Webex, Google Meet. Dante + USB + Analog outputs over PoE+.", keyFeatures:[{title:"28-Element MEMS Array",desc:"Adaptive beams automatically track active speakers — no fixed aiming required."},{title:"Covers 100m² Room",desc:"Single unit replaces 4–8 tabletop microphones in a large boardroom."},{title:"UC Platform Certified",desc:"Certified by Microsoft, Zoom, Cisco, and Google for enterprise conferencing."},{title:"AEC + Noise Reduction",desc:"Sennheiser\'s own AEC and noise suppression eliminates all remote echo."}], specs:[{label:"Capsule Elements",value:"28 MEMS microphones",highlight:true},{label:"Room Coverage",value:"Up to 100m²",highlight:true},{label:"Audio Output",value:"Dante + USB + Analog",highlight:true},{label:"UC Certification",value:"Teams, Zoom, Webex, Meet"},{label:"Power",value:"PoE+ (802.3at)"},{label:"Diameter",value:"338mm"}], applications:["Corporate","Government","Education"], warranty:"2 Years", relatedSlugs:["shure-mxa310","itc-ts0680"] },
-]
-
-// ─── Master Catalog ──────────────────────────────────────────────────────────
+// ─── Exports ─────────────────────────────────────────────────────────────────
 export const ALL_PRODUCTS: Product[] = [
-  ...DSPPA, ...ITC, ...SHURE, ...JBL, ...BOSE, ...YAMAHA, ...TOA, ...SENNHEISER,
+  ...DSPPA, ...INFOBIT, ...TENVEO, ...FOCUS,
 ]
 
 export const PRODUCTS_BY_BRAND: Record<string, Product[]> = {
-  dsppa: DSPPA, itc: ITC, shure: SHURE, jbl: JBL,
-  bose: BOSE, yamaha: YAMAHA, toa: TOA, sennheiser: SENNHEISER,
+  dsppa: DSPPA,
+  infobit: INFOBIT,
+  tenveo: TENVEO,
+  focus: FOCUS,
 }
 
 export const PRODUCTS_BY_CATEGORY: Record<string, Product[]> = ALL_PRODUCTS.reduce(
-  (acc, p) => { if (!acc[p.category]) acc[p.category] = []; acc[p.category].push(p); return acc },
-  {} as Record<string, Product[]>,
+  (acc, p) => { acc[p.category] = [...(acc[p.category] || []), p]; return acc }, {} as Record<string, Product[]>
 )
 
-export function getProduct(slug: string): Product | undefined {
+export function getProductBySlug(slug: string): Product | undefined {
   return ALL_PRODUCTS.find(p => p.slug === slug)
 }
 
