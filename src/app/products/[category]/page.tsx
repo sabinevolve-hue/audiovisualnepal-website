@@ -8,7 +8,7 @@ import { PRODUCTS_BY_CATEGORY } from '@/data/products'
 
 export const revalidate = 3600
 
-const BRAND_COLORS_MAP: Record<string,string> = { dsppa:'#0071E3', itc:'#E74C3C', shure:'#CC0000', jbl:'#F39C12', bose:'#1D2D44', yamaha:'#27AE60', toa:'#7B2FBE', sennheiser:'#1A6EBF' }
+const BRAND_COLORS_MAP: Record<string,string> = { dsppa:'#DC2626', infobit:'#6366F1', tenveo:'#0891B2', focus:'#1E40AF' }
 
 type Props = { params: Promise<{ category: string }>; searchParams: Promise<{ page?: string; search?: string }> }
 

@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description: 'AudioVisual Nepal has been delivering professional audio visual solutions across Nepal since 2010.',
   openGraph: {
     title: 'About AudioVisual Nepal — Nepal's Leading AV Company',
-    description: 'Since 2010, AudioVisual Nepal has delivered 500+ professional AV installations across 77 districts. Authorised distributor for DSPPA, Shure, JBL, Bose, Yamaha, TOA and Sennheiser.',
+    description: 'Since 2010, AudioVisual Nepal has delivered 500+ professional AV installations across 77 districts. Authorised distributor for DSPPA, InfoBit, Tenveo and Focus.',
     url: 'https://audiovisualnepal.com/about',
     siteName: 'AudioVisual Nepal',
     images: [{ url: '/og-image.svg', width: 1200, height: 630, alt: 'AudioVisual Nepal' }],

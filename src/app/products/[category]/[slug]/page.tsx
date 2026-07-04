@@ -24,13 +24,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 const BRAND_COLORS: Record<string, string> = {
-  dsppa: '#0071E3', itc: '#E74C3C', shure: '#CC0000', jbl: '#F39C12',
-  bose: '#1D2D44', yamaha: '#27AE60', toa: '#7B2FBE', sennheiser: '#1A6EBF',
+  dsppa: '#DC2626', infobit: '#6366F1', tenveo: '#0891B2', focus: '#1E40AF',
+  
 }
 
 const BRAND_LOGOS: Record<string, string> = {
-  dsppa: 'DSPPA', itc: 'ITC', shure: 'SHURE', jbl: 'JBL',
-  bose: 'BOSE', yamaha: 'YAMAHA', toa: 'TOA', sennheiser: 'Sennheiser',
+  dsppa: 'DSPPA', infobit: 'InfoBit', tenveo: 'Tenveo', focus: 'Focus',
+  
 }
 
 export default async function ProductDetailPage({ params }: Props) {
