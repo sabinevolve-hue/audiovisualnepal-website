@@ -191,7 +191,7 @@ export default async function ProductCategoryPage({ params, searchParams }: Prop
                     <Link key={product.id} href={`/products/${product.category}/${product.slug}`} style={{ textDecoration: 'none', display: 'block', background: '#FFFFFF', border: '1px solid rgba(11,30,61,0.09)', borderRadius: 16, overflow: 'hidden', transition: 'all 0.2s' }}>
                       {/* Image */}
                       <div style={{ aspectRatio: '16/9', background: '#F8FAFC', position: 'relative', overflow: 'hidden' }}>
-                        <ProductImg src={product.imageUrl} alt={product.name} fill style={{ objectFit: 'cover' }} />
+                        <ProductImg src={product.imageUrl} alt={product.name} objectFit="cover" />
                         {/* Brand badge */}
                         <div style={{ position: 'absolute', top: 10, left: 10 }}>
                           <span style={{ background: bc, color: '#FFFFFF', fontSize: 10, fontWeight: 700, padding: '3px 8px', borderRadius: 6, letterSpacing: '0.05em' }}>{product.brand}</span>

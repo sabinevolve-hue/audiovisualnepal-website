@@ -5,32 +5,45 @@ import { useState } from 'react'
 interface ProductImgProps {
   src: string
   alt: string
+  objectFit?: 'contain' | 'cover'
+  /** @deprecated pass objectFit instead */
   style?: React.CSSProperties
   className?: string
   brandColor?: string
   brandName?: string
+  /** ignored – kept for API compat */
+  fill?: boolean
 }
 
 /**
- * Shows a branded placeholder immediately; swaps to the real image only if
- * it loads successfully. This avoids any flash of broken-image browser UI,
- * since brand CDNs often block hotlink requests from external domains.
+ * Renders the real product image immediately.
+ * Falls back to a branded placeholder only when src is empty or the image
+ * fails to load (404, CORS block, hotlink protection, etc.).
  */
 export function ProductImg({
   src,
   alt,
+  objectFit = 'contain',
   style,
   className,
   brandColor = '#0071E3',
   brandName = '',
 }: ProductImgProps) {
-  const [imageLoaded, setImageLoaded] = useState(false)
+  const [failed, setFailed] = useState(false)
   const label = brandName || alt.slice(0, 14)
+  const fit = (style?.objectFit as 'contain' | 'cover' | undefined) ?? objectFit
 
-  return (
-    <div style={{ position: 'relative', width: '100%', height: '100%' }}>
-      {/* Branded placeholder — always visible until image loads */}
+  const altLow = alt.toLowerCase()
+  const isCamera = altLow.includes('camera') || altLow.includes('ptz') || altLow.includes('cam')
+  const isSpeaker = altLow.includes('speaker') || altLow.includes('mic') || altLow.includes('audio') || altLow.includes('speakerphone')
+  const isController = altLow.includes('controller') || altLow.includes('keyboard') || altLow.includes('joystick')
+  const isDisplay = altLow.includes('wall') || altLow.includes('display') || altLow.includes('switch') || altLow.includes('matrix') || altLow.includes('iwall') || altLow.includes('iswitch')
+  const isPA = altLow.includes('amplifier') || altLow.includes('amp') || altLow.includes('pava') || altLow.includes('evacuation') || altLow.includes('horn') || altLow.includes('column')
+
+  if (!src || failed) {
+    return (
       <div
+        className={className}
         style={{
           position: 'absolute',
           inset: 0,
@@ -38,46 +51,89 @@ export function ProductImg({
           flexDirection: 'column',
           alignItems: 'center',
           justifyContent: 'center',
-          gap: 12,
-          opacity: imageLoaded ? 0 : 1,
-          transition: 'opacity 0.3s ease',
-          pointerEvents: 'none',
+          gap: 16,
         }}
       >
-        {/* Speaker icon */}
-        <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
-          <rect width="60" height="60" rx="16" fill={`${brandColor}20`} />
-          <path d="M21 26L30 20v20l-9-6H15v-8h6z" fill={brandColor} opacity="0.6" />
-          <path d="M34 24c2.8 2.2 4.5 5 4.5 6.5S36.8 35 34 37" stroke={brandColor} strokeWidth="2.5" strokeLinecap="round" fill="none" opacity="0.75" />
-          <path d="M37 20c5 3.5 7.5 6.8 7.5 10.5S42 37 37 40" stroke={brandColor} strokeWidth="2" strokeLinecap="round" fill="none" opacity="0.45" />
+        <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+          <rect width="80" height="80" rx="20" fill={`${brandColor}15`} />
+          {isCamera ? (
+            <>
+              <rect x="18" y="28" width="44" height="30" rx="6" stroke={brandColor} strokeWidth="2.5" fill="none" opacity="0.7"/>
+              <circle cx="40" cy="43" r="8" stroke={brandColor} strokeWidth="2.5" fill="none" opacity="0.7"/>
+              <circle cx="40" cy="43" r="3" fill={brandColor} opacity="0.5"/>
+              <rect x="30" y="22" width="14" height="6" rx="3" stroke={brandColor} strokeWidth="2" fill="none" opacity="0.5"/>
+            </>
+          ) : isSpeaker ? (
+            <>
+              <rect x="28" y="20" width="24" height="30" rx="12" stroke={brandColor} strokeWidth="2.5" fill="none" opacity="0.7"/>
+              <path d="M20 42c0 11 8.954 20 20 20s20-8.954 20-20" stroke={brandColor} strokeWidth="2.5" strokeLinecap="round" fill="none" opacity="0.7"/>
+              <line x1="40" y1="62" x2="40" y2="68" stroke={brandColor} strokeWidth="2.5" strokeLinecap="round" opacity="0.7"/>
+              <line x1="32" y1="68" x2="48" y2="68" stroke={brandColor} strokeWidth="2.5" strokeLinecap="round" opacity="0.7"/>
+            </>
+          ) : isController ? (
+            <>
+              <rect x="12" y="28" width="56" height="28" rx="6" stroke={brandColor} strokeWidth="2.5" fill="none" opacity="0.7"/>
+              <circle cx="28" cy="42" r="6" stroke={brandColor} strokeWidth="2" fill="none" opacity="0.6"/>
+              <circle cx="28" cy="42" r="2" fill={brandColor} opacity="0.5"/>
+              <rect x="40" y="36" width="18" height="3" rx="1.5" fill={brandColor} opacity="0.5"/>
+              <rect x="40" y="43" width="14" height="3" rx="1.5" fill={brandColor} opacity="0.5"/>
+            </>
+          ) : isDisplay ? (
+            <>
+              <rect x="12" y="20" width="56" height="36" rx="4" stroke={brandColor} strokeWidth="2.5" fill="none" opacity="0.7"/>
+              <rect x="18" y="26" width="20" height="16" rx="2" fill={brandColor} opacity="0.15"/>
+              <rect x="42" y="26" width="20" height="7" rx="2" fill={brandColor} opacity="0.15"/>
+              <rect x="42" y="35" width="20" height="7" rx="2" fill={brandColor} opacity="0.15"/>
+              <rect x="28" y="56" width="24" height="4" rx="2" fill={brandColor} opacity="0.4"/>
+            </>
+          ) : isPA ? (
+            <>
+              <rect x="10" y="24" width="60" height="14" rx="3" stroke={brandColor} strokeWidth="2.5" fill="none" opacity="0.7"/>
+              <rect x="10" y="42" width="60" height="14" rx="3" stroke={brandColor} strokeWidth="2.5" fill="none" opacity="0.7"/>
+              <circle cx="55" cy="31" r="4" stroke={brandColor} strokeWidth="1.5" fill="none" opacity="0.6"/>
+              <circle cx="55" cy="49" r="4" stroke={brandColor} strokeWidth="1.5" fill="none" opacity="0.6"/>
+              <rect x="16" y="28" width="28" height="6" rx="1.5" fill={brandColor} opacity="0.2"/>
+              <rect x="16" y="46" width="20" height="6" rx="1.5" fill={brandColor} opacity="0.2"/>
+            </>
+          ) : (
+            <>
+              <rect x="12" y="26" width="56" height="32" rx="5" stroke={brandColor} strokeWidth="2.5" fill="none" opacity="0.7"/>
+              <circle cx="40" cy="42" r="9" stroke={brandColor} strokeWidth="2" fill="none" opacity="0.5"/>
+              <circle cx="40" cy="42" r="4" fill={brandColor} opacity="0.35"/>
+              <circle cx="56" cy="30" r="3" fill={brandColor} opacity="0.5"/>
+            </>
+          )}
         </svg>
         <span style={{
           fontFamily: 'Manrope, system-ui, sans-serif',
-          fontWeight: 900,
-          fontSize: 15,
+          fontWeight: 800,
+          fontSize: 12,
           letterSpacing: '0.06em',
           color: brandColor,
+          opacity: 0.75,
+          textTransform: 'uppercase',
         }}>
           {label}
         </span>
       </div>
+    )
+  }
 
-      {/* Real image — fades in if it loads */}
-      {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img
-        src={src}
-        alt={alt}
-        style={{
-          ...style,
-          position: 'absolute',
-          inset: 0,
-          opacity: imageLoaded ? 1 : 0,
-          transition: 'opacity 0.3s ease',
-        }}
-        className={className}
-        onLoad={() => setImageLoaded(true)}
-        onError={() => { /* do nothing — placeholder stays visible */ }}
-      />
-    </div>
+  return (
+    // eslint-disable-next-line @next/next/no-img-element
+    <img
+      src={src}
+      alt={alt}
+      className={className}
+      style={{
+        position: 'absolute',
+        inset: 0,
+        width: '100%',
+        height: '100%',
+        objectFit: fit,
+        padding: fit === 'contain' ? '20px' : '0px',
+      }}
+      onError={() => setFailed(true)}
+    />
   )
 }

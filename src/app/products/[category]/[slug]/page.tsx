@@ -83,7 +83,7 @@ export default async function ProductDetailPage({ params }: Props) {
                   {product.badge}
                 </div>
               )}
-              <ProductImg src={product.imageUrl} alt={product.name} style={{ width: '72%', height: '72%', objectFit: 'contain' }} brandColor={brandColor} brandName={BRAND_LOGOS[product.brandSlug] || product.brand} />
+              <ProductImg src={product.imageUrl} alt={product.name} objectFit="contain" brandColor={brandColor} brandName={BRAND_LOGOS[product.brandSlug] || product.brand} />
             </div>
 
             {/* Key spec chips */}
@@ -434,7 +434,7 @@ export default async function ProductDetailPage({ params }: Props) {
                       <div style={{ background: '#FFFFFF', borderRadius: 16, overflow: 'hidden', border: '1px solid rgba(11,30,61,0.08)', height: '100%', transition: 'border-color 0.2s' }}>
                         <div style={{ height: 160, background: `linear-gradient(135deg, ${rColor}12, #F8FAFC)`, display: 'flex', alignItems: 'center', justifyContent: 'center', position: 'relative' }}>
                           <div style={{ position: 'absolute', top: 10, right: 12, fontSize: 10, fontWeight: 800, color: rColor, letterSpacing: '0.06em', fontFamily: 'Manrope, sans-serif' }}>{BRAND_LOGOS[rp.brandSlug] || rp.brand}</div>
-                          <ProductImg src={rp.imageUrl} alt={rp.name} style={{ width: '60%', height: '80%', objectFit: 'contain' }} brandColor={rColor} brandName={BRAND_LOGOS[rp.brandSlug] || rp.brand} />
+                          <ProductImg src={rp.imageUrl} alt={rp.name} objectFit="contain" brandColor={rColor} brandName={BRAND_LOGOS[rp.brandSlug] || rp.brand} />
                         </div>
                         <div style={{ padding: '16px 18px' }}>
                           <div style={{ fontSize: 10, fontWeight: 700, color: rColor, textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: 6 }}>{rp.subcategory}</div>
