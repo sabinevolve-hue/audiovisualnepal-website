@@ -41,29 +41,36 @@ function AnimatedStat({ value, suffix, label, color }: { value: number; suffix: 
       }}>
         {displayed.toLocaleString()}{suffix}
       </div>
-      <div style={{ fontSize: 13, color: '#64748B', marginTop: 10, fontWeight: 600, letterSpacing: '0.04em', textTransform: 'uppercase' }}>{label}</div>
+      <div style={{ fontSize: 13, color: '#94A3B8', marginTop: 10, fontWeight: 600, letterSpacing: '0.04em', textTransform: 'uppercase' }}>{label}</div>
     </div>
   )
 }
 
 const STATS = [
-  { value: 500, suffix: '+', label: 'Projects Delivered',  color: '#2563EB' },
-  { value: 14,  suffix: '+', label: 'Product Categories', color: '#7C3AED' },
-  { value: 77,  suffix: '',  label: 'Districts Covered',  color: '#059669' },
-  { value: 100, suffix: '%', label: 'Genuine Products',   color: '#D97706' },
+  { value: 500, suffix: '+', label: 'Projects Delivered',  color: '#60A5FA' },
+  { value: 14,  suffix: '+', label: 'Product Categories', color: '#A78BFA' },
+  { value: 77,  suffix: '',  label: 'Districts Covered',  color: '#34D399' },
+  { value: 100, suffix: '%', label: 'Genuine Products',   color: '#FBBF24' },
 ]
+
+const EQ_BARS = [12, 26, 18, 34, 22, 40, 15, 30, 20, 38, 16, 28, 24, 42, 14, 32, 19, 36, 21, 27, 13, 33, 17, 29, 23, 39, 15, 31, 18, 25]
 
 export default function StatsSection() {
   return (
     <section style={{
-      background: '#F8FAFC',
-      borderTop: '1px solid rgba(11,30,61,0.06)',
-      borderBottom: '1px solid rgba(11,30,61,0.06)',
+      background: '#0D1220',
+      position: 'relative',
+      overflow: 'hidden',
     }}>
+      <svg aria-hidden="true" style={{ position: 'absolute', bottom: 0, left: 0, width: '100%', height: 48, opacity: 0.07 }} preserveAspectRatio="none" viewBox="0 0 600 48">
+        {EQ_BARS.map((h, i) => (
+          <rect key={i} x={i * 20 + 6} y={48 - h} width={8} height={h} rx={2} fill="#60A5FA" />
+        ))}
+      </svg>
       <div className="container-site">
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)' }}>
           {STATS.map((s, i) => (
-            <div key={i} style={{ borderRight: i < STATS.length - 1 ? '1px solid rgba(11,30,61,0.07)' : 'none' }}>
+            <div key={i} style={{ borderRight: i < STATS.length - 1 ? '1px solid rgba(255,255,255,0.08)' : 'none' }}>
               <AnimatedStat value={s.value} suffix={s.suffix} label={s.label} color={s.color} />
             </div>
           ))}

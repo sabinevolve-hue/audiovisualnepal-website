@@ -2,6 +2,7 @@
 
 import Link from 'next/link'
 import { ArrowRight, MessageCircle } from 'lucide-react'
+import SignalDot from '@/components/ui/SignalDot'
 import { SITE } from '@/lib/constants'
 
 export default function CTASection() {
@@ -38,7 +39,7 @@ export default function CTASection() {
             rel="noopener noreferrer"
             style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '14px 30px', borderRadius: 999, background: 'rgba(255,255,255,0.08)', color: '#FFFFFF', fontSize: 15, fontWeight: 600, textDecoration: 'none', border: '1.5px solid rgba(255,255,255,0.18)', letterSpacing: '-0.01em' }}
           >
-            <MessageCircle size={14} /> WhatsApp Us
+            <SignalDot color="#34D399" size={7} /> <MessageCircle size={14} /> WhatsApp Us
           </Link>
         </div>
 
