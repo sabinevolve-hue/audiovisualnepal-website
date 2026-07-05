@@ -37,6 +37,7 @@ const jsonLd = {
     addressLocality: 'Kathmandu',
     addressCountry: 'NP',
   },
+  areaServed: { '@type': 'Country', name: 'Nepal' },
   sameAs: Object.values(SITE.social),
   description: DEFAULT_SEO.description,
 }
@@ -58,19 +59,19 @@ export default async function HomePage() {
       id: 1, slug: 'choosing-ceiling-speaker-commercial-installation',
       title: { rendered: 'How to Choose the Right Ceiling Speaker for Your Commercial Installation' },
       excerpt: { rendered: 'Driver size, power taps, sensitivity ratings and backcan requirements explained — what every AV specifier needs to know before selecting a ceiling speaker.' },
-      _embedded: { 'wp:featuredmedia': [{ source_url: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=600&q=80' }] }
+      _embedded: { 'wp:featuredmedia': [{ source_url: '/images/heroes/education-hero.webp' }] }
     },
     {
       id: 2, slug: 'ip-network-audio-vs-traditional-pa',
       title: { rendered: 'IP Network Audio vs Traditional 100V Line PA — Which Is Right for Your Project?' },
       excerpt: { rendered: 'A practical comparison of IP-based PA systems and traditional 100V line distributed audio — cost, scalability, zone control and future-proofing compared.' },
-      _embedded: { 'wp:featuredmedia': [{ source_url: 'https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&w=600&q=80' }] }
+      _embedded: { 'wp:featuredmedia': [{ source_url: '/images/heroes/transportation-hero.webp' }] }
     },
     {
       id: 3, slug: 'conference-room-microphone-guide-nepal',
       title: { rendered: 'Conference Room Microphone Guide for Nepal — Wired, Wireless & Ceiling Array' },
       excerpt: { rendered: 'From gooseneck delegate units to wireless 6GHz systems and ceiling MEMS arrays — a complete guide to choosing the right conference microphone for your room size and use case.' },
-      _embedded: { 'wp:featuredmedia': [{ source_url: 'https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?auto=format&fit=crop&w=600&q=80' }] }
+      _embedded: { 'wp:featuredmedia': [{ source_url: '/images/heroes/corporate-hero.webp' }] }
     },
   ]
 

@@ -26,7 +26,7 @@ export default function HeroSection() {
       <div className="absolute inset-0">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=1920&q=60"
+          src="/images/heroes/smart-meeting-rooms-hero.webp"
           alt=""
           style={{ width: '100%', height: '100%', objectFit: 'cover', opacity: 0.06 }}
         />

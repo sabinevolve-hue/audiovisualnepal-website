@@ -21,12 +21,12 @@ export const metadata: Metadata = {
 }
 
 const fallbackProjects = [
-  { title: 'Grand Hyatt Conference Centre', location: 'Kathmandu', type: 'Hotel',      img: 'https://images.unsplash.com/photo-1577962917302-cd874c4e31d2?w=600&q=80' },
-  { title: 'Nepal Telecom HQ Boardrooms',   location: 'Kathmandu', type: 'Corporate',  img: 'https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&q=80' },
-  { title: 'Tribhuvan University Auditorium', location: 'Kirtipur', type: 'Education', img: 'https://images.unsplash.com/photo-1535016120720-40c646be5580?w=600&q=80' },
-  { title: 'Bir Hospital ICU PA System',    location: 'Kathmandu', type: 'Healthcare', img: 'https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=600&q=80' },
-  { title: 'Pokhara Convention Centre',     location: 'Pokhara',   type: 'Events',     img: 'https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?w=600&q=80' },
-  { title: 'Nepal Army HQ PA System',       location: 'Kathmandu', type: 'Government', img: 'https://images.unsplash.com/photo-1551818255-e6e10975bc17?w=600&q=80' },
+  { title: 'Grand Hyatt Conference Centre', location: 'Kathmandu', type: 'Hotel',      img: '/images/heroes/hotels-hero.webp' },
+  { title: 'Nepal Telecom HQ Boardrooms',   location: 'Kathmandu', type: 'Corporate',  img: '/images/heroes/corporate-hero.webp' },
+  { title: 'Tribhuvan University Auditorium', location: 'Kirtipur', type: 'Education', img: '/images/heroes/education-hero.webp' },
+  { title: 'Bir Hospital ICU PA System',    location: 'Kathmandu', type: 'Healthcare', img: '/images/heroes/hospitals-hero.webp' },
+  { title: 'Pokhara Convention Centre',     location: 'Pokhara',   type: 'Events',     img: '/images/heroes/hotels-hero.webp' },
+  { title: 'Nepal Army HQ PA System',       location: 'Kathmandu', type: 'Government', img: '/images/heroes/government-hero.webp' },
 ]
 
 export default async function ProjectsPage({ searchParams }: { searchParams: Promise<{ industry?: string; page?: string }> }) {

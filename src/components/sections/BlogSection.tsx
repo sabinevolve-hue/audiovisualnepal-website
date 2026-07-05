@@ -13,9 +13,9 @@ interface BlogPost {
 interface BlogSectionProps { posts: BlogPost[] }
 
 const FALLBACK_THUMBS = [
-  'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=600&q=80',
-  'https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&w=600&q=80',
-  'https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?auto=format&fit=crop&w=600&q=80',
+  '/images/heroes/education-hero.webp',
+  '/images/heroes/transportation-hero.webp',
+  '/images/heroes/corporate-hero.webp',
 ]
 
 export default function BlogSection({ posts }: BlogSectionProps) {

@@ -8,37 +8,37 @@ const projects = [
     type: 'Government', name: 'Federal Parliament Complex',
     desc: '250-seat conference hall with simultaneous interpretation, voting system & HD video.',
     location: 'Kathmandu', color: '#2563EB',
-    photo: 'https://images.unsplash.com/photo-1577495508048-b635879837f1?auto=format&fit=crop&w=800&q=80',
+    photo: '/images/heroes/government-hero.webp',
   },
   {
     type: 'Education', name: 'Tribhuvan University Campus',
     desc: 'IP-based campus PA system covering 40+ buildings with centralised management.',
     location: 'Kirtipur', color: '#059669',
-    photo: 'https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&w=800&q=80',
+    photo: '/images/heroes/education-hero.webp',
   },
   {
     type: 'Hospitality', name: '5-Star Hotel Ballroom',
     desc: '18-zone background music, line array for ballroom events & conference room AV.',
     location: 'Kathmandu', color: '#D97706',
-    photo: 'https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=800&q=80',
+    photo: '/images/heroes/hotels-hero.webp',
   },
   {
     type: 'Corporate', name: 'Smart Meeting Rooms — Leapfrog HQ',
     desc: 'Wireless conferencing, ceiling mic arrays & Dante-networked audio distribution.',
     location: 'Kathmandu', color: '#7C3AED',
-    photo: 'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80',
+    photo: '/images/heroes/smart-meeting-rooms-hero.webp',
   },
   {
     type: 'Healthcare', name: 'Grande International Hospital',
     desc: 'Multi-zone IP paging integrated with nurse call, covering 12 floors.',
     location: 'Kathmandu', color: '#DC2626',
-    photo: 'https://images.unsplash.com/photo-1586773860418-d37222d8fce3?auto=format&fit=crop&w=800&q=80',
+    photo: '/images/heroes/hospitals-hero.webp',
   },
   {
     type: 'Religious', name: 'Central Mosque, Kathmandu',
     desc: 'High-intelligibility PA with outdoor horn speakers for 5,000+ congregation.',
     location: 'Kathmandu', color: '#0891B2',
-    photo: 'https://images.unsplash.com/photo-1542816417-0983c9c9ad53?auto=format&fit=crop&w=800&q=80',
+    photo: '/images/heroes/religious-hero.webp',
   },
 ]
 
@@ -84,6 +84,7 @@ export default function FeaturedProjects() {
                     {p.type}
                   </span>
                 </div>
+                <div style={{ position: 'absolute', bottom: 8, right: 10, fontSize: 9, fontWeight: 600, letterSpacing: '0.06em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.85)', background: 'rgba(11,30,61,0.45)', padding: '2px 7px', borderRadius: 999 }}>Illustration</div>
                 <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, height: 2, background: p.color }} />
               </div>
               {/* Content */}
