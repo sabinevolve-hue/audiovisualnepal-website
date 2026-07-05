@@ -19,6 +19,9 @@ jobs:
         with:
           node-version: '20'
 
+      - name: Install ffmpeg
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+
       - name: Install sharp
         run: npm install sharp --no-save
 

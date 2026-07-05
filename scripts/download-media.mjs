@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 /**
  * download-media.mjs — Download AI-generated textures and hero video, optimize, self-host.
+ * v2 — ffmpeg installed explicitly in workflow.
  * Runs in GitHub Actions (needs internet + ffmpeg). Textures -> WebP via sharp; video -> WebM + MP4 via ffmpeg.
  */
 import { mkdirSync, writeFileSync } from 'fs'
@@ -39,6 +40,7 @@ try {
   if (!res.ok) throw new Error(`HTTP ${res.status}`)
   const raw = resolve('/tmp', 'hero-raw.mp4')
   writeFileSync(raw, Buffer.from(await res.arrayBuffer()))
+  console.log(execSync('ffmpeg -version').toString().split('\n')[0])
   execSync(`ffmpeg -y -i ${raw} -an -vf scale=1280:-2 -c:v libvpx-vp9 -crf 42 -b:v 0 ${resolve(VID_OUT, 'hero-loop.webm')}`, { stdio: 'inherit' })
   execSync(`ffmpeg -y -i ${raw} -an -vf scale=1280:-2 -c:v libx264 -crf 30 -preset slow -movflags +faststart ${resolve(VID_OUT, 'hero-loop.mp4')}`, { stdio: 'inherit' })
   console.log('ok  hero-loop.webm + hero-loop.mp4')
