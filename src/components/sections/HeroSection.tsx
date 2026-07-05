@@ -30,12 +30,12 @@ export default function HeroSection() {
           loop
           playsInline
           poster="/images/heroes/smart-meeting-rooms-hero.webp"
-          style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+          style={{ width: '100%', height: '100%', objectFit: 'cover', opacity: 0.3 }}
         >
           <source src="/videos/hero-loop.webm" type="video/webm" />
           <source src="/videos/hero-loop.mp4" type="video/mp4" />
         </video>
-        <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(8,12,22,0.92) 0%, rgba(8,12,22,0.6) 45%, rgba(8,12,22,0.38) 100%)' }} />
+        <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(8,12,22,0.75) 0%, rgba(8,12,22,0.35) 50%, rgba(8,12,22,0.12) 100%)' }} />
       </div>
 
       {/* Content */}
