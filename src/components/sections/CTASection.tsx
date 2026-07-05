@@ -12,6 +12,7 @@ export default function CTASection() {
       style={{ background: 'linear-gradient(135deg, #0B1E3D 0%, #1E3A6E 50%, #0B1E3D 100%)' }}
     >
       {/* Subtle grid */}
+      <div aria-hidden="true" style={{ position: 'absolute', inset: 0, backgroundImage: 'url(/images/heroes/corporate-hero.webp)', backgroundSize: 'cover', backgroundPosition: 'center', filter: 'grayscale(1)', opacity: 0.09, mixBlendMode: 'luminosity', pointerEvents: 'none' }} />
       <div style={{ position: 'absolute', inset: 0, backgroundImage: 'linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px)', backgroundSize: '48px 48px', maskImage: 'radial-gradient(ellipse 80% 80% at 50% 50%, black, transparent)', WebkitMaskImage: 'radial-gradient(ellipse 80% 80% at 50% 50%, black, transparent)' }} />
       {/* Blue glow */}
       <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%,-50%)', width: 500, height: 500, borderRadius: '50%', background: 'radial-gradient(circle, rgba(37,99,235,0.15) 0%, transparent 70%)', pointerEvents: 'none' }} />

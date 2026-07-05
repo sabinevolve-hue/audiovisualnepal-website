@@ -22,14 +22,19 @@ export default function HeroSection() {
         <div style={{ position: 'absolute', inset: 0, backgroundImage: 'linear-gradient(rgba(11,30,61,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(11,30,61,0.04) 1px, transparent 1px)', backgroundSize: '60px 60px', maskImage: 'radial-gradient(ellipse 80% 60% at 50% 40%, black, transparent)', WebkitMaskImage: 'radial-gradient(ellipse 80% 60% at 50% 40%, black, transparent)' }} />
       </div>
 
-      {/* Background image — low opacity */}
-      <div className="absolute inset-0">
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
-          src="/images/heroes/smart-meeting-rooms-hero.webp"
-          alt=""
-          style={{ width: '100%', height: '100%', objectFit: 'cover', opacity: 0.06 }}
-        />
+      {/* Ambient background video — low opacity, poster fallback */}
+      <div className="absolute inset-0" aria-hidden="true">
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          poster="/images/heroes/smart-meeting-rooms-hero.webp"
+          style={{ width: '100%', height: '100%', objectFit: 'cover', opacity: 0.1 }}
+        >
+          <source src="/videos/hero-loop.webm" type="video/webm" />
+          <source src="/videos/hero-loop.mp4" type="video/mp4" />
+        </video>
       </div>
 
       {/* Content */}

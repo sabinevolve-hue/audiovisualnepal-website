@@ -1,0 +1,34 @@
+name: Download & Localize Motion Media
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'scripts/download-media.mjs'
+
+jobs:
+  download-media:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install sharp
+        run: npm install sharp --no-save
+
+      - name: Download and optimize media
+        run: node scripts/download-media.mjs
+
+      - name: Commit & push media
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add public/images/textures public/videos
+          git diff --staged --quiet && echo "Nothing to commit" || \
+            git commit -m "chore: auto-download motion media [skip ci]" && git push

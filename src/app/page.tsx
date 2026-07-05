@@ -3,6 +3,7 @@ import HeroSection from '@/components/sections/HeroSection'
 import StatsSection from '@/components/sections/StatsSection'
 import SolutionsSection from '@/components/sections/SolutionsSection'
 import ExploreScene from '@/components/sections/ExploreScene'
+import SectionConnector from '@/components/ui/SectionConnector'
 import ProductEcosystem from '@/components/sections/ProductEcosystem'
 import BrandsSection from '@/components/sections/BrandsSection'
 import WhySection from '@/components/sections/WhySection'
@@ -87,8 +88,10 @@ export default async function HomePage() {
       <HeroSection />
       <StatsSection />
       <SolutionsSection />
+      <SectionConnector />
       <ExploreScene />
       <ProductEcosystem />
+      <SectionConnector />
       <BrandsSection />
       <FeaturedProjects />
       <WhySection />

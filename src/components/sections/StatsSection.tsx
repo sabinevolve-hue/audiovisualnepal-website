@@ -62,6 +62,7 @@ export default function StatsSection() {
       position: 'relative',
       overflow: 'hidden',
     }}>
+      <div aria-hidden="true" style={{ position: 'absolute', inset: 0, backgroundImage: 'url(/images/textures/speaker-grille.webp)', backgroundSize: 'cover', backgroundPosition: 'center', opacity: 0.08, pointerEvents: 'none' }} />
       <svg aria-hidden="true" style={{ position: 'absolute', bottom: 0, left: 0, width: '100%', height: 48, opacity: 0.07 }} preserveAspectRatio="none" viewBox="0 0 600 48">
         {EQ_BARS.map((h, i) => (
           <rect key={i} x={i * 20 + 6} y={48 - h} width={8} height={h} rx={2} fill="#60A5FA" />

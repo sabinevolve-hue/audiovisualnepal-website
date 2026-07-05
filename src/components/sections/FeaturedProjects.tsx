@@ -44,7 +44,10 @@ const projects = [
 
 export default function FeaturedProjects() {
   return (
-    <section className="section-padding" style={{ background: '#F8FAFC', borderTop: '1px solid rgba(11,30,61,0.06)' }}>
+    <section className="section-padding" style={{ background: '#F8FAFC', borderTop: '1px solid rgba(11,30,61,0.06)', position: 'relative', overflow: 'hidden' }}>
+      <svg aria-hidden="true" style={{ position: 'absolute', top: 18, left: 0, width: '100%', height: 40, opacity: 0.05, pointerEvents: 'none' }} preserveAspectRatio="none" viewBox="0 0 600 40">
+        <path d="M0,20 Q10,4 20,20 T40,20 T60,20 Q68,34 76,20 T96,20 Q104,2 112,20 T132,20 T152,20 Q162,36 172,20 T192,20 Q200,6 208,20 T228,20 T248,20 Q258,34 268,20 T288,20 Q296,4 304,20 T324,20 T344,20 Q354,36 364,20 T384,20 Q392,6 400,20 T420,20 T440,20 Q450,32 460,20 T480,20 Q488,4 496,20 T516,20 T536,20 Q546,34 556,20 T576,20 T600,20" fill="none" stroke="#2563EB" strokeWidth="1.5" />
+      </svg>
       <div className="container-site">
         <div style={{ display: 'flex', alignItems: 'flex-end', justifyContent: 'space-between', gap: 24, marginBottom: 44, flexWrap: 'wrap' }}>
           <div>
