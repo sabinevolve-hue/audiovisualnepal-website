@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { getProjects, getIndustries, stripHtml } from '@/lib/wordpress'
 import { MapPin, ArrowRight } from 'lucide-react'
+import NepalProjectMap from '@/components/solutions/NepalProjectMap'
 
 export const revalidate = 3600
 
@@ -52,6 +53,13 @@ export default async function ProjectsPage({ searchParams }: { searchParams: Pro
           <p style={{ fontSize: 18, color: '#64748B', lineHeight: 1.7, maxWidth: 520, margin: '0 auto' }}>
             From hotel ballrooms to corporate boardrooms — see how we&apos;ve transformed spaces across Nepal.
           </p>
+        </div>
+      </section>
+
+      {/* Nepal project map */}
+      <section style={{ padding: '0 24px 40px', background: '#FFFFFF' }}>
+        <div style={{ maxWidth: 1200, margin: '0 auto' }}>
+          <NepalProjectMap />
         </div>
       </section>
 
