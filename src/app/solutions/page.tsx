@@ -1,109 +1,181 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import Link from 'next/link'
 import { SOLUTIONS_NAV } from '@/lib/constants'
+import Reveal from '@/components/solutions/Reveal'
 
 export const revalidate = 3600
 
 export const metadata: Metadata = {
-  title: 'Solutions | AV for Every Industry',
-  description: 'Professional AV solutions for corporate offices, government, education, hotels, hospitals, religious venues and more across Nepal.',
+  title: 'AV Solutions for Every Industry in Nepal',
+  description:
+    'Professional AV solutions for corporate offices, government, education, hotels, hospitals, religious venues and transportation hubs across Nepal — designed, supplied and installed by AudioVisual Nepal.',
   openGraph: {
-    title: 'AV Solutions for Every Sector',
-    description: 'Professional audio visual solutions for corporate offices, government, education, hotels, hospitals, religious venues and transportation hubs across Nepal.',
+    title: 'AV Solutions for Every Sector | AudioVisual Nepal',
+    description:
+      'Professional audio visual solutions for corporate offices, government, education, hotels, hospitals, religious venues and transportation hubs across Nepal.',
     url: 'https://audiovisualnepal.com/solutions',
     siteName: 'AudioVisual Nepal',
-    images: [{ url: '/og-image.svg', width: 1200, height: 630, alt: 'AudioVisual Nepal' }],
+    images: [{ url: '/images/heroes/corporate-hero.webp', width: 1376, height: 768 }],
     type: 'website',
   },
   alternates: { canonical: 'https://audiovisualnepal.com/solutions' },
 }
 
-const SOLUTION_DETAILS: Record<string, { desc: string; systems: string[] }> = {
-  '/solutions/corporate':          { desc: 'Smart meeting rooms, boardroom AV, BGM systems, and video walls for modern workplaces.',                     systems: ['Conference Room AV', 'Video Walls', 'BGM Systems', 'Room Booking Displays', 'Wireless Presentation'] },
-  '/solutions/government':         { desc: 'Secure AV for ministries, provincial offices, courts, and public service centers.',                          systems: ['PA Systems', 'Video Conferencing', 'Digital Signage', 'Chamber AV', 'Translation Systems'] },
-  '/solutions/education':          { desc: 'Interactive classrooms, campus PA, and auditorium AV for schools and universities.',                          systems: ['Campus PA', 'Interactive Displays', 'Auditorium Sound', 'Language Labs', 'Distance Learning'] },
-  '/solutions/hotels':             { desc: 'Ballroom AV, restaurant BGM, pool audio, and guest room entertainment systems.',                              systems: ['Ballroom & Event AV', 'Restaurant BGM', 'Pool & Lobby Audio', 'Guest Room TV', 'IPTV Systems'] },
-  '/solutions/hospitals':          { desc: 'Patient information displays, nurse call audio, and secure PA for healthcare.',                               systems: ['Patient Info Displays', 'Nurse Call Audio', 'Emergency PA', 'Waiting Room BGM', 'Conference Rooms'] },
-  '/solutions/religious':          { desc: 'Crystal-clear sound systems for temples, churches, mosques, and monasteries.',                                systems: ['PA Sound Systems', 'Line Array Speakers', 'Wireless Microphones', 'Acoustic Treatment', 'Recording'] },
-  '/solutions/transportation':     { desc: 'Announcement systems for airports, bus parks, and railway stations.',                                         systems: ['Public Address', 'FIDS Integration', 'Emergency Broadcasting', 'IP Audio Network', 'CCTV Integration'] },
-  '/solutions/smart-meeting-rooms':{ desc: 'One-touch meeting room control with integrated AV, camera, and collaboration tools.',                         systems: ['One-Touch Control', '4K Video Conferencing', 'Wireless Sharing', 'Room Scheduling', 'Cloud Integration'] },
+const DETAILS: Record<string, { desc: string; tags: string[]; project: string }> = {
+  '/solutions/corporate': { desc: 'Smart meeting rooms, boardroom AV, background music and video walls for modern workplaces.', tags: ['Conference Room AV', 'Video Walls', 'BGM Systems'], project: 'NIC Asia Bank HQ · Kathmandu' },
+  '/solutions/government': { desc: 'Delegate conferencing, smart podiums and secure PA for ministries and public offices.', tags: ['Conference Systems', 'Smart Podiums', 'IP PA'], project: 'Province 1 CM Office · Biratnagar' },
+  '/solutions/education': { desc: 'Smart podiums, classroom audio and campus-wide PA with scheduled bells.', tags: ['Campus PA', 'Smart Podiums', 'Classroom Audio'], project: 'Kathmandu University · Dhulikhel' },
+  '/solutions/hotels': { desc: 'Ballroom sound, multi-zone background music and event AV for hotels and resorts.', tags: ['Ballroom Sound', 'BGM Zones', 'Event AV'], project: 'Hyatt Regency · Kathmandu' },
+  '/solutions/hospitals': { desc: 'Zone paging, nurse-station announcements and EN54 voice evacuation for healthcare.', tags: ['IP Paging', 'Voice Evacuation', 'Signage'], project: 'Grande International Hospital · Kathmandu' },
+  '/solutions/religious': { desc: 'High-clarity sound for temples, churches, mosques and monasteries.', tags: ['Column Speakers', 'Horn Speakers', 'Scheduled Broadcast'], project: 'Pashupatinath Temple Complex · Kathmandu' },
+  '/solutions/transportation': { desc: 'IP network PA and passenger information audio for airports and transit hubs.', tags: ['IP PA Backbone', 'Zone Paging', 'FIDS Integration'], project: 'Tribhuvan International Airport · Kathmandu' },
+  '/solutions/smart-meeting-rooms': { desc: 'One-touch hybrid meeting rooms with AI cameras and wireless presentation.', tags: ['AI Cameras', 'Wireless Sharing', 'One-Touch Control'], project: 'Leapfrog HQ · Kathmandu' },
+}
+
+const STEPS = [
+  { n: '01', t: 'Site Survey', d: 'We visit your space, understand acoustics, layout, and usage requirements.' },
+  { n: '02', t: 'Design', d: 'System design with BOQ, drawings, and brand recommendations.' },
+  { n: '03', t: 'Supply', d: 'Genuine products sourced from authorized brand channels.' },
+  { n: '04', t: 'Install', d: 'Professional installation by certified AV engineers.' },
+  { n: '05', t: 'Commission', d: 'Full testing, tuning, and user training before handover.' },
+  { n: '06', t: 'Support', d: 'AMC, warranty, and ongoing support after go-live.' },
+]
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: 'AV Solutions by Industry',
+  itemListElement: SOLUTIONS_NAV.map((s, i) => ({
+    '@type': 'ListItem',
+    position: i + 1,
+    name: s.label,
+    url: `https://audiovisualnepal.com${s.href}`,
+  })),
 }
 
 export default function SolutionsPage() {
   return (
-    <main style={{ paddingTop: 80, background: '#FFFFFF' }}>
-      {/* Hero */}
-      <section style={{ padding: '100px 24px 80px', background: 'linear-gradient(180deg, #F0F4F8 0%, #FFFFFF 100%)', textAlign: 'center', position: 'relative', overflow: 'hidden' }}>
-        <div style={{ position: 'absolute', inset: 0, backgroundImage: 'linear-gradient(rgba(37,99,235,0.06) 1px, transparent 1px), linear-gradient(90deg, rgba(37,99,235,0.06) 1px, transparent 1px)', backgroundSize: '60px 60px', pointerEvents: 'none' }} />
-        <div style={{ maxWidth: 700, margin: '0 auto', position: 'relative' }}>
-          <p style={{ fontSize: 12, fontWeight: 700, color: '#3B82F6', letterSpacing: '0.15em', textTransform: 'uppercase', marginBottom: 20 }}>Industry Solutions</p>
-          <h1 style={{ fontFamily: 'Manrope, sans-serif', fontSize: 'clamp(36px,5vw,64px)', fontWeight: 800, color: '#0B1E3D', letterSpacing: '-0.03em', lineHeight: 1.05, marginBottom: 20 }}>
-            Solutions for Every Space
+    <main className="pt-20 bg-white">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+
+      <section className="relative flex min-h-[46vh] items-end overflow-hidden bg-slate-900">
+        <Image
+          src="/images/heroes/corporate-hero.webp"
+          alt="Professional AV installation in a Kathmandu boardroom"
+          fill
+          priority
+          className="object-cover opacity-90"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-slate-950/85 via-slate-950/40 to-transparent" />
+        <div className="relative mx-auto w-full max-w-6xl px-6 pb-12">
+          <p className="text-sm font-semibold uppercase tracking-widest text-teal-300">Industry solutions</p>
+          <h1 className="mt-3 max-w-2xl text-4xl font-extrabold text-white sm:text-5xl" style={{ fontFamily: 'Manrope, sans-serif', letterSpacing: '-0.03em' }}>
+            Solutions for every space
           </h1>
-          <p style={{ fontSize: 18, color: '#64748B', lineHeight: 1.7, maxWidth: 580, margin: '0 auto' }}>
-            From government boardrooms to hotel ballrooms — we design and deliver complete AV systems for every environment.
+          <p className="mt-4 max-w-xl text-lg text-slate-200">
+            From government chambers to hotel ballrooms — complete AV systems designed, supplied and installed across Nepal.
           </p>
         </div>
       </section>
 
-      {/* Solutions Grid */}
-      <section style={{ padding: '80px 24px', background: '#FFFFFF' }}>
-        <div style={{ maxWidth: 1200, margin: '0 auto' }}>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(320px, 1fr))', gap: 20 }}>
-            {SOLUTIONS_NAV.map(sol => {
-              const detail = SOLUTION_DETAILS[sol.href]
-              return (
-                <Link key={sol.href} href={sol.href} style={{ textDecoration: 'none', display: 'block', background: '#FFFFFF', border: '1px solid rgba(11,30,61,0.1)', borderRadius: 20, padding: '32px', transition: 'all 0.2s' }}>
-                  <div style={{ fontSize: 40, marginBottom: 20 }}>{sol.icon}</div>
-                  <h2 style={{ fontFamily: 'Manrope, sans-serif', fontSize: 20, fontWeight: 800, color: '#0B1E3D', marginBottom: 10 }}>{sol.label}</h2>
-                  {detail && (
-                    <>
-                      <p style={{ fontSize: 14, color: '#64748B', lineHeight: 1.65, marginBottom: 16 }}>{detail.desc}</p>
-                      <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6 }}>
-                        {detail.systems.slice(0, 3).map(s => (
-                          <span key={s} style={{ fontSize: 12, background: 'rgba(37,99,235,0.1)', border: '1px solid rgba(59,130,246,0.2)', borderRadius: 980, padding: '3px 10px', color: '#60A5FA', fontWeight: 500 }}>{s}</span>
-                        ))}
-                      </div>
-                    </>
-                  )}
-                  <div style={{ marginTop: 20, fontSize: 13, color: '#3B82F6', fontWeight: 600 }}>Learn more →</div>
+      <div className="border-b border-slate-200 bg-slate-50">
+        <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-center gap-x-8 gap-y-2 px-6 py-4 text-sm font-medium text-slate-600">
+          <span>Authorized distributor — 4 brands</span>
+          <span className="hidden text-slate-300 sm:inline">•</span>
+          <span>500+ projects delivered</span>
+          <span className="hidden text-slate-300 sm:inline">•</span>
+          <span>All 77 districts</span>
+          <span className="hidden text-slate-300 sm:inline">•</span>
+          <span>100% genuine, manufacturer warranty</span>
+        </div>
+      </div>
+
+      <section className="mx-auto max-w-6xl px-6 py-16 sm:py-20">
+        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+          {SOLUTIONS_NAV.map((sol, i) => {
+            const d = DETAILS[sol.href]
+            const slug = sol.href.replace('/solutions/', '')
+            return (
+              <Reveal key={sol.href} delay={(i % 3) * 0.06}>
+                <Link
+                  href={sol.href}
+                  className="group flex h-full flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white transition hover:-translate-y-1 hover:border-slate-300 hover:shadow-lg"
+                >
+                  <div className="relative aspect-video overflow-hidden bg-slate-900">
+                    <Image
+                      src={`/images/heroes/${slug}-hero.webp`}
+                      alt={`${sol.label} AV solution in Nepal`}
+                      fill
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                      className="object-cover transition duration-500 group-hover:scale-105"
+                    />
+                  </div>
+                  <div className="flex flex-1 flex-col p-6">
+                    <h2 className="text-lg font-extrabold text-slate-900 group-hover:text-blue-600" style={{ fontFamily: 'Manrope, sans-serif' }}>
+                      {sol.label}
+                    </h2>
+                    {d && (
+                      <>
+                        <p className="mt-2 text-sm leading-relaxed text-slate-600">{d.desc}</p>
+                        <div className="mt-4 flex flex-wrap gap-2">
+                          {d.tags.map((t) => (
+                            <span key={t} className="rounded-full bg-slate-100 px-3 py-1 text-xs font-medium text-slate-600">{t}</span>
+                          ))}
+                        </div>
+                        <p className="mt-4 text-xs text-slate-400">Featured: {d.project}</p>
+                      </>
+                    )}
+                    <p className="mt-auto pt-4 text-sm font-semibold text-blue-600">
+                      Explore solution <span className="inline-block transition group-hover:translate-x-1">→</span>
+                    </p>
+                  </div>
                 </Link>
-              )
-            })}
-          </div>
+              </Reveal>
+            )
+          })}
         </div>
       </section>
 
-      {/* Process */}
-      <section style={{ padding: '80px 24px', background: '#F1F5F9', borderTop: '1px solid rgba(11,30,61,0.05)' }}>
-        <div style={{ maxWidth: 1100, margin: '0 auto', textAlign: 'center' }}>
-          <p style={{ fontSize: 12, fontWeight: 700, color: '#3B82F6', letterSpacing: '0.15em', textTransform: 'uppercase', marginBottom: 16 }}>How We Work</p>
-          <h2 style={{ fontFamily: 'Manrope, sans-serif', fontSize: 'clamp(28px,4vw,40px)', fontWeight: 800, color: '#0B1E3D', letterSpacing: '-0.03em', marginBottom: 12 }}>Our Process</h2>
-          <p style={{ fontSize: 16, color: '#64748B', marginBottom: 56 }}>From brief to commissioning — we own the entire delivery.</p>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))', gap: 16 }}>
-            {[
-              { step: '01', title: 'Site Survey', desc: 'We visit your space, understand acoustics, layout, and usage requirements.' },
-              { step: '02', title: 'Design', desc: 'System design with BOQ, drawings, and brand recommendations.' },
-              { step: '03', title: 'Supply', desc: 'Genuine products sourced from authorized brand channels.' },
-              { step: '04', title: 'Install', desc: 'Professional installation by certified AV engineers.' },
-              { step: '05', title: 'Commission', desc: 'Full testing, tuning, and user training before handover.' },
-              { step: '06', title: 'Support', desc: 'AMC, warranty, and ongoing support after go-live.' },
-            ].map(p => (
-              <div key={p.step} style={{ background: '#FFFFFF', border: '1px solid rgba(11,30,61,0.1)', borderRadius: 16, padding: 24, textAlign: 'left' }}>
-                <div style={{ fontFamily: 'Manrope, sans-serif', fontSize: 28, fontWeight: 800, color: '#3B82F6', marginBottom: 12 }}>{p.step}</div>
-                <div style={{ fontFamily: 'Manrope, sans-serif', fontSize: 15, fontWeight: 700, color: '#0B1E3D', marginBottom: 8 }}>{p.title}</div>
-                <p style={{ fontSize: 13, color: '#64748B', lineHeight: 1.65, margin: 0 }}>{p.desc}</p>
-              </div>
+      <section className="bg-slate-50 py-16 sm:py-20">
+        <div className="mx-auto max-w-6xl px-6">
+          <Reveal>
+            <p className="text-sm font-semibold uppercase tracking-widest text-blue-600">How we work</p>
+            <h2 className="mt-2 text-3xl font-extrabold text-slate-900" style={{ fontFamily: 'Manrope, sans-serif' }}>
+              From brief to commissioning — we own the entire delivery
+            </h2>
+          </Reveal>
+          <div className="mt-12 grid gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-6">
+            {STEPS.map((s, i) => (
+              <Reveal key={s.n} delay={i * 0.08}>
+                <div className="relative">
+                  <div className="flex items-center gap-3">
+                    <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border-2 border-blue-500 text-sm font-bold text-blue-600">
+                      {s.n}
+                    </span>
+                    <span className="hidden h-0.5 flex-1 bg-slate-200 lg:block" aria-hidden="true" />
+                  </div>
+                  <h3 className="mt-4 font-bold text-slate-900">{s.t}</h3>
+                  <p className="mt-1 text-sm text-slate-600">{s.d}</p>
+                </div>
+              </Reveal>
             ))}
           </div>
         </div>
       </section>
 
-      {/* CTA */}
-      <section style={{ padding: '96px 24px', background: 'linear-gradient(135deg, #F0F4F8 0%, #FFFFFF 100%)', textAlign: 'center', borderTop: '1px solid rgba(11,30,61,0.05)' }}>
-        <h2 style={{ fontFamily: 'Manrope, sans-serif', fontSize: 'clamp(28px,4vw,48px)', fontWeight: 800, color: '#0B1E3D', marginBottom: 16, letterSpacing: '-0.03em' }}>Ready to Get Started?</h2>
-        <p style={{ fontSize: 18, color: '#64748B', maxWidth: 480, margin: '0 auto 40px' }}>Share your project requirements and we&apos;ll put together a design and quotation.</p>
-        <Link href="/contact" style={{ display: 'inline-block', background: '#3B82F6', color: '#0B1E3D', padding: '16px 40px', borderRadius: 980, fontSize: 16, fontWeight: 600, textDecoration: 'none' }}>Request a Quotation</Link>
+      <section className="mx-auto max-w-6xl px-6 py-16 text-center sm:py-20">
+        <Reveal>
+          <h2 className="text-3xl font-extrabold text-slate-900" style={{ fontFamily: 'Manrope, sans-serif' }}>
+            Ready to get started?
+          </h2>
+          <p className="mx-auto mt-2 max-w-xl text-slate-600">
+            Share your project requirements and we&apos;ll put together a design and quotation.
+          </p>
+          <Link href="/contact" className="mt-8 inline-block rounded-full bg-blue-500 px-8 py-3 text-sm font-semibold text-white transition hover:bg-blue-600">
+            Request a Quotation
+          </Link>
+        </Reveal>
       </section>
     </main>
   )
