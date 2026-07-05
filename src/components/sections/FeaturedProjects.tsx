@@ -5,37 +5,37 @@ import { ArrowRight, MapPin } from 'lucide-react'
 
 const projects = [
   {
-    type: 'Government', name: 'Federal Parliament Complex',
+    type: 'Government', name: 'Federal Parliament Complex', slug: 'federal-parliament-complex',
     desc: '250-seat conference hall with simultaneous interpretation, voting system & HD video.',
     location: 'Kathmandu', color: '#2563EB',
     photo: '/images/heroes/government-hero.webp',
   },
   {
-    type: 'Education', name: 'Tribhuvan University Campus',
+    type: 'Education', name: 'Tribhuvan University Campus', slug: 'tribhuvan-university-campus-pa',
     desc: 'IP-based campus PA system covering 40+ buildings with centralised management.',
     location: 'Kirtipur', color: '#059669',
     photo: '/images/heroes/education-hero.webp',
   },
   {
-    type: 'Hospitality', name: '5-Star Hotel Ballroom',
+    type: 'Hospitality', name: '5-Star Hotel Ballroom', slug: 'five-star-hotel-ballroom',
     desc: '18-zone background music, line array for ballroom events & conference room AV.',
     location: 'Kathmandu', color: '#D97706',
     photo: '/images/heroes/hotels-hero.webp',
   },
   {
-    type: 'Corporate', name: 'Smart Meeting Rooms — Leapfrog HQ',
+    type: 'Corporate', name: 'Smart Meeting Rooms — Leapfrog HQ', slug: 'leapfrog-smart-meeting-rooms',
     desc: 'Wireless conferencing, ceiling mic arrays & Dante-networked audio distribution.',
     location: 'Kathmandu', color: '#7C3AED',
     photo: '/images/heroes/smart-meeting-rooms-hero.webp',
   },
   {
-    type: 'Healthcare', name: 'Grande International Hospital',
+    type: 'Healthcare', name: 'Grande International Hospital', slug: 'grande-international-hospital',
     desc: 'Multi-zone IP paging integrated with nurse call, covering 12 floors.',
     location: 'Kathmandu', color: '#DC2626',
     photo: '/images/heroes/hospitals-hero.webp',
   },
   {
-    type: 'Religious', name: 'Central Mosque, Kathmandu',
+    type: 'Religious', name: 'Central Mosque, Kathmandu', slug: 'central-mosque-kathmandu',
     desc: 'High-intelligibility PA with outdoor horn speakers for 5,000+ congregation.',
     location: 'Kathmandu', color: '#0891B2',
     photo: '/images/heroes/religious-hero.webp',
@@ -58,9 +58,9 @@ export default function FeaturedProjects() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
           {projects.map((p, i) => (
+            <Link key={i} href={`/projects/${p.slug}`} style={{ textDecoration: 'none', color: 'inherit' }}>
             <div
-              key={i}
-              style={{ borderRadius: 16, overflow: 'hidden', border: '1.5px solid rgba(11,30,61,0.08)', background: '#FFFFFF', boxShadow: '0 1px 8px rgba(11,30,61,0.06)', transition: 'all 0.2s', cursor: 'default' }}
+              style={{ borderRadius: 16, overflow: 'hidden', border: '1.5px solid rgba(11,30,61,0.08)', background: '#FFFFFF', boxShadow: '0 1px 8px rgba(11,30,61,0.06)', transition: 'all 0.2s', cursor: 'pointer' }}
               onMouseEnter={e => {
                 const el = e.currentTarget as HTMLDivElement
                 el.style.transform = 'translateY(-4px)'
@@ -96,6 +96,7 @@ export default function FeaturedProjects() {
                 </div>
               </div>
             </div>
+            </Link>
           ))}
         </div>
       </div>
