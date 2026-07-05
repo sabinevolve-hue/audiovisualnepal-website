@@ -30,7 +30,7 @@ export default function HeroSection() {
           loop
           playsInline
           poster="/images/heroes/smart-meeting-rooms-hero.webp"
-          style={{ width: '100%', height: '100%', objectFit: 'cover', opacity: 0.3 }}
+          style={{ width: '100%', height: '100%', objectFit: 'cover', opacity: 0.2 }}
         >
           <source src="/videos/hero-loop.webm" type="video/webm" />
           <source src="/videos/hero-loop.mp4" type="video/mp4" />
