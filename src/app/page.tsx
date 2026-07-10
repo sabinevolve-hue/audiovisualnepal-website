@@ -12,6 +12,7 @@ import CTASection from '@/components/sections/CTASection'
 import BlogSection from '@/components/sections/BlogSection'
 import { DEFAULT_SEO, SITE } from '@/lib/constants'
 import { getProjects, getPosts, getBrands } from '@/lib/wordpress'
+import { STATIC_ARTICLES } from '@/data/staticArticles'
 
 export const revalidate = 3600
 
@@ -55,29 +56,7 @@ export default async function HomePage() {
   const PLACEHOLDER_SLUGS = ['hello-world', 'sample-page']
   const realPosts = rawPosts.filter((p: { slug: string }) => !PLACEHOLDER_SLUGS.includes(p.slug))
 
-  // Static fallback articles shown when no real blog content exists
-  const STATIC_POSTS = [
-    {
-      id: 1, slug: 'choosing-ceiling-speaker-commercial-installation',
-      title: { rendered: 'How to Choose the Right Ceiling Speaker for Your Commercial Installation' },
-      excerpt: { rendered: 'Driver size, power taps, sensitivity ratings and backcan requirements explained — what every AV specifier needs to know before selecting a ceiling speaker.' },
-      _embedded: { 'wp:featuredmedia': [{ source_url: '/images/heroes/education-hero.webp' }] }
-    },
-    {
-      id: 2, slug: 'ip-network-audio-vs-traditional-pa',
-      title: { rendered: 'IP Network Audio vs Traditional 100V Line PA — Which Is Right for Your Project?' },
-      excerpt: { rendered: 'A practical comparison of IP-based PA systems and traditional 100V line distributed audio — cost, scalability, zone control and future-proofing compared.' },
-      _embedded: { 'wp:featuredmedia': [{ source_url: '/images/heroes/transportation-hero.webp' }] }
-    },
-    {
-      id: 3, slug: 'conference-room-microphone-guide-nepal',
-      title: { rendered: 'Conference Room Microphone Guide for Nepal — Wired, Wireless & Ceiling Array' },
-      excerpt: { rendered: 'From gooseneck delegate units to wireless 6GHz systems and ceiling MEMS arrays — a complete guide to choosing the right conference microphone for your room size and use case.' },
-      _embedded: { 'wp:featuredmedia': [{ source_url: '/images/heroes/corporate-hero.webp' }] }
-    },
-  ]
-
-  const posts = realPosts.length >= 2 ? realPosts.slice(0, 3) : STATIC_POSTS
+  const posts = realPosts.length >= 2 ? realPosts.slice(0, 3) : STATIC_ARTICLES
 
   return (
     <>
@@ -95,7 +74,7 @@ export default async function HomePage() {
       <BrandsSection />
       <FeaturedProjects />
       <WhySection />
-      {realPosts.length >= 2 && <BlogSection posts={realPosts.slice(0, 3)} />}
+      <BlogSection posts={posts} />
       <CTASection />
     </>
   )

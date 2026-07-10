@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import Image from 'next/image'
 import { getPosts, getCategories, stripHtml } from '@/lib/wordpress'
+import { STATIC_ARTICLES } from '@/data/staticArticles'
 
 export const metadata: Metadata = {
   title: 'Blog | AV Tips, Guides & Industry News',
@@ -24,10 +25,13 @@ export default async function BlogPage({ searchParams }: { searchParams: Promise
   const page    = Number(params.page ?? 1)
   const catSlug = params.category
 
-  const [categories, posts] = await Promise.all([
+  const [categories, wpPosts] = await Promise.all([
     getCategories(),
     getPosts({ page, perPage: 9, embed: true }),
   ])
+  const PLACEHOLDER_SLUGS = ['hello-world', 'sample-page']
+  const realWp = wpPosts.filter((p: { slug: string }) => !PLACEHOLDER_SLUGS.includes(p.slug))
+  const posts = page === 1 ? [...STATIC_ARTICLES, ...realWp] : realWp
 
   return (
     <main style={{ paddingTop: 80, background: '#FFFFFF' }}>

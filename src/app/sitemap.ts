@@ -1,6 +1,8 @@
 import type { MetadataRoute } from 'next'
 import { SITE, PRODUCT_CATEGORIES, SOLUTIONS_NAV } from '@/lib/constants'
 import { ALL_PRODUCTS } from '@/data/products'
+import { CASE_STUDIES } from '@/data/caseStudies'
+import { STATIC_ARTICLES } from '@/data/staticArticles'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = SITE.url
@@ -14,6 +16,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/projects`,lastModified: now, changeFrequency: 'weekly',  priority: 0.8 },
     { url: `${base}/blog`,    lastModified: now, changeFrequency: 'daily',   priority: 0.9 },
     { url: `${base}/products`,lastModified: now, changeFrequency: 'weekly',  priority: 0.9 },
+    { url: `${base}/solutions`, lastModified: now, changeFrequency: 'monthly', priority: 0.9 },
+    { url: `${base}/solution-finder`, lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${base}/brands/infobit/catalog`, lastModified: now, changeFrequency: 'weekly', priority: 0.8 },
   ]
 
   const brandPages: MetadataRoute.Sitemap = ['dsppa', 'infobit', 'tenveo', 'focus'].map(slug => ({
@@ -45,5 +50,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority:        0.9,
   }))
 
-  return [...staticPages, ...brandPages, ...solutionPages, ...categoryPages, ...productPages]
+  const caseStudyPages: MetadataRoute.Sitemap = CASE_STUDIES.map((c) => ({
+    url: `${base}/projects/${c.slug}`, lastModified: now, changeFrequency: 'monthly' as const, priority: 0.8,
+  }))
+
+  const articlePages: MetadataRoute.Sitemap = STATIC_ARTICLES.map((a) => ({
+    url: `${base}/blog/${a.slug}`, lastModified: now, changeFrequency: 'monthly' as const, priority: 0.8,
+  }))
+
+  return [...staticPages, ...brandPages, ...solutionPages, ...categoryPages, ...productPages, ...caseStudyPages, ...articlePages]
 }
