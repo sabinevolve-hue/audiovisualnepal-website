@@ -1,0 +1,690 @@
+{
+ "brand": "DSPPA",
+ "updated": "2026-07-11",
+ "source": "2025 DSPPA PA Distribution Catalogue",
+ "totalModels": 207,
+ "categories": [
+  {
+   "category": "Mixer Amplifiers",
+   "series": [
+    {
+     "name": "Classical Mixer Amplifier",
+     "groups": [
+      {
+       "type": "2-Zone Integrated",
+       "models": [
+        "MP600U",
+        "MP1000U"
+       ]
+      },
+      {
+       "type": "With Remote Paging",
+       "models": [
+        "MP200PIII",
+        "MP300PIII",
+        "MP600PIII",
+        "MP1000PIII",
+        "DA3245",
+        "DA3255"
+       ]
+      },
+      {
+       "type": "USB/FM/Bluetooth",
+       "models": [
+        "MP210U",
+        "MP310U",
+        "MP610U",
+        "MP1010U"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Matrix Amplifier",
+     "groups": [
+      {
+       "type": "6-Channel Matrix",
+       "models": [
+        "DMA6112",
+        "DMA6124"
+       ]
+      },
+      {
+       "type": "Paging & Control Panels",
+       "models": [
+        "DMA60M",
+        "DMA60W"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Integrated Mixer Amplifier",
+     "groups": [
+      {
+       "type": "Integrated",
+       "models": [
+        "DMA250U",
+        "DMA6250U",
+        "DMA6350U",
+        "DMA6500U",
+        "DMA6650U"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Multi-media Mixer Amplifier",
+     "groups": [
+      {
+       "type": "2-Channel Digital",
+       "models": [
+        "DMA2240",
+        "DMA2500"
+       ]
+      },
+      {
+       "type": "Multimedia",
+       "models": [
+        "MP2708",
+        "MP2715",
+        "MP2725",
+        "MP2735",
+        "MP2745",
+        "MP2765"
+       ]
+      },
+      {
+       "type": "Mosque Amplifier",
+       "models": [
+        "MA2250U"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Mini Mixer Amplifier",
+     "groups": [
+      {
+       "type": "Mini Digital",
+       "models": [
+        "MP35UB",
+        "MP60UB",
+        "MP120UB",
+        "MP250UB",
+        "MA60UB",
+        "MA120UB"
+       ]
+      },
+      {
+       "type": "Ultra-mini",
+       "models": [
+        "MP9306U",
+        "MP9312U"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Stereo Mini Amplifier",
+     "groups": [
+      {
+       "type": "Bluetooth Mini",
+       "models": [
+        "Mini40",
+        "Mini40II"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "category": "Wall Mount & Streaming Amplifiers",
+   "series": [
+    {
+     "name": "Wall Mount Amplifier",
+     "groups": [
+      {
+       "type": "On-wall Stereo",
+       "models": [
+        "DM835",
+        "DM838II",
+        "DM858",
+        "DM86C",
+        "DM838K",
+        "DM838T",
+        "DM938",
+        "DM938T"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "WiFi Music Streaming",
+     "groups": [
+      {
+       "type": "Streaming",
+       "models": [
+        "DW01",
+        "DW2235",
+        "DW6050"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "category": "Power Amplifiers",
+   "series": [
+    {
+     "name": "Class-D Amplifier",
+     "groups": [
+      {
+       "type": "DSP Class-D",
+       "models": [
+        "DDA23D",
+        "DDA43D",
+        "DDA408D",
+        "DDA410D",
+        "DDA415D"
+       ]
+      },
+      {
+       "type": "Class-D",
+       "models": [
+        "DA2125",
+        "DA2250",
+        "DA2500",
+        "DA4060",
+        "DA4125",
+        "DA4250"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "PA Power Amplifier",
+     "groups": [
+      {
+       "type": "With DC24V",
+       "models": [
+        "MP6425",
+        "MP6438",
+        "MP6450"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "category": "Ceiling Speakers",
+   "series": [
+    {
+     "name": "Frameless Series",
+     "groups": [
+      {
+       "type": "Frameless",
+       "models": [
+        "DSP6011",
+        "DSP5211",
+        "DSP5211L",
+        "DSP5012",
+        "DSP5011",
+        "DSP3011",
+        "DSP3011C",
+        "DSP5311"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Standard Series",
+     "groups": [
+      {
+       "type": "Round Type",
+       "models": [
+        "DSP114",
+        "DSP124",
+        "DSP802",
+        "DSP803",
+        "DSP703"
+       ]
+      },
+      {
+       "type": "Fire Dome",
+       "models": [
+        "DSP662",
+        "DSP901",
+        "DSP903II",
+        "DSP904"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "category": "Wall Mount Speakers",
+   "series": [
+    {
+     "name": "Standard Series",
+     "groups": [
+      {
+       "type": "Power Tap",
+       "models": [
+        "DSP8062",
+        "DSP8063",
+        "DSP8064",
+        "DSP220"
+       ]
+      },
+      {
+       "type": "All-weather",
+       "models": [
+        "DSP7043",
+        "DSP7064",
+        "DSP7085"
+       ]
+      },
+      {
+       "type": "Compact",
+       "models": [
+        "DSP113",
+        "DSP106II",
+        "DSP112"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "category": "Column Speakers",
+   "series": [
+    {
+     "name": "Waterproof Series",
+     "groups": [
+      {
+       "type": "Waterproof",
+       "models": [
+        "DSP255II",
+        "DSP8114",
+        "DSP8116",
+        "DSP4120",
+        "DSP4235",
+        "DSP4350",
+        "DSP4465",
+        "DSP158",
+        "DSP258",
+        "DSP358",
+        "DSP458"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Indoor Series",
+     "groups": [
+      {
+       "type": "Indoor",
+       "models": [
+        "DSP203II",
+        "DSP403II"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "category": "Outdoor & Specialty Speakers",
+   "series": [
+    {
+     "name": "Garden Speakers",
+     "groups": [
+      {
+       "type": "Rock Type",
+       "models": [
+        "Rock Speaker"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Horn Speakers",
+     "groups": [
+      {
+       "type": "Hi-Fi Horn",
+       "models": [
+        "DSP161HD",
+        "DSP162HD",
+        "DSP163HD"
+       ]
+      },
+      {
+       "type": "Standard Horn",
+       "models": [
+        "DSP170",
+        "DSP1130",
+        "DSP1650"
+       ]
+      },
+      {
+       "type": "Anti-explosion",
+       "models": [
+        "DSP204H"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Pendant & Projector",
+     "groups": [
+      {
+       "type": "Pendant",
+       "models": [
+        "DSP107"
+       ]
+      },
+      {
+       "type": "Projector",
+       "models": [
+        "DSP5153",
+        "DSP5165",
+        "DSP207II",
+        "DSP5520"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "EN54 Fireproof",
+     "groups": [
+      {
+       "type": "EN54",
+       "models": [
+        "DSP3011EN",
+        "DSP2254EN",
+        "DSP602EN",
+        "DSP5311EN",
+        "DSP207EN",
+        "DSP217EN"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Invisible Speakers",
+     "groups": [
+      {
+       "type": "Invisible",
+       "models": [
+        "DSP40I",
+        "DSP40IL"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Digitally Steerable Arrays",
+     "groups": [
+      {
+       "type": "Phased Array",
+       "models": [
+        "DSP1500",
+        "DSP1500L",
+        "DSP1501",
+        "DSP1502",
+        "DSP3025",
+        "DSP3036"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Directional Speakers",
+     "groups": [
+      {
+       "type": "Directional",
+       "models": [
+        "DSP395T",
+        "DSP395U",
+        "DSS1519",
+        "DSS1521"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Teaching Audio",
+     "groups": [
+      {
+       "type": "Teaching Systems",
+       "models": [
+        "DSP602BT",
+        "MAG6468",
+        "DSP2021 Series"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "category": "High Performance Series",
+   "series": [
+    {
+     "name": "HP Ceiling Speakers",
+     "groups": [
+      {
+       "type": "Coaxial",
+       "models": [
+        "DSP8040",
+        "DSP8050",
+        "DSP6030",
+        "DSP8150",
+        "DSP7052",
+        "DSP7054",
+        "DSP7081",
+        "DSP8060C"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "HP Subwoofers",
+     "groups": [
+      {
+       "type": "Subwoofer",
+       "models": [
+        "DSP211",
+        "DSP40SUB"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "HP Wall Mount",
+     "groups": [
+      {
+       "type": "Waterproof",
+       "models": [
+        "DSP5020",
+        "DSP5040",
+        "DSP5050",
+        "DSP6020",
+        "DSP6035",
+        "DSP6050",
+        "DSP6060",
+        "DSP402"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "HP Pendant",
+     "groups": [
+      {
+       "type": "IP66 Pendant",
+       "models": [
+        "DSP6030P",
+        "DSP8050P",
+        "DSP8050SUB"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "HP Horn",
+     "groups": [
+      {
+       "type": "Compact Coaxial",
+       "models": [
+        "DSP3008H",
+        "DSP3010H",
+        "DSP3012H"
+       ]
+      },
+      {
+       "type": "Outdoor",
+       "models": [
+        "DSP0810",
+        "DSP1020",
+        "DSP1230",
+        "DSP1540"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "HP Column",
+     "groups": [
+      {
+       "type": "Professional",
+       "models": [
+        "DSP6120",
+        "DSP6180",
+        "DSP6240",
+        "DSP2008",
+        "DSP2016",
+        "DSP4300B",
+        "DSP8300B",
+        "DSP4310",
+        "DSP4320",
+        "DSP4330",
+        "DSP5210",
+        "DSP5420",
+        "DSP5630",
+        "DSP5840",
+        "DSP1260"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "category": "Peripherals & Accessories",
+   "series": [
+    {
+     "name": "Peripheral Equipment",
+     "groups": [
+      {
+       "type": "Source & Control",
+       "models": [
+        "MAG2107C",
+        "D6720",
+        "MP1715T"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Microphones",
+     "groups": [
+      {
+       "type": "Paging & Desktop",
+       "models": [
+        "DMA20",
+        "CM10",
+        "CM62",
+        "CM30",
+        "DM30"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Volume Controllers",
+     "groups": [
+      {
+       "type": "Controllers",
+       "models": [
+        "WH-1II",
+        "WH-1FI",
+        "WH-7F",
+        "WH-7FA",
+        "WH-7FB",
+        "WH-7FC"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Audio Racks",
+     "groups": [
+      {
+       "type": "19-inch Racks",
+       "models": [
+        "MP1105",
+        "MP1110",
+        "MP1115",
+        "MP1118"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "category": "Voice Evacuation (PAVA)",
+   "series": [
+    {
+     "name": "PAVA Systems",
+     "groups": [
+      {
+       "type": "EN54 Voice Alarm",
+       "models": [
+        "PAVA9500",
+        "PAVA8500",
+        "PAVA4600"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "category": "IP Network Audio (MAG)",
+   "series": [
+    {
+     "name": "MAG Systems",
+     "groups": [
+      {
+       "type": "IP PA",
+       "models": [
+        "MAG6182II",
+        "MAG6182II Pro",
+        "MAG6806",
+        "DSP9100H"
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

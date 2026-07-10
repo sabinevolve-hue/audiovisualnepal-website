@@ -1,0 +1,95 @@
+# Mixer Amplifiers
+## Classical Mixer Amplifier
+2-Zone Integrated: MP600U, MP1000U
+With Remote Paging: MP200PIII, MP300PIII, MP600PIII, MP1000PIII, DA3245, DA3255
+USB/FM/Bluetooth: MP210U, MP310U, MP610U, MP1010U
+## Matrix Amplifier
+6-Channel Matrix: DMA6112, DMA6124
+Paging & Control Panels: DMA60M, DMA60W
+## Integrated Mixer Amplifier
+Integrated: DMA250U, DMA6250U, DMA6350U, DMA6500U, DMA6650U
+## Multi-media Mixer Amplifier
+2-Channel Digital: DMA2240, DMA2500
+Multimedia: MP2708, MP2715, MP2725, MP2735, MP2745, MP2765
+Mosque Amplifier: MA2250U
+## Mini Mixer Amplifier
+Mini Digital: MP35UB, MP60UB, MP120UB, MP250UB, MA60UB, MA120UB
+Ultra-mini: MP9306U, MP9312U
+## Stereo Mini Amplifier
+Bluetooth Mini: Mini40, Mini40II
+# Wall Mount & Streaming Amplifiers
+## Wall Mount Amplifier
+On-wall Stereo: DM835, DM838II, DM858, DM86C, DM838K, DM838T, DM938, DM938T
+## WiFi Music Streaming
+Streaming: DW01, DW2235, DW6050
+# Power Amplifiers
+## Class-D Amplifier
+DSP Class-D: DDA23D, DDA43D, DDA408D, DDA410D, DDA415D
+Class-D: DA2125, DA2250, DA2500, DA4060, DA4125, DA4250
+## PA Power Amplifier
+With DC24V: MP6425, MP6438, MP6450
+# Ceiling Speakers
+## Frameless Series
+Frameless: DSP6011, DSP5211, DSP5211L, DSP5012, DSP5011, DSP3011, DSP3011C, DSP5311
+## Standard Series
+Round Type: DSP114, DSP124, DSP802, DSP803, DSP703
+Fire Dome: DSP662, DSP901, DSP903II, DSP904
+# Wall Mount Speakers
+## Standard Series
+Power Tap: DSP8062, DSP8063, DSP8064, DSP220
+All-weather: DSP7043, DSP7064, DSP7085
+Compact: DSP113, DSP106II, DSP112
+# Column Speakers
+## Waterproof Series
+Waterproof: DSP255II, DSP8114, DSP8116, DSP4120, DSP4235, DSP4350, DSP4465, DSP158, DSP258, DSP358, DSP458
+## Indoor Series
+Indoor: DSP203II, DSP403II
+# Outdoor & Specialty Speakers
+## Garden Speakers
+Rock Type: Rock Speaker
+## Horn Speakers
+Hi-Fi Horn: DSP161HD, DSP162HD, DSP163HD
+Standard Horn: DSP170, DSP1130, DSP1650
+Anti-explosion: DSP204H
+## Pendant & Projector
+Pendant: DSP107
+Projector: DSP5153, DSP5165, DSP207II, DSP5520
+## EN54 Fireproof
+EN54: DSP3011EN, DSP2254EN, DSP602EN, DSP5311EN, DSP207EN, DSP217EN
+## Invisible Speakers
+Invisible: DSP40I, DSP40IL
+## Digitally Steerable Arrays
+Phased Array: DSP1500, DSP1500L, DSP1501, DSP1502, DSP3025, DSP3036
+## Directional Speakers
+Directional: DSP395T, DSP395U, DSS1519, DSS1521
+## Teaching Audio
+Teaching Systems: DSP602BT, MAG6468, DSP2021 Series
+# High Performance Series
+## HP Ceiling Speakers
+Coaxial: DSP8040, DSP8050, DSP6030, DSP8150, DSP7052, DSP7054, DSP7081, DSP8060C
+## HP Subwoofers
+Subwoofer: DSP211, DSP40SUB
+## HP Wall Mount
+Waterproof: DSP5020, DSP5040, DSP5050, DSP6020, DSP6035, DSP6050, DSP6060, DSP402
+## HP Pendant
+IP66 Pendant: DSP6030P, DSP8050P, DSP8050SUB
+## HP Horn
+Compact Coaxial: DSP3008H, DSP3010H, DSP3012H
+Outdoor: DSP0810, DSP1020, DSP1230, DSP1540
+## HP Column
+Professional: DSP6120, DSP6180, DSP6240, DSP2008, DSP2016, DSP4300B, DSP8300B, DSP4310, DSP4320, DSP4330, DSP5210, DSP5420, DSP5630, DSP5840, DSP1260
+# Peripherals & Accessories
+## Peripheral Equipment
+Source & Control: MAG2107C, D6720, MP1715T
+## Microphones
+Paging & Desktop: DMA20, CM10, CM62, CM30, DM30
+## Volume Controllers
+Controllers: WH-1II, WH-1FI, WH-7F, WH-7FA, WH-7FB, WH-7FC
+## Audio Racks
+19-inch Racks: MP1105, MP1110, MP1115, MP1118
+# Voice Evacuation (PAVA)
+## PAVA Systems
+EN54 Voice Alarm: PAVA9500, PAVA8500, PAVA4600
+# IP Network Audio (MAG)
+## MAG Systems
+IP PA: MAG6182II, MAG6182II Pro, MAG6806, DSP9100H

@@ -19,6 +19,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/solutions`, lastModified: now, changeFrequency: 'monthly', priority: 0.9 },
     { url: `${base}/solution-finder`, lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${base}/brands/infobit/catalog`, lastModified: now, changeFrequency: 'weekly', priority: 0.8 },
+    { url: `${base}/brands/dsppa/catalog`, lastModified: now, changeFrequency: 'weekly', priority: 0.8 },
   ]
 
   const brandPages: MetadataRoute.Sitemap = ['dsppa', 'infobit', 'tenveo', 'focus'].map(slug => ({
