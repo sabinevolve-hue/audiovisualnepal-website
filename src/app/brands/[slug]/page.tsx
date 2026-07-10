@@ -123,11 +123,11 @@ export default async function BrandPage({ params }: Props) {
               <p className="text-[14px]" style={{ color: '#64748B' }}>
                 Founded {brand.founded} · {brand.country} · Authorised dealer in Nepal
               </p>
-              {(slug === 'infobit' || slug === 'dsppa') && (
+              {(slug === 'infobit' || slug === 'dsppa' || slug === 'tenveo') && (
                 <Link href={`/brands/${slug}/catalog`}
                   className="mt-4 inline-flex items-center gap-2 rounded-full px-5 py-2 text-[13px] font-bold text-white transition hover:opacity-90"
                   style={{ background: brand.color, textDecoration: 'none' }}>
-                  Browse the full {brand.name} catalog — {slug === 'infobit' ? '550+' : '200+'} models →
+                  Browse the full {brand.name} catalog — {slug === 'infobit' ? '550+' : slug === 'dsppa' ? '200+' : '60+'} models →
                 </Link>
               )}
             </div>

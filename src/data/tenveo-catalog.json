@@ -1,0 +1,241 @@
+{
+ "brand": "Tenveo",
+ "updated": "2026-07-11",
+ "source": "Tenveo Distributor Catalogue 2026",
+ "totalModels": 63,
+ "categories": [
+  {
+   "category": "PTZ Cameras",
+   "series": [
+    {
+     "name": "VHD Series (Full HD)",
+     "groups": [
+      {
+       "type": "PTZ",
+       "models": [
+        "VHD612A",
+        "VHD620A",
+        "VHD630A",
+        "VHD3U",
+        "VHD12U",
+        "VHD20U",
+        "VHD20H",
+        "VHD4K"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "UV Series (4K / AI)",
+     "groups": [
+      {
+       "type": "4K PTZ",
+       "models": [
+        "UV620A",
+        "UV630A",
+        "UV620A-NDI",
+        "UV630A-NDI",
+        "UV12H",
+        "UV20H",
+        "UV12U-4K",
+        "UV20U-4K",
+        "UVS20A",
+        "UV612A-4K"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "VX Series (AI Tracking)",
+     "groups": [
+      {
+       "type": "AI Tracking",
+       "models": [
+        "VX12M-4K",
+        "VX20M",
+        "VX20M-4K",
+        "VX30M"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "NV Series (Compact)",
+     "groups": [
+      {
+       "type": "Compact PTZ",
+       "models": [
+        "NV3W",
+        "NV12W",
+        "NV20W",
+        "NV3U",
+        "NV12U",
+        "NV20U",
+        "NV12H-4K",
+        "NV20A-AI",
+        "NVS20A"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "VL Series (Lecture Tracking)",
+     "groups": [
+      {
+       "type": "Lecturer Tracking",
+       "models": [
+        "VL12H",
+        "VL20H",
+        "VL12U-4K",
+        "VL20N-4K"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "NDI Broadcast",
+     "groups": [
+      {
+       "type": "NDI",
+       "models": [
+        "X60-NDI"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "EZ Series (Entry 4K)",
+     "groups": [
+      {
+       "type": "Entry PTZ",
+       "models": [
+        "EZ3H-4K",
+        "EZ10H-4K"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "category": "360 Cameras & Group Kits",
+   "series": [
+    {
+     "name": "All-in-one Conference",
+     "groups": [
+      {
+       "type": "Group Kits",
+       "models": [
+        "CC600",
+        "VA300C",
+        "VA512EX",
+        "VA610EX",
+        "VA612EX"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "category": "Speakerphones",
+   "series": [
+    {
+     "name": "Bluetooth / USB",
+     "groups": [
+      {
+       "type": "Speakerphone",
+       "models": [
+        "M1",
+        "M2B",
+        "M3B",
+        "M5B",
+        "M5Bpro",
+        "M6B"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "category": "Wireless Conference System",
+   "series": [
+    {
+     "name": "UHF Discussion System",
+     "groups": [
+      {
+       "type": "Wireless Mic",
+       "models": [
+        "TWS-168C",
+        "TWS-168D"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "category": "Controllers & Production",
+   "series": [
+    {
+     "name": "PTZ Controllers",
+     "groups": [
+      {
+       "type": "Controller",
+       "models": [
+        "KZ1",
+        "KB200",
+        "KB300Pro"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Production & Streaming",
+     "groups": [
+      {
+       "type": "Production",
+       "models": [
+        "U402",
+        "S500",
+        "PC500",
+        "T310",
+        "POE8"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "category": "Mounts & Accessories",
+   "series": [
+    {
+     "name": "Mounts",
+     "groups": [
+      {
+       "type": "Mount",
+       "models": [
+        "TEVO-L Wall Bracket",
+        "TEVO-Tripod"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "USB Extension",
+     "groups": [
+      {
+       "type": "Extension",
+       "models": [
+        "E5",
+        "E10"
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

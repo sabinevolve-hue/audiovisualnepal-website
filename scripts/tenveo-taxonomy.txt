@@ -1,0 +1,34 @@
+# PTZ Cameras
+## VHD Series (Full HD)
+PTZ: VHD612A, VHD620A, VHD630A, VHD3U, VHD12U, VHD20U, VHD20H, VHD4K
+## UV Series (4K / AI)
+4K PTZ: UV620A, UV630A, UV620A-NDI, UV630A-NDI, UV12H, UV20H, UV12U-4K, UV20U-4K, UVS20A, UV612A-4K
+## VX Series (AI Tracking)
+AI Tracking: VX12M-4K, VX20M, VX20M-4K, VX30M
+## NV Series (Compact)
+Compact PTZ: NV3W, NV12W, NV20W, NV3U, NV12U, NV20U, NV12H-4K, NV20A-AI, NVS20A
+## VL Series (Lecture Tracking)
+Lecturer Tracking: VL12H, VL20H, VL12U-4K, VL20N-4K
+## NDI Broadcast
+NDI: X60-NDI
+## EZ Series (Entry 4K)
+Entry PTZ: EZ3H-4K, EZ10H-4K
+# 360 Cameras & Group Kits
+## All-in-one Conference
+Group Kits: CC600, VA300C, VA512EX, VA610EX, VA612EX
+# Speakerphones
+## Bluetooth / USB
+Speakerphone: M1, M2B, M3B, M5B, M5Bpro, M6B
+# Wireless Conference System
+## UHF Discussion System
+Wireless Mic: TWS-168C, TWS-168D
+# Controllers & Production
+## PTZ Controllers
+Controller: KZ1, KB200, KB300Pro
+## Production & Streaming
+Production: U402, S500, PC500, T310, POE8
+# Mounts & Accessories
+## Mounts
+Mount: TEVO-L Wall Bracket, TEVO-Tripod
+## USB Extension
+Extension: E5, E10
