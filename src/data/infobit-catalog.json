@@ -1,0 +1,1986 @@
+{
+ "brand": "InfoBit",
+ "updated": "2026-07-11",
+ "totalModels": 559,
+ "categories": [
+  {
+   "category": "Wireless Presentation",
+   "series": [
+    {
+     "name": "iShare Flip",
+     "groups": [
+      {
+       "type": "Transmitter",
+       "models": [
+        "iShare Flip-CT",
+        "iShare Flip-HT"
+       ]
+      },
+      {
+       "type": "Receiver",
+       "models": [
+        "iShare Flip-HR"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "iShare X",
+     "groups": [
+      {
+       "type": "Receiver",
+       "models": [
+        "iShare X100",
+        "iShare X200",
+        "iShare X400",
+        "iShare X400 Pro"
+       ]
+      },
+      {
+       "type": "Dongle",
+       "models": [
+        "iShare HX",
+        "iShare CX",
+        "iShare HX4",
+        "iShare CX4"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "iShare M",
+     "groups": [
+      {
+       "type": "Dongle",
+       "models": [
+        "iShare MC"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "category": "Video Walls",
+   "series": [
+    {
+     "name": "iWall X (Fixed)",
+     "groups": [
+      {
+       "type": "Controller",
+       "models": [
+        "iWall X408",
+        "iWall X808",
+        "iWall X412"
+       ]
+      }
+     ],
+     "featured": true
+    },
+    {
+     "name": "iWall (Fixed)",
+     "groups": [
+      {
+       "type": "Controller",
+       "models": [
+        "iWall 104C",
+        "iWall 104P",
+        "iWall 8K106",
+        "iWall 109",
+        "iWall 206",
+        "iWall 204"
+       ],
+       "featuredModels": [
+        "iWall 104C",
+        "iWall 206"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "iWall M (Modular)",
+     "groups": [
+      {
+       "type": "Chassis",
+       "models": [
+        "iWall M4-C1609",
+        "iWall M4-C2420",
+        "iWall M4-C3636",
+        "iWall M4-C7672"
+       ]
+      },
+      {
+       "type": "Input Cards",
+       "models": [
+        "iWall M4-IN-4HDMI",
+        "iWall M4-IN-4DVI",
+        "iWall M4-IN-1HDMI4K",
+        "iWall M4-IN-2HDMI4K",
+        "iWall M4-IN-2IP",
+        "iWall M4-IN-4SDI"
+       ]
+      },
+      {
+       "type": "Output Cards",
+       "models": [
+        "iWall M4-OT-4HDMI",
+        "iWall M4-OT-4DVI",
+        "iWall M4-PV-IP"
+       ]
+      },
+      {
+       "type": "Control Card",
+       "models": [
+        "iWall M4-CTL"
+       ]
+      },
+      {
+       "type": "Redundant PSU",
+       "models": [
+        "iWall M4-PSU"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "category": "Matrix Switching",
+   "series": [
+    {
+     "name": "iMatrix M (Modular)",
+     "groups": [
+      {
+       "type": "Chassis",
+       "models": [
+        "iMatrix M808",
+        "iMatrix M1616",
+        "iMatrix M3636"
+       ]
+      },
+      {
+       "type": "2K Input Cards",
+       "models": [
+        "iMatrix MI2K-HDMI",
+        "iMatrix MI2K-DVIU",
+        "iMatrix MI2K-VGA",
+        "iMatrix MI2K-SDI",
+        "iMatrix MI2K-HBT70",
+        "iMatrix MI2K-HBT100",
+        "iMatrix MI2K-HBT150",
+        "iMatrix MI2K-FIBER"
+       ]
+      },
+      {
+       "type": "2K Output Cards",
+       "models": [
+        "iMatrix MO2K-HDMI",
+        "iMatrix MO2K-DVIU",
+        "iMatrix MO2K-VGA",
+        "iMatrix MO2K-SDI",
+        "iMatrix MO2K-HBT70",
+        "iMatrix MO2K-HBT100",
+        "iMatrix MO2K-HBT150",
+        "iMatrix MO2K-FIBER"
+       ]
+      },
+      {
+       "type": "4K Input Cards",
+       "models": [
+        "iMatrix MI4K-HDMI",
+        "iMatrix MI4K-HBT70",
+        "iMatrix MI4K-HBT100",
+        "iMatrix MI4K-HBT150"
+       ]
+      },
+      {
+       "type": "4K Output Cards",
+       "models": [
+        "iMatrix MO4K-HDMI",
+        "iMatrix MO4K-HBT70",
+        "iMatrix MO4K-HBT100",
+        "iMatrix MO4K-HBT150"
+       ]
+      }
+     ],
+     "featured": true
+    },
+    {
+     "name": "iMatrix (Fixed)",
+     "groups": [
+      {
+       "type": "HDMI Matrix",
+       "models": [
+        "iMatrix H44A",
+        "iMatrix H88A",
+        "iMatrix H1616A",
+        "iMatrix C604",
+        "iMatrix H44AM",
+        "iMatrix H88AM",
+        "iMatrix H44H150",
+        "iMatrix H88H150",
+        "iMatrix H44HW",
+        "iMatrix H44VAW",
+        "iMatrix H44HAW",
+        "iMatrix H88HAW"
+       ],
+       "featuredModels": [
+        "iMatrix C604",
+        "iMatrix H44AM",
+        "iMatrix H88AM"
+       ]
+      },
+      {
+       "type": "HDMI + USB Matrix",
+       "models": [
+        "iMatrix HU44"
+       ],
+       "featuredModels": [
+        "iMatrix HU44"
+       ]
+      },
+      {
+       "type": "USB Matrix",
+       "models": [
+        "iMatrix UB44",
+        "iMatrix UB44-V2"
+       ],
+       "featuredModels": [
+        "iMatrix UB44-V2"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "category": "AV Control",
+   "series": [
+    {
+     "name": "iControl J",
+     "groups": [
+      {
+       "type": "PTZ Control",
+       "models": [
+        "iControl J10",
+        "iControl J20"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "iControl K",
+     "groups": [
+      {
+       "type": "Central Control",
+       "models": [
+        "iControl K06-UK",
+        "iControl K06-EU",
+        "iControl K06-US",
+        "iControl KT069",
+        "iControl KE101"
+       ],
+       "featuredModels": [
+        "iControl K06-UK",
+        "iControl K06-EU",
+        "iControl K06-US"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "iControl A",
+     "groups": [
+      {
+       "type": "Audio Control",
+       "models": [
+        "iControl A08",
+        "iControl A32"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "category": "AV over IP",
+   "series": [
+    {
+     "name": "iSwitch 265",
+     "groups": [
+      {
+       "type": "Tx/ENC",
+       "models": [
+        "iSwitch 265T"
+       ]
+      },
+      {
+       "type": "Rx/DEC",
+       "models": [
+        "iSwitch 265R"
+       ]
+      },
+      {
+       "type": "Controller",
+       "models": [
+        "iSwitch 265C"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "iSwitch 265TR",
+     "groups": [
+      {
+       "type": "Transceiver",
+       "models": [
+        "iSwitch 265TR"
+       ]
+      },
+      {
+       "type": "Controller",
+       "models": [
+        "iSwitch 265TR-C"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "iSwitch 265K",
+     "groups": [
+      {
+       "type": "Tx/ENC",
+       "models": [
+        "iSwitch 265K-T"
+       ]
+      },
+      {
+       "type": "Rx/DEC",
+       "models": [
+        "iSwitch 265K-R"
+       ]
+      }
+     ],
+     "featured": true
+    },
+    {
+     "name": "iSwitch 2000",
+     "groups": [
+      {
+       "type": "Tx/ENC",
+       "models": [
+        "iSwitch 2000T"
+       ]
+      },
+      {
+       "type": "Rx/DEC",
+       "models": [
+        "iSwitch 2000R"
+       ]
+      },
+      {
+       "type": "Controller",
+       "models": [
+        "iSwitch 2000C"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "iSwitch 2000D",
+     "groups": [
+      {
+       "type": "Tx/ENC",
+       "models": [
+        "iSwitch 2000D-WPT",
+        "iSwitch 2000D-T"
+       ]
+      },
+      {
+       "type": "Rx/DEC",
+       "models": [
+        "iSwitch 2000D-R"
+       ]
+      },
+      {
+       "type": "Controller",
+       "models": [
+        "iSwitch 2000D-C"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "iSwitch SDV",
+     "groups": [
+      {
+       "type": "Controller",
+       "models": [
+        "iSwitch SDV-C"
+       ]
+      },
+      {
+       "type": "Transceiver",
+       "models": [
+        "iSwitch SDV-TR"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "iSwitch 2000U",
+     "groups": [
+      {
+       "type": "Transceiver",
+       "models": [
+        "iSwitch 2000U-TR"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "iSwitch 2000H",
+     "groups": [
+      {
+       "type": "Transceiver",
+       "models": [
+        "iSwitch 2000H-TR"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "iSwitch 2000HC",
+     "groups": [
+      {
+       "type": "Tx/ENC",
+       "models": [
+        "iSwitch 2000HC-T"
+       ]
+      },
+      {
+       "type": "Rx/DEC",
+       "models": [
+        "iSwitch 2000HC-R"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "iSwitch 2000-CTL",
+     "groups": [
+      {
+       "type": "Controller",
+       "models": [
+        "iSwitch 2000-CTL"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "iSwitch NeoLink",
+     "groups": [
+      {
+       "type": "Tx/ENC",
+       "models": [
+        "iSwitch NeoLink-HT"
+       ]
+      },
+      {
+       "type": "Rx/DEC",
+       "models": [
+        "iSwitch NeoLink-HR"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "category": "Video Distribution",
+   "series": [
+    {
+     "name": "Presentation Switchers",
+     "groups": [
+      {
+       "type": "Switcher",
+       "models": [
+        "iSwitch S301",
+        "iSwitch S501",
+        "iSwitch 201K",
+        "iSwitch 201MV",
+        "iSwitch 401MV",
+        "iSwitch 402MV",
+        "iSwitch 402UC",
+        "iSwitch 402UC-L",
+        "iSwitch 501HD",
+        "iSwitch 602"
+       ],
+       "featuredModels": [
+        "iSwitch 402UC"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Multiviewers",
+     "groups": [
+      {
+       "type": "Multiviewer",
+       "models": [
+        "iSwitch 901",
+        "iSwitch 1601"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Splitters",
+     "groups": [
+      {
+       "type": "4K60 Splitters",
+       "models": [
+        "iSwitch 102",
+        "iSwitch 104",
+        "iSwitch 108",
+        "iSwitch 1016"
+       ]
+      },
+      {
+       "type": "8K Splitters",
+       "models": [
+        "iSwitch 8K102",
+        "iSwitch 8K104",
+        "iSwitch 8K108"
+       ]
+      },
+      {
+       "type": "HDBaseT Splitters",
+       "models": [
+        "iSwitch 104H150",
+        "iSwitch 108H150"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "AV Streaming",
+     "groups": [
+      {
+       "type": "AV Streamer",
+       "models": [
+        "iSwitch 265-Live"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "category": "Audio Distribution",
+   "series": [
+    {
+     "name": "Feedback Suppressor",
+     "groups": [
+      {
+       "type": "Suppressor",
+       "models": [
+        "iSound FBS"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Power Amplifiers",
+     "groups": [
+      {
+       "type": "Amplifier",
+       "models": [
+        "iSound PA20",
+        "iSound PAD150"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "DSP",
+     "groups": [
+      {
+       "type": "DSP",
+       "models": [
+        "iSound 44D",
+        "iSound 88D",
+        "iSound 1616D"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Audio Bridge",
+     "groups": [
+      {
+       "type": "Bridge",
+       "models": [
+        "iSound AB88-UX"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "category": "Dante Audio (iTrans)",
+   "series": [
+    {
+     "name": "iTrans DU",
+     "groups": [
+      {
+       "type": "USB Dante",
+       "models": [
+        "iTrans DU-TR-22B",
+        "iTrans DU-TR-22C"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "iTrans DP",
+     "groups": [
+      {
+       "type": "Phoenix Dante",
+       "models": [
+        "iTrans DP-T-22",
+        "iTrans DP-R-22",
+        "iTrans DP-BOX-22"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "iTrans DX",
+     "groups": [
+      {
+       "type": "XLR Dante",
+       "models": [
+        "iTrans DX-T-22",
+        "iTrans DX-R-22",
+        "iTrans DX-22-EUK",
+        "iTrans DX-22-US"
+       ]
+      },
+      {
+       "type": "Bluetooth Dante",
+       "models": [
+        "iTrans DB22",
+        "iTrans DB44-EUK",
+        "iTrans DB44-US"
+       ],
+       "featuredModels": [
+        "iTrans DB44-EUK",
+        "iTrans DB44-US"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "iTrans HD",
+     "groups": [
+      {
+       "type": "HDMI ARC",
+       "models": [
+        "iTrans HD-ARC"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "category": "Cameras",
+   "series": [
+    {
+     "name": "Video Bars",
+     "groups": [
+      {
+       "type": "Videobar",
+       "models": [
+        "iCam VB40",
+        "iCam VB40-POWER",
+        "iCam VB40-Mic",
+        "iCam VB50",
+        "iCam VB60",
+        "iCam VB80 Kit",
+        "iCam VB80",
+        "iCam VB80-Mic"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Webcams",
+     "groups": [
+      {
+       "type": "Webcam",
+       "models": [
+        "iCam 100",
+        "iCam 200H",
+        "iCam 200U"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "PTZ Cameras",
+     "groups": [
+      {
+       "type": "PTZ",
+       "models": [
+        "iCam P10",
+        "iCam P11",
+        "iCam P12U",
+        "iCam P13",
+        "iCam P13N",
+        "iCam P20",
+        "iCam P20N",
+        "iCam P30",
+        "iCam P30N",
+        "iCam P40",
+        "iCam PT40",
+        "iCam TRK01"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "360 Camera",
+     "groups": [
+      {
+       "type": "360",
+       "models": [
+        "iCam 360"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "category": "Meeting Group",
+   "series": [
+    {
+     "name": "iCam XE",
+     "groups": [
+      {
+       "type": "All-in-one",
+       "models": [
+        "iCam XE2"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "category": "Microphones & Speakers",
+   "series": [
+    {
+     "name": "NearLink Microphones",
+     "groups": [
+      {
+       "type": "NearLink",
+       "models": [
+        "iSound NL200",
+        "iSound NL200T",
+        "iSound NL200R",
+        "iSound NL200H",
+        "iSpeaker M100",
+        "iSpeaker M700",
+        "iSpeaker M800",
+        "iSpeaker MD30"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Ceiling Microphones",
+     "groups": [
+      {
+       "type": "Ceiling Mic",
+       "models": [
+        "iSpeaker CM710",
+        "iSpeaker CM710-Hub",
+        "iSpeaker CM710-Mixer",
+        "iSpeaker CM360",
+        "iSpeaker CM365"
+       ],
+       "featuredModels": [
+        "iSpeaker CM360"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Speakerphones",
+     "groups": [
+      {
+       "type": "Speakerphone",
+       "models": [
+        "iSpeaker M250",
+        "iSpeaker M260",
+        "iSpeaker M400",
+        "iSpeaker M500",
+        "iSpeaker M600",
+        "iSpeaker CM800",
+        "iSpeaker A20"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Speakers",
+     "groups": [
+      {
+       "type": "Speaker",
+       "models": [
+        "iSpeaker DAP6",
+        "iSpeaker DAP10",
+        "iSpeaker P30B",
+        "iSpeaker Mini-15",
+        "iSpeaker AAC4",
+        "iSpeaker AAC6",
+        "iSpeaker DAC6S",
+        "iSpeaker CS100",
+        "iSpeaker DCS60"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "category": "UC Hub",
+   "series": [
+    {
+     "name": "UC KVM",
+     "groups": [
+      {
+       "type": "Hub",
+       "models": [
+        "iTrans UC-Hub",
+        "iTrans UC-Hub21",
+        "iTrans UC-HUB402",
+        "iTrans UC-HUB2U"
+       ]
+      }
+     ],
+     "featured": true
+    }
+   ]
+  },
+  {
+   "category": "Digital Conference",
+   "series": [
+    {
+     "name": "iMeeting X",
+     "groups": [
+      {
+       "type": "Controller",
+       "models": [
+        "iMeeting X-Con"
+       ]
+      },
+      {
+       "type": "Discussion Mic",
+       "models": [
+        "iMeeting X-Mic-DC",
+        "iMeeting X-Mic-DD",
+        "iMeeting X-Mic-RC",
+        "iMeeting X-Mic-RD"
+       ]
+      },
+      {
+       "type": "Voting Mic (screen)",
+       "models": [
+        "iMeeting X-Mic-VC",
+        "iMeeting X-Mic-VD",
+        "iMeeting X-Mic-VRC",
+        "iMeeting X-Mic-VRD"
+       ]
+      },
+      {
+       "type": "Voting Mic (e-nameplate)",
+       "models": [
+        "iMeeting X-Mic-VNC",
+        "iMeeting X-Mic-VND",
+        "iMeeting X-Mic-VNRC",
+        "iMeeting X-Mic-VNRD"
+       ]
+      },
+      {
+       "type": "Discussion Mic (lift)",
+       "models": [
+        "iMeeting X-Mic-LC",
+        "iMeeting X-Mic-LD"
+       ]
+      },
+      {
+       "type": "Extension Box",
+       "models": [
+        "iMeeting X-EXT"
+       ]
+      },
+      {
+       "type": "Extension Cable",
+       "models": [
+        "iMeeting X-S10"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "category": "KVM Solutions",
+   "series": [
+    {
+     "name": "KVM Switchers",
+     "groups": [
+      {
+       "type": "Desktop KVM",
+       "models": [
+        "iSwitch 201HK",
+        "iSwitch 401HK",
+        "iSwitch 402KVM",
+        "iSwitch U44KM",
+        "iSwitch 201HKL",
+        "iSwitch 401HKL",
+        "iSwitch 801HKL",
+        "iSwitch 1601HKL",
+        "iSwitch 401MVK"
+       ],
+       "featuredModels": [
+        "iSwitch 402KVM"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "LCD Console",
+     "groups": [
+      {
+       "type": "LCD KVM",
+       "models": [
+        "iSwitch V1801",
+        "iSwitch V1808",
+        "iSwitch V1816"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "category": "Extenders & Connectivity",
+   "series": [
+    {
+     "name": "HDBaseT Extenders",
+     "groups": [
+      {
+       "type": "70m 24V",
+       "models": [
+        "iTrans E70S",
+        "iTrans E70S-T",
+        "iTrans E70S-R"
+       ]
+      },
+      {
+       "type": "70m 12V",
+       "models": [
+        "iTrans E70C",
+        "iTrans E70C-T",
+        "iTrans E70C-R"
+       ]
+      },
+      {
+       "type": "70m 4K30",
+       "models": [
+        "iTrans E70N"
+       ]
+      },
+      {
+       "type": "70m 4K60",
+       "models": [
+        "iTrans B70S",
+        "iTrans B70S-T",
+        "iTrans B70S-R"
+       ]
+      },
+      {
+       "type": "90m 8K",
+       "models": [
+        "iTrans E90U8K",
+        "iTrans E90U8K-T",
+        "iTrans E90U8K-R"
+       ]
+      },
+      {
+       "type": "100m USB-C",
+       "models": [
+        "iTrans E100HC",
+        "iTrans E100HC3K",
+        "iTrans E100HCU"
+       ],
+       "featuredModels": [
+        "iTrans E100HC3K"
+       ]
+      },
+      {
+       "type": "100m 4K60",
+       "models": [
+        "iTrans E100V3K",
+        "iTrans E100V3K-T",
+        "iTrans E100V3K-R",
+        "iTrans E100K",
+        "iTrans E100K-T",
+        "iTrans E100K-R"
+       ]
+      },
+      {
+       "type": "100m Transceiver",
+       "models": [
+        "iTrans E100TR"
+       ]
+      },
+      {
+       "type": "100m USB",
+       "models": [
+        "iTrans E100UC"
+       ]
+      },
+      {
+       "type": "Scaler",
+       "models": [
+        "iTrans 201S"
+       ]
+      },
+      {
+       "type": "100m Loopout",
+       "models": [
+        "iTrans E150CL",
+        "iTrans E150CL-T",
+        "iTrans E150CL-R"
+       ]
+      },
+      {
+       "type": "150m",
+       "models": [
+        "iTrans E150CG",
+        "iTrans E150CG-T",
+        "iTrans E150CG-R"
+       ]
+      },
+      {
+       "type": "150m KVM",
+       "models": [
+        "iTrans E150SK",
+        "iTrans E150SK-T",
+        "iTrans E150SK-R"
+       ]
+      },
+      {
+       "type": "150m USB",
+       "models": [
+        "iTrans E150U2",
+        "iTrans E150U2-T",
+        "iTrans E150U2-R"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Wallplates",
+     "groups": [
+      {
+       "type": "Non-HDBaseT",
+       "models": [
+        "iTrans WP-UK-C",
+        "iTrans WP-UK-B",
+        "iTrans WP-SC001",
+        "iTrans WP-SC002",
+        "iTrans WPH",
+        "iTrans WPN",
+        "iTrans WPU3C",
+        "iTrans WPU3A",
+        "iTrans WPU2B"
+       ]
+      },
+      {
+       "type": "HDBaseT",
+       "models": [
+        "iTrans WP70-T",
+        "iTrans WP70B",
+        "iTrans WP70C",
+        "iTrans WP100HC",
+        "iTrans WP70HBC",
+        "iTrans WP210-T",
+        "iTrans WP200-Kit",
+        "iTrans WP301-Kit"
+       ],
+       "featuredModels": [
+        "iTrans WP70HBC"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Fiber Extenders",
+     "groups": [
+      {
+       "type": "Fiber",
+       "models": [
+        "iTrans F1000",
+        "iTrans F1000-T",
+        "iTrans F1000-R",
+        "iTrans UC-F300T",
+        "iTrans UC-F300R",
+        "iTrans DH-F300T",
+        "iTrans DH-F300R"
+       ]
+      }
+     ],
+     "featured": true
+    },
+    {
+     "name": "Wireless Extenders",
+     "groups": [
+      {
+       "type": "100m Wireless",
+       "models": [
+        "iTrans W100"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "USB Extenders",
+     "groups": [
+      {
+       "type": "USB",
+       "models": [
+        "iTrans U3-PIC",
+        "iTrans USB2-TR50",
+        "iTrans USB2-TR100",
+        "iTrans USB3-TR100",
+        "iTrans U3-TR100CB",
+        "iTrans U3-WP100TR"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Audio Extenders",
+     "groups": [
+      {
+       "type": "Audio",
+       "models": [
+        "iTrans EA300"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "USB Share",
+     "groups": [
+      {
+       "type": "Share",
+       "models": [
+        "iTrans USB32-S"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "EDID Manager",
+     "groups": [
+      {
+       "type": "EDID/HDCP",
+       "models": [
+        "iTrans EM"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "OCS",
+     "groups": [
+      {
+       "type": "OCS",
+       "models": [
+        "iTrans OCS 151",
+        "iTrans OCS 181"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Table Boxes (iBox)",
+     "groups": [
+      {
+       "type": "Fixed Box",
+       "models": [
+        "iBox 01",
+        "iBox TW",
+        "iBox TP",
+        "iBox TPV",
+        "iBox TPC",
+        "iBox TPD"
+       ]
+      },
+      {
+       "type": "Retractable Box",
+       "models": [
+        "iBox Core-500"
+       ]
+      },
+      {
+       "type": "iBox Flex",
+       "models": [
+        "iBox Flex",
+        "iBox Flex-H",
+        "iBox Flex-UA",
+        "iBox Flex-UCV",
+        "iBox Flex-N"
+       ]
+      },
+      {
+       "type": "iBox Flex2",
+       "models": [
+        "iBox Flex2-FR",
+        "iBox Flex2-1H",
+        "iBox Flex2-2H1",
+        "iBox Flex2-2N",
+        "iBox Flex2-1C",
+        "iBox Flex2-1A",
+        "iBox Flex2-1A1C",
+        "iBox Flex2-KB",
+        "iBox Flex2-2PS",
+        "iBox Flex2-RTH",
+        "iBox Flex2-RTN",
+        "iBox Flex2-RTUA",
+        "iBox Flex2-RTUC",
+        "iBox Flex2-PWEU",
+        "iBox Flex2-PWUK",
+        "iBox Flex2-PWUS",
+        "iBox Flex2-PWUV"
+       ],
+       "featured": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "category": "Embedders & De-embedders",
+   "series": [
+    {
+     "name": "De-embedders",
+     "groups": [
+      {
+       "type": "De-embedder",
+       "models": [
+        "iTrans AD01",
+        "iTrans AD02"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Embedders",
+     "groups": [
+      {
+       "type": "Embedder",
+       "models": [
+        "iTrans AE01"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "category": "Room PC",
+   "series": [
+    {
+     "name": "iMeeting A",
+     "groups": [
+      {
+       "type": "Room PC",
+       "models": [
+        "iMeeting A7"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "category": "Cables & Adapters",
+   "series": [
+    {
+     "name": "HDMI AOC",
+     "groups": [
+      {
+       "type": "8K HDMI A-A",
+       "models": [
+        "AOC-HDMI-AA8K-05",
+        "AOC-HDMI-AA8K-10",
+        "AOC-HDMI-AA8K-15",
+        "AOC-HDMI-AA8K-20",
+        "AOC-HDMI-AA8K-25",
+        "AOC-HDMI-AA8K-30",
+        "AOC-HDMI-AA8K-40",
+        "AOC-HDMI-AA8K-50",
+        "AOC-HDMI-AA8K-60",
+        "AOC-HDMI-AA8K-70",
+        "AOC-HDMI-AA8K-80",
+        "AOC-HDMI-AA8K-90",
+        "AOC-HDMI-AA8K-100"
+       ]
+      },
+      {
+       "type": "4K HDMI A-A Armoured",
+       "models": [
+        "AOC-HDMI-AA05K",
+        "AOC-HDMI-AA10K",
+        "AOC-HDMI-AA15K",
+        "AOC-HDMI-AA20K",
+        "AOC-HDMI-AA25K",
+        "AOC-HDMI-AA30K",
+        "AOC-HDMI-AA40K",
+        "AOC-HDMI-AA50K",
+        "AOC-HDMI-AA60K",
+        "AOC-HDMI-AA70K",
+        "AOC-HDMI-AA80K",
+        "AOC-HDMI-AA90K",
+        "AOC-HDMI-AA100K"
+       ]
+      },
+      {
+       "type": "4K HDMI D-D iLock",
+       "models": [
+        "AOC-HDMI-DD05L",
+        "AOC-HDMI-DD10L",
+        "AOC-HDMI-DD15L",
+        "AOC-HDMI-DD20L",
+        "AOC-HDMI-DD25L",
+        "AOC-HDMI-DD30L",
+        "AOC-HDMI-DD40L",
+        "AOC-HDMI-DD50L",
+        "AOC-HDMI-DD60L",
+        "AOC-HDMI-DD70L",
+        "AOC-HDMI-DD80L",
+        "AOC-HDMI-DD90L",
+        "AOC-HDMI-DD100L",
+        "AOC-HDMI-LTx",
+        "AOC-HDMI-LRx"
+       ]
+      },
+      {
+       "type": "4K HDMI D-D Classic",
+       "models": [
+        "AOC-HDMI-D05C",
+        "AOC-HDMI-D10C",
+        "AOC-HDMI-D15C",
+        "AOC-HDMI-D20C",
+        "AOC-HDMI-D25C",
+        "AOC-HDMI-D30C",
+        "AOC-HDMI-D40C",
+        "AOC-HDMI-D50C",
+        "AOC-HDMI-D60C",
+        "AOC-HDMI-D70C",
+        "AOC-HDMI-D80C",
+        "AOC-HDMI-D90C",
+        "AOC-HDMI-D100C",
+        "AOC-HDMI-Tx",
+        "AOC-HDMI-Rx"
+       ]
+      },
+      {
+       "type": "4K HDMI A-A Fixed",
+       "models": [
+        "AOC-HDMI-F05",
+        "AOC-HDMI-F10",
+        "AOC-HDMI-F15",
+        "AOC-HDMI-F20",
+        "AOC-HDMI-F25",
+        "AOC-HDMI-F30",
+        "AOC-HDMI-F40",
+        "AOC-HDMI-F50",
+        "AOC-HDMI-F60",
+        "AOC-HDMI-F70",
+        "AOC-HDMI-F100"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "DP AOC",
+     "groups": [
+      {
+       "type": "8K miniDP-miniDP",
+       "models": [
+        "AOC-DP-D05",
+        "AOC-DP-D10",
+        "AOC-DP-D15",
+        "AOC-DP-D20",
+        "AOC-DP-D30",
+        "AOC-DP-D40",
+        "AOC-DP-D50",
+        "AOC-DP-D60",
+        "AOC-DP-D70",
+        "AOC-DP-D80",
+        "AOC-DP-D90",
+        "AOC-DP-D100",
+        "AOC-DP-Tx",
+        "AOC-DP-Rx"
+       ]
+      },
+      {
+       "type": "8K DP-DP Fixed",
+       "models": [
+        "AOC-DP-F05",
+        "AOC-DP-F10",
+        "AOC-DP-F15",
+        "AOC-DP-F20",
+        "AOC-DP-F30",
+        "AOC-DP-F40",
+        "AOC-DP-F50",
+        "AOC-DP-F60",
+        "AOC-DP-F70",
+        "AOC-DP-F80",
+        "AOC-DP-F90",
+        "AOC-DP-F100"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "USB AOC",
+     "groups": [
+      {
+       "type": "USB C-C Video",
+       "models": [
+        "AOC-USB31-CCV-05",
+        "AOC-USB31-CCV-10",
+        "AOC-USB31-CCV-15",
+        "AOC-USB31-CCV-20",
+        "AOC-USB31-CCV-25",
+        "AOC-USB31-CCV-30"
+       ]
+      },
+      {
+       "type": "USB C-C Data",
+       "models": [
+        "AOC-USB31-CCD-05",
+        "AOC-USB31-CCD-10",
+        "AOC-USB31-CCD-15",
+        "AOC-USB31-CCD-20",
+        "AOC-USB31-CCD-25",
+        "AOC-USB31-CCD-30"
+       ]
+      },
+      {
+       "type": "USB C-C Full-featured",
+       "models": [
+        "AOC-USB31-CCDV-03",
+        "AOC-USB31-CCDV-05",
+        "AOC-USB31-CCDV-07",
+        "AOC-USB31-CCDV-10"
+       ]
+      },
+      {
+       "type": "USB A-A",
+       "models": [
+        "U31-AMAF32-05",
+        "U31-AMAF32-10",
+        "U31-AMAF32-15",
+        "U31-AMAF32-20",
+        "U31-AMAF32-25",
+        "U31-AMAF32-30",
+        "U31-AMAF32-40",
+        "U31-AMAF32-50"
+       ]
+      },
+      {
+       "type": "USB A-B",
+       "models": [
+        "U31-AMBM32-05",
+        "U31-AMBM32-10",
+        "U31-AMBM32-15",
+        "U31-AMBM32-20",
+        "U31-AMBM32-25",
+        "U31-AMBM32-30",
+        "U31-AMBM32-40",
+        "U31-AMBM32-50"
+       ]
+      },
+      {
+       "type": "USB C-HDMI",
+       "models": [
+        "AOC-CHDMI-03",
+        "AOC-CHDMI-05",
+        "AOC-CHDMI-10",
+        "AOC-CHDMI-15",
+        "AOC-CHDMI-20",
+        "AOC-CHDMI-25",
+        "AOC-CHDMI-30"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "iFiber Y",
+     "groups": [
+      {
+       "type": "USB A+C to C",
+       "models": [
+        "iFiber Y10",
+        "iFiber Y25",
+        "iFiber Y40"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "USB ACC",
+     "groups": [
+      {
+       "type": "USB AM-AF",
+       "models": [
+        "iCable-USB-ACC05",
+        "iCable-USB-ACC10",
+        "iCable-USB-ACC15",
+        "iCable-USB-ACC20",
+        "iCable-USB-ACC25",
+        "iCable-USB-ACC30",
+        "iCable-USB-ACC40"
+       ]
+      },
+      {
+       "type": "USB AM-AM",
+       "models": [
+        "iCable-USB-ACC05-AA",
+        "iCable-USB-ACC10-AA",
+        "iCable-USB-ACC15-AA"
+       ]
+      },
+      {
+       "type": "USB AM-BM",
+       "models": [
+        "iCable-USB-ACC05-AB",
+        "iCable-USB-ACC10-AB",
+        "iCable-USB-ACC15-AB"
+       ]
+      },
+      {
+       "type": "USB AM-CM",
+       "models": [
+        "iCable-USB-ACC05-AC",
+        "iCable-USB-ACC10-AC",
+        "iCable-USB-ACC15-AC"
+       ]
+      },
+      {
+       "type": "USB A-Hub",
+       "models": [
+        "iCable-USB-ACC-H14"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "USB Cables",
+     "groups": [
+      {
+       "type": "USB A-B",
+       "models": [
+        "iCable U3S-AB01",
+        "iCable U3S-AB02",
+        "iCable U3S-AB03"
+       ]
+      },
+      {
+       "type": "USB A-C",
+       "models": [
+        "iCable U3S-AC01",
+        "iCable U3S-AC02",
+        "iCable U3S-AC03"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "USB4",
+     "groups": [
+      {
+       "type": "20Gbps",
+       "models": [
+        "iCable-U4-CC2020",
+        "iCable-U4-CC2040",
+        "iCable-U4-CC2050"
+       ]
+      },
+      {
+       "type": "40Gbps",
+       "models": [
+        "iCable-U4-CC4005",
+        "iCable-U4-CC4012"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "HDMI Copper",
+     "groups": [
+      {
+       "type": "HDMI 8K",
+       "models": [
+        "iCable H8KS-01",
+        "iCable H8KS-02"
+       ]
+      },
+      {
+       "type": "HDMI 4K",
+       "models": [
+        "iCable H4KS-01",
+        "iCable H4KS-02",
+        "iCable H4KS-03",
+        "iCable H4KS-05",
+        "iCable H4KS-07",
+        "iCable H4KS-10"
+       ]
+      },
+      {
+       "type": "DP-HDMI 4K",
+       "models": [
+        "iCable DPH-010",
+        "iCable DPH-020"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Adapters",
+     "groups": [
+      {
+       "type": "Adapter Ring",
+       "models": [
+        "iCable AR11"
+       ]
+      },
+      {
+       "type": "BYOD Hub",
+       "models": [
+        "iHub 801"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "category": "Stands & Mounts",
+   "series": [
+    {
+     "name": "Videowall Mounts",
+     "groups": [
+      {
+       "type": "Mount",
+       "models": [
+        "iMount VW60",
+        "iMount VW90"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "UC TV Mounts",
+     "groups": [
+      {
+       "type": "Mount",
+       "models": [
+        "iMount UC55",
+        "iMount UC75",
+        "iMount UC90"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Floorstand",
+     "groups": [
+      {
+       "type": "Mount",
+       "models": [
+        "iMount FS150"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "TV Mounts",
+     "groups": [
+      {
+       "type": "Mount",
+       "models": [
+        "iMount AM70",
+        "iMount AM90"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "PTZ/AV Mounts",
+     "groups": [
+      {
+       "type": "Mount",
+       "models": [
+        "iMount W1",
+        "iMount C1",
+        "iMount W2",
+        "iMount C2",
+        "iMount W3",
+        "iMount C3",
+        "iMount W4",
+        "iMount C4",
+        "iMount C6E",
+        "iMount 60M",
+        "iMount C6"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Webcam Mount",
+     "groups": [
+      {
+       "type": "Mount",
+       "models": [
+        "iMount 3710"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "category": "USB Capture",
+   "series": [
+    {
+     "name": "Capture Devices",
+     "groups": [
+      {
+       "type": "HD Capture",
+       "models": [
+        "iSwitch UVC03",
+        "iSwitch UVC03S"
+       ]
+      },
+      {
+       "type": "4K Capture",
+       "models": [
+        "iSwitch UVC03K"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "category": "BYOD Switchers",
+   "series": [
+    {
+     "name": "Presentation Switchers",
+     "groups": [
+      {
+       "type": "Switcher",
+       "models": [
+        "iMeeting H31",
+        "iMeeting H61"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "category": "SDI Signal",
+   "series": [
+    {
+     "name": "SDI Converters",
+     "groups": [
+      {
+       "type": "SDI-HDMI",
+       "models": [
+        "iTrans DH"
+       ]
+      },
+      {
+       "type": "HDMI-SDI",
+       "models": [
+        "iTrans HD"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "SDI Splitters",
+     "groups": [
+      {
+       "type": "1x4 Splitter",
+       "models": [
+        "iTrans D104"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "SDI Multiviewers",
+     "groups": [
+      {
+       "type": "4x1 Multiviewer",
+       "models": [
+        "iTrans D401"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "category": "AV Tools",
+   "series": [
+    {
+     "name": "iTools",
+     "groups": [
+      {
+       "type": "Testing Tools",
+       "models": [
+        "iTools G4K",
+        "iTools G8K"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "category": "Wireless Charging",
+   "series": [
+    {
+     "name": "iMeeting W",
+     "groups": [
+      {
+       "type": "Charger",
+       "models": [
+        "iMeeting W60"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "category": "Headsets",
+   "series": [
+    {
+     "name": "iVoice",
+     "groups": [
+      {
+       "type": "USB Headset",
+       "models": [
+        "iVoice H300"
+       ]
+      },
+      {
+       "type": "Bluetooth Headset",
+       "models": [
+        "iVoice B300"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "category": "Screens",
+   "series": [
+    {
+     "name": "LCD Video Wall",
+     "groups": [
+      {
+       "type": "Panel",
+       "models": [
+        "iWall HD55"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Retractable Screens",
+     "groups": [
+      {
+       "type": "Screen",
+       "models": [
+        "iMeeting PD156"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "category": "Converters",
+   "series": [
+    {
+     "name": "HDMI NDI",
+     "groups": [
+      {
+       "type": "Converter",
+       "models": [
+        "iTrans NH1080"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "HDMI to USB-C",
+     "groups": [
+      {
+       "type": "Converter",
+       "models": [
+        "iTrans HC"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "category": "Power Management",
+   "series": [
+    {
+     "name": "Smart PDU",
+     "groups": [
+      {
+       "type": "PDU",
+       "models": [
+        "iPower IEC8"
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

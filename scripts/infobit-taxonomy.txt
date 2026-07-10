@@ -1,0 +1,275 @@
+# Wireless Presentation
+## iShare Flip
+Transmitter: iShare Flip-CT, iShare Flip-HT
+Receiver: iShare Flip-HR
+## iShare X
+Receiver: iShare X100, iShare X200, iShare X400, iShare X400 Pro
+Dongle: iShare HX, iShare CX, iShare HX4, iShare CX4
+## iShare M
+Dongle: iShare MC
+# Video Walls
+## iWall X (Fixed)
+Controller: iWall X408, iWall X808, iWall X412
+## iWall (Fixed)
+Controller: iWall 104C, iWall 104P, iWall 8K106, iWall 109, iWall 206, iWall 204
+## iWall M (Modular)
+Chassis: iWall M4-C1609, iWall M4-C2420, iWall M4-C3636, iWall M4-C7672
+Input Cards: iWall M4-IN-4HDMI, iWall M4-IN-4DVI, iWall M4-IN-1HDMI4K, iWall M4-IN-2HDMI4K, iWall M4-IN-2IP, iWall M4-IN-4SDI
+Output Cards: iWall M4-OT-4HDMI, iWall M4-OT-4DVI, iWall M4-PV-IP
+Control Card: iWall M4-CTL
+Redundant PSU: iWall M4-PSU
+# Matrix Switching
+## iMatrix M (Modular)
+Chassis: iMatrix M808, iMatrix M1616, iMatrix M3636
+2K Input Cards: iMatrix MI2K-HDMI, iMatrix MI2K-DVIU, iMatrix MI2K-VGA, iMatrix MI2K-SDI, iMatrix MI2K-HBT70, iMatrix MI2K-HBT100, iMatrix MI2K-HBT150, iMatrix MI2K-FIBER
+2K Output Cards: iMatrix MO2K-HDMI, iMatrix MO2K-DVIU, iMatrix MO2K-VGA, iMatrix MO2K-SDI, iMatrix MO2K-HBT70, iMatrix MO2K-HBT100, iMatrix MO2K-HBT150, iMatrix MO2K-FIBER
+4K Input Cards: iMatrix MI4K-HDMI, iMatrix MI4K-HBT70, iMatrix MI4K-HBT100, iMatrix MI4K-HBT150
+4K Output Cards: iMatrix MO4K-HDMI, iMatrix MO4K-HBT70, iMatrix MO4K-HBT100, iMatrix MO4K-HBT150
+## iMatrix (Fixed)
+HDMI Matrix: iMatrix H44A, iMatrix H88A, iMatrix H1616A, iMatrix C604, iMatrix H44AM, iMatrix H88AM, iMatrix H44H150, iMatrix H88H150, iMatrix H44HW, iMatrix H44VAW, iMatrix H44HAW, iMatrix H88HAW
+HDMI + USB Matrix: iMatrix HU44
+USB Matrix: iMatrix UB44, iMatrix UB44-V2
+# AV Control
+## iControl J
+PTZ Control: iControl J10, iControl J20
+## iControl K
+Central Control: iControl K06-UK, iControl K06-EU, iControl K06-US, iControl KT069, iControl KE101
+## iControl A
+Audio Control: iControl A08, iControl A32
+# AV over IP
+## iSwitch 265
+Tx/ENC: iSwitch 265T
+Rx/DEC: iSwitch 265R
+Controller: iSwitch 265C
+## iSwitch 265TR
+Transceiver: iSwitch 265TR
+Controller: iSwitch 265TR-C
+## iSwitch 265K
+Tx/ENC: iSwitch 265K-T
+Rx/DEC: iSwitch 265K-R
+## iSwitch 2000
+Tx/ENC: iSwitch 2000T
+Rx/DEC: iSwitch 2000R
+Controller: iSwitch 2000C
+## iSwitch 2000D
+Tx/ENC: iSwitch 2000D-WPT, iSwitch 2000D-T
+Rx/DEC: iSwitch 2000D-R
+Controller: iSwitch 2000D-C
+## iSwitch SDV
+Controller: iSwitch SDV-C
+Transceiver: iSwitch SDV-TR
+## iSwitch 2000U
+Transceiver: iSwitch 2000U-TR
+## iSwitch 2000H
+Transceiver: iSwitch 2000H-TR
+## iSwitch 2000HC
+Tx/ENC: iSwitch 2000HC-T
+Rx/DEC: iSwitch 2000HC-R
+## iSwitch 2000-CTL
+Controller: iSwitch 2000-CTL
+## iSwitch NeoLink
+Tx/ENC: iSwitch NeoLink-HT
+Rx/DEC: iSwitch NeoLink-HR
+# Video Distribution
+## Presentation Switchers
+Switcher: iSwitch S301, iSwitch S501, iSwitch 201K, iSwitch 201MV, iSwitch 401MV, iSwitch 402MV, iSwitch 402UC, iSwitch 402UC-L, iSwitch 501HD, iSwitch 602
+## Multiviewers
+Multiviewer: iSwitch 901, iSwitch 1601
+## Splitters
+4K60 Splitters: iSwitch 102, iSwitch 104, iSwitch 108, iSwitch 1016
+8K Splitters: iSwitch 8K102, iSwitch 8K104, iSwitch 8K108
+HDBaseT Splitters: iSwitch 104H150, iSwitch 108H150
+## AV Streaming
+AV Streamer: iSwitch 265-Live
+# Audio Distribution
+## Feedback Suppressor
+Suppressor: iSound FBS
+## Power Amplifiers
+Amplifier: iSound PA20, iSound PAD150
+## DSP
+DSP: iSound 44D, iSound 88D, iSound 1616D
+## Audio Bridge
+Bridge: iSound AB88-UX
+# Dante Audio (iTrans)
+## iTrans DU
+USB Dante: iTrans DU-TR-22B, iTrans DU-TR-22C
+## iTrans DP
+Phoenix Dante: iTrans DP-T-22, iTrans DP-R-22, iTrans DP-BOX-22
+## iTrans DX
+XLR Dante: iTrans DX-T-22, iTrans DX-R-22, iTrans DX-22-EUK, iTrans DX-22-US
+Bluetooth Dante: iTrans DB22, iTrans DB44-EUK, iTrans DB44-US
+## iTrans HD
+HDMI ARC: iTrans HD-ARC
+# Cameras
+## Video Bars
+Videobar: iCam VB40, iCam VB40-POWER, iCam VB40-Mic, iCam VB50, iCam VB60, iCam VB80 Kit, iCam VB80, iCam VB80-Mic
+## Webcams
+Webcam: iCam 100, iCam 200H, iCam 200U
+## PTZ Cameras
+PTZ: iCam P10, iCam P11, iCam P12U, iCam P13, iCam P13N, iCam P20, iCam P20N, iCam P30, iCam P30N, iCam P40, iCam PT40, iCam TRK01
+## 360 Camera
+360: iCam 360
+# Meeting Group
+## iCam XE
+All-in-one: iCam XE2
+# Microphones & Speakers
+## NearLink Microphones
+NearLink: iSound NL200, iSound NL200T, iSound NL200R, iSound NL200H, iSpeaker M100, iSpeaker M700, iSpeaker M800, iSpeaker MD30
+## Ceiling Microphones
+Ceiling Mic: iSpeaker CM710, iSpeaker CM710-Hub, iSpeaker CM710-Mixer, iSpeaker CM360, iSpeaker CM365
+## Speakerphones
+Speakerphone: iSpeaker M250, iSpeaker M260, iSpeaker M400, iSpeaker M500, iSpeaker M600, iSpeaker CM800, iSpeaker A20
+## Speakers
+Speaker: iSpeaker DAP6, iSpeaker DAP10, iSpeaker P30B, iSpeaker Mini-15, iSpeaker AAC4, iSpeaker AAC6, iSpeaker DAC6S, iSpeaker CS100, iSpeaker DCS60
+# UC Hub
+## UC KVM
+Hub: iTrans UC-Hub, iTrans UC-Hub21, iTrans UC-HUB402, iTrans UC-HUB2U
+# Digital Conference
+## iMeeting X
+Controller: iMeeting X-Con
+Discussion Mic: iMeeting X-Mic-DC, iMeeting X-Mic-DD, iMeeting X-Mic-RC, iMeeting X-Mic-RD
+Voting Mic (screen): iMeeting X-Mic-VC, iMeeting X-Mic-VD, iMeeting X-Mic-VRC, iMeeting X-Mic-VRD
+Voting Mic (e-nameplate): iMeeting X-Mic-VNC, iMeeting X-Mic-VND, iMeeting X-Mic-VNRC, iMeeting X-Mic-VNRD
+Discussion Mic (lift): iMeeting X-Mic-LC, iMeeting X-Mic-LD
+Extension Box: iMeeting X-EXT
+Extension Cable: iMeeting X-S10
+# KVM Solutions
+## KVM Switchers
+Desktop KVM: iSwitch 201HK, iSwitch 401HK, iSwitch 402KVM, iSwitch U44KM, iSwitch 201HKL, iSwitch 401HKL, iSwitch 801HKL, iSwitch 1601HKL, iSwitch 401MVK
+## LCD Console
+LCD KVM: iSwitch V1801, iSwitch V1808, iSwitch V1816
+# Extenders & Connectivity
+## HDBaseT Extenders
+70m 24V: iTrans E70S, iTrans E70S-T, iTrans E70S-R
+70m 12V: iTrans E70C, iTrans E70C-T, iTrans E70C-R
+70m 4K30: iTrans E70N
+70m 4K60: iTrans B70S, iTrans B70S-T, iTrans B70S-R
+90m 8K: iTrans E90U8K, iTrans E90U8K-T, iTrans E90U8K-R
+100m USB-C: iTrans E100HC, iTrans E100HC3K, iTrans E100HCU
+100m 4K60: iTrans E100V3K, iTrans E100V3K-T, iTrans E100V3K-R, iTrans E100K, iTrans E100K-T, iTrans E100K-R
+100m Transceiver: iTrans E100TR
+100m USB: iTrans E100UC
+Scaler: iTrans 201S
+100m Loopout: iTrans E150CL, iTrans E150CL-T, iTrans E150CL-R
+150m: iTrans E150CG, iTrans E150CG-T, iTrans E150CG-R
+150m KVM: iTrans E150SK, iTrans E150SK-T, iTrans E150SK-R
+150m USB: iTrans E150U2, iTrans E150U2-T, iTrans E150U2-R
+## Wallplates
+Non-HDBaseT: iTrans WP-UK-C, iTrans WP-UK-B, iTrans WP-SC001, iTrans WP-SC002, iTrans WPH, iTrans WPN, iTrans WPU3C, iTrans WPU3A, iTrans WPU2B
+HDBaseT: iTrans WP70-T, iTrans WP70B, iTrans WP70C, iTrans WP100HC, iTrans WP70HBC, iTrans WP210-T, iTrans WP200-Kit, iTrans WP301-Kit
+## Fiber Extenders
+Fiber: iTrans F1000, iTrans F1000-T, iTrans F1000-R, iTrans UC-F300T, iTrans UC-F300R, iTrans DH-F300T, iTrans DH-F300R
+## Wireless Extenders
+100m Wireless: iTrans W100
+## USB Extenders
+USB: iTrans U3-PIC, iTrans USB2-TR50, iTrans USB2-TR100, iTrans USB3-TR100, iTrans U3-TR100CB, iTrans U3-WP100TR
+## Audio Extenders
+Audio: iTrans EA300
+## USB Share
+Share: iTrans USB32-S
+## EDID Manager
+EDID/HDCP: iTrans EM
+## OCS
+OCS: iTrans OCS 151, iTrans OCS 181
+## Table Boxes (iBox)
+Fixed Box: iBox 01, iBox TW, iBox TP, iBox TPV, iBox TPC, iBox TPD
+Retractable Box: iBox Core-500
+iBox Flex: iBox Flex, iBox Flex-H, iBox Flex-UA, iBox Flex-UCV, iBox Flex-N
+iBox Flex2: iBox Flex2-FR, iBox Flex2-1H, iBox Flex2-2H1, iBox Flex2-2N, iBox Flex2-1C, iBox Flex2-1A, iBox Flex2-1A1C, iBox Flex2-KB, iBox Flex2-2PS, iBox Flex2-RTH, iBox Flex2-RTN, iBox Flex2-RTUA, iBox Flex2-RTUC, iBox Flex2-PWEU, iBox Flex2-PWUK, iBox Flex2-PWUS, iBox Flex2-PWUV
+# Embedders & De-embedders
+## De-embedders
+De-embedder: iTrans AD01, iTrans AD02
+## Embedders
+Embedder: iTrans AE01
+# Room PC
+## iMeeting A
+Room PC: iMeeting A7
+# Cables & Adapters
+## HDMI AOC
+8K HDMI A-A: AOC-HDMI-AA8K-05, AOC-HDMI-AA8K-10, AOC-HDMI-AA8K-15, AOC-HDMI-AA8K-20, AOC-HDMI-AA8K-25, AOC-HDMI-AA8K-30, AOC-HDMI-AA8K-40, AOC-HDMI-AA8K-50, AOC-HDMI-AA8K-60, AOC-HDMI-AA8K-70, AOC-HDMI-AA8K-80, AOC-HDMI-AA8K-90, AOC-HDMI-AA8K-100
+4K HDMI A-A Armoured: AOC-HDMI-AA05K, AOC-HDMI-AA10K, AOC-HDMI-AA15K, AOC-HDMI-AA20K, AOC-HDMI-AA25K, AOC-HDMI-AA30K, AOC-HDMI-AA40K, AOC-HDMI-AA50K, AOC-HDMI-AA60K, AOC-HDMI-AA70K, AOC-HDMI-AA80K, AOC-HDMI-AA90K, AOC-HDMI-AA100K
+4K HDMI D-D iLock: AOC-HDMI-DD05L, AOC-HDMI-DD10L, AOC-HDMI-DD15L, AOC-HDMI-DD20L, AOC-HDMI-DD25L, AOC-HDMI-DD30L, AOC-HDMI-DD40L, AOC-HDMI-DD50L, AOC-HDMI-DD60L, AOC-HDMI-DD70L, AOC-HDMI-DD80L, AOC-HDMI-DD90L, AOC-HDMI-DD100L, AOC-HDMI-LTx, AOC-HDMI-LRx
+4K HDMI D-D Classic: AOC-HDMI-D05C, AOC-HDMI-D10C, AOC-HDMI-D15C, AOC-HDMI-D20C, AOC-HDMI-D25C, AOC-HDMI-D30C, AOC-HDMI-D40C, AOC-HDMI-D50C, AOC-HDMI-D60C, AOC-HDMI-D70C, AOC-HDMI-D80C, AOC-HDMI-D90C, AOC-HDMI-D100C, AOC-HDMI-Tx, AOC-HDMI-Rx
+4K HDMI A-A Fixed: AOC-HDMI-F05, AOC-HDMI-F10, AOC-HDMI-F15, AOC-HDMI-F20, AOC-HDMI-F25, AOC-HDMI-F30, AOC-HDMI-F40, AOC-HDMI-F50, AOC-HDMI-F60, AOC-HDMI-F70, AOC-HDMI-F100
+## DP AOC
+8K miniDP-miniDP: AOC-DP-D05, AOC-DP-D10, AOC-DP-D15, AOC-DP-D20, AOC-DP-D30, AOC-DP-D40, AOC-DP-D50, AOC-DP-D60, AOC-DP-D70, AOC-DP-D80, AOC-DP-D90, AOC-DP-D100, AOC-DP-Tx, AOC-DP-Rx
+8K DP-DP Fixed: AOC-DP-F05, AOC-DP-F10, AOC-DP-F15, AOC-DP-F20, AOC-DP-F30, AOC-DP-F40, AOC-DP-F50, AOC-DP-F60, AOC-DP-F70, AOC-DP-F80, AOC-DP-F90, AOC-DP-F100
+## USB AOC
+USB C-C Video: AOC-USB31-CCV-05, AOC-USB31-CCV-10, AOC-USB31-CCV-15, AOC-USB31-CCV-20, AOC-USB31-CCV-25, AOC-USB31-CCV-30
+USB C-C Data: AOC-USB31-CCD-05, AOC-USB31-CCD-10, AOC-USB31-CCD-15, AOC-USB31-CCD-20, AOC-USB31-CCD-25, AOC-USB31-CCD-30
+USB C-C Full-featured: AOC-USB31-CCDV-03, AOC-USB31-CCDV-05, AOC-USB31-CCDV-07, AOC-USB31-CCDV-10
+USB A-A: U31-AMAF32-05, U31-AMAF32-10, U31-AMAF32-15, U31-AMAF32-20, U31-AMAF32-25, U31-AMAF32-30, U31-AMAF32-40, U31-AMAF32-50
+USB A-B: U31-AMBM32-05, U31-AMBM32-10, U31-AMBM32-15, U31-AMBM32-20, U31-AMBM32-25, U31-AMBM32-30, U31-AMBM32-40, U31-AMBM32-50
+USB C-HDMI: AOC-CHDMI-03, AOC-CHDMI-05, AOC-CHDMI-10, AOC-CHDMI-15, AOC-CHDMI-20, AOC-CHDMI-25, AOC-CHDMI-30
+## iFiber Y
+USB A+C to C: iFiber Y10, iFiber Y25, iFiber Y40
+## USB ACC
+USB AM-AF: iCable-USB-ACC05, iCable-USB-ACC10, iCable-USB-ACC15, iCable-USB-ACC20, iCable-USB-ACC25, iCable-USB-ACC30, iCable-USB-ACC40
+USB AM-AM: iCable-USB-ACC05-AA, iCable-USB-ACC10-AA, iCable-USB-ACC15-AA
+USB AM-BM: iCable-USB-ACC05-AB, iCable-USB-ACC10-AB, iCable-USB-ACC15-AB
+USB AM-CM: iCable-USB-ACC05-AC, iCable-USB-ACC10-AC, iCable-USB-ACC15-AC
+USB A-Hub: iCable-USB-ACC-H14
+## USB Cables
+USB A-B: iCable U3S-AB01, iCable U3S-AB02, iCable U3S-AB03
+USB A-C: iCable U3S-AC01, iCable U3S-AC02, iCable U3S-AC03
+## USB4
+20Gbps: iCable-U4-CC2020, iCable-U4-CC2040, iCable-U4-CC2050
+40Gbps: iCable-U4-CC4005, iCable-U4-CC4012
+## HDMI Copper
+HDMI 8K: iCable H8KS-01, iCable H8KS-02
+HDMI 4K: iCable H4KS-01, iCable H4KS-02, iCable H4KS-03, iCable H4KS-05, iCable H4KS-07, iCable H4KS-10
+DP-HDMI 4K: iCable DPH-010, iCable DPH-020
+## Adapters
+Adapter Ring: iCable AR11
+BYOD Hub: iHub 801
+# Stands & Mounts
+## Videowall Mounts
+Mount: iMount VW60, iMount VW90
+## UC TV Mounts
+Mount: iMount UC55, iMount UC75, iMount UC90
+## Floorstand
+Mount: iMount FS150
+## TV Mounts
+Mount: iMount AM70, iMount AM90
+## PTZ/AV Mounts
+Mount: iMount W1, iMount C1, iMount W2, iMount C2, iMount W3, iMount C3, iMount W4, iMount C4, iMount C6E, iMount 60M, iMount C6
+## Webcam Mount
+Mount: iMount 3710
+# USB Capture
+## Capture Devices
+HD Capture: iSwitch UVC03, iSwitch UVC03S
+4K Capture: iSwitch UVC03K
+# BYOD Switchers
+## Presentation Switchers
+Switcher: iMeeting H31, iMeeting H61
+# SDI Signal
+## SDI Converters
+SDI-HDMI: iTrans DH
+HDMI-SDI: iTrans HD
+## SDI Splitters
+1x4 Splitter: iTrans D104
+## SDI Multiviewers
+4x1 Multiviewer: iTrans D401
+# AV Tools
+## iTools
+Testing Tools: iTools G4K, iTools G8K
+# Wireless Charging
+## iMeeting W
+Charger: iMeeting W60
+# Headsets
+## iVoice
+USB Headset: iVoice H300
+Bluetooth Headset: iVoice B300
+# Screens
+## LCD Video Wall
+Panel: iWall HD55
+## Retractable Screens
+Screen: iMeeting PD156
+# Converters
+## HDMI NDI
+Converter: iTrans NH1080
+## HDMI to USB-C
+Converter: iTrans HC
+# Power Management
+## Smart PDU
+PDU: iPower IEC8

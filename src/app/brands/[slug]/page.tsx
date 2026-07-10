@@ -123,6 +123,13 @@ export default async function BrandPage({ params }: Props) {
               <p className="text-[14px]" style={{ color: '#64748B' }}>
                 Founded {brand.founded} · {brand.country} · Authorised dealer in Nepal
               </p>
+              {slug === 'infobit' && (
+                <Link href="/brands/infobit/catalog"
+                  className="mt-4 inline-flex items-center gap-2 rounded-full px-5 py-2 text-[13px] font-bold text-white transition hover:opacity-90"
+                  style={{ background: brand.color, textDecoration: 'none' }}>
+                  Browse the full InfoBit catalog — 550+ models →
+                </Link>
+              )}
             </div>
           </div>
         </div>
