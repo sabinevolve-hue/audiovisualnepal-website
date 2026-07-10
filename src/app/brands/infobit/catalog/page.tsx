@@ -2,6 +2,11 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import catalog from "@/data/infobit-catalog.json";
 import { ALL_PRODUCTS } from "@/data/products";
+import Image from "next/image";
+import media from "@/data/infobit-catalog-media.json";
+
+type MediaEntry = { slug: string; img: string; desc: string; source: string };
+const MEDIA = media as Record<string, MediaEntry>;
 
 const PAGE_URL = "https://audiovisualnepal.com/brands/infobit/catalog";
 
@@ -99,25 +104,44 @@ export default function InfobitCatalogPage() {
                     {s.groups.map((g) => (
                       <div key={g.type} className="mt-2">
                         <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">{g.type}</p>
-                        <p className="mt-1 text-sm leading-relaxed text-slate-700">
-                          {g.models.map((m, i) => {
-                            const href = detailPages.get(m.toLowerCase());
-                            const hot = (g as GroupX).featuredModels?.includes(m) || (g as GroupX).featured;
-                            const inner = href ? (
-                              <Link href={href} className="font-medium text-blue-600 hover:underline">{m}</Link>
-                            ) : hot ? (
-                              <span className="rounded bg-blue-100 px-1.5 py-0.5 font-semibold text-blue-800">{m}</span>
-                            ) : (
-                              m
-                            );
-                            return (
-                              <span key={m}>
-                                {inner}
-                                {i < g.models.length - 1 ? ", " : ""}
-                              </span>
-                            );
-                          })}
-                        </p>
+                        {g.models.some((m) => MEDIA[m]) && (
+                          <div className="mt-2 grid grid-cols-2 gap-3 sm:grid-cols-3">
+                            {g.models.filter((m) => MEDIA[m]).map((m) => {
+                              const full = detailPages.get(m.toLowerCase());
+                              const href = full || `/brands/infobit/p/${MEDIA[m].slug}`;
+                              const hot = (g as GroupX).featuredModels?.includes(m) || (g as GroupX).featured;
+                              return (
+                                <Link key={m} href={href} className={hot ? "rounded-xl border-2 border-blue-300 bg-white p-3 transition hover:shadow-md" : "rounded-xl border border-slate-200 bg-white p-3 transition hover:border-blue-300 hover:shadow-md"}>
+                                  <div className="relative mx-auto h-20 w-full">
+                                    <Image src={MEDIA[m].img} alt={m} fill className="object-contain" sizes="140px" />
+                                  </div>
+                                  <p className="mt-2 truncate text-center text-xs font-semibold text-slate-800">{m}</p>
+                                </Link>
+                              );
+                            })}
+                          </div>
+                        )}
+                        {g.models.some((m) => !MEDIA[m]) && (
+                          <p className="mt-2 text-sm leading-relaxed text-slate-700">
+                            {g.models.filter((m) => !MEDIA[m]).map((m, i, arr) => {
+                              const href = detailPages.get(m.toLowerCase());
+                              const hot = (g as GroupX).featuredModels?.includes(m) || (g as GroupX).featured;
+                              const inner = href ? (
+                                <Link href={href} className="font-medium text-blue-600 hover:underline">{m}</Link>
+                              ) : hot ? (
+                                <span className="rounded bg-blue-100 px-1.5 py-0.5 font-semibold text-blue-800">{m}</span>
+                              ) : (
+                                m
+                              );
+                              return (
+                                <span key={m}>
+                                  {inner}
+                                  {i < arr.length - 1 ? ", " : ""}
+                                </span>
+                              );
+                            })}
+                          </p>
+                        )}
                       </div>
                     ))}
                   </div>
