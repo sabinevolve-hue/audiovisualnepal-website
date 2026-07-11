@@ -3,102 +3,202 @@
   "slug": "vhd630a",
   "img": "/images/tenveo-catalog/vhd630a.webp",
   "desc": "NDI PTZ Camera Kit with AI Auto Tracking, 30X Optical + 8X Digital Zoom, SDI/HDMI/USB3.0/LAN(PoE), 7’’ LCD Quad-Screen Joystick Controller – Live Broadcast. All-in-One NDI PTZ Camera &amp; Controller Kit – Includes 3× Tenveo VHD630A-NDI PTZ Cameras and 1× KB300PRO Joystick Contro",
-  "source": "https://www.tenveocamera.com/products/ndi-ptz-camera-kit-3-pcs-vhd630a-kb300pro"
+  "source": "https://www.tenveocamera.com/products/ndi-ptz-camera-kit-3-pcs-vhd630a-kb300pro",
+  "gallery": [
+   "/images/tenveo-catalog/vhd630a-g2.webp",
+   "/images/tenveo-catalog/vhd630a-g3.webp",
+   "/images/tenveo-catalog/vhd630a-g4.webp",
+   "/images/tenveo-catalog/vhd630a-g5.webp"
+  ]
  },
  "VHD3U": {
   "slug": "vhd3u",
   "img": "/images/tenveo-catalog/vhd3u.webp",
   "desc": "PTZ Conference Camera 3X Optical Zoom FHD 1080P 60FPS, 114° Wide View Angel USB3.0/HDMI/RS485/RS232. 1. FHD 1080P 60FPS PTZ Camera Equipped with a CMOS sensor and wide-angle lens, the Tenveo VHD3U delivers smooth, true-to-life 1080P 60FPS video. The 3X optical zoom captures crisp",
-  "source": "https://www.tenveocamera.com/products/ptz-conference-camera-3x-optical-zoom-fhd-1080p-60fps-114-wide-view-angel-usb3-0-hdmi-rs485-rs232"
+  "source": "https://www.tenveocamera.com/products/ptz-conference-camera-3x-optical-zoom-fhd-1080p-60fps-114-wide-view-angel-usb3-0-hdmi-rs485-rs232",
+  "gallery": [
+   "/images/tenveo-catalog/vhd3u-g2.webp",
+   "/images/tenveo-catalog/vhd3u-g3.webp",
+   "/images/tenveo-catalog/vhd3u-g4.webp",
+   "/images/tenveo-catalog/vhd3u-g5.webp"
+  ]
  },
  "VHD12U": {
   "slug": "vhd12u",
   "img": "/images/tenveo-catalog/vhd12u.webp",
   "desc": "12X Optical Zoom PTZ Conference Camera USB3.0/HDMI 90° Wide View Angle. 1. FHD 1080P 60FPS PTZ Camera Capture every detail with a 1/2.8'' SONY CMOS sensor, 2.38MP lens, 12X optical zoom, and 90° wide field of view—perfect for lifelike meetings and events. 2. Smooth &amp; Silent P",
-  "source": "https://www.tenveocamera.com/products/12x-optical-zoom-ptz-conference-camera-usb3-0-hdmi-90-wide-view-angle"
+  "source": "https://www.tenveocamera.com/products/12x-optical-zoom-ptz-conference-camera-usb3-0-hdmi-90-wide-view-angle",
+  "gallery": [
+   "/images/tenveo-catalog/vhd12u-g2.webp",
+   "/images/tenveo-catalog/vhd12u-g3.webp",
+   "/images/tenveo-catalog/vhd12u-g4.webp",
+   "/images/tenveo-catalog/vhd12u-g5.webp"
+  ]
  },
  "VHD20U": {
   "slug": "vhd20u",
   "img": "/images/tenveo-catalog/vhd20u.webp",
   "desc": "20X Optical Zoom PTZ Conference Room Camera, USB3.0/HDMI FHD 1080P 60FPS. FHD 1080P 60FPS PTZ Camera Deliver sharp, detailed visuals with a 1/2.8'' CMOS sensor, 2.38MP lens, and 20X optical zoom. Perfect for clear, professional meetings. Smooth &amp; Silent Pan/Tilt Rotate 350° h",
-  "source": "https://www.tenveocamera.com/products/20x-optical-zoom-ptz-conference-room-camera-usb3-0-hdmi-fhd-1080p-60fps"
+  "source": "https://www.tenveocamera.com/products/20x-optical-zoom-ptz-conference-room-camera-usb3-0-hdmi-fhd-1080p-60fps",
+  "gallery": [
+   "/images/tenveo-catalog/vhd20u-g2.webp",
+   "/images/tenveo-catalog/vhd20u-g3.webp",
+   "/images/tenveo-catalog/vhd20u-g4.webp",
+   "/images/tenveo-catalog/vhd20u-g5.webp"
+  ]
  },
  "VHD20H": {
   "slug": "vhd20h",
   "img": "/images/tenveo-catalog/vhd20h.webp",
   "desc": "4K PTZ Camera Bundle/Kits - 20X 4K AI Humanoid & Face Auto-Tracking NDI PTZ Camera(2pcs) with HDMI/USB3.0/LAN(PoE) and 7’’ LCD Quad-Screen NDI PTZ Joystick Controller. Complete 4K NDI PTZ Camera &amp; Controller Bundle – Includes 2× Tenveo VHD20H4KN 4K NDI PTZ Cameras and 1× KB30",
-  "source": "https://www.tenveocamera.com/products/4k-ptz-camera-bundle-kits-20x-4k-ai-humanoid-face-auto-tracking-ndi-ptz-camera2pcs-with-hdmi-usb3-0-lanpoe-and-7-lcd-quad-screen-ndi-ptz-joystick-controller"
+  "source": "https://www.tenveocamera.com/products/4k-ptz-camera-bundle-kits-20x-4k-ai-humanoid-face-auto-tracking-ndi-ptz-camera2pcs-with-hdmi-usb3-0-lanpoe-and-7-lcd-quad-screen-ndi-ptz-joystick-controller",
+  "gallery": [
+   "/images/tenveo-catalog/vhd20h-g2.webp",
+   "/images/tenveo-catalog/vhd20h-g3.webp",
+   "/images/tenveo-catalog/vhd20h-g4.webp",
+   "/images/tenveo-catalog/vhd20h-g5.webp"
+  ]
  },
  "VX20M": {
   "slug": "vx20m",
   "img": "/images/tenveo-catalog/vx20m.webp",
   "desc": "4K NDI PTZ Camera, AI Humanoid & Face Auto-Tracking, 20X Zoom 3G-SDI/HDMI/USB3.0/LAN(PoE) Live Streaming with Tally Light & IP Display (White). 4K Ultra HD with 20X Optical Zoom Powered by an 8.29MP 1/2.8\" CMOS sensor, this Tenveo 4K PTZ camera delivers sharp 4K@30fps video via H",
-  "source": "https://www.tenveocamera.com/products/4k-ndi-ptz-camera-ai-humanoid-face-auto-tracking-vx20m-4kw"
+  "source": "https://www.tenveocamera.com/products/4k-ndi-ptz-camera-ai-humanoid-face-auto-tracking-vx20m-4kw",
+  "gallery": [
+   "/images/tenveo-catalog/vx20m-g2.webp",
+   "/images/tenveo-catalog/vx20m-g3.webp",
+   "/images/tenveo-catalog/vx20m-g4.webp",
+   "/images/tenveo-catalog/vx20m-g5.webp"
+  ]
  },
  "VX20M-4K": {
   "slug": "vx20m-4k",
   "img": "/images/tenveo-catalog/vx20m-4k.webp",
   "desc": "4K NDI PTZ Camera, AI Humanoid & Face Auto-Tracking, 20X Zoom 3G-SDI/HDMI/USB3.0/LAN(PoE) Live Streaming with Tally Light & IP Display (White). 4K Ultra HD with 20X Optical Zoom Powered by an 8.29MP 1/2.8\" CMOS sensor, this Tenveo 4K PTZ camera delivers sharp 4K@30fps video via H",
-  "source": "https://www.tenveocamera.com/products/4k-ndi-ptz-camera-ai-humanoid-face-auto-tracking-vx20m-4kw"
+  "source": "https://www.tenveocamera.com/products/4k-ndi-ptz-camera-ai-humanoid-face-auto-tracking-vx20m-4kw",
+  "gallery": [
+   "/images/tenveo-catalog/vx20m-4k-g2.webp",
+   "/images/tenveo-catalog/vx20m-4k-g3.webp",
+   "/images/tenveo-catalog/vx20m-4k-g4.webp",
+   "/images/tenveo-catalog/vx20m-4k-g5.webp"
+  ]
  },
  "VX30M": {
   "slug": "vx30m",
   "img": "/images/tenveo-catalog/vx30m.webp",
   "desc": "Tenveo UHD 4K PTZ Conference Room Camera 12X Optical Zoom USB3.0/HDMI Wide View Angle, 4K PTZ Camera for Video Conference Church Services Worship Events Live Streaming. Capture every detail and provide an immersive experience with Tenveo UHD 4K PTZ Conference Room Camera. With it",
-  "source": "https://www.tenveocamera.com/products/tenveo-ultra-4k60fps-vx30m-ultra"
+  "source": "https://www.tenveocamera.com/products/tenveo-ultra-4k60fps-vx30m-ultra",
+  "gallery": [
+   "/images/tenveo-catalog/vx30m-g2.webp",
+   "/images/tenveo-catalog/vx30m-g3.webp",
+   "/images/tenveo-catalog/vx30m-g4.webp",
+   "/images/tenveo-catalog/vx30m-g5.webp"
+  ]
  },
  "NV20W": {
   "slug": "nv20w",
   "img": "/images/tenveo-catalog/nv20w.webp",
   "desc": "Wireless Conference Room Webcam, Church Live Streaming 20X USB 1080P 60fps PTZ Camera for Worship Services Online Conference, Works with Zoom, Skype OBS Easy to Set Up. 🔹 20X Wireless PTZ Camera Bundle with Speakerphone Includes a 20X optical zoom 1080P 60FPS wireless PTZ camera",
-  "source": "https://www.tenveocamera.com/products/wireless-conference-room-webcam"
+  "source": "https://www.tenveocamera.com/products/wireless-conference-room-webcam",
+  "gallery": [
+   "/images/tenveo-catalog/nv20w-g2.webp",
+   "/images/tenveo-catalog/nv20w-g3.webp",
+   "/images/tenveo-catalog/nv20w-g4.webp"
+  ]
  },
  "VL20H": {
   "slug": "vl20h",
   "img": "/images/tenveo-catalog/vl20h.webp",
   "desc": "Tenveo VLoop 20X Optical Zoom PTZ Camera 1080P USB3.0/HDMI. Crystal-Clear 1080p Video : Powered by a high-performance 1/2.8\" CMOS sensor, the VL20H captures sharp, detailed 1080p video for professional-quality broadcasts and meetings. 20x Optical Zoom : Get close-up shots without",
-  "source": "https://www.tenveocamera.com/products/tenveo-vloop-20x-optical-zoom-ptz-camera-1080p"
+  "source": "https://www.tenveocamera.com/products/tenveo-vloop-20x-optical-zoom-ptz-camera-1080p",
+  "gallery": [
+   "/images/tenveo-catalog/vl20h-g2.webp",
+   "/images/tenveo-catalog/vl20h-g3.webp",
+   "/images/tenveo-catalog/vl20h-g4.webp",
+   "/images/tenveo-catalog/vl20h-g5.webp"
+  ]
  },
  "M3B": {
   "slug": "m3b",
   "img": "/images/tenveo-catalog/m3b.webp",
   "desc": "Wireless Conference Room Webcam, Church Live Streaming 20X USB 1080P 60fps PTZ Camera for Worship Services Online Conference, Works with Zoom, Skype OBS Easy to Set Up. 🔹 20X Wireless PTZ Camera Bundle with Speakerphone Includes a 20X optical zoom 1080P 60FPS wireless PTZ camera",
-  "source": "https://www.tenveocamera.com/products/wireless-conference-room-webcam"
+  "source": "https://www.tenveocamera.com/products/wireless-conference-room-webcam",
+  "gallery": [
+   "/images/tenveo-catalog/m3b-g2.webp",
+   "/images/tenveo-catalog/m3b-g3.webp",
+   "/images/tenveo-catalog/m3b-g4.webp"
+  ]
  },
  "M5B": {
   "slug": "m5b",
   "img": "/images/tenveo-catalog/m5b.webp",
   "desc": "PTZ Conference Camera 3X Optical Zoom FHD 1080P 60FPS, 114° Wide View Angel USB3.0/HDMI/RS485/RS232. 1. FHD 1080P 60FPS PTZ Camera Equipped with a CMOS sensor and wide-angle lens, the Tenveo VHD3U delivers smooth, true-to-life 1080P 60FPS video. The 3X optical zoom captures crisp",
-  "source": "https://www.tenveocamera.com/products/ptz-conference-camera-3x-optical-zoom-fhd-1080p-60fps-114-wide-view-angel-usb3-0-hdmi-rs485-rs232"
+  "source": "https://www.tenveocamera.com/products/ptz-conference-camera-3x-optical-zoom-fhd-1080p-60fps-114-wide-view-angel-usb3-0-hdmi-rs485-rs232",
+  "gallery": [
+   "/images/tenveo-catalog/m5b-g2.webp",
+   "/images/tenveo-catalog/m5b-g3.webp",
+   "/images/tenveo-catalog/m5b-g4.webp",
+   "/images/tenveo-catalog/m5b-g5.webp"
+  ]
  },
  "M5Bpro": {
   "slug": "m5bpro",
   "img": "/images/tenveo-catalog/m5bpro.webp",
   "desc": "M5B-PRO Wireless Conference Speakerphone with 8 AI Mics, Bluetooth/USB Dongle/2.4G Connectivity, 360° Voice Pickup, Noise Reduction, 18H Battery for Zoom, Teams & OBS. 【360° AI Voice Pickup for Clear Conversations】 Equipped with 8 AI-powered microphones and advanced DSP technolog",
-  "source": "https://www.tenveocamera.com/products/m5w-b-wireless-conference-speakerphone"
+  "source": "https://www.tenveocamera.com/products/m5w-b-wireless-conference-speakerphone",
+  "gallery": [
+   "/images/tenveo-catalog/m5bpro-g2.webp",
+   "/images/tenveo-catalog/m5bpro-g3.webp",
+   "/images/tenveo-catalog/m5bpro-g4.webp",
+   "/images/tenveo-catalog/m5bpro-g5.webp"
+  ]
  },
  "KB200": {
   "slug": "kb200",
   "img": "/images/tenveo-catalog/kb200.webp",
   "desc": "4K NDI PTZ Camera and Controller Bundle, AI Tracking HDMI/USB3.0/LAN/PoE12X 4K NDI PTZ Camera(3PCS) and NDI PTZ Controller 5-Inch LCD 4D Joystick. VL12UAN(3PCS)+KB200MAX - Tenveo 4K NDI PTZ Camera AI Tracking HDMI/USB3.0/LAN(PoE) 12X Optical Zoom IP Live Streaming Camera and NDI ",
-  "source": "https://www.tenveocamera.com/products/4k-ndi-ptz-camera-and-controller-bundle-vl12uan-kb200max"
+  "source": "https://www.tenveocamera.com/products/4k-ndi-ptz-camera-and-controller-bundle-vl12uan-kb200max",
+  "gallery": [
+   "/images/tenveo-catalog/kb200-g2.webp",
+   "/images/tenveo-catalog/kb200-g3.webp",
+   "/images/tenveo-catalog/kb200-g4.webp",
+   "/images/tenveo-catalog/kb200-g5.webp"
+  ]
  },
  "KB300Pro": {
   "slug": "kb300pro",
   "img": "/images/tenveo-catalog/kb300pro.webp",
   "desc": "PTZ Camera and Controller Bundle - 20X AI Auto Tracking 4K NDI 3G-SDI/HDMI/USB3.0/LAN(PoE) PTZ Camera(*2) and 7'' Quad-Screen NDI PTZ Joystick Controller. Bundle INCLUDES: 4K NDI AI Auto Tracking PTZ Camera SDI/HDMI/USB3.0/LAN(PoE) 20X Optical Zoom IP Live Streaming Camera (VX20M",
-  "source": "https://www.tenveocamera.com/products/ndi-ptz-camera-and-controller-bundle-vx4kn"
+  "source": "https://www.tenveocamera.com/products/ndi-ptz-camera-and-controller-bundle-vx4kn",
+  "gallery": [
+   "/images/tenveo-catalog/kb300pro-g2.webp",
+   "/images/tenveo-catalog/kb300pro-g3.webp",
+   "/images/tenveo-catalog/kb300pro-g4.webp",
+   "/images/tenveo-catalog/kb300pro-g5.webp"
+  ]
  },
  "PC500": {
   "slug": "pc500",
   "img": "/images/tenveo-catalog/pc500.webp",
   "desc": "3-Pack of 1080P 30X NDI PTZ Cameras | Tenveo VHDMAX630A-NDI + PC500 Video Switcher + KB300PRO Controller | Live Streaming & Video Conference Kit. Complete 3-Camera PTZ Bundle Includes 3× VHDMAX630A-NDI 1080P PTZ cameras with 30X optical zoom, delivering crystal-clear visuals for ",
-  "source": "https://www.tenveocamera.com/products/pc500-kb300pro-630a-ndi3p"
+  "source": "https://www.tenveocamera.com/products/pc500-kb300pro-630a-ndi3p",
+  "gallery": [
+   "/images/tenveo-catalog/pc500-g2.webp",
+   "/images/tenveo-catalog/pc500-g3.webp",
+   "/images/tenveo-catalog/pc500-g4.webp",
+   "/images/tenveo-catalog/pc500-g5.webp"
+  ]
  },
  "POE8": {
   "slug": "poe8",
   "img": "/images/tenveo-catalog/poe8.webp",
   "desc": "8-Port Gigabit PoE+ Switch (120W) with 2 Uplink Ports & VLAN. 🔌 8× Gigabit PoE+ Ports + 2× Uplink Power up to 8 PoE devices with 30W per port and 120W total PoE budget. Two Gigabit uplink ports ensure fast, stable connections to routers or switches. ⚡ Full Gigabit Speed &amp; Sa",
-  "source": "https://www.tenveocamera.com/products/8-port-poe-gigabit-ethernet-switch"
+  "source": "https://www.tenveocamera.com/products/8-port-poe-gigabit-ethernet-switch",
+  "gallery": [
+   "/images/tenveo-catalog/poe8-g2.webp",
+   "/images/tenveo-catalog/poe8-g3.webp",
+   "/images/tenveo-catalog/poe8-g4.webp",
+   "/images/tenveo-catalog/poe8-g5.webp"
+  ]
  }
 }
