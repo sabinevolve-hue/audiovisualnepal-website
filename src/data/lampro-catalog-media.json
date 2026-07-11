@@ -1,1 +1,122 @@
-{}
+{
+ "LMini": {
+  "slug": "lmini",
+  "img": "/images/lampro-catalog/lmini.webp",
+  "desc": "LAMPRO's LMini LED panel features COB technology and HDR for a 10,000:1 contrast ratio. With EBL+ optical processing and a common cathode design, it delivers pure black visuals and superior energy efficiency.",
+  "source": "https://www.lampro.net/products/lmini-series-lampro.html"
+ },
+ "LMini P": {
+  "slug": "lmini-p",
+  "img": "/images/lampro-catalog/lmini-p.webp",
+  "desc": "Discover LMini P Series from Lampro: Your ideal Mini display for commercial success. We stand behind our products with excellent value and energy efficiency, as well as top-quality service and support. Learn more!",
+  "source": "https://www.lampro.net/products/lmini-p-series-lampro.html"
+ },
+ "LHP": {
+  "slug": "lhp",
+  "img": "/images/lampro-catalog/lhp.webp",
+  "desc": "LAMPRO's LHP series is a high-integration HD LED display with a wireless design and GOB technology for superior durability. With full front maintenance and a pioneering cooling system, it delivers stable, high-definition performance for museums, conferences, and command centers.",
+  "source": "https://www.lampro.net/products/lhp-series-lampro.html"
+ },
+ "BNXII": {
+  "slug": "bnxii",
+  "img": "/images/lampro-catalog/bnxii.webp",
+  "desc": "LAMPRO’s BNXII Series offers a versatile modular LED screen designed for free-form creativity. Featuring multiple panel sizes, wireless connections, and flexible splicing, this lightweight display enables unique shapes and dynamic installations.",
+  "source": "https://www.lampro.net/products/bnxii-series-lampro.html"
+ },
+ "LRS": {
+  "slug": "lrs",
+  "img": "/images/lampro-catalog/lrs.webp",
+  "desc": "Screen Hire foLAMPRO's LRS Series offers a carefree screen hire for events solution. Its modular design allows for quick setup and creative freedom with concave/convex arcs and 90° corners, making it ideal for conferences, concerts, and exhibitions.r Events",
+  "source": "https://www.lampro.net/products/lrs-series-lampro.html"
+ },
+ "RNII": {
+  "slug": "rnii",
+  "img": "/images/lampro-catalog/rnii.webp",
+  "desc": "LAMPRO's RNII Series offers professional LED walls for virtual production. Engineered for rapid setup and durability, these robust rental displays feature a high refresh rate and superior resolution, providing a reliable and immersive backdrop for XR stages and film studios.",
+  "source": "https://www.lampro.net/products/rnii-series-led-rental-lampro.html"
+ },
+ "LRM": {
+  "slug": "lrm",
+  "img": "/images/lampro-catalog/lrm.webp",
+  "desc": "Discover LRM Series from Lampro: Your ideal Rental display for commercial success. We stand behind our products with excellent value and energy efficiency, as well as top-quality service and support. Learn more!",
+  "source": "https://www.lampro.net/products/lrm-series-lampro.html"
+ },
+ "LXII Pro": {
+  "slug": "lxii-pro",
+  "img": "/images/lampro-catalog/lxii-pro.webp",
+  "desc": "LAMPRO LXⅡ Pro series, the fine-pitch HD DOOH display for outdoor applications, features multi-size cabinets for mixed splicing, enabling more flexible outdoor installations, while adopting a die-cast aluminum cabinet, ensuring long-term operation. With a cable box that protects cables from UV, agin",
+  "source": "https://www.lampro.net/products/lxiipro-series-lampro.html"
+ },
+ "LS Pro": {
+  "slug": "ls-pro",
+  "img": "/images/lampro-catalog/ls-pro.webp",
+  "desc": "LAMPRO LS Pro series is a stunning outdoor LED billboard that delivers up to 10,000 nits of brightness and boasts an IP66/IP65 waterproof rating. Its heavy-duty cabinets ensure high stability and superior durability. Available in various sizes, it offers flexible installation solutions for a wide ra",
+  "source": "https://www.lampro.net/products/lspro-series-lampro.html"
+ },
+ "LST": {
+  "slug": "lst",
+  "img": "/images/lampro-catalog/lst.webp",
+  "desc": "LAMPRO's LST series is a high-performance outdoor LED billboard with up to 10,000 nits brightness and IP65 waterproof rating. The ultra-light cabinets and dual maintenance access ensure durability and easy management for all-weather DOOH advertising.",
+  "source": "https://www.lampro.net/products/lst-series-lampro.html"
+ },
+ "LSK": {
+  "slug": "lsk",
+  "img": "/images/lampro-catalog/lsk.webp",
+  "desc": "Discover LSK Series from Lampro: Your ideal DOOH display for commercial success. We stand behind our products with excellent value and energy efficiency, as well as top-quality service and support. Learn more!",
+  "source": "https://www.lampro.net/products/lsk-series-lampro.html"
+ },
+ "WNX": {
+  "slug": "wnx",
+  "img": "/images/lampro-catalog/wnx.webp",
+  "desc": "Discover WNX Series from Lampro: Your ideal Creative display for commercial success. We stand behind our products with excellent value and energy efficiency, as well as top-quality service and support. Learn more!",
+  "source": "https://www.lampro.net/products/wnx-series-lampro.html"
+ },
+ "WX": {
+  "slug": "wx",
+  "img": "/images/lampro-catalog/wx.webp",
+  "desc": "Discover WX Series from Lampro: Your ideal Creative display for commercial success. We stand behind our products with excellent value and energy efficiency, as well as top-quality service and support. Learn more!",
+  "source": "https://www.lampro.net/products/wx-series-lampro.html"
+ },
+ "LCF": {
+  "slug": "lcf",
+  "img": "/images/lampro-catalog/lcf.webp",
+  "desc": "LAMPRO’s LCF Series curved LED screens feature a 72° three-dimensional fold and an ultra-thin, lightweight design—ideal for immersive projects and visually striking installations.",
+  "source": "https://www.lampro.net/products/lcf-series-lampro.html"
+ },
+ "LC COB": {
+  "slug": "lc-cob",
+  "img": "/images/lampro-catalog/lc-cob.webp",
+  "desc": "The LC-COB series redefines COB LED screens with its sleek, minimalist look and magnetic design. Powered by full flip-chip technology, it delivers exceptional protection, a crisp 3840Hz refresh rate, and an impressive 10,000:1 contrast ratio for vibrant, seamless visuals that captivate.",
+  "source": "https://www.lampro.net/products/lc-cob-series-lampro.html"
+ },
+ "LCM": {
+  "slug": "lcm",
+  "img": "/images/lampro-catalog/lcm.webp",
+  "desc": "Discover LCM Series from Lampro: Your ideal Module display for commercial success. We stand behind our products with excellent value and energy efficiency, as well as top-quality service and support. Learn more!",
+  "source": "https://www.lampro.net/products/lcm-lampro-led-module.html"
+ },
+ "LW": {
+  "slug": "lw",
+  "img": "/images/lampro-catalog/lw.webp",
+  "desc": "LAMPRO's LW Series is a highly versatile flexible LED module for creative designs. With a bendable arc of up to 120°, its ultra-thin, lightweight design and strong magnets enable easy installation for cylindrical, wave, and other custom shapes.",
+  "source": "https://www.lampro.net/products/lw-series-lampro.html"
+ },
+ "LDAII": {
+  "slug": "ldaii",
+  "img": "/images/lampro-catalog/ldaii.webp",
+  "desc": "LAMPRO's LDAⅡ series is a high-performance indoor LED module with a 3840Hz refresh rate. Its unique heat dissipation system and anti-collision design ensure stable operation and durability, with full front maintenance for easy handling.",
+  "source": "https://www.lampro.net/products/ldaii-series.html"
+ },
+ "LDT": {
+  "slug": "ldt",
+  "img": "/images/lampro-catalog/ldt.webp",
+  "desc": "Discover LDT Series from Lampro: Your ideal Module display for commercial success. We stand behind our products with excellent value and energy efficiency, as well as top-quality service and support. Learn more!",
+  "source": "https://www.lampro.net/products/ldt-series-lampro.html"
+ },
+ "LC": {
+  "slug": "lc",
+  "img": "/images/lampro-catalog/lc.webp",
+  "desc": "Discover LC Series from Lampro: Your ideal Module display for commercial success. We stand behind our products with excellent value and energy efficiency, as well as top-quality service and support. Learn more!",
+  "source": "https://www.lampro.net/products/lc-series-lampro.html"
+ }
+}
