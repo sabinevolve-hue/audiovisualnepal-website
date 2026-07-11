@@ -32,12 +32,14 @@ for (const model of models) {
   if (media[model]) continue
   const key = norm(model)
   if (key.length < 4) continue
+  const CASEY = /(project|case|deployed|installed|solution-for|solutions-for|-in-|news|blog|exhibition|mosque-in|hotel-in|applied)/
   const candidates = urls
     .filter((u) => {
       const slugPart = (u.split('.com/')[1] || '').split('/').pop() || u.split('.com/')[1]
       return slugPart.split('-').some((seg) => norm(seg) === key) || (key.length >= 6 && norm(slugPart).includes(key))
     })
-    .sort((a, b) => a.length - b.length)
+    .sort((a, b) => (CASEY.test(a) ? 1 : 0) - (CASEY.test(b) ? 1 : 0) || a.length - b.length)
+    .filter((u, i, arr) => !CASEY.test(u) || !arr.some((x) => !CASEY.test(x)))
   if (!candidates.length) continue
   try {
     const res = await fetch(candidates[0], { headers: UA })

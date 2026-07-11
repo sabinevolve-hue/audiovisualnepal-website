@@ -20,7 +20,7 @@ const BRAND_DATA = {
     description: "DSPPA (Guangzhou DSPPA Audio Co., Ltd.) is one of Asia's largest professional audio manufacturers. Specialising in IP network audio, voice evacuation systems, PA amplifiers and ceiling speakers, DSPPA products are deployed in airports, universities, hospitals and government facilities across 100+ countries. Their EN54-certified voice evacuation systems are a benchmark for life-safety installations.",
     categories: ['IP Network Audio', 'Voice Evacuation (EN54)', 'Mixer Amplifiers', 'Ceiling Speakers', 'Column Speakers', 'Horn Speakers', 'Remote Paging Stations'],
     highlights: ['EN54-16 Voice Evacuation Certified', '35+ Years Manufacturing', 'ISO 9001:2015 Certified', 'Deployed in 100+ Countries'],
-    color: '#DC2626',
+    color: '#00AEAD',
   },
   infobit: {
     name: 'InfoBit',
@@ -64,7 +64,7 @@ const BRAND_DATA = {
     description: "LAMPRO (Shenzhen LAMP Technology Co., Ltd.) is a dedicated LED display brand with 21 years of manufacturing expertise and 600,000+ sqm annual production. Their range spans fine-pitch COB Mini LED for boardrooms and control rooms, indoor creative splicing panels, rental and staging screens, and high-brightness outdoor DOOH billboards — installed across six continents with 3,000+ global partners.",
     categories: ['Fine-Pitch Mini LED (COB)', 'Fine-Pitch HD Indoor', 'Indoor Creative Splicing', 'Rental & Staging', 'Outdoor Advertising (DOOH)', 'Creative Displays', 'LED Modules & Distribution'],
     highlights: ['21 Years LED Manufacturing', '600,000+ sqm Annual Production', 'COB Fine-Pitch down to P1.2', '3,000+ Global Partners'],
-    color: '#E4002B',
+    color: '#0F58FB',
   },
 }
 

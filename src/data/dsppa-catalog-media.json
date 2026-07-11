@@ -17,12 +17,6 @@
   "desc": "MA120UB is widely used in many places, such as schools, gymnasiums, squares, parks, parking lots, railway stations, airports, villa communities, and mall supermarkets, and Mini Mixer Amplifier of MA12...",
   "source": "https://www.dsppatech.com/ma120ub-120w-mini-mixer-amplifier"
  },
- "DW6050": {
-  "slug": "dw6050",
-  "img": "/images/dsppa-catalog/dw6050.webp",
-  "desc": "Wireless WiFi speakers, with their flexible deployment, multiple input sources, remote control, and multi-room synchronization capabilities, can be widely applied across various scenarios.",
-  "source": "https://www.dsppatech.com/wireless-commercial-audio-system-solution-for-fitness-centers-dw2230-dw2230s-dw6050"
- },
  "DDA43D": {
   "slug": "dda43d",
   "img": "/images/dsppa-catalog/dda43d.webp",
@@ -46,18 +40,6 @@
   "img": "/images/dsppa-catalog/dsp8114.webp",
   "desc": "This product complies with IEC 268- 5 Power Handling Capacity (PHC) standards, which can operate 100 hours successively at rated power. SAFE test is carried out, to ensure that the product can withsta...",
   "source": "https://www.dsppatech.com/dsp8114-outdoor-waterproof-column-loudspeaker"
- },
- "DSP395T": {
-  "slug": "dsp395t",
-  "img": "/images/dsppa-catalog/dsp395t.webp",
-  "desc": "DSP395T + DSP395U IP Ultrasonic Directional Flat-Panel Speaker System -Smart Audio Solution for MuseumsI. Solution OverviewMuseums, as important venues for cultural and historical dissemination, rely ...",
-  "source": "https://www.dsppatech.com/ip-ultrasonic-directional-flat-panel-speaker-system-smart-audio-solution-for-museums-dsp395t-dsp395u"
- },
- "DSP395U": {
-  "slug": "dsp395u",
-  "img": "/images/dsppa-catalog/dsp395u.webp",
-  "desc": "DSP395T + DSP395U IP Ultrasonic Directional Flat-Panel Speaker System -Smart Audio Solution for MuseumsI. Solution OverviewMuseums, as important venues for cultural and historical dissemination, rely ...",
-  "source": "https://www.dsppatech.com/ip-ultrasonic-directional-flat-panel-speaker-system-smart-audio-solution-for-museums-dsp395t-dsp395u"
  },
  "MAG6468": {
   "slug": "mag6468",
@@ -131,12 +113,6 @@
   "desc": "Enhance safety with the DSPPA EN54 Voice Alarm System!",
   "source": "https://www.dsppatech.com/pava9500-voice-alarm-system"
  },
- "PAVA8500": {
-  "slug": "pava8500",
-  "img": "/images/dsppa-catalog/pava8500.webp",
-  "desc": "Abstract: The Hotel des Parlementaires is equipped with our voice evacuation system for enhanced safety and guest experience.",
-  "source": "https://www.dsppatech.com/pava8500-voice-evacuation-system-for-a-hotel-in-cote-divoire"
- },
  "MAG6182II": {
   "slug": "mag6182ii",
   "img": "/images/dsppa-catalog/mag6182ii.webp",
@@ -188,19 +164,19 @@
  "MP210U": {
   "slug": "mp210u",
   "img": "/images/dsppa-catalog/mp210u.webp",
-  "desc": "This mixing amplifier is rated at 60W. 100V and 4-16 Ω speaker output are provided. There are 4 microphones inputs and 3 line inputs, FM, USB, SD audio sources. Bass and treble controls and master vo...",
+  "desc": "This mixing amplifier is rated at 60W. 100V and 4-16 \u03a9 speaker output are provided. There are 4 microphones inputs and 3 line inputs, FM, USB, SD audio sources. Bass and treble controls and master vo...",
   "source": "https://www.dsppatech.com/product/mp210ub-60w--6-zones-mixing-amplifier"
  },
  "MP310U": {
   "slug": "mp310u",
   "img": "/images/dsppa-catalog/mp310u.webp",
-  "desc": "This mixing amplifier is rated at 120W. 100V and 4-16 Ω speaker output are provided. There are 4 microphones inputs and 3 line inputs, FM, USB, SD audio sources. Bass and treble controls and master v...",
+  "desc": "This mixing amplifier is rated at 120W. 100V and 4-16 \u03a9 speaker output are provided. There are 4 microphones inputs and 3 line inputs, FM, USB, SD audio sources. Bass and treble controls and master v...",
   "source": "https://www.dsppatech.com/product/mp310ub-120w-6-zones-mixing-amplifier"
  },
  "MP610U": {
   "slug": "mp610u",
   "img": "/images/dsppa-catalog/mp610u.webp",
-  "desc": "This mixing amplifier is rated at 250W. 100V and 4-16 Ω speaker output are provided. There are 4 microphones inputs and 3 line inputs, FM, USB, SD audio sources. Bass and treble controls and master v...",
+  "desc": "This mixing amplifier is rated at 250W. 100V and 4-16 \u03a9 speaker output are provided. There are 4 microphones inputs and 3 line inputs, FM, USB, SD audio sources. Bass and treble controls and master v...",
   "source": "https://www.dsppatech.com/product/mp610ub-250w-6-zones-mixing-amplifier"
  },
  "DMA60M": {
@@ -218,7 +194,7 @@
  "DMA250U": {
   "slug": "dma250u",
   "img": "/images/dsppa-catalog/dma250u.webp",
-  "desc": "DMA250U Digital Mixer Amplifier is a multi-functional mixer amplifier integrated with the functions of USB flash disk, FM, Bluetooth. DMA250U support 70V/100V and 4-16Ω speaker output. With 3 Mic, 2 ...",
+  "desc": "DMA250U Digital Mixer Amplifier is a multi-functional mixer amplifier integrated with the functions of USB flash disk, FM, Bluetooth. DMA250U support 70V/100V and 4-16\u03a9 speaker output. With 3 Mic, 2 ...",
   "source": "https://www.dsppatech.com/product/dma250u-250w-digital-mixer-amplifier"
  },
  "DMA6250U": {
@@ -296,7 +272,7 @@
  "MP250UB": {
   "slug": "mp250ub",
   "img": "/images/dsppa-catalog/mp250ub.webp",
-  "desc": "MP250UB is Mini Digital Mixer Amplifier with USB/FM and Bluetooth.The Speaker output is 70V/100V and 4-16Ω available,Individual volume control for each Mic and Aux, also provide Bass and Treble contr...",
+  "desc": "MP250UB is Mini Digital Mixer Amplifier with USB/FM and Bluetooth.The Speaker output is 70V/100V and 4-16\u03a9 available,Individual volume control for each Mic and Aux, also provide Bass and Treble contr...",
   "source": "https://www.dsppatech.com/product/mp250ub-mini-digital-mixer-amplifier-with-usb-bluetooth"
  },
  "MP9306U": {
@@ -350,7 +326,7 @@
  "DDA23D": {
   "slug": "dda23d",
   "img": "/images/dsppa-catalog/dda23d.webp",
-  "desc": "DDA23/DDA23D is a multifunctional network DSP digital constant-resistance and constant-voltage amplifier of 2*450W@4Ω, 2*300W@8Ω, bridge 1*900W@8Ω, and constant voltage 70/100V, which can remotely monitor the status of amplifier in real time, and set the compressor, limiter, noise gate, PEQ, matrix ",
+  "desc": "DDA23/DDA23D is a multifunctional network DSP digital constant-resistance and constant-voltage amplifier of 2*450W@4\u03a9, 2*300W@8\u03a9, bridge 1*900W@8\u03a9, and constant voltage 70/100V, which can remotely monitor the status of amplifier in real time, and set the compressor, limiter, noise gate, PEQ, matrix ",
   "source": "https://www.dsppatech.com/product/dda23d-ip-network-digital-amplifier-with-dsp-and-dante"
  },
  "DDA408D": {
@@ -422,19 +398,19 @@
  "DSP5211L": {
   "slug": "dsp5211l",
   "img": "/images/dsppa-catalog/dsp5211l.webp",
-  "desc": "This product is a coaxial two frequency ceiling type speaker,with a wide range of sound diffusion, large output power. Easy installation fear,can reproduce the voice and music. It’s an ideal choice f...",
+  "desc": "This product is a coaxial two frequency ceiling type speaker,with a wide range of sound diffusion, large output power. Easy installation fear,can reproduce the voice and music. It\u2019s an ideal choice f...",
   "source": "https://www.dsppatech.com/product/dsp5211l-10w-coaxial-frame-less-ceiling-speaker"
  },
  "DSP5012": {
   "slug": "dsp5012",
   "img": "/images/dsppa-catalog/dsp5012.webp",
-  "desc": "This product is a coaxial two-frequencyceiling speakers. With wide angle and high output power, it can output good soundeffect. Besides, it’s easy to install. It’s an ideal choice for you .",
+  "desc": "This product is a coaxial two-frequencyceiling speakers. With wide angle and high output power, it can output good soundeffect. Besides, it\u2019s easy to install. It\u2019s an ideal choice for you .",
   "source": "https://www.dsppatech.com/product/dsp5012-35w-8-coaxial-frameless-ceiling-speaker"
  },
  "DSP3011": {
   "slug": "dsp3011",
   "img": "/images/dsppa-catalog/dsp3011.webp",
-  "desc": "The DSP3011L is a 8Ω ceiling speaker , the built-in 3” speaker driver is designed of wide frequency response 120-20,000Hz, the multiple terminals 6W, can be applied to different occasions varied in ...",
+  "desc": "The DSP3011L is a 8\u03a9 ceiling speaker , the built-in 3\u201d speaker driver is designed of wide frequency response 120-20,000Hz, the multiple terminals 6W, can be applied to different occasions varied in ...",
   "source": "https://www.dsppatech.com/product/dsp3011l-mini-frameless-ceiling-speaker-3w"
  },
  "DSP3011C": {
@@ -551,12 +527,6 @@
   "desc": "This series of products is a multi-functional loudspeaker, available in wall-mounted, pendant, and floor types. This series of products can provide high-quality voice and music reproduction functions,...",
   "source": "https://www.dsppatech.com/product/dsp5153-outdoor-wall-mount-speakers"
  },
- "DSP207II": {
-  "slug": "dsp207ii",
-  "img": "/images/dsppa-catalog/dsp207ii.webp",
-  "desc": "This product is a unidirectional speaker which provide high-quality voice andmusic reproduction function. With long transmission distance, it is an idealchoice for tunnels, corridor and shopping galle...",
-  "source": "https://www.dsppatech.com/product/pa-speakers/array-speaker-pentant-speaker/dsp207ii-sound-projector"
- },
  "DSP40I": {
   "slug": "dsp40i",
   "img": "/images/dsppa-catalog/dsp40i.webp",
@@ -644,7 +614,7 @@
  "CM62": {
   "slug": "cm62",
   "img": "/images/dsppa-catalog/cm62.webp",
-  "desc": "This is a newly developed metal-based conference microphone with multiple national patents.This microphone not only has original appearance and innovitive structure, but also with excellent electric-...",
+  "desc": "This is a newly developed metal-based conference microphone with multiple national patents.This microphone not only has original appearance and innovitive structure, but also with excellent\u2002electric-...",
   "source": "https://www.dsppatech.com/product/cm62-condenser-microphone"
  },
  "CM30": {

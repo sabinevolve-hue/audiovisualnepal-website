@@ -182,7 +182,7 @@ export const BRANDS = [
     tagline: 'Fine-pitch, rental and outdoor LED displays — 21 years of manufacturing',
     origin: 'China',
     founded: '2004',
-    logoColor: '#E4002B',
+    logoColor: '#0F58FB',
   },
 ] as const
 
