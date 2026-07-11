@@ -1,0 +1,948 @@
+{
+ "products": {
+  "infobit-iwall-204": {
+   "solutions": [
+    {
+     "label": "Corporate Offices",
+     "href": "/solutions/corporate"
+    }
+   ],
+   "cases": []
+  },
+  "infobit-vb60": {
+   "solutions": [
+    {
+     "label": "Corporate Offices",
+     "href": "/solutions/corporate"
+    }
+   ],
+   "cases": [
+    {
+     "label": "Smart Meeting Rooms — Leapfrog HQ",
+     "href": "/projects/leapfrog-smart-meeting-rooms"
+    }
+   ]
+  },
+  "dsppa-dsp6011": {
+   "solutions": [
+    {
+     "label": "Corporate Offices",
+     "href": "/solutions/corporate"
+    },
+    {
+     "label": "Hotels & Hospitality",
+     "href": "/solutions/hotels"
+    }
+   ],
+   "cases": [
+    {
+     "label": "5-Star Hotel Ballroom & BGM",
+     "href": "/projects/five-star-hotel-ballroom"
+    }
+   ]
+  },
+  "infobit-ispeaker-m500": {
+   "solutions": [
+    {
+     "label": "Corporate Offices",
+     "href": "/solutions/corporate"
+    }
+   ],
+   "cases": []
+  },
+  "dsppa-dma6112": {
+   "solutions": [
+    {
+     "label": "Corporate Offices",
+     "href": "/solutions/corporate"
+    }
+   ],
+   "cases": [
+    {
+     "label": "5-Star Hotel Ballroom & BGM",
+     "href": "/projects/five-star-hotel-ballroom"
+    }
+   ]
+  },
+  "infobit-ishare-x200": {
+   "solutions": [
+    {
+     "label": "Education",
+     "href": "/solutions/education"
+    },
+    {
+     "label": "Smart Meeting Rooms",
+     "href": "/solutions/smart-meeting-rooms"
+    }
+   ],
+   "cases": [
+    {
+     "label": "Smart Meeting Rooms — Leapfrog HQ",
+     "href": "/projects/leapfrog-smart-meeting-rooms"
+    }
+   ]
+  },
+  "focus-st100": {
+   "solutions": [
+    {
+     "label": "Education",
+     "href": "/solutions/education"
+    }
+   ],
+   "cases": []
+  },
+  "dsppa-dsp5211": {
+   "solutions": [
+    {
+     "label": "Education",
+     "href": "/solutions/education"
+    },
+    {
+     "label": "Hospitals",
+     "href": "/solutions/hospitals"
+    },
+    {
+     "label": "Smart Meeting Rooms",
+     "href": "/solutions/smart-meeting-rooms"
+    },
+    {
+     "label": "Transportation",
+     "href": "/solutions/transportation"
+    }
+   ],
+   "cases": [
+    {
+     "label": "Tribhuvan University Campus PA",
+     "href": "/projects/tribhuvan-university-campus-pa"
+    },
+    {
+     "label": "Smart Meeting Rooms — Leapfrog HQ",
+     "href": "/projects/leapfrog-smart-meeting-rooms"
+    },
+    {
+     "label": "Grande International Hospital",
+     "href": "/projects/grande-international-hospital"
+    }
+   ]
+  },
+  "dsppa-dsp161hd": {
+   "solutions": [
+    {
+     "label": "Education",
+     "href": "/solutions/education"
+    },
+    {
+     "label": "Religious Places",
+     "href": "/solutions/religious"
+    },
+    {
+     "label": "Transportation",
+     "href": "/solutions/transportation"
+    }
+   ],
+   "cases": [
+    {
+     "label": "Tribhuvan University Campus PA",
+     "href": "/projects/tribhuvan-university-campus-pa"
+    },
+    {
+     "label": "Central Mosque, Kathmandu",
+     "href": "/projects/central-mosque-kathmandu"
+    }
+   ]
+  },
+  "dsppa-mag6182ii": {
+   "solutions": [
+    {
+     "label": "Education",
+     "href": "/solutions/education"
+    },
+    {
+     "label": "Government",
+     "href": "/solutions/government"
+    },
+    {
+     "label": "Religious Places",
+     "href": "/solutions/religious"
+    }
+   ],
+   "cases": [
+    {
+     "label": "Federal Parliament Complex",
+     "href": "/projects/federal-parliament-complex"
+    },
+    {
+     "label": "Tribhuvan University Campus PA",
+     "href": "/projects/tribhuvan-university-campus-pa"
+    }
+   ]
+  },
+  "infobit-iwall-109": {
+   "solutions": [
+    {
+     "label": "Government",
+     "href": "/solutions/government"
+    }
+   ],
+   "cases": [
+    {
+     "label": "Federal Parliament Complex",
+     "href": "/projects/federal-parliament-complex"
+    }
+   ]
+  },
+  "focus-st600": {
+   "solutions": [
+    {
+     "label": "Government",
+     "href": "/solutions/government"
+    }
+   ],
+   "cases": []
+  },
+  "tenveo-x60ndi": {
+   "solutions": [
+    {
+     "label": "Government",
+     "href": "/solutions/government"
+    }
+   ],
+   "cases": [
+    {
+     "label": "Federal Parliament Complex",
+     "href": "/projects/federal-parliament-complex"
+    }
+   ]
+  },
+  "dsppa-mag6806": {
+   "solutions": [
+    {
+     "label": "Hospitals",
+     "href": "/solutions/hospitals"
+    },
+    {
+     "label": "Transportation",
+     "href": "/solutions/transportation"
+    }
+   ],
+   "cases": [
+    {
+     "label": "Tribhuvan University Campus PA",
+     "href": "/projects/tribhuvan-university-campus-pa"
+    },
+    {
+     "label": "Grande International Hospital",
+     "href": "/projects/grande-international-hospital"
+    }
+   ]
+  },
+  "dsppa-pava8500": {
+   "solutions": [
+    {
+     "label": "Hospitals",
+     "href": "/solutions/hospitals"
+    }
+   ],
+   "cases": [
+    {
+     "label": "Grande International Hospital",
+     "href": "/projects/grande-international-hospital"
+    }
+   ]
+  },
+  "dsppa-pava4600": {
+   "solutions": [
+    {
+     "label": "Hospitals",
+     "href": "/solutions/hospitals"
+    }
+   ],
+   "cases": []
+  },
+  "dsppa-dsp255ii": {
+   "solutions": [
+    {
+     "label": "Hotels & Hospitality",
+     "href": "/solutions/hotels"
+    },
+    {
+     "label": "Religious Places",
+     "href": "/solutions/religious"
+    }
+   ],
+   "cases": [
+    {
+     "label": "5-Star Hotel Ballroom & BGM",
+     "href": "/projects/five-star-hotel-ballroom"
+    },
+    {
+     "label": "Central Mosque, Kathmandu",
+     "href": "/projects/central-mosque-kathmandu"
+    }
+   ]
+  },
+  "infobit-ishare-x400": {
+   "solutions": [
+    {
+     "label": "Hotels & Hospitality",
+     "href": "/solutions/hotels"
+    },
+    {
+     "label": "Corporate Offices",
+     "href": "/solutions/corporate"
+    }
+   ],
+   "cases": [
+    {
+     "label": "5-Star Hotel Ballroom & BGM",
+     "href": "/projects/five-star-hotel-ballroom"
+    }
+   ]
+  },
+  "dsppa-dma6250u": {
+   "solutions": [
+    {
+     "label": "Hotels & Hospitality",
+     "href": "/solutions/hotels"
+    }
+   ],
+   "cases": []
+  },
+  "dsppa-dma250u": {
+   "solutions": [
+    {
+     "label": "Religious Places",
+     "href": "/solutions/religious"
+    },
+    {
+     "label": "Smart Meeting Rooms",
+     "href": "/solutions/smart-meeting-rooms"
+    }
+   ],
+   "cases": [
+    {
+     "label": "Central Mosque, Kathmandu",
+     "href": "/projects/central-mosque-kathmandu"
+    }
+   ]
+  },
+  "tenveo-nv20a-ai": {
+   "solutions": [
+    {
+     "label": "Smart Meeting Rooms",
+     "href": "/solutions/smart-meeting-rooms"
+    }
+   ],
+   "cases": [
+    {
+     "label": "Smart Meeting Rooms — Leapfrog HQ",
+     "href": "/projects/leapfrog-smart-meeting-rooms"
+    }
+   ]
+  },
+  "dsppa-mag6182ii-pro": {
+   "solutions": [
+    {
+     "label": "Transportation",
+     "href": "/solutions/transportation"
+    }
+   ],
+   "cases": []
+  },
+  "dsppa-pava9500": {
+   "solutions": [
+    {
+     "label": "Transportation",
+     "href": "/solutions/transportation"
+    }
+   ],
+   "cases": []
+  }
+ },
+ "categorySolutions": {
+  "infobit": {
+   "Wireless Presentation": [
+    {
+     "label": "Corporate Offices",
+     "href": "/solutions/corporate"
+    },
+    {
+     "label": "Smart Meeting Rooms",
+     "href": "/solutions/smart-meeting-rooms"
+    },
+    {
+     "label": "Education",
+     "href": "/solutions/education"
+    }
+   ],
+   "Video Walls": [
+    {
+     "label": "Corporate Offices",
+     "href": "/solutions/corporate"
+    },
+    {
+     "label": "Hotels & Hospitality",
+     "href": "/solutions/hotels"
+    },
+    {
+     "label": "Transportation",
+     "href": "/solutions/transportation"
+    }
+   ],
+   "Matrix Switching": [
+    {
+     "label": "Corporate Offices",
+     "href": "/solutions/corporate"
+    },
+    {
+     "label": "Hotels & Hospitality",
+     "href": "/solutions/hotels"
+    },
+    {
+     "label": "Transportation",
+     "href": "/solutions/transportation"
+    }
+   ],
+   "AV Control": [
+    {
+     "label": "Corporate Offices",
+     "href": "/solutions/corporate"
+    },
+    {
+     "label": "Smart Meeting Rooms",
+     "href": "/solutions/smart-meeting-rooms"
+    }
+   ],
+   "AV over IP": [
+    {
+     "label": "Corporate Offices",
+     "href": "/solutions/corporate"
+    }
+   ],
+   "Video Distribution": [
+    {
+     "label": "Corporate Offices",
+     "href": "/solutions/corporate"
+    }
+   ],
+   "Audio Distribution": [
+    {
+     "label": "Religious Places",
+     "href": "/solutions/religious"
+    },
+    {
+     "label": "Hotels & Hospitality",
+     "href": "/solutions/hotels"
+    },
+    {
+     "label": "Education",
+     "href": "/solutions/education"
+    }
+   ],
+   "Dante Audio (iTrans)": [
+    {
+     "label": "Corporate Offices",
+     "href": "/solutions/corporate"
+    },
+    {
+     "label": "Smart Meeting Rooms",
+     "href": "/solutions/smart-meeting-rooms"
+    }
+   ],
+   "Cameras": [
+    {
+     "label": "Smart Meeting Rooms",
+     "href": "/solutions/smart-meeting-rooms"
+    },
+    {
+     "label": "Government",
+     "href": "/solutions/government"
+    },
+    {
+     "label": "Education",
+     "href": "/solutions/education"
+    }
+   ],
+   "Meeting Group": [
+    {
+     "label": "Smart Meeting Rooms",
+     "href": "/solutions/smart-meeting-rooms"
+    },
+    {
+     "label": "Government",
+     "href": "/solutions/government"
+    },
+    {
+     "label": "Corporate Offices",
+     "href": "/solutions/corporate"
+    }
+   ],
+   "Microphones & Speakers": [
+    {
+     "label": "Smart Meeting Rooms",
+     "href": "/solutions/smart-meeting-rooms"
+    },
+    {
+     "label": "Corporate Offices",
+     "href": "/solutions/corporate"
+    },
+    {
+     "label": "Government",
+     "href": "/solutions/government"
+    }
+   ],
+   "UC Hub": [
+    {
+     "label": "Corporate Offices",
+     "href": "/solutions/corporate"
+    },
+    {
+     "label": "Smart Meeting Rooms",
+     "href": "/solutions/smart-meeting-rooms"
+    }
+   ],
+   "Digital Conference": [
+    {
+     "label": "Smart Meeting Rooms",
+     "href": "/solutions/smart-meeting-rooms"
+    },
+    {
+     "label": "Government",
+     "href": "/solutions/government"
+    },
+    {
+     "label": "Corporate Offices",
+     "href": "/solutions/corporate"
+    }
+   ],
+   "KVM Solutions": [
+    {
+     "label": "Corporate Offices",
+     "href": "/solutions/corporate"
+    },
+    {
+     "label": "Smart Meeting Rooms",
+     "href": "/solutions/smart-meeting-rooms"
+    }
+   ],
+   "Extenders & Connectivity": [
+    {
+     "label": "Corporate Offices",
+     "href": "/solutions/corporate"
+    },
+    {
+     "label": "Smart Meeting Rooms",
+     "href": "/solutions/smart-meeting-rooms"
+    }
+   ],
+   "Embedders & De-embedders": [
+    {
+     "label": "Corporate Offices",
+     "href": "/solutions/corporate"
+    }
+   ],
+   "Room PC": [
+    {
+     "label": "Corporate Offices",
+     "href": "/solutions/corporate"
+    }
+   ],
+   "Cables & Adapters": [
+    {
+     "label": "Corporate Offices",
+     "href": "/solutions/corporate"
+    },
+    {
+     "label": "Smart Meeting Rooms",
+     "href": "/solutions/smart-meeting-rooms"
+    }
+   ],
+   "Stands & Mounts": [
+    {
+     "label": "Corporate Offices",
+     "href": "/solutions/corporate"
+    },
+    {
+     "label": "Smart Meeting Rooms",
+     "href": "/solutions/smart-meeting-rooms"
+    }
+   ],
+   "USB Capture": [
+    {
+     "label": "Corporate Offices",
+     "href": "/solutions/corporate"
+    },
+    {
+     "label": "Smart Meeting Rooms",
+     "href": "/solutions/smart-meeting-rooms"
+    }
+   ],
+   "BYOD Switchers": [
+    {
+     "label": "Corporate Offices",
+     "href": "/solutions/corporate"
+    },
+    {
+     "label": "Smart Meeting Rooms",
+     "href": "/solutions/smart-meeting-rooms"
+    }
+   ],
+   "SDI Signal": [
+    {
+     "label": "Corporate Offices",
+     "href": "/solutions/corporate"
+    },
+    {
+     "label": "Smart Meeting Rooms",
+     "href": "/solutions/smart-meeting-rooms"
+    }
+   ],
+   "AV Tools": [
+    {
+     "label": "Corporate Offices",
+     "href": "/solutions/corporate"
+    }
+   ],
+   "Wireless Charging": [
+    {
+     "label": "Corporate Offices",
+     "href": "/solutions/corporate"
+    }
+   ],
+   "Headsets": [
+    {
+     "label": "Corporate Offices",
+     "href": "/solutions/corporate"
+    }
+   ],
+   "Screens": [
+    {
+     "label": "Corporate Offices",
+     "href": "/solutions/corporate"
+    }
+   ],
+   "Converters": [
+    {
+     "label": "Corporate Offices",
+     "href": "/solutions/corporate"
+    },
+    {
+     "label": "Smart Meeting Rooms",
+     "href": "/solutions/smart-meeting-rooms"
+    }
+   ],
+   "Power Management": [
+    {
+     "label": "Corporate Offices",
+     "href": "/solutions/corporate"
+    },
+    {
+     "label": "Smart Meeting Rooms",
+     "href": "/solutions/smart-meeting-rooms"
+    }
+   ]
+  },
+  "dsppa": {
+   "Mixer Amplifiers": [
+    {
+     "label": "Religious Places",
+     "href": "/solutions/religious"
+    },
+    {
+     "label": "Hotels & Hospitality",
+     "href": "/solutions/hotels"
+    },
+    {
+     "label": "Education",
+     "href": "/solutions/education"
+    }
+   ],
+   "Wall Mount & Streaming Amplifiers": [
+    {
+     "label": "Religious Places",
+     "href": "/solutions/religious"
+    },
+    {
+     "label": "Hotels & Hospitality",
+     "href": "/solutions/hotels"
+    },
+    {
+     "label": "Education",
+     "href": "/solutions/education"
+    }
+   ],
+   "Power Amplifiers": [
+    {
+     "label": "Religious Places",
+     "href": "/solutions/religious"
+    },
+    {
+     "label": "Hotels & Hospitality",
+     "href": "/solutions/hotels"
+    },
+    {
+     "label": "Education",
+     "href": "/solutions/education"
+    }
+   ],
+   "Ceiling Speakers": [
+    {
+     "label": "Corporate Offices",
+     "href": "/solutions/corporate"
+    },
+    {
+     "label": "Education",
+     "href": "/solutions/education"
+    },
+    {
+     "label": "Hospitals",
+     "href": "/solutions/hospitals"
+    }
+   ],
+   "Wall Mount Speakers": [
+    {
+     "label": "Smart Meeting Rooms",
+     "href": "/solutions/smart-meeting-rooms"
+    },
+    {
+     "label": "Corporate Offices",
+     "href": "/solutions/corporate"
+    },
+    {
+     "label": "Government",
+     "href": "/solutions/government"
+    }
+   ],
+   "Column Speakers": [
+    {
+     "label": "Religious Places",
+     "href": "/solutions/religious"
+    },
+    {
+     "label": "Hotels & Hospitality",
+     "href": "/solutions/hotels"
+    },
+    {
+     "label": "Transportation",
+     "href": "/solutions/transportation"
+    }
+   ],
+   "Outdoor & Specialty Speakers": [
+    {
+     "label": "Smart Meeting Rooms",
+     "href": "/solutions/smart-meeting-rooms"
+    },
+    {
+     "label": "Corporate Offices",
+     "href": "/solutions/corporate"
+    },
+    {
+     "label": "Government",
+     "href": "/solutions/government"
+    }
+   ],
+   "High Performance Series": [
+    {
+     "label": "Corporate Offices",
+     "href": "/solutions/corporate"
+    }
+   ],
+   "Peripherals & Accessories": [
+    {
+     "label": "Corporate Offices",
+     "href": "/solutions/corporate"
+    }
+   ],
+   "Voice Evacuation (PAVA)": [
+    {
+     "label": "Hospitals",
+     "href": "/solutions/hospitals"
+    },
+    {
+     "label": "Transportation",
+     "href": "/solutions/transportation"
+    },
+    {
+     "label": "Government",
+     "href": "/solutions/government"
+    }
+   ],
+   "IP Network Audio (MAG)": [
+    {
+     "label": "Hospitals",
+     "href": "/solutions/hospitals"
+    },
+    {
+     "label": "Transportation",
+     "href": "/solutions/transportation"
+    },
+    {
+     "label": "Education",
+     "href": "/solutions/education"
+    }
+   ]
+  },
+  "tenveo": {
+   "PTZ Cameras": [
+    {
+     "label": "Smart Meeting Rooms",
+     "href": "/solutions/smart-meeting-rooms"
+    },
+    {
+     "label": "Government",
+     "href": "/solutions/government"
+    },
+    {
+     "label": "Education",
+     "href": "/solutions/education"
+    }
+   ],
+   "360 Cameras & Group Kits": [
+    {
+     "label": "Smart Meeting Rooms",
+     "href": "/solutions/smart-meeting-rooms"
+    },
+    {
+     "label": "Government",
+     "href": "/solutions/government"
+    },
+    {
+     "label": "Education",
+     "href": "/solutions/education"
+    }
+   ],
+   "Speakerphones": [
+    {
+     "label": "Smart Meeting Rooms",
+     "href": "/solutions/smart-meeting-rooms"
+    },
+    {
+     "label": "Corporate Offices",
+     "href": "/solutions/corporate"
+    },
+    {
+     "label": "Government",
+     "href": "/solutions/government"
+    }
+   ],
+   "Wireless Conference System": [
+    {
+     "label": "Smart Meeting Rooms",
+     "href": "/solutions/smart-meeting-rooms"
+    },
+    {
+     "label": "Government",
+     "href": "/solutions/government"
+    },
+    {
+     "label": "Corporate Offices",
+     "href": "/solutions/corporate"
+    }
+   ],
+   "Controllers & Production": [
+    {
+     "label": "Corporate Offices",
+     "href": "/solutions/corporate"
+    },
+    {
+     "label": "Smart Meeting Rooms",
+     "href": "/solutions/smart-meeting-rooms"
+    }
+   ],
+   "Mounts & Accessories": [
+    {
+     "label": "Corporate Offices",
+     "href": "/solutions/corporate"
+    },
+    {
+     "label": "Smart Meeting Rooms",
+     "href": "/solutions/smart-meeting-rooms"
+    }
+   ]
+  },
+  "lampro": {
+   "Fine-Pitch Mini LED (COB)": [
+    {
+     "label": "Corporate Offices",
+     "href": "/solutions/corporate"
+    },
+    {
+     "label": "Hotels & Hospitality",
+     "href": "/solutions/hotels"
+    },
+    {
+     "label": "Transportation",
+     "href": "/solutions/transportation"
+    }
+   ],
+   "Fine-Pitch HD Indoor": [
+    {
+     "label": "Corporate Offices",
+     "href": "/solutions/corporate"
+    }
+   ],
+   "Indoor Commercial & Creative Splicing": [
+    {
+     "label": "Hotels & Hospitality",
+     "href": "/solutions/hotels"
+    },
+    {
+     "label": "Corporate Offices",
+     "href": "/solutions/corporate"
+    }
+   ],
+   "Rental & Staging": [
+    {
+     "label": "Hotels & Hospitality",
+     "href": "/solutions/hotels"
+    },
+    {
+     "label": "Corporate Offices",
+     "href": "/solutions/corporate"
+    }
+   ],
+   "Outdoor Advertising (DOOH)": [
+    {
+     "label": "Corporate Offices",
+     "href": "/solutions/corporate"
+    },
+    {
+     "label": "Hotels & Hospitality",
+     "href": "/solutions/hotels"
+    },
+    {
+     "label": "Transportation",
+     "href": "/solutions/transportation"
+    }
+   ],
+   "Creative Displays": [
+    {
+     "label": "Corporate Offices",
+     "href": "/solutions/corporate"
+    },
+    {
+     "label": "Hotels & Hospitality",
+     "href": "/solutions/hotels"
+    },
+    {
+     "label": "Transportation",
+     "href": "/solutions/transportation"
+    }
+   ],
+   "LED Modules & Distribution": [
+    {
+     "label": "Corporate Offices",
+     "href": "/solutions/corporate"
+    },
+    {
+     "label": "Hotels & Hospitality",
+     "href": "/solutions/hotels"
+    },
+    {
+     "label": "Transportation",
+     "href": "/solutions/transportation"
+    }
+   ]
+  }
+ }
+}

@@ -66,5 +66,34 @@ for (const [model, path] of Object.entries(MANIFEST)) {
     await new Promise((r) => setTimeout(r, 150))
   } catch (e) { console.log('err', model, e.message) }
 }
+// GALLERY BACKFILL
+let gAdded = 0
+for (const [model, e] of Object.entries(media)) {
+  if (e.gallery || !e.source) continue
+  try {
+    const res = await fetch(e.source, { headers: UA })
+    if (!res.ok) continue
+    const html = await res.text()
+    const urls = [...new Set([...html.matchAll(/https?:\/\/www\.lampro\.net\/media\/[^\s"')]+\.(?:webp|png|jpe?g)/g)].map((m) => m[0]))].slice(1, 6)
+    const gallery = []
+    let n = 2
+    for (const u of urls) {
+      if (gallery.length >= 4) break
+      try {
+        const ir = await fetch(u, { headers: UA })
+        if (!ir.ok) continue
+        const buf = Buffer.from(await ir.arrayBuffer())
+        const f = `${e.slug}-g${n}.webp`
+        await sharp(buf).resize(1000, 1000, { fit: 'inside', withoutEnlargement: true }).webp({ quality: 76 }).toFile(resolve(OUT_IMG, f))
+        gallery.push(`/images/lampro-catalog/${f}`)
+        n++
+      } catch {}
+    }
+    if (gallery.length) { e.gallery = gallery; gAdded++ }
+    await new Promise((r) => setTimeout(r, 120))
+  } catch {}
+}
+console.log('galleries added:', gAdded)
+
 writeFileSync(OUT_JSON, JSON.stringify(media, null, 1))
 console.log(`matched: ${hits} of ${Object.keys(MANIFEST).length}`)

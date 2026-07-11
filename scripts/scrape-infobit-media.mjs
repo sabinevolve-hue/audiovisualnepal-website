@@ -79,6 +79,37 @@ for (const model of models) {
   } catch { misses++ }
 }
 
+// GALLERY BACKFILL — add up to 4 detail images per model with media
+let gAdded = 0
+for (const [model, e] of Object.entries(media)) {
+  if (e.gallery || !e.source) continue
+  try {
+    const res = await fetch(e.source, { headers: UA })
+    if (!res.ok) continue
+    const html = await res.text()
+    const urls = [...new Set([...html.matchAll(/https:\/\/www\.infobitav\.com\/wp-content\/uploads\/[^\s"')]+\.(?:webp|png|jpe?g)/g)].map((m) => m[0]))]
+      .filter((u) => /-(D|B)\d/i.test(u)).slice(0, 5)
+    const gallery = []
+    let n = 2
+    for (const u of urls) {
+      if (gallery.length >= 4) break
+      try {
+        const ir = await fetch(u, { headers: UA })
+        if (!ir.ok) continue
+        const buf = Buffer.from(await ir.arrayBuffer())
+        const f = `${e.slug}-g${n}.webp`
+        await sharp(buf).resize(1000, 1000, { fit: 'inside', withoutEnlargement: true }).webp({ quality: 76 }).toFile(resolve(OUT_IMG, f))
+        gallery.push(`/images/infobit-catalog/${f}`)
+        n++
+      } catch {}
+    }
+    if (gallery.length) { e.gallery = gallery; gAdded++ }
+    if (gAdded % 20 === 0) writeFileSync(OUT_JSON, JSON.stringify(media, null, 1))
+    await new Promise((r) => setTimeout(r, 100))
+  } catch {}
+}
+console.log('galleries added:', gAdded)
+
 writeFileSync(OUT_JSON, JSON.stringify(media, null, 1))
 console.log(`hits: ${hits}, misses: ${misses}, skipped(existing): ${skipped}, total in media: ${Object.keys(media).length}`)
 if (Object.keys(media).length === 0) process.exit(1)

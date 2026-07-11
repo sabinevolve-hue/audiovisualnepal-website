@@ -1,5 +1,6 @@
 import { Metadata } from 'next'
 import Link from 'next/link'
+import relationsData from '@/data/relations.json'
 import { notFound } from 'next/navigation'
 import { ALL_PRODUCTS, getProductBySlug as getProduct, getRelatedProducts } from '@/data/products'
 import { ProductImg } from '@/components/ui/ProductImg'
@@ -421,6 +422,30 @@ export default async function ProductDetailPage({ params }: Props) {
               </div>
             </div>
           </div>
+
+          {/* Used in solutions / projects (derived from relations graph) */}
+          {(() => {
+            const rel = (relationsData as { products: Record<string, { solutions: { label: string; href: string }[]; cases: { label: string; href: string }[] }> }).products[product.slug]
+            if (!rel || (rel.solutions.length === 0 && rel.cases.length === 0)) return null
+            return (
+              <div style={{ marginBottom: 48 }}>
+                <h2 style={{ fontFamily: 'Manrope, sans-serif', fontSize: 24, fontWeight: 800, color: '#0B1E3D', letterSpacing: '-0.02em', marginBottom: 16 }}>Where this product is used</h2>
+                <div style={{ display: 'flex', flexWrap: 'wrap', gap: 10 }}>
+                  {rel.solutions.map((r) => (
+                    <Link key={r.href} href={r.href} style={{ border: '1px solid rgba(11,30,61,0.12)', borderRadius: 999, padding: '8px 18px', fontSize: 13, fontWeight: 600, color: '#2563EB', textDecoration: 'none' }}>
+                      {r.label} solution →
+                    </Link>
+                  ))}
+                  {rel.cases.map((r) => (
+                    <Link key={r.href} href={r.href} style={{ border: '1px solid rgba(11,30,61,0.12)', borderRadius: 999, padding: '8px 18px', fontSize: 13, fontWeight: 600, color: '#0F766E', textDecoration: 'none' }}>
+                      Case study: {r.label} →
+                    </Link>
+                  ))}
+                </div>
+                <p style={{ marginTop: 14, fontSize: 12, color: '#94A3B8' }}>Quotations within 24 hours on working days — request via the buttons above or <Link href="/boq-lookup" style={{ color: '#2563EB' }}>check your whole BOQ at once</Link>.</p>
+              </div>
+            )
+          })()}
 
           {/* Related Products */}
           {related.length > 0 && (

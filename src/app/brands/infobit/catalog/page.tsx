@@ -63,7 +63,7 @@ export default function InfobitCatalogPage() {
           <p className="mt-3 max-w-2xl text-slate-600">
             {catalog.totalModels}+ models across {catalog.categories.length} categories — every
             item available in Nepal with manufacturer warranty. Highlighted models link to full
-            product pages; for anything else, quote it by model number.
+            product pages; for anything else, quote it by model number. Working from a tender? <Link href="/boq-lookup" className="font-semibold text-blue-600 hover:underline">Paste your whole BOQ here</Link>.
           </p>
           <p className="mt-6 text-xs font-semibold uppercase tracking-widest text-slate-500">Distributor highlights</p>
           <p className="mt-2 max-w-3xl text-sm text-slate-600">

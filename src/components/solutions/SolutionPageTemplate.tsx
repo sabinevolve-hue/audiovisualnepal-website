@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import InteractiveScene, { type SceneConfig } from "@/components/solutions/InteractiveScene";
 import Reveal from "@/components/solutions/Reveal";
+import { SOLUTIONS_NAV } from "@/lib/constants";
 
 export type SolutionSystem = { name: string; desc: string; href: string; img: string };
 export type SolutionFaq = { q: string; a: string };
@@ -154,6 +155,20 @@ export default function SolutionPageTemplate({ data }: { data: SolutionPageData 
               </Reveal>
             ))}
           </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-6xl px-6 pt-12">
+        <p className="text-xs font-semibold uppercase tracking-widest text-slate-500">Related solutions</p>
+        <div className="mt-3 flex flex-wrap gap-2">
+          {SOLUTIONS_NAV.filter((s) => !data.pageUrl.endsWith(s.href)).slice(0, 7).map((s) => (
+            <Link key={s.href} href={s.href} className="rounded-full border border-slate-200 px-4 py-1.5 text-sm font-medium text-slate-600 transition hover:border-blue-400 hover:text-blue-600">
+              {s.label}
+            </Link>
+          ))}
+          <Link href="/boq-lookup" className="rounded-full bg-slate-900 px-4 py-1.5 text-sm font-semibold text-white transition hover:bg-slate-700">
+            Have a BOQ? Check it instantly →
+          </Link>
         </div>
       </section>
 

@@ -8,6 +8,7 @@ const quickLinks = [
   { label: 'Home', href: '/' },
   { label: 'Products', href: '/products' },
   { label: 'Solution Finder', href: '/solution-finder' },
+  { label: 'BOQ Lookup', href: '/boq-lookup' },
   { label: 'InfoBit Catalog', href: '/brands/infobit/catalog' },
   { label: 'Projects', href: '/projects' },
   { label: 'Brands', href: '/brands' },

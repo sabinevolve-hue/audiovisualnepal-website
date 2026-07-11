@@ -64,6 +64,31 @@ for (const model of models) {
     await new Promise((r) => setTimeout(r, 100))
   } catch { /* skip */ }
 }
+// GALLERY BACKFILL from Shopify image arrays
+let gAdded = 0
+for (const [model, e] of Object.entries(media)) {
+  if (e.gallery || !e.source || !e.source.includes('tenveocamera.com')) continue
+  const handle = e.source.split('/products/')[1]
+  const hitP = store.find((p) => p.handle === handle)
+  if (!hitP || !hitP.images || hitP.images.length < 2) continue
+  const gallery = []
+  let n = 2
+  for (const img of hitP.images.slice(1, 5)) {
+    try {
+      const ir = await fetch(img.src)
+      if (!ir.ok) continue
+      const buf = Buffer.from(await ir.arrayBuffer())
+      const f = `${e.slug}-g${n}.webp`
+      await sharp(buf).resize(1000, 1000, { fit: 'inside', withoutEnlargement: true }).webp({ quality: 76 }).toFile(resolve(OUT_IMG, f))
+      gallery.push(`/images/tenveo-catalog/${f}`)
+      n++
+    } catch {}
+  }
+  if (gallery.length) { e.gallery = gallery; gAdded++ }
+  await new Promise((r) => setTimeout(r, 100))
+}
+console.log('galleries added:', gAdded)
+
 // pass 2: manufacturer site sitemap for models the store didn't carry
 const UA = { 'User-Agent': 'Mozilla/5.0 (compatible; AudioVisualNepal-catalog/1.0)' }
 let poolUrls = []
