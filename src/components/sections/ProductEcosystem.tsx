@@ -58,7 +58,7 @@ export default function ProductEcosystem() {
             Every Component, One Source
           </h2>
           <p style={{ fontSize: 16, maxWidth: 500, margin: '0 auto', lineHeight: 1.7, color: '#475569' }}>
-            From individual components to complete turnkey systems — sourced from four world-class manufacturers.
+            From individual components to complete turnkey systems — sourced from five world-class manufacturers.
           </p>
         </div>
 
