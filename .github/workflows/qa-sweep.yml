@@ -1,0 +1,38 @@
+name: Weekly QA Sweep
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '30 3 * * 1'
+  push:
+    paths:
+      - 'scripts/qa-sweep.mjs'
+
+jobs:
+  qa:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: read
+      issues: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Run QA sweep
+        id: sweep
+        run: node scripts/qa-sweep.mjs
+
+      - name: Open issue on failure
+        if: failure()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh issue create \
+            --repo "$GITHUB_REPOSITORY" \
+            --title "QA sweep failed — $(date -u +%Y-%m-%d)" \
+            --body "The weekly production QA sweep found failures. See the run: $GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID"
