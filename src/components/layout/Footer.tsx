@@ -20,6 +20,7 @@ const brandsLinks = [
   { label: 'InfoBit', href: '/brands/infobit', desc: 'Conference AV' },
   { label: 'Tenveo', href: '/brands/tenveo', desc: 'PTZ Cameras' },
   { label: 'Focus', href: '/brands/focus', desc: 'Smart Podiums' },
+  { label: 'Lampro', href: '/brands/lampro', desc: 'LED Displays' },
 ]
 
 export default function Footer() {

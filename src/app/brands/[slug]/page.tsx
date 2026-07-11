@@ -55,6 +55,17 @@ const BRAND_DATA = {
     highlights: ['Sapele Wood Handcrafted', 'Electric 200mm Height Adjustment', 'Intel OPS Computer Built-in', '23.8" Fully Bonded Touch Screen'],
     color: '#1E40AF',
   },
+  lampro: {
+    name: 'Lampro',
+    tagline: 'LED Screens & Displays — Display a Better World',
+    country: 'China',
+    website: 'https://www.lampro.net',
+    founded: '2004',
+    description: "LAMPRO (Shenzhen LAMP Technology Co., Ltd.) is a dedicated LED display brand with 21 years of manufacturing expertise and 600,000+ sqm annual production. Their range spans fine-pitch COB Mini LED for boardrooms and control rooms, indoor creative splicing panels, rental and staging screens, and high-brightness outdoor DOOH billboards — installed across six continents with 3,000+ global partners.",
+    categories: ['Fine-Pitch Mini LED (COB)', 'Fine-Pitch HD Indoor', 'Indoor Creative Splicing', 'Rental & Staging', 'Outdoor Advertising (DOOH)', 'Creative Displays', 'LED Modules & Distribution'],
+    highlights: ['21 Years LED Manufacturing', '600,000+ sqm Annual Production', 'COB Fine-Pitch down to P1.2', '3,000+ Global Partners'],
+    color: '#E4002B',
+  },
 }
 
 type BrandSlug = keyof typeof BRAND_DATA
@@ -68,7 +79,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const brand = BRAND_DATA[slug as BrandSlug]
   if (!brand) return { title: 'Brand' }
   return {
-    title: `${brand.name} Authorised Dealer Nepal`,
+    title: slug === 'lampro' ? `${brand.name} Authorised Partner Nepal` : `${brand.name} Authorised Dealer Nepal`,
     description: `${brand.name} authorised dealer in Nepal. ${brand.description.slice(0, 140)}`,
     alternates: { canonical: `https://audiovisualnepal.com/brands/${slug}` },
     openGraph: {
@@ -121,13 +132,13 @@ export default async function BrandPage({ params }: Props) {
               </div>
               <p className="text-[18px] mb-2" style={{ color: brand.color, fontWeight: 600 }}>{brand.tagline}</p>
               <p className="text-[14px]" style={{ color: '#64748B' }}>
-                Founded {brand.founded} · {brand.country} · Authorised dealer in Nepal
+                Founded {brand.founded} · {brand.country} · {slug === 'lampro' ? 'Authorised partner in Nepal' : 'Authorised dealer in Nepal'}
               </p>
-              {(slug === 'infobit' || slug === 'dsppa' || slug === 'tenveo') && (
+              {(slug === 'infobit' || slug === 'dsppa' || slug === 'tenveo' || slug === 'lampro') && (
                 <Link href={`/brands/${slug}/catalog`}
                   className="mt-4 inline-flex items-center gap-2 rounded-full px-5 py-2 text-[13px] font-bold text-white transition hover:opacity-90"
                   style={{ background: brand.color, textDecoration: 'none' }}>
-                  Browse the full {brand.name} catalog — {slug === 'infobit' ? '550+' : slug === 'dsppa' ? '200+' : '60+'} models →
+                  Browse the full {brand.name} catalog — {slug === 'infobit' ? '550+ models' : slug === 'dsppa' ? '200+ models' : slug === 'tenveo' ? '60+ models' : '20 series'} →
                 </Link>
               )}
             </div>

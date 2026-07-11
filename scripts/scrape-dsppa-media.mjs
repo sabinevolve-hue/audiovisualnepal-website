@@ -20,7 +20,7 @@ const models = []
 for (const c of catalog.categories) for (const s of c.series) for (const g of s.groups) for (const m of g.models) models.push(m)
 
 const sm = await (await fetch('https://www.dsppatech.com/sitemap.xml', { headers: UA })).text()
-const urls = [...sm.matchAll(/https:\/\/www\.dsppatech\.com\/[a-z0-9-]+/g)].map((m) => m[0])
+const urls = [...sm.matchAll(/https:\/\/www\.dsppatech\.com\/[a-z0-9\-\/]+/g)].map((m) => m[0])
 console.log('sitemap urls:', urls.length)
 
 mkdirSync(OUT_IMG, { recursive: true })
@@ -34,7 +34,7 @@ for (const model of models) {
   if (key.length < 4) continue
   const candidates = urls
     .filter((u) => {
-      const slugPart = u.split('.com/')[1]
+      const slugPart = (u.split('.com/')[1] || '').split('/').pop() || u.split('.com/')[1]
       return slugPart.split('-').some((seg) => norm(seg) === key) || (key.length >= 6 && norm(slugPart).includes(key))
     })
     .sort((a, b) => a.length - b.length)

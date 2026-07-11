@@ -73,10 +73,10 @@ export default function BrandsSection() {
         <div className="text-center mb-14">
           <div style={{ fontSize: 11, fontWeight: 700, letterSpacing: '0.12em', textTransform: 'uppercase', color: '#2563EB', marginBottom: 12 }}>Our Technology Partners</div>
           <h2 style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(30px,4vw,48px)', fontWeight: 900, letterSpacing: '-0.03em', color: '#0B1E3D', marginBottom: 16 }}>
-            4 World-Class Brands
+            5 World-Class Brands
           </h2>
           <p style={{ fontSize: 16, maxWidth: 500, margin: '0 auto', lineHeight: 1.7, color: '#475569' }}>
-            Authorised distributor for four specialised AV manufacturers — every product is genuine with full manufacturer warranty.
+            Authorised distributor for five specialised AV manufacturers — every product is genuine with full manufacturer warranty.
           </p>
         </div>
 

@@ -1,0 +1,133 @@
+{
+ "brand": "Lampro",
+ "updated": "2026-07-11",
+ "source": "lampro.net official range",
+ "totalModels": 20,
+ "categories": [
+  {
+   "category": "Fine-Pitch Mini LED (COB)",
+   "series": [
+    {
+     "name": "LMini Range",
+     "groups": [
+      {
+       "type": "COB Fine-Pitch",
+       "models": [
+        "LMini",
+        "LMini P"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "category": "Fine-Pitch HD Indoor",
+   "series": [
+    {
+     "name": "LHP Range",
+     "groups": [
+      {
+       "type": "Fine-Pitch Indoor",
+       "models": [
+        "LHP"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "category": "Indoor Commercial & Creative Splicing",
+   "series": [
+    {
+     "name": "BNXII Range",
+     "groups": [
+      {
+       "type": "Creative Splicing",
+       "models": [
+        "BNXII"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "category": "Rental & Staging",
+   "series": [
+    {
+     "name": "Rental Range",
+     "groups": [
+      {
+       "type": "Stage Panels",
+       "models": [
+        "LRS",
+        "RNII",
+        "LRM"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "category": "Outdoor Advertising (DOOH)",
+   "series": [
+    {
+     "name": "DOOH Range",
+     "groups": [
+      {
+       "type": "Outdoor High-Brightness",
+       "models": [
+        "LXII Pro",
+        "LS Pro",
+        "LST",
+        "LSK"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "category": "Creative Displays",
+   "series": [
+    {
+     "name": "Creative Range",
+     "groups": [
+      {
+       "type": "Creative Formats",
+       "models": [
+        "WNX",
+        "WX",
+        "LCF"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "category": "LED Modules & Distribution",
+   "series": [
+    {
+     "name": "Distribution Range",
+     "groups": [
+      {
+       "type": "Channel Series",
+       "models": [
+        "LC COB",
+        "LCM",
+        "LW",
+        "LDAII",
+        "LDT",
+        "LC"
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -32,4 +32,5 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add public/images/tenveo-catalog src/data/tenveo-catalog-media.json
           git diff --staged --quiet && echo "Nothing to commit" || \
+            { git stash --include-untracked && git pull --rebase origin main && git stash pop || true; git add -A public src/data 2>/dev/null; } && \
             git commit -m "chore: auto-scrape Tenveo catalog media [skip ci]" && git push

@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * scrape-infobit-media.mjs — For every model in infobit-catalog.json, try the official
+ * scrape-infobit-media.mjs (v3) — For every model in infobit-catalog.json, try the official
  * infobitav.com product page; extract main image + meta description; download, optimize,
  * self-host. Writes src/data/infobit-catalog-media.json. Runs in GitHub Actions.
  */

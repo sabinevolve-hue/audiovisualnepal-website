@@ -174,6 +174,16 @@ export const BRANDS = [
     founded: '2008',
     logoColor: '#1E40AF',
   },
+  {
+    name: 'Lampro',
+    slug: 'lampro',
+    href: '/brands/lampro',
+    category: 'LED Screens & Displays',
+    tagline: 'Fine-pitch, rental and outdoor LED displays — 21 years of manufacturing',
+    origin: 'China',
+    founded: '2004',
+    logoColor: '#E4002B',
+  },
 ] as const
 
 export const STATS = [
