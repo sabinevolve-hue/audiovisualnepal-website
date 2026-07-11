@@ -1,0 +1,35 @@
+name: Scrape & Localize DSPPA Catalog Media
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'scripts/scrape-dsppa-media.mjs'
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install sharp
+        run: npm install sharp --no-save
+
+      - name: Scrape DSPPA media
+        run: node scripts/scrape-dsppa-media.mjs
+
+      - name: Commit & push media
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add public/images/dsppa-catalog src/data/dsppa-catalog-media.json
+          git diff --staged --quiet && echo "Nothing to commit" || \
+            git commit -m "chore: auto-scrape Tenveo catalog media [skip ci]" && git push

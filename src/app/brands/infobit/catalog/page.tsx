@@ -126,12 +126,13 @@ export default function InfobitCatalogPage() {
                             {g.models.filter((m) => !MEDIA[m]).map((m, i, arr) => {
                               const href = detailPages.get(m.toLowerCase());
                               const hot = (g as GroupX).featuredModels?.includes(m) || (g as GroupX).featured;
+                              const lite = `/brands/infobit/p/${slug(m)}`;
                               const inner = href ? (
                                 <Link href={href} className="font-medium text-blue-600 hover:underline">{m}</Link>
                               ) : hot ? (
-                                <span className="rounded bg-blue-100 px-1.5 py-0.5 font-semibold text-blue-800">{m}</span>
+                                <Link href={lite} className="rounded bg-blue-100 px-1.5 py-0.5 font-semibold text-blue-800 hover:underline">{m}</Link>
                               ) : (
-                                m
+                                <Link href={lite} className="text-slate-700 hover:text-blue-600 hover:underline">{m}</Link>
                               );
                               return (
                                 <span key={m}>

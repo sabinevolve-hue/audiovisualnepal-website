@@ -64,5 +64,39 @@ for (const model of models) {
     await new Promise((r) => setTimeout(r, 100))
   } catch { /* skip */ }
 }
+// pass 2: manufacturer site sitemap for models the store didn't carry
+const UA = { 'User-Agent': 'Mozilla/5.0 (compatible; AudioVisualNepal-catalog/1.0)' }
+let poolUrls = []
+try {
+  for (const smUrl of ['https://www.tenveo-video-conference.com/sitemap.xml', 'https://www.tenveo-video-conference.com/sitemap_index.xml']) {
+    const x = await (await fetch(smUrl, { headers: UA })).text()
+    poolUrls.push(...[...x.matchAll(/https:\/\/www\.tenveo-video-conference\.com\/[a-z0-9-]+/g)].map((m) => m[0]))
+    if (poolUrls.length) break
+  }
+} catch {}
+console.log('manufacturer sitemap pool:', poolUrls.length)
+for (const model of models) {
+  if (media[model]) continue
+  const key = norm(model)
+  if (key.length < 4) continue
+  const cand = poolUrls.filter((u) => norm(u.split('.com/')[1] || '').includes(key)).sort((a, b) => a.length - b.length)[0]
+  if (!cand) continue
+  try {
+    const res = await fetch(cand, { headers: UA })
+    if (!res.ok) continue
+    const html = await res.text()
+    const og = html.match(/property="og:image"\s+content="([^"]+)"/)?.[1] || html.match(/content="([^"]+)"\s+property="og:image"/)?.[1]
+    const desc = html.match(/property="og:description"\s+content="([^"]+)"/)?.[1] || html.match(/name="description"\s+content="([^"]+)"/)?.[1] || ''
+    if (!og) continue
+    const imgRes = await fetch(og, { headers: UA })
+    if (!imgRes.ok) continue
+    const slug = model.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')
+    const buf = Buffer.from(await imgRes.arrayBuffer())
+    await sharp(buf).resize(1000, 1000, { fit: 'inside', withoutEnlargement: true }).webp({ quality: 78 }).toFile(resolve(OUT_IMG, `${slug}.webp`))
+    media[model] = { slug, img: `/images/tenveo-catalog/${slug}.webp`, desc: desc.slice(0, 280), source: cand }
+    hits++
+    await new Promise((r) => setTimeout(r, 120))
+  } catch { /* skip */ }
+}
 writeFileSync(OUT_JSON, JSON.stringify(media, null, 1))
 console.log(`matched: ${hits}, total media: ${Object.keys(media).length} of ${models.length} models`)

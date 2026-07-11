@@ -8,13 +8,16 @@ import { ALL_PRODUCTS } from "@/data/products";
 
 type MediaEntry = { slug: string; img: string; desc: string; source: string };
 const MEDIA = media as Record<string, MediaEntry>;
+const BRAND = "DSPPA";
 
 type Props = { params: Promise<{ model: string }> };
+
+const slugify = (s: string) => s.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
 
 function fullPageSlugs(): Set<string> {
   return new Set(
     ALL_PRODUCTS.filter((p) => p.brandSlug === "dsppa").map((p) =>
-      p.name.replace(/^DSPPA\s+/i, "").toLowerCase()
+      p.name.replace(new RegExp(`^${BRAND}\\s+`, "i"), "").toLowerCase()
     )
   );
 }
@@ -24,16 +27,25 @@ function findModel(modelSlug: string) {
     for (const s of c.series)
       for (const g of s.groups)
         for (const m of g.models)
-          if (MEDIA[m]?.slug === modelSlug)
+          if (slugify(m) === modelSlug)
             return { model: m, category: c.category, series: s.name, type: g.type, siblings: g.models };
   return null;
 }
 
 export function generateStaticParams() {
   const full = fullPageSlugs();
-  return Object.entries(MEDIA)
-    .filter(([model]) => !full.has(model.toLowerCase()))
-    .map(([, e]) => ({ model: e.slug }));
+  const seen = new Set<string>();
+  const out: { model: string }[] = [];
+  for (const c of catalog.categories)
+    for (const s of c.series)
+      for (const g of s.groups)
+        for (const m of g.models) {
+          const sl = slugify(m);
+          if (full.has(m.toLowerCase()) || seen.has(sl)) continue;
+          seen.add(sl);
+          out.push({ model: sl });
+        }
+  return out;
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
@@ -41,12 +53,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const hit = findModel(model);
   if (!hit) return { title: "Product not found" };
   const e = MEDIA[hit.model];
-  const desc = e.desc || `DSPPA ${hit.model} — ${hit.type} in the ${hit.series} series. Available in Nepal from the authorised DSPPA distributor with manufacturer warranty.`;
+  const desc = (e?.desc || `${BRAND} ${hit.model} — ${hit.type} in the ${hit.series} series. Available in Nepal from the authorised ${BRAND} distributor with manufacturer warranty.`).slice(0, 160);
   return {
-    title: `DSPPA ${hit.model} in Nepal — ${hit.type}`,
-    description: desc.slice(0, 160),
+    title: `${BRAND} ${hit.model} in Nepal — ${hit.type}`,
+    description: desc,
     alternates: { canonical: `https://audiovisualnepal.com/brands/dsppa/p/${model}` },
-    openGraph: { title: `DSPPA ${hit.model} | AudioVisual Nepal`, description: desc.slice(0, 160), images: [{ url: e.img }] },
+    openGraph: { title: `${BRAND} ${hit.model} | AudioVisual Nepal`, description: desc, ...(e ? { images: [{ url: e.img }] } : {}) },
   };
 }
 
@@ -56,16 +68,15 @@ export default async function CatalogProductPage({ params }: Props) {
   if (!hit) notFound();
   const e = MEDIA[hit.model];
   const full = fullPageSlugs();
-
-  const related = hit.siblings.filter((m) => m !== hit.model && MEDIA[m]).slice(0, 4);
+  const related = hit.siblings.filter((m) => m !== hit.model).slice(0, 4);
 
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Product",
-    name: `DSPPA ${hit.model}`,
-    image: `https://audiovisualnepal.com${e.img}`,
-    description: e.desc || `${hit.type} — ${hit.series} series`,
-    brand: { "@type": "Brand", name: "DSPPA" },
+    name: `${BRAND} ${hit.model}`,
+    ...(e ? { image: `https://audiovisualnepal.com${e.img}` } : {}),
+    description: e?.desc || `${hit.type} — ${hit.series} series`,
+    brand: { "@type": "Brand", name: BRAND },
     category: hit.category,
   };
 
@@ -74,7 +85,7 @@ export default async function CatalogProductPage({ params }: Props) {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <section className="mx-auto max-w-6xl px-6 py-12">
         <p className="text-sm font-semibold uppercase tracking-widest text-blue-600">
-          <Link href="/brands/dsppa" className="hover:underline">DSPPA</Link>
+          <Link href="/brands/dsppa" className="hover:underline">{BRAND}</Link>
           {" / "}
           <Link href="/brands/dsppa/catalog" className="hover:underline">Catalog</Link>
           {" / "}{hit.category}
@@ -82,27 +93,38 @@ export default async function CatalogProductPage({ params }: Props) {
 
         <div className="mt-6 grid gap-10 lg:grid-cols-2">
           <div className="relative flex min-h-[320px] items-center justify-center rounded-2xl border border-slate-200 bg-slate-50 p-8">
-            <Image src={e.img} alt={`DSPPA ${hit.model}`} width={640} height={480} className="h-auto max-h-[420px] w-auto object-contain" priority />
+            {e ? (
+              <Image src={e.img} alt={`${BRAND} ${hit.model}`} width={640} height={480} className="h-auto max-h-[420px] w-auto object-contain" priority />
+            ) : (
+              <div className="text-center">
+                <div className="mx-auto flex h-24 w-24 items-center justify-center rounded-2xl bg-slate-200 text-4xl font-black text-slate-400">
+                  {BRAND.charAt(0)}
+                </div>
+                <p className="mt-4 text-sm text-slate-400">Official image available on request</p>
+              </div>
+            )}
           </div>
           <div>
             <p className="text-sm font-semibold text-blue-600">{hit.series} · {hit.type}</p>
             <h1 className="mt-2 text-3xl font-extrabold text-slate-900 sm:text-4xl" style={{ fontFamily: "Manrope, sans-serif", letterSpacing: "-0.02em" }}>
-              DSPPA {hit.model}
+              {BRAND} {hit.model}
             </h1>
-            {e.desc && <p className="mt-4 leading-relaxed text-slate-600">{e.desc}</p>}
+            <p className="mt-4 leading-relaxed text-slate-600">
+              {e?.desc || `${hit.model} is part of ${BRAND}'s ${hit.series} range (${hit.type.toLowerCase()}), within the ${hit.category.toLowerCase()} lineup we distribute in Nepal.`}
+            </p>
             <p className="mt-4 text-sm text-slate-500">
-              Genuine DSPPA product with full manufacturer warranty, supplied and supported in Nepal
+              Genuine {BRAND} product with full manufacturer warranty, supplied and supported in Nepal
               by the authorised distributor. Detailed specifications and datasheets available on request.
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
               <Link href="/contact" className="rounded-full bg-blue-500 px-6 py-2.5 text-sm font-semibold text-white transition hover:bg-blue-600">
                 Request a quote
               </Link>
-              <a href={`https://wa.me/+9779762109538?text=${encodeURIComponent(`Hello! I'd like a quote for the DSPPA ${hit.model}.`)}`} className="rounded-full border border-slate-300 px-6 py-2.5 text-sm font-semibold text-slate-700 transition hover:border-blue-400">
+              <a href={`https://wa.me/+9779762109538?text=${encodeURIComponent(`Hello! I'd like a quote for the ${BRAND} ${hit.model}.`)}`} className="rounded-full border border-slate-300 px-6 py-2.5 text-sm font-semibold text-slate-700 transition hover:border-blue-400">
                 WhatsApp us
               </a>
             </div>
-            <p className="mt-4 text-xs text-slate-400">Product summary courtesy of DSPPA. Images © DSPPA.</p>
+            {e && <p className="mt-4 text-xs text-slate-400">Product summary courtesy of {BRAND}. Images © {BRAND}.</p>}
           </div>
         </div>
 
@@ -112,14 +134,18 @@ export default async function CatalogProductPage({ params }: Props) {
             <div className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
               {related.map((m) => {
                 const me = MEDIA[m];
-                const href = full.has(m.toLowerCase())
-                  ? undefined
-                  : `/brands/dsppa/p/${me.slug}`;
+                const href = full.has(m.toLowerCase()) ? null : `/brands/dsppa/p/${slugify(m)}`;
                 const card = (
-                  <div className="rounded-xl border border-slate-200 p-4 transition hover:border-blue-400">
-                    <div className="relative mx-auto h-24 w-24">
-                      <Image src={me.img} alt={m} fill className="object-contain" sizes="96px" />
-                    </div>
+                  <div className="h-full rounded-xl border border-slate-200 p-4 transition hover:border-blue-400">
+                    {me ? (
+                      <div className="relative mx-auto h-24 w-24">
+                        <Image src={me.img} alt={m} fill className="object-contain" sizes="96px" />
+                      </div>
+                    ) : (
+                      <div className="mx-auto flex h-24 w-24 items-center justify-center rounded-xl bg-slate-100 text-2xl font-black text-slate-300">
+                        {BRAND.charAt(0)}
+                      </div>
+                    )}
                     <p className="mt-2 text-center text-sm font-medium text-slate-800">{m}</p>
                   </div>
                 );

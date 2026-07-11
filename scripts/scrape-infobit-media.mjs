@@ -29,12 +29,32 @@ try { existing = JSON.parse(readFileSync(OUT_JSON, 'utf8')) } catch {}
 
 const media = existing
 let hits = 0, misses = 0, skipped = 0
+const norm = (x) => x.toLowerCase().replace(/[^a-z0-9]/g, '')
+
+// sitemap URL pool for fallback matching
+let poolUrls = []
+try {
+  const idx = await (await fetch('https://www.infobitav.com/sitemap_index.xml', { headers: UA })).text()
+  const subs = [...idx.matchAll(/https:[^<]+\.xml/g)].map((m) => m[0])
+  for (const sub of subs) {
+    const x = await (await fetch(sub, { headers: UA })).text()
+    poolUrls.push(...[...x.matchAll(/https:\/\/www\.infobitav\.com\/[a-z0-9-]+\//g)].map((m) => m[0]))
+  }
+} catch {}
+console.log('sitemap pool:', poolUrls.length)
 
 for (const model of models) {
   const slug = slugify(model)
   if (media[model]) { skipped++; continue }
   try {
-    const res = await fetch(`https://www.infobitav.com/${slug}/`, { headers: UA, redirect: 'follow' })
+    let res = await fetch(`https://www.infobitav.com/${slug}/`, { headers: UA, redirect: 'follow' })
+    if (!res.ok) {
+      const key = norm(model)
+      const cand = key.length >= 5
+        ? poolUrls.filter((u) => norm(u.split('.com/')[1]).includes(key)).sort((a, b) => a.length - b.length)[0]
+        : null
+      if (cand) res = await fetch(cand, { headers: UA, redirect: 'follow' })
+    }
     if (!res.ok) { misses++; continue }
     const html = await res.text()
     const og = html.match(/property="og:image"\s+content="([^"]+)"/)?.[1]
