@@ -25,11 +25,15 @@ jobs:
       - name: Patch products.ts with local image paths
         run: node scripts/apply-image-replacements.mjs
 
-      - name: Commit & push images
+      - name: Commit & push media
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add public/images src/data/products.ts
-          git diff --staged --quiet && echo "Nothing to commit" || \
-            { git stash --include-untracked && git pull --rebase origin main && git stash pop || true; git add -A public src/data 2>/dev/null; } && \
-            git commit -m "chore: auto-download & localize product images [skip ci]" && git push
+          git diff --staged --quiet && echo "Nothing to commit" && exit 0
+          git commit -m "chore: auto-download & localize product images [skip ci]"
+          for i in 1 2 3 4 5; do
+            git pull --rebase origin main && git push origin main && exit 0
+            echo "push retry $i"; sleep 10
+          done
+          exit 1

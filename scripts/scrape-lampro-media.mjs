@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * scrape-lampro-media.mjs — Fetch official Lampro series pages (known manifest),
+ * scrape-lampro-media.mjs (v2) — Fetch official Lampro series pages (known manifest),
  * extract main image + description, self-host. Runs in GitHub Actions.
  */
 import { mkdirSync, writeFileSync, readFileSync } from 'fs'
