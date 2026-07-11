@@ -36,11 +36,11 @@ const data: SolutionPageData = {
     { name: "Mixing & amplification", desc: "DMA6250U integrated mixer amplifier — USB, Bluetooth and multi-zone routing from one panel.", href: "/products/amplifiers/dsppa-dma6250u", img: "/images/products/dsppa/dsppa-dma6250u/main.jpg" },
     { name: "Event presentation", desc: "iShare X400 wireless presentation — presenters cast to event screens from any seat.", href: "/products/wireless-presentation/infobit-ishare-x400", img: "/images/products/infobit/infobit-ishare-x400/main.webp" },
   ],
-  projectsBlurb: "Ballrooms, banquet halls and multi-zone audio delivered for Nepal's leading hotels and resorts.",
+  projectsBlurb: "Display and AV installations for hospitality venues — verified completed projects.",
   projects: [
-    { title: "Hyatt Regency Kathmandu", location: "Kathmandu" },
-    { title: "Tiger Mountain Lodge", location: "Pokhara" },
-    { title: "Aloft Hotel", location: "Kathmandu" },
+    { title: "Inland Multi Cuisine & Stay", location: "Budhanilkantha, Kathmandu" },
+    { title: "Auranex Restaurant", location: "Townplanning, Kathmandu" },
+    { title: "FCube Cinemas", location: "Boudha, Kathmandu" },
   ],
   faqs: [
     { q: "Can different areas play different music at different volumes?", a: "Yes — matrix amplifiers give each zone its own source and volume: calm lobby music, upbeat restaurant playlists and silence in meeting rooms, all scheduled or set by staff." },

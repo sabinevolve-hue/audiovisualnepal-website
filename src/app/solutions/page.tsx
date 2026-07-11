@@ -23,14 +23,14 @@ export const metadata: Metadata = {
 }
 
 const DETAILS: Record<string, { desc: string; tags: string[]; project: string }> = {
-  '/solutions/corporate': { desc: 'Smart meeting rooms, boardroom AV, background music and video walls for modern workplaces.', tags: ['Conference Room AV', 'Video Walls', 'BGM Systems'], project: 'NIC Asia Bank HQ · Kathmandu' },
-  '/solutions/government': { desc: 'Delegate conferencing, smart podiums and secure PA for ministries and public offices.', tags: ['Conference Systems', 'Smart Podiums', 'IP PA'], project: 'Province 1 CM Office · Biratnagar' },
-  '/solutions/education': { desc: 'Smart podiums, classroom audio and campus-wide PA with scheduled bells.', tags: ['Campus PA', 'Smart Podiums', 'Classroom Audio'], project: 'Kathmandu University · Dhulikhel' },
-  '/solutions/hotels': { desc: 'Ballroom sound, multi-zone background music and event AV for hotels and resorts.', tags: ['Ballroom Sound', 'BGM Zones', 'Event AV'], project: 'Hyatt Regency · Kathmandu' },
-  '/solutions/hospitals': { desc: 'Zone paging, nurse-station announcements and EN54 voice evacuation for healthcare.', tags: ['IP Paging', 'Voice Evacuation', 'Signage'], project: 'Grande International Hospital · Kathmandu' },
-  '/solutions/religious': { desc: 'High-clarity sound for temples, churches, mosques and monasteries.', tags: ['Column Speakers', 'Horn Speakers', 'Scheduled Broadcast'], project: 'Pashupatinath Temple Complex · Kathmandu' },
-  '/solutions/transportation': { desc: 'IP network PA and passenger information audio for airports and transit hubs.', tags: ['IP PA Backbone', 'Zone Paging', 'FIDS Integration'], project: 'Tribhuvan International Airport · Kathmandu' },
-  '/solutions/smart-meeting-rooms': { desc: 'One-touch hybrid meeting rooms with AI cameras and wireless presentation.', tags: ['AI Cameras', 'Wireless Sharing', 'One-Touch Control'], project: 'Leapfrog HQ · Kathmandu' },
+  '/solutions/corporate': { desc: 'Smart meeting rooms, boardroom AV, background music and video walls for modern workplaces.', tags: ['Conference Room AV', 'Video Walls', 'BGM Systems'], project: 'Siddhartha Bank Head Office · Kathmandu' },
+  '/solutions/government': { desc: 'Delegate conferencing, smart podiums and secure PA for ministries and public offices.', tags: ['Conference Systems', 'Smart Podiums', 'IP PA'], project: 'References on request' },
+  '/solutions/education': { desc: 'Smart podiums, classroom audio and campus-wide PA with scheduled bells.', tags: ['Campus PA', 'Smart Podiums', 'Classroom Audio'], project: 'Jeevan Jyoti School · Banke' },
+  '/solutions/hotels': { desc: 'Ballroom sound, multi-zone background music and event AV for hotels and resorts.', tags: ['Ballroom Sound', 'BGM Zones', 'Event AV'], project: 'Inland Multi Cuisine & Stay · Kathmandu' },
+  '/solutions/hospitals': { desc: 'Zone paging, nurse-station announcements and EN54 voice evacuation for healthcare.', tags: ['IP Paging', 'Voice Evacuation', 'Signage'], project: 'References on request' },
+  '/solutions/religious': { desc: 'High-clarity sound for temples, churches, mosques and monasteries.', tags: ['Column Speakers', 'Horn Speakers', 'Scheduled Broadcast'], project: 'References on request' },
+  '/solutions/transportation': { desc: 'IP network PA and passenger information audio for airports and transit hubs.', tags: ['IP PA Backbone', 'Zone Paging', 'FIDS Integration'], project: 'References on request' },
+  '/solutions/smart-meeting-rooms': { desc: 'One-touch hybrid meeting rooms with AI cameras and wireless presentation.', tags: ['AI Cameras', 'Wireless Sharing', 'One-Touch Control'], project: 'References on request' },
 }
 
 const STEPS = [
@@ -83,7 +83,7 @@ export default function SolutionsPage() {
         <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-center gap-x-8 gap-y-2 px-6 py-4 text-sm font-medium text-slate-600">
           <span>Authorized distributor — 4 brands</span>
           <span className="hidden text-slate-300 sm:inline">•</span>
-          <span>500+ projects delivered</span>
+          <span>100+ projects delivered</span>
           <span className="hidden text-slate-300 sm:inline">•</span>
           <span>All 77 districts</span>
           <span className="hidden text-slate-300 sm:inline">•</span>
@@ -123,7 +123,7 @@ export default function SolutionsPage() {
                             <span key={t} className="rounded-full bg-slate-100 px-3 py-1 text-xs font-medium text-slate-600">{t}</span>
                           ))}
                         </div>
-                        <p className="mt-4 text-xs text-slate-400">Featured: {d.project}</p>
+                        <p className="mt-4 text-xs text-slate-400">{d.project.startsWith("References") ? d.project : `Featured: ${d.project}`}</p>
                       </>
                     )}
                     <p className="mt-auto pt-4 text-sm font-semibold text-blue-600">

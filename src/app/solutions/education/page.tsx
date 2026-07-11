@@ -36,11 +36,10 @@ const data: SolutionPageData = {
     { name: "Classroom audio", desc: "DSPPA DSP5211 coaxial ceiling speakers — even speech coverage without feedback.", href: "/products/ceiling-speakers/dsppa-dsp5211", img: "/images/products/dsppa/dsppa-dsp5211/main.webp" },
     { name: "Campus IP PA & bells", desc: "MAG6182II IP PA server — scheduled bells, zone announcements and emergency broadcast over the LAN.", href: "/products/ip-network-audio/dsppa-mag6182ii", img: "/images/products/dsppa/dsppa-mag6182ii/main.jpg" },
   ],
-  projectsBlurb: "Campus PA and classroom AV delivered for Nepal's leading schools and universities.",
+  projectsBlurb: "Classroom, campus and display installations for schools — verified completed projects.",
   projects: [
-    { title: "Kathmandu University", location: "Dhulikhel" },
-    { title: "Budhanilkantha School", location: "Kathmandu" },
-    { title: "GCES School Network", location: "Nationwide" },
+    { title: "Jeevan Jyoti School — 266 sq ft LED", location: "Kohalpur, Banke" },
+    { title: "Awarded International Education", location: "Putalisadak, Kathmandu" },
   ],
   faqs: [
     { q: "Can the PA system ring class bells automatically?", a: "Yes — IP PA servers schedule bells, anthem and announcements per calendar, with manual override from the office and priority for emergency messages." },

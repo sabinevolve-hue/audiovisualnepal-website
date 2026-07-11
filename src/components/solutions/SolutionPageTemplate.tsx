@@ -123,6 +123,7 @@ export default function SolutionPageTemplate({ data }: { data: SolutionPageData 
           <h2 className="text-3xl font-extrabold text-slate-900" style={heading}>Reference projects</h2>
           <p className="mt-2 max-w-2xl text-slate-600">{data.projectsBlurb}</p>
         </Reveal>
+        {data.projects.length > 0 && (
         <div className="mt-8 grid gap-6 sm:grid-cols-3">
           {data.projects.map((p, i) => (
             <Reveal key={p.title} delay={i * 0.06}>
@@ -133,6 +134,7 @@ export default function SolutionPageTemplate({ data }: { data: SolutionPageData 
             </Reveal>
           ))}
         </div>
+        )}
         <Reveal delay={0.2} className="mt-6">
           <Link href="/projects" className="text-sm font-semibold text-blue-600 hover:underline">
             View all projects →

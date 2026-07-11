@@ -170,10 +170,9 @@ export default function SmartMeetingRoomsPage() {
 
       <section className="mx-auto max-w-6xl px-6 py-16 sm:py-20">
         <Reveal>
-          <h2 className="text-3xl font-extrabold text-slate-900" style={{ fontFamily: "Manrope, sans-serif" }}>Recent smart room projects</h2>
+          <h2 className="text-3xl font-extrabold text-slate-900" style={{ fontFamily: "Manrope, sans-serif" }}>Smart room references</h2>
           <p className="mt-2 max-w-2xl text-slate-600">
-            Wireless conferencing, ceiling mic arrays and Dante-networked audio at Leapfrog HQ,
-            Kathmandu — and 500+ more projects across all 77 districts.
+            Smart meeting room references are shared on request during consultation — see our verified completed installations on the projects page.
           </p>
         </Reveal>
         <Reveal delay={0.1} className="mt-6">

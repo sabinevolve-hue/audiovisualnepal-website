@@ -36,12 +36,8 @@ const data: SolutionPageData = {
     { name: "IP zone paging", desc: "MAG6806 network amplifiers — nurse-station paging to selected wards and floors over the LAN.", href: "/products/ip-network-audio/dsppa-mag6806", img: "/images/products/dsppa/dsppa-mag6806/main.jpg" },
     { name: "Ward & OPD speakers", desc: "DSP5211 coaxial ceiling speakers — clear, calm announcements in wards and waiting areas.", href: "/products/ceiling-speakers/dsppa-dsp5211", img: "/images/products/dsppa/dsppa-dsp5211/main.webp" },
   ],
-  projectsBlurb: "Multi-floor paging and life-safety audio delivered for Nepal's leading hospitals.",
-  projects: [
-    { title: "Grande International Hospital", location: "Kathmandu" },
-    { title: "B&B Hospital", location: "Lalitpur" },
-    { title: "National Trauma Center", location: "Kathmandu" },
-  ],
+  projectsBlurb: "Client references for this sector are shared on request during consultation — contact us and we'll connect you with comparable completed projects.",
+  projects: [],
   faqs: [
     { q: "Is the voice evacuation system EN54 certified?", a: "Yes — DSPPA PAVA systems are EN54-certified and integrate with the fire alarm panel for automatic, prioritised evacuation messaging." },
     { q: "Can paging integrate with our nurse call system?", a: "Yes — IP paging integrates with nurse call and telephony, so calls and codes route to the right wards automatically with priority levels." },

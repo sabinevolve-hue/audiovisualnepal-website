@@ -5,42 +5,43 @@ import { ArrowRight, MapPin } from 'lucide-react'
 
 const projects = [
   {
-    type: 'Government', name: 'Federal Parliament Complex', slug: 'federal-parliament-complex',
-    desc: '250-seat conference hall with simultaneous interpretation, voting system & HD video.',
-    location: 'Kathmandu', color: '#2563EB',
-    photo: '/images/heroes/government-hero.webp',
+    type: 'Banking', name: 'Siddhartha Bank Head Office', slug: 'siddhartha-bank-head-office',
+    desc: 'COB LMini P1.25 fine-pitch LED display — 110 sq ft in the head office at Naxal.',
+    location: 'Naxal, Kathmandu', color: '#2563EB',
+    photo: '/images/projects-real/siddhartha-bank-head-office.webp',
   },
   {
-    type: 'Education', name: 'Tribhuvan University Campus', slug: 'tribhuvan-university-campus-pa',
-    desc: 'IP-based campus PA system covering 40+ buildings with centralised management.',
-    location: 'Kirtipur', color: '#059669',
-    photo: '/images/heroes/education-hero.webp',
+    type: 'Education', name: 'Jeevan Jyoti School', slug: 'jeevan-jyoti-school',
+    desc: 'LC P3 indoor large-format display — 266 sq ft, one of the largest school installs outside the valley.',
+    location: 'Kohalpur, Banke', color: '#059669',
+    photo: '/images/projects-real/jeevan-jyoti-school.webp',
   },
   {
-    type: 'Hospitality', name: '5-Star Hotel Ballroom', slug: 'five-star-hotel-ballroom',
-    desc: '18-zone background music, line array for ballroom events & conference room AV.',
-    location: 'Kathmandu', color: '#D97706',
-    photo: '/images/heroes/hotels-hero.webp',
+    type: 'Entertainment', name: 'FCube Cinemas', slug: 'fcube-cinemas',
+    desc: 'LC P2.5 fine-pitch foyer display, calibrated for trailer content and daily long-hours playback.',
+    location: 'Boudha, Kathmandu', color: '#7C3AED',
+    photo: '/images/projects-real/fcube-cinemas.webp',
   },
   {
-    type: 'Corporate', name: 'Smart Meeting Rooms — Leapfrog HQ', slug: 'leapfrog-smart-meeting-rooms',
-    desc: 'Wireless conferencing, ceiling mic arrays & Dante-networked audio distribution.',
-    location: 'Kathmandu', color: '#7C3AED',
-    photo: '/images/heroes/smart-meeting-rooms-hero.webp',
+    type: 'Hospitality', name: 'Auranex Restaurant', slug: '',
+    desc: 'LC P4 outdoor LED display — 50 sq ft of street-facing digital signage.',
+    location: 'Townplanning, Kathmandu', color: '#D97706',
+    photo: '/images/projects-real/auranex-restaurant.webp',
   },
   {
-    type: 'Healthcare', name: 'Grande International Hospital', slug: 'grande-international-hospital',
-    desc: 'Multi-zone IP paging integrated with nurse call, covering 12 floors.',
-    location: 'Kathmandu', color: '#DC2626',
-    photo: '/images/heroes/hospitals-hero.webp',
+    type: 'Hospitality', name: 'Inland Multi Cuisine & Stay', slug: '',
+    desc: 'LC P2.5 outdoor display — 31 sq ft for the Budhanilkantha property.',
+    location: 'Budhanilkantha, Kathmandu', color: '#DC2626',
+    photo: '/images/projects-real/inland-multi-cuisine-stay.webp',
   },
   {
-    type: 'Religious', name: 'Central Mosque, Kathmandu', slug: 'central-mosque-kathmandu',
-    desc: 'High-intelligibility PA with outdoor horn speakers for 5,000+ congregation.',
-    location: 'Kathmandu', color: '#0891B2',
-    photo: '/images/heroes/religious-hero.webp',
+    type: 'Education', name: 'Awarded International Education', slug: '',
+    desc: 'LCM P2.5 indoor display — 30 sq ft at Star Mall, Putalisadak.',
+    location: 'Putalisadak, Kathmandu', color: '#0891B2',
+    photo: '/images/projects-real/awarded-international-education.webp',
   },
 ]
+
 
 export default function FeaturedProjects() {
   return (
@@ -61,7 +62,7 @@ export default function FeaturedProjects() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
           {projects.map((p, i) => (
-            <Link key={i} href={`/projects/${p.slug}`} style={{ textDecoration: 'none', color: 'inherit' }}>
+            <Link key={i} href={p.slug ? `/projects/${p.slug}` : '/projects'} style={{ textDecoration: 'none', color: 'inherit' }}>
             <div
               style={{ borderRadius: 16, overflow: 'hidden', border: '1.5px solid rgba(11,30,61,0.08)', background: '#FFFFFF', boxShadow: '0 1px 8px rgba(11,30,61,0.06)', transition: 'all 0.2s', cursor: 'pointer' }}
               onMouseEnter={e => {
@@ -87,7 +88,6 @@ export default function FeaturedProjects() {
                     {p.type}
                   </span>
                 </div>
-                <div style={{ position: 'absolute', bottom: 8, right: 10, fontSize: 9, fontWeight: 600, letterSpacing: '0.06em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.85)', background: 'rgba(11,30,61,0.45)', padding: '2px 7px', borderRadius: 999 }}>Illustration</div>
                 <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, height: 2, background: p.color }} />
               </div>
               {/* Content */}

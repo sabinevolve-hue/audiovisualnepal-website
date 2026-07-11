@@ -16,12 +16,7 @@
      "href": "/solutions/corporate"
     }
    ],
-   "cases": [
-    {
-     "label": "Smart Meeting Rooms — Leapfrog HQ",
-     "href": "/projects/leapfrog-smart-meeting-rooms"
-    }
-   ]
+   "cases": []
   },
   "dsppa-dsp6011": {
    "solutions": [
@@ -34,12 +29,7 @@
      "href": "/solutions/hotels"
     }
    ],
-   "cases": [
-    {
-     "label": "5-Star Hotel Ballroom & BGM",
-     "href": "/projects/five-star-hotel-ballroom"
-    }
-   ]
+   "cases": []
   },
   "infobit-ispeaker-m500": {
    "solutions": [
@@ -57,12 +47,7 @@
      "href": "/solutions/corporate"
     }
    ],
-   "cases": [
-    {
-     "label": "5-Star Hotel Ballroom & BGM",
-     "href": "/projects/five-star-hotel-ballroom"
-    }
-   ]
+   "cases": []
   },
   "infobit-ishare-x200": {
    "solutions": [
@@ -75,12 +60,7 @@
      "href": "/solutions/smart-meeting-rooms"
     }
    ],
-   "cases": [
-    {
-     "label": "Smart Meeting Rooms — Leapfrog HQ",
-     "href": "/projects/leapfrog-smart-meeting-rooms"
-    }
-   ]
+   "cases": []
   },
   "focus-st100": {
    "solutions": [
@@ -110,20 +90,7 @@
      "href": "/solutions/transportation"
     }
    ],
-   "cases": [
-    {
-     "label": "Tribhuvan University Campus PA",
-     "href": "/projects/tribhuvan-university-campus-pa"
-    },
-    {
-     "label": "Smart Meeting Rooms — Leapfrog HQ",
-     "href": "/projects/leapfrog-smart-meeting-rooms"
-    },
-    {
-     "label": "Grande International Hospital",
-     "href": "/projects/grande-international-hospital"
-    }
-   ]
+   "cases": []
   },
   "dsppa-dsp161hd": {
    "solutions": [
@@ -140,16 +107,7 @@
      "href": "/solutions/transportation"
     }
    ],
-   "cases": [
-    {
-     "label": "Tribhuvan University Campus PA",
-     "href": "/projects/tribhuvan-university-campus-pa"
-    },
-    {
-     "label": "Central Mosque, Kathmandu",
-     "href": "/projects/central-mosque-kathmandu"
-    }
-   ]
+   "cases": []
   },
   "dsppa-mag6182ii": {
    "solutions": [
@@ -166,16 +124,7 @@
      "href": "/solutions/religious"
     }
    ],
-   "cases": [
-    {
-     "label": "Federal Parliament Complex",
-     "href": "/projects/federal-parliament-complex"
-    },
-    {
-     "label": "Tribhuvan University Campus PA",
-     "href": "/projects/tribhuvan-university-campus-pa"
-    }
-   ]
+   "cases": []
   },
   "infobit-iwall-109": {
    "solutions": [
@@ -184,12 +133,7 @@
      "href": "/solutions/government"
     }
    ],
-   "cases": [
-    {
-     "label": "Federal Parliament Complex",
-     "href": "/projects/federal-parliament-complex"
-    }
-   ]
+   "cases": []
   },
   "focus-st600": {
    "solutions": [
@@ -207,12 +151,7 @@
      "href": "/solutions/government"
     }
    ],
-   "cases": [
-    {
-     "label": "Federal Parliament Complex",
-     "href": "/projects/federal-parliament-complex"
-    }
-   ]
+   "cases": []
   },
   "dsppa-mag6806": {
    "solutions": [
@@ -225,16 +164,7 @@
      "href": "/solutions/transportation"
     }
    ],
-   "cases": [
-    {
-     "label": "Tribhuvan University Campus PA",
-     "href": "/projects/tribhuvan-university-campus-pa"
-    },
-    {
-     "label": "Grande International Hospital",
-     "href": "/projects/grande-international-hospital"
-    }
-   ]
+   "cases": []
   },
   "dsppa-pava8500": {
    "solutions": [
@@ -243,12 +173,7 @@
      "href": "/solutions/hospitals"
     }
    ],
-   "cases": [
-    {
-     "label": "Grande International Hospital",
-     "href": "/projects/grande-international-hospital"
-    }
-   ]
+   "cases": []
   },
   "dsppa-pava4600": {
    "solutions": [
@@ -270,16 +195,7 @@
      "href": "/solutions/religious"
     }
    ],
-   "cases": [
-    {
-     "label": "5-Star Hotel Ballroom & BGM",
-     "href": "/projects/five-star-hotel-ballroom"
-    },
-    {
-     "label": "Central Mosque, Kathmandu",
-     "href": "/projects/central-mosque-kathmandu"
-    }
-   ]
+   "cases": []
   },
   "infobit-ishare-x400": {
    "solutions": [
@@ -292,12 +208,7 @@
      "href": "/solutions/corporate"
     }
    ],
-   "cases": [
-    {
-     "label": "5-Star Hotel Ballroom & BGM",
-     "href": "/projects/five-star-hotel-ballroom"
-    }
-   ]
+   "cases": []
   },
   "dsppa-dma6250u": {
    "solutions": [
@@ -319,12 +230,7 @@
      "href": "/solutions/smart-meeting-rooms"
     }
    ],
-   "cases": [
-    {
-     "label": "Central Mosque, Kathmandu",
-     "href": "/projects/central-mosque-kathmandu"
-    }
-   ]
+   "cases": []
   },
   "tenveo-nv20a-ai": {
    "solutions": [
@@ -333,12 +239,7 @@
      "href": "/solutions/smart-meeting-rooms"
     }
    ],
-   "cases": [
-    {
-     "label": "Smart Meeting Rooms — Leapfrog HQ",
-     "href": "/projects/leapfrog-smart-meeting-rooms"
-    }
-   ]
+   "cases": []
   },
   "dsppa-mag6182ii-pro": {
    "solutions": [
@@ -357,6 +258,15 @@
     }
    ],
    "cases": []
+  },
+  "lampro-lmini": {
+   "solutions": [],
+   "cases": [
+    {
+     "label": "Siddhartha Bank Head Office",
+     "href": "/projects/siddhartha-bank-head-office"
+    }
+   ]
   }
  },
  "categorySolutions": {

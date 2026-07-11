@@ -45,7 +45,7 @@ export default function CTASection() {
         </div>
 
         <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '8px 28px', fontSize: 13, color: 'rgba(255,255,255,0.4)' }}>
-          {['500+ Projects Delivered', 'All 77 Districts', '100% Genuine Products', 'AMC & After-Sales'].map(b => (
+          {['100+ Projects Delivered', 'All 77 Districts', '100% Genuine Products', 'AMC & After-Sales'].map(b => (
             <span key={b} style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
               <svg viewBox="0 0 12 12" style={{ width: 12, height: 12, flexShrink: 0 }}>
                 <circle cx="6" cy="6" r="5" stroke="rgba(147,197,253,0.6)" strokeWidth="1.5" fill="none"/>

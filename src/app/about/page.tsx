@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description: 'AudioVisual Nepal has been delivering professional audio visual solutions across Nepal since 2010.',
   openGraph: {
     title: "About AudioVisual Nepal — Nepal's Leading AV Company",
-    description: 'Since 2010, AudioVisual Nepal has delivered 500+ professional AV installations across 77 districts. Authorised distributor for DSPPA, InfoBit, Tenveo and Focus.',
+    description: 'Since 2010, AudioVisual Nepal delivers professional AV and LED display installations across Nepal — 100+ verified projects and counting. Authorised distributor for DSPPA, InfoBit, Tenveo and Focus.',
     url: 'https://audiovisualnepal.com/about',
     siteName: 'AudioVisual Nepal',
     images: [{ url: '/og-image.svg', width: 1200, height: 630, alt: 'AudioVisual Nepal' }],
@@ -23,7 +23,7 @@ const MILESTONES = [
   { year: '2016', event: 'Expanded into video conferencing with Tenveo and Jabra.' },
   { year: '2019', event: 'Crossed 100 completed projects across 77 districts.' },
   { year: '2022', event: 'Added IP network audio, control systems, and smart room solutions.' },
-  { year: '2024', event: "Crossed 500+ projects. Nepal's most trusted AV solutions company." },
+  { year: '2024', event: "Crossed 100+ verified installations across Nepal." },
 ]
 
 export default function AboutPage() {
@@ -48,7 +48,7 @@ export default function AboutPage() {
         <div style={{ maxWidth: 1000, margin: '0 auto' }}>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(160px, 1fr))', gap: 40, textAlign: 'center' }}>
             {[
-              { num: '500+', label: 'Projects Completed' },
+              { num: '100+', label: 'Projects Completed' },
               { num: '15+', label: 'Years in Nepal' },
               { num: '77', label: 'Districts Served' },
               { num: '20+', label: 'Brand Partners' },

@@ -14,30 +14,19 @@ const CITIES: City[] = [
   {
     id: "ktm", name: "Kathmandu Valley", x: 500, y: 168,
     projects: [
-      { title: "Federal Parliament Complex", sector: "Government" },
-      { title: "NIC Asia Bank HQ Boardroom", sector: "Corporate" },
-      { title: "Grande International Hospital", sector: "Healthcare" },
-      { title: "Central Mosque, Kathmandu", sector: "Religious" },
-      { title: "Tribhuvan International Airport", sector: "Transportation" },
-      { title: "Smart Meeting Rooms — Leapfrog HQ", sector: "Corporate" },
-      { title: "Tribhuvan University Campus", sector: "Education" },
-      { title: "Lalitpur Metropolitan City Hall", sector: "Government" },
+      { title: "Siddhartha Bank Head Office", sector: "Banking" },
+      { title: "FCube Cinemas, Boudha", sector: "Entertainment" },
+      { title: "Dibya Ratna Consultant", sector: "Corporate" },
+      { title: "Awarded International Education", sector: "Education" },
+      { title: "Auranex Restaurant", sector: "Hospitality" },
+      { title: "Inland Multi Cuisine & Stay", sector: "Hospitality" },
+      { title: "Anong Store, Jawalakhel", sector: "Retail" },
+      { title: "Shree Shiva Enterprises, Siddhipur", sector: "Commercial" },
     ],
   },
   {
-    id: "dhk", name: "Dhulikhel", x: 545, y: 175,
-    projects: [{ title: "Kathmandu University", sector: "Education" }],
-  },
-  {
-    id: "pkr", name: "Pokhara", x: 355, y: 150,
-    projects: [
-      { title: "Pokhara Regional Airport", sector: "Transportation" },
-      { title: "Tiger Mountain Lodge", sector: "Hospitality" },
-    ],
-  },
-  {
-    id: "brt", name: "Biratnagar", x: 672, y: 238,
-    projects: [{ title: "Province 1 Chief Minister Office", sector: "Government" }],
+    id: "bnk", name: "Kohalpur, Banke", x: 175, y: 205,
+    projects: [{ title: "Jeevan Jyoti School — 266 sq ft LED", sector: "Education" }],
   },
 ];
 
@@ -53,7 +42,7 @@ export default function NepalProjectMap() {
         <svg viewBox="0 0 800 320" role="img" aria-label="Map of Nepal showing cities where AudioVisual Nepal has delivered projects" className="h-auto w-full">
           <path d={NEPAL_PATH} fill="#E2E8F0" stroke="#94A3B8" strokeWidth={1.5} />
           <text x={400} y={305} textAnchor="middle" fontSize={12} fill="#94A3B8">
-            Projects delivered in all 77 districts — flagship sites shown
+            Verified installations shown — we deliver and service across Nepal
           </text>
           {CITIES.map((c) => (
             <g key={c.id} onClick={() => setActive(c)} className="cursor-pointer" role="button" aria-label={c.name} tabIndex={0}

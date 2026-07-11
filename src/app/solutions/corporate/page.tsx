@@ -36,11 +36,11 @@ const data: SolutionPageData = {
     { name: "Wireless presentation", desc: "iShare X400 — dongle-free casting with up to 4 sources on screen for agile workspaces.", href: "/products/wireless-presentation/infobit-ishare-x400", img: "/images/products/infobit/infobit-ishare-x400/main.webp" },
     { name: "Background music zones", desc: "DSPPA DMA6112 matrix amplifier — different sources in reception, cafeteria and work floors.", href: "/products/amplifiers/dsppa-dma6112", img: "/images/products/dsppa/dsppa-dma6112/main.jpg" },
   ],
-  projectsBlurb: "Boardrooms, video walls and multi-zone audio delivered for Nepal's leading corporates.",
+  projectsBlurb: "LED and AV installations for Nepal's corporate and banking sector — verified completed projects.",
   projects: [
-    { title: "NIC Asia Bank HQ Boardroom", location: "Kathmandu" },
-    { title: "Deloitte Nepal Office", location: "Kathmandu" },
-    { title: "Ncell Head Office", location: "Kathmandu" },
+    { title: "Siddhartha Bank Head Office", location: "Naxal, Kathmandu" },
+    { title: "Dibya Ratna Consultant", location: "Battisputali, Kathmandu" },
+    { title: "Awarded International Education", location: "Putalisadak, Kathmandu" },
   ],
   faqs: [
     { q: "What does a corporate boardroom AV setup cost in Nepal?", a: "A huddle room with a video bar and wireless presentation is an affordable starting point; executive boardrooms with video walls, ceiling audio and control systems scale with room size. Every project is quoted after a free site survey." },

@@ -49,7 +49,7 @@ export default function WhySection() {
             The AudioVisual Nepal Difference
           </h2>
           <p style={{ fontSize: 16, maxWidth: 480, margin: '0 auto', lineHeight: 1.7, color: '#475569' }}>
-            500+ completed projects and counting — here&apos;s why customers across Nepal trust us.
+            100+ completed projects and counting — here&apos;s why customers across Nepal trust us.
           </p>
         </div>
 

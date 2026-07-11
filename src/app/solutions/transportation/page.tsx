@@ -36,12 +36,8 @@ const data: SolutionPageData = {
     { name: "Outdoor coverage", desc: "DSP161HD weatherproof horns for aprons, parking and bus park platforms.", href: "/products/horn-speakers/dsppa-dsp161hd", img: "/images/products/dsppa/dsppa-dsp161hd/main.jpg" },
     { name: "Emergency broadcast", desc: "PAVA9500 integrated voice evacuation — prioritised life-safety messaging across the terminal.", href: "/products/voice-evacuation/dsppa-pava9500", img: "/images/products/dsppa/dsppa-pava9500/main.jpg" },
   ],
-  projectsBlurb: "PA and passenger information audio delivered for Nepal's busiest transit hubs.",
-  projects: [
-    { title: "Tribhuvan International Airport", location: "Kathmandu" },
-    { title: "Pokhara Regional Airport", location: "Pokhara" },
-    { title: "Kathmandu Bus Park", location: "Kathmandu" },
-  ],
+  projectsBlurb: "Client references for this sector are shared on request during consultation — contact us and we'll connect you with comparable completed projects.",
+  projects: [],
   faqs: [
     { q: "How do you keep announcements intelligible over crowd noise?", a: "Speaker density and placement are modelled for the space, with ambient-noise sensing that raises announcement level automatically during busy periods." },
     { q: "What happens if part of the network fails?", a: "IP PA backbones are designed with redundant servers and ring topologies — a single cable or amplifier failure doesn't silence the terminal." },

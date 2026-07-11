@@ -11,8 +11,8 @@ export const metadata: Metadata = {
   title: 'Projects | Case Studies & Installations',
   description: 'Real AV installations across Nepal — hotels, corporate offices, schools, hospitals and more.',
   openGraph: {
-    title: 'AV Projects Portfolio — 500+ Installations Across Nepal',
-    description: "Explore AudioVisual Nepal's completed projects — from Nepal Parliament to five-star hotels. PA systems, conference halls, IP audio and voice evacuation nationwide.",
+    title: 'AV Projects Portfolio — Verified Installations Across Nepal',
+    description: "Explore AudioVisual Nepal's verified completed projects — LED displays, PA and AV installations for banks, schools, cinemas, restaurants and retail across Nepal.",
     url: 'https://audiovisualnepal.com/projects',
     siteName: 'AudioVisual Nepal',
     images: [{ url: '/og-image.svg', width: 1200, height: 630, alt: 'AudioVisual Nepal' }],
@@ -22,13 +22,17 @@ export const metadata: Metadata = {
 }
 
 const fallbackProjects = [
-  { title: 'Grand Hyatt Conference Centre', location: 'Kathmandu', type: 'Hotel',      img: '/images/heroes/hotels-hero.webp' },
-  { title: 'Nepal Telecom HQ Boardrooms',   location: 'Kathmandu', type: 'Corporate',  img: '/images/heroes/corporate-hero.webp' },
-  { title: 'Tribhuvan University Auditorium', location: 'Kirtipur', type: 'Education', img: '/images/heroes/education-hero.webp' },
-  { title: 'Bir Hospital ICU PA System',    location: 'Kathmandu', type: 'Healthcare', img: '/images/heroes/hospitals-hero.webp' },
-  { title: 'Pokhara Convention Centre',     location: 'Pokhara',   type: 'Events',     img: '/images/heroes/hotels-hero.webp' },
-  { title: 'Nepal Army HQ PA System',       location: 'Kathmandu', type: 'Government', img: '/images/heroes/government-hero.webp' },
+  { title: 'Siddhartha Bank Head Office', location: 'Naxal, Kathmandu', type: 'Banking', img: '/images/projects-real/siddhartha-bank-head-office.webp' },
+  { title: 'Jeevan Jyoti School', location: 'Kohalpur, Banke', type: 'Education', img: '/images/projects-real/jeevan-jyoti-school.webp' },
+  { title: 'FCube Cinemas', location: 'Boudha, Kathmandu', type: 'Entertainment', img: '/images/projects-real/fcube-cinemas.webp' },
+  { title: 'Dibya Ratna Consultant', location: 'Battisputali, Kathmandu', type: 'Corporate', img: '/images/projects-real/dibya-ratna-consultant.webp' },
+  { title: 'Awarded International Education', location: 'Putalisadak, Kathmandu', type: 'Education', img: '/images/projects-real/awarded-international-education.webp' },
+  { title: 'Auranex Restaurant', location: 'Townplanning, Kathmandu', type: 'Hospitality', img: '/images/projects-real/auranex-restaurant.webp' },
+  { title: 'Inland Multi Cuisine & Stay', location: 'Budhanilkantha, Kathmandu', type: 'Hospitality', img: '/images/projects-real/inland-multi-cuisine-stay.webp' },
+  { title: 'Anong Store', location: 'Jawalakhel, Lalitpur', type: 'Retail', img: '/images/projects-real/anong-store.webp' },
+  { title: 'Shree Shiva Enterprises', location: 'Siddhipur, Lalitpur', type: 'Commercial', img: '/images/projects-real/shree-shiva-enterprises.webp' },
 ]
+
 
 export default async function ProjectsPage({ searchParams }: { searchParams: Promise<{ industry?: string; page?: string }> }) {
   const sp       = await searchParams

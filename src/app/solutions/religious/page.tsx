@@ -36,12 +36,8 @@ const data: SolutionPageData = {
     { name: "Simple amplification", desc: "DMA250U mixer amplifier — USB, Bluetooth and one knob per zone for daily use.", href: "/products/amplifiers/dsppa-dma250u", img: "/images/products/dsppa/dsppa-dma250u/main.jpg" },
     { name: "Scheduled broadcasts", desc: "MAG6182II IP PA server automates azan, bells and chants on calendar schedules.", href: "/products/ip-network-audio/dsppa-mag6182ii", img: "/images/products/dsppa/dsppa-mag6182ii/main.jpg" },
   ],
-  projectsBlurb: "Sound systems serving congregations at Nepal's most significant religious sites.",
-  projects: [
-    { title: "Pashupatinath Temple Complex", location: "Kathmandu" },
-    { title: "Cathedral of the Assumption", location: "Kathmandu" },
-    { title: "Kopan Monastery", location: "Kathmandu" },
-  ],
+  projectsBlurb: "Client references for this sector are shared on request during consultation — contact us and we'll connect you with comparable completed projects.",
+  projects: [],
   faqs: [
     { q: "Will outdoor speakers survive monsoon weather?", a: "Yes — we specify IP-rated waterproof columns and horns designed for permanent outdoor mounting, with protected cabling and earthing." },
     { q: "Can calls to prayer or bells play automatically on schedule?", a: "Yes — IP PA servers schedule daily broadcasts by calendar, with instant manual override from a microphone when needed." },

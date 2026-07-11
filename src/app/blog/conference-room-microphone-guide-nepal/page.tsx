@@ -24,7 +24,7 @@ export default function Page() {
       <H2>Wireless: freedom with two caveats</H2>
       <P>Wireless handhelds and lavaliers earn their keep in training rooms, auditoriums and event spaces. The two things to check in Nepal: frequency band legality and licence-free operation, and battery workflow — rooms without a charging routine end up with dead microphones at 9am. For fixed seats, wired always wins on reliability.</P>
       <H2>Ceiling arrays: invisible, and demanding</H2>
-      <P>Ceiling microphone arrays give a completely clean table and track speakers automatically — the premium choice for executive rooms, and what we deployed at <A href="/projects/leapfrog-smart-meeting-rooms">Leapfrog HQ</A>. They demand acoustic discipline: hard rooms with echo need treatment first, and DSP tuning is not optional. Budget for both or the array will underperform a NPR-fraction gooseneck setup.</P>
+      <P>Ceiling microphone arrays give a completely clean table and track speakers automatically — the premium choice for executive rooms. They demand acoustic discipline: hard rooms with echo need treatment first, and DSP tuning is not optional. Budget for both or the array will underperform a NPR-fraction gooseneck setup.</P>
       <H2>The short version</H2>
       <P>Up to 6 people: speakerphone or video bar. 6–16: one mic per seat plus DSP. Formal chambers: delegate system. Presenters on the move: wireless with a charging routine. Executive rooms with budget: ceiling array plus acoustic treatment. When in doubt, our <A href="/solution-finder">solution finder</A> gets you to a starting point in thirty seconds.</P>
     </ArticlePage>

@@ -23,9 +23,8 @@ export default function CaseStudyPage({ cs }: { cs: CaseStudy }) {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
       <section className="relative flex min-h-[50vh] items-end overflow-hidden bg-slate-900">
-        <Image src={cs.hero} alt={`${cs.title} — illustrative render`} fill priority className="object-cover opacity-90" />
+        <Image src={cs.hero} alt={`${cs.title} — completed installation`} fill priority className="object-cover opacity-90" />
         <div className="absolute inset-0 bg-gradient-to-t from-slate-950/85 via-slate-950/40 to-transparent" />
-        <span className="absolute bottom-4 right-5 rounded-full bg-slate-950/50 px-2.5 py-0.5 text-[10px] font-semibold uppercase tracking-wider text-white/85">Illustration</span>
         <div className="relative mx-auto w-full max-w-4xl px-6 pb-12">
           <p className="text-sm font-semibold uppercase tracking-widest text-teal-300">
             <Link href="/projects" className="hover:underline">Projects</Link> / {cs.sector}

@@ -189,7 +189,7 @@ export const BRANDS = [
 ] as const
 
 export const STATS = [
-  { value: 500, suffix: '+', label: 'Successful Projects' },
+  { value: 100, suffix: '+', label: 'Successful Projects' },
   { value: 14,  suffix: '+', label: 'Product Categories' },
   { value: 77,  suffix: '',  label: 'Districts Served' },
   { value: 100, suffix: '%', label: 'Genuine Products' },
