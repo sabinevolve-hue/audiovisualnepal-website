@@ -51,7 +51,7 @@ for (const [model, path] of Object.entries(MANIFEST)) {
     let og = html.match(/property="og:image"\s+content="([^"]+)"/)?.[1]
       || html.match(/content="([^"]+)"\s+property="og:image"/)?.[1]
     if (!og) {
-      const m = html.match(/(?:src|data-src)="((?:https?:)?\/\/?[^"]*(?:upload|static|uploads)[^"]*\.(?:png|jpg|jpeg|webp))"/i)
+      const m = html.match(/(?:src|data-src)="((?:https?:)?\/\/?[^"]*(?:upload|uploads|static|media)[^"]*\.(?:png|jpg|jpeg|webp))"/i)
       if (m) og = m[1].startsWith('http') ? m[1] : 'https://www.lampro.net' + (m[1].startsWith('/') ? m[1] : '/' + m[1])
     }
     const desc = html.match(/name="description"\s+content="([^"]+)"/)?.[1] || ''
