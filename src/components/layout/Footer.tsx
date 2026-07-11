@@ -52,7 +52,8 @@ export default function Footer() {
                 <Mail size={13} style={{ flexShrink: 0, color: '#60A5FA' }} /> {SITE.email}
               </a>
               <div style={{ display: 'flex', alignItems: 'flex-start', gap: 8, fontSize: 13, color: 'rgba(255,255,255,0.45)' }}>
-                <MapPin size={13} style={{ flexShrink: 0, color: '#60A5FA', marginTop: 2 }} /> {SITE.address}
+                <MapPin size={13} style={{ flexShrink: 0, color: '#60A5FA', marginTop: 2 }} />{' '}
+                <a href={SITE.map} target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'none' }}>{SITE.address} — find us on Google Maps</a>
               </div>
             </div>
             {/* Social icons */}

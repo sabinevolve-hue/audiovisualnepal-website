@@ -8,12 +8,13 @@ export const SITE = {
   phoneRaw: '+9779762109538',
   email: 'info@audiovisualnepal.com',
   address: 'Kathmandu, Nepal',
+  map: 'https://maps.app.goo.gl/iVCohsMztxcbBk8Q6',
   whatsapp: 'https://wa.me/+9779762109538',
   social: {
-    facebook: 'https://facebook.com/audiovisualnepal',
+    facebook: 'https://www.facebook.com/profile.php?id=61591762197024',
     instagram: 'https://instagram.com/audiovisualnepal',
     youtube: 'https://youtube.com/audiovisualnepal',
-    linkedin: 'https://linkedin.com/company/audiovisualnepal',
+    linkedin: 'https://www.linkedin.com/company/audio-visual-nepal/',
   },
 } as const
 

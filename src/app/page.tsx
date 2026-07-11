@@ -41,6 +41,7 @@ const jsonLd = {
     addressCountry: 'NP',
   },
   areaServed: { '@type': 'Country', name: 'Nepal' },
+  hasMap: 'https://maps.app.goo.gl/iVCohsMztxcbBk8Q6',
   sameAs: Object.values(SITE.social),
   description: DEFAULT_SEO.description,
 }
