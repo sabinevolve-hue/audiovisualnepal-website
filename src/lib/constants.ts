@@ -50,6 +50,7 @@ export const PRODUCT_CATEGORIES = [
   { label: 'Conference Cameras',    href: '/products/conference-cameras',    icon: 'camera',     count: 11,  description: 'PTZ, 4K AI-tracking & 360° cameras for boardrooms and lecture halls' },
   { label: 'Video Conferencing',    href: '/products/video-conferencing',    icon: 'video',      count: 6,  description: 'All-in-one video bars & BYOD/BYOM systems — plug-and-play meeting rooms' },
   { label: 'Wireless Presentation', href: '/products/wireless-presentation', icon: 'wireless',   count: 2,  description: 'Cable-free screen sharing from any device — no software or dongles required' },
+  { label: 'LED Displays',          href: '/products/led-displays',          icon: 'display',    count: 6,  description: 'Lampro fine-pitch, rental, creative & outdoor DOOH LED display systems' },
   { label: 'Video Walls',           href: '/products/video-walls',           icon: 'display',    count: 2,  description: '4K video wall processors & controllers for multi-screen display arrays' },
   { label: 'Conference Audio',      href: '/products/conference-audio',      icon: 'mic',        count: 5,  description: 'USB & Bluetooth speakerphones for crystal-clear remote meeting audio' },
   { label: 'AV Switching',          href: '/products/av-switching',          icon: 'switch',     count: 2,  description: 'HDMI matrix switchers for routing AV signals across multiple rooms' },
@@ -142,7 +143,7 @@ export const BRANDS = [
     tagline: 'Professional PA, IP network audio & voice evacuation systems',
     origin: 'China',
     founded: '1988',
-    logoColor: '#E63946',
+    logoColor: '#00AEAD',
   },
   {
     name: 'InfoBit',

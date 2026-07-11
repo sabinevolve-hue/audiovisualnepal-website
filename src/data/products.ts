@@ -1581,9 +1581,160 @@ const FOCUS: Product[] = [
   },
 ]
 
+// ─── LAMPRO ──────────────────────────────────────────────────────────────────
+const LAMPRO: Product[] = [
+  {
+    id: "lampro-lmini", slug: "lampro-lmini",
+    name: "Lampro LMini", brand: "Lampro", brandSlug: "lampro",
+    category: "led-displays", subcategory: "Fine-Pitch COB Mini LED",
+    tagline: "COB Mini LED for Boardrooms & Control Rooms",
+    badge: "Flagship",
+    imageUrl: "/images/lampro-catalog/lmini.webp",
+    imageFallback: "#0F58FB",
+    description: "The LMini series is Lampro's flagship fine-pitch COB Mini LED display for premium indoor viewing distances — executive boardrooms, control rooms and broadcast studios. COB encapsulation protects every pixel against knocks, dust and moisture while delivering seamless images at close range, as deployed in retail flagships like the Dior store in Thailand.",
+    keyFeatures: [
+      { title: "COB Encapsulation", desc: "Chip-on-board pixels are fully sealed — resistant to impact, dust and moisture, ideal for high-touch environments." },
+      { title: "Fine Pixel Pitch", desc: "Close-viewing pitches for meeting rooms and control rooms where viewers sit metres from the wall." },
+      { title: "Seamless Splicing", desc: "Cabinet-to-cabinet uniformity with factory calibration data stored on board." },
+      { title: "Front Maintenance", desc: "Full front serviceability — install flush against walls with no rear access corridor." },
+    ],
+    specs: [
+      { label: "Technology", value: "COB Mini LED", highlight: true, group: "Display" },
+      { label: "Segment", value: "Fine-pitch indoor", group: "Display" },
+      { label: "Maintenance", value: "Front access", group: "Installation" },
+      { label: "Applications", value: "Boardroom, Control Room, Studio, Retail", group: "Use" },
+    ],
+    applications: ["Corporate", "Government", "Broadcast", "Retail"],
+    warranty: "2 Years",
+    brandProductUrl: "https://www.lampro.net/products/lmini-series-lampro.html",
+    downloads: [{ label: "LMini Series Overview", url: "https://www.lampro.net/products/lmini-series-lampro.html", type: "brochure" as const }],
+    relatedSlugs: ["lampro-lhp", "lampro-bnxii"]
+  },
+  {
+    id: "lampro-bnxii", slug: "lampro-bnxii",
+    name: "Lampro BNXII", brand: "Lampro", brandSlug: "lampro",
+    category: "led-displays", subcategory: "Indoor Creative Splicing",
+    tagline: "Free Splicing, Free Form Indoor LED",
+    imageUrl: "/images/lampro-catalog/bnxii.webp",
+    imageFallback: "#0F58FB",
+    description: "BNXII is Lampro's indoor commercial LED system built for creative and custom-shaped installations — retail flagships, malls, exhibition halls, hotel lobbies and brand experience centres. Six cabinet sizes splice freely, rotate 90° and form concave, convex and malposed shapes, with wireless module-to-cabinet connection for fast installs.",
+    keyFeatures: [
+      { title: "Multiple Cabinet Sizes", desc: "500×250 to 500×1000mm panels mix freely — fit columns, curves and irregular walls." },
+      { title: "Concave & Convex Splicing", desc: "Curved and 90°-rotated combinations unlock creative shapes standard panels can't form." },
+      { title: "Wireless Module Connection", desc: "Module-to-cabinet connection without cables — simplified, fast installation and service." },
+      { title: "Flash IC Calibration", desc: "Per-module calibration data stored and auto-read-back — consistent image after any module swap." },
+    ],
+    specs: [
+      { label: "Pixel Pitch", value: "P1.5 / P1.9 / P2.5 / P3.9", highlight: true, group: "Display" },
+      { label: "Brightness", value: "600–800 nit", group: "Display" },
+      { label: "Panel Sizes", value: "500×1000 / 500×750 / 500×500 / 500×250 / 1000×250 / 750×250mm", group: "Cabinet" },
+      { label: "Weight", value: "5.2–9.2 kg/panel", group: "Cabinet" },
+      { label: "Material", value: "Die-cast aluminium, 40mm depth", group: "Cabinet" },
+      { label: "Maintenance", value: "Full-front / full-rear", group: "Installation" },
+    ],
+    applications: ["Retail", "Hotel", "Corporate", "Events"],
+    warranty: "2 Years",
+    brandProductUrl: "https://www.lampro.net/products/bnxii-series-lampro.html",
+    downloads: [{ label: "BNXII Series Overview", url: "https://www.lampro.net/products/bnxii-series-lampro.html", type: "brochure" as const }],
+    relatedSlugs: ["lampro-lmini", "lampro-lrs"]
+  },
+  {
+    id: "lampro-lhp", slug: "lampro-lhp",
+    name: "Lampro LHP", brand: "Lampro", brandSlug: "lampro",
+    category: "led-displays", subcategory: "Fine-Pitch HD Indoor",
+    tagline: "HD Fine-Pitch Indoor LED Display",
+    imageUrl: "/images/lampro-catalog/lhp.webp",
+    imageFallback: "#0F58FB",
+    description: "The LHP series delivers HD fine-pitch indoor LED for conference rooms, lobbies and presentation spaces — Lampro's workhorse indoor display balancing image quality, serviceability and value for corporate and government installations.",
+    keyFeatures: [
+      { title: "HD Fine Pitch", desc: "Sharp, uniform images at typical indoor viewing distances." },
+      { title: "Slim Cabinet", desc: "Lightweight design for wall-mount and hanging installation." },
+      { title: "Factory Calibrated", desc: "Consistent colour and brightness across every cabinet." },
+    ],
+    specs: [
+      { label: "Segment", value: "Fine-pitch HD indoor", highlight: true, group: "Display" },
+      { label: "Applications", value: "Conference, Lobby, Auditorium", group: "Use" },
+    ],
+    applications: ["Corporate", "Government", "Education"],
+    warranty: "2 Years",
+    brandProductUrl: "https://www.lampro.net/products/lhp-series-lampro.html",
+    downloads: [{ label: "LHP Series Overview", url: "https://www.lampro.net/products/lhp-series-lampro.html", type: "brochure" as const }],
+    relatedSlugs: ["lampro-lmini", "lampro-bnxii"]
+  },
+  {
+    id: "lampro-lrs", slug: "lampro-lrs",
+    name: "Lampro LRS", brand: "Lampro", brandSlug: "lampro",
+    category: "led-displays", subcategory: "Rental & Staging",
+    tagline: "Rental LED for Events & Staging",
+    imageUrl: "/images/lampro-catalog/lrs.webp",
+    imageFallback: "#0F58FB",
+    description: "The LRS series is Lampro's rental and staging panel — fast-locking, tour-grade LED for concerts, weddings, conferences and broadcast events. Built for repeated assembly and teardown with quick-service modules, it anchors hire inventories and fixed stage installs alike.",
+    keyFeatures: [
+      { title: "Quick-Lock Cabinets", desc: "Tool-free locking for fast build and teardown between events." },
+      { title: "Tour-Grade Build", desc: "Designed for repeated transport, rigging and ground-stack use." },
+      { title: "Curved Configurations", desc: "Adjustable splice angles form gentle sweeps and immersive backdrops." },
+    ],
+    specs: [
+      { label: "Segment", value: "Rental & staging", highlight: true, group: "Display" },
+      { label: "Applications", value: "Events, Concerts, Broadcast, Ballrooms", group: "Use" },
+    ],
+    applications: ["Events", "Hotel", "Broadcast"],
+    warranty: "2 Years",
+    brandProductUrl: "https://www.lampro.net/products/lrs-series-lampro.html",
+    downloads: [{ label: "LRS Series Overview", url: "https://www.lampro.net/products/lrs-series-lampro.html", type: "brochure" as const }],
+    relatedSlugs: ["lampro-lst", "lampro-bnxii"]
+  },
+  {
+    id: "lampro-lst", slug: "lampro-lst",
+    name: "Lampro LST", brand: "Lampro", brandSlug: "lampro",
+    category: "led-displays", subcategory: "Outdoor DOOH",
+    tagline: "Outdoor High-Brightness DOOH Display",
+    imageUrl: "/images/lampro-catalog/lst.webp",
+    imageFallback: "#0F58FB",
+    description: "The LST series is Lampro's outdoor digital-out-of-home display for billboards, building facades and roadside advertising — high brightness for direct sunlight, weatherproof cabinets, and the panel behind installations like the 240sqm Amsaf Mall project in Dubai.",
+    keyFeatures: [
+      { title: "High Brightness", desc: "Readable in direct sunlight for outdoor advertising and signage." },
+      { title: "Weatherproof", desc: "Sealed cabinets engineered for permanent outdoor installation — monsoon-ready." },
+      { title: "Energy-Conscious Drive", desc: "Efficient power design for 24/7 DOOH operation." },
+    ],
+    specs: [
+      { label: "Segment", value: "Outdoor DOOH", highlight: true, group: "Display" },
+      { label: "Applications", value: "Billboards, Facades, Roadside, Stadiums", group: "Use" },
+    ],
+    applications: ["Retail", "Transportation", "Events"],
+    warranty: "2 Years",
+    brandProductUrl: "https://www.lampro.net/products/lst-series-lampro.html",
+    downloads: [{ label: "LST Series Overview", url: "https://www.lampro.net/products/lst-series-lampro.html", type: "brochure" as const }],
+    relatedSlugs: ["lampro-lxii-pro", "lampro-lrs"]
+  },
+  {
+    id: "lampro-lxii-pro", slug: "lampro-lxii-pro",
+    name: "Lampro LXII Pro", brand: "Lampro", brandSlug: "lampro",
+    category: "led-displays", subcategory: "Outdoor DOOH",
+    tagline: "Premium Outdoor Advertising LED",
+    imageUrl: "/images/lampro-catalog/lxii-pro.webp",
+    imageFallback: "#0F58FB",
+    description: "LXII Pro is Lampro's premium outdoor advertising series for large-format DOOH — landmark billboards and high-traffic commercial sites where image quality, reliability and serviceability decide the investment.",
+    keyFeatures: [
+      { title: "Large-Format Ready", desc: "Engineered for landmark billboard dimensions and long viewing distances." },
+      { title: "High Refresh Rate", desc: "Clean capture on camera — suits sites with media coverage and traffic footage." },
+      { title: "Modular Service", desc: "Front/rear serviceable modules minimise downtime on elevated installs." },
+    ],
+    specs: [
+      { label: "Segment", value: "Premium outdoor DOOH", highlight: true, group: "Display" },
+      { label: "Applications", value: "Landmark billboards, Commercial facades", group: "Use" },
+    ],
+    applications: ["Retail", "Transportation"],
+    warranty: "2 Years",
+    brandProductUrl: "https://www.lampro.net/products/lxiipro-series-lampro.html",
+    downloads: [{ label: "LXII Pro Series Overview", url: "https://www.lampro.net/products/lxiipro-series-lampro.html", type: "brochure" as const }],
+    relatedSlugs: ["lampro-lst", "lampro-lrs"]
+  },
+]
+
 // ─── Exports ─────────────────────────────────────────────────────────────────
 export const ALL_PRODUCTS: Product[] = [
-  ...DSPPA, ...INFOBIT, ...TENVEO, ...FOCUS,
+  ...DSPPA, ...INFOBIT, ...TENVEO, ...FOCUS, ...LAMPRO,
 ]
 
 export const PRODUCTS_BY_BRAND: Record<string, Product[]> = {
@@ -1591,6 +1742,7 @@ export const PRODUCTS_BY_BRAND: Record<string, Product[]> = {
   infobit: INFOBIT,
   tenveo: TENVEO,
   focus: FOCUS,
+  lampro: LAMPRO,
 }
 
 export const PRODUCTS_BY_CATEGORY: Record<string, Product[]> = ALL_PRODUCTS.reduce(
