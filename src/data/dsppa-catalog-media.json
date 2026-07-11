@@ -142,5 +142,533 @@
   "img": "/images/dsppa-catalog/mag6182ii.webp",
   "desc": "Abstract: The DSPPA MAG6182II Network PA System seamlessly integrates technology and art, enhancing the atmosphere and visitor experience at the Bai'etan GBA Art Center.",
   "source": "https://www.dsppatech.com/mag6182ii-network-pa-system-for-baietan-gba-art-center"
+ },
+ "MP600U": {
+  "slug": "mp600u",
+  "img": "/images/dsppa-catalog/mp600u.webp",
+  "desc": "2 Zones Integrated Mixer Amplifier With Remote Paging Mic Mp200u Mp300u Mp600u Mp1000u , Find Complete Details about 2 Zones Integrated Mixer Amplifier with the functions of U disk, radio, Bluetooth, zones and remote paging.",
+  "source": "https://www.dsppatech.com/product/mp600u-2-zones-integrated-mixer-amplifier-with-rem"
+ },
+ "MP1000U": {
+  "slug": "mp1000u",
+  "img": "/images/dsppa-catalog/mp1000u.webp",
+  "desc": "2 Zones Integrated Mixer Amplifier With Remote Paging Mic Mp200u Mp300u Mp600u Mp1000u , Find Complete Details about 2 Zones Integrated Mixer Amplifier with the functions of U disk, radio, Bluetooth, zones and remote paging.",
+  "source": "https://www.dsppatech.com/product/mp1000u-2-zones-integrated-mixer-amplifier-with-re"
+ },
+ "MP300PIII": {
+  "slug": "mp300piii",
+  "img": "/images/dsppa-catalog/mp300piii.webp",
+  "desc": "Find great deal at Guangzhou DSPPA Audio Co., Ltd. for best 60W-350W Classical Series Mixer Amplifier. There are various of cheap and high quality Mixer Amplifier.",
+  "source": "https://www.dsppatech.com/product/mp300piii-120w-3-mic-2-aux-mixing-amplifier"
+ },
+ "MP600PIII": {
+  "slug": "mp600piii",
+  "img": "/images/dsppa-catalog/mp600piii.webp",
+  "desc": "Find great deal at Guangzhou DSPPA Audio Co., Ltd. for best 60W-350W Classical Series Mixer Amplifier. There are various of cheap and high quality Mixer Amplifier.",
+  "source": "https://www.dsppatech.com/product/mp600piii-250w-3-mic--2-aux-mixing-amplifier"
+ },
+ "MP1000PIII": {
+  "slug": "mp1000piii",
+  "img": "/images/dsppa-catalog/mp1000piii.webp",
+  "desc": "Find great deal at Guangzhou DSPPA Audio Co., Ltd. for best 60W-350W Classical Series Mixer Amplifier. There are various of cheap and high quality Mixer Amplifier.",
+  "source": "https://www.dsppatech.com/product/mp1000piii-350w-3-mic--2-aux-mixing-amplifier"
+ },
+ "DA3245": {
+  "slug": "da3245",
+  "img": "/images/dsppa-catalog/da3245.webp",
+  "desc": "DA3245 meets the demands of emerging markets to provide high-quality equipment at affordable prices. And it has the advantage that with mute function, multiple power options, easy to insert priority b...",
+  "source": "https://www.dsppatech.com/product/da3245-450w-digital-amplifier"
+ },
+ "DA3255": {
+  "slug": "da3255",
+  "img": "/images/dsppa-catalog/da3255.webp",
+  "desc": "DA3255 meets the demands of emerging markets to provide high-quality equipment at affordable prices. And it has the advantage that with mute function, multiple power options, easy to insert priority b...",
+  "source": "https://www.dsppatech.com/product/da3255-550w-digital-mixer-amplifier"
+ },
+ "MP210U": {
+  "slug": "mp210u",
+  "img": "/images/dsppa-catalog/mp210u.webp",
+  "desc": "This mixing amplifier is rated at 60W. 100V and 4-16 Ω speaker output are provided. There are 4 microphones inputs and 3 line inputs, FM, USB, SD audio sources. Bass and treble controls and master vo...",
+  "source": "https://www.dsppatech.com/product/mp210ub-60w--6-zones-mixing-amplifier"
+ },
+ "MP310U": {
+  "slug": "mp310u",
+  "img": "/images/dsppa-catalog/mp310u.webp",
+  "desc": "This mixing amplifier is rated at 120W. 100V and 4-16 Ω speaker output are provided. There are 4 microphones inputs and 3 line inputs, FM, USB, SD audio sources. Bass and treble controls and master v...",
+  "source": "https://www.dsppatech.com/product/mp310ub-120w-6-zones-mixing-amplifier"
+ },
+ "MP610U": {
+  "slug": "mp610u",
+  "img": "/images/dsppa-catalog/mp610u.webp",
+  "desc": "This mixing amplifier is rated at 250W. 100V and 4-16 Ω speaker output are provided. There are 4 microphones inputs and 3 line inputs, FM, USB, SD audio sources. Bass and treble controls and master v...",
+  "source": "https://www.dsppatech.com/product/mp610ub-250w-6-zones-mixing-amplifier"
+ },
+ "DMA60M": {
+  "slug": "dma60m",
+  "img": "/images/dsppa-catalog/dma60m.webp",
+  "desc": "Working with DMA6112/DMA6124.",
+  "source": "https://www.dsppatech.com/product/dma60m-6-zones-remote-paging-station"
+ },
+ "DMA60W": {
+  "slug": "dma60w",
+  "img": "/images/dsppa-catalog/dma60w.webp",
+  "desc": "Working with DMA6112/DMA6124.",
+  "source": "https://www.dsppatech.com/product/dma60w-bluetooth-wallmount-touch-control-panel"
+ },
+ "DMA250U": {
+  "slug": "dma250u",
+  "img": "/images/dsppa-catalog/dma250u.webp",
+  "desc": "DMA250U Digital Mixer Amplifier is a multi-functional mixer amplifier integrated with the functions of USB flash disk, FM, Bluetooth. DMA250U support 70V/100V and 4-16Ω speaker output. With 3 Mic, 2 ...",
+  "source": "https://www.dsppatech.com/product/dma250u-250w-digital-mixer-amplifier"
+ },
+ "DMA6250U": {
+  "slug": "dma6250u",
+  "img": "/images/dsppa-catalog/dma6250u.webp",
+  "desc": "DMA6250U Digital Mixer Amplifier can be used in conjunction with the DMA20 Remote Paging Station, supporting 2-channel RJ-45 remote paging microphone. The amplifier has a screen for intuitive display,...",
+  "source": "https://www.dsppatech.com/product/dma6250u-250w-digital-mixer-amplifier"
+ },
+ "DMA6350U": {
+  "slug": "dma6350u",
+  "img": "/images/dsppa-catalog/dma6350u.webp",
+  "desc": "DMA6350U Series Digital Mixer Amplifier can be used in conjunction with the DMA20 Remote Paging Station, supporting 2-channel RJ-45 remote paging microphone. The amplifier has a screen for intuitive d...",
+  "source": "https://www.dsppatech.com/product/dma6350u-350w-6-zones-digital-mixer-amplifier-with"
+ },
+ "DMA6500U": {
+  "slug": "dma6500u",
+  "img": "/images/dsppa-catalog/dma6500u.webp",
+  "desc": "DMA6500U Digital Mixer Amplifier can be used in conjunction with the DMA20 Remote Paging Station, supporting 2-channel RJ-45 remote paging microphone. The amplifier has a screen for intuitive display,...",
+  "source": "https://www.dsppatech.com/product/dma6500u-550w-digital-mixer-amplifier"
+ },
+ "DMA6650U": {
+  "slug": "dma6650u",
+  "img": "/images/dsppa-catalog/dma6650u.webp",
+  "desc": "The DMA6250U/DMA6350U/DMA6500U/DMA6650U 6 Zones digital mixer amplifier with EQ control MIC mixer function and included 2 remote paging microphones.  Applications Include Classrooms, Meeting Rooms, Fa...",
+  "source": "https://www.dsppatech.com/product/dma6650u-6-zones-digital-mixer-amplifier-with-remote-paging-station"
+ },
+ "MP2715": {
+  "slug": "mp2715",
+  "img": "/images/dsppa-catalog/mp2715.webp",
+  "desc": "The Integrated Mixer Amplifier MP2715 is a 6 zones mix amplifier integrated with the functions of U disk, SD card, tuner, radio, Bluetooth, zones and timer.",
+  "source": "https://www.dsppatech.com/product/mp2715-6-zones-mixer-amplifier-with-sd-usb-tuner-bluetooth-timer"
+ },
+ "MP2725": {
+  "slug": "mp2725",
+  "img": "/images/dsppa-catalog/mp2725.webp",
+  "desc": "The Integrated Mixer Amplifier MP2725 is a 6 zones mix amplifier integrated with the functions of U disk, SD card, tuner, radio, Bluetooth, zones and timer.",
+  "source": "https://www.dsppatech.com/product/mp2725-6-zones-mixer-amplifier"
+ },
+ "MP2735": {
+  "slug": "mp2735",
+  "img": "/images/dsppa-catalog/mp2735.webp",
+  "desc": "The Integrated Mixer Amplifier MP2735 is a 6 zones mix amplifier integrated with the functions of U disk, SD card, tuner, radio, Bluetooth, zones and timer.",
+  "source": "https://www.dsppatech.com/product/mp2735-6-zones-mixer-amplifier"
+ },
+ "MP2745": {
+  "slug": "mp2745",
+  "img": "/images/dsppa-catalog/mp2745.webp",
+  "desc": "The Integrated Mixer Amplifier MP2745 is a 6 zones mix amplifier integrated with the functions of U disk, SD card, tuner, radio, Bluetooth, zones and timer.",
+  "source": "https://www.dsppatech.com/product/mp2745-6-zones-mixer-amplifier"
+ },
+ "MA2250U": {
+  "slug": "ma2250u",
+  "img": "/images/dsppa-catalog/ma2250u.webp",
+  "desc": "MA2250U is a 2-Channel multimedia mosque mixer amplifier with RMS power 2*250W.Separate 2 channels output control of Echo/Bass/Treble/ Volume and built-in 3 Mic and 1 AUX and USB/Bluetooth.It is suita...",
+  "source": "https://www.dsppatech.com/product/ma2250u-2250w-multimedia-mosque-amplifier"
+ },
+ "MP35UB": {
+  "slug": "mp35ub",
+  "img": "/images/dsppa-catalog/mp35ub.webp",
+  "desc": "MP35UB is 1.5U designed Mini Digital amplifier with USB/FM and Bluetooth.",
+  "source": "https://www.dsppatech.com/product/mp35ub-mini-digital-mixer-amplifier-with-usb-and-bluetooth"
+ },
+ "MP60UB": {
+  "slug": "mp60ub",
+  "img": "/images/dsppa-catalog/mp60ub.webp",
+  "desc": "MP60UB is 1.5U designed Mini Digital amplifier with USB/FM and Bluetooth.",
+  "source": "https://www.dsppatech.com/product/mp60ub-mini-digital-mixer-amplifier-with-usb-and-bluetooth"
+ },
+ "MP120UB": {
+  "slug": "mp120ub",
+  "img": "/images/dsppa-catalog/mp120ub.webp",
+  "desc": "MP120UB is 1.5U designed Mini Digital amplifier with USB/FM and Bluetooth.",
+  "source": "https://www.dsppatech.com/product/mp120ub-mini-digital-mixer-amplifier-with-usb-and-bluetooth"
+ },
+ "MP250UB": {
+  "slug": "mp250ub",
+  "img": "/images/dsppa-catalog/mp250ub.webp",
+  "desc": "MP250UB is Mini Digital Mixer Amplifier with USB/FM and Bluetooth.The Speaker output is 70V/100V and 4-16Ω available,Individual volume control for each Mic and Aux, also provide Bass and Treble contr...",
+  "source": "https://www.dsppatech.com/product/mp250ub-mini-digital-mixer-amplifier-with-usb-bluetooth"
+ },
+ "MP9306U": {
+  "slug": "mp9306u",
+  "img": "/images/dsppa-catalog/mp9306u.webp",
+  "desc": "The following is prescribed feature of MP9306U digital mixing amplifier.",
+  "source": "https://www.dsppatech.com/product/mp9306u--60w-ultra-thin-digital-mixer-amplifier"
+ },
+ "MP9312U": {
+  "slug": "mp9312u",
+  "img": "/images/dsppa-catalog/mp9312u.webp",
+  "desc": "The following is prescribed feature of MP9306U digital mixing amplifier. It's also called sound digital amplifier.",
+  "source": "https://www.dsppatech.com/product/mp9312u-120w-ultra-thin-digital-mixer-amplifier"
+ },
+ "Mini40II": {
+  "slug": "mini40ii",
+  "img": "/images/dsppa-catalog/mini40ii.webp",
+  "desc": "The best 2x20w mini bluetooth amplifiers for sale are provided by DSPPA Audio. As a mini bluetooth amplifier manufacturer, we sell high-quality bluetooth amplifier.",
+  "source": "https://www.dsppatech.com/product/mini40ii-2x20w-mini-bluetooth-power-amplifier"
+ },
+ "DM835": {
+  "slug": "dm835",
+  "img": "/images/dsppa-catalog/dm835.webp",
+  "desc": "DM835 is a convenient and efficient home music control center.",
+  "source": "https://www.dsppatech.com/product/dm835-smart-home-on-wall-music-amplifier"
+ },
+ "DM838II": {
+  "slug": "dm838ii",
+  "img": "/images/dsppa-catalog/dm838ii.webp",
+  "desc": "Here are manufacturer for PA/VA System of Guangzhou china, with manufacturer price, Contact us if you are interested.",
+  "source": "https://www.dsppatech.com/product/dm838ii-2x20w-stereo-network-music-amplifier"
+ },
+ "DM858": {
+  "slug": "dm858",
+  "img": "/images/dsppa-catalog/dm858.webp",
+  "desc": "WIFI Stereo Sound Player Amplifier Smart Home Background Music System WIFI Bluetooth in Wall Amplifier with Ceiling Sperker. Contact us if you are interested.",
+  "source": "https://www.dsppatech.com/product/dm858-4x20w-network-on-wall-stereo-music-amplifier"
+ },
+ "DW01": {
+  "slug": "dw01",
+  "img": "/images/dsppa-catalog/dw01.webp",
+  "desc": "DW01 is a wireless streaming preamplifier with network and Bluetooth 5.0 connectivity. Applying DW01 to your current stereo system will enable you to stream music from your smart devices, USB, NAS or ...",
+  "source": "https://www.dsppatech.com/product/dw01-wifi-intelligent-audio-streaming-preamplifier"
+ },
+ "DW2235": {
+  "slug": "dw2235",
+  "img": "/images/dsppa-catalog/dw2235.webp",
+  "desc": "Best wireless speakers 2022: wonderful wi-fi speakers for the smart home. Find low everyday prices and buy online for delivery or in-store pick-up. Get in touch Tel: +86 020 37166520",
+  "source": "https://www.dsppatech.com/product/dw2235-wifi-ceiling-speakers"
+ },
+ "DDA23D": {
+  "slug": "dda23d",
+  "img": "/images/dsppa-catalog/dda23d.webp",
+  "desc": "DDA23/DDA23D is a multifunctional network DSP digital constant-resistance and constant-voltage amplifier of 2*450W@4Ω, 2*300W@8Ω, bridge 1*900W@8Ω, and constant voltage 70/100V, which can remotely monitor the status of amplifier in real time, and set the compressor, limiter, noise gate, PEQ, matrix ",
+  "source": "https://www.dsppatech.com/product/dda23d-ip-network-digital-amplifier-with-dsp-and-dante"
+ },
+ "DDA408D": {
+  "slug": "dda408d",
+  "img": "/images/dsppa-catalog/dda408d.webp",
+  "desc": "This device is a multi-functional network DSP digital power amplifier. It can monitor the status of amplifier and adjust the function of DSP in real time remotely. Built-in DSP functions with compress...",
+  "source": "https://www.dsppatech.com/product/dda408d-ip-network-digital-amplifier-with-dsp-and-optional-dante"
+ },
+ "DDA410D": {
+  "slug": "dda410d",
+  "img": "/images/dsppa-catalog/dda410d.webp",
+  "desc": "DDA410D is a multi-functional network DSP digital power amplifier, which can remotely monitor the status of the power amplifier, and set the compressor, limiter, noise gate, parametric equalization, m...",
+  "source": "https://www.dsppatech.com/product/dda410d-ip-network-digital-amplifier-with-dsp"
+ },
+ "DDA415D": {
+  "slug": "dda415d",
+  "img": "/images/dsppa-catalog/dda415d.webp",
+  "desc": "This device is a multi-functional network DSP digital power amplifier. It can monitor the status of amplifier and adjust the function of DSP in real time remotely. Built-in DSP functions with compress...",
+  "source": "https://www.dsppatech.com/product/dda415-dda415d-ip-network-digital-amplifier-with-dsp-and-optional-dante"
+ },
+ "DA2125": {
+  "slug": "da2125",
+  "img": "/images/dsppa-catalog/da2125.webp",
+  "desc": "This is a Class D digital amplifier designed for commercial and industrial public address applications. Rack mount design in 1U type and rated power is 2*125W. Both balanced and unbalanced line inputs...",
+  "source": "https://www.dsppatech.com/product/da2125-2120w-dual-channels-digital-amplifier"
+ },
+ "DA2500": {
+  "slug": "da2500",
+  "img": "/images/dsppa-catalog/da2500.webp",
+  "desc": "This is a Class D digital amplifier designed for commercial and industrial public address applications. Rack mount design in 1U type and rated power is 2*500WBoth balanced and unbalanced line inputs a...",
+  "source": "https://www.dsppatech.com/product/da2500-2-500w-dual-channels-digital-amplifier"
+ },
+ "DA4060": {
+  "slug": "da4060",
+  "img": "/images/dsppa-catalog/da4060.webp",
+  "desc": "This is a Class D digital amplifier designed for commercial and industrial public address applications. Rack mount design in 1U type and rated power is 4*60W.Both balanced and unbalanced line inputs a...",
+  "source": "https://www.dsppatech.com/product/da4060-4-60w-4-channels-digital-amplifier"
+ },
+ "DA4125": {
+  "slug": "da4125",
+  "img": "/images/dsppa-catalog/da4125.webp",
+  "desc": "This is a Class D digital amplifier designed for commercial and industrial public address applications. Rack mount design in 1U type and rated power is 4*125W.Both balanced and unbalanced line inputs ...",
+  "source": "https://www.dsppatech.com/product/da4125-4-125w-4-channels-digital-amplifier"
+ },
+ "DA4250": {
+  "slug": "da4250",
+  "img": "/images/dsppa-catalog/da4250.webp",
+  "desc": "This is a Class D digital amplifier designed for commercial and industrial public address applications. Rack mount design in 1U type and rated power is 4*250W.Both balanced and unbalanced line inputs ...",
+  "source": "https://www.dsppatech.com/product/da4250-4-250w-4-channels-digital-amplifier"
+ },
+ "MP6425": {
+  "slug": "mp6425",
+  "img": "/images/dsppa-catalog/mp6425.webp",
+  "desc": "Online shopping for the best 250w-500w power amplifier from a great selection in DSPPA Audio. Buy cheap power amplifier with dc 24v and priority input from us.",
+  "source": "https://www.dsppatech.com/product/mp6425-250w-500w-power-amplifier-with-dc-24v"
+ },
+ "MP6438": {
+  "slug": "mp6438",
+  "img": "/images/dsppa-catalog/mp6438.webp",
+  "desc": "This amplifier is designed for commercial and industrial public address applications. Rack mount design in 2U type and rated power is 380W.Both balanced and unbalanced line inputs are available for ea...",
+  "source": "https://www.dsppatech.com/product/mp6438--380w-70v-100v-4-power-amplifier"
+ },
+ "MP6450": {
+  "slug": "mp6450",
+  "img": "/images/dsppa-catalog/mp6450.webp",
+  "desc": "This amplifier is designed for commercial and industrial public address applications. Rack mount design in 2U type and rated power is 500W.Both balanced and unbalanced line inputs are available for ea...",
+  "source": "https://www.dsppatech.com/product/mp6450--500w-70v-100v-4-power-amplifier"
+ },
+ "DSP5211L": {
+  "slug": "dsp5211l",
+  "img": "/images/dsppa-catalog/dsp5211l.webp",
+  "desc": "This product is a coaxial two frequency ceiling type speaker,with a wide range of sound diffusion, large output power. Easy installation fear,can reproduce the voice and music. It’s an ideal choice f...",
+  "source": "https://www.dsppatech.com/product/dsp5211l-10w-coaxial-frame-less-ceiling-speaker"
+ },
+ "DSP5012": {
+  "slug": "dsp5012",
+  "img": "/images/dsppa-catalog/dsp5012.webp",
+  "desc": "This product is a coaxial two-frequencyceiling speakers. With wide angle and high output power, it can output good soundeffect. Besides, it’s easy to install. It’s an ideal choice for you .",
+  "source": "https://www.dsppatech.com/product/dsp5012-35w-8-coaxial-frameless-ceiling-speaker"
+ },
+ "DSP3011": {
+  "slug": "dsp3011",
+  "img": "/images/dsppa-catalog/dsp3011.webp",
+  "desc": "The DSP3011L is a 8Ω ceiling speaker , the built-in 3” speaker driver is designed of wide frequency response 120-20,000Hz, the multiple terminals 6W, can be applied to different occasions varied in ...",
+  "source": "https://www.dsppatech.com/product/dsp3011l-mini-frameless-ceiling-speaker-3w"
+ },
+ "DSP3011C": {
+  "slug": "dsp3011c",
+  "img": "/images/dsppa-catalog/dsp3011c.webp",
+  "desc": "DSP3011C is a ceiling speaker with a back cover. With clear and bright sound, it is suitable for public address and background music broadcasting. With IP66 waterproof structure design and simple appe...",
+  "source": "https://www.dsppatech.com/product/dsp3011c-3-inch-frameless-waterproof-ceiling-speakers"
+ },
+ "DSP114": {
+  "slug": "dsp114",
+  "img": "/images/dsppa-catalog/dsp114.webp",
+  "desc": "The WA114 is a ceiling speaker with 70V/100V transformer. It has multiple terminals for different applications. It is made of high-quality engineering plastic and designed with driver sound excellent ...",
+  "source": "https://www.dsppatech.com/product/dsp114-round-type-6-ceiling-speaker"
+ },
+ "DSP662": {
+  "slug": "dsp662",
+  "img": "/images/dsppa-catalog/dsp662.webp",
+  "desc": "Guangzhou DSPPA Audio Co., Ltd. provides the best 1~6W Ceiling Speaker with Fire Dome, which is popular in china now. Buy cheap Ceiling Speaker from us.",
+  "source": "https://www.dsppatech.com/product/dsp662-1-6w-ceiling-speaker-with-fire-dome"
+ },
+ "DSP904": {
+  "slug": "dsp904",
+  "img": "/images/dsppa-catalog/dsp904.webp",
+  "desc": "1.5W-10W Fireproof Ceiling Speaker is well acknowledged in Ceiling Speaker market because of its fine performance. You can buy cheap Ceiling Speaker there.",
+  "source": "https://www.dsppatech.com/product/dsp904-15w-10w-fireproof-ceiling-speaker"
+ },
+ "DSP220": {
+  "slug": "dsp220",
+  "img": "/images/dsppa-catalog/dsp220.webp",
+  "desc": "DSP220 Wall Mount Speaker, focused on sound quality, has treble and bass dual units, with clear sound levels, being round, clear in treble and robust in bass. Besides, it has black and white colors to...",
+  "source": "https://www.dsppatech.com/product/dsp220-wall-mount-speaker"
+ },
+ "DSP7043": {
+  "slug": "dsp7043",
+  "img": "/images/dsppa-catalog/dsp7043.webp",
+  "desc": "The full-range speakers are designed for professional music and speech reproduction in an impressive array of background and foreground audio applications. The classic and robust design suits a variet...",
+  "source": "https://www.dsppatech.com/product/dsp7043-all-weather-2-way-wall-mount-loundspeaker"
+ },
+ "DSP7064": {
+  "slug": "dsp7064",
+  "img": "/images/dsppa-catalog/dsp7064.webp",
+  "desc": "The full-range speakers are designed for professional music and speech reproduction in an impressive array of background and foreground audio applications. The classic and robust design suits a variet...",
+  "source": "https://www.dsppatech.com/product/dsp7064-all-weather-2-way-wall-mount-loundspeakers"
+ },
+ "DSP113": {
+  "slug": "dsp113",
+  "img": "/images/dsppa-catalog/dsp113.webp",
+  "desc": "DSP113 is Wall Mount Speaker which is widely used in such places as schools, gymnasiums, square halls, parks, parking lots, railway stations, airports, villa communities and mall supermarkets, etc., a...",
+  "source": "https://www.dsppatech.com/product/dsp113---wall-mount-speaker"
+ },
+ "DSP112": {
+  "slug": "dsp112",
+  "img": "/images/dsppa-catalog/dsp112.webp",
+  "desc": "This product is a wall-mounted speaker. With several terminals, it can be widely used in hotels, commercial buildings, shopping malls, schools, and entertainment places. The speaker is made of high qu...",
+  "source": "https://www.dsppatech.com/product/dsp112-wall-mount-speaker"
+ },
+ "DSP158": {
+  "slug": "dsp158",
+  "img": "/images/dsppa-catalog/dsp158.webp",
+  "desc": "Search for best waterproof column speaker at DSPPA, a professional column speaker manufacturer. Your good choice for a wonderful outdoor audio effect.",
+  "source": "https://www.dsppatech.com/product/dsp158-outdoor-waterproof-column-speaker"
+ },
+ "DSP258": {
+  "slug": "dsp258",
+  "img": "/images/dsppa-catalog/dsp258.webp",
+  "desc": "Search for best waterproof column speaker at DSPPA, a professional column speaker manufacturer. Your good choice for a wonderful outdoor audio effect.",
+  "source": "https://www.dsppatech.com/product/dsp-258-outdoor-waterproof-column-speaker"
+ },
+ "DSP358": {
+  "slug": "dsp358",
+  "img": "/images/dsppa-catalog/dsp358.webp",
+  "desc": "Find bestoutdoor waterproof column speaker for perfect audio effect! Don't miss the chance to get the best waterproof column speaker right now!",
+  "source": "https://www.dsppatech.com/product/dsp-358-outdoor-waterproof-column-speaker"
+ },
+ "DSP458": {
+  "slug": "dsp458",
+  "img": "/images/dsppa-catalog/dsp458.webp",
+  "desc": "This series of speakers are weatherproof outdoor column speakers with a 70v/100v transformer built in. The 70v/100v transmission is realized in a high-voltage, low-current mode, which makes longer dis...",
+  "source": "https://www.dsppatech.com/product/dsp458-outdoor-waterproof-column-speaker"
+ },
+ "Rock Speaker": {
+  "slug": "rock-speaker",
+  "img": "/images/dsppa-catalog/rock-speaker.webp",
+  "desc": "As a famous landscape speaker manufacturer in China,dsppa offers you best rock speaker in good price. Please feel free to contact us!",
+  "source": "https://www.dsppatech.com/product/dsp650landscape-waterproof-rock-speaker"
+ },
+ "DSP161HD": {
+  "slug": "dsp161hd",
+  "img": "/images/dsppa-catalog/dsp161hd.webp",
+  "desc": "The DSP161HD is a waterproof horn speaker with a 70v/100v transformer built in. The 70v/100v transmission is realized in a high-voltage, low-current mode, which makes longer distance transmission and ...",
+  "source": "https://www.dsppatech.com/product/dsp161hd-high-fidelity-horn-speaker"
+ },
+ "DSP170": {
+  "slug": "dsp170",
+  "img": "/images/dsppa-catalog/dsp170.webp",
+  "desc": "This product is widely used in schools, gymnasiums, square venues, parks, parking lots, railway stations, airports, villas, shopping malls and other places, and is the ideal choice for public broadcas...",
+  "source": "https://www.dsppatech.com/product/dsp170a-all-weather-powered-horn-speaker"
+ },
+ "DSP1130": {
+  "slug": "dsp1130",
+  "img": "/images/dsppa-catalog/dsp1130.webp",
+  "desc": "The DSP1130 water-proof horn speaker, with ABS horn and stainless steel bracket special designed for extreme weather conditions and outdoor installations. This speaker is solid and durable, long lifet...",
+  "source": "https://www.dsppatech.com/product/dsp1130-30w-weatherproof-horn-speaker-with-power-tap"
+ },
+ "DSP1650": {
+  "slug": "dsp1650",
+  "img": "/images/dsppa-catalog/dsp1650.webp",
+  "desc": "The DSP1650 waterproof horn speaker with ABS horn and stainless steel stand is designed for extreme weather conditions and outdoor installations. This speaker is rugged and has a long service life, hi...",
+  "source": "https://www.dsppatech.com/product/dsp1650-50w-weatherproof-horn-speaker-with-power-tap"
+ },
+ "DSP5153": {
+  "slug": "dsp5153",
+  "img": "/images/dsppa-catalog/dsp5153.webp",
+  "desc": "This series of products is a multi-functional loudspeaker, available in wall-mounted, pendant, and floor types. This series of products can provide high-quality voice and music reproduction functions,...",
+  "source": "https://www.dsppatech.com/product/dsp5153-outdoor-wall-mount-speakers"
+ },
+ "DSP207II": {
+  "slug": "dsp207ii",
+  "img": "/images/dsppa-catalog/dsp207ii.webp",
+  "desc": "This product is a unidirectional speaker which provide high-quality voice andmusic reproduction function. With long transmission distance, it is an idealchoice for tunnels, corridor and shopping galle...",
+  "source": "https://www.dsppatech.com/product/pa-speakers/array-speaker-pentant-speaker/dsp207ii-sound-projector"
+ },
+ "DSP40I": {
+  "slug": "dsp40i",
+  "img": "/images/dsppa-catalog/dsp40i.webp",
+  "desc": "Visit Guangzhou DSPPA Audio to get cheap 40w invisible speaker. Buy best invisible speaker for sale from us, a Chinese invisible speaker manufacturer.",
+  "source": "https://www.dsppatech.com/product/dsp40i-40w-invisible-speaker"
+ },
+ "DSP40IL": {
+  "slug": "dsp40il",
+  "img": "/images/dsppa-catalog/dsp40il.webp",
+  "desc": "Visit Guangzhou DSPPA Audio to get cheap 40w invisible speaker. Buy best invisible speaker for sale from us, a Chinese invisible speaker manufacturer.",
+  "source": "https://www.dsppatech.com/product/dsp40il-40w-invisible-wall-mounted-speaker"
+ },
+ "DSP1501": {
+  "slug": "dsp1501",
+  "img": "/images/dsppa-catalog/dsp1501.webp",
+  "desc": "Shop our inventory of cheap column speaker online. DSPPA is your trusted supplier for the best array column speaker and accessories.",
+  "source": "https://www.dsppatech.com/product/dsp1501-phased-array-column-speaker"
+ },
+ "DSP1502": {
+  "slug": "dsp1502",
+  "img": "/images/dsppa-catalog/dsp1502.webp",
+  "desc": "Good quality array column speaker for sale! As a experienced cpolumn speaker manufacturer, DSPPA always insist providing cheap products in good quality.",
+  "source": "https://www.dsppatech.com/product/dsp1502-150w-phased-array-column-speaker"
+ },
+ "DSP602BT": {
+  "slug": "dsp602bt",
+  "img": "/images/dsppa-catalog/dsp602bt.webp",
+  "desc": "DSP602BT  is a  two-way Bluetooth ceiling speaker, with wide angle of proliferation, big output power, easy to install, and it can super reproduce voice and music. It is ideal for places where ...",
+  "source": "https://www.dsppatech.com/product/dsp602bt-bluetooth-ceiling-speaker"
+ },
+ "DSP5020": {
+  "slug": "dsp5020",
+  "img": "/images/dsppa-catalog/dsp5020.webp",
+  "desc": "DSP5020 Waterproof Wall Mount Speaker is developed to redefine a new design trend for wall mount speakers market where Beauty, Durability, Performance and User Friendliness come as ONE CORE CONCEPT.Th...",
+  "source": "https://www.dsppatech.com/product/dsp5020-20w-ip66-waterproof-outdoor-wall-mount-speaker"
+ },
+ "DSP5040": {
+  "slug": "dsp5040",
+  "img": "/images/dsppa-catalog/dsp5040.webp",
+  "desc": "DSP5020/DSP5040 Waterproof Wall Mount Speaker is developed to redefine a new design trend for wall mount speakers market where Beauty, Durability, Performance and User Friendliness come as ...",
+  "source": "https://www.dsppatech.com/product/dsp5040-ip66-waterproof-outdoor-wall-mount-speaker"
+ },
+ "DSP5050": {
+  "slug": "dsp5050",
+  "img": "/images/dsppa-catalog/dsp5050.webp",
+  "desc": "DSP5050 Waterproof Wall Mount Speaker is developed to redefine a new design trend for wall mount speakers market where Beauty, Durability, Performance and User Friendliness come as ONE CORE CONCEPT.Th...",
+  "source": "https://www.dsppatech.com/product/dsp5050-50w-ip66-waterproof-outdoor-wall-mount-speaker"
+ },
+ "DSP402": {
+  "slug": "dsp402",
+  "img": "/images/dsppa-catalog/dsp402.webp",
+  "desc": "DSP402 can be used in public address system, with its fast installation wall mounting bracket and angle adjustable.",
+  "source": "https://www.dsppatech.com/product/dsp402-20w-wall-mount-speaker"
+ },
+ "DSP3008H": {
+  "slug": "dsp3008h",
+  "img": "/images/dsppa-catalog/dsp3008h.webp",
+  "desc": "The DSP3008H is a compact coaxial drive, 2-way, highly weather-resistant, full-range PA speaker system ideal for voice and music filling in a variety of applications, including sports facilities, race...",
+  "source": "https://www.dsppatech.com/product/dsp3008h-10-inch-compact-2-way-weatherproof-commecial-loudspeaker"
+ },
+ "DSP3010H": {
+  "slug": "dsp3010h",
+  "img": "/images/dsppa-catalog/dsp3010h.webp",
+  "desc": "The DSP3010H is a compact, coaxial-driver, 2-way, highly weather-resistant full-range PA loudspeaker system which is ideal for speech and music-fill in a wide variety of applications, including sports...",
+  "source": "https://www.dsppatech.com/product/dsp3010h-all-weather-compact-2-way-coaxial-loudspeaker-300w"
+ },
+ "DSP6120": {
+  "slug": "dsp6120",
+  "img": "/images/dsppa-catalog/dsp6120.webp",
+  "desc": "DSP6120 is a 120W Constant Resistance Professional Conference Speaker that made of aluminum alloy housing, with extremely textured appearance, which can provide professional-level sound performance an...",
+  "source": "https://www.dsppatech.com/product/dsp6120-120w-professional-speakers"
+ },
+ "DMA20": {
+  "slug": "dma20",
+  "img": "/images/dsppa-catalog/dma20.webp",
+  "desc": "This product is a remote paging station used in conjunction with the DMA series six-zone amplifier. Adopting touch-key technology, glass panel craft, anti-fingerprint coating and high-gloss bevel cutt...",
+  "source": "https://www.dsppatech.com/product/dma20-remote-paging-station"
+ },
+ "CM10": {
+  "slug": "cm10",
+  "img": "/images/dsppa-catalog/cm10.webp",
+  "desc": "Get the best public address system for sale from DSPPA to  meet a variety of addressing needs. Buy the best paging microphone today.",
+  "source": "https://www.dsppatech.com/product/cm10-public-address-paging-microphone"
+ },
+ "CM62": {
+  "slug": "cm62",
+  "img": "/images/dsppa-catalog/cm62.webp",
+  "desc": "This is a newly developed metal-based conference microphone with multiple national patents.This microphone not only has original appearance and innovitive structure, but also with excellent electric-...",
+  "source": "https://www.dsppatech.com/product/cm62-condenser-microphone"
+ },
+ "CM30": {
+  "slug": "cm30",
+  "img": "/images/dsppa-catalog/cm30.webp",
+  "desc": "CM30 is specially designed and made for various kinds of meeting, lectures, broadcasting, recording occasion, etc.",
+  "source": "https://www.dsppatech.com/product/cm30-dynamic-microphone"
+ },
+ "DM30": {
+  "slug": "dm30",
+  "img": "/images/dsppa-catalog/dm30.webp",
+  "desc": "DM30 is specially designed and made for various kinds of meeting, lectures, broadcasting, recording occasion, etc. It adopts high quality dynamic cartridge to make sure that the microphone has high se...",
+  "source": "https://www.dsppatech.com/product/dm30-professional-dynamic-microphone"
+ },
+ "PAVA4600": {
+  "slug": "pava4600",
+  "img": "/images/dsppa-catalog/pava4600.webp",
+  "desc": "PAVA4600 is an integrated voice evacuation system host. With built-in 600W digital amplifier, not only can it send out warning and alarm, but also support handhold microphone to make voice evacuation....",
+  "source": "https://www.dsppatech.com/product/pava4600-4-zones-integrated-voice-evacuation-syste"
+ },
+ "MAG6806": {
+  "slug": "mag6806",
+  "img": "/images/dsppa-catalog/mag6806.webp",
+  "desc": "Want to shop for best network amplifier? As china's well-known manufacturer, DSPPA provides cheap network amplifier for sale in good quality.",
+  "source": "https://www.dsppatech.com/product/mag6806-network-amplifier"
  }
 }
