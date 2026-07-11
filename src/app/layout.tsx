@@ -36,13 +36,13 @@ export const metadata: Metadata = {
     siteName: SITE.name,
     title: DEFAULT_SEO.defaultTitle,
     description: DEFAULT_SEO.description,
-    images: [{ url: '/og-image.svg', width: 1200, height: 630, alt: 'AudioVisual Nepal' }],
+    images: [{ url: '/images/heroes/corporate-hero.webp', width: 1376, height: 768, alt: 'AudioVisual Nepal — professional AV solutions' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: DEFAULT_SEO.defaultTitle,
     description: DEFAULT_SEO.description,
-    images: ['/og-image.svg'],
+    images: ['/images/heroes/corporate-hero.webp'],
   },
   robots: {
     index: true,

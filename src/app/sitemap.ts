@@ -3,6 +3,12 @@ import { SITE, PRODUCT_CATEGORIES, SOLUTIONS_NAV } from '@/lib/constants'
 import { ALL_PRODUCTS } from '@/data/products'
 import { CASE_STUDIES } from '@/data/caseStudies'
 import { STATIC_ARTICLES } from '@/data/staticArticles'
+import infobitCat from '@/data/infobit-catalog.json'
+import dsppaCat from '@/data/dsppa-catalog.json'
+import tenveoCat from '@/data/tenveo-catalog.json'
+import lamproCat from '@/data/lampro-catalog.json'
+
+const liteSlug = (x: string) => x.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = SITE.url
@@ -61,5 +67,22 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url: `${base}/blog/${a.slug}`, lastModified: now, changeFrequency: 'monthly' as const, priority: 0.8,
   }))
 
-  return [...staticPages, ...brandPages, ...solutionPages, ...categoryPages, ...productPages, ...caseStudyPages, ...articlePages]
+  // catalog-lite model pages — high-intent model-number searches
+  const fullSlugs = new Set(ALL_PRODUCTS.map((p) => p.name.replace(/^\S+\s+/, '').toLowerCase()))
+  const litePages: MetadataRoute.Sitemap = []
+  const cats: Array<[string, typeof infobitCat]> = [['infobit', infobitCat], ['dsppa', dsppaCat], ['tenveo', tenveoCat], ['lampro', lamproCat]]
+  const seen = new Set<string>()
+  for (const [b, cat] of cats)
+    for (const c of cat.categories)
+      for (const se of c.series)
+        for (const g of se.groups)
+          for (const m of g.models) {
+            if (fullSlugs.has(m.toLowerCase())) continue
+            const sl = `${b}/${liteSlug(m)}`
+            if (seen.has(sl)) continue
+            seen.add(sl)
+            litePages.push({ url: `${base}/brands/${b}/p/${liteSlug(m)}`, lastModified: now, changeFrequency: 'monthly' as const, priority: 0.6 })
+          }
+
+  return [...staticPages, ...brandPages, ...solutionPages, ...categoryPages, ...productPages, ...caseStudyPages, ...articlePages, ...litePages]
 }
