@@ -3,1014 +3,2022 @@
   "slug": "ishare-x100",
   "img": "/images/infobit-catalog/ishare-x100.webp",
   "desc": "",
-  "source": "https://www.infobitav.com/ishare-x100/"
+  "source": "https://www.infobitav.com/ishare-x100/",
+  "gallery": [
+   "/images/infobit-catalog/ishare-x100-g2.webp",
+   "/images/infobit-catalog/ishare-x100-g3.webp",
+   "/images/infobit-catalog/ishare-x100-g4.webp",
+   "/images/infobit-catalog/ishare-x100-g5.webp"
+  ]
  },
  "iShare X200": {
   "slug": "ishare-x200",
   "img": "/images/infobit-catalog/ishare-x200.webp",
   "desc": "",
-  "source": "https://www.infobitav.com/ishare-x200/"
+  "source": "https://www.infobitav.com/ishare-x200/",
+  "gallery": [
+   "/images/infobit-catalog/ishare-x200-g2.webp",
+   "/images/infobit-catalog/ishare-x200-g3.webp",
+   "/images/infobit-catalog/ishare-x200-g4.webp",
+   "/images/infobit-catalog/ishare-x200-g5.webp"
+  ]
  },
  "iShare X400": {
   "slug": "ishare-x400",
   "img": "/images/infobit-catalog/ishare-x400.webp",
   "desc": "BYOM (Bring Your Own Meeting), compatible with almost all USB cameras and USB conferencing audio solutions\r\n(Bring Your Own Device),dongles, apps for Windows, macOS, Android, or via AirPlay, Miracast, and Chromecast.\r\nUp to 4 video on display\r\nDual network ports for both company staff and guests.",
-  "source": "https://www.infobitav.com/ishare-x400/"
+  "source": "https://www.infobitav.com/ishare-x400/",
+  "gallery": [
+   "/images/infobit-catalog/ishare-x400-g2.webp",
+   "/images/infobit-catalog/ishare-x400-g3.webp",
+   "/images/infobit-catalog/ishare-x400-g4.webp",
+   "/images/infobit-catalog/ishare-x400-g5.webp"
+  ]
  },
  "iShare X400 Pro": {
   "slug": "ishare-x400-pro",
   "img": "/images/infobit-catalog/ishare-x400-pro.webp",
   "desc": "iShare X400 Pro, Dual Screen Wireless BYOM Switcher, with local HDMI input and ROOM PC host, HD or 4K wireless BYOD, BYOM, supports MTR, CEC, digital signage.\r\n",
-  "source": "https://www.infobitav.com/ishare-x400-pro/"
+  "source": "https://www.infobitav.com/ishare-x400-pro/",
+  "gallery": [
+   "/images/infobit-catalog/ishare-x400-pro-g2.webp",
+   "/images/infobit-catalog/ishare-x400-pro-g3.webp",
+   "/images/infobit-catalog/ishare-x400-pro-g4.webp",
+   "/images/infobit-catalog/ishare-x400-pro-g5.webp"
+  ]
  },
  "iWall 104C": {
   "slug": "iwall-104c",
   "img": "/images/infobit-catalog/iwall-104c.webp",
   "desc": "",
-  "source": "https://www.infobitav.com/iwall-104c/"
+  "source": "https://www.infobitav.com/iwall-104c/",
+  "gallery": [
+   "/images/infobit-catalog/iwall-104c-g2.webp",
+   "/images/infobit-catalog/iwall-104c-g3.webp",
+   "/images/infobit-catalog/iwall-104c-g4.webp",
+   "/images/infobit-catalog/iwall-104c-g5.webp"
+  ]
  },
  "iWall 104P": {
   "slug": "iwall-104p",
   "img": "/images/infobit-catalog/iwall-104p.webp",
   "desc": "",
-  "source": "https://www.infobitav.com/iwall-104p/"
+  "source": "https://www.infobitav.com/iwall-104p/",
+  "gallery": [
+   "/images/infobit-catalog/iwall-104p-g2.webp",
+   "/images/infobit-catalog/iwall-104p-g3.webp",
+   "/images/infobit-catalog/iwall-104p-g4.webp",
+   "/images/infobit-catalog/iwall-104p-g5.webp"
+  ]
  },
  "iWall 8K106": {
   "slug": "iwall-8k106",
   "img": "/images/infobit-catalog/iwall-8k106.webp",
   "desc": "HDMI 8K 1x6 Video Wall Controller",
-  "source": "https://www.infobitav.com/iwall-8k106/"
+  "source": "https://www.infobitav.com/iwall-8k106/",
+  "gallery": [
+   "/images/infobit-catalog/iwall-8k106-g2.webp",
+   "/images/infobit-catalog/iwall-8k106-g3.webp",
+   "/images/infobit-catalog/iwall-8k106-g4.webp",
+   "/images/infobit-catalog/iwall-8k106-g5.webp"
+  ]
  },
  "iWall 109": {
   "slug": "iwall-109",
   "img": "/images/infobit-catalog/iwall-109.webp",
   "desc": "Support 1 HDMI input. Support 9 HDMI outputs. Support multiple video wall modes, easy to operate, plug and play. Support 8/10/12 bit deep color. Support IR control",
-  "source": "https://www.infobitav.com/iwall-109/"
+  "source": "https://www.infobitav.com/iwall-109/",
+  "gallery": [
+   "/images/infobit-catalog/iwall-109-g2.webp",
+   "/images/infobit-catalog/iwall-109-g3.webp",
+   "/images/infobit-catalog/iwall-109-g4.webp",
+   "/images/infobit-catalog/iwall-109-g5.webp"
+  ]
  },
  "iWall 204": {
   "slug": "iwall-204",
   "img": "/images/infobit-catalog/iwall-204.webp",
   "desc": "",
-  "source": "https://www.infobitav.com/iwall-204/"
+  "source": "https://www.infobitav.com/iwall-204/",
+  "gallery": [
+   "/images/infobit-catalog/iwall-204-g2.webp",
+   "/images/infobit-catalog/iwall-204-g3.webp",
+   "/images/infobit-catalog/iwall-204-g4.webp",
+   "/images/infobit-catalog/iwall-204-g5.webp"
+  ]
  },
  "iMatrix C604": {
   "slug": "imatrix-c604",
   "img": "/images/infobit-catalog/imatrix-c604.webp",
   "desc": "HDMI and USB C 6x4 Seamless Matrix Switcher with Dante and DSP, 4K matrix with USB Host and USB devices",
-  "source": "https://www.infobitav.com/imatrix-c604/"
+  "source": "https://www.infobitav.com/imatrix-c604/",
+  "gallery": [
+   "/images/infobit-catalog/imatrix-c604-g2.webp",
+   "/images/infobit-catalog/imatrix-c604-g3.webp",
+   "/images/infobit-catalog/imatrix-c604-g4.webp",
+   "/images/infobit-catalog/imatrix-c604-g5.webp"
+  ]
  },
  "iMatrix H44H150": {
   "slug": "imatrix-h44h150",
   "img": "/images/infobit-catalog/imatrix-h44h150.webp",
   "desc": "",
-  "source": "https://www.infobitav.com/imatrix-h44h150/"
+  "source": "https://www.infobitav.com/imatrix-h44h150/",
+  "gallery": [
+   "/images/infobit-catalog/imatrix-h44h150-g2.webp",
+   "/images/infobit-catalog/imatrix-h44h150-g3.webp",
+   "/images/infobit-catalog/imatrix-h44h150-g4.webp",
+   "/images/infobit-catalog/imatrix-h44h150-g5.webp"
+  ]
  },
  "iMatrix H88H150": {
   "slug": "imatrix-h88h150",
   "img": "/images/infobit-catalog/imatrix-h88h150.webp",
   "desc": "",
-  "source": "https://www.infobitav.com/imatrix-h88h150/"
+  "source": "https://www.infobitav.com/imatrix-h88h150/",
+  "gallery": [
+   "/images/infobit-catalog/imatrix-h88h150-g2.webp",
+   "/images/infobit-catalog/imatrix-h88h150-g3.webp",
+   "/images/infobit-catalog/imatrix-h88h150-g4.webp",
+   "/images/infobit-catalog/imatrix-h88h150-g5.webp"
+  ]
  },
  "iMatrix H44HW": {
   "slug": "imatrix-h44hw",
   "img": "/images/infobit-catalog/imatrix-h44hw.webp",
   "desc": "",
-  "source": "https://www.infobitav.com/imatrix-h44hw/"
+  "source": "https://www.infobitav.com/imatrix-h44hw/",
+  "gallery": [
+   "/images/infobit-catalog/imatrix-h44hw-g2.webp",
+   "/images/infobit-catalog/imatrix-h44hw-g3.webp",
+   "/images/infobit-catalog/imatrix-h44hw-g4.webp",
+   "/images/infobit-catalog/imatrix-h44hw-g5.webp"
+  ]
  },
  "iMatrix H44VAW": {
   "slug": "imatrix-h44vaw",
   "img": "/images/infobit-catalog/imatrix-h44vaw.webp",
   "desc": "",
-  "source": "https://www.infobitav.com/imatrix-h44vaw/"
+  "source": "https://www.infobitav.com/imatrix-h44vaw/",
+  "gallery": [
+   "/images/infobit-catalog/imatrix-h44vaw-g2.webp",
+   "/images/infobit-catalog/imatrix-h44vaw-g3.webp",
+   "/images/infobit-catalog/imatrix-h44vaw-g4.webp",
+   "/images/infobit-catalog/imatrix-h44vaw-g5.webp"
+  ]
  },
  "iMatrix H44HAW": {
   "slug": "imatrix-h44haw",
   "img": "/images/infobit-catalog/imatrix-h44haw.webp",
   "desc": "",
-  "source": "https://www.infobitav.com/imatrix-h44haw/"
+  "source": "https://www.infobitav.com/imatrix-h44haw/",
+  "gallery": [
+   "/images/infobit-catalog/imatrix-h44haw-g2.webp",
+   "/images/infobit-catalog/imatrix-h44haw-g3.webp",
+   "/images/infobit-catalog/imatrix-h44haw-g4.webp",
+   "/images/infobit-catalog/imatrix-h44haw-g5.webp"
+  ]
  },
  "iMatrix H88HAW": {
   "slug": "imatrix-h88haw",
   "img": "/images/infobit-catalog/imatrix-h88haw.webp",
   "desc": "",
-  "source": "https://www.infobitav.com/imatrix-h88haw/"
+  "source": "https://www.infobitav.com/imatrix-h88haw/",
+  "gallery": [
+   "/images/infobit-catalog/imatrix-h88haw-g2.webp",
+   "/images/infobit-catalog/imatrix-h88haw-g3.webp",
+   "/images/infobit-catalog/imatrix-h88haw-g4.webp",
+   "/images/infobit-catalog/imatrix-h88haw-g5.webp"
+  ]
  },
  "iMatrix HU44": {
   "slug": "imatrix-hu44",
   "img": "/images/infobit-catalog/imatrix-hu44.webp",
   "desc": "4K60 HDMI & USB 4x4 Matrix switcher and 8x8 audio matrix",
-  "source": "https://www.infobitav.com/imatrix-hu44/"
+  "source": "https://www.infobitav.com/imatrix-hu44/",
+  "gallery": [
+   "/images/infobit-catalog/imatrix-hu44-g2.webp",
+   "/images/infobit-catalog/imatrix-hu44-g3.webp",
+   "/images/infobit-catalog/imatrix-hu44-g4.webp",
+   "/images/infobit-catalog/imatrix-hu44-g5.webp"
+  ]
  },
  "iMatrix UB44": {
   "slug": "imatrix-ub44",
   "img": "/images/infobit-catalog/imatrix-ub44.webp",
   "desc": "",
-  "source": "https://www.infobitav.com/imatrix-ub44/"
+  "source": "https://www.infobitav.com/imatrix-ub44/",
+  "gallery": [
+   "/images/infobit-catalog/imatrix-ub44-g2.webp",
+   "/images/infobit-catalog/imatrix-ub44-g3.webp",
+   "/images/infobit-catalog/imatrix-ub44-g4.webp",
+   "/images/infobit-catalog/imatrix-ub44-g5.webp"
+  ]
  },
  "iMatrix UB44-V2": {
   "slug": "imatrix-ub44-v2",
   "img": "/images/infobit-catalog/imatrix-ub44-v2.webp",
   "desc": "USB 3.2 Gen1 4x4 Matrix w/ IP control",
-  "source": "https://www.infobitav.com/imatrix-ub44-v2/"
+  "source": "https://www.infobitav.com/imatrix-ub44-v2/",
+  "gallery": [
+   "/images/infobit-catalog/imatrix-ub44-v2-g2.webp",
+   "/images/infobit-catalog/imatrix-ub44-v2-g3.webp",
+   "/images/infobit-catalog/imatrix-ub44-v2-g4.webp",
+   "/images/infobit-catalog/imatrix-ub44-v2-g5.webp"
+  ]
  },
  "iControl J20": {
   "slug": "icontrol-j20",
   "img": "/images/infobit-catalog/icontrol-j20.webp",
   "desc": "IP PTZ Camera Controller with Screen",
-  "source": "https://www.infobitav.com/icontrol-j20/"
+  "source": "https://www.infobitav.com/icontrol-j20/",
+  "gallery": [
+   "/images/infobit-catalog/icontrol-j20-g2.webp",
+   "/images/infobit-catalog/icontrol-j20-g3.webp",
+   "/images/infobit-catalog/icontrol-j20-g4.webp",
+   "/images/infobit-catalog/icontrol-j20-g5.webp"
+  ]
  },
  "iControl A08": {
   "slug": "icontrol-a08",
   "img": "/images/infobit-catalog/icontrol-a08.webp",
   "desc": "",
-  "source": "https://www.infobitav.com/icontrol-a08/"
+  "source": "https://www.infobitav.com/icontrol-a08/",
+  "gallery": [
+   "/images/infobit-catalog/icontrol-a08-g2.webp",
+   "/images/infobit-catalog/icontrol-a08-g3.webp",
+   "/images/infobit-catalog/icontrol-a08-g4.webp",
+   "/images/infobit-catalog/icontrol-a08-g5.webp"
+  ]
  },
  "iSwitch 265T": {
   "slug": "iswitch-265t",
   "img": "/images/infobit-catalog/iswitch-265t.webp",
   "desc": "",
-  "source": "https://www.infobitav.com/iswitch-265t/"
+  "source": "https://www.infobitav.com/iswitch-265t/",
+  "gallery": [
+   "/images/infobit-catalog/iswitch-265t-g2.webp",
+   "/images/infobit-catalog/iswitch-265t-g3.webp",
+   "/images/infobit-catalog/iswitch-265t-g4.webp",
+   "/images/infobit-catalog/iswitch-265t-g5.webp"
+  ]
  },
  "iSwitch 265TR": {
   "slug": "iswitch-265tr",
   "img": "/images/infobit-catalog/iswitch-265tr.webp",
   "desc": "",
-  "source": "https://www.infobitav.com/iswitch-265tr/"
+  "source": "https://www.infobitav.com/iswitch-265tr/",
+  "gallery": [
+   "/images/infobit-catalog/iswitch-265tr-g2.webp",
+   "/images/infobit-catalog/iswitch-265tr-g3.webp",
+   "/images/infobit-catalog/iswitch-265tr-g4.webp",
+   "/images/infobit-catalog/iswitch-265tr-g5.webp"
+  ]
  },
  "iSwitch 2000D-WPT": {
   "slug": "iswitch-2000d-wpt",
   "img": "/images/infobit-catalog/iswitch-2000d-wpt.webp",
   "desc": "4K60 JPEG 2000 AV over IP Wallplate Encoder, with Dante",
-  "source": "https://www.infobitav.com/iswitch-2000d-wpt/"
+  "source": "https://www.infobitav.com/iswitch-2000d-wpt/",
+  "gallery": [
+   "/images/infobit-catalog/iswitch-2000d-wpt-g2.webp",
+   "/images/infobit-catalog/iswitch-2000d-wpt-g3.webp",
+   "/images/infobit-catalog/iswitch-2000d-wpt-g4.webp",
+   "/images/infobit-catalog/iswitch-2000d-wpt-g5.webp"
+  ]
  },
  "iSwitch S301": {
   "slug": "iswitch-s301",
   "img": "/images/infobit-catalog/iswitch-s301.webp",
   "desc": "",
-  "source": "https://www.infobitav.com/iswitch-s301/"
+  "source": "https://www.infobitav.com/iswitch-s301/",
+  "gallery": [
+   "/images/infobit-catalog/iswitch-s301-g2.webp",
+   "/images/infobit-catalog/iswitch-s301-g3.webp",
+   "/images/infobit-catalog/iswitch-s301-g4.webp",
+   "/images/infobit-catalog/iswitch-s301-g5.webp"
+  ]
  },
  "iSwitch S501": {
   "slug": "iswitch-s501",
   "img": "/images/infobit-catalog/iswitch-s501.webp",
   "desc": "",
-  "source": "https://www.infobitav.com/iswitch-s501/"
+  "source": "https://www.infobitav.com/iswitch-s501/",
+  "gallery": [
+   "/images/infobit-catalog/iswitch-s501-g2.webp",
+   "/images/infobit-catalog/iswitch-s501-g3.webp",
+   "/images/infobit-catalog/iswitch-s501-g4.webp",
+   "/images/infobit-catalog/iswitch-s501-g5.webp"
+  ]
  },
  "iSwitch 201K": {
   "slug": "iswitch-201k",
   "img": "/images/infobit-catalog/iswitch-201k.webp",
   "desc": "",
-  "source": "https://www.infobitav.com/iswitch-201k/"
+  "source": "https://www.infobitav.com/iswitch-201k/",
+  "gallery": [
+   "/images/infobit-catalog/iswitch-201k-g2.webp",
+   "/images/infobit-catalog/iswitch-201k-g3.webp",
+   "/images/infobit-catalog/iswitch-201k-g4.webp",
+   "/images/infobit-catalog/iswitch-201k-g5.webp"
+  ]
  },
  "iSwitch 201MV": {
   "slug": "iswitch-201mv",
   "img": "/images/infobit-catalog/iswitch-201mv.webp",
   "desc": "4K60 HDMI multiviwer,Seamless switching,HDMI switcher",
-  "source": "https://www.infobitav.com/iswitch-201mv/"
+  "source": "https://www.infobitav.com/iswitch-201mv/",
+  "gallery": [
+   "/images/infobit-catalog/iswitch-201mv-g2.webp",
+   "/images/infobit-catalog/iswitch-201mv-g3.webp",
+   "/images/infobit-catalog/iswitch-201mv-g4.webp",
+   "/images/infobit-catalog/iswitch-201mv-g5.webp"
+  ]
  },
  "iSwitch 401MV": {
   "slug": "iswitch-401mv",
   "img": "/images/infobit-catalog/iswitch-401mv.webp",
   "desc": "",
-  "source": "https://www.infobitav.com/iswitch-401mv/"
+  "source": "https://www.infobitav.com/iswitch-401mv/",
+  "gallery": [
+   "/images/infobit-catalog/iswitch-401mv-g2.webp",
+   "/images/infobit-catalog/iswitch-401mv-g3.webp",
+   "/images/infobit-catalog/iswitch-401mv-g4.webp",
+   "/images/infobit-catalog/iswitch-401mv-g5.webp"
+  ]
  },
  "iSwitch 402MV": {
   "slug": "iswitch-402mv",
   "img": "/images/infobit-catalog/iswitch-402mv.webp",
   "desc": "4K60 4x2 Multiviewer Seamless UHD Video Matrix Switcher",
-  "source": "https://www.infobitav.com/iswitch-402mv/"
+  "source": "https://www.infobitav.com/iswitch-402mv/",
+  "gallery": [
+   "/images/infobit-catalog/iswitch-402mv-g2.webp",
+   "/images/infobit-catalog/iswitch-402mv-g3.webp",
+   "/images/infobit-catalog/iswitch-402mv-g4.webp",
+   "/images/infobit-catalog/iswitch-402mv-g5.webp"
+  ]
  },
  "iSwitch 402UC": {
   "slug": "iswitch-402uc",
   "img": "/images/infobit-catalog/iswitch-402uc.webp",
   "desc": "4K60 4x2 UC Switcher with Dante",
-  "source": "https://www.infobitav.com/iswitch-402uc/"
+  "source": "https://www.infobitav.com/iswitch-402uc/",
+  "gallery": [
+   "/images/infobit-catalog/iswitch-402uc-g2.webp",
+   "/images/infobit-catalog/iswitch-402uc-g3.webp",
+   "/images/infobit-catalog/iswitch-402uc-g4.webp",
+   "/images/infobit-catalog/iswitch-402uc-g5.webp"
+  ]
  },
  "iSwitch 402UC-L": {
   "slug": "iswitch-402uc-l",
   "img": "/images/infobit-catalog/iswitch-402uc-l.webp",
   "desc": "4x2 Conference Presentation Switcher, UC Switcher, 4x2 Matrix Switcher, BYOD/BYOM Switcher",
-  "source": "https://www.infobitav.com/iswitch-402uc-l/"
+  "source": "https://www.infobitav.com/iswitch-402uc-l/",
+  "gallery": [
+   "/images/infobit-catalog/iswitch-402uc-l-g2.webp",
+   "/images/infobit-catalog/iswitch-402uc-l-g3.webp",
+   "/images/infobit-catalog/iswitch-402uc-l-g4.webp",
+   "/images/infobit-catalog/iswitch-402uc-l-g5.webp"
+  ]
  },
  "iSwitch 501HD": {
   "slug": "iswitch-501hd",
   "img": "/images/infobit-catalog/iswitch-501hd.webp",
   "desc": "",
-  "source": "https://www.infobitav.com/iswitch-501hd/"
+  "source": "https://www.infobitav.com/iswitch-501hd/",
+  "gallery": [
+   "/images/infobit-catalog/iswitch-501hd-g2.webp",
+   "/images/infobit-catalog/iswitch-501hd-g3.webp",
+   "/images/infobit-catalog/iswitch-501hd-g4.webp",
+   "/images/infobit-catalog/iswitch-501hd-g5.webp"
+  ]
  },
  "iSwitch 602": {
   "slug": "iswitch-602",
   "img": "/images/infobit-catalog/iswitch-602.webp",
   "desc": "4K60 6X2 HDMI 2.0 HDBT Matrix Switcher",
-  "source": "https://www.infobitav.com/iswitch-602/"
+  "source": "https://www.infobitav.com/iswitch-602/",
+  "gallery": [
+   "/images/infobit-catalog/iswitch-602-g2.webp",
+   "/images/infobit-catalog/iswitch-602-g3.webp",
+   "/images/infobit-catalog/iswitch-602-g4.webp",
+   "/images/infobit-catalog/iswitch-602-g5.webp"
+  ]
  },
  "iSwitch 1601": {
   "slug": "iswitch-1601",
   "img": "/images/infobit-catalog/iswitch-1601.webp",
   "desc": "",
-  "source": "https://www.infobitav.com/iswitch-1601/"
+  "source": "https://www.infobitav.com/iswitch-1601/",
+  "gallery": [
+   "/images/infobit-catalog/iswitch-1601-g2.webp",
+   "/images/infobit-catalog/iswitch-1601-g3.webp",
+   "/images/infobit-catalog/iswitch-1601-g4.webp",
+   "/images/infobit-catalog/iswitch-1601-g5.webp"
+  ]
  },
  "iSwitch 102": {
   "slug": "iswitch-102",
   "img": "/images/infobit-catalog/iswitch-102.webp",
   "desc": "",
-  "source": "https://www.infobitav.com/iswitch-102/"
+  "source": "https://www.infobitav.com/iswitch-102/",
+  "gallery": [
+   "/images/infobit-catalog/iswitch-102-g2.webp",
+   "/images/infobit-catalog/iswitch-102-g3.webp",
+   "/images/infobit-catalog/iswitch-102-g4.webp",
+   "/images/infobit-catalog/iswitch-102-g5.webp"
+  ]
  },
  "iSwitch 104": {
   "slug": "iswitch-104",
   "img": "/images/infobit-catalog/iswitch-104.webp",
   "desc": "",
-  "source": "https://www.infobitav.com/iswitch-104/"
+  "source": "https://www.infobitav.com/iswitch-104/",
+  "gallery": [
+   "/images/infobit-catalog/iswitch-104-g2.webp",
+   "/images/infobit-catalog/iswitch-104-g3.webp",
+   "/images/infobit-catalog/iswitch-104-g4.webp",
+   "/images/infobit-catalog/iswitch-104-g5.webp"
+  ]
  },
  "iSwitch 108": {
   "slug": "iswitch-108",
   "img": "/images/infobit-catalog/iswitch-108.webp",
   "desc": "",
-  "source": "https://www.infobitav.com/iswitch-108/"
+  "source": "https://www.infobitav.com/iswitch-108/",
+  "gallery": [
+   "/images/infobit-catalog/iswitch-108-g2.webp",
+   "/images/infobit-catalog/iswitch-108-g3.webp",
+   "/images/infobit-catalog/iswitch-108-g4.webp",
+   "/images/infobit-catalog/iswitch-108-g5.webp"
+  ]
  },
  "iSwitch 1016": {
   "slug": "iswitch-1016",
   "img": "/images/infobit-catalog/iswitch-1016.webp",
   "desc": "",
-  "source": "https://www.infobitav.com/iswitch-1016/"
+  "source": "https://www.infobitav.com/iswitch-1016/",
+  "gallery": [
+   "/images/infobit-catalog/iswitch-1016-g2.webp",
+   "/images/infobit-catalog/iswitch-1016-g3.webp",
+   "/images/infobit-catalog/iswitch-1016-g4.webp",
+   "/images/infobit-catalog/iswitch-1016-g5.webp"
+  ]
  },
  "iSwitch 8K102": {
   "slug": "iswitch-8k102",
   "img": "/images/infobit-catalog/iswitch-8k102.webp",
   "desc": "",
-  "source": "https://www.infobitav.com/iswitch-8k102/"
+  "source": "https://www.infobitav.com/iswitch-8k102/",
+  "gallery": [
+   "/images/infobit-catalog/iswitch-8k102-g2.webp",
+   "/images/infobit-catalog/iswitch-8k102-g3.webp",
+   "/images/infobit-catalog/iswitch-8k102-g4.webp",
+   "/images/infobit-catalog/iswitch-8k102-g5.webp"
+  ]
  },
  "iSwitch 8K104": {
   "slug": "iswitch-8k104",
   "img": "/images/infobit-catalog/iswitch-8k104.webp",
   "desc": "",
-  "source": "https://www.infobitav.com/iswitch-8k104/"
+  "source": "https://www.infobitav.com/iswitch-8k104/",
+  "gallery": [
+   "/images/infobit-catalog/iswitch-8k104-g2.webp",
+   "/images/infobit-catalog/iswitch-8k104-g3.webp",
+   "/images/infobit-catalog/iswitch-8k104-g4.webp",
+   "/images/infobit-catalog/iswitch-8k104-g5.webp"
+  ]
  },
  "iSwitch 8K108": {
   "slug": "iswitch-8k108",
   "img": "/images/infobit-catalog/iswitch-8k108.webp",
   "desc": "",
-  "source": "https://www.infobitav.com/iswitch-8k108/"
+  "source": "https://www.infobitav.com/iswitch-8k108/",
+  "gallery": [
+   "/images/infobit-catalog/iswitch-8k108-g2.webp",
+   "/images/infobit-catalog/iswitch-8k108-g3.webp",
+   "/images/infobit-catalog/iswitch-8k108-g4.webp",
+   "/images/infobit-catalog/iswitch-8k108-g5.webp"
+  ]
  },
  "iSwitch 104H150": {
   "slug": "iswitch-104h150",
   "img": "/images/infobit-catalog/iswitch-104h150.webp",
   "desc": "",
-  "source": "https://www.infobitav.com/iswitch-104h150/"
+  "source": "https://www.infobitav.com/iswitch-104h150/",
+  "gallery": [
+   "/images/infobit-catalog/iswitch-104h150-g2.webp",
+   "/images/infobit-catalog/iswitch-104h150-g3.webp",
+   "/images/infobit-catalog/iswitch-104h150-g4.webp",
+   "/images/infobit-catalog/iswitch-104h150-g5.webp"
+  ]
  },
  "iSwitch 108H150": {
   "slug": "iswitch-108h150",
   "img": "/images/infobit-catalog/iswitch-108h150.webp",
   "desc": "",
-  "source": "https://www.infobitav.com/iswitch-108h150/"
+  "source": "https://www.infobitav.com/iswitch-108h150/",
+  "gallery": [
+   "/images/infobit-catalog/iswitch-108h150-g2.webp",
+   "/images/infobit-catalog/iswitch-108h150-g3.webp",
+   "/images/infobit-catalog/iswitch-108h150-g4.webp",
+   "/images/infobit-catalog/iswitch-108h150-g5.webp"
+  ]
  },
  "iSwitch 265-Live": {
   "slug": "iswitch-265-live",
   "img": "/images/infobit-catalog/iswitch-265-live.webp",
   "desc": " RTSP/RTMP/RTMPS stream",
-  "source": "https://www.infobitav.com/iswitch-265-live/"
+  "source": "https://www.infobitav.com/iswitch-265-live/",
+  "gallery": [
+   "/images/infobit-catalog/iswitch-265-live-g2.webp",
+   "/images/infobit-catalog/iswitch-265-live-g3.webp",
+   "/images/infobit-catalog/iswitch-265-live-g4.webp",
+   "/images/infobit-catalog/iswitch-265-live-g5.webp"
+  ]
  },
  "iSound FBS": {
   "slug": "isound-fbs",
   "img": "/images/infobit-catalog/isound-fbs.webp",
   "desc": "",
-  "source": "https://www.infobitav.com/isound-fbs/"
+  "source": "https://www.infobitav.com/isound-fbs/",
+  "gallery": [
+   "/images/infobit-catalog/isound-fbs-g2.webp",
+   "/images/infobit-catalog/isound-fbs-g3.webp",
+   "/images/infobit-catalog/isound-fbs-g4.webp",
+   "/images/infobit-catalog/isound-fbs-g5.webp"
+  ]
  },
  "iSound PA20": {
   "slug": "isound-pa20",
   "img": "/images/infobit-catalog/isound-pa20.webp",
   "desc": "",
-  "source": "https://www.infobitav.com/isound-pa20/"
+  "source": "https://www.infobitav.com/isound-pa20/",
+  "gallery": [
+   "/images/infobit-catalog/isound-pa20-g2.webp",
+   "/images/infobit-catalog/isound-pa20-g3.webp",
+   "/images/infobit-catalog/isound-pa20-g4.webp",
+   "/images/infobit-catalog/isound-pa20-g5.webp"
+  ]
  },
  "iSound PAD150": {
   "slug": "isound-pad150",
   "img": "/images/infobit-catalog/isound-pad150.webp",
   "desc": "150W Power Amplifier, Dante",
-  "source": "https://www.infobitav.com/isound-pad150/"
+  "source": "https://www.infobitav.com/isound-pad150/",
+  "gallery": [
+   "/images/infobit-catalog/isound-pad150-g2.webp",
+   "/images/infobit-catalog/isound-pad150-g3.webp",
+   "/images/infobit-catalog/isound-pad150-g4.webp",
+   "/images/infobit-catalog/isound-pad150-g5.webp"
+  ]
  },
  "iSound 44D": {
   "slug": "isound-44d",
   "img": "/images/infobit-catalog/isound-44d.webp",
   "desc": "4x4 Dante DSP Digital Sound Processor, analog input outputs, USB audio",
-  "source": "https://www.infobitav.com/isound-44d/"
+  "source": "https://www.infobitav.com/isound-44d/",
+  "gallery": [
+   "/images/infobit-catalog/isound-44d-g2.webp",
+   "/images/infobit-catalog/isound-44d-g3.webp",
+   "/images/infobit-catalog/isound-44d-g4.webp",
+   "/images/infobit-catalog/isound-44d-g5.webp"
+  ]
  },
  "iSound 88D": {
   "slug": "isound-88d",
   "img": "/images/infobit-catalog/isound-88d.webp",
   "desc": "8x8 Dante DSP Digital Sound Processor, analog input outputs, USB audio",
-  "source": "https://www.infobitav.com/isound-88d/"
+  "source": "https://www.infobitav.com/isound-88d/",
+  "gallery": [
+   "/images/infobit-catalog/isound-88d-g2.webp",
+   "/images/infobit-catalog/isound-88d-g3.webp",
+   "/images/infobit-catalog/isound-88d-g4.webp",
+   "/images/infobit-catalog/isound-88d-g5.webp"
+  ]
  },
  "iSound 1616D": {
   "slug": "isound-1616d",
   "img": "/images/infobit-catalog/isound-1616d.webp",
   "desc": "16x16 Dante DSP Digital Sound Processor, analog input outputs, USB audio",
-  "source": "https://www.infobitav.com/isound-1616d/"
+  "source": "https://www.infobitav.com/isound-1616d/",
+  "gallery": [
+   "/images/infobit-catalog/isound-1616d-g2.webp",
+   "/images/infobit-catalog/isound-1616d-g3.webp",
+   "/images/infobit-catalog/isound-1616d-g4.webp",
+   "/images/infobit-catalog/isound-1616d-g5.webp"
+  ]
  },
  "iTrans DP-T-22": {
   "slug": "itrans-dp-t-22",
   "img": "/images/infobit-catalog/itrans-dp-t-22.webp",
   "desc": "Analog audio input supports balanced/unbalanced audio input (unbalanced access to ",
-  "source": "https://www.infobitav.com/itrans-dp-t-22/"
+  "source": "https://www.infobitav.com/itrans-dp-t-22/",
+  "gallery": [
+   "/images/infobit-catalog/itrans-dp-t-22-g2.webp",
+   "/images/infobit-catalog/itrans-dp-t-22-g3.webp",
+   "/images/infobit-catalog/itrans-dp-t-22-g4.webp",
+   "/images/infobit-catalog/itrans-dp-t-22-g5.webp"
+  ]
  },
  "iTrans DP-R-22": {
   "slug": "itrans-dp-r-22",
   "img": "/images/infobit-catalog/itrans-dp-r-22.webp",
   "desc": "Analog audio output supports balanced/unbalanced audio output (unbalanced access to ",
-  "source": "https://www.infobitav.com/itrans-dp-r-22/"
+  "source": "https://www.infobitav.com/itrans-dp-r-22/",
+  "gallery": [
+   "/images/infobit-catalog/itrans-dp-r-22-g2.webp",
+   "/images/infobit-catalog/itrans-dp-r-22-g3.webp",
+   "/images/infobit-catalog/itrans-dp-r-22-g4.webp",
+   "/images/infobit-catalog/itrans-dp-r-22-g5.webp"
+  ]
  },
  "iTrans DP-BOX-22": {
   "slug": "itrans-dp-box-22",
   "img": "/images/infobit-catalog/itrans-dp-box-22.webp",
   "desc": "",
-  "source": "https://www.infobitav.com/itrans-dp-box-22/"
+  "source": "https://www.infobitav.com/itrans-dp-box-22/",
+  "gallery": [
+   "/images/infobit-catalog/itrans-dp-box-22-g2.webp",
+   "/images/infobit-catalog/itrans-dp-box-22-g3.webp",
+   "/images/infobit-catalog/itrans-dp-box-22-g4.webp",
+   "/images/infobit-catalog/itrans-dp-box-22-g5.webp"
+  ]
  },
  "iTrans DX-T-22": {
   "slug": "itrans-dx-t-22",
   "img": "/images/infobit-catalog/itrans-dx-t-22.webp",
   "desc": "",
-  "source": "https://www.infobitav.com/itrans-dx-t-22/"
+  "source": "https://www.infobitav.com/itrans-dx-t-22/",
+  "gallery": [
+   "/images/infobit-catalog/itrans-dx-t-22-g2.webp",
+   "/images/infobit-catalog/itrans-dx-t-22-g3.webp",
+   "/images/infobit-catalog/itrans-dx-t-22-g4.webp",
+   "/images/infobit-catalog/itrans-dx-t-22-g5.webp"
+  ]
  },
  "iTrans DX-R-22": {
   "slug": "itrans-dx-r-22",
   "img": "/images/infobit-catalog/itrans-dx-r-22.webp",
   "desc": "",
-  "source": "https://www.infobitav.com/itrans-dx-r-22/"
+  "source": "https://www.infobitav.com/itrans-dx-r-22/",
+  "gallery": [
+   "/images/infobit-catalog/itrans-dx-r-22-g2.webp",
+   "/images/infobit-catalog/itrans-dx-r-22-g3.webp",
+   "/images/infobit-catalog/itrans-dx-r-22-g4.webp",
+   "/images/infobit-catalog/itrans-dx-r-22-g5.webp"
+  ]
  },
  "iTrans DX-22-EUK": {
   "slug": "itrans-dx-22-euk",
   "img": "/images/infobit-catalog/itrans-dx-22-euk.webp",
   "desc": "XLR audio to Dante wallplate",
-  "source": "https://www.infobitav.com/itrans-dx-22-euk/"
+  "source": "https://www.infobitav.com/itrans-dx-22-euk/",
+  "gallery": [
+   "/images/infobit-catalog/itrans-dx-22-euk-g2.webp",
+   "/images/infobit-catalog/itrans-dx-22-euk-g3.webp",
+   "/images/infobit-catalog/itrans-dx-22-euk-g4.webp",
+   "/images/infobit-catalog/itrans-dx-22-euk-g5.webp"
+  ]
  },
  "iTrans DX-22-US": {
   "slug": "itrans-dx-22-us",
   "img": "/images/infobit-catalog/itrans-dx-22-us.webp",
   "desc": "XLR audio to Dante wallplate",
-  "source": "https://www.infobitav.com/itrans-dx-22-us/"
+  "source": "https://www.infobitav.com/itrans-dx-22-us/",
+  "gallery": [
+   "/images/infobit-catalog/itrans-dx-22-us-g2.webp",
+   "/images/infobit-catalog/itrans-dx-22-us-g3.webp",
+   "/images/infobit-catalog/itrans-dx-22-us-g4.webp",
+   "/images/infobit-catalog/itrans-dx-22-us-g5.webp"
+  ]
  },
  "iTrans DB22": {
   "slug": "itrans-db22",
   "img": "/images/infobit-catalog/itrans-db22.webp",
   "desc": "",
-  "source": "https://www.infobitav.com/itrans-db22/"
+  "source": "https://www.infobitav.com/itrans-db22/",
+  "gallery": [
+   "/images/infobit-catalog/itrans-db22-g2.webp",
+   "/images/infobit-catalog/itrans-db22-g3.webp",
+   "/images/infobit-catalog/itrans-db22-g4.webp",
+   "/images/infobit-catalog/itrans-db22-g5.webp"
+  ]
  },
  "iTrans DB44-EUK": {
   "slug": "itrans-db44-euk",
   "img": "/images/infobit-catalog/itrans-db44-euk.webp",
   "desc": "",
-  "source": "https://www.infobitav.com/itrans-db44-euk/"
+  "source": "https://www.infobitav.com/itrans-db44-euk/",
+  "gallery": [
+   "/images/infobit-catalog/itrans-db44-euk-g2.webp",
+   "/images/infobit-catalog/itrans-db44-euk-g3.webp",
+   "/images/infobit-catalog/itrans-db44-euk-g4.webp",
+   "/images/infobit-catalog/itrans-db44-euk-g5.webp"
+  ]
  },
  "iTrans DB44-US": {
   "slug": "itrans-db44-us",
   "img": "/images/infobit-catalog/itrans-db44-us.webp",
   "desc": "",
-  "source": "https://www.infobitav.com/itrans-db44-us/"
+  "source": "https://www.infobitav.com/itrans-db44-us/",
+  "gallery": [
+   "/images/infobit-catalog/itrans-db44-us-g2.webp",
+   "/images/infobit-catalog/itrans-db44-us-g3.webp",
+   "/images/infobit-catalog/itrans-db44-us-g4.webp",
+   "/images/infobit-catalog/itrans-db44-us-g5.webp"
+  ]
  },
  "iTrans HD-ARC": {
   "slug": "itrans-hd-arc",
   "img": "/images/infobit-catalog/itrans-hd-arc.webp",
   "desc": "2CH ARC to Dante Converter",
-  "source": "https://www.infobitav.com/itrans-hd-arc/"
+  "source": "https://www.infobitav.com/itrans-hd-arc/",
+  "gallery": [
+   "/images/infobit-catalog/itrans-hd-arc-g2.webp",
+   "/images/infobit-catalog/itrans-hd-arc-g3.webp",
+   "/images/infobit-catalog/itrans-hd-arc-g4.webp",
+   "/images/infobit-catalog/itrans-hd-arc-g5.webp"
+  ]
  },
  "iCam VB40": {
   "slug": "icam-vb40",
   "img": "/images/infobit-catalog/icam-vb40.webp",
   "desc": "4K Ultra HD image sensor, EPTZ supported, suitable for small and medium-sized meeting rooms.  Built-in 2*4W speakerphone, 5.8G Wireless or USB 3.0 connection optional.  Omni-directional microphone standby time up to 6 months, working time up to 8 hours.  World-class echo cancellation technology, noi",
-  "source": "https://www.infobitav.com/icam-vb40/"
+  "source": "https://www.infobitav.com/icam-vb40/",
+  "gallery": [
+   "/images/infobit-catalog/icam-vb40-g2.webp",
+   "/images/infobit-catalog/icam-vb40-g3.webp",
+   "/images/infobit-catalog/icam-vb40-g4.webp",
+   "/images/infobit-catalog/icam-vb40-g5.webp"
+  ]
  },
  "iCam VB50": {
   "slug": "icam-vb50",
   "img": "/images/infobit-catalog/icam-vb50.webp",
   "desc": "INFOBIT,USB Camera,All in One camera,videobar,soundbar,conference camera video bar,speaker tracking,voice tracking,PTZ camera,ePTZ camera,4K USB camera,huddle room camera,small meeting room camera,microphone speaker camera,goup framing,auto framing,participant framing,all in one usb camera,acoustic ",
-  "source": "https://www.infobitav.com/icam-vb50/"
+  "source": "https://www.infobitav.com/icam-vb50/",
+  "gallery": [
+   "/images/infobit-catalog/icam-vb50-g2.webp",
+   "/images/infobit-catalog/icam-vb50-g3.webp",
+   "/images/infobit-catalog/icam-vb50-g4.webp",
+   "/images/infobit-catalog/icam-vb50-g5.webp"
+  ]
  },
  "iCam VB60": {
   "slug": "icam-vb60",
   "img": "/images/infobit-catalog/icam-vb60.webp",
   "desc": "",
-  "source": "https://www.infobitav.com/icam-vb60/"
+  "source": "https://www.infobitav.com/icam-vb60/",
+  "gallery": [
+   "/images/infobit-catalog/icam-vb60-g2.webp",
+   "/images/infobit-catalog/icam-vb60-g3.webp",
+   "/images/infobit-catalog/icam-vb60-g4.webp",
+   "/images/infobit-catalog/icam-vb60-g5.webp"
+  ]
  },
  "iCam VB80": {
   "slug": "icam-vb80",
   "img": "/images/infobit-catalog/icam-vb80.webp",
   "desc": "",
-  "source": "https://www.infobitav.com/icam-vb80/"
+  "source": "https://www.infobitav.com/icam-vb80/",
+  "gallery": [
+   "/images/infobit-catalog/icam-vb80-g2.webp",
+   "/images/infobit-catalog/icam-vb80-g3.webp",
+   "/images/infobit-catalog/icam-vb80-g4.webp",
+   "/images/infobit-catalog/icam-vb80-g5.webp"
+  ]
  },
  "iCam 100": {
   "slug": "icam-100",
   "img": "/images/infobit-catalog/icam-100.webp",
   "desc": "Omnidirectional 4 microphones array algorithm, 5-meter far-field clear voice pickup   Exclusive AI noise-suppression technology, significantly increase the concentration of conference participants   Real full-duplex, HQ uninterrupted communication   100° full HD wide-angle camera, in-person conferen",
-  "source": "https://www.infobitav.com/icam-100/"
+  "source": "https://www.infobitav.com/icam-100/",
+  "gallery": [
+   "/images/infobit-catalog/icam-100-g2.webp",
+   "/images/infobit-catalog/icam-100-g3.webp",
+   "/images/infobit-catalog/icam-100-g4.webp",
+   "/images/infobit-catalog/icam-100-g5.webp"
+  ]
  },
  "iCam 200H": {
   "slug": "icam-200h",
   "img": "/images/infobit-catalog/icam-200h.webp",
   "desc": "Ultra 4K HD: Support 4K Ultra HD up to 4K@30fps/25fps encoding output, and down compatible with 1080p, 720p.  USB 3.0: Fully functional USB 3.0 connection, power supply, video, and audio all in one and support 1 more HDMI streaming.  Lens: Wide-angle up to 120° with EPTZ to show it bigger and more v",
-  "source": "https://www.infobitav.com/icam-200h/"
+  "source": "https://www.infobitav.com/icam-200h/",
+  "gallery": [
+   "/images/infobit-catalog/icam-200h-g2.webp",
+   "/images/infobit-catalog/icam-200h-g3.webp",
+   "/images/infobit-catalog/icam-200h-g4.webp",
+   "/images/infobit-catalog/icam-200h-g5.webp"
+  ]
  },
  "iCam 200U": {
   "slug": "icam-200u",
   "img": "/images/infobit-catalog/icam-200u.webp",
   "desc": "Ultra 4K HD: Support 4K Ultra HD up to 4K@30fps/25fps encoding output, and down compatible with 1080p, 720p.  USB 3.0: Fully functional USB 3.0 connection, power supply, video, and audio all in one.  Lens: Wide-angle up to 120° with EPTZ to show it bigger and more visible.  Built-in Microphone: Buil",
-  "source": "https://www.infobitav.com/icam-200u/"
+  "source": "https://www.infobitav.com/icam-200u/",
+  "gallery": [
+   "/images/infobit-catalog/icam-200u-g2.webp",
+   "/images/infobit-catalog/icam-200u-g3.webp",
+   "/images/infobit-catalog/icam-200u-g4.webp",
+   "/images/infobit-catalog/icam-200u-g5.webp"
+  ]
  },
  "iCam P10": {
   "slug": "icam-p10",
   "img": "/images/infobit-catalog/icam-p10.webp",
   "desc": "Panasonic 1/2.7 inch, 2.07M pixels HD CMOS sensor, Full HD 1920 x 1080p  Built-in microphone, 1-2 meters pickup distance  HFOV 72.5°, 12x optical and 16x digital zoom  USB3.0 compatible with USB2.0, support audio, compressed  video output, UVC v1.5  RS232 protocol control, max. 255 presets  Low ligh",
-  "source": "https://www.infobitav.com/icam-p10/"
+  "source": "https://www.infobitav.com/icam-p10/",
+  "gallery": [
+   "/images/infobit-catalog/icam-p10-g2.webp",
+   "/images/infobit-catalog/icam-p10-g3.webp",
+   "/images/infobit-catalog/icam-p10-g4.webp",
+   "/images/infobit-catalog/icam-p10-g5.webp"
+  ]
  },
  "iCam P11": {
   "slug": "icam-p11",
   "img": "/images/infobit-catalog/icam-p11.webp",
   "desc": "Dual lens PTZ camera, auto tracking",
-  "source": "https://www.infobitav.com/icam-p11/"
+  "source": "https://www.infobitav.com/icam-p11/",
+  "gallery": [
+   "/images/infobit-catalog/icam-p11-g2.webp",
+   "/images/infobit-catalog/icam-p11-g3.webp",
+   "/images/infobit-catalog/icam-p11-g4.webp",
+   "/images/infobit-catalog/icam-p11-g5.webp"
+  ]
  },
  "iCam P12U": {
   "slug": "icam-p12u",
   "img": "/images/infobit-catalog/icam-p12u.webp",
   "desc": "",
-  "source": "https://www.infobitav.com/icam-p12u/"
+  "source": "https://www.infobitav.com/icam-p12u/",
+  "gallery": [
+   "/images/infobit-catalog/icam-p12u-g2.webp",
+   "/images/infobit-catalog/icam-p12u-g3.webp",
+   "/images/infobit-catalog/icam-p12u-g4.webp",
+   "/images/infobit-catalog/icam-p12u-g5.webp"
+  ]
  },
  "iCam P13": {
   "slug": "icam-p13",
   "img": "/images/infobit-catalog/icam-p13.webp",
   "desc": "",
-  "source": "https://www.infobitav.com/icam-p13/"
+  "source": "https://www.infobitav.com/icam-p13/",
+  "gallery": [
+   "/images/infobit-catalog/icam-p13-g2.webp",
+   "/images/infobit-catalog/icam-p13-g3.webp",
+   "/images/infobit-catalog/icam-p13-g4.webp",
+   "/images/infobit-catalog/icam-p13-g5.webp"
+  ]
  },
  "iCam P20": {
   "slug": "icam-p20",
   "img": "/images/infobit-catalog/icam-p20.webp",
   "desc": "80° Wide-angle Lens + 12x Optical Zoom. HDMI 1.4b: Directly output 4KP60 uncompressed digital video. Low Light: The application of 3D digital noise reduction algorithm greatly reduces image noise. Even under the condition of ultra-low illumination. Multiple Interfaces: It supports HDMI 1.4b HD outpu",
-  "source": "https://www.infobitav.com/icam-p20/"
+  "source": "https://www.infobitav.com/icam-p20/",
+  "gallery": [
+   "/images/infobit-catalog/icam-p20-g2.webp",
+   "/images/infobit-catalog/icam-p20-g3.webp",
+   "/images/infobit-catalog/icam-p20-g4.webp",
+   "/images/infobit-catalog/icam-p20-g5.webp"
+  ]
  },
  "iCam P30": {
   "slug": "icam-p30",
   "img": "/images/infobit-catalog/icam-p30.webp",
   "desc": "4K60 UHD: SONY 1/ 2.5 inch, 8.51 million pixel 4K UHD CMOS sensor  Built-in Microphone, 9 meters pickup distance  HFOV 71°, 12x optical and 16x digital zoom  USB3.0 compatible with USB2.0, support audio, compressed  video output, UVC v1.5  Support PoE, RS232, RS485, IR  Low light environment enhance",
-  "source": "https://www.infobitav.com/icam-p30/"
+  "source": "https://www.infobitav.com/icam-p30/",
+  "gallery": [
+   "/images/infobit-catalog/icam-p30-g2.webp",
+   "/images/infobit-catalog/icam-p30-g3.webp",
+   "/images/infobit-catalog/icam-p30-g4.webp",
+   "/images/infobit-catalog/icam-p30-g5.webp"
+  ]
  },
  "iCam P40": {
   "slug": "icam-p40",
   "img": "/images/infobit-catalog/icam-p40.webp",
   "desc": "4K60 UHD: SONY 1/ 2.5 inch, 8.51 million pixel 4K UHD CMOS sensor  Built-in Microphone, 9 meters pickup distance  HFOV 71°, 12x optical and 16x digital zoom  USB3.0 compatible with USB2.0, support audio, compressed  video output, UVC v1.5  Support PoE, RS232, RS485, IR  Low light environment enhance",
-  "source": "https://www.infobitav.com/icam-p40/"
+  "source": "https://www.infobitav.com/icam-p40/",
+  "gallery": [
+   "/images/infobit-catalog/icam-p40-g2.webp",
+   "/images/infobit-catalog/icam-p40-g3.webp",
+   "/images/infobit-catalog/icam-p40-g4.webp",
+   "/images/infobit-catalog/icam-p40-g5.webp"
+  ]
  },
  "iCam PT40": {
   "slug": "icam-pt40",
   "img": "/images/infobit-catalog/icam-pt40.webp",
   "desc": "INFOBIT AV,iCam PT40,AI Tracking Camera,HD PTZ camera,Dual Cameras,Dual-lens,Lecture Tracking,Teacher tracking,Voice Tracking Camera",
-  "source": "https://www.infobitav.com/icam-pt40/"
+  "source": "https://www.infobitav.com/icam-pt40/",
+  "gallery": [
+   "/images/infobit-catalog/icam-pt40-g2.webp",
+   "/images/infobit-catalog/icam-pt40-g3.webp",
+   "/images/infobit-catalog/icam-pt40-g4.webp",
+   "/images/infobit-catalog/icam-pt40-g5.webp"
+  ]
  },
  "iCam 360": {
   "slug": "icam-360",
   "img": "/images/infobit-catalog/icam-360.webp",
   "desc": "",
-  "source": "https://www.infobitav.com/icam-360/"
+  "source": "https://www.infobitav.com/icam-360/",
+  "gallery": [
+   "/images/infobit-catalog/icam-360-g2.webp",
+   "/images/infobit-catalog/icam-360-g3.webp",
+   "/images/infobit-catalog/icam-360-g4.webp",
+   "/images/infobit-catalog/icam-360-g5.webp"
+  ]
  },
  "iCam XE2": {
   "slug": "icam-xe2",
   "img": "/images/infobit-catalog/icam-xe2.webp",
   "desc": "",
-  "source": "https://www.infobitav.com/icam-xe2/"
+  "source": "https://www.infobitav.com/icam-xe2/",
+  "gallery": [
+   "/images/infobit-catalog/icam-xe2-g2.webp",
+   "/images/infobit-catalog/icam-xe2-g3.webp",
+   "/images/infobit-catalog/icam-xe2-g4.webp",
+   "/images/infobit-catalog/icam-xe2-g5.webp"
+  ]
  },
  "iSound NL200": {
   "slug": "isound-nl200",
   "img": "/images/infobit-catalog/isound-nl200.webp",
   "desc": "Wireless micorphone,Education microphone,wireless sound reinforcement",
-  "source": "https://www.infobitav.com/isound-nl200/"
+  "source": "https://www.infobitav.com/isound-nl200/",
+  "gallery": [
+   "/images/infobit-catalog/isound-nl200-g2.webp",
+   "/images/infobit-catalog/isound-nl200-g3.webp",
+   "/images/infobit-catalog/isound-nl200-g4.webp",
+   "/images/infobit-catalog/isound-nl200-g5.webp"
+  ]
  },
  "iSpeaker M700": {
   "slug": "ispeaker-m700",
   "img": "/images/infobit-catalog/ispeaker-m700.webp",
   "desc": "",
-  "source": "https://www.infobitav.com/ispeaker-m700/"
+  "source": "https://www.infobitav.com/ispeaker-m700/",
+  "gallery": [
+   "/images/infobit-catalog/ispeaker-m700-g2.webp",
+   "/images/infobit-catalog/ispeaker-m700-g3.webp",
+   "/images/infobit-catalog/ispeaker-m700-g4.webp",
+   "/images/infobit-catalog/ispeaker-m700-g5.webp"
+  ]
  },
  "iSpeaker M800": {
   "slug": "ispeaker-m800",
   "img": "/images/infobit-catalog/ispeaker-m800.webp",
   "desc": "INFOBIT iSpeaker M800. 2.4G Wireless Transmission: with a stable connection from the daisy-chained microphones to the audio master receiver, the maximum distance between them can be reached up to 12 meters.  Omni-directional Microphone: 4x Full duplex Omnidirectional Mic, with 5 meters pickup range ",
-  "source": "https://www.infobitav.com/ispeaker-m800/"
+  "source": "https://www.infobitav.com/ispeaker-m800/",
+  "gallery": [
+   "/images/infobit-catalog/ispeaker-m800-g2.webp",
+   "/images/infobit-catalog/ispeaker-m800-g3.webp",
+   "/images/infobit-catalog/ispeaker-m800-g4.webp",
+   "/images/infobit-catalog/ispeaker-m800-g5.webp"
+  ]
  },
  "iSpeaker MD30": {
   "slug": "ispeaker-md30",
   "img": "/images/infobit-catalog/ispeaker-md30.webp",
   "desc": "",
-  "source": "https://www.infobitav.com/ispeaker-md30/"
+  "source": "https://www.infobitav.com/ispeaker-md30/",
+  "gallery": [
+   "/images/infobit-catalog/ispeaker-md30-g2.webp",
+   "/images/infobit-catalog/ispeaker-md30-g3.webp",
+   "/images/infobit-catalog/ispeaker-md30-g4.webp",
+   "/images/infobit-catalog/ispeaker-md30-g5.webp"
+  ]
  },
  "iSpeaker CM710": {
   "slug": "ispeaker-cm710",
   "img": "/images/infobit-catalog/ispeaker-cm710.webp",
   "desc": "",
-  "source": "https://www.infobitav.com/ispeaker-cm710/"
+  "source": "https://www.infobitav.com/ispeaker-cm710/",
+  "gallery": [
+   "/images/infobit-catalog/ispeaker-cm710-g2.webp",
+   "/images/infobit-catalog/ispeaker-cm710-g3.webp",
+   "/images/infobit-catalog/ispeaker-cm710-g4.webp",
+   "/images/infobit-catalog/ispeaker-cm710-g5.webp"
+  ]
  },
  "iSpeaker CM360": {
   "slug": "ispeaker-cm360",
   "img": "/images/infobit-catalog/ispeaker-cm360.webp",
   "desc": "Dante Ceiling Microphone, Sennheiser TeamConnect Ceiling 2,Shure Stem Ceiling, ClearOne BMA360, Yealink VCM38, INFOBIT",
-  "source": "https://www.infobitav.com/ispeaker-cm360/"
+  "source": "https://www.infobitav.com/ispeaker-cm360/",
+  "gallery": [
+   "/images/infobit-catalog/ispeaker-cm360-g2.webp",
+   "/images/infobit-catalog/ispeaker-cm360-g3.webp",
+   "/images/infobit-catalog/ispeaker-cm360-g4.webp",
+   "/images/infobit-catalog/ispeaker-cm360-g5.webp"
+  ]
  },
  "iSpeaker CM365": {
   "slug": "ispeaker-cm365",
   "img": "/images/infobit-catalog/ispeaker-cm365.webp",
   "desc": "AI Dante Ceiling microphone, voice lift, sound reinforcement, 129x beamforming microphone, UAC, camera tracking",
-  "source": "https://www.infobitav.com/ispeaker-cm365/"
+  "source": "https://www.infobitav.com/ispeaker-cm365/",
+  "gallery": [
+   "/images/infobit-catalog/ispeaker-cm365-g2.webp",
+   "/images/infobit-catalog/ispeaker-cm365-g3.webp",
+   "/images/infobit-catalog/ispeaker-cm365-g4.webp",
+   "/images/infobit-catalog/ispeaker-cm365-g5.webp"
+  ]
  },
  "iSpeaker M250": {
   "slug": "ispeaker-m250",
   "img": "/images/infobit-catalog/ispeaker-m250.webp",
   "desc": "",
-  "source": "https://www.infobitav.com/ispeaker-m250/"
+  "source": "https://www.infobitav.com/ispeaker-m250/",
+  "gallery": [
+   "/images/infobit-catalog/ispeaker-m250-g2.webp",
+   "/images/infobit-catalog/ispeaker-m250-g3.webp",
+   "/images/infobit-catalog/ispeaker-m250-g4.webp",
+   "/images/infobit-catalog/ispeaker-m250-g5.webp"
+  ]
  },
  "iSpeaker M260": {
   "slug": "ispeaker-m260",
   "img": "/images/infobit-catalog/ispeaker-m260.webp",
   "desc": "",
-  "source": "https://www.infobitav.com/ispeaker-m260/"
+  "source": "https://www.infobitav.com/ispeaker-m260/",
+  "gallery": [
+   "/images/infobit-catalog/ispeaker-m260-g2.webp",
+   "/images/infobit-catalog/ispeaker-m260-g3.webp",
+   "/images/infobit-catalog/ispeaker-m260-g4.webp",
+   "/images/infobit-catalog/ispeaker-m260-g5.webp"
+  ]
  },
  "iSpeaker M400": {
   "slug": "ispeaker-m400",
   "img": "/images/infobit-catalog/ispeaker-m400.webp",
   "desc": "USB + Bluetooth + Dongle connection 360° Omnidirectional Speakerphone with 5 meters pickup range Built-in 4,000mAh battery with 18 hours talk time Small and portable size Echo cancellation Buttons: Bluetooth, Mic mute, Volume +, Volume -, Pickup/ hang up, power Cascading: daisy chain 2 sets M400 spe",
-  "source": "https://www.infobitav.com/ispeaker-m400/"
+  "source": "https://www.infobitav.com/ispeaker-m400/",
+  "gallery": [
+   "/images/infobit-catalog/ispeaker-m400-g2.webp",
+   "/images/infobit-catalog/ispeaker-m400-g3.webp",
+   "/images/infobit-catalog/ispeaker-m400-g4.webp",
+   "/images/infobit-catalog/ispeaker-m400-g5.webp"
+  ]
  },
  "iSpeaker M500": {
   "slug": "ispeaker-m500",
   "img": "/images/infobit-catalog/ispeaker-m500.webp",
   "desc": "",
-  "source": "https://www.infobitav.com/ispeaker-m500/"
+  "source": "https://www.infobitav.com/ispeaker-m500/",
+  "gallery": [
+   "/images/infobit-catalog/ispeaker-m500-g2.webp",
+   "/images/infobit-catalog/ispeaker-m500-g3.webp",
+   "/images/infobit-catalog/ispeaker-m500-g4.webp",
+   "/images/infobit-catalog/ispeaker-m500-g5.webp"
+  ]
  },
  "iSpeaker M600": {
   "slug": "ispeaker-m600",
   "img": "/images/infobit-catalog/ispeaker-m600.webp",
   "desc": "",
-  "source": "https://www.infobitav.com/ispeaker-m600/"
+  "source": "https://www.infobitav.com/ispeaker-m600/",
+  "gallery": [
+   "/images/infobit-catalog/ispeaker-m600-g2.webp",
+   "/images/infobit-catalog/ispeaker-m600-g3.webp",
+   "/images/infobit-catalog/ispeaker-m600-g4.webp",
+   "/images/infobit-catalog/ispeaker-m600-g5.webp"
+  ]
  },
  "iSpeaker CM800": {
   "slug": "ispeaker-cm800",
   "img": "/images/infobit-catalog/ispeaker-cm800.webp",
   "desc": "All-in-One Design: Microphone and Speaker  Built-in Audio Console and Status Indicator  Android 8.1 Tablet with 10.1",
-  "source": "https://www.infobitav.com/ispeaker-cm800/"
+  "source": "https://www.infobitav.com/ispeaker-cm800/",
+  "gallery": [
+   "/images/infobit-catalog/ispeaker-cm800-g2.webp",
+   "/images/infobit-catalog/ispeaker-cm800-g3.webp",
+   "/images/infobit-catalog/ispeaker-cm800-g4.webp",
+   "/images/infobit-catalog/ispeaker-cm800-g5.webp"
+  ]
  },
  "iSpeaker A20": {
   "slug": "ispeaker-a20",
   "img": "/images/infobit-catalog/ispeaker-a20.webp",
   "desc": "Wireless microphone, speakerphone, 100 sqm room space, AI speakerphone",
-  "source": "https://www.infobitav.com/ispeaker-a20/"
+  "source": "https://www.infobitav.com/ispeaker-a20/",
+  "gallery": [
+   "/images/infobit-catalog/ispeaker-a20-g2.webp",
+   "/images/infobit-catalog/ispeaker-a20-g3.webp",
+   "/images/infobit-catalog/ispeaker-a20-g4.webp",
+   "/images/infobit-catalog/ispeaker-a20-g5.webp"
+  ]
  },
  "iSpeaker DAP6": {
   "slug": "ispeaker-dap6",
   "img": "/images/infobit-catalog/ispeaker-dap6.webp",
   "desc": "",
-  "source": "https://www.infobitav.com/ispeaker-dap6/"
+  "source": "https://www.infobitav.com/ispeaker-dap6/",
+  "gallery": [
+   "/images/infobit-catalog/ispeaker-dap6-g2.webp",
+   "/images/infobit-catalog/ispeaker-dap6-g3.webp",
+   "/images/infobit-catalog/ispeaker-dap6-g4.webp",
+   "/images/infobit-catalog/ispeaker-dap6-g5.webp"
+  ]
  },
  "iSpeaker DAP10": {
   "slug": "ispeaker-dap10",
   "img": "/images/infobit-catalog/ispeaker-dap10.webp",
   "desc": "",
-  "source": "https://www.infobitav.com/ispeaker-dap10/"
+  "source": "https://www.infobitav.com/ispeaker-dap10/",
+  "gallery": [
+   "/images/infobit-catalog/ispeaker-dap10-g2.webp",
+   "/images/infobit-catalog/ispeaker-dap10-g3.webp",
+   "/images/infobit-catalog/ispeaker-dap10-g4.webp",
+   "/images/infobit-catalog/ispeaker-dap10-g5.webp"
+  ]
  },
  "iSpeaker P30B": {
   "slug": "ispeaker-p30b",
   "img": "/images/infobit-catalog/ispeaker-p30b.webp",
   "desc": "",
-  "source": "https://www.infobitav.com/ispeaker-p30b/"
+  "source": "https://www.infobitav.com/ispeaker-p30b/",
+  "gallery": [
+   "/images/infobit-catalog/ispeaker-p30b-g2.webp",
+   "/images/infobit-catalog/ispeaker-p30b-g3.webp",
+   "/images/infobit-catalog/ispeaker-p30b-g4.webp",
+   "/images/infobit-catalog/ispeaker-p30b-g5.webp"
+  ]
  },
  "iSpeaker Mini-15": {
   "slug": "ispeaker-mini-15",
   "img": "/images/infobit-catalog/ispeaker-mini-15.webp",
   "desc": "15W Mini Ceiling Speaker,small,in-wall speaker",
-  "source": "https://www.infobitav.com/ispeaker-mini-15/"
+  "source": "https://www.infobitav.com/ispeaker-mini-15/",
+  "gallery": [
+   "/images/infobit-catalog/ispeaker-mini-15-g2.webp",
+   "/images/infobit-catalog/ispeaker-mini-15-g3.webp",
+   "/images/infobit-catalog/ispeaker-mini-15-g4.webp",
+   "/images/infobit-catalog/ispeaker-mini-15-g5.webp"
+  ]
  },
  "iSpeaker AAC4": {
   "slug": "ispeaker-aac4",
   "img": "/images/infobit-catalog/ispeaker-aac4.webp",
   "desc": "40W Ceiling Speaker,high-end, cheap price",
-  "source": "https://www.infobitav.com/ispeaker-aac4/"
+  "source": "https://www.infobitav.com/ispeaker-aac4/",
+  "gallery": [
+   "/images/infobit-catalog/ispeaker-aac4-g2.webp",
+   "/images/infobit-catalog/ispeaker-aac4-g3.webp",
+   "/images/infobit-catalog/ispeaker-aac4-g4.webp",
+   "/images/infobit-catalog/ispeaker-aac4-g5.webp"
+  ]
  },
  "iSpeaker AAC6": {
   "slug": "ispeaker-aac6",
   "img": "/images/infobit-catalog/ispeaker-aac6.webp",
   "desc": "",
-  "source": "https://www.infobitav.com/ispeaker-aac6/"
+  "source": "https://www.infobitav.com/ispeaker-aac6/",
+  "gallery": [
+   "/images/infobit-catalog/ispeaker-aac6-g2.webp",
+   "/images/infobit-catalog/ispeaker-aac6-g3.webp",
+   "/images/infobit-catalog/ispeaker-aac6-g4.webp",
+   "/images/infobit-catalog/ispeaker-aac6-g5.webp"
+  ]
  },
  "iSpeaker DAC6S": {
   "slug": "ispeaker-dac6s",
   "img": "/images/infobit-catalog/ispeaker-dac6s.webp",
   "desc": "",
-  "source": "https://www.infobitav.com/ispeaker-dac6s/"
+  "source": "https://www.infobitav.com/ispeaker-dac6s/",
+  "gallery": [
+   "/images/infobit-catalog/ispeaker-dac6s-g2.webp",
+   "/images/infobit-catalog/ispeaker-dac6s-g3.webp",
+   "/images/infobit-catalog/ispeaker-dac6s-g4.webp",
+   "/images/infobit-catalog/ispeaker-dac6s-g5.webp"
+  ]
  },
  "iSpeaker CS100": {
   "slug": "ispeaker-cs100",
   "img": "/images/infobit-catalog/ispeaker-cs100.webp",
   "desc": "100W column speaker",
-  "source": "https://www.infobitav.com/ispeaker-cs100/"
+  "source": "https://www.infobitav.com/ispeaker-cs100/",
+  "gallery": [
+   "/images/infobit-catalog/ispeaker-cs100-g2.webp",
+   "/images/infobit-catalog/ispeaker-cs100-g3.webp",
+   "/images/infobit-catalog/ispeaker-cs100-g4.webp",
+   "/images/infobit-catalog/ispeaker-cs100-g5.webp"
+  ]
  },
  "iSpeaker DCS60": {
   "slug": "ispeaker-dcs60",
   "img": "/images/infobit-catalog/ispeaker-dcs60.webp",
   "desc": "",
-  "source": "https://www.infobitav.com/ispeaker-dcs60/"
+  "source": "https://www.infobitav.com/ispeaker-dcs60/",
+  "gallery": [
+   "/images/infobit-catalog/ispeaker-dcs60-g2.webp",
+   "/images/infobit-catalog/ispeaker-dcs60-g3.webp",
+   "/images/infobit-catalog/ispeaker-dcs60-g4.webp",
+   "/images/infobit-catalog/ispeaker-dcs60-g5.webp"
+  ]
  },
  "iTrans UC-Hub": {
   "slug": "itrans-uc-hub",
   "img": "/images/infobit-catalog/itrans-uc-hub.webp",
   "desc": "USB-C over HDBaseT extenders with KVM, USB devices",
-  "source": "https://www.infobitav.com/itrans-uc-hub/"
+  "source": "https://www.infobitav.com/itrans-uc-hub/",
+  "gallery": [
+   "/images/infobit-catalog/itrans-uc-hub-g2.webp",
+   "/images/infobit-catalog/itrans-uc-hub-g3.webp",
+   "/images/infobit-catalog/itrans-uc-hub-g4.webp",
+   "/images/infobit-catalog/itrans-uc-hub-g5.webp"
+  ]
  },
  "iTrans UC-Hub21": {
   "slug": "itrans-uc-hub21",
   "img": "/images/infobit-catalog/itrans-uc-hub21.webp",
   "desc": "",
-  "source": "https://www.infobitav.com/itrans-uc-hub21/"
+  "source": "https://www.infobitav.com/itrans-uc-hub21/",
+  "gallery": [
+   "/images/infobit-catalog/itrans-uc-hub21-g2.webp",
+   "/images/infobit-catalog/itrans-uc-hub21-g3.webp",
+   "/images/infobit-catalog/itrans-uc-hub21-g4.webp",
+   "/images/infobit-catalog/itrans-uc-hub21-g5.webp"
+  ]
  },
  "iTrans UC-HUB402": {
   "slug": "itrans-uc-hub402",
   "img": "/images/infobit-catalog/itrans-uc-hub402.webp",
   "desc": "USB and HDMI Camera Mixer Hub with NDI, multiple camera mixer, multiviewer, NDI camera mixer, USB or HDMI camera capture",
-  "source": "https://www.infobitav.com/itrans-uc-hub402/"
+  "source": "https://www.infobitav.com/itrans-uc-hub402/",
+  "gallery": [
+   "/images/infobit-catalog/itrans-uc-hub402-g2.webp",
+   "/images/infobit-catalog/itrans-uc-hub402-g3.webp",
+   "/images/infobit-catalog/itrans-uc-hub402-g4.webp",
+   "/images/infobit-catalog/itrans-uc-hub402-g5.webp"
+  ]
  },
  "iTrans UC-HUB2U": {
   "slug": "itrans-uc-hub2u",
   "img": "/images/infobit-catalog/itrans-uc-hub2u.webp",
   "desc": "USB HDMI Camera mixer,Camera multiviewer",
-  "source": "https://www.infobitav.com/itrans-uc-hub2u/"
+  "source": "https://www.infobitav.com/itrans-uc-hub2u/",
+  "gallery": [
+   "/images/infobit-catalog/itrans-uc-hub2u-g2.webp",
+   "/images/infobit-catalog/itrans-uc-hub2u-g3.webp",
+   "/images/infobit-catalog/itrans-uc-hub2u-g4.webp",
+   "/images/infobit-catalog/itrans-uc-hub2u-g5.webp"
+  ]
  },
  "iSwitch 402KVM": {
   "slug": "iswitch-402kvm",
   "img": "/images/infobit-catalog/iswitch-402kvm.webp",
   "desc": "",
-  "source": "https://www.infobitav.com/iswitch-402kvm/"
+  "source": "https://www.infobitav.com/iswitch-402kvm/",
+  "gallery": [
+   "/images/infobit-catalog/iswitch-402kvm-g2.webp",
+   "/images/infobit-catalog/iswitch-402kvm-g3.webp",
+   "/images/infobit-catalog/iswitch-402kvm-g4.webp",
+   "/images/infobit-catalog/iswitch-402kvm-g5.webp"
+  ]
  },
  "iSwitch U44KM": {
   "slug": "iswitch-u44km",
   "img": "/images/infobit-catalog/iswitch-u44km.webp",
   "desc": "USB 4-Port Roaming Mouse Switcher",
-  "source": "https://www.infobitav.com/iswitch-u44km/"
+  "source": "https://www.infobitav.com/iswitch-u44km/",
+  "gallery": [
+   "/images/infobit-catalog/iswitch-u44km-g2.webp",
+   "/images/infobit-catalog/iswitch-u44km-g3.webp",
+   "/images/infobit-catalog/iswitch-u44km-g4.webp",
+   "/images/infobit-catalog/iswitch-u44km-g5.webp"
+  ]
  },
  "iSwitch 201HKL": {
   "slug": "iswitch-201hkl",
   "img": "/images/infobit-catalog/iswitch-201hkl.webp",
   "desc": "4K60 2x1 KVM Switcher Lite",
-  "source": "https://www.infobitav.com/iswitch-201hkl/"
+  "source": "https://www.infobitav.com/iswitch-201hkl/",
+  "gallery": [
+   "/images/infobit-catalog/iswitch-201hkl-g2.webp",
+   "/images/infobit-catalog/iswitch-201hkl-g3.webp",
+   "/images/infobit-catalog/iswitch-201hkl-g4.webp",
+   "/images/infobit-catalog/iswitch-201hkl-g5.webp"
+  ]
  },
  "iSwitch 801HKL": {
   "slug": "iswitch-801hkl",
   "img": "/images/infobit-catalog/iswitch-801hkl.webp",
   "desc": "4K60 8x1 KVM Switcher Lite",
-  "source": "https://www.infobitav.com/iswitch-801hkl/"
+  "source": "https://www.infobitav.com/iswitch-801hkl/",
+  "gallery": [
+   "/images/infobit-catalog/iswitch-801hkl-g2.webp",
+   "/images/infobit-catalog/iswitch-801hkl-g3.webp",
+   "/images/infobit-catalog/iswitch-801hkl-g4.webp",
+   "/images/infobit-catalog/iswitch-801hkl-g5.webp"
+  ]
  },
  "iSwitch 1601HKL": {
   "slug": "iswitch-1601hkl",
   "img": "/images/infobit-catalog/iswitch-1601hkl.webp",
   "desc": "iSwitch 1601HKL,HDMI 16 ports KVM Switcher,FHD or 4K HDMI KVM switchers",
-  "source": "https://www.infobitav.com/iswitch-1601hkl/"
+  "source": "https://www.infobitav.com/iswitch-1601hkl/",
+  "gallery": [
+   "/images/infobit-catalog/iswitch-1601hkl-g2.webp",
+   "/images/infobit-catalog/iswitch-1601hkl-g3.webp",
+   "/images/infobit-catalog/iswitch-1601hkl-g4.webp",
+   "/images/infobit-catalog/iswitch-1601hkl-g5.webp"
+  ]
  },
  "iSwitch 401MVK": {
   "slug": "iswitch-401mvk",
   "img": "/images/infobit-catalog/iswitch-401mvk.webp",
   "desc": "",
-  "source": "https://www.infobitav.com/iswitch-401mvk/"
+  "source": "https://www.infobitav.com/iswitch-401mvk/",
+  "gallery": [
+   "/images/infobit-catalog/iswitch-401mvk-g2.webp",
+   "/images/infobit-catalog/iswitch-401mvk-g3.webp",
+   "/images/infobit-catalog/iswitch-401mvk-g4.webp",
+   "/images/infobit-catalog/iswitch-401mvk-g5.webp"
+  ]
  },
  "iSwitch V1801": {
   "slug": "iswitch-v1801",
   "img": "/images/infobit-catalog/iswitch-v1801.webp",
   "desc": "",
-  "source": "https://www.infobitav.com/iswitch-v1801/"
+  "source": "https://www.infobitav.com/iswitch-v1801/",
+  "gallery": [
+   "/images/infobit-catalog/iswitch-v1801-g2.webp",
+   "/images/infobit-catalog/iswitch-v1801-g3.webp",
+   "/images/infobit-catalog/iswitch-v1801-g4.webp",
+   "/images/infobit-catalog/iswitch-v1801-g5.webp"
+  ]
  },
  "iSwitch V1808": {
   "slug": "iswitch-v1808",
   "img": "/images/infobit-catalog/iswitch-v1808.webp",
   "desc": "",
-  "source": "https://www.infobitav.com/iswitch-v1808/"
+  "source": "https://www.infobitav.com/iswitch-v1808/",
+  "gallery": [
+   "/images/infobit-catalog/iswitch-v1808-g2.webp",
+   "/images/infobit-catalog/iswitch-v1808-g3.webp",
+   "/images/infobit-catalog/iswitch-v1808-g4.webp",
+   "/images/infobit-catalog/iswitch-v1808-g5.webp"
+  ]
  },
  "iSwitch V1816": {
   "slug": "iswitch-v1816",
   "img": "/images/infobit-catalog/iswitch-v1816.webp",
   "desc": "",
-  "source": "https://www.infobitav.com/iswitch-v1816/"
+  "source": "https://www.infobitav.com/iswitch-v1816/",
+  "gallery": [
+   "/images/infobit-catalog/iswitch-v1816-g2.webp",
+   "/images/infobit-catalog/iswitch-v1816-g3.webp",
+   "/images/infobit-catalog/iswitch-v1816-g4.webp",
+   "/images/infobit-catalog/iswitch-v1816-g5.webp"
+  ]
  },
  "iTrans E70S": {
   "slug": "itrans-e70s",
   "img": "/images/infobit-catalog/itrans-e70s.webp",
   "desc": "",
-  "source": "https://www.infobitav.com/itrans-e70s/"
+  "source": "https://www.infobitav.com/itrans-e70s/",
+  "gallery": [
+   "/images/infobit-catalog/itrans-e70s-g2.webp",
+   "/images/infobit-catalog/itrans-e70s-g3.webp",
+   "/images/infobit-catalog/itrans-e70s-g4.webp",
+   "/images/infobit-catalog/itrans-e70s-g5.webp"
+  ]
  },
  "iTrans E70C": {
   "slug": "itrans-e70c",
   "img": "/images/infobit-catalog/itrans-e70c.webp",
   "desc": "The infobit 10.2Gbps HDMI 70m extender adopts HDBaseT technology to transmit HDMI and bi-directional broadband IR signals over to 70 meters (70m for 1080p, 40m for 4K/30Hz) through Cat 5e/6 cable. It supports bi-directional IR and RS232 to control the source device or display from the remote end.   ",
-  "source": "https://www.infobitav.com/itrans-e70c/"
+  "source": "https://www.infobitav.com/itrans-e70c/",
+  "gallery": [
+   "/images/infobit-catalog/itrans-e70c-g2.webp",
+   "/images/infobit-catalog/itrans-e70c-g3.webp",
+   "/images/infobit-catalog/itrans-e70c-g4.webp",
+   "/images/infobit-catalog/itrans-e70c-g5.webp"
+  ]
  },
  "iTrans E70N": {
   "slug": "itrans-e70n",
   "img": "/images/infobit-catalog/itrans-e70n.webp",
   "desc": "This HDMI Extender can extend high definition video/audio signal and IR control signal up to 230ft/70m for 1080p resolution, and 131ft/40m for 4K30 resolution via a single CAT6 cable, which can achieve zero-delay, uncompressed long-distance transmission between the transmitter and receiver.",
-  "source": "https://www.infobitav.com/itrans-e70n/"
+  "source": "https://www.infobitav.com/itrans-e70n/",
+  "gallery": [
+   "/images/infobit-catalog/itrans-e70n-g2.webp",
+   "/images/infobit-catalog/itrans-e70n-g3.webp",
+   "/images/infobit-catalog/itrans-e70n-g4.webp",
+   "/images/infobit-catalog/itrans-e70n-g5.webp"
+  ]
  },
  "iTrans E90U8K": {
   "slug": "itrans-e90u8k",
   "img": "/images/infobit-catalog/itrans-e90u8k.webp",
   "desc": "",
-  "source": "https://www.infobitav.com/itrans-e90u8k/"
+  "source": "https://www.infobitav.com/itrans-e90u8k/",
+  "gallery": [
+   "/images/infobit-catalog/itrans-e90u8k-g2.webp",
+   "/images/infobit-catalog/itrans-e90u8k-g3.webp",
+   "/images/infobit-catalog/itrans-e90u8k-g4.webp",
+   "/images/infobit-catalog/itrans-e90u8k-g5.webp"
+  ]
  },
  "iTrans E100HC": {
   "slug": "itrans-e100hc",
   "img": "/images/infobit-catalog/itrans-e100hc.webp",
   "desc": "",
-  "source": "https://www.infobitav.com/itrans-e100hc/"
+  "source": "https://www.infobitav.com/itrans-e100hc/",
+  "gallery": [
+   "/images/infobit-catalog/itrans-e100hc-g2.webp",
+   "/images/infobit-catalog/itrans-e100hc-g3.webp",
+   "/images/infobit-catalog/itrans-e100hc-g4.webp",
+   "/images/infobit-catalog/itrans-e100hc-g5.webp"
+  ]
  },
  "iTrans E100HC3K": {
   "slug": "itrans-e100hc3k",
   "img": "/images/infobit-catalog/itrans-e100hc3k.webp",
   "desc": "4K60 HDMI and USB C Over HDBaseT 3.0 Extender",
-  "source": "https://www.infobitav.com/itrans-e100hc3k/"
+  "source": "https://www.infobitav.com/itrans-e100hc3k/",
+  "gallery": [
+   "/images/infobit-catalog/itrans-e100hc3k-g2.webp",
+   "/images/infobit-catalog/itrans-e100hc3k-g3.webp",
+   "/images/infobit-catalog/itrans-e100hc3k-g4.webp",
+   "/images/infobit-catalog/itrans-e100hc3k-g5.webp"
+  ]
  },
  "iTrans E100HCU": {
   "slug": "itrans-e100hcu",
   "img": "/images/infobit-catalog/itrans-e100hcu.webp",
   "desc": "4K60 HDMI and USB C over HDBaseT 2.0 Extender, 100m",
-  "source": "https://www.infobitav.com/itrans-e100hcu/"
+  "source": "https://www.infobitav.com/itrans-e100hcu/",
+  "gallery": [
+   "/images/infobit-catalog/itrans-e100hcu-g2.webp",
+   "/images/infobit-catalog/itrans-e100hcu-g3.webp",
+   "/images/infobit-catalog/itrans-e100hcu-g4.webp",
+   "/images/infobit-catalog/itrans-e100hcu-g5.webp"
+  ]
  },
  "iTrans E100K": {
   "slug": "itrans-e100k",
   "img": "/images/infobit-catalog/itrans-e100k.webp",
   "desc": "18Gbps HDMI over HDBaseT Extender with Bi-directional IR (100M). HDCP 2.2 / HDCP 1.4 and DVI 1.0 compliant.Support 18Gbps video bandwidth. Video resolution is up to 4k2k@60Hz YUV 4:4:4. The maximum transmission distance is 328ft / 100 meters via a single CAT6a/7 cable. Support ARC (Audio Return Chan",
-  "source": "https://www.infobitav.com/itrans-e100k/"
+  "source": "https://www.infobitav.com/itrans-e100k/",
+  "gallery": [
+   "/images/infobit-catalog/itrans-e100k-g2.webp",
+   "/images/infobit-catalog/itrans-e100k-g3.webp",
+   "/images/infobit-catalog/itrans-e100k-g4.webp",
+   "/images/infobit-catalog/itrans-e100k-g5.webp"
+  ]
  },
  "iTrans E100TR": {
   "slug": "itrans-e100tr",
   "img": "/images/infobit-catalog/itrans-e100tr.webp",
   "desc": "",
-  "source": "https://www.infobitav.com/itrans-e100tr/"
+  "source": "https://www.infobitav.com/itrans-e100tr/",
+  "gallery": [
+   "/images/infobit-catalog/itrans-e100tr-g2.webp",
+   "/images/infobit-catalog/itrans-e100tr-g3.webp",
+   "/images/infobit-catalog/itrans-e100tr-g4.webp",
+   "/images/infobit-catalog/itrans-e100tr-g5.webp"
+  ]
  },
  "iTrans E100UC": {
   "slug": "itrans-e100uc",
   "img": "/images/infobit-catalog/itrans-e100uc.webp",
   "desc": "",
-  "source": "https://www.infobitav.com/itrans-e100uc/"
+  "source": "https://www.infobitav.com/itrans-e100uc/",
+  "gallery": [
+   "/images/infobit-catalog/itrans-e100uc-g2.webp",
+   "/images/infobit-catalog/itrans-e100uc-g3.webp",
+   "/images/infobit-catalog/itrans-e100uc-g4.webp",
+   "/images/infobit-catalog/itrans-e100uc-g5.webp"
+  ]
  },
  "iTrans 201S": {
   "slug": "itrans-201s",
   "img": "/images/infobit-catalog/itrans-201s.webp",
   "desc": "",
-  "source": "https://www.infobitav.com/itrans-201s/"
+  "source": "https://www.infobitav.com/itrans-201s/",
+  "gallery": [
+   "/images/infobit-catalog/itrans-201s-g2.webp",
+   "/images/infobit-catalog/itrans-201s-g3.webp",
+   "/images/infobit-catalog/itrans-201s-g4.webp",
+   "/images/infobit-catalog/itrans-201s-g5.webp"
+  ]
  },
  "iTrans E150CL": {
   "slug": "itrans-e150cl",
   "img": "/images/infobit-catalog/itrans-e150cl.webp",
   "desc": "",
-  "source": "https://www.infobitav.com/itrans-e150cl/"
+  "source": "https://www.infobitav.com/itrans-e150cl/",
+  "gallery": [
+   "/images/infobit-catalog/itrans-e150cl-g2.webp",
+   "/images/infobit-catalog/itrans-e150cl-g3.webp",
+   "/images/infobit-catalog/itrans-e150cl-g4.webp",
+   "/images/infobit-catalog/itrans-e150cl-g5.webp"
+  ]
  },
  "iTrans E150CG": {
   "slug": "itrans-e150cg",
   "img": "/images/infobit-catalog/itrans-e150cg.webp",
   "desc": "This 18Gbps HDMI Extender can extend high definition video / audio signal, RS-232, bi-directional IR, and the distance is up to 492ft / 150 meters between transmitter and receiver via a single CAT cable. It supports resolution up to 4K2K@60Hz 4:4:4, 18Gbps and HDCP 2.2. One HDMI loop port is availab",
-  "source": "https://www.infobitav.com/itrans-e150cg/"
+  "source": "https://www.infobitav.com/itrans-e150cg/",
+  "gallery": [
+   "/images/infobit-catalog/itrans-e150cg-g2.webp",
+   "/images/infobit-catalog/itrans-e150cg-g3.webp",
+   "/images/infobit-catalog/itrans-e150cg-g4.webp",
+   "/images/infobit-catalog/itrans-e150cg-g5.webp"
+  ]
  },
  "iTrans E150SK": {
   "slug": "itrans-e150sk",
   "img": "/images/infobit-catalog/itrans-e150sk.webp",
   "desc": "",
-  "source": "https://www.infobitav.com/itrans-e150sk/"
+  "source": "https://www.infobitav.com/itrans-e150sk/",
+  "gallery": [
+   "/images/infobit-catalog/itrans-e150sk-g2.webp",
+   "/images/infobit-catalog/itrans-e150sk-g3.webp",
+   "/images/infobit-catalog/itrans-e150sk-g4.webp",
+   "/images/infobit-catalog/itrans-e150sk-g5.webp"
+  ]
  },
  "iTrans E150U2": {
   "slug": "itrans-e150u2",
   "img": "/images/infobit-catalog/itrans-e150u2.webp",
   "desc": "",
-  "source": "https://www.infobitav.com/itrans-e150u2/"
+  "source": "https://www.infobitav.com/itrans-e150u2/",
+  "gallery": [
+   "/images/infobit-catalog/itrans-e150u2-g2.webp",
+   "/images/infobit-catalog/itrans-e150u2-g3.webp",
+   "/images/infobit-catalog/itrans-e150u2-g4.webp",
+   "/images/infobit-catalog/itrans-e150u2-g5.webp"
+  ]
  },
  "iTrans WP70-T": {
   "slug": "itrans-wp70-t",
   "img": "/images/infobit-catalog/itrans-wp70-t.webp",
   "desc": "The infobit HDBaseT Wall Plate (WP70-T) is an intelligent integrated transmitter. It supports one HDMI 2.0 18Gbps input, bi-directional IR and RS232 signals. Uncompressed video, audio and control signals can be transmitted by using HDBaseT technology through a single Cat5 /6/6a cable up to 230ft /70",
-  "source": "https://www.infobitav.com/itrans-wp70-t/"
+  "source": "https://www.infobitav.com/itrans-wp70-t/",
+  "gallery": [
+   "/images/infobit-catalog/itrans-wp70-t-g2.webp",
+   "/images/infobit-catalog/itrans-wp70-t-g3.webp",
+   "/images/infobit-catalog/itrans-wp70-t-g4.webp",
+   "/images/infobit-catalog/itrans-wp70-t-g5.webp"
+  ]
  },
  "iTrans WP70B": {
   "slug": "itrans-wp70b",
   "img": "/images/infobit-catalog/itrans-wp70b.webp",
   "desc": "4K60 HDBaseT Wallplate Extender Kit with USB B/ USB C/ HDMI, 70m",
-  "source": "https://www.infobitav.com/itrans-wp70b/"
+  "source": "https://www.infobitav.com/itrans-wp70b/",
+  "gallery": [
+   "/images/infobit-catalog/itrans-wp70b-g2.webp"
+  ]
  },
  "iTrans WP70C": {
   "slug": "itrans-wp70c",
   "img": "/images/infobit-catalog/itrans-wp70c.webp",
   "desc": "4K60 HDBaseT Wallplate Extender Kit with USB C and HDMI, 70m",
-  "source": "https://www.infobitav.com/itrans-wp70c/"
+  "source": "https://www.infobitav.com/itrans-wp70c/",
+  "gallery": [
+   "/images/infobit-catalog/itrans-wp70c-g2.webp",
+   "/images/infobit-catalog/itrans-wp70c-g3.webp"
+  ]
  },
  "iTrans WP100HC": {
   "slug": "itrans-wp100hc",
   "img": "/images/infobit-catalog/itrans-wp100hc.webp",
   "desc": "4K60 HDMI/USB-C 2x1 HDBT Wall-plate Extender (UK Version)",
-  "source": "https://www.infobitav.com/itrans-wp100hc/"
+  "source": "https://www.infobitav.com/itrans-wp100hc/",
+  "gallery": [
+   "/images/infobit-catalog/itrans-wp100hc-g2.webp",
+   "/images/infobit-catalog/itrans-wp100hc-g3.webp",
+   "/images/infobit-catalog/itrans-wp100hc-g4.webp",
+   "/images/infobit-catalog/itrans-wp100hc-g5.webp"
+  ]
  },
  "iTrans WP70HBC": {
   "slug": "itrans-wp70hbc",
   "img": "/images/infobit-catalog/itrans-wp70hbc.webp",
   "desc": "4K60 HDBaseT Wallplate Extender Kit with USB B/ USB C/ HDMI, 70m",
-  "source": "https://www.infobitav.com/itrans-wp70hbc/"
+  "source": "https://www.infobitav.com/itrans-wp70hbc/",
+  "gallery": [
+   "/images/infobit-catalog/itrans-wp70hbc-g2.webp",
+   "/images/infobit-catalog/itrans-wp70hbc-g3.webp",
+   "/images/infobit-catalog/itrans-wp70hbc-g4.webp",
+   "/images/infobit-catalog/itrans-wp70hbc-g5.webp"
+  ]
  },
  "iTrans WP210-T": {
   "slug": "itrans-wp210-t",
   "img": "/images/infobit-catalog/itrans-wp210-t.webp",
   "desc": "The infobit HDBaseT Wall Plate (WP210-T) is an intelligent integrated transmitter. It supports one HDMI 2.0 18Gbps input, one VGA with audio input, bi-directional IR and uni-directional USB signals. Uncompressed video, audio and control signals can be transmitted by using HDBaseT technology through ",
-  "source": "https://www.infobitav.com/itrans-wp210-t/"
+  "source": "https://www.infobitav.com/itrans-wp210-t/",
+  "gallery": [
+   "/images/infobit-catalog/itrans-wp210-t-g2.webp",
+   "/images/infobit-catalog/itrans-wp210-t-g3.webp",
+   "/images/infobit-catalog/itrans-wp210-t-g4.webp",
+   "/images/infobit-catalog/itrans-wp210-t-g5.webp"
+  ]
  },
  "iTrans WP200-Kit": {
   "slug": "itrans-wp200-kit",
   "img": "/images/infobit-catalog/itrans-wp200-kit.webp",
   "desc": "The infobit HDBaseT Wall Plate kit (WP200-Kit) is an intelligent integrated solution for education and meeting room. It supports two HDMI and one VGA inputs, video switching, analog audio amplifier and central control panel. It is compatible with whiteboard to meet all devices in your education and ",
-  "source": "https://www.infobitav.com/itrans-wp200-kit/"
+  "source": "https://www.infobitav.com/itrans-wp200-kit/",
+  "gallery": [
+   "/images/infobit-catalog/itrans-wp200-kit-g2.webp",
+   "/images/infobit-catalog/itrans-wp200-kit-g3.webp",
+   "/images/infobit-catalog/itrans-wp200-kit-g4.webp",
+   "/images/infobit-catalog/itrans-wp200-kit-g5.webp"
+  ]
  },
  "iTrans WP301-Kit": {
   "slug": "itrans-wp301-kit",
   "img": "/images/infobit-catalog/itrans-wp301-kit.webp",
   "desc": "Supports HDMI signal up to 4K@60Hz 4:4:4, USB-C signal up to 4K@30Hz 4:4:4.  Supports HDMI V2.0 standard and HDCP 2.2 compliant.   Active input automatic detective.  Extending HDMI signal 4K@60Hz up to 131ft/40m and 1080p@60Hz up to 229ft/70m.  The USB-C supports video and USB data transmission.  Su",
-  "source": "https://www.infobitav.com/itrans-wp301-kit/"
+  "source": "https://www.infobitav.com/itrans-wp301-kit/",
+  "gallery": [
+   "/images/infobit-catalog/itrans-wp301-kit-g2.webp",
+   "/images/infobit-catalog/itrans-wp301-kit-g3.webp",
+   "/images/infobit-catalog/itrans-wp301-kit-g4.webp",
+   "/images/infobit-catalog/itrans-wp301-kit-g5.webp"
+  ]
  },
  "iTrans F1000": {
   "slug": "itrans-f1000",
   "img": "/images/infobit-catalog/itrans-f1000.webp",
   "desc": "",
-  "source": "https://www.infobitav.com/itrans-f1000/"
+  "source": "https://www.infobitav.com/itrans-f1000/",
+  "gallery": [
+   "/images/infobit-catalog/itrans-f1000-g2.webp",
+   "/images/infobit-catalog/itrans-f1000-g3.webp",
+   "/images/infobit-catalog/itrans-f1000-g4.webp",
+   "/images/infobit-catalog/itrans-f1000-g5.webp"
+  ]
  },
  "iTrans W100": {
   "slug": "itrans-w100",
   "img": "/images/infobit-catalog/itrans-w100.webp",
   "desc": "100m HDMI FHD Wireless Extender with One-way IR",
-  "source": "https://www.infobitav.com/itrans-w100/"
+  "source": "https://www.infobitav.com/itrans-w100/",
+  "gallery": [
+   "/images/infobit-catalog/itrans-w100-g2.webp",
+   "/images/infobit-catalog/itrans-w100-g3.webp",
+   "/images/infobit-catalog/itrans-w100-g4.webp",
+   "/images/infobit-catalog/itrans-w100-g5.webp"
+  ]
  },
  "iTrans U3-PIC": {
   "slug": "itrans-u3-pic",
   "img": "/images/infobit-catalog/itrans-u3-pic.webp",
   "desc": "Max. 100W USB-C power injector, booster, extension, fully-featured USB C, 4K60 4:4:4 video, extend Full feature USB-C, BYOD, BYOM, touch back control",
-  "source": "https://www.infobitav.com/itrans-u3-pic/"
+  "source": "https://www.infobitav.com/itrans-u3-pic/",
+  "gallery": [
+   "/images/infobit-catalog/itrans-u3-pic-g2.webp",
+   "/images/infobit-catalog/itrans-u3-pic-g3.webp",
+   "/images/infobit-catalog/itrans-u3-pic-g4.webp",
+   "/images/infobit-catalog/itrans-u3-pic-g5.webp"
+  ]
  },
  "iTrans USB2-TR50": {
   "slug": "itrans-usb2-tr50",
   "img": "/images/infobit-catalog/itrans-usb2-tr50.webp",
   "desc": "INFOBIT AV iTrans USB2-TR50: High-Speed USB 2.0 compliant, 480Mbps. Transmission distance is up to 50m over a CAT5e/6/7 cable. Equipped with 4 USB peripherals to connect with keyboards, mouse, cameras, microphone and more. The first two USB-A ports provide 5V1A each and the other two output 5V500mA ",
-  "source": "https://www.infobitav.com/itrans-usb2-tr50/"
+  "source": "https://www.infobitav.com/itrans-usb2-tr50/",
+  "gallery": [
+   "/images/infobit-catalog/itrans-usb2-tr50-g2.webp",
+   "/images/infobit-catalog/itrans-usb2-tr50-g3.webp",
+   "/images/infobit-catalog/itrans-usb2-tr50-g4.webp",
+   "/images/infobit-catalog/itrans-usb2-tr50-g5.webp"
+  ]
  },
  "iTrans USB2-TR100": {
   "slug": "itrans-usb2-tr100",
   "img": "/images/infobit-catalog/itrans-usb2-tr100.webp",
   "desc": "USB extenders 100m",
-  "source": "https://www.infobitav.com/itrans-usb2-tr100/"
+  "source": "https://www.infobitav.com/itrans-usb2-tr100/",
+  "gallery": [
+   "/images/infobit-catalog/itrans-usb2-tr100-g2.webp",
+   "/images/infobit-catalog/itrans-usb2-tr100-g3.webp",
+   "/images/infobit-catalog/itrans-usb2-tr100-g4.webp",
+   "/images/infobit-catalog/itrans-usb2-tr100-g5.webp"
+  ]
  },
  "iTrans USB3-TR100": {
   "slug": "itrans-usb3-tr100",
   "img": "/images/infobit-catalog/itrans-usb3-tr100.webp",
   "desc": "USB 3.0 over HDBaseT 3.0 extender, supports USB 2.0",
-  "source": "https://www.infobitav.com/itrans-usb3-tr100/"
+  "source": "https://www.infobitav.com/itrans-usb3-tr100/",
+  "gallery": [
+   "/images/infobit-catalog/itrans-usb3-tr100-g2.webp",
+   "/images/infobit-catalog/itrans-usb3-tr100-g3.webp",
+   "/images/infobit-catalog/itrans-usb3-tr100-g4.webp",
+   "/images/infobit-catalog/itrans-usb3-tr100-g5.webp"
+  ]
  },
  "iTrans U3-TR100CB": {
   "slug": "itrans-u3-tr100cb",
   "img": "/images/infobit-catalog/itrans-u3-tr100cb.webp",
   "desc": "USB 3.2 Gen 1 Extender with USB C and USB B (100m)",
-  "source": "https://www.infobitav.com/itrans-u3-tr100cb/"
+  "source": "https://www.infobitav.com/itrans-u3-tr100cb/",
+  "gallery": [
+   "/images/infobit-catalog/itrans-u3-tr100cb-g2.webp",
+   "/images/infobit-catalog/itrans-u3-tr100cb-g3.webp",
+   "/images/infobit-catalog/itrans-u3-tr100cb-g4.webp",
+   "/images/infobit-catalog/itrans-u3-tr100cb-g5.webp"
+  ]
  },
  "iTrans U3-WP100TR": {
   "slug": "itrans-u3-wp100tr",
   "img": "/images/infobit-catalog/itrans-u3-wp100tr.webp",
   "desc": "USB 3.2 Gen 1 Wallplate Extender 100m (US 1-Gang)",
-  "source": "https://www.infobitav.com/itrans-u3-wp100tr/"
+  "source": "https://www.infobitav.com/itrans-u3-wp100tr/",
+  "gallery": [
+   "/images/infobit-catalog/itrans-u3-wp100tr-g2.webp",
+   "/images/infobit-catalog/itrans-u3-wp100tr-g3.webp",
+   "/images/infobit-catalog/itrans-u3-wp100tr-g4.webp",
+   "/images/infobit-catalog/itrans-u3-wp100tr-g5.webp"
+  ]
  },
  "iTrans OCS 151": {
   "slug": "itrans-ocs-151",
   "img": "/images/infobit-catalog/itrans-ocs-151.webp",
   "desc": "",
-  "source": "https://www.infobitav.com/itrans-ocs-151/"
+  "source": "https://www.infobitav.com/itrans-ocs-151/",
+  "gallery": [
+   "/images/infobit-catalog/itrans-ocs-151-g2.webp",
+   "/images/infobit-catalog/itrans-ocs-151-g3.webp",
+   "/images/infobit-catalog/itrans-ocs-151-g4.webp",
+   "/images/infobit-catalog/itrans-ocs-151-g5.webp"
+  ]
  },
  "iTrans OCS 181": {
   "slug": "itrans-ocs-181",
   "img": "/images/infobit-catalog/itrans-ocs-181.webp",
   "desc": "",
-  "source": "https://www.infobitav.com/itrans-ocs-181/"
+  "source": "https://www.infobitav.com/itrans-ocs-181/",
+  "gallery": [
+   "/images/infobit-catalog/itrans-ocs-181-g2.webp",
+   "/images/infobit-catalog/itrans-ocs-181-g3.webp",
+   "/images/infobit-catalog/itrans-ocs-181-g4.webp",
+   "/images/infobit-catalog/itrans-ocs-181-g5.webp"
+  ]
  },
  "iBox 01": {
   "slug": "ibox-01",
   "img": "/images/infobit-catalog/ibox-01.webp",
   "desc": "iBox 01: 2x HDMI 2.0, 3x USB A, 1x USB Type C, 1x RJ45, 1x VGA+Audio, 1x Power Plug.   Table mount solution for a conference room or boardroom  Panel Dimension: 199mm*129mm; R=16mm  Hole Dimension: 191mm*121mm R=12mm (Table cutout)  Compatible with iShare Plus.  With Tilt-Up Lid  Cover: Manually ope",
-  "source": "https://www.infobitav.com/ibox-01/"
+  "source": "https://www.infobitav.com/ibox-01/",
+  "gallery": [
+   "/images/infobit-catalog/ibox-01-g2.webp",
+   "/images/infobit-catalog/ibox-01-g3.webp",
+   "/images/infobit-catalog/ibox-01-g4.webp"
+  ]
  },
  "iBox TW": {
   "slug": "ibox-tw",
   "img": "/images/infobit-catalog/ibox-tw.webp",
   "desc": "",
-  "source": "https://www.infobitav.com/ibox-tw/"
+  "source": "https://www.infobitav.com/ibox-tw/",
+  "gallery": [
+   "/images/infobit-catalog/ibox-tw-g2.webp",
+   "/images/infobit-catalog/ibox-tw-g3.webp",
+   "/images/infobit-catalog/ibox-tw-g4.webp",
+   "/images/infobit-catalog/ibox-tw-g5.webp"
+  ]
  },
  "iBox TP": {
   "slug": "ibox-tp",
   "img": "/images/infobit-catalog/ibox-tp.webp",
   "desc": "",
-  "source": "https://www.infobitav.com/ibox-tp/"
+  "source": "https://www.infobitav.com/ibox-tp/",
+  "gallery": [
+   "/images/infobit-catalog/ibox-tp-g2.webp",
+   "/images/infobit-catalog/ibox-tp-g3.webp",
+   "/images/infobit-catalog/ibox-tp-g4.webp",
+   "/images/infobit-catalog/ibox-tp-g5.webp"
+  ]
  },
  "iBox TPV": {
   "slug": "ibox-tpv",
   "img": "/images/infobit-catalog/ibox-tpv.webp",
   "desc": "",
-  "source": "https://www.infobitav.com/ibox-tpv/"
+  "source": "https://www.infobitav.com/ibox-tpv/",
+  "gallery": [
+   "/images/infobit-catalog/ibox-tpv-g2.webp",
+   "/images/infobit-catalog/ibox-tpv-g3.webp",
+   "/images/infobit-catalog/ibox-tpv-g4.webp",
+   "/images/infobit-catalog/ibox-tpv-g5.webp"
+  ]
  },
  "iBox TPC": {
   "slug": "ibox-tpc",
   "img": "/images/infobit-catalog/ibox-tpc.webp",
   "desc": "",
-  "source": "https://www.infobitav.com/ibox-tpc/"
+  "source": "https://www.infobitav.com/ibox-tpc/",
+  "gallery": [
+   "/images/infobit-catalog/ibox-tpc-g2.webp",
+   "/images/infobit-catalog/ibox-tpc-g3.webp",
+   "/images/infobit-catalog/ibox-tpc-g4.webp",
+   "/images/infobit-catalog/ibox-tpc-g5.webp"
+  ]
  },
  "iBox TPD": {
   "slug": "ibox-tpd",
   "img": "/images/infobit-catalog/ibox-tpd.webp",
   "desc": "",
-  "source": "https://www.infobitav.com/ibox-tpd/"
+  "source": "https://www.infobitav.com/ibox-tpd/",
+  "gallery": [
+   "/images/infobit-catalog/ibox-tpd-g2.webp",
+   "/images/infobit-catalog/ibox-tpd-g3.webp",
+   "/images/infobit-catalog/ibox-tpd-g4.webp",
+   "/images/infobit-catalog/ibox-tpd-g5.webp"
+  ]
  },
  "iBox Core-500": {
   "slug": "ibox-core-500",
   "img": "/images/infobit-catalog/ibox-core-500.webp",
   "desc": "Retractable In-Desk Table Box with USB C, HDMI and USB A",
-  "source": "https://www.infobitav.com/ibox-core-500/"
+  "source": "https://www.infobitav.com/ibox-core-500/",
+  "gallery": [
+   "/images/infobit-catalog/ibox-core-500-g2.webp",
+   "/images/infobit-catalog/ibox-core-500-g3.webp",
+   "/images/infobit-catalog/ibox-core-500-g4.webp",
+   "/images/infobit-catalog/ibox-core-500-g5.webp"
+  ]
  },
  "iTrans AD01": {
   "slug": "itrans-ad01",
   "img": "/images/infobit-catalog/itrans-ad01.webp",
   "desc": "",
-  "source": "https://www.infobitav.com/itrans-ad01/"
+  "source": "https://www.infobitav.com/itrans-ad01/",
+  "gallery": [
+   "/images/infobit-catalog/itrans-ad01-g2.webp",
+   "/images/infobit-catalog/itrans-ad01-g3.webp",
+   "/images/infobit-catalog/itrans-ad01-g4.webp",
+   "/images/infobit-catalog/itrans-ad01-g5.webp"
+  ]
  },
  "iTrans AD02": {
   "slug": "itrans-ad02",
   "img": "/images/infobit-catalog/itrans-ad02.webp",
   "desc": "",
-  "source": "https://www.infobitav.com/itrans-ad02/"
+  "source": "https://www.infobitav.com/itrans-ad02/",
+  "gallery": [
+   "/images/infobit-catalog/itrans-ad02-g2.webp",
+   "/images/infobit-catalog/itrans-ad02-g3.webp",
+   "/images/infobit-catalog/itrans-ad02-g4.webp",
+   "/images/infobit-catalog/itrans-ad02-g5.webp"
+  ]
  },
  "iTrans AE01": {
   "slug": "itrans-ae01",
   "img": "/images/infobit-catalog/itrans-ae01.webp",
   "desc": "",
-  "source": "https://www.infobitav.com/itrans-ae01/"
+  "source": "https://www.infobitav.com/itrans-ae01/",
+  "gallery": [
+   "/images/infobit-catalog/itrans-ae01-g2.webp",
+   "/images/infobit-catalog/itrans-ae01-g3.webp",
+   "/images/infobit-catalog/itrans-ae01-g4.webp",
+   "/images/infobit-catalog/itrans-ae01-g5.webp"
+  ]
  },
  "iMeeting A7": {
   "slug": "imeeting-a7",
   "img": "/images/infobit-catalog/imeeting-a7.webp",
   "desc": "",
-  "source": "https://www.infobitav.com/imeeting-a7/"
+  "source": "https://www.infobitav.com/imeeting-a7/",
+  "gallery": [
+   "/images/infobit-catalog/imeeting-a7-g2.webp",
+   "/images/infobit-catalog/imeeting-a7-g3.webp",
+   "/images/infobit-catalog/imeeting-a7-g4.webp",
+   "/images/infobit-catalog/imeeting-a7-g5.webp"
+  ]
  },
  "iMount 3710": {
   "slug": "imount-3710",
   "img": "/images/infobit-catalog/imount-3710.webp",
   "desc": "",
-  "source": "https://www.infobitav.com/imount-3710/"
+  "source": "https://www.infobitav.com/imount-3710/",
+  "gallery": [
+   "/images/infobit-catalog/imount-3710-g2.webp",
+   "/images/infobit-catalog/imount-3710-g3.webp",
+   "/images/infobit-catalog/imount-3710-g4.webp",
+   "/images/infobit-catalog/imount-3710-g5.webp"
+  ]
  },
  "iSwitch UVC03K": {
   "slug": "iswitch-uvc03k",
   "img": "/images/infobit-catalog/iswitch-uvc03k.webp",
   "desc": "",
-  "source": "https://www.infobitav.com/iswitch-uvc03k/"
+  "source": "https://www.infobitav.com/iswitch-uvc03k/",
+  "gallery": [
+   "/images/infobit-catalog/iswitch-uvc03k-g2.webp",
+   "/images/infobit-catalog/iswitch-uvc03k-g3.webp",
+   "/images/infobit-catalog/iswitch-uvc03k-g4.webp",
+   "/images/infobit-catalog/iswitch-uvc03k-g5.webp"
+  ]
  },
  "iMeeting H31": {
   "slug": "imeeting-h31",
   "img": "/images/infobit-catalog/imeeting-h31.webp",
   "desc": "iMeeting H31: HDMI 2.0 3x1 Multi-format Presentation Switcher Supports HDMI, Mini DP, and USB-C input signals to be converted to HDMI signals. Auto-detects the input signal, the last connected signal source will be switched to the output automatically. Starts to scan from HDMI to USB-C and switch th",
-  "source": "https://www.infobitav.com/imeeting-h31/"
+  "source": "https://www.infobitav.com/imeeting-h31/",
+  "gallery": [
+   "/images/infobit-catalog/imeeting-h31-g2.webp",
+   "/images/infobit-catalog/imeeting-h31-g3.webp",
+   "/images/infobit-catalog/imeeting-h31-g4.webp",
+   "/images/infobit-catalog/imeeting-h31-g5.webp"
+  ]
  },
  "iTools G4K": {
   "slug": "itools-g4k",
   "img": "/images/infobit-catalog/itools-g4k.webp",
   "desc": "HDMI 4K60 Signal Generator & Display Emulator, anayzer",
-  "source": "https://www.infobitav.com/itools-g4k/"
+  "source": "https://www.infobitav.com/itools-g4k/",
+  "gallery": [
+   "/images/infobit-catalog/itools-g4k-g2.webp",
+   "/images/infobit-catalog/itools-g4k-g3.webp",
+   "/images/infobit-catalog/itools-g4k-g4.webp",
+   "/images/infobit-catalog/itools-g4k-g5.webp"
+  ]
  },
  "iVoice B300": {
   "slug": "ivoice-b300",
   "img": "/images/infobit-catalog/ivoice-b300.webp",
   "desc": "The iVoice B300 Bluetooth headset. Bluetooth version: V4.1. Battery: 1,050 mAh. Talking Time: 70 hours. Music playing time: 65 hours (ANC off)/26 hours  (ANC on). Standby Time: 210 days. Charging Voltage: 5V. Charging Time: about 3 -4 hours. Speaker: φ40mm 32Ω 30mW. Wireless Range: 20m. RF frequency",
-  "source": "https://www.infobitav.com/ivoice-b300/"
+  "source": "https://www.infobitav.com/ivoice-b300/",
+  "gallery": [
+   "/images/infobit-catalog/ivoice-b300-g2.webp",
+   "/images/infobit-catalog/ivoice-b300-g3.webp",
+   "/images/infobit-catalog/ivoice-b300-g4.webp",
+   "/images/infobit-catalog/ivoice-b300-g5.webp"
+  ]
  },
  "iWall HD55": {
   "slug": "iwall-hd55",
   "img": "/images/infobit-catalog/iwall-hd55.webp",
   "desc": "",
-  "source": "https://www.infobitav.com/iwall-hd55/"
+  "source": "https://www.infobitav.com/iwall-hd55/",
+  "gallery": [
+   "/images/infobit-catalog/iwall-hd55-g2.webp",
+   "/images/infobit-catalog/iwall-hd55-g3.webp",
+   "/images/infobit-catalog/iwall-hd55-g4.webp",
+   "/images/infobit-catalog/iwall-hd55-g5.webp"
+  ]
  },
  "iMeeting PD156": {
   "slug": "imeeting-pd156",
   "img": "/images/infobit-catalog/imeeting-pd156.webp",
   "desc": "15.6",
-  "source": "https://www.infobitav.com/imeeting-pd156/"
+  "source": "https://www.infobitav.com/imeeting-pd156/",
+  "gallery": [
+   "/images/infobit-catalog/imeeting-pd156-g2.webp",
+   "/images/infobit-catalog/imeeting-pd156-g3.webp",
+   "/images/infobit-catalog/imeeting-pd156-g4.webp",
+   "/images/infobit-catalog/imeeting-pd156-g5.webp"
+  ]
  },
  "iTrans NH1080": {
   "slug": "itrans-nh1080",
   "img": "/images/infobit-catalog/itrans-nh1080.webp",
   "desc": "",
-  "source": "https://www.infobitav.com/itrans-nh1080/"
+  "source": "https://www.infobitav.com/itrans-nh1080/",
+  "gallery": [
+   "/images/infobit-catalog/itrans-nh1080-g2.webp",
+   "/images/infobit-catalog/itrans-nh1080-g3.webp",
+   "/images/infobit-catalog/itrans-nh1080-g4.webp",
+   "/images/infobit-catalog/itrans-nh1080-g5.webp"
+  ]
  },
  "iTrans HC": {
   "slug": "itrans-hc",
   "img": "/images/infobit-catalog/itrans-hc.webp",
   "desc": "4K60 HDMI to USB-C Converter",
-  "source": "https://www.infobitav.com/itrans-hc/"
+  "source": "https://www.infobitav.com/itrans-hc/",
+  "gallery": [
+   "/images/infobit-catalog/itrans-hc-g2.webp",
+   "/images/infobit-catalog/itrans-hc-g3.webp",
+   "/images/infobit-catalog/itrans-hc-g4.webp",
+   "/images/infobit-catalog/itrans-hc-g5.webp"
+  ]
  },
  "iPower IEC8": {
   "slug": "ipower-iec8",
   "img": "/images/infobit-catalog/ipower-iec8.webp",
   "desc": "8-Port Smart Power Delivery Unit, Smart PDU",
-  "source": "https://www.infobitav.com/ipower-iec8/"
+  "source": "https://www.infobitav.com/ipower-iec8/",
+  "gallery": [
+   "/images/infobit-catalog/ipower-iec8-g2.webp",
+   "/images/infobit-catalog/ipower-iec8-g3.webp",
+   "/images/infobit-catalog/ipower-iec8-g4.webp",
+   "/images/infobit-catalog/ipower-iec8-g5.webp"
+  ]
  }
 }
