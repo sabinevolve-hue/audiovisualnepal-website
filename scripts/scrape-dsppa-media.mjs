@@ -59,5 +59,36 @@ for (const model of models) {
     await new Promise((r) => setTimeout(r, 120))
   } catch { /* skip */ }
 }
+// GALLERY BACKFILL — brochure/content images from product pages
+let gAdded = 0
+for (const [model, e] of Object.entries(media)) {
+  if (e.gallery || !e.source) continue
+  try {
+    const res = await fetch(e.source, { headers: UA })
+    if (!res.ok) continue
+    const html = await res.text()
+    const raw = [...html.matchAll(/(?:src|data-src|data-original)="([^"]*\/uploads\/image\/[^"]+\.(?:webp|png|jpe?g))"/gi)].map((m) => m[1])
+      .filter((u) => !/logo|_400x400|banner|icon/i.test(u))
+    const urls = [...new Set(raw.map((u) => u.startsWith('http') ? u : 'https://www.dsppatech.com' + (u.startsWith('/') ? u : '/' + u)))].slice(0, 4)
+    const gallery = []
+    let n = 2
+    for (const u of urls) {
+      try {
+        const ir = await fetch(u, { headers: UA })
+        if (!ir.ok) continue
+        const buf = Buffer.from(await ir.arrayBuffer())
+        const f = `${e.slug}-g${n}.webp`
+        await sharp(buf).resize(1000, 1400, { fit: 'inside', withoutEnlargement: true }).webp({ quality: 74 }).toFile(resolve(OUT_IMG, f))
+        gallery.push(`/images/dsppa-catalog/${f}`)
+        n++
+      } catch {}
+    }
+    if (gallery.length) { e.gallery = gallery; gAdded++ }
+    if (gAdded % 20 === 0) writeFileSync(OUT_JSON, JSON.stringify(media, null, 1))
+    await new Promise((r) => setTimeout(r, 120))
+  } catch {}
+}
+console.log('galleries added:', gAdded)
+
 writeFileSync(OUT_JSON, JSON.stringify(media, null, 1))
 console.log(`matched: ${hits}, total media: ${Object.keys(media).length} of ${models.length}`)

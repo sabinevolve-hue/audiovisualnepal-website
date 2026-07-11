@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * scrape-lampro-media.mjs (v3) — Fetch official Lampro series pages (known manifest),
+ * scrape-lampro-media.mjs (v4) — Fetch official Lampro series pages (known manifest),
  * extract main image + description, self-host. Runs in GitHub Actions.
  */
 import { mkdirSync, writeFileSync, readFileSync } from 'fs'
@@ -74,7 +74,8 @@ for (const [model, e] of Object.entries(media)) {
     const res = await fetch(e.source, { headers: UA })
     if (!res.ok) continue
     const html = await res.text()
-    const urls = [...new Set([...html.matchAll(/https?:\/\/www\.lampro\.net\/media\/[^\s"')]+\.(?:webp|png|jpe?g)/g)].map((m) => m[0]))].slice(1, 6)
+    const raw = [...html.matchAll(/(?:src|data-src|data-original)="([^"]*\/media\/[^"]+\.(?:webp|png|jpe?g))"/gi)].map((m) => m[1])
+    const urls = [...new Set(raw.map((u) => u.startsWith('http') ? u : 'https://www.lampro.net' + (u.startsWith('/') ? u : '/' + u)))].slice(1, 6)
     const gallery = []
     let n = 2
     for (const u of urls) {
