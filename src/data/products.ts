@@ -802,7 +802,7 @@ const INFOBIT: Product[] = [
     category: "conference-cameras", subcategory: "PTZ Dual-Lens Tracking Camera",
     tagline: "Dual-Lens 1080P PTZ — 12x Zoom + 110° Wide-Angle Simultaneously",
     badge: "Featured" as const,
-    imageUrl: "https://www.infobitav.com/wp-content/uploads/2024/08/iCam-PT40-B1-scaled.webp",
+    imageUrl: "/images/products/infobit/infobit-icam-pt40/gallery-0.webp",
     imageFallback: "#6366F1",
     description: "The iCam PT40 is InfoBit's dual-lens PTZ camera combining a 12x optical zoom main camera with a fixed 110° ultra-wide second lens in a single housing. Both lenses stream simultaneously — AI presenter tracking PTZ keeps the speaker in frame while the wide lens captures the full room view. Multi-stream output (close-up + full-view + switched) over IP, HDMI, 3G-SDI and USB3.0. PoE optional. ONVIF, RTSP, RTMP, RS-485/RS-232 VISCA. Used in lecture theatres, courtrooms, hybrid classrooms and government chambers.",
     keyFeatures: [
@@ -842,7 +842,7 @@ const INFOBIT: Product[] = [
     relatedSlugs: ["infobit-vb50", "infobit-vb80"],
     brandProductUrl: "https://www.infobitav.com/icam-pt40/",
     gallery: [
-      "https://www.infobitav.com/wp-content/uploads/2024/08/iCam-PT40-B1-scaled.webp",
+      "/images/products/infobit/infobit-icam-pt40/gallery-0.webp",
     ],
   },
   // ── iCam VB40: USB Video Bar 4K ──────────────────────────────────────────
@@ -884,7 +884,7 @@ const INFOBIT: Product[] = [
     category: "video-conferencing", subcategory: "All-in-One Video Bar",
     tagline: "4K AI Video Bar — AI Tracking · Dante Audio · Large Room",
     badge: "New" as const,
-    imageUrl: "https://www.infobitav.com/wp-content/uploads/2024/08/iCam-VB80-B1-scaled.webp",
+    imageUrl: "/images/products/infobit/infobit-icam-vb80/gallery-0.webp",
     imageFallback: "#6366F1",
     description: "The iCam VB80 is InfoBit's flagship video bar for large conference rooms. A 4K AI tracking camera with auto-framing keeps every presenter in frame across a large space. Native Dante audio integration connects directly into Dante ecosystems. Extended microphone pickup and high-power speaker cover rooms of up to 20+ people. Teams and Zoom certified for one-touch meeting start.",
     keyFeatures: [
@@ -907,7 +907,7 @@ const INFOBIT: Product[] = [
     relatedSlugs: ["infobit-vb50", "infobit-icam-vb40", "infobit-icam-pt40"],
     brandProductUrl: "https://www.infobitav.com/icam-vb80/",
     gallery: [
-      "https://www.infobitav.com/wp-content/uploads/2024/08/iCam-VB80-B1-scaled.webp",
+      "/images/products/infobit/infobit-icam-vb80/gallery-0.webp",
     ],
   },
   // ── iShare X400: 4-Screen Wireless Presentation ──────────────────────────
@@ -949,7 +949,7 @@ const INFOBIT: Product[] = [
     name: "InfoBit iMatrix HU44", brand: "InfoBit", brandSlug: "infobit",
     category: "av-switching", subcategory: "HDMI Matrix Switcher",
     tagline: "4K 4×4 HDMI USB Matrix Switcher — HDCP 2.2 · Audio Breakout · IP Control",
-    imageUrl: "https://www.infobitav.com/wp-content/uploads/2024/09/iMatrix-HU44-B-scaled.webp",
+    imageUrl: "/images/products/infobit/infobit-imatrix-hu44/gallery-0.webp",
     imageFallback: "#6366F1",
     description: "The iMatrix HU44 is a 4-input, 4-output 4K HDMI matrix switcher with integrated USB routing for boardrooms that need to share any source to any display and route USB devices (cameras, speakerphones) to any conferencing endpoint. HDCP 2.2 compliance. Audio de-embedding per output. RS-232 and IP control for Crestron, AMX, Extron and Control4.",
     keyFeatures: [
@@ -973,7 +973,7 @@ const INFOBIT: Product[] = [
     relatedSlugs: ["infobit-vb50", "infobit-ishare-x400"],
     brandProductUrl: "https://www.infobitav.com/imatrix-hu44/",
     gallery: [
-      "https://www.infobitav.com/wp-content/uploads/2024/09/iMatrix-HU44-B-scaled.webp",
+      "/images/products/infobit/infobit-imatrix-hu44/gallery-0.webp",
     ],
   },
   // ── iSpeaker M250: USB Speakerphone ──────────────────────────────────────
@@ -982,7 +982,7 @@ const INFOBIT: Product[] = [
     name: "InfoBit iSpeaker M250", brand: "InfoBit", brandSlug: "infobit",
     category: "conference-audio", subcategory: "USB Speakerphone",
     tagline: "USB Conference Speakerphone — 360° Omni · AEC · Plug & Play",
-    imageUrl: "https://www.infobitav.com/wp-content/uploads/2024/08/iSpeaker-M250-B-scaled.webp",
+    imageUrl: "/images/products/infobit/infobit-ispeaker-m250/gallery-0.webp",
     imageFallback: "#6366F1",
     description: "The iSpeaker M250 is InfoBit's USB conference speakerphone for small to medium meeting rooms. Omnidirectional microphones capture voices from all sides of the table. Full-duplex AEC and noise suppression for clear conversation. USB plug-and-play — no driver installation, works immediately with Zoom, Teams, Webex and any conferencing app on Windows, macOS and Linux.",
     keyFeatures: [
@@ -1006,7 +1006,7 @@ const INFOBIT: Product[] = [
     relatedSlugs: ["tenveo-m5b", "infobit-vb50"],
     brandProductUrl: "https://www.infobitav.com/ispeaker-m250/",
     gallery: [
-      "https://www.infobitav.com/wp-content/uploads/2024/08/iSpeaker-M250-B-scaled.webp",
+      "/images/products/infobit/infobit-ispeaker-m250/gallery-0.webp",
     ],
   },
 ]
