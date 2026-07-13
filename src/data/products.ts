@@ -55,6 +55,7 @@ const DSPPA: Product[] = [
     tagline: "8-Zone 500W EN54 Voice Evacuation PA System",
     badge: "Best Seller",
     imageUrl: "/images/products/dsppa/dsppa-pava9500/main.jpg",
+    gallery: ["/images/dsppa-catalog/pava9500-g2.webp", "/images/dsppa-catalog/pava9500-g3.webp", "/images/dsppa-catalog/pava9500-g4.webp", "/images/dsppa-catalog/pava9500-g5.webp"],
     imageFallback: "#0B1E3D",
     description: "The PAVA9500 is DSPPA's flagship integrated voice evacuation system, EN54-16 compliant, delivering 500W across 8 independent speaker zones. Supports up to 160 zones via expansion, with dual amplifier failover and full line supervision. Ideal for large government buildings, hospitals, hotels and campuses.",
     keyFeatures: [
@@ -98,6 +99,7 @@ const DSPPA: Product[] = [
     tagline: "Dante-Networked 8-Zone 500W Voice Evacuation System",
     badge: "New",
     imageUrl: "/images/products/dsppa/dsppa-pava8500/main.jpg",
+    gallery: ["/images/dsppa-catalog/pava8500-g2.webp", "/images/dsppa-catalog/pava8500-g3.webp", "/images/dsppa-catalog/pava8500-g4.webp", "/images/dsppa-catalog/pava8500-g5.webp"],
     imageFallback: "#0B1E3D",
     description: "The PAVA8500 brings Dante audio networking to EN54-compliant voice evacuation. 8 zones expandable to 160, with built-in 500W digital amplifier, Dante protocol support, and battery backup monitoring. The PAVA8008 remote paging station enables distributed operation across large facilities.",
     keyFeatures: [
@@ -139,6 +141,7 @@ const DSPPA: Product[] = [
     tagline: "4-Zone 600W Compact Wall-mount Voice Alarm System",
     badge: "Popular",
     imageUrl: "/images/products/dsppa/dsppa-pava4600/main.jpg",
+    gallery: ["/images/dsppa-catalog/pava4600-g2.webp", "/images/dsppa-catalog/pava4600-g3.webp", "/images/dsppa-catalog/pava4600-g4.webp"],
     imageFallback: "#0B1E3D",
     description: "Compact wall-mount voice evacuation solution for smaller buildings. 600W across 4 zones with automatic main/standby amplifier switching. Supports AC and DC24V power supply, built-in battery charger, and speaker line detection. Perfect for offices, retail, small hotels and educational facilities.",
     keyFeatures: [
@@ -170,6 +173,7 @@ const DSPPA: Product[] = [
     tagline: "250W Digital Mixer Amplifier with USB, FM & Bluetooth",
     badge: "Best Seller",
     imageUrl: "/images/products/dsppa/dsppa-dma250u/main.jpg",
+    gallery: ["/images/dsppa-catalog/dma250u-g2.webp", "/images/dsppa-catalog/dma250u-g3.webp", "/images/dsppa-catalog/dma250u-g4.webp", "/images/dsppa-catalog/dma250u-g5.webp"],
     imageFallback: "#1E3A5F",
     description: "Professional 250W mixer amplifier with 70V/100V and 4–16Ω output, 3 mic inputs, 2 AUX inputs, USB, FM and Bluetooth. LCD display shows working status, with rack-mount handles for standard 19\" rack. Available in 60W to 650W versions (DMA60U–DMA650U).",
     keyFeatures: [
@@ -237,6 +241,7 @@ const DSPPA: Product[] = [
     category: "amplifiers", subcategory: "Integrated Mixer Amplifier",
     tagline: "6-Zone 250W Integrated Mixer Amplifier with Remote Paging",
     imageUrl: "/images/products/dsppa/dsppa-dma6250u/main.jpg",
+    gallery: ["/images/dsppa-catalog/dma6250u-g2.webp", "/images/dsppa-catalog/dma6250u-g3.webp", "/images/dsppa-catalog/dma6250u-g4.webp", "/images/dsppa-catalog/dma6250u-g5.webp"],
     imageFallback: "#1E3A5F",
     description: "250W 6-zone integrated mixer amplifier with 4 mic, 4 AUX inputs, USB/FM/Bluetooth/TF card. Supports up to 6 remote paging microphones via dual RJ45. Built-in chime, priority MIC and 19\" rack mount. Available in 250W, 350W, 500W and 650W.",
     keyFeatures: [
@@ -266,6 +271,7 @@ const DSPPA: Product[] = [
     tagline: "IP Network PA Management Server — 17\" Touch Screen",
     badge: "Featured",
     imageUrl: "/images/products/dsppa/dsppa-mag6182ii-pro/gallery-0.jpg",
+    gallery: ["/images/dsppa-catalog/mag6182ii-g2.webp", "/images/dsppa-catalog/mag6182ii-g3.webp", "/images/dsppa-catalog/mag6182ii-g4.webp", "/images/dsppa-catalog/mag6182ii-g5.webp"],
     imageFallback: "#0B1E3D",
     description: "Central management server for DSPPA MAG6000 IP Network PA systems. Industrial circuit board, 17\" true-color touch screen, dual-server redundancy with automatic backup. Supports TTS announcements in Chinese and English, scheduled broadcasts, recording and full web-based remote monitoring.",
     keyFeatures: [
@@ -298,6 +304,7 @@ const DSPPA: Product[] = [
     category: "ip-network-audio", subcategory: "IP Network Amplifier",
     tagline: "60W IP Network Digital Power Amplifier",
     imageUrl: "/images/products/dsppa/dsppa-mag6806/main.jpg",
+    gallery: ["/images/dsppa-catalog/mag6806-g2.webp", "/images/dsppa-catalog/mag6806-g3.webp", "/images/dsppa-catalog/mag6806-g4.webp", "/images/dsppa-catalog/mag6806-g5.webp"],
     imageFallback: "#0B1E3D",
     description: "Rack-mount IP network amplifier for MAG6000 distributed PA systems. 60W at 100V with TCP/IP control, built-in media player (USB/SD), AUX and EMC inputs. Available in 60W, 120W, 250W, 350W, 650W versions. Digital display shows system status and time.",
     keyFeatures: [
@@ -423,6 +430,7 @@ const DSPPA: Product[] = [
     category: "horn-speakers", subcategory: "Hi-Fi Horn Speaker",
     tagline: "25W High-Fidelity Outdoor Horn Speaker — IP66",
     imageUrl: "/images/products/dsppa/dsppa-dsp161hd/main.jpg",
+    gallery: ["/images/dsppa-catalog/dsp161hd-g2.webp", "/images/dsppa-catalog/dsp161hd-g3.webp", "/images/dsppa-catalog/dsp161hd-g4.webp", "/images/dsppa-catalog/dsp161hd-g5.webp"],
     imageFallback: "#2563EB",
     description: "Hi-Fi two-way horn speaker with built-in 70V/100V transformer, IP66 waterproof rating and high-quality alloy-aluminum housing. Wide frequency response and high sensitivity for outdoor background music and paging at railway stations, shopping malls, parking lots and factories.",
     keyFeatures: [
@@ -527,6 +535,7 @@ const INFOBIT: Product[] = [
     tagline: "4K All-in-One Conference Video Bar with AI Auto-Framing",
     badge: "Best Seller",
     imageUrl: "/images/products/infobit/infobit-vb50/main.webp",
+    gallery: ["/images/infobit-catalog/icam-vb50-g2.webp", "/images/infobit-catalog/icam-vb50-g3.webp", "/images/infobit-catalog/icam-vb50-g4.webp", "/images/infobit-catalog/icam-vb50-g5.webp"],
     imageFallback: "#6366F1",
     description: "The iCam VB50 combines a 4K camera, microphone array and speaker into a single USB bar — plug-in and your meeting room is ready. AI auto-framing tracks active speakers, 5× digital zoom, 120° wide-angle lens, and Bluetooth. Works with Zoom, Teams, WebEx and all major UC platforms.",
     keyFeatures: [
@@ -558,6 +567,7 @@ const INFOBIT: Product[] = [
     tagline: "4K Conference Video Bar with 5m Pickup & Expansion Mic",
     badge: "Popular",
     imageUrl: "/images/products/infobit/infobit-vb60/main.webp",
+    gallery: ["/images/infobit-catalog/icam-vb60-g2.webp", "/images/infobit-catalog/icam-vb60-g3.webp", "/images/infobit-catalog/icam-vb60-g4.webp", "/images/infobit-catalog/icam-vb60-g5.webp"],
     imageFallback: "#6366F1",
     description: "Upgraded from VB50 with speaker voice tracking, 5m pickup, USB HID support and daisy-chainable expansion microphones up to 4 units via RJ45. Ideal for medium-large meeting rooms. Works with Zoom Rooms, Teams Rooms and WebEx Devices.",
     keyFeatures: [
@@ -585,6 +595,7 @@ const INFOBIT: Product[] = [
     tagline: "4K All-in-One BYOD/BYOM Bar with Wireless Presentation",
     badge: "New",
     imageUrl: "/images/products/infobit/infobit-vb80/main.jpg",
+    gallery: ["/images/infobit-catalog/icam-vb80-g2.webp", "/images/infobit-catalog/icam-vb80-g3.webp", "/images/infobit-catalog/icam-vb80-g4.webp", "/images/infobit-catalog/icam-vb80-g5.webp"],
     imageFallback: "#6366F1",
     description: "The VB80 is InfoBit's premium video bar — 4K with 120° FOV, 4× MEMS microphone array (8m range), HDMI wired BYOD, wireless Airplay/Miracast BYOM, and Android OS for standalone operation. Up to 5 expansion mics, WiFi, and iShare MC dongle support.",
     keyFeatures: [
@@ -612,6 +623,7 @@ const INFOBIT: Product[] = [
     tagline: "4K UHD AI Auto-Tracking PTZ Conference Camera",
     badge: "Featured",
     imageUrl: "/images/products/infobit/infobit-icam-p30/main.webp",
+    gallery: ["/images/infobit-catalog/icam-p30-g2.webp", "/images/infobit-catalog/icam-p30-g3.webp", "/images/infobit-catalog/icam-p30-g4.webp", "/images/infobit-catalog/icam-p30-g5.webp"],
     imageFallback: "#6366F1",
     description: "Professional 4K PTZ camera with AI-based human body detection for automatic target tracking. 12× optical zoom, 80.8° HFOV. Outputs via USB 3.0, HDMI and Ethernet. Compatible with Zoom, Teams, WebEx. Ideal for lecture halls, broadcast studios and large boardrooms.",
     keyFeatures: [
@@ -643,6 +655,7 @@ const INFOBIT: Product[] = [
     category: "conference-cameras", subcategory: "PTZ Lecturer Tracking",
     tagline: "Dual-Lens AI Lecturer Tracking PTZ Camera — 1080P60 SDI",
     imageUrl: "/images/products/infobit/infobit-icam-p40/main.webp",
+    gallery: ["/images/infobit-catalog/icam-p40-g2.webp", "/images/infobit-catalog/icam-p40-g3.webp", "/images/infobit-catalog/icam-p40-g4.webp", "/images/infobit-catalog/icam-p40-g5.webp"],
     imageFallback: "#6366F1",
     description: "Specialized dual-lens PTZ for lecture capture and distance learning. AI human body detection locks onto the presenter and adjusts pan/tilt/zoom automatically — even adjusts for the lecturer's height. Dedicated 1080P60 SDI tracking output plus wide overview output.",
     keyFeatures: [
@@ -671,6 +684,7 @@ const INFOBIT: Product[] = [
     tagline: "4K60 Wireless Presentation — 0.1s Latency, 16 Users",
     badge: "Best Seller",
     imageUrl: "/images/products/infobit/infobit-ishare-x200/main.webp",
+    gallery: ["/images/infobit-catalog/ishare-x200-g2.webp", "/images/infobit-catalog/ishare-x200-g3.webp", "/images/infobit-catalog/ishare-x200-g4.webp", "/images/infobit-catalog/ishare-x200-g5.webp"],
     imageFallback: "#6366F1",
     description: "Enterprise-grade wireless presentation system with 4K60Hz output, dual WiFi, 0.1-second mirroring latency and 30m range. Supports USB-A, HDMI and USB-C dongles, portrait and landscape screens, and up to 16 simultaneous users. Built-in whiteboard and annotation tools.",
     keyFeatures: [
@@ -697,6 +711,7 @@ const INFOBIT: Product[] = [
     category: "video-walls", subcategory: "4K Video Wall Controller",
     tagline: "4K60 2×4 HDMI Video Wall Controller with TCP/IP Control",
     imageUrl: "/images/products/infobit/infobit-iwall-204/main.webp",
+    gallery: ["/images/infobit-catalog/iwall-204-g2.webp", "/images/infobit-catalog/iwall-204-g3.webp", "/images/infobit-catalog/iwall-204-g4.webp", "/images/infobit-catalog/iwall-204-g5.webp"],
     imageFallback: "#6366F1",
     description: "2-input, 4-output HDMI video wall controller with 4K60Hz input and output. Supports flexible M×N video wall configurations up to 6×6, RS232 and TCP/IP control. Built-in audio de-embedding. Ideal for control rooms, lobbies and multi-display signage walls.",
     keyFeatures: [
@@ -723,6 +738,7 @@ const INFOBIT: Product[] = [
     category: "video-walls", subcategory: "Video Wall Controller",
     tagline: "1×9 4K30 Video Wall Controller — Plug-and-Play",
     imageUrl: "/images/products/infobit/infobit-iwall-109/main.png",
+    gallery: ["/images/infobit-catalog/iwall-109-g2.webp", "/images/infobit-catalog/iwall-109-g3.webp", "/images/infobit-catalog/iwall-109-g4.webp", "/images/infobit-catalog/iwall-109-g5.webp"],
     imageFallback: "#6366F1",
     description: "Ultra-simple 1-input to 9-output video wall controller. Plug-and-play with IR remote control and multiple preset video wall modes. Supports 8/10/12-bit deep color. Perfect for retail, hospitality and public space multi-screen setups without complex configuration.",
     keyFeatures: [
@@ -748,6 +764,7 @@ const INFOBIT: Product[] = [
     tagline: "8-Element Beamforming Speakerphone — 5m Range, 5-Unit Cascade",
     badge: "Popular",
     imageUrl: "/images/products/infobit/infobit-ispeaker-m500/main.webp",
+    gallery: ["/images/infobit-catalog/ispeaker-m500-g2.webp", "/images/infobit-catalog/ispeaker-m500-g3.webp", "/images/infobit-catalog/ispeaker-m500-g4.webp", "/images/infobit-catalog/ispeaker-m500-g5.webp"],
     imageFallback: "#6366F1",
     description: "Professional USB omnidirectional speakerphone with 8-element beamforming microphone array, full-duplex communication, and echo cancellation with AGC. Up to 5 units daisy-chainable for large conference rooms up to 100 sqm. Works with all UC platforms.",
     keyFeatures: [
@@ -1170,6 +1187,7 @@ const TENVEO: Product[] = [
     category: "conference-audio", subcategory: "Bluetooth Speakerphone",
     tagline: "USB-C & Bluetooth Speakerphone — 5m Pickup, Up to 5 People",
     imageUrl: "/images/products/tenveo/tenveo-m3b/main.png",
+    gallery: ["/images/tenveo-catalog/m3b-g2.webp", "/images/tenveo-catalog/m3b-g3.webp", "/images/tenveo-catalog/m3b-g4.webp"],
     imageFallback: "#0EA5E9",
     description: "Compact speakerphone with 2 omnidirectional microphones, 5m pickup range for up to 5 people. Connects via USB-C, Bluetooth (with dongle) or 3.5mm. Works with Zoom, Teams, Skype, Google Meet. LED indicators, 6-hour battery, plug-and-play on Windows, Mac, Android and Linux.",
     keyFeatures: [
@@ -1590,6 +1608,7 @@ const LAMPRO: Product[] = [
     tagline: "COB Mini LED for Boardrooms & Control Rooms",
     badge: "Flagship",
     imageUrl: "/images/lampro-catalog/lmini.webp",
+    gallery: ["/images/lampro-catalog/lmini-g2.webp", "/images/lampro-catalog/lmini-g3.webp", "/images/lampro-catalog/lmini-g4.webp", "/images/lampro-catalog/lmini-g5.webp"],
     imageFallback: "#0F58FB",
     description: "The LMini series is Lampro's flagship fine-pitch COB Mini LED display for premium indoor viewing distances — executive boardrooms, control rooms and broadcast studios. COB encapsulation protects every pixel against knocks, dust and moisture while delivering seamless images at close range, as deployed in retail flagships like the Dior store in Thailand.",
     keyFeatures: [
@@ -1616,6 +1635,7 @@ const LAMPRO: Product[] = [
     category: "led-displays", subcategory: "Indoor Creative Splicing",
     tagline: "Free Splicing, Free Form Indoor LED",
     imageUrl: "/images/lampro-catalog/bnxii.webp",
+    gallery: ["/images/lampro-catalog/bnxii-g2.webp", "/images/lampro-catalog/bnxii-g3.webp", "/images/lampro-catalog/bnxii-g4.webp", "/images/lampro-catalog/bnxii-g5.webp"],
     imageFallback: "#0F58FB",
     description: "BNXII is Lampro's indoor commercial LED system built for creative and custom-shaped installations — retail flagships, malls, exhibition halls, hotel lobbies and brand experience centres. Six cabinet sizes splice freely, rotate 90° and form concave, convex and malposed shapes, with wireless module-to-cabinet connection for fast installs.",
     keyFeatures: [
@@ -1644,6 +1664,7 @@ const LAMPRO: Product[] = [
     category: "led-displays", subcategory: "Fine-Pitch HD Indoor",
     tagline: "HD Fine-Pitch Indoor LED Display",
     imageUrl: "/images/lampro-catalog/lhp.webp",
+    gallery: ["/images/lampro-catalog/lhp-g2.webp", "/images/lampro-catalog/lhp-g3.webp", "/images/lampro-catalog/lhp-g4.webp", "/images/lampro-catalog/lhp-g5.webp"],
     imageFallback: "#0F58FB",
     description: "The LHP series delivers HD fine-pitch indoor LED for conference rooms, lobbies and presentation spaces — Lampro's workhorse indoor display balancing image quality, serviceability and value for corporate and government installations.",
     keyFeatures: [
@@ -1667,6 +1688,7 @@ const LAMPRO: Product[] = [
     category: "led-displays", subcategory: "Rental & Staging",
     tagline: "Rental LED for Events & Staging",
     imageUrl: "/images/lampro-catalog/lrs.webp",
+    gallery: ["/images/lampro-catalog/lrs-g2.webp", "/images/lampro-catalog/lrs-g3.webp", "/images/lampro-catalog/lrs-g4.webp", "/images/lampro-catalog/lrs-g5.webp"],
     imageFallback: "#0F58FB",
     description: "The LRS series is Lampro's rental and staging panel — fast-locking, tour-grade LED for concerts, weddings, conferences and broadcast events. Built for repeated assembly and teardown with quick-service modules, it anchors hire inventories and fixed stage installs alike.",
     keyFeatures: [
@@ -1690,6 +1712,7 @@ const LAMPRO: Product[] = [
     category: "led-displays", subcategory: "Outdoor DOOH",
     tagline: "Outdoor High-Brightness DOOH Display",
     imageUrl: "/images/lampro-catalog/lst.webp",
+    gallery: ["/images/lampro-catalog/lst-g2.webp", "/images/lampro-catalog/lst-g3.webp", "/images/lampro-catalog/lst-g4.webp", "/images/lampro-catalog/lst-g5.webp"],
     imageFallback: "#0F58FB",
     description: "The LST series is Lampro's outdoor digital-out-of-home display for billboards, building facades and roadside advertising — high brightness for direct sunlight, weatherproof cabinets, and the panel behind installations like the 240sqm Amsaf Mall project in Dubai.",
     keyFeatures: [
@@ -1713,6 +1736,7 @@ const LAMPRO: Product[] = [
     category: "led-displays", subcategory: "Outdoor DOOH",
     tagline: "Premium Outdoor Advertising LED",
     imageUrl: "/images/lampro-catalog/lxii-pro.webp",
+    gallery: ["/images/lampro-catalog/lxii-pro-g2.webp", "/images/lampro-catalog/lxii-pro-g3.webp", "/images/lampro-catalog/lxii-pro-g4.webp", "/images/lampro-catalog/lxii-pro-g5.webp"],
     imageFallback: "#0F58FB",
     description: "LXII Pro is Lampro's premium outdoor advertising series for large-format DOOH — landmark billboards and high-traffic commercial sites where image quality, reliability and serviceability decide the investment.",
     keyFeatures: [

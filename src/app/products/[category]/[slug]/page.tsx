@@ -30,10 +30,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 const BRAND_COLORS: Record<string, string> = {
-  dsppa: '#DC2626', infobit: '#6366F1', tenveo: '#0891B2', focus: '#1E40AF',
+  dsppa: '#00AEAD', infobit: '#6366F1', tenveo: '#0891B2', focus: '#1E40AF', lampro: '#0F58FB',
 }
 const BRAND_LOGOS: Record<string, string> = {
-  dsppa: 'DSPPA', infobit: 'InfoBit', tenveo: 'Tenveo', focus: 'Focus',
+  dsppa: 'DSPPA', infobit: 'InfoBit', tenveo: 'Tenveo', focus: 'Focus', lampro: 'Lampro',
 }
 const DOWNLOAD_ICONS: Record<string, string> = {
   brochure: '📄',
@@ -75,17 +75,13 @@ export default async function ProductDetailPage({ params }: Props) {
 
           {/* Left — Image + key spec chips */}
           <div>
-            <div style={{ position: 'relative', borderRadius: 24, overflow: 'hidden', background: `linear-gradient(135deg, ${brandColor}12 0%, #F8FAFC 100%)`, border: `1.5px solid ${brandColor}25`, aspectRatio: '4/3', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-              <div style={{ position: 'absolute', top: 16, right: 16, background: '#0B1E3D', border: `1.5px solid ${brandColor}60`, borderRadius: 10, padding: '5px 14px', fontSize: 12, fontWeight: 900, letterSpacing: '0.06em', color: '#FFFFFF', fontFamily: 'Manrope, sans-serif' }}>
-                {BRAND_LOGOS[product.brandSlug] || product.brand}
-              </div>
-              {product.badge && (
-                <div style={{ position: 'absolute', top: 16, left: 16, background: product.badge === 'Best Seller' ? '#D97706' : product.badge === 'New' ? '#059669' : brandColor, color: '#fff', padding: '4px 12px', borderRadius: 980, fontSize: 11, fontWeight: 700, letterSpacing: '0.05em' }}>
-                  {product.badge}
-                </div>
-              )}
-              <ProductImg src={product.imageUrl} alt={product.name} objectFit="contain" brandColor={brandColor} brandName={BRAND_LOGOS[product.brandSlug] || product.brand} />
-            </div>
+            <ProductGallery
+              images={[product.imageUrl, ...(product.gallery || [])]}
+              alt={product.name}
+              brandColor={brandColor}
+              brandName={BRAND_LOGOS[product.brandSlug] || product.brand}
+              badge={product.badge}
+            />
 
             {/* Key spec chips */}
             {heroSpecs.length > 0 && (
