@@ -4,6 +4,11 @@ export async function POST(request: Request) {
   try {
     const body = await request.json()
 
+    // Honeypot — bots fill hidden fields; pretend success and drop
+    if (body.website) {
+      return NextResponse.json({ ok: true })
+    }
+
     if (!body.name || !body.email || !body.phone || !body.message) {
       return NextResponse.json({ error: 'Missing required fields' }, { status: 400 })
     }

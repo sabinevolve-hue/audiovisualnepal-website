@@ -38,7 +38,7 @@ export default function ContactPage() {
         <div style={{ maxWidth: 680, margin: '0 auto', position: 'relative' }}>
           <p style={{ fontSize: 12, fontWeight: 700, color: '#3B82F6', letterSpacing: '0.15em', textTransform: 'uppercase', marginBottom: 20 }}>Get In Touch</p>
           <h1 style={{ fontFamily: 'Manrope, sans-serif', fontSize: 'clamp(36px,5vw,60px)', fontWeight: 800, color: '#0B1E3D', letterSpacing: '-0.03em', lineHeight: 1.08, marginBottom: 20 }}>
-            Let&apos;s Design Your<br />Perfect System
+            Let&apos;s Design Your{' '}<br />Perfect System
           </h1>
           <p style={{ fontSize: 18, color: '#64748B', lineHeight: 1.7 }}>
             Share your project details and our engineers will respond within 24 hours with a customised proposal.
@@ -114,6 +114,7 @@ export default function ContactPage() {
               </div>
             ) : (
               <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: 20 }}>
+                <input type="text" name="website" value={form.website || ''} onChange={e => setForm({ ...form, website: e.target.value })} style={{ display: 'none' }} tabIndex={-1} autoComplete="off" aria-hidden="true" />
                 <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16 }}>
                   <div>
                     <label style={{ display: 'block', fontSize: 13, fontWeight: 600, color: '#475569', marginBottom: 8 }}>Full Name <span style={{ color: '#3B82F6' }}>*</span></label>
@@ -136,7 +137,7 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <label style={{ display: 'block', fontSize: 13, fontWeight: 600, color: '#475569', marginBottom: 8 }}>Project Type <span style={{ color: '#3B82F6' }}>*</span></label>
-                  <select required value={form.projectType} onChange={e => setForm({ ...form, projectType: e.target.value })} style={{ ...inputStyle, appearance: 'none' as const }}>
+                  <select required aria-label="Project type" value={form.projectType} onChange={e => setForm({ ...form, projectType: e.target.value })} style={{ ...inputStyle, appearance: 'none' as const }}>
                     <option value="" style={{ background: '#FFFFFF' }}>Select project type</option>
                     {PROJECT_TYPES.map(t => <option key={t} value={t} style={{ background: '#FFFFFF' }}>{t}</option>)}
                   </select>

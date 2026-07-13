@@ -61,7 +61,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: `${BRAND} ${hit.model} in Nepal — ${hit.type}`,
     description: desc,
-    alternates: { canonical: `https://audiovisualnepal.com/brands/lampro/p/${model}` },
+    alternates: { canonical: `https://www.audiovisualnepal.com/brands/lampro/p/${model}` },
     openGraph: { title: `${BRAND} ${hit.model} | AudioVisual Nepal`, description: desc, ...(e ? { images: [{ url: e.img }] } : {}) },
   };
 }
@@ -78,7 +78,7 @@ export default async function CatalogProductPage({ params }: Props) {
     "@context": "https://schema.org",
     "@type": "Product",
     name: `${BRAND} ${hit.model}`,
-    ...(e ? { image: `https://audiovisualnepal.com${e.img}` } : {}),
+    ...(e ? { image: `https://www.audiovisualnepal.com${e.img}` } : {}),
     description: e?.desc || `${hit.type} — ${hit.series} series`,
     brand: { "@type": "Brand", name: BRAND },
     category: hit.category,

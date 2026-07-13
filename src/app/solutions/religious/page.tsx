@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import SolutionPageTemplate, { type SolutionPageData } from "@/components/solutions/SolutionPageTemplate";
 import { religiousScene } from "@/components/solutions/scenes/religious";
 
-const PAGE_URL = "https://audiovisualnepal.com/solutions/religious";
+const PAGE_URL = "https://www.audiovisualnepal.com/solutions/religious";
 
 export const metadata: Metadata = {
   title: "Mosque, Temple & Church Sound Systems in Nepal",

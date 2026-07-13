@@ -5,7 +5,7 @@ import InteractiveScene from "@/components/solutions/InteractiveScene";
 import Reveal from "@/components/solutions/Reveal";
 import { smartMeetingRoomScene } from "@/components/solutions/scenes/smartMeetingRoom";
 
-const PAGE_URL = "https://audiovisualnepal.com/solutions/smart-meeting-rooms";
+const PAGE_URL = "https://www.audiovisualnepal.com/solutions/smart-meeting-rooms";
 
 export const metadata: Metadata = {
   title: "Smart Meeting Room Solutions in Nepal — Video Conferencing & Wireless Presentation",
@@ -70,7 +70,7 @@ const jsonLd = {
     {
       "@type": "Service",
       name: "Smart Meeting Room Design & Installation",
-      provider: { "@type": "Organization", name: "AudioVisual Nepal", url: "https://audiovisualnepal.com" },
+      provider: { "@type": "Organization", name: "AudioVisual Nepal", url: "https://www.audiovisualnepal.com" },
       areaServed: { "@type": "Country", name: "Nepal" },
       serviceType: "Audio visual system integration",
       url: PAGE_URL,
@@ -86,7 +86,7 @@ const jsonLd = {
     {
       "@type": "BreadcrumbList",
       itemListElement: [
-        { "@type": "ListItem", position: 1, name: "Solutions", item: "https://audiovisualnepal.com/solutions" },
+        { "@type": "ListItem", position: 1, name: "Solutions", item: "https://www.audiovisualnepal.com/solutions" },
         { "@type": "ListItem", position: 2, name: "Smart Meeting Rooms", item: PAGE_URL },
       ],
     },

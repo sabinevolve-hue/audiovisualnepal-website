@@ -7,7 +7,7 @@ const DESC = "Gooseneck units, wireless systems, speakerphones and ceiling array
 export const metadata: Metadata = {
   title: TITLE,
   description: DESC,
-  alternates: { canonical: "https://audiovisualnepal.com/blog/conference-room-microphone-guide-nepal" },
+  alternates: { canonical: "https://www.audiovisualnepal.com/blog/conference-room-microphone-guide-nepal" },
   openGraph: { title: TITLE, description: DESC, type: "article", images: [{ url: "/images/heroes/smart-meeting-rooms-hero.webp" }] },
 };
 

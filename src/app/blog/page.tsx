@@ -10,12 +10,12 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'AV Insights & Guides',
     description: 'Expert guides on PA systems, conference room design, IP audio networks, voice evacuation and professional AV best practices for Nepal.',
-    url: 'https://audiovisualnepal.com/blog',
+    url: 'https://www.audiovisualnepal.com/blog',
     siteName: 'AudioVisual Nepal',
     images: [{ url: '/og-image.svg', width: 1200, height: 630, alt: 'AudioVisual Nepal' }],
     type: 'website',
   },
-  alternates: { canonical: 'https://audiovisualnepal.com/blog' },
+  alternates: { canonical: 'https://www.audiovisualnepal.com/blog' },
 }
 
 export const revalidate = 3600

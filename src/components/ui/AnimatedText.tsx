@@ -72,7 +72,6 @@ export function Typewriter({
         aria-hidden="true"
       >
         |
-        <style>{`@keyframes avn-cursor-blink { 0%,100%{opacity:1} 50%{opacity:0} }`}</style>
       </span>
     </span>
   )

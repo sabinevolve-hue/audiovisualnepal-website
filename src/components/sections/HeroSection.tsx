@@ -62,7 +62,7 @@ export default function HeroSection() {
           color: '#0B1E3D',
           marginBottom: 28,
         }}>
-          Professional AV for
+          Professional AV for{' '}
           <br />
           <span style={{ background: 'linear-gradient(135deg, #1D4ED8 0%, #2563EB 50%, #3B82F6 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
             <Typewriter words={WORDS} interval={2600} />

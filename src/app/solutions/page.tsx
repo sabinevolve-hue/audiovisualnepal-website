@@ -14,12 +14,12 @@ export const metadata: Metadata = {
     title: 'AV Solutions for Every Sector | AudioVisual Nepal',
     description:
       'Professional audio visual solutions for corporate offices, government, education, hotels, hospitals, religious venues and transportation hubs across Nepal.',
-    url: 'https://audiovisualnepal.com/solutions',
+    url: 'https://www.audiovisualnepal.com/solutions',
     siteName: 'AudioVisual Nepal',
     images: [{ url: '/images/heroes/corporate-hero.webp', width: 1376, height: 768 }],
     type: 'website',
   },
-  alternates: { canonical: 'https://audiovisualnepal.com/solutions' },
+  alternates: { canonical: 'https://www.audiovisualnepal.com/solutions' },
 }
 
 const DETAILS: Record<string, { desc: string; tags: string[]; project: string }> = {
@@ -50,7 +50,7 @@ const jsonLd = {
     '@type': 'ListItem',
     position: i + 1,
     name: s.label,
-    url: `https://audiovisualnepal.com${s.href}`,
+    url: `https://www.audiovisualnepal.com${s.href}`,
   })),
 }
 
@@ -120,7 +120,7 @@ export default function SolutionsPage() {
                         <p className="mt-2 text-sm leading-relaxed text-slate-600">{d.desc}</p>
                         <div className="mt-4 flex flex-wrap gap-2">
                           {d.tags.map((t) => (
-                            <span key={t} className="rounded-full bg-slate-100 px-3 py-1 text-xs font-medium text-slate-600">{t}</span>
+                            <span key={t} className="rounded-full bg-slate-100 px-3.5 py-1.5 text-xs font-medium text-slate-600">{t}</span>
                           ))}
                         </div>
                         <p className="mt-4 text-xs text-slate-400">{d.project.startsWith("References") ? d.project : `Featured: ${d.project}`}</p>

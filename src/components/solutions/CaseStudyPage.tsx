@@ -13,8 +13,8 @@ export default function CaseStudyPage({ cs }: { cs: CaseStudy }) {
     headline: `${cs.title} — AV case study`,
     about: cs.sector,
     author: { "@type": "Organization", name: "AudioVisual Nepal" },
-    publisher: { "@type": "Organization", name: "AudioVisual Nepal", url: "https://audiovisualnepal.com" },
-    mainEntityOfPage: `https://audiovisualnepal.com/projects/${cs.slug}`,
+    publisher: { "@type": "Organization", name: "AudioVisual Nepal", url: "https://www.audiovisualnepal.com" },
+    mainEntityOfPage: `https://www.audiovisualnepal.com/projects/${cs.slug}`,
   };
   const related = CASE_STUDIES.filter((c) => c.slug !== cs.slug).slice(0, 3);
 

@@ -4,7 +4,7 @@ import { NextRequest, NextResponse } from 'next/server'
 /**
  * On-demand ISR revalidation — called by WordPress on save so edits appear instantly.
  * Configure a webhook (e.g. WP Webhooks plugin) to:
- *   POST https://audiovisualnepal.com/api/revalidate?secret=<REVALIDATE_SECRET>&path=/blog
+ *   POST https://www.audiovisualnepal.com/api/revalidate?secret=<REVALIDATE_SECRET>&path=/blog
  * Multiple paths: comma-separated. Without ?path, common content roots refresh.
  */
 export async function POST(req: NextRequest) {

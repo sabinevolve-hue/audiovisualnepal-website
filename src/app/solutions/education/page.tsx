@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import SolutionPageTemplate, { type SolutionPageData } from "@/components/solutions/SolutionPageTemplate";
 import { educationScene } from "@/components/solutions/scenes/education";
 
-const PAGE_URL = "https://audiovisualnepal.com/solutions/education";
+const PAGE_URL = "https://www.audiovisualnepal.com/solutions/education";
 
 export const metadata: Metadata = {
   title: "School & Campus PA Systems and Smart Podiums in Nepal",

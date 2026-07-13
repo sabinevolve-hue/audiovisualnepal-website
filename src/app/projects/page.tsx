@@ -13,12 +13,12 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'AV Projects Portfolio — Verified Installations Across Nepal',
     description: "Explore AudioVisual Nepal's verified completed projects — LED displays, PA and AV installations for banks, schools, cinemas, restaurants and retail across Nepal.",
-    url: 'https://audiovisualnepal.com/projects',
+    url: 'https://www.audiovisualnepal.com/projects',
     siteName: 'AudioVisual Nepal',
     images: [{ url: '/og-image.svg', width: 1200, height: 630, alt: 'AudioVisual Nepal' }],
     type: 'website',
   },
-  alternates: { canonical: 'https://audiovisualnepal.com/projects' },
+  alternates: { canonical: 'https://www.audiovisualnepal.com/projects' },
 }
 
 const fallbackProjects = [

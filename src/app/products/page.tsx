@@ -9,12 +9,12 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Professional AV Products Nepal — PA, Conference & Display Systems',
     description: 'Browse 38+ products across 14 categories. DSPPA, InfoBit, Tenveo, Focus — genuine products with full manufacturer warranty.',
-    url: 'https://audiovisualnepal.com/products',
+    url: 'https://www.audiovisualnepal.com/products',
     siteName: 'AudioVisual Nepal',
     images: [{ url: '/og-image.svg', width: 1200, height: 630, alt: 'AudioVisual Nepal Products' }],
     type: 'website',
   },
-  alternates: { canonical: 'https://audiovisualnepal.com/products' },
+  alternates: { canonical: 'https://www.audiovisualnepal.com/products' },
 }
 
 export const revalidate = 3600

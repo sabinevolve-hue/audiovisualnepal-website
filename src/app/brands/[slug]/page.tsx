@@ -81,11 +81,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: slug === 'lampro' ? `${brand.name} Authorised Partner Nepal` : `${brand.name} Authorised Dealer Nepal`,
     description: `${brand.name} authorised dealer in Nepal. ${brand.description.slice(0, 140)}`,
-    alternates: { canonical: `https://audiovisualnepal.com/brands/${slug}` },
+    alternates: { canonical: `https://www.audiovisualnepal.com/brands/${slug}` },
     openGraph: {
       title: `${brand.name} — Official Distributor in Nepal`,
       description: `${brand.name} authorised dealer in Nepal. ${brand.description.slice(0, 140)}`,
-      url: `https://audiovisualnepal.com/brands/${slug}`,
+      url: `https://www.audiovisualnepal.com/brands/${slug}`,
       siteName: 'AudioVisual Nepal',
       images: [{ url: '/og-image.svg', width: 1200, height: 630, alt: `${brand.name} — AudioVisual Nepal` }],
       type: 'website',

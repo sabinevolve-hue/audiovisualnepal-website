@@ -423,6 +423,29 @@ export default async function ProductDetailPage({ params }: Props) {
             </div>
           </div>
 
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@graph': [
+              {
+                '@type': 'Product',
+                name: product.name,
+                image: `https://www.audiovisualnepal.com${product.imageUrl}`,
+                description: product.description,
+                brand: { '@type': 'Brand', name: product.brand },
+                category: product.subcategory,
+                url: `https://www.audiovisualnepal.com/products/${product.category}/${product.slug}`,
+              },
+              {
+                '@type': 'BreadcrumbList',
+                itemListElement: [
+                  { '@type': 'ListItem', position: 1, name: 'Products', item: 'https://www.audiovisualnepal.com/products' },
+                  { '@type': 'ListItem', position: 2, name: product.subcategory, item: `https://www.audiovisualnepal.com/products/${product.category}` },
+                  { '@type': 'ListItem', position: 3, name: product.name, item: `https://www.audiovisualnepal.com/products/${product.category}/${product.slug}` },
+                ],
+              },
+            ],
+          }) }} />
+
           {/* Used in solutions / projects (derived from relations graph) */}
           {(() => {
             const rel = (relationsData as { products: Record<string, { solutions: { label: string; href: string }[]; cases: { label: string; href: string }[] }> }).products[product.slug]

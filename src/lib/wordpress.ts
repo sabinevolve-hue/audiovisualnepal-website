@@ -1,6 +1,6 @@
 // ─── WordPress REST API Client ────────────────────────────────────────────────
 // All data for audiovisualnepal.com is served from the WordPress REST API.
-// Base URL: https://audiovisualnepal.com/wp-json
+// Base URL: https://www.audiovisualnepal.com/wp-json
 //
 // Custom endpoints registered by the audiovisualnepal-headless plugin:
 //   /wp/v2/products          → av_product CPT
@@ -11,7 +11,7 @@
 //   /avn/v1/contact          → contact form submission
 //   /avn/v1/settings         → site settings
 
-const WP_BASE  = (process.env.NEXT_PUBLIC_WP_URL  || 'https://audiovisualnepal.com').replace(/\/$/, '')
+const WP_BASE  = (process.env.NEXT_PUBLIC_WP_URL  || 'https://www.audiovisualnepal.com').replace(/\/$/, '')
 const WP_API   = `${WP_BASE}/wp-json/wp/v2`
 const AVN_API  = `${WP_BASE}/wp-json/avn/v1`
 

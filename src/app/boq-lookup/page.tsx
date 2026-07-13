@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import BoqLookup from "@/components/solutions/BoqLookup";
 
-const PAGE_URL = "https://audiovisualnepal.com/boq-lookup";
+const PAGE_URL = "https://www.audiovisualnepal.com/boq-lookup";
 
 export const metadata: Metadata = {
   title: "BOQ Lookup — Check 860+ AV Models Instantly",

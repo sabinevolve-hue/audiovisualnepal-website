@@ -64,9 +64,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         className="font-body antialiased"
         style={{ background: 'var(--bg-base)', color: 'var(--text-primary)' }}
       >
+        <a href="#avn-main" className="skip-link">Skip to content</a>
         <Header />
         <PageTransition>
-          <main>{children}</main>
+          <main><div id="avn-main">{children}</div></main>
         </PageTransition>
         <Footer />
         <WhatsAppFloat />

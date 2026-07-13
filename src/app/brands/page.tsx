@@ -10,12 +10,12 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Authorised AV Brands in Nepal — DSPPA, InfoBit, Tenveo, Focus',
     description: 'Official authorised distributor and partner for DSPPA, InfoBit, Tenveo, Focus and Lampro in Nepal. Genuine products, full manufacturer warranty.',
-    url: 'https://audiovisualnepal.com/brands',
+    url: 'https://www.audiovisualnepal.com/brands',
     siteName: 'AudioVisual Nepal',
     images: [{ url: '/og-image.svg', width: 1200, height: 630, alt: 'AudioVisual Nepal Brands' }],
     type: 'website',
   },
-  alternates: { canonical: 'https://audiovisualnepal.com/brands' },
+  alternates: { canonical: 'https://www.audiovisualnepal.com/brands' },
 }
 
 const brands = [

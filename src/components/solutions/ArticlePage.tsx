@@ -28,8 +28,8 @@ export default function ArticlePage({
     description,
     datePublished: date,
     author: { "@type": "Organization", name: "AudioVisual Nepal" },
-    publisher: { "@type": "Organization", name: "AudioVisual Nepal", url: "https://audiovisualnepal.com" },
-    mainEntityOfPage: `https://audiovisualnepal.com/blog/${slug}`,
+    publisher: { "@type": "Organization", name: "AudioVisual Nepal", url: "https://www.audiovisualnepal.com" },
+    mainEntityOfPage: `https://www.audiovisualnepal.com/blog/${slug}`,
   };
   return (
     <main className="pt-20 bg-white">

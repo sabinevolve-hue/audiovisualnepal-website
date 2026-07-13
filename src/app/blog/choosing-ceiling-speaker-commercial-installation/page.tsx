@@ -7,7 +7,7 @@ const DESC = "Driver size, power taps, sensitivity and backcans explained — wh
 export const metadata: Metadata = {
   title: TITLE,
   description: DESC,
-  alternates: { canonical: "https://audiovisualnepal.com/blog/choosing-ceiling-speaker-commercial-installation" },
+  alternates: { canonical: "https://www.audiovisualnepal.com/blog/choosing-ceiling-speaker-commercial-installation" },
   openGraph: { title: TITLE, description: DESC, type: "article", images: [{ url: "/images/heroes/corporate-hero.webp" }] },
 };
 

@@ -33,7 +33,7 @@ export default function SolutionPageTemplate({ data }: { data: SolutionPageData 
       {
         "@type": "Service",
         name: data.serviceName,
-        provider: { "@type": "Organization", name: "AudioVisual Nepal", url: "https://audiovisualnepal.com" },
+        provider: { "@type": "Organization", name: "AudioVisual Nepal", url: "https://www.audiovisualnepal.com" },
         areaServed: { "@type": "Country", name: "Nepal" },
         serviceType: "Audio visual system integration",
         url: data.pageUrl,
@@ -49,7 +49,7 @@ export default function SolutionPageTemplate({ data }: { data: SolutionPageData 
       {
         "@type": "BreadcrumbList",
         itemListElement: [
-          { "@type": "ListItem", position: 1, name: "Solutions", item: "https://audiovisualnepal.com/solutions" },
+          { "@type": "ListItem", position: 1, name: "Solutions", item: "https://www.audiovisualnepal.com/solutions" },
           { "@type": "ListItem", position: 2, name: data.kicker, item: data.pageUrl },
         ],
       },

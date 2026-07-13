@@ -8,7 +8,7 @@ import media from "@/data/tenveo-catalog-media.json";
 type MediaEntry = { slug: string; img: string; desc: string; source: string };
 const MEDIA = media as Record<string, MediaEntry>;
 
-const PAGE_URL = "https://audiovisualnepal.com/brands/tenveo/catalog";
+const PAGE_URL = "https://www.audiovisualnepal.com/brands/tenveo/catalog";
 
 export const metadata: Metadata = {
   title: "Tenveo Product Catalog — Full Range in Nepal",
@@ -67,7 +67,7 @@ export default function InfobitCatalogPage() {
           </p>
           <div className="mt-6 flex flex-wrap gap-2">
             {catalog.categories.map((c) => (
-              <a key={c.category} href={`#${slug(c.category)}`} className="rounded-full border border-slate-300 bg-white px-3 py-1 text-xs font-medium text-slate-600 transition hover:border-blue-400 hover:text-blue-600">
+              <a key={c.category} href={`#${slug(c.category)}`} className="rounded-full border border-slate-300 bg-white px-3.5 py-1.5 text-xs font-medium text-slate-600 transition hover:border-blue-400 hover:text-blue-600">
                 {c.category}
               </a>
             ))}

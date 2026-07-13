@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import SolutionPageTemplate, { type SolutionPageData } from "@/components/solutions/SolutionPageTemplate";
 import { transportationScene } from "@/components/solutions/scenes/transportation";
 
-const PAGE_URL = "https://audiovisualnepal.com/solutions/transportation";
+const PAGE_URL = "https://www.audiovisualnepal.com/solutions/transportation";
 
 export const metadata: Metadata = {
   title: "Airport & Bus Park PA Systems in Nepal",

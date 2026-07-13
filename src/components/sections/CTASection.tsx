@@ -21,7 +21,7 @@ export default function CTASection() {
         <div style={{ display: 'inline-block', fontSize: 11, fontWeight: 700, letterSpacing: '0.12em', textTransform: 'uppercase', color: 'rgba(147,197,253,0.9)', marginBottom: 20 }}>Get Started</div>
 
         <h2 style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(34px,5vw,60px)', fontWeight: 900, letterSpacing: '-0.035em', color: '#FFFFFF', marginBottom: 20, lineHeight: 1.1 }}>
-          Ready to Transform<br />Your Space?
+          Ready to Transform{' '}<br />Your Space?
         </h2>
         <p style={{ fontSize: 17, lineHeight: 1.7, color: 'rgba(255,255,255,0.55)', marginBottom: 44, maxWidth: 520, margin: '0 auto 44px' }}>
           Tell us about your project. Our engineers will design a custom AV solution that fits your space, timeline and budget.

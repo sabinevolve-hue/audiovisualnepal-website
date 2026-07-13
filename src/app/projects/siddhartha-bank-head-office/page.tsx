@@ -7,8 +7,8 @@ const cs = CASE_STUDIES.find((c) => c.slug === "siddhartha-bank-head-office")!;
 export const metadata: Metadata = {
   title: `${cs.title} — Completed Project`,
   description: cs.summary,
-  alternates: { canonical: `https://audiovisualnepal.com/projects/${cs.slug}` },
-  openGraph: { title: `${cs.title} — Completed Project`, description: cs.summary, url: `https://audiovisualnepal.com/projects/${cs.slug}`, type: "article", images: [{ url: cs.hero }] },
+  alternates: { canonical: `https://www.audiovisualnepal.com/projects/${cs.slug}` },
+  openGraph: { title: `${cs.title} — Completed Project`, description: cs.summary, url: `https://www.audiovisualnepal.com/projects/${cs.slug}`, type: "article", images: [{ url: cs.hero }] },
 };
 
 export default function Page() {

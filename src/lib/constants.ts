@@ -3,7 +3,7 @@
 export const SITE = {
   name: 'AudioVisual Nepal',
   tagline: "Nepal's Leading Professional Audio Visual Solutions Provider",
-  url: 'https://audiovisualnepal.com',
+  url: 'https://www.audiovisualnepal.com',
   phone: '+977 9762109538',
   phoneRaw: '+9779762109538',
   email: 'info@audiovisualnepal.com',
@@ -212,7 +212,7 @@ export const DEFAULT_SEO = {
   titleTemplate: '%s | AudioVisual Nepal',
   defaultTitle: 'AudioVisual Nepal — Professional Audio Visual Solutions',
   description:
-    "Nepal's leading professional audio visual solutions provider. PA systems, voice evacuation, IP network audio, conference cameras, smart podiums and video conferencing for government, education, hotels and enterprise.",
+    "Nepal's professional AV solutions provider — PA systems, voice evacuation, conferencing, smart podiums and LED displays for every sector.",
   keywords: [
     'audio visual nepal',
     'PA system nepal',

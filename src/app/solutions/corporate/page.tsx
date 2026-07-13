@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import SolutionPageTemplate, { type SolutionPageData } from "@/components/solutions/SolutionPageTemplate";
 import { corporateScene } from "@/components/solutions/scenes/corporate";
 
-const PAGE_URL = "https://audiovisualnepal.com/solutions/corporate";
+const PAGE_URL = "https://www.audiovisualnepal.com/solutions/corporate";
 
 export const metadata: Metadata = {
   title: "Corporate Office AV Solutions in Nepal — Boardrooms, Video Walls & BGM",

@@ -7,7 +7,7 @@ const DESC = "Cost, scalability, zone control and future-proofing — a practica
 export const metadata: Metadata = {
   title: TITLE,
   description: DESC,
-  alternates: { canonical: "https://audiovisualnepal.com/blog/ip-network-audio-vs-traditional-pa" },
+  alternates: { canonical: "https://www.audiovisualnepal.com/blog/ip-network-audio-vs-traditional-pa" },
   openGraph: { title: TITLE, description: DESC, type: "article", images: [{ url: "/images/heroes/transportation-hero.webp" }] },
 };
 

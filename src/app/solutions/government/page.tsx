@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import SolutionPageTemplate, { type SolutionPageData } from "@/components/solutions/SolutionPageTemplate";
 import { governmentScene } from "@/components/solutions/scenes/government";
 
-const PAGE_URL = "https://audiovisualnepal.com/solutions/government";
+const PAGE_URL = "https://www.audiovisualnepal.com/solutions/government";
 
 export const metadata: Metadata = {
   title: "Government Conference & PA System Solutions in Nepal",

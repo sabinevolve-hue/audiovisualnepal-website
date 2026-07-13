@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import SolutionFinder from "@/components/solutions/SolutionFinder";
 
-const PAGE_URL = "https://audiovisualnepal.com/solution-finder";
+const PAGE_URL = "https://www.audiovisualnepal.com/solution-finder";
 
 export const metadata: Metadata = {
   title: "AV Solution Finder — Get a Recommendation in 30 Seconds",
