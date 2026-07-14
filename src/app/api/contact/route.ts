@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server'
 
-const TO = 'info@audiovisualnepal.com'
+const TO = process.env.CONTACT_TO || 'sales@audiovisualnepal.com'
 // Resend requires a verified sender domain. Until audiovisualnepal.com is verified in Resend,
 // their shared onboarding sender works for delivery to your own inbox.
 const FROM = process.env.CONTACT_FROM || 'AudioVisual Nepal <onboarding@resend.dev>'
