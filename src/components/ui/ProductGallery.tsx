@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import ProductImg from '@/components/ui/ProductImg'
+import { ProductImg } from '@/components/ui/ProductImg'
 
 export default function ProductGallery({
   images, alt, brandColor, brandName, badge,

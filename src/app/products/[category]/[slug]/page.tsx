@@ -4,6 +4,7 @@ import relationsData from '@/data/relations.json'
 import { notFound } from 'next/navigation'
 import { ALL_PRODUCTS, getProductBySlug as getProduct, getRelatedProducts } from '@/data/products'
 import { ProductImg } from '@/components/ui/ProductImg'
+import ProductGallery from '@/components/ui/ProductGallery'
 import { SITE } from '@/lib/constants'
 
 export const revalidate = 3600
