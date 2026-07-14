@@ -76,7 +76,11 @@ export default async function ProductDetailPage({ params }: Props) {
           {/* Left — Image + key spec chips */}
           <div>
             <ProductGallery
-              images={[product.imageUrl, ...(product.gallery || [])]}
+              images={(() => {
+                const fm = (focusMedia as Record<string, { img: string; gallery?: string[] }>)[product.slug]
+                if (fm) return [fm.img, ...(fm.gallery || [])]
+                return [product.imageUrl, ...(product.gallery || [])]
+              })()}
               alt={product.name}
               brandColor={brandColor}
               brandName={BRAND_LOGOS[product.brandSlug] || product.brand}
