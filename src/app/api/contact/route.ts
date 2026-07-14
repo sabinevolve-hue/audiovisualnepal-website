@@ -27,6 +27,8 @@ export async function POST(request: Request) {
     }
 
     let delivered = false
+    let via = 'none'
+    const keyPresent = !!process.env.RESEND_API_KEY
 
     // 1) Primary: email via Resend (no SDK needed — REST API)
     if (process.env.RESEND_API_KEY) {
@@ -53,6 +55,7 @@ export async function POST(request: Request) {
           }),
         })
         delivered = r.ok
+        via = r.ok ? 'resend' : `resend_fail_${r.status}`
         if (!r.ok) console.error('Resend failed:', r.status, await r.text())
       } catch (e) {
         console.error('Resend error:', e)
@@ -68,7 +71,7 @@ export async function POST(request: Request) {
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(enquiry),
         })
-        delivered = r.ok
+        if (r.ok) via = 'wp'
       } catch { /* ignore */ }
     }
 
@@ -76,7 +79,7 @@ export async function POST(request: Request) {
     console.log('CONTACT_SUBMISSION:', JSON.stringify({ ...enquiry, delivered }))
 
     // Tell the client whether email delivery succeeded so it can offer the WhatsApp fallback
-    return NextResponse.json({ success: true, delivered })
+    return NextResponse.json({ success: true, delivered, via, keyPresent })
   } catch (err) {
     console.error('Contact form error:', err)
     return NextResponse.json({ error: 'Please try again or contact us directly.' }, { status: 500 })
