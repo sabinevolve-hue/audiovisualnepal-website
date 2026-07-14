@@ -27,11 +27,15 @@ const PROJECTS: Record<string, { title: string; sector: string; place: string; h
 };
 
 const norm = (s: string) => s.toLowerCase().replace(/[^a-z]/g, "");
+const PROJECTS_BY_NORM: Record<string, { title: string; sector: string; place: string; href?: string }[]> = Object.fromEntries(
+  Object.entries(PROJECTS).map(([k, v]) => [norm(k), v])
+);
+const pretty = (s: string) => s.toLowerCase().replace(/\b\w/g, (c) => c.toUpperCase());
 const projectDistricts = new Set(Object.keys(PROJECTS).map(norm));
 
 export default function NepalDistrictMap() {
-  const [active, setActive] = useState<string>("Kathmandu");
-  const activeProjects = PROJECTS[active] || [];
+  const [active, setActive] = useState<string>("kathmandu");
+  const activeProjects = PROJECTS_BY_NORM[active] || [];
 
   return (
     <div className="rounded-2xl border border-slate-200 bg-slate-50 p-4 sm:p-6">
@@ -40,7 +44,7 @@ export default function NepalDistrictMap() {
           <svg viewBox={DATA.viewBox} role="img" aria-label="Map of Nepal — districts with AudioVisual Nepal projects are highlighted and clickable" className="h-auto w-full">
             {DATA.districts.map((dist) => {
               const has = projectDistricts.has(norm(dist.name));
-              const isActive = norm(dist.name) === norm(active);
+              const isActive = norm(dist.name) === active;
               return (
                 <path
                   key={dist.name}
@@ -49,20 +53,20 @@ export default function NepalDistrictMap() {
                   stroke={has ? "#2563EB" : "#CBD5E1"}
                   strokeWidth={has ? 1 : 0.5}
                   className={has ? "cursor-pointer transition" : ""}
-                  onClick={has ? () => setActive(dist.name) : undefined}
-                  onKeyDown={has ? (e) => e.key === "Enter" && setActive(dist.name) : undefined}
+                  onClick={has ? () => setActive(norm(dist.name)) : undefined}
+                  onKeyDown={has ? (e) => e.key === "Enter" && setActive(norm(dist.name)) : undefined}
                   tabIndex={has ? 0 : -1}
                   role={has ? "button" : undefined}
-                  aria-label={has ? `${dist.name} — ${PROJECTS[dist.name]?.length} projects` : undefined}
+                  aria-label={has ? `${pretty(dist.name)} — ${PROJECTS_BY_NORM[norm(dist.name)]?.length} projects` : undefined}
                 >
-                  <title>{dist.name}{has ? ` — ${PROJECTS[dist.name]?.length} project(s)` : ""}</title>
+                  <title>{pretty(dist.name)}{has ? ` — ${PROJECTS_BY_NORM[norm(dist.name)]?.length} project(s)` : ""}</title>
                 </path>
               );
             })}
             {DATA.districts.filter((d) => projectDistricts.has(norm(d.name))).map((d) => (
-              <g key={"pin-" + d.name} onClick={() => setActive(d.name)} className="cursor-pointer">
-                <circle cx={d.cx} cy={d.cy} r={norm(d.name) === norm(active) ? 6 : 4.5} fill="#1D4ED8" stroke="#fff" strokeWidth={1.5} />
-                <text x={d.cx} y={d.cy - 10} textAnchor="middle" fontSize={13} fontWeight={600} fill="#1E3A8A">{d.name}</text>
+              <g key={"pin-" + d.name} onClick={() => setActive(norm(d.name))} className="cursor-pointer">
+                <circle cx={d.cx} cy={d.cy} r={norm(d.name) === active ? 6 : 4.5} fill="#1D4ED8" stroke="#fff" strokeWidth={1.5} />
+                <text x={d.cx} y={d.cy - 10} textAnchor="middle" fontSize={13} fontWeight={600} fill="#1E3A8A">{pretty(d.name)}</text>
               </g>
             ))}
           </svg>
@@ -72,7 +76,7 @@ export default function NepalDistrictMap() {
         </div>
 
         <div className="rounded-xl border border-slate-200 bg-white p-5">
-          <p className="text-xs font-semibold uppercase tracking-widest text-blue-600">{active} district</p>
+          <p className="text-xs font-semibold uppercase tracking-widest text-blue-600">{pretty(active)} district</p>
           <p className="mt-1 text-sm text-slate-500">{activeProjects.length} completed {activeProjects.length === 1 ? "project" : "projects"}</p>
           <ul className="mt-3 divide-y divide-slate-100">
             {activeProjects.map((p) => (
@@ -93,7 +97,7 @@ export default function NepalDistrictMap() {
           </ul>
           <div className="mt-4 flex flex-wrap gap-2">
             {Object.keys(PROJECTS).map((dn) => (
-              <button key={dn} onClick={() => setActive(dn)} className={norm(dn) === norm(active) ? "rounded-full bg-blue-500 px-3 py-1 text-xs font-semibold text-white" : "rounded-full border border-slate-200 px-3 py-1 text-xs font-medium text-slate-600 hover:border-blue-400"}>
+              <button key={dn} onClick={() => setActive(norm(dn))} className={norm(dn) === active ? "rounded-full bg-blue-500 px-3 py-1 text-xs font-semibold text-white" : "rounded-full border border-slate-200 px-3 py-1 text-xs font-medium text-slate-600 hover:border-blue-400"}>
                 {dn}
               </button>
             ))}
