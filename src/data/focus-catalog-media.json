@@ -1,1 +1,60 @@
-{}
+{
+ "focus-st100": {
+  "img": "/images/focus-catalog/focus-st100.webp",
+  "gallery": [
+   "/images/focus-catalog/focus-st100-g2.webp",
+   "/images/focus-catalog/focus-st100-g3.webp"
+  ],
+  "source": "https://www.gzfocus.com/product-item-10.html"
+ },
+ "focus-st200": {
+  "img": "/images/focus-catalog/focus-st200.webp",
+  "gallery": [
+   "/images/focus-catalog/focus-st200-g2.webp",
+   "/images/focus-catalog/focus-st200-g3.webp",
+   "/images/focus-catalog/focus-st200-g4.webp",
+   "/images/focus-catalog/focus-st200-g5.webp"
+  ],
+  "source": "https://www.gzfocus.com/product-item-11.html"
+ },
+ "focus-st400": {
+  "img": "/images/focus-catalog/focus-st400.webp",
+  "gallery": [
+   "/images/focus-catalog/focus-st400-g2.webp",
+   "/images/focus-catalog/focus-st400-g3.webp",
+   "/images/focus-catalog/focus-st400-g4.webp",
+   "/images/focus-catalog/focus-st400-g5.webp"
+  ],
+  "source": "https://www.gzfocus.com/product-item-12.html"
+ },
+ "focus-fk535n": {
+  "img": "/images/focus-catalog/focus-fk535n.webp",
+  "gallery": [
+   "/images/focus-catalog/focus-fk535n-g2.webp",
+   "/images/focus-catalog/focus-fk535n-g3.webp",
+   "/images/focus-catalog/focus-fk535n-g4.webp",
+   "/images/focus-catalog/focus-fk535n-g5.webp"
+  ],
+  "source": "https://www.gzfocus.com/product-item-14.html"
+ },
+ "focus-fk500n": {
+  "img": "/images/focus-catalog/focus-fk500n.webp",
+  "gallery": [
+   "/images/focus-catalog/focus-fk500n-g2.webp",
+   "/images/focus-catalog/focus-fk500n-g3.webp",
+   "/images/focus-catalog/focus-fk500n-g4.webp",
+   "/images/focus-catalog/focus-fk500n-g5.webp"
+  ],
+  "source": "https://www.gzfocus.com/product-item-16.html"
+ },
+ "focus-st600": {
+  "img": "/images/focus-catalog/focus-st600.webp",
+  "gallery": [
+   "/images/focus-catalog/focus-st600-g2.webp",
+   "/images/focus-catalog/focus-st600-g3.webp",
+   "/images/focus-catalog/focus-st600-g4.webp",
+   "/images/focus-catalog/focus-st600-g5.webp"
+  ],
+  "source": "https://www.gzfocus.com/product-item-50.html"
+ }
+}
