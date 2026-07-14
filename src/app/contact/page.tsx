@@ -21,12 +21,26 @@ export default function ContactPage() {
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle')
   const [form, setForm] = useState({ name: '', company: '', email: '', phone: '', projectType: '', message: '' })
 
+  const waFallback = () => {
+    const text = encodeURIComponent(
+      `New enquiry:\nName: ${form.name}\nEmail: ${form.email}\nPhone: ${form.phone}` +
+      (form.company ? `\nCompany: ${form.company}` : '') +
+      (form.projectType ? `\nProject: ${form.projectType}` : '') +
+      `\nMessage: ${form.message}`
+    )
+    window.open(`https://wa.me/9779762109538?text=${text}`, '_blank')
+  }
+
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault()
     setStatus('loading')
     try {
       const res = await fetch('/api/contact', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(form) })
-      setStatus(res.ok ? 'success' : 'error')
+      const data = await res.json().catch(() => ({}))
+      if (!res.ok) { setStatus('error'); return }
+      setStatus('success')
+      // If server couldn't confirm email delivery, offer the WhatsApp fallback so no lead is lost.
+      if (data && data.delivered === false) waFallback()
     } catch { setStatus('error') }
   }
 
