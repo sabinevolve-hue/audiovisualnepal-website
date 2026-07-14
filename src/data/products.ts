@@ -370,6 +370,7 @@ const DSPPA: Product[] = [
     category: "ceiling-speakers", subcategory: "Coaxial Ceiling Speaker",
     tagline: "10W 6.5\" Coaxial Frameless Ceiling Speaker",
     imageUrl: "/images/products/dsppa/dsppa-dsp5211/main.webp",
+    gallery: ["/images/dsppa-catalog/dsp5211l-g2.webp", "/images/dsppa-catalog/dsp5211l-g3.webp", "/images/dsppa-catalog/dsp5211l-g4.webp", "/images/dsppa-catalog/dsp5211l-g5.webp"],
     imageFallback: "#2563EB",
     description: "High-performance coaxial ceiling speaker with 6.5\" woofer and 0.75\" tweeter for extended frequency response. 10W with 100V taps (3W/6W/10W). 93dB sensitivity, 90Hz–18kHz response. Aluminum grille, spring-clip mounting. Ideal for boardrooms and premium hospitality spaces.",
     keyFeatures: [
@@ -791,6 +792,7 @@ const INFOBIT: Product[] = [
     tagline: "4K60 HDMI 2×6 Seamless Matrix Switcher with Dante DSP",
     badge: "New",
     imageUrl: "/images/products/infobit/infobit-iswitch-265/main.webp",
+    gallery: ["/images/infobit-catalog/iswitch-265t-g2.webp", "/images/infobit-catalog/iswitch-265t-g3.webp", "/images/infobit-catalog/iswitch-265t-g4.webp", "/images/infobit-catalog/iswitch-265t-g5.webp"],
     imageFallback: "#6366F1",
     description: "Advanced 6-input, 4-output seamless matrix switcher (iMatrix C604) with Dante audio networking and onboard DSP. Full USB-C input with 4K60, USB 3.1, network and 60W PD charging. Seamless switching, USB host switching, and 4K60 4:4:4 HDCP 2.2 compliant.",
     keyFeatures: [
@@ -1212,6 +1214,7 @@ const TENVEO: Product[] = [
     category: "camera-controllers", subcategory: "PTZ Keyboard Controller",
     tagline: "Professional PTZ Camera Keyboard Controller — NDI, ONVIF, 5\" LCD",
     imageUrl: "/images/products/tenveo/tenveo-kb200pro/main.png",
+    gallery: ["/images/tenveo-catalog/kb200-g2.webp", "/images/tenveo-catalog/kb200-g3.webp", "/images/tenveo-catalog/kb200-g4.webp", "/images/tenveo-catalog/kb200-g5.webp"],
     imageFallback: "#0EA5E9",
     description: "Advanced PTZ controller with 5\" industrial LCD (4-split screen), 4D joystick, ONVIF/NDI/VISCA/PELCO-P/D support, independent IP control, up to 7 quick-select camera buttons and knob-based zoom/speed control. Ideal for live events, broadcasts and large lecture halls.",
     keyFeatures: [
