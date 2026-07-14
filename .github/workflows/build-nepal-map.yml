@@ -1,0 +1,28 @@
+name: Build Nepal District Map
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'scripts/build-nepal-map.mjs'
+
+jobs:
+  build-map:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Build Nepal district map data
+        run: node scripts/build-nepal-map.mjs
+      - name: Commit & push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add src/data/nepal-districts.json
+          git diff --staged --quiet && echo "Nothing to commit" && exit 0
+          git commit -m "chore: build Nepal district map data [skip ci]"
+          for i in 1 2 3 4 5; do git pull --rebase origin main && git push origin main && exit 0; sleep 10; done

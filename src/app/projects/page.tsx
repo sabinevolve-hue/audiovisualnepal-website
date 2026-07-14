@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { getProjects, getIndustries, stripHtml } from '@/lib/wordpress'
 import { MapPin, ArrowRight } from 'lucide-react'
-import NepalProjectMap from '@/components/solutions/NepalProjectMap'
+import NepalDistrictMap from '@/components/solutions/NepalDistrictMap'
 
 export const revalidate = 3600
 
@@ -63,7 +63,7 @@ export default async function ProjectsPage({ searchParams }: { searchParams: Pro
       {/* Nepal project map */}
       <section style={{ padding: '0 24px 40px', background: '#FFFFFF' }}>
         <div style={{ maxWidth: 1200, margin: '0 auto' }}>
-          <NepalProjectMap />
+          <NepalDistrictMap />
         </div>
       </section>
 
