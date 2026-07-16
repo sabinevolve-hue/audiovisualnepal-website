@@ -34,7 +34,7 @@ const featured = [
   },
   {
     name: 'Smart Podiums',
-    desc: 'Focus electric height-adjustable podiums with touch screen and built-in PC.',
+    desc: 'Evolve Podium electric height-adjustable podiums with touch screen and built-in PC.',
     href: '/products/smart-podiums',
     color: '#1E40AF',
     icon: (<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8"><rect x="3" y="3" width="18" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg>),

@@ -6,7 +6,7 @@ const PAGE_URL = "https://www.audiovisualnepal.com/boq-lookup";
 export const metadata: Metadata = {
   title: "BOQ Lookup — Check 860+ AV Models Instantly",
   description:
-    "Paste model numbers from your BOQ or tender document and instantly check availability across DSPPA, InfoBit, Tenveo, Lampro and Focus — then request one quotation for the full list.",
+    "Paste model numbers from your BOQ or tender document and instantly check availability across DSPPA, InfoBit, Tenveo, Lampro and Evolve Podium — then request one quotation for the full list.",
   alternates: { canonical: PAGE_URL },
   openGraph: { title: "BOQ Lookup | AudioVisual Nepal", description: "Paste your BOQ, get availability and one quotation for the full list.", url: PAGE_URL, type: "website" },
 };

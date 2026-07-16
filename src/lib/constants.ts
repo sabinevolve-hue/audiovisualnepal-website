@@ -99,7 +99,7 @@ export const PRODUCT_GROUPS = [
     id: 'smart-classroom',
     label: 'Smart Classroom & Auditorium',
     tagline: 'Electric podiums, lecterns and precision camera control',
-    brand: 'Focus · Tenveo',
+    brand: 'Evolve Podium · Tenveo',
     brandColor: '#1E40AF',
     accent: '#EFF6FF',
     icon: '🎓',
@@ -167,7 +167,7 @@ export const BRANDS = [
     logoColor: '#0EA5E9',
   },
   {
-    name: 'Focus',
+    name: 'Evolve Podium',
     slug: 'focus',
     href: '/brands/focus',
     category: 'Smart Podiums & Digital Lecterns',

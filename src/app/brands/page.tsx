@@ -8,10 +8,10 @@ const catSlug = (x: string) => x.toLowerCase().replace(/[^a-z0-9]+/g, '-').repla
 
 export const metadata: Metadata = {
   title: 'Our Brands | Authorized AV Distributor Nepal',
-  description: 'AudioVisual Nepal is the authorized distributor and partner for DSPPA, InfoBit, Tenveo, Focus and Lampro in Nepal. Genuine products, full manufacturer warranty.',
+  description: 'AudioVisual Nepal is the authorized distributor and partner for DSPPA, InfoBit, Tenveo, Evolve Podium and Lampro in Nepal. Genuine products, full manufacturer warranty.',
   openGraph: {
-    title: 'Authorised AV Brands in Nepal — DSPPA, InfoBit, Tenveo, Focus',
-    description: 'Official authorised distributor and partner for DSPPA, InfoBit, Tenveo, Focus and Lampro in Nepal. Genuine products, full manufacturer warranty.',
+    title: 'Authorised AV Brands in Nepal — DSPPA, InfoBit, Tenveo, Evolve Podium',
+    description: 'Official authorised distributor and partner for DSPPA, InfoBit, Tenveo, Evolve Podium and Lampro in Nepal. Genuine products, full manufacturer warranty.',
     url: 'https://www.audiovisualnepal.com/brands',
     siteName: 'AudioVisual Nepal',
     images: [{ url: '/og-image.svg', width: 1200, height: 630, alt: 'AudioVisual Nepal Brands' }],
@@ -52,7 +52,7 @@ const brands = [
     color: '#0891B2', products: 12, range: '60+ models in full catalog',
   },
   {
-    name: 'Focus',
+    name: 'Evolve Podium',
     slug: 'focus',
     tagline: 'Premium Smart Podiums for Education & Government',
     description: 'Electric height-adjustable smart podiums with Sapele wood, built-in Intel OPS computers, 23.8" touch screens and dual gooseneck microphones. Made for parliament halls and university auditoriums.',

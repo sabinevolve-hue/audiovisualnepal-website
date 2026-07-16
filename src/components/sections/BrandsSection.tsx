@@ -8,7 +8,7 @@ const BRAND_ACCENTS: Record<string, { color: string; bg: string; border: string;
   'DSPPA':    { color: '#DC2626', bg: 'rgba(220,38,38,0.05)',    border: 'rgba(220,38,38,0.15)',    textColor: '#DC2626' },
   'InfoBit':  { color: '#6366F1', bg: 'rgba(99,102,241,0.05)',   border: 'rgba(99,102,241,0.15)',   textColor: '#6366F1' },
   'Tenveo':   { color: '#0284C7', bg: 'rgba(2,132,199,0.05)',    border: 'rgba(2,132,199,0.15)',    textColor: '#0284C7' },
-  'Focus':    { color: '#1E40AF', bg: 'rgba(30,64,175,0.05)',    border: 'rgba(30,64,175,0.15)',    textColor: '#1E40AF' },
+  'Evolve':   { color: '#1E40AF', bg: 'rgba(30,64,175,0.05)',    border: 'rgba(30,64,175,0.15)',    textColor: '#1E40AF' },
 }
 
 function BrandCard({ brand }: { brand: typeof BRANDS[number] }) {

@@ -31,7 +31,7 @@ const data: SolutionPageData = {
     "From delegate microphones to the broadcast camera — click the pulse points to see the recommended equipment, then play the signal flow.",
   scene: governmentScene,
   systems: [
-    { name: "Smart podiums", desc: "Focus ST600 electric height-adjustable podium with touch screen and built-in PC for addresses and briefings.", href: "/products/smart-podiums/focus-st600", img: "/images/products/focus/focus-st600/main.jpg" },
+    { name: "Smart podiums", desc: "Evolve Podium E6 electric height-adjustable podium with touch screen and built-in PC for addresses and briefings.", href: "/products/smart-podiums/focus-st600", img: "/images/products/focus/focus-st600/main.jpg" },
     { name: "Chamber displays", desc: "iWall 109 video wall controllers for main screens, committee rooms and public information displays.", href: "/products/video-walls/infobit-iwall-109", img: "/images/products/infobit/infobit-iwall-109/main.png" },
     { name: "Session broadcast", desc: "Tenveo X60 NDI PTZ cameras record and stream proceedings in broadcast quality.", href: "/products/conference-cameras/tenveo-x60ndi", img: "/images/products/tenveo/tenveo-x60ndi/main.png" },
     { name: "Building-wide IP PA", desc: "DSPPA MAG6182II IP network PA server — announcements and emergency broadcast across every floor.", href: "/products/ip-network-audio/dsppa-mag6182ii", img: "/images/products/dsppa/dsppa-mag6182ii/main.jpg" },

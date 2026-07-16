@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description: 'Complete professional AV product catalog — PA systems, voice evacuation, conference cameras, smart podiums, video conferencing and display solutions. Authorised brands, NPR pricing, nationwide delivery.',
   openGraph: {
     title: 'Professional AV Products Nepal — PA, Conference & Display Systems',
-    description: 'Browse 38+ products across 14 categories. DSPPA, InfoBit, Tenveo, Focus — genuine products with full manufacturer warranty.',
+    description: 'Browse 38+ products across 14 categories. DSPPA, InfoBit, Tenveo, Evolve Podium — genuine products with full manufacturer warranty.',
     url: 'https://www.audiovisualnepal.com/products',
     siteName: 'AudioVisual Nepal',
     images: [{ url: '/og-image.svg', width: 1200, height: 630, alt: 'AudioVisual Nepal Products' }],
@@ -50,7 +50,7 @@ export default function ProductsPage() {
           </p>
           {/* Brand strip */}
           <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            {['DSPPA', 'InfoBit', 'Tenveo', 'Focus'].map(b => (
+            {['DSPPA', 'InfoBit', 'Tenveo', 'Evolve Podium'].map(b => (
               <span key={b} style={{ background: '#FFFFFF', border: '1px solid rgba(11,30,61,0.12)', borderRadius: 8, padding: '6px 16px', fontSize: 13, fontWeight: 600, color: '#0B1E3D' }}>{b}</span>
             ))}
           </div>

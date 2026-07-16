@@ -37,7 +37,7 @@ export const governmentScene: SceneConfig = {
   art,
   hotspots: [
     { id: "scr", x: 125, y: 125, color: V, product: { name: "Lampro fine-pitch LED screen", brand: "Lampro", desc: "The chamber's main presentation screen — seamless fine-pitch LED, driven by an InfoBit iWall controller and mirrored to committee-room displays.", href: "/brands/lampro/catalog#fine-pitch-hd-indoor" } },
-    { id: "pod", x: 230, y: 215, color: P, product: { name: "Focus Smart Podium ST600", brand: "Focus", desc: "Electric height-adjustable podium with touch screen and built-in PC for addresses and briefings.", href: "/products/smart-podiums/focus-st600" } },
+    { id: "pod", x: 230, y: 215, color: P, product: { name: "Evolve Podium E6", brand: "Evolve", desc: "Electric height-adjustable podium with touch screen and built-in PC for addresses and briefings.", href: "/products/smart-podiums/focus-st600" } },
     { id: "mic", x: 305, y: 196, color: A, product: { name: "Delegate conference microphones", brand: "DSPPA", desc: "Chairman and delegate discussion units with speak-request and voting integration.", href: "/products/conference-audio" } },
     { id: "cam", x: 610, y: 98, color: V, product: { name: "X60 NDI PTZ camera", brand: "Tenveo", desc: "NDI broadcast camera for live coverage, records proceedings and streams sessions.", href: "/products/conference-cameras/tenveo-x60ndi" } },
     { id: "rack", x: 621, y: 205, color: A, product: { name: "MAG6182II IP network PA server", brand: "DSPPA", desc: "Centralised audio management across chambers, offices and public areas.", href: "/products/ip-network-audio/dsppa-mag6182ii" } },

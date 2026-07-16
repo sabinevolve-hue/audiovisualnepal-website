@@ -34,7 +34,7 @@ const BRAND_COLORS: Record<string, string> = {
   dsppa: '#00AEAD', infobit: '#6366F1', tenveo: '#0891B2', focus: '#1E40AF', lampro: '#0F58FB',
 }
 const BRAND_LOGOS: Record<string, string> = {
-  dsppa: 'DSPPA', infobit: 'InfoBit', tenveo: 'Tenveo', focus: 'Focus', lampro: 'Lampro',
+  dsppa: 'DSPPA', infobit: 'InfoBit', tenveo: 'Tenveo', focus: 'Evolve Podium', lampro: 'Lampro',
 }
 const DOWNLOAD_ICONS: Record<string, string> = {
   brochure: '📄',

@@ -31,7 +31,7 @@ const data: SolutionPageData = {
     "One classroom, one campus — click the pulse points to see what we install in each, then play the signal flow.",
   scene: educationScene,
   systems: [
-    { name: "Smart podiums", desc: "Focus ST100 height-adjustable teaching podium with touch screen and built-in PC.", href: "/products/smart-podiums/focus-st100", img: "/images/products/focus/focus-st100/main.jpg" },
+    { name: "Smart podiums", desc: "Evolve Podium E1 height-adjustable teaching podium with touch screen and built-in PC.", href: "/products/smart-podiums/focus-st100", img: "/images/products/focus/focus-st100/main.jpg" },
     { name: "Wireless presentation", desc: "iShare X200 — teachers and students cast to the interactive panel from any device, no dongles.", href: "/products/wireless-presentation/infobit-ishare-x200", img: "/images/products/infobit/infobit-ishare-x200/main.webp" },
     { name: "Classroom audio", desc: "DSPPA DSP5211 coaxial ceiling speakers — even speech coverage without feedback.", href: "/products/ceiling-speakers/dsppa-dsp5211", img: "/images/products/dsppa/dsppa-dsp5211/main.webp" },
     { name: "Campus IP PA & bells", desc: "MAG6182II IP PA server — scheduled bells, zone announcements and emergency broadcast over the LAN.", href: "/products/ip-network-audio/dsppa-mag6182ii", img: "/images/products/dsppa/dsppa-mag6182ii/main.jpg" },

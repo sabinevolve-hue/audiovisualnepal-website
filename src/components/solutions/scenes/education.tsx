@@ -38,7 +38,7 @@ export const educationScene: SceneConfig = {
   art,
   hotspots: [
     { id: "pan", x: 120, y: 125, color: V, product: { name: "iShare X200 wireless presentation", brand: "InfoBit", desc: "Teachers and students cast to the interactive panel dongle-free from any device.", href: "/products/wireless-presentation/infobit-ishare-x200" } },
-    { id: "pod", x: 217, y: 215, color: P, product: { name: "Focus Smart Podium ST100", brand: "Focus", desc: "Height-adjustable teaching podium with touch screen, built-in PC and document camera.", href: "/products/smart-podiums/focus-st100" } },
+    { id: "pod", x: 217, y: 215, color: P, product: { name: "Evolve Podium E1", brand: "Evolve", desc: "Height-adjustable teaching podium with touch screen, built-in PC and document camera.", href: "/products/smart-podiums/focus-st100" } },
     { id: "spk", x: 122, y: 49, color: A, product: { name: "DSP5211 coaxial ceiling speaker", brand: "DSPPA", desc: "Even speech coverage across the classroom without feedback.", href: "/products/ceiling-speakers/dsppa-dsp5211" } },
     { id: "horn", x: 350, y: 152, color: A, product: { name: "DSP161HD hi-fi horn speaker", brand: "DSPPA", desc: "Weatherproof horn speakers for playgrounds, assembly areas and bells.", href: "/products/horn-speakers/dsppa-dsp161hd" } },
     { id: "srv", x: 621, y: 210, color: A, product: { name: "MAG6182II IP network PA server", brand: "DSPPA", desc: "Campus-wide announcements, scheduled bells and emergency broadcast over the LAN.", href: "/products/ip-network-audio/dsppa-mag6182ii" } },

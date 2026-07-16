@@ -1436,11 +1436,11 @@ const TENVEO: Product[] = [
   },
 ]
 
-// ─── FOCUS (GZFocus Smart Podiums) ───────────────────────────────────────────
+// ─── EVOLVE PODIUM (house-brand smart podiums) ───────────────────────────────
 const FOCUS: Product[] = [
   {
     id: "focus-st100", slug: "focus-st100",
-    name: "Focus Smart Podium ST100", brand: "Focus", brandSlug: "focus",
+    name: "Evolve Podium E1", brand: "Evolve", brandSlug: "focus",
     category: "smart-podiums", subcategory: "Premium Smart Podium",
     tagline: "Electric Height-Adjustable Smart Podium with 23.8\" Touch Screen",
     badge: "Best Seller",
@@ -1474,7 +1474,7 @@ const FOCUS: Product[] = [
   },
   {
     id: "focus-st200", slug: "focus-st200",
-    name: "Focus Smart Podium ST200", brand: "Focus", brandSlug: "focus",
+    name: "Evolve Podium E2", brand: "Evolve", brandSlug: "focus",
     category: "smart-podiums", subcategory: "Premium Smart Podium",
     tagline: "Smart Podium with 33\" Advertising Screen & Wireless Charging",
     badge: "Featured",
@@ -1504,7 +1504,7 @@ const FOCUS: Product[] = [
   },
   {
     id: "focus-st400", slug: "focus-st400",
-    name: "Focus Smart Podium ST400", brand: "Focus", brandSlug: "focus",
+    name: "Evolve Podium E4", brand: "Evolve", brandSlug: "focus",
     category: "smart-podiums", subcategory: "Premium Smart Podium",
     tagline: "Full-Featured Smart Podium with Dual Touch Screens",
     imageUrl: "/images/focus-catalog/focus-st400.webp",
@@ -1530,7 +1530,7 @@ const FOCUS: Product[] = [
   },
   {
     id: "focus-fk535n", slug: "focus-fk535n",
-    name: "Focus Smart Podium FK535N 2.0", brand: "Focus", brandSlug: "focus",
+    name: "Evolve Podium C7", brand: "Evolve", brandSlug: "focus",
     category: "smart-podiums", subcategory: "Compact Smart Podium",
     tagline: "Compact Smart Podium with Integrated AV & Touch Control",
     badge: "Popular",
@@ -1558,7 +1558,7 @@ const FOCUS: Product[] = [
   },
   {
     id: "focus-fk500n", slug: "focus-fk500n",
-    name: "Focus Smart Podium FK500N", brand: "Focus", brandSlug: "focus",
+    name: "Evolve Podium C5", brand: "Evolve", brandSlug: "focus",
     category: "smart-podiums", subcategory: "Compact Smart Podium",
     tagline: "Entry Smart Podium with Touch Screen & Built-in Microphone",
     imageUrl: "/images/focus-catalog/focus-fk500n.webp",
@@ -1583,7 +1583,7 @@ const FOCUS: Product[] = [
   },
   {
     id: "focus-st600", slug: "focus-st600",
-    name: "Focus Smart Podium ST600", brand: "Focus", brandSlug: "focus",
+    name: "Evolve Podium E6", brand: "Evolve", brandSlug: "focus",
     category: "smart-podiums", subcategory: "Premium Smart Podium",
     tagline: "Premium Conference Podium with Advanced AV Integration",
     badge: "New",
