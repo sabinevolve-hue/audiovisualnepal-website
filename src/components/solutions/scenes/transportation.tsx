@@ -32,7 +32,7 @@ export const transportationScene: SceneConfig = {
   ariaLabel: "Airport concourse diagram: flight information display, paging console, check-in counters, concourse IP speakers, apron horn and IP PA server rack",
   art,
   hotspots: [
-    { id: "fid", x: 135, y: 112, color: V, product: { name: "Flight information displays", brand: "InfoBit", desc: "Video wall controllers for departure boards and passenger information.", href: "/products/video-walls" } },
+    { id: "fid", x: 135, y: 112, color: V, product: { name: "Lampro LED information displays", brand: "Lampro", desc: "Fine-pitch LED departure boards and passenger-information displays, fed by an InfoBit video-wall controller.", href: "/brands/lampro/catalog#fine-pitch-hd-indoor" } },
     { id: "con", x: 110, y: 194, color: A, product: { name: "MAG6806 IP network amplifier", brand: "DSPPA", desc: "Zone paging from the operations desk — gate calls, boarding and security announcements.", href: "/products/ip-network-audio/dsppa-mag6806" } },
     { id: "spk", x: 380, y: 49, color: A, product: { name: "DSP5211 coaxial ceiling speaker", brand: "DSPPA", desc: "High-intelligibility announcements over crowd noise along the concourse.", href: "/products/ceiling-speakers/dsppa-dsp5211" } },
     { id: "horn", x: 541, y: 94, color: A, product: { name: "DSP161HD hi-fi horn speaker", brand: "DSPPA", desc: "Weatherproof horns for aprons, parking and bus park platforms.", href: "/products/horn-speakers/dsppa-dsp161hd" } },

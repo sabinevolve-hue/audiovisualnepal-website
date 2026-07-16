@@ -36,7 +36,7 @@ export const corporateScene: SceneConfig = {
   ariaLabel: "Corporate office diagram: lobby video wall, boardroom display with video bar, ceiling speakers, speakerphone and matrix amplifier rack",
   art,
   hotspots: [
-    { id: "wall", x: 125, y: 129, color: V, product: { name: "iWall 204 video wall controller", brand: "InfoBit", desc: "Drives 2×2 lobby video walls in 4K — brand content, dashboards and welcome screens.", href: "/products/video-walls/infobit-iwall-204" } },
+    { id: "wall", x: 125, y: 129, color: V, product: { name: "Lampro LED video wall", brand: "Lampro", desc: "Fine-pitch LED video wall in the lobby — brand content, dashboards and welcome screens, driven by an InfoBit iWall controller.", href: "/brands/lampro/catalog#fine-pitch-hd-indoor" } },
     { id: "vbar", x: 360, y: 163, color: V, product: { name: "iCam VB60 video bar", brand: "InfoBit", desc: "All-in-one 4K camera, mics and speakers under the boardroom display for hybrid meetings.", href: "/products/video-conferencing/infobit-vb60" } },
     { id: "spk", x: 302, y: 49, color: A, product: { name: "DSP6011 frameless ceiling speakers", brand: "DSPPA", desc: "Discreet background music and paging across office zones, cafeterias and corridors.", href: "/products/ceiling-speakers/dsppa-dsp6011" } },
     { id: "sph", x: 410, y: 220, color: A, product: { name: "iSpeaker M500 speakerphone", brand: "InfoBit", desc: "USB speakerphone with echo cancellation for smaller huddle spaces.", href: "/products/conference-audio/infobit-ispeaker-m500" } },

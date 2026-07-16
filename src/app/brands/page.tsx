@@ -4,6 +4,8 @@ import { ArrowRight } from 'lucide-react'
 
 export const revalidate = 86400
 
+const catSlug = (x: string) => x.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')
+
 export const metadata: Metadata = {
   title: 'Our Brands | Authorized AV Distributor Nepal',
   description: 'AudioVisual Nepal is the authorized distributor and partner for DSPPA, InfoBit, Tenveo, Focus and Lampro in Nepal. Genuine products, full manufacturer warranty.',
@@ -24,7 +26,8 @@ const brands = [
     slug: 'dsppa',
     tagline: "Asia's Leading PA & Voice Evacuation Manufacturer",
     description: 'IP network audio, EN54 voice evacuation, mixer amplifiers, ceiling speakers and PA systems. 35+ years of manufacturing with deployments in 100+ countries.',
-    categories: ['IP Network Audio', 'Voice Evacuation', 'Amplifiers', 'Ceiling Speakers', 'Column Speakers'],
+    categories: ['Voice Evacuation (PAVA)', 'IP Network Audio (MAG)', 'Mixer Amplifiers', 'Power Amplifiers', 'Ceiling Speakers', 'Column Speakers'],
+    hasCatalog: true,
     country: 'China', founded: '1988',
     color: '#00AEAD', products: 14, range: '200+ models in full catalog',
   },
@@ -33,7 +36,8 @@ const brands = [
     slug: 'infobit',
     tagline: 'Enterprise Conference AV & Collaboration',
     description: '4K video conference bars, AI PTZ cameras, wireless presentation systems, video wall controllers and HDMI matrix switchers. Zoom & Teams Rooms certified.',
-    categories: ['Conference Video Bars', 'PTZ Cameras', 'Wireless Presentation', 'Video Walls', 'AV Switching'],
+    categories: ['Wireless Presentation', 'Video Walls', 'Cameras', 'Meeting Group', 'Matrix Switching', 'Digital Conference'],
+    hasCatalog: true,
     country: 'China', founded: '2012',
     color: '#6366F1', products: 16, range: '550+ models in full catalog',
   },
@@ -42,7 +46,8 @@ const brands = [
     slug: 'tenveo',
     tagline: 'AI-Tracking PTZ Cameras & Video Conferencing',
     description: 'AI auto-tracking PTZ cameras (4K@60fps, NDI|HX2), conference group kits, USB speakerphones and PTZ keyboard controllers. 3-year warranty on all products.',
-    categories: ['AI PTZ Cameras', 'Conference Cameras', 'Conference Kits', 'Speakerphones', 'Controllers'],
+    categories: ['PTZ Cameras', '360 Cameras & Group Kits', 'Speakerphones', 'Wireless Conference System', 'Controllers & Production'],
+    hasCatalog: true,
     country: 'China', founded: '2010',
     color: '#0891B2', products: 12, range: '60+ models in full catalog',
   },
@@ -52,6 +57,7 @@ const brands = [
     tagline: 'Premium Smart Podiums for Education & Government',
     description: 'Electric height-adjustable smart podiums with Sapele wood, built-in Intel OPS computers, 23.8" touch screens and dual gooseneck microphones. Made for parliament halls and university auditoriums.',
     categories: ['Smart Podiums', 'Digital Lecterns', 'Touch Screen Podiums'],
+    hasCatalog: false,
     country: 'China', founded: '2008',
     color: '#1E40AF', products: 6, range: '',
   },
@@ -60,7 +66,8 @@ const brands = [
     slug: 'lampro',
     tagline: 'LED Screens & Displays — Display a Better World',
     description: 'Fine-pitch COB Mini LED, indoor creative splicing, rental and staging panels, and high-brightness outdoor DOOH displays. 21 years of LED manufacturing, 600,000+ sqm annual production, installed across six continents.',
-    categories: ['COB Mini LED', 'Fine-Pitch Indoor', 'Creative Splicing', 'Rental & Staging', 'Outdoor DOOH'],
+    categories: ['Fine-Pitch Mini LED (COB)', 'Fine-Pitch HD Indoor', 'Indoor Commercial & Creative Splicing', 'Rental & Staging', 'Outdoor Advertising (DOOH)', 'Creative Displays', 'LED Modules & Distribution'],
+    hasCatalog: true,
     country: 'China', founded: '2004',
     color: '#0F58FB', products: 6, range: '20 series in full catalog',
   },
@@ -130,9 +137,13 @@ export default function BrandsPage() {
                     <div style={{ fontSize: 11, fontWeight: 700, letterSpacing: '0.08em', textTransform: 'uppercase', color: '#94A3B8', marginBottom: 12 }}>Product Categories</div>
                     <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8 }}>
                       {brand.categories.map(c => (
-                        <span key={c} style={{ fontSize: 12, padding: '5px 12px', borderRadius: 999, background: `${brand.color}0D`, color: brand.color, border: `1px solid ${brand.color}25`, fontWeight: 600 }}>
-                          {c}
-                        </span>
+                        <Link
+                          key={c}
+                          href={brand.hasCatalog ? `/brands/${brand.slug}/catalog#${catSlug(c)}` : `/brands/${brand.slug}`}
+                          style={{ display: 'inline-flex', alignItems: 'center', gap: 5, fontSize: 12, padding: '5px 12px', borderRadius: 999, background: `${brand.color}0D`, color: brand.color, border: `1px solid ${brand.color}25`, fontWeight: 600, textDecoration: 'none' }}
+                        >
+                          {c} <ArrowRight size={10} />
+                        </Link>
                       ))}
                     </div>
                   </div>

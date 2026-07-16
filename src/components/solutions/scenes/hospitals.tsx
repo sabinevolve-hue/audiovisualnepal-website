@@ -35,7 +35,7 @@ export const hospitalsScene: SceneConfig = {
   hotspots: [
     { id: "pag", x: 100, y: 186, color: A, product: { name: "MAG6806 IP network amplifier", brand: "DSPPA", desc: "Nurse-station paging to selected wards and floors over the hospital LAN.", href: "/products/ip-network-audio/dsppa-mag6806" } },
     { id: "spk", x: 382, y: 49, color: A, product: { name: "DSP5211 coaxial ceiling speaker", brand: "DSPPA", desc: "Clear, calm announcements in wards, OPD and waiting areas.", href: "/products/ceiling-speakers/dsppa-dsp5211" } },
-    { id: "sig", x: 350, y: 115, color: V, product: { name: "Digital signage & queue displays", brand: "InfoBit", desc: "Token queues, department wayfinding and health information displays.", href: "/products/video-walls" } },
+    { id: "sig", x: 350, y: 115, color: V, product: { name: "Lampro LED signage displays", brand: "Lampro", desc: "LED token-queue, department wayfinding and health-information displays, driven by an InfoBit signage controller.", href: "/brands/lampro/catalog#indoor-commercial-creative-splicing" } },
     { id: "evac", x: 610, y: 170, color: S, product: { name: "PAVA8500 voice evacuation system", brand: "DSPPA", desc: "EN54-certified Dante voice alarm — automatic evacuation messaging integrated with the fire panel.", href: "/products/voice-evacuation/dsppa-pava8500" } },
     { id: "evac2", x: 610, y: 205, color: S, product: { name: "PAVA4600 compact voice alarm", brand: "DSPPA", desc: "Wall-mount voice evacuation for clinics and smaller wings.", href: "/products/voice-evacuation/dsppa-pava4600" } },
   ],
