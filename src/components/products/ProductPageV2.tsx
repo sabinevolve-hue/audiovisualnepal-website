@@ -3,6 +3,33 @@ import { useState, useRef, useEffect } from 'react'
 import Link from 'next/link'
 import { ARCHETYPES } from '@/data/categoryArchetypes'
 
+function scopeCss(css: string): string {
+  const scope = '.pv2'
+  css = css.replace(/\/\*[\s\S]*?\*\//g, '')
+  const parse = (str: string): string => {
+    let res = '', idx = 0
+    while (idx < str.length) {
+      const open = str.indexOf('{', idx)
+      if (open < 0) break
+      const sel = str.slice(idx, open).trim()
+      if (sel.startsWith('@media') || sel.startsWith('@supports')) {
+        let depth = 1, j = open + 1
+        while (j < str.length && depth > 0) { const ch = str[j]; if (ch === '{') depth++; else if (ch === '}') depth--; j++ }
+        res += sel + '{' + parse(str.slice(open + 1, j - 1)) + '}'
+        idx = j
+      } else {
+        const close = str.indexOf('}', open)
+        const body = str.slice(open + 1, close)
+        const scoped = sel.split(',').map((x) => { const t = x.trim(); if (!t) return t; return t === scope ? t : scope + ' ' + t }).join(',')
+        res += scoped + '{' + body + '}'
+        idx = close + 1
+      }
+    }
+    return res
+  }
+  return parse(css)
+}
+
 type Spec = { label: string; value: string; highlight?: boolean; group?: string }
 type Feat = { title: string; desc: string }
 type Product = {
@@ -234,7 +261,7 @@ export default function ProductPageV2({ product, categoryKey }: { product: Produ
         </div>
       </div>
 
-      <style jsx>{`
+      <style dangerouslySetInnerHTML={{ __html: scopeCss(`
         .pv2{background:#fff;color:#1e293b;padding-top:80px;font-family:var(--font-display),system-ui,sans-serif}
         .cw{max-width:1120px;margin:0 auto;padding:0 24px}
         .btn{border-radius:999px;padding:10px 18px;font-size:13.5px;font-weight:700;text-decoration:none;display:inline-flex;align-items:center;gap:7px;cursor:pointer;border:none;white-space:nowrap}
@@ -339,7 +366,7 @@ export default function ProductPageV2({ product, categoryKey }: { product: Produ
         .final{margin:34px 0 90px;border-radius:22px;background:linear-gradient(135deg,#0B1E3D,#12294d);padding:40px 30px;text-align:center;color:#fff}
         .final h2{color:#fff}.final p{color:rgba(255,255,255,.75);max-width:460px;margin:10px auto 20px;font-size:14.5px}
         @media(max-width:860px){.hero,.builder{grid-template-columns:1fr}.glance{grid-template-columns:repeat(2,1fr)}.feat,.dl,.packs{grid-template-columns:1fr}.steps{grid-template-columns:1fr 1fr}.cmp{grid-template-columns:1fr}.pv2-sticky .resp{display:none}}
-      `}</style>
+      `) }} />
     </main>
   )
 }
