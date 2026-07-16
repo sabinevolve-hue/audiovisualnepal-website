@@ -124,11 +124,6 @@ export default async function BrandPage({ params }: Props) {
             <div className="flex-1 min-w-[280px]">
               <div className="flex items-center gap-3 mb-2">
                 <h1 style={{ fontFamily: 'var(--font-display)', fontSize: 40, fontWeight: 900, color: '#0B1E3D', letterSpacing: '-0.03em' }}>{brand.name}</h1>
-                <a href={brand.website} target="_blank" rel="noopener noreferrer"
-                  className="flex items-center gap-1 text-[12px] px-3 py-1 rounded-full transition-colors hover:text-[#0B1E3D]"
-                  style={{ border: '1px solid rgba(11,30,61,0.12)', color: '#64748B', textDecoration: 'none' }}>
-                  <ExternalLink size={11} /> Website
-                </a>
               </div>
               <p className="text-[18px] mb-2" style={{ color: brand.color, fontWeight: 600 }}>{brand.tagline}</p>
               <p className="text-[14px]" style={{ color: '#64748B' }}>

@@ -189,11 +189,6 @@ export default async function ProductDetailPage({ params }: Props) {
               {tab.label}
             </a>
           ))}
-          {product.brandProductUrl && (
-            <a href={product.brandProductUrl} target="_blank" rel="noopener noreferrer" style={{ marginLeft: 'auto', padding: '14px 16px', fontSize: 12, fontWeight: 600, color: brandColor, textDecoration: 'none', whiteSpace: 'nowrap', display: 'flex', alignItems: 'center', gap: 5 }}>
-              View on {BRAND_LOGOS[product.brandSlug] || product.brand} ↗
-            </a>
-          )}
         </div>
       </nav>
 
@@ -335,7 +330,7 @@ export default async function ProductDetailPage({ params }: Props) {
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: 16, marginBottom: 32 }}>
             {/* Available downloads */}
             {hasDownloads && product.downloads!.map((dl, i) => (
-              <a key={i} href={dl.url} target="_blank" rel="noopener noreferrer"
+              <Link key={i} href={`/contact?product=${encodeURIComponent(product.name)}&inquiry=${encodeURIComponent(dl.type)}`}
                 style={{ display: 'flex', alignItems: 'center', gap: 16, padding: '20px', background: '#FFFFFF', borderRadius: 14, border: '1px solid rgba(11,30,61,0.1)', textDecoration: 'none', transition: 'border-color 0.2s' }}>
                 <div style={{ width: 44, height: 44, borderRadius: 12, background: `${brandColor}10`, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 20, flexShrink: 0 }}>
                   {DOWNLOAD_ICONS[dl.type]}
@@ -345,7 +340,7 @@ export default async function ProductDetailPage({ params }: Props) {
                   <div style={{ fontSize: 11, color: brandColor, fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.06em' }}>{dl.type}{dl.fileSize ? ` · ${dl.fileSize}` : ''}</div>
                 </div>
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke={brandColor} strokeWidth="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-              </a>
+              </Link>
             ))}
 
             {/* Always show: Request brochure card */}
@@ -361,27 +356,13 @@ export default async function ProductDetailPage({ params }: Props) {
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke={brandColor} strokeWidth="2"><polyline points="9 18 15 12 9 6"/></svg>
             </Link>
 
-            {/* Manufacturer website card */}
-            {product.brandProductUrl && (
-              <a href={product.brandProductUrl} target="_blank" rel="noopener noreferrer"
-                style={{ display: 'flex', alignItems: 'center', gap: 16, padding: '20px', background: '#F8FAFC', borderRadius: 14, border: '1px solid rgba(11,30,61,0.08)', textDecoration: 'none' }}>
-                <div style={{ width: 44, height: 44, borderRadius: 12, background: `${brandColor}10`, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 20, flexShrink: 0 }}>
-                  🌐
-                </div>
-                <div style={{ flex: 1 }}>
-                  <div style={{ fontSize: 14, fontWeight: 600, color: '#0B1E3D', marginBottom: 3 }}>View on {BRAND_LOGOS[product.brandSlug] || product.brand} Website</div>
-                  <div style={{ fontSize: 12, color: '#64748B' }}>Official product page with full resources</div>
-                </div>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke={brandColor} strokeWidth="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-              </a>
-            )}
           </div>
 
           {/* Info note */}
           <div style={{ padding: '16px 20px', background: '#F0F9FF', border: '1px solid #BAE6FD', borderRadius: 12, display: 'flex', gap: 12, alignItems: 'flex-start' }}>
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0284C7" strokeWidth="2" style={{ flexShrink: 0, marginTop: 1 }}><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
             <p style={{ fontSize: 13, color: '#0369A1', lineHeight: 1.6, margin: 0 }}>
-              All technical documents are provided by the manufacturer. For installation support, custom configurations, and Nepal-specific compliance guidance, contact our engineering team.
+              Datasheets, wiring diagrams and installation guides are provided by our engineering team on request — with Nepal-specific configuration and compliance guidance.
             </p>
           </div>
         </div>
