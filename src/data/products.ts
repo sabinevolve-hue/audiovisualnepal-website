@@ -1445,7 +1445,7 @@ const FOCUS: Product[] = [
     tagline: "Electric Height-Adjustable Smart Podium with 23.8\" Touch Screen",
     badge: "Best Seller",
     imageUrl: "/images/focus-catalog/focus-st100.webp",
-    gallery: ["/images/focus-catalog/focus-st100-g2.webp", "/images/focus-catalog/focus-st100-g3.webp"],
+    gallery: ["/images/focus-catalog/focus-st100-g2.webp", "/images/focus-catalog/focus-st100-g3.webp", "/images/focus-catalog/focus-st100-g4.webp"],
     imageFallback: "#1E40AF",
     description: "The ST100 is a premium all-in-one smart podium crafted from solid Sapele wood with electric height adjustment (200mm lift range). Integrates a 23.8\" touch screen, 18.5\" advertising screen, OPS computer (Intel i5/i7, 16GB, 512GB SSD), dual gooseneck microphones and magnetic timer.",
     keyFeatures: [
@@ -1479,7 +1479,7 @@ const FOCUS: Product[] = [
     tagline: "Smart Podium with 33\" Advertising Screen & Wireless Charging",
     badge: "Featured",
     imageUrl: "/images/focus-catalog/focus-st200.webp",
-    gallery: ["/images/focus-catalog/focus-st200-g2.webp", "/images/focus-catalog/focus-st200-g3.webp", "/images/focus-catalog/focus-st200-g4.webp", "/images/focus-catalog/focus-st200-g5.webp"],
+    gallery: ["/images/focus-catalog/focus-st200-g2.webp", "/images/focus-catalog/focus-st200-g3.webp", "/images/focus-catalog/focus-st200-g4.webp"],
     imageFallback: "#1E40AF",
     description: "Upgraded ST200 features a 21.5\" touch screen plus a large 33\" built-in advertising screen, wireless phone charging module, dual 65cm gooseneck mics, mini keyboard and aluminum volume knob. Same OPS computer as ST100. Solid Sapele wood in walnut and black finish.",
     keyFeatures: [
@@ -1508,7 +1508,7 @@ const FOCUS: Product[] = [
     category: "smart-podiums", subcategory: "Premium Smart Podium",
     tagline: "Full-Featured Smart Podium with Dual Touch Screens",
     imageUrl: "/images/focus-catalog/focus-st400.webp",
-    gallery: ["/images/focus-catalog/focus-st400-g2.webp", "/images/focus-catalog/focus-st400-g3.webp", "/images/focus-catalog/focus-st400-g4.webp", "/images/focus-catalog/focus-st400-g5.webp"],
+    gallery: ["/images/focus-catalog/focus-st400-g2.webp", "/images/focus-catalog/focus-st400-g3.webp", "/images/focus-catalog/focus-st400-g4.webp"],
     imageFallback: "#1E40AF",
     description: "ST400 is Focus's flagship podium with dual interactive touch screens, advanced AV integration and premium Sapele wood construction. Designed for parliament halls, large auditoriums and flagship university lecture theatres where nothing less than the best will do.",
     keyFeatures: [
@@ -1535,7 +1535,7 @@ const FOCUS: Product[] = [
     tagline: "Compact Smart Podium with Integrated AV & Touch Control",
     badge: "Popular",
     imageUrl: "/images/focus-catalog/focus-fk535n.webp",
-    gallery: ["/images/focus-catalog/focus-fk535n-g2.webp", "/images/focus-catalog/focus-fk535n-g3.webp", "/images/focus-catalog/focus-fk535n-g4.webp", "/images/focus-catalog/focus-fk535n-g5.webp"],
+    gallery: ["/images/focus-catalog/focus-fk535n-g2.webp", "/images/focus-catalog/focus-fk535n-g3.webp", "/images/focus-catalog/focus-fk535n-g4.webp"],
     imageFallback: "#1E40AF",
     description: "Compact and cost-effective smart podium integrating touch screen, OPS computer and microphone in a slimmer profile. Ideal for schools, churches and training rooms where space is limited but full smart podium capability is needed.",
     keyFeatures: [
