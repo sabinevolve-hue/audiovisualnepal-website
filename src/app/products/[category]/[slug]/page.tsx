@@ -6,6 +6,8 @@ import { ALL_PRODUCTS, getProductBySlug as getProduct, getRelatedProducts } from
 import { ProductImg } from '@/components/ui/ProductImg'
 import ProductGallery from '@/components/ui/ProductGallery'
 import { SITE } from '@/lib/constants'
+import ProductPageV2 from '@/components/products/ProductPageV2'
+import { ARCHETYPES } from '@/data/categoryArchetypes'
 
 export const revalidate = 3600
 
@@ -48,6 +50,8 @@ export default async function ProductDetailPage({ params }: Props) {
   const { slug } = await params
   const product = getProduct(slug)
   if (!product) notFound()
+
+  if (product && ARCHETYPES[product.category]) return <ProductPageV2 product={product as never} categoryKey={product.category} />
 
   const related = getRelatedProducts(product)
   const brandColor = BRAND_COLORS[product.brandSlug] || '#2563EB'
