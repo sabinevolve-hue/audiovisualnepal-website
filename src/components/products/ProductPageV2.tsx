@@ -41,6 +41,20 @@ type Product = {
 const PHONE = '+977 9762109538'
 const wa = (t: string) => `https://wa.me/9779762109538?text=${encodeURIComponent(t)}`
 
+const DEFAULT_WHYUS = [
+  { st: 'Free site survey', sd: 'We visit and measure your space.' },
+  { st: 'System design + BOQ', sd: 'Specified to your requirements.' },
+  { st: 'Supply, genuine', sd: 'Authorised stock, full warranty.' },
+  { st: 'Professional install', sd: 'Commissioned and tested.' },
+  { st: 'AMC & training', sd: 'Spares, service, staff handover.' },
+]
+const DEFAULT_TRUST = [
+  { tt: 'Genuine Product', ts: 'Authorised dealer' },
+  { tt: 'Manufacturer Warranty', ts: 'Genuine, backed' },
+  { tt: 'Expert Support', ts: 'Local AV engineers' },
+  { tt: 'All-Nepal Delivery', ts: 'All 77 districts' },
+]
+
 export default function ProductPageV2({ product, categoryKey }: { product: Product; categoryKey: string }) {
   const a = ARCHETYPES[categoryKey]
   const heroRef = useRef<HTMLDivElement>(null)
@@ -57,7 +71,7 @@ export default function ProductPageV2({ product, categoryKey }: { product: Produ
     const o: Record<string, number> = {}; b?.sliders.forEach(s => (o[s.id] = s.value)); return o
   })
 
-  const secs = ['build', 'connect', 'packs', 'why', 'compare', 'specs', 'faq'].filter(id => id !== 'build' || b)
+  const secs = ['build', 'connect', 'packs', 'why', 'compare', 'specs', 'faq'].filter(id => (id !== 'build' || b) && (id !== 'compare' || !!(a && a.compare && a.compare.length)) && (id !== 'packs' || !!(a && a.packs && a.packs.length)) && (id !== 'faq' || !!(a && a.faq && a.faq.length)) && (id !== 'connect' || !!(a && a.diagram)))
   useEffect(() => {
     const onScroll = () => {
       if (heroRef.current) setStuck(heroRef.current.getBoundingClientRect().bottom < 0)
@@ -76,6 +90,9 @@ export default function ProductPageV2({ product, categoryKey }: { product: Produ
   }
   const defaultMsg = 'Grey boxes are products we supply — hover to see what to pair.'
   const out = b ? b.compute(seg, vals) : null
+  const whyUs = (a.whyUs && a.whyUs.length) ? a.whyUs : DEFAULT_WHYUS
+  const trust = (a.trust && a.trust.length) ? a.trust : DEFAULT_TRUST
+  const glance = (a.glance && a.glance.length) ? a.glance : (product.specs || []).filter(s => s.highlight).slice(0, 4).map(s => ({ v: s.value, k: s.label }))
 
   function play() {
     if (playing) return; setPlaying(true)
@@ -123,7 +140,7 @@ export default function ProductPageV2({ product, categoryKey }: { product: Produ
             <h1>{product.name}</h1>
             <div className="tagline">{product.tagline}</div>
             <div className="outcome">🛡️ <b>The outcome:</b> {a.outcome}</div>
-            <div className="glance">{a.glance.map((g, i) => <div className="g" key={i}><div className="v">{g.v}</div><div className="k">{g.k}</div></div>)}</div>
+            <div className="glance">{glance.map((g, i) => <div className="g" key={i}><div className="v">{g.v}</div><div className="k">{g.k}</div></div>)}</div>
             {product.applications?.length ? <><div className="ideal">Ideal for</div><div className="tags">{product.applications.map(t => <span className="tag" key={t}>{t}</span>)}</div></> : null}
             <div className="cta">
               <a className="btn wa" href={wa(`Hi, I'm interested in the ${product.name}.`)}>WhatsApp Enquiry</a>
@@ -131,7 +148,7 @@ export default function ProductPageV2({ product, categoryKey }: { product: Produ
               <a className="btn c" href={`tel:${PHONE.replace(/\s/g, '')}`}>Call {PHONE}</a>
             </div>
             <div className="ctanote">💬 <b>We quote per site</b> after free sizing. Typical reply ~2 hours.</div>
-            <div className="trust">{a.trust.map((t, i) => <div className="t" key={i}><div className="ic">✓</div><div><div className="tt">{t.tt}</div><div className="ts">{t.ts}</div></div></div>)}</div>
+            <div className="trust">{trust.map((t, i) => <div className="t" key={i}><div className="ic">✓</div><div><div className="tt">{t.tt}</div><div className="ts">{t.ts}</div></div></div>)}</div>
           </div>
         </div>
       </div>
@@ -165,6 +182,7 @@ export default function ProductPageV2({ product, categoryKey }: { product: Produ
         </section>
       )}
 
+      {!!a.diagram && (
       <section className="block" id="connect">
         <div className="cw">
           <div className="eyebrow">Integration</div><h2>{a.diagram.title}</h2><p className="lead">{a.diagram.lead}</p>
@@ -195,6 +213,9 @@ export default function ProductPageV2({ product, categoryKey }: { product: Produ
         </div>
       </section>
 
+      )}
+
+      {!!a.packs?.length && (
       <section className="block soft" id="packs">
         <div className="cw">
           <div className="eyebrow">Ready-made starting points</div><h2>Popular packs</h2>
@@ -206,13 +227,16 @@ export default function ProductPageV2({ product, categoryKey }: { product: Produ
         </div>
       </section>
 
+      )}
+
       <section className="block" id="why">
         <div className="cw">
           <div className="eyebrow">Why buy from us</div><h2>You're not buying a box — you're buying a working system</h2>
-          <div className="steps">{a.whyUs.map((s, i) => <div className="step" key={i}><div className="num">{i + 1}</div><div className="st">{s.st}</div><div className="sd">{s.sd}</div></div>)}</div>
+          <div className="steps">{whyUs.map((s, i) => <div className="step" key={i}><div className="num">{i + 1}</div><div className="st">{s.st}</div><div className="sd">{s.sd}</div></div>)}</div>
         </div>
       </section>
 
+      {!!a.compare?.length && (
       <section className="block soft" id="compare">
         <div className="cw">
           <div className="eyebrow">Choosing a model</div><h2>Where it sits in the range</h2>
@@ -224,6 +248,8 @@ export default function ProductPageV2({ product, categoryKey }: { product: Produ
           <div className="ch">Not sure which fits? <b style={{ color: accent }}>Send us the floor plan</b> — we'll recommend the right model.</div>
         </div>
       </section>
+
+      )}
 
       {product.keyFeatures?.length ? (
         <section className="block" id="features">
@@ -247,11 +273,14 @@ export default function ProductPageV2({ product, categoryKey }: { product: Produ
         </div>
       </section>
 
+      {!!a.faq?.length && (
       <section className="block" id="faq">
         <div className="cw"><div className="eyebrow">Before you ask</div><h2>Common questions</h2>
           <div className="faq">{a.faq.map((f, i) => <details key={i} open={i === 0}><summary>{f.q}</summary><div className="fa">{f.a}</div></details>)}</div>
         </div>
       </section>
+
+      )}
 
       <div className="cw">
         <div className="final">
