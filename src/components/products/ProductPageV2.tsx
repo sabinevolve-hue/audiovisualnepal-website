@@ -86,6 +86,7 @@ export default function ProductPageV2({ product, categoryKey }: { product: Produ
 
   if (!a) return null
   const accent = BRAND_COLORS[(product as { brandSlug?: string }).brandSlug || ''] || a.accent
+  const ledHero = categoryKey === 'led-displays' || categoryKey === 'video-walls'
   const tint = (al: number) => {
     const h = accent.replace('#', ''); const r = parseInt(h.slice(0, 2), 16), g = parseInt(h.slice(2, 4), 16), bl = parseInt(h.slice(4, 6), 16)
     return `rgba(${r}, ${g}, ${bl}, ${al})`
@@ -134,9 +135,12 @@ export default function ProductPageV2({ product, categoryKey }: { product: Produ
         <div className="crumb">Home › Products › <b>{product.name}</b></div>
         <div className="hero" ref={heroRef}>
           <div className="shot">
-            {product.imageUrl
-              ? <img src={product.imageUrl} alt={product.name} onError={(e) => { (e.currentTarget as HTMLImageElement).style.display = 'none' }} />
-              : <div className="fb">{product.brand}<br /><b>{product.name}</b></div>}
+            {ledHero
+              ? <div className="ledwall"><span className="cap">Fine-pitch LED · seamless</span></div>
+              : product.imageUrl
+                ? <img src={product.imageUrl} alt={product.name} onError={(e) => { const el = e.currentTarget as HTMLImageElement; el.style.display = 'none'; const fb = el.nextElementSibling as HTMLElement | null; if (fb) fb.style.display = 'flex' }} />
+                : null}
+            {!ledHero && <div className="fb" style={{ display: product.imageUrl ? 'none' : 'flex' }}>{product.brand}<br /><b>{product.name}</b></div>}
           </div>
           <div>
             <div className="chips">{product.badge && <span className="badge">{product.badge}</span>}<span className="chip">{product.brand}</span>{product.subcategory && <span className="chip">{product.subcategory}</span>}</div>
@@ -308,6 +312,10 @@ export default function ProductPageV2({ product, categoryKey }: { product: Produ
         .shot{position:relative;border-radius:20px;overflow:hidden;background:#F8FAFC;border:1px solid rgba(11,30,61,.1);aspect-ratio:4/3;display:flex;align-items:center;justify-content:center}
         .shot img{width:100%;height:100%;object-fit:contain;padding:22px}
         .shot .fb{color:#0B1E3D;text-align:center;font-weight:800}
+        .shot .fb{width:100%;height:100%;display:none;flex-direction:column;align-items:center;justify-content:center;background:#0B1E3D;color:#fff;gap:4px;border-radius:12px}
+        .shot .ledwall{position:relative;width:100%;height:100%;border-radius:10px;overflow:hidden;background:linear-gradient(120deg,#1f3bbf,#00AEAD 45%,#7c3aed 80%,#f59e0b);box-shadow:inset 0 0 0 6px #05070f}
+        .shot .ledwall::after{content:"";position:absolute;inset:0;background-image:radial-gradient(rgba(0,0,0,.35) 32%, transparent 33%);background-size:6px 6px;mix-blend-mode:multiply;opacity:.55}
+        .shot .ledwall .cap{position:absolute;left:12px;bottom:10px;color:#fff;font-weight:800;font-size:12px;text-shadow:0 1px 6px rgba(0,0,0,.5);z-index:2}
         .chips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}
         .chip{font-size:12px;font-weight:700;padding:4px 11px;border-radius:999px;background:var(--acd);color:var(--ac);border:1px solid var(--acl)}
         .badge{font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.06em;color:#fff;background:var(--ac);padding:4px 10px;border-radius:6px}
