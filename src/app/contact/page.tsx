@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, FormEvent } from 'react'
+import { useState, useEffect, FormEvent } from 'react'
 import { SITE, PROJECT_TYPES } from '@/lib/constants'
 import { Phone, Mail, MapPin, MessageCircle, Send, CheckCircle } from 'lucide-react'
 
@@ -20,6 +20,17 @@ const inputStyle = {
 export default function ContactPage() {
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle')
   const [form, setForm] = useState({ name: '', company: '', email: '', phone: '', projectType: '', message: '' })
+
+  useEffect(() => {
+    try {
+      const p = new URLSearchParams(window.location.search)
+      const product = p.get('product'), inquiry = p.get('inquiry'), config = p.get('config')
+      if (product || config) {
+        const msg = [product ? `Product: ${product}` : '', inquiry ? `Request: ${inquiry}` : '', config ? `My build: ${config}` : ''].filter(Boolean).join('\n')
+        setForm(prev => ({ ...prev, projectType: prev.projectType || product || '', message: prev.message || msg }))
+      }
+    } catch {}
+  }, [])
 
   const waFallback = () => {
     const text = encodeURIComponent(

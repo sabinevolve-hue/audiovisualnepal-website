@@ -55,6 +55,8 @@ const DEFAULT_TRUST = [
   { tt: 'All-Nepal Delivery', ts: 'All 77 districts' },
 ]
 
+const BRAND_COLORS: Record<string, string> = { dsppa: '#00AEAD', infobit: '#6366F1', tenveo: '#0891B2', focus: '#1E40AF', lampro: '#0F58FB' }
+
 export default function ProductPageV2({ product, categoryKey }: { product: Product; categoryKey: string }) {
   const a = ARCHETYPES[categoryKey]
   const heroRef = useRef<HTMLDivElement>(null)
@@ -83,7 +85,7 @@ export default function ProductPageV2({ product, categoryKey }: { product: Produ
   })
 
   if (!a) return null
-  const accent = a.accent
+  const accent = BRAND_COLORS[(product as { brandSlug?: string }).brandSlug || ''] || a.accent
   const tint = (al: number) => {
     const h = accent.replace('#', ''); const r = parseInt(h.slice(0, 2), 16), g = parseInt(h.slice(2, 4), 16), bl = parseInt(h.slice(4, 6), 16)
     return `rgba(${r}, ${g}, ${bl}, ${al})`
@@ -119,6 +121,7 @@ export default function ProductPageV2({ product, categoryKey }: { product: Produ
 
   return (
     <main className="pv2" style={{ ['--ac' as string]: accent, ['--acd' as string]: tint(0.08), ['--acl' as string]: tint(0.28) } as React.CSSProperties}>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ '@context': 'https://schema.org', '@type': 'Product', name: product.name, description: product.description || product.tagline, category: product.category, brand: { '@type': 'Brand', name: product.brand }, ...(product.imageUrl ? { image: ['https://www.audiovisualnepal.com' + product.imageUrl] } : {}) }) }} />
       {/* sticky */}
       <div className={'pv2-sticky' + (stuck ? ' show' : '')}><div className="in">
         <div className="nm">{product.name}<small>{product.tagline}</small></div><div className="sp" />
@@ -175,7 +178,7 @@ export default function ProductPageV2({ product, categoryKey }: { product: Produ
                 <div className="rec">Recommended</div><div className="host">{out.host}</div><div className="hostsub">{out.hostSub}</div>
                 <div className="ogrid">{out.cells.map((c, i) => <div className="cell" key={i}><div className="cv">{c.cv}</div><div className="ck">{c.ck}</div></div>)}</div>
                 <div className="onote">{out.note}</div>
-                <Link className="go" href={`/contact?product=${encodeURIComponent(product.name)}&inquiry=build`}>Quote this exact build →<small>Pricing &amp; a BOQ in ~2 hours</small></Link>
+                <Link className="go" href={`/contact?product=${encodeURIComponent(product.name)}&inquiry=build&config=${encodeURIComponent(out.host + ' — ' + out.cells.map(c => c.cv + ' ' + c.ck).join(', ') + (out.note ? ' (' + out.note + ')' : ''))}`}>Quote this exact build →<small>Pricing &amp; a BOQ in ~2 hours</small></Link>
               </div>
             </div>
           </div>
