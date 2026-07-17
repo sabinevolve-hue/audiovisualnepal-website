@@ -135,12 +135,12 @@ export default function ProductPageV2({ product, categoryKey }: { product: Produ
         <div className="crumb">Home › Products › <b>{product.name}</b></div>
         <div className="hero" ref={heroRef}>
           <div className="shot">
+            {product.imageUrl
+              ? <img src={product.imageUrl} alt={product.name} onError={(e) => { const el = e.currentTarget as HTMLImageElement; el.style.display = 'none'; const fb = el.nextElementSibling as HTMLElement | null; if (fb) fb.style.display = ledHero ? 'block' : 'flex' }} />
+              : null}
             {ledHero
-              ? <div className="ledwall"><span className="cap">Fine-pitch LED · seamless</span></div>
-              : product.imageUrl
-                ? <img src={product.imageUrl} alt={product.name} onError={(e) => { const el = e.currentTarget as HTMLImageElement; el.style.display = 'none'; const fb = el.nextElementSibling as HTMLElement | null; if (fb) fb.style.display = 'flex' }} />
-                : null}
-            {!ledHero && <div className="fb" style={{ display: product.imageUrl ? 'none' : 'flex' }}>{product.brand}<br /><b>{product.name}</b></div>}
+              ? <div className="ledwall" style={{ display: product.imageUrl ? 'none' : 'block' }}><span className="cap">Fine-pitch LED · seamless</span></div>
+              : <div className="fb" style={{ display: product.imageUrl ? 'none' : 'flex' }}>{product.brand}<br /><b>{product.name}</b></div>}
           </div>
           <div>
             <div className="chips">{product.badge && <span className="badge">{product.badge}</span>}<span className="chip">{product.brand}</span>{product.subcategory && <span className="chip">{product.subcategory}</span>}</div>
