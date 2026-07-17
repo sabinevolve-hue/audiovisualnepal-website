@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description: 'AudioVisual Nepal has been delivering professional audio visual solutions across Nepal since 2010.',
   openGraph: {
     title: "About AudioVisual Nepal — Nepal's Leading AV Company",
-    description: 'Since 2010, AudioVisual Nepal delivers professional AV and LED display installations across Nepal — 100+ verified projects and counting. Authorised distributor for DSPPA, InfoBit, Tenveo and Focus, and Lampro authorised partner.',
+    description: 'Since 2010, AudioVisual Nepal delivers professional AV and LED display installations across Nepal — 100+ verified projects and counting. Authorised distributor for DSPPA, InfoBit, Tenveo and Evolve Podium, and Lampro authorised partner.',
     url: 'https://www.audiovisualnepal.com/about',
     siteName: 'AudioVisual Nepal',
     images: [{ url: '/og-image.svg', width: 1200, height: 630, alt: 'AudioVisual Nepal' }],
@@ -16,15 +16,6 @@ export const metadata: Metadata = {
   },
   alternates: { canonical: 'https://www.audiovisualnepal.com/about' },
 }
-
-const MILESTONES = [
-  { year: '2010', event: 'Founded in Kathmandu with a focus on professional audio systems.' },
-  { year: '2013', event: "Became authorized distributor for DSPPA — Nepal's first PA specialist." },
-  { year: '2016', event: 'Expanded into video conferencing with Tenveo and Jabra.' },
-  { year: '2019', event: 'Crossed 100 completed projects across 77 districts.' },
-  { year: '2022', event: 'Added IP network audio, control systems, and smart room solutions.' },
-  { year: '2024', event: "Crossed 100+ verified installations across Nepal." },
-]
 
 export default function AboutPage() {
   return (
@@ -91,23 +82,26 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Timeline */}
+      {/* What we do */}
       <section style={{ padding: '96px 24px', background: '#F1F5F9' }}>
-        <div style={{ maxWidth: 800, margin: '0 auto' }}>
-          <div style={{ textAlign: 'center', marginBottom: 64 }}>
-            <p style={{ fontSize: 12, fontWeight: 700, color: '#3B82F6', letterSpacing: '0.15em', textTransform: 'uppercase', marginBottom: 16 }}>Since 2010</p>
-            <h2 style={{ fontFamily: 'Manrope, sans-serif', fontSize: 'clamp(28px,4vw,44px)', fontWeight: 800, color: '#0B1E3D', letterSpacing: '-0.03em' }}>Our Journey</h2>
+        <div style={{ maxWidth: 1100, margin: '0 auto' }}>
+          <div style={{ textAlign: 'center', marginBottom: 56 }}>
+            <p style={{ fontSize: 12, fontWeight: 700, color: '#3B82F6', letterSpacing: '0.15em', textTransform: 'uppercase', marginBottom: 16 }}>End to End</p>
+            <h2 style={{ fontFamily: 'Manrope, sans-serif', fontSize: 'clamp(28px,4vw,44px)', fontWeight: 800, color: '#0B1E3D', letterSpacing: '-0.03em' }}>What We Do</h2>
+            <p style={{ fontSize: 17, color: '#64748B', maxWidth: 640, margin: '18px auto 0', lineHeight: 1.75 }}>
+              From the first site survey to long-term maintenance, we handle the entire audio-visual project in-house — so you get one accountable partner instead of just a box on a pallet.
+            </p>
           </div>
-          <div style={{ display: 'flex', flexDirection: 'column', gap: 0 }}>
-            {MILESTONES.map((m, i) => (
-              <div key={m.year} style={{ display: 'flex', gap: 28, alignItems: 'flex-start', paddingBottom: i < MILESTONES.length - 1 ? 36 : 0 }}>
-                <div style={{ flexShrink: 0, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                  <div style={{ fontFamily: 'Manrope, sans-serif', fontSize: 13, fontWeight: 800, color: '#3B82F6', width: 56, textAlign: 'center', background: 'rgba(37,99,235,0.1)', border: '1px solid rgba(59,130,246,0.3)', borderRadius: 8, padding: '4px 0' }}>{m.year}</div>
-                  {i < MILESTONES.length - 1 && <div style={{ width: 1, flex: 1, minHeight: 36, background: 'rgba(59,130,246,0.2)', marginTop: 8 }} />}
-                </div>
-                <div style={{ background: '#FFFFFF', border: '1px solid rgba(11,30,61,0.1)', borderRadius: 14, padding: '16px 22px', flex: 1 }}>
-                  <p style={{ fontSize: 15, color: '#475569', lineHeight: 1.65, margin: 0 }}>{m.event}</p>
-                </div>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: 20 }}>
+            {[
+              { t: 'Design & Consultation', d: 'Free site survey and system design sized to your space, sector and budget — delivered as a clear BOQ.' },
+              { t: 'Genuine Supply', d: 'Authorised distribution of premium AV brands, with full manufacturer warranty on every product.' },
+              { t: 'Installation & Commissioning', d: 'Licensed installation, wiring and commissioning — tested and handed over ready to use.' },
+              { t: 'Service & Support', d: 'AMC contracts, spare parts and a dedicated service team across all 77 districts.' },
+            ].map(item => (
+              <div key={item.t} style={{ background: '#FFFFFF', border: '1px solid rgba(11,30,61,0.1)', borderRadius: 16, padding: '28px 24px' }}>
+                <div style={{ fontFamily: 'Manrope, sans-serif', fontSize: 17, fontWeight: 700, color: '#0B1E3D', marginBottom: 10 }}>{item.t}</div>
+                <div style={{ fontSize: 14, color: '#64748B', lineHeight: 1.7 }}>{item.d}</div>
               </div>
             ))}
           </div>
