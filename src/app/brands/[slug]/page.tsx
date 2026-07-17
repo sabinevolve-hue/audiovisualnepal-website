@@ -127,7 +127,7 @@ export default async function BrandPage({ params }: Props) {
               </div>
               <p className="text-[18px] mb-2" style={{ color: brand.color, fontWeight: 600 }}>{brand.tagline}</p>
               <p className="text-[14px]" style={{ color: '#64748B' }}>
-                Founded {brand.founded} · {brand.country} · {slug === 'lampro' ? 'Authorised partner in Nepal' : 'Authorised dealer in Nepal'}
+                {brand.founded ? `Founded ${brand.founded} · ` : ''}{brand.country ? `${brand.country} · ` : ''}{slug === 'lampro' ? 'Authorised partner in Nepal' : 'Authorised dealer in Nepal'}
               </p>
               {(slug === 'infobit' || slug === 'dsppa' || slug === 'tenveo' || slug === 'lampro') && (
                 <Link href={`/brands/${slug}/catalog`}

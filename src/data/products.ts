@@ -1466,7 +1466,7 @@ const FOCUS: Product[] = [
       { label: "Material", value: "Sapele Wood + Aluminum + Steel" },
       { label: "Color", value: "Chinese Red & Black" },
       { label: "Size (Folded)", value: "750×620×1110mm" },
-      { label: "Power", value: "110–240V 50–60Hz", group: "Output" },
+      { label: "Power", value: "110–240V 50–60Hz" },
 
     ],
     applications: ["Government", "Education", "Religious", "Corporate"],
@@ -1522,7 +1522,7 @@ const FOCUS: Product[] = [
       { label: "Height Adjustment", value: "Electric, 200mm" },
       { label: "Microphones", value: "2× Professional Gooseneck" },
       { label: "Material", value: "Premium Sapele Wood" },
-      { label: "Power", value: "110–240V 50–60Hz", group: "Output" },
+      { label: "Power", value: "110–240V 50–60Hz" },
 
     ],
     applications: ["Government", "Education", "Religious"],
@@ -1550,7 +1550,7 @@ const FOCUS: Product[] = [
       { label: "Microphone", value: "Gooseneck Professional", group: "Audio" },
 
       { label: "Material", value: "Aluminum + Wood" },
-      { label: "Power", value: "110–240V", group: "Output" },
+      { label: "Power", value: "110–240V" },
 
     ],
     applications: ["Education", "Religious", "Corporate"],
