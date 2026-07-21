@@ -72,15 +72,15 @@ export default function SolutionPageTemplate({ data }: { data: SolutionPageData 
           preload="metadata"
             poster={data.heroImage}
             aria-hidden="true"
-            className="absolute inset-0 h-full w-full object-cover opacity-90"
+            className="absolute inset-0 h-full w-full object-cover"
           >
             <source src="/videos/solution-${data.heroVideo}.mp4" type="video/mp4" />
             <source src="/videos/solution-${data.heroVideo}.webm" type="video/webm" />
           </video>
         ) : (
-          <Image src={data.heroImage} alt={data.heroAlt} fill priority className="object-cover opacity-90" />
+          <Image src={data.heroImage} alt={data.heroAlt} fill priority className="object-cover" />
         )}
-        <div className="absolute inset-0 bg-gradient-to-t from-slate-950/85 via-slate-950/40 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-slate-950/88 via-slate-950/28 to-slate-950/8" />
         <div className="relative mx-auto w-full max-w-6xl px-6 pb-16">
           <p className="text-sm font-semibold uppercase tracking-widest text-teal-300">
             <Link href="/solutions" className="hover:underline">Solutions</Link> / {data.kicker}

@@ -107,12 +107,12 @@ export default function SmartMeetingRoomsPage() {
           preload="metadata"
           poster="/images/heroes/smart-meeting-rooms-hero.webp"
           aria-hidden="true"
-          className="absolute inset-0 h-full w-full object-cover opacity-90"
+          className="absolute inset-0 h-full w-full object-cover"
         >
           <source src="/videos/solution-smart-meeting-rooms.mp4" type="video/mp4" />
           <source src="/videos/solution-smart-meeting-rooms.webm" type="video/webm" />
         </video>
-        <div className="absolute inset-0 bg-gradient-to-t from-slate-950/85 via-slate-950/40 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-slate-950/88 via-slate-950/28 to-slate-950/8" />
         <div className="relative mx-auto w-full max-w-6xl px-6 pb-16">
           <p className="text-sm font-semibold uppercase tracking-widest text-teal-300">
             <Link href="/solutions" className="hover:underline">Solutions</Link> / Smart meeting rooms
