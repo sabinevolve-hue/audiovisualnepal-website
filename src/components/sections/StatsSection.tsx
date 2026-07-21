@@ -47,7 +47,7 @@ function AnimatedStat({ value, suffix, label, color }: { value: number; suffix: 
 }
 
 const STATS = [
-  { value: 500, suffix: '+', label: 'Projects Delivered',  color: '#60A5FA' },
+  { value: 100, suffix: '+', label: 'Projects Delivered',  color: '#60A5FA' },
   { value: 14,  suffix: '+', label: 'Product Categories', color: '#A78BFA' },
   { value: 77,  suffix: '',  label: 'Districts Covered',  color: '#34D399' },
   { value: 100, suffix: '%', label: 'Genuine Products',   color: '#FBBF24' },
