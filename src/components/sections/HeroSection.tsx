@@ -29,8 +29,8 @@ export default function HeroSection() {
           muted
           loop
           playsInline
-          poster="/images/heroes/smart-meeting-rooms-hero.webp"
-          style={{ width: '100%', height: '100%', objectFit: 'cover', opacity: 0.55 }}
+          poster="/images/heroes/hero-poster.webp"
+          style={{ width: '100%', height: '100%', objectFit: 'cover', opacity: 0.6 }}
         >
           <source src="/videos/hero-loop.webm" type="video/webm" />
           <source src="/videos/hero-loop.mp4" type="video/mp4" />
