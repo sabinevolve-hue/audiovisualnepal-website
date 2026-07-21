@@ -22,15 +22,15 @@ export const metadata: Metadata = {
 }
 
 const fallbackProjects = [
-  { title: 'Siddhartha Bank Head Office', location: 'Naxal, Kathmandu', type: 'Banking', img: '/images/projects-real/siddhartha-bank-head-office.webp' },
-  { title: 'Jeevan Jyoti School', location: 'Kohalpur, Banke', type: 'Education', img: '/images/projects-real/jeevan-jyoti-school.webp' },
-  { title: 'FCube Cinemas', location: 'Boudha, Kathmandu', type: 'Entertainment', img: '/images/projects-real/fcube-cinemas.webp' },
-  { title: 'Dibya Ratna Consultant', location: 'Battisputali, Kathmandu', type: 'Corporate', img: '/images/projects-real/dibya-ratna-consultant.webp' },
-  { title: 'Awarded International Education', location: 'Putalisadak, Kathmandu', type: 'Education', img: '/images/projects-real/awarded-international-education.webp' },
-  { title: 'Auranex Restaurant', location: 'Townplanning, Kathmandu', type: 'Hospitality', img: '/images/projects-real/auranex-restaurant.webp' },
-  { title: 'Inland Multi Cuisine & Stay', location: 'Budhanilkantha, Kathmandu', type: 'Hospitality', img: '/images/projects-real/inland-multi-cuisine-stay.webp' },
-  { title: 'Anong Store', location: 'Jawalakhel, Lalitpur', type: 'Retail', img: '/images/projects-real/anong-store.webp' },
-  { title: 'Shree Shiva Enterprises', location: 'Siddhipur, Lalitpur', type: 'Commercial', img: '/images/projects-real/shree-shiva-enterprises.webp' },
+  { slug: 'siddhartha-bank-head-office', title: 'Siddhartha Bank Head Office', location: 'Naxal, Kathmandu', type: 'Banking', img: '/images/projects-real/siddhartha-bank-head-office.webp' },
+  { slug: 'jeevan-jyoti-school', title: 'Jeevan Jyoti School', location: 'Kohalpur, Banke', type: 'Education', img: '/images/projects-real/jeevan-jyoti-school.webp' },
+  { slug: 'fcube-cinemas', title: 'FCube Cinemas', location: 'Boudha, Kathmandu', type: 'Entertainment', img: '/images/projects-real/fcube-cinemas.webp' },
+  { slug: '', title: 'Dibya Ratna Consultant', location: 'Battisputali, Kathmandu', type: 'Corporate', img: '/images/projects-real/dibya-ratna-consultant.webp' },
+  { slug: '', title: 'Awarded International Education', location: 'Putalisadak, Kathmandu', type: 'Education', img: '/images/projects-real/awarded-international-education.webp' },
+  { slug: '', title: 'Auranex Restaurant', location: 'Townplanning, Kathmandu', type: 'Hospitality', img: '/images/projects-real/auranex-restaurant.webp' },
+  { slug: '', title: 'Inland Multi Cuisine & Stay', location: 'Budhanilkantha, Kathmandu', type: 'Hospitality', img: '/images/projects-real/inland-multi-cuisine-stay.webp' },
+  { slug: '', title: 'Anong Store', location: 'Jawalakhel, Lalitpur', type: 'Retail', img: '/images/projects-real/anong-store.webp' },
+  { slug: '', title: 'Shree Shiva Enterprises', location: 'Siddhipur, Lalitpur', type: 'Commercial', img: '/images/projects-real/shree-shiva-enterprises.webp' },
 ]
 
 
@@ -39,10 +39,17 @@ export default async function ProjectsPage({ searchParams }: { searchParams: Pro
   const industry = sp.industry
   const page     = Number(sp.page ?? 1)
 
-  const [industries, projects] = await Promise.all([
+  const [industries, wpProjects] = await Promise.all([
     getIndustries(),
     getProjects({ industrySlug: industry, page, perPage: 12 }),
   ])
+
+  // Sector hero renders were uploaded into the CMS as project images; those are
+  // illustrations, not installations. Only surface CMS projects with their own photos.
+  const HERO_RENDER = /(corporate|government|education|hotels|hospitals|religious|transportation|smart-meeting-rooms)-hero/i
+  const projects = wpProjects.filter(
+    (p: { featured_image_url?: string }) => p.featured_image_url && !HERO_RENDER.test(p.featured_image_url)
+  )
 
   return (
     <main style={{ paddingTop: 80, background: '#FFFFFF' }}>
@@ -113,7 +120,7 @@ export default async function ProjectsPage({ searchParams }: { searchParams: Pro
           ) : (
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(340px, 1fr))', gap: 20 }}>
               {fallbackProjects.map(p => (
-                <div key={p.title} style={{ background: '#FFFFFF', border: '1px solid rgba(11,30,61,0.1)', borderRadius: 20, overflow: 'hidden' }}>
+                <Link key={p.title} href={p.slug ? `/projects/${p.slug}` : '/projects'} style={{ textDecoration: 'none' }} style={{ background: '#FFFFFF', border: '1px solid rgba(11,30,61,0.1)', borderRadius: 20, overflow: 'hidden' }}>
                   <div style={{ position: 'relative', height: 220 }}>
                     <Image src={p.img} alt={p.title} fill style={{ objectFit: 'cover' }} />
                     <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(6,13,26,0.8) 0%, transparent 50%)' }} />
@@ -123,7 +130,7 @@ export default async function ProjectsPage({ searchParams }: { searchParams: Pro
                     <h2 style={{ fontFamily: 'Manrope, sans-serif', fontSize: 16, fontWeight: 700, color: '#0B1E3D', marginBottom: 8 }}>{p.title}</h2>
                     <p style={{ fontSize: 13, color: '#64748B', display: 'flex', alignItems: 'center', gap: 4 }}><MapPin size={11} />{p.location}</p>
                   </div>
-                </div>
+                </Link>
               ))}
             </div>
           )}
