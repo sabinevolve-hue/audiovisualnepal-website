@@ -1,0 +1,40 @@
+name: Localize Nepal Media
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'scripts/download-nepal-media.mjs'
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install sharp
+        run: npm install sharp --no-save
+
+      - name: Download Nepal media
+        run: node scripts/download-nepal-media.mjs
+
+      - name: Commit & push media
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add public/images/heroes public/images/nepal
+          git diff --staged --quiet && echo "Nothing to commit" && exit 0
+          git commit -m "chore: auto-localize Nepal media"
+          for i in 1 2 3 4 5; do
+            git pull --rebase origin main && git push origin main && exit 0
+            echo "push retry $i"; sleep 10
+          done
+          exit 1

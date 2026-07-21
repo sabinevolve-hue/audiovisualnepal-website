@@ -1,5 +1,6 @@
 'use client'
 
+import Image from 'next/image'
 import Link from 'next/link'
 import { ArrowRight } from 'lucide-react'
 
@@ -8,6 +9,7 @@ const featured = [
     name: 'Voice Evacuation Systems',
     desc: 'EN54-certified emergency PA — PAVA9500, PAVA8500, PAVA4600 for any building size.',
     href: '/products/voice-evacuation',
+    img: '/images/products/dsppa/dsppa-pava9500/main.jpg',
     color: '#DC2626',
     icon: (<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>),
   },
@@ -15,6 +17,7 @@ const featured = [
     name: 'IP Network Audio',
     desc: 'Dante-networked PA servers, PoE amplifiers and remote paging stations.',
     href: '/products/ip-network-audio',
+    img: '/images/products/dsppa/dsppa-mag6182ii/main.jpg',
     color: '#2563EB',
     icon: (<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>),
   },
@@ -22,6 +25,7 @@ const featured = [
     name: 'Conference Cameras (PTZ)',
     desc: 'AI tracking PTZ cameras from Tenveo — 4K@60fps, NDI, 20× optical zoom.',
     href: '/products/conference-cameras',
+    img: '/images/products/tenveo/tenveo-nv20a-ai/main.webp',
     color: '#0891B2',
     icon: (<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8"><path d="M15 10l4.553-2.069A1 1 0 0 1 21 8.845v6.31a1 1 0 0 1-1.447.894L15 14M3 8a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>),
   },
@@ -29,6 +33,7 @@ const featured = [
     name: 'Wireless Presentation',
     desc: 'InfoBit iShare X200 — 4K60Hz, 0.1s latency, 16 users, dongle-free.',
     href: '/products/wireless-presentation',
+    img: '/images/products/infobit/infobit-ishare-x200/main.webp',
     color: '#6366F1',
     icon: (<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><line x1="12" y1="20" x2="12.01" y2="20"/></svg>),
   },
@@ -36,6 +41,7 @@ const featured = [
     name: 'Smart Podiums',
     desc: 'Evolve Podium electric height-adjustable podiums with touch screen and built-in PC.',
     href: '/products/smart-podiums',
+    img: '/images/products/focus/focus-st100/main.jpg',
     color: '#1E40AF',
     icon: (<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8"><rect x="3" y="3" width="18" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg>),
   },
@@ -43,6 +49,7 @@ const featured = [
     name: 'Mixer Amplifiers',
     desc: 'DSPPA DMA series — 60W to 650W with USB, FM, Bluetooth and multi-zone.',
     href: '/products/amplifiers',
+    img: '/images/products/dsppa/dsppa-dma250u/main.jpg',
     color: '#D97706',
     icon: (<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>),
   },
@@ -92,11 +99,11 @@ export default function ProductEcosystem() {
                 el.style.boxShadow = '0 1px 6px rgba(11,30,61,0.04)'
               }}
             >
-              <div style={{ width: 42, height: 42, borderRadius: 11, display: 'flex', alignItems: 'center', justifyContent: 'center', background: `${item.color}0D`, color: item.color, border: `1.5px solid ${item.color}20`, flexShrink: 0 }}>
-                {item.icon}
+              <div style={{ position: 'relative', width: 76, height: 76, borderRadius: 14, background: `${item.color}08`, border: `1.5px solid ${item.color}18`, flexShrink: 0, overflow: 'hidden' }}>
+                <Image src={item.img} alt={item.name} fill sizes="76px" style={{ objectFit: 'contain', padding: 8 }} />
               </div>
               <div>
-                <h3 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 14, color: '#0B1E3D', marginBottom: 6, lineHeight: 1.3 }}>{item.name}</h3>
+                <h3 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 15, color: '#0B1E3D', marginBottom: 6, lineHeight: 1.3 }}>{item.name}</h3>
                 <p style={{ fontSize: 13, lineHeight: 1.6, color: '#64748B', marginBottom: 10 }}>{item.desc}</p>
                 <span style={{ display: 'inline-flex', alignItems: 'center', gap: 4, fontSize: 13, fontWeight: 600, color: item.color }}>
                   View Products <ArrowRight size={11} />

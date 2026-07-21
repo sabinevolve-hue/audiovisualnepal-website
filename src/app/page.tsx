@@ -4,9 +4,9 @@ import StatsSection from '@/components/sections/StatsSection'
 import SolutionsSection from '@/components/sections/SolutionsSection'
 import ExploreScene from '@/components/sections/ExploreScene'
 import SectionConnector from '@/components/ui/SectionConnector'
+import NepalBand from '@/components/sections/NepalBand'
 import ProductEcosystem from '@/components/sections/ProductEcosystem'
 import BrandsSection from '@/components/sections/BrandsSection'
-import WhySection from '@/components/sections/WhySection'
 import FeaturedProjects from '@/components/sections/FeaturedProjects'
 import CTASection from '@/components/sections/CTASection'
 import BlogSection from '@/components/sections/BlogSection'
@@ -74,7 +74,7 @@ export default async function HomePage() {
       <SectionConnector />
       <BrandsSection />
       <FeaturedProjects />
-      <WhySection />
+      <NepalBand />
       <BlogSection posts={posts} />
       <CTASection />
     </>
