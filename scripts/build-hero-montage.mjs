@@ -71,4 +71,14 @@ execSync(`ffmpeg -y -i ${merged} -an -c:v libx264 -crf 28 -preset slow -movflags
 execSync(`ffmpeg -y -i ${merged} -vframes 1 -q:v 3 ${TMP}/poster.jpg`, { stdio: 'inherit' })
 execSync(`ffmpeg -y -i ${TMP}/poster.jpg -vf scale=1600:-2 ${resolve(ROOT, 'public/images/heroes/hero-poster.webp')}`, { stdio: 'inherit' })
 
-console.log('montage built: hero-loop.webm + hero-loop.mp4 + poster')
+// SOLUTION_CLIPS — also publish each clip individually for its matching solution page
+const SOLUTION_MAP = ['religious', 'hotels', 'government', 'smart-meeting-rooms']
+norm.forEach((f, i) => {
+  const slug = SOLUTION_MAP[i]
+  if (!slug) return
+  execSync(`ffmpeg -y -i ${f} -an -c:v libvpx-vp9 -crf 42 -b:v 0 -row-mt 1 ${resolve(OUT, `solution-${slug}.webm`)}`, { stdio: 'inherit' })
+  execSync(`ffmpeg -y -i ${f} -an -c:v libx264 -crf 29 -preset slow -movflags +faststart ${resolve(OUT, `solution-${slug}.mp4`)}`, { stdio: 'inherit' })
+  console.log('solution clip:', slug)
+})
+
+console.log('montage built: hero-loop.webm + hero-loop.mp4 + poster + 4 solution clips')

@@ -99,13 +99,18 @@ export default function SmartMeetingRoomsPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
       <section className="relative flex min-h-[70vh] items-end overflow-hidden bg-slate-900">
-        <Image
-          src="/images/heroes/smart-meeting-rooms-hero.webp"
-          alt="Smart meeting room with video conferencing bar and wireless presentation in Kathmandu"
-          fill
-          priority
-          className="object-cover opacity-90"
-        />
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          poster="/images/heroes/smart-meeting-rooms-hero.webp"
+          aria-hidden="true"
+          className="absolute inset-0 h-full w-full object-cover opacity-90"
+        >
+          <source src="/videos/solution-smart-meeting-rooms.webm" type="video/webm" />
+          <source src="/videos/solution-smart-meeting-rooms.mp4" type="video/mp4" />
+        </video>
         <div className="absolute inset-0 bg-gradient-to-t from-slate-950/85 via-slate-950/40 to-transparent" />
         <div className="relative mx-auto w-full max-w-6xl px-6 pb-16">
           <p className="text-sm font-semibold uppercase tracking-widest text-teal-300">

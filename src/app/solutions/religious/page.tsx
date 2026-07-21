@@ -21,6 +21,7 @@ export const metadata: Metadata = {
 const data: SolutionPageData = {
   pageUrl: PAGE_URL,
   serviceName: "House of Worship Sound System Integration",
+  heroVideo: "religious",
   heroImage: "/images/heroes/religious-hero.webp",
   heroAlt: "Nepali temple courtyard at dusk with discreet sound system",
   kicker: "Religious places",

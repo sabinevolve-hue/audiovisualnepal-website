@@ -12,6 +12,7 @@ export type SolutionPageData = {
   pageUrl: string;
   serviceName: string;
   heroImage: string;
+  heroVideo?: string;
   heroAlt: string;
   kicker: string;
   h1: string;
@@ -61,7 +62,22 @@ export default function SolutionPageTemplate({ data }: { data: SolutionPageData 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
       <section className="relative flex min-h-[70vh] items-end overflow-hidden bg-slate-900">
-        <Image src={data.heroImage} alt={data.heroAlt} fill priority className="object-cover opacity-90" />
+        {data.heroVideo ? (
+          <video
+            autoPlay
+            muted
+            loop
+            playsInline
+            poster={data.heroImage}
+            aria-hidden="true"
+            className="absolute inset-0 h-full w-full object-cover opacity-90"
+          >
+            <source src={`/videos/solution-${data.heroVideo}.webm`} type="video/webm" />
+            <source src={`/videos/solution-${data.heroVideo}.mp4`} type="video/mp4" />
+          </video>
+        ) : (
+          <Image src={data.heroImage} alt={data.heroAlt} fill priority className="object-cover opacity-90" />
+        )}
         <div className="absolute inset-0 bg-gradient-to-t from-slate-950/85 via-slate-950/40 to-transparent" />
         <div className="relative mx-auto w-full max-w-6xl px-6 pb-16">
           <p className="text-sm font-semibold uppercase tracking-widest text-teal-300">

@@ -21,6 +21,7 @@ export const metadata: Metadata = {
 const data: SolutionPageData = {
   pageUrl: PAGE_URL,
   serviceName: "Hotel & Hospitality AV Integration",
+  heroVideo: "hotels",
   heroImage: "/images/heroes/hotels-hero.webp",
   heroAlt: "Luxury hotel ballroom in Kathmandu with stage sound system and chandeliers",
   kicker: "Hotels & hospitality",

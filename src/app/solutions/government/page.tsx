@@ -21,6 +21,7 @@ export const metadata: Metadata = {
 const data: SolutionPageData = {
   pageUrl: PAGE_URL,
   serviceName: "Government Conference & PA System Integration",
+  heroVideo: "government",
   heroImage: "/images/heroes/government-hero.webp",
   heroAlt: "Government conference hall in Nepal with delegate microphones and presentation screen",
   kicker: "Government projects",
