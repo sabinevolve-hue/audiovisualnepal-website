@@ -29,11 +29,12 @@ export default function HeroSection() {
           muted
           loop
           playsInline
+          preload="metadata"
           poster="/images/heroes/hero-poster.webp"
           style={{ width: '100%', height: '100%', objectFit: 'cover', opacity: 0.6 }}
         >
-          <source src="/videos/hero-loop.webm" type="video/webm" />
           <source src="/videos/hero-loop.mp4" type="video/mp4" />
+          <source src="/videos/hero-loop.webm" type="video/webm" />
         </video>
         <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to bottom, rgba(248,250,252,0.82) 0%, rgba(248,250,252,0.5) 45%, rgba(248,250,252,0.88) 100%)' }} />
       </div>

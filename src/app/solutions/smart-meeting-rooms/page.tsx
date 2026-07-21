@@ -104,12 +104,13 @@ export default function SmartMeetingRoomsPage() {
           muted
           loop
           playsInline
+          preload="metadata"
           poster="/images/heroes/smart-meeting-rooms-hero.webp"
           aria-hidden="true"
           className="absolute inset-0 h-full w-full object-cover opacity-90"
         >
-          <source src="/videos/solution-smart-meeting-rooms.webm" type="video/webm" />
           <source src="/videos/solution-smart-meeting-rooms.mp4" type="video/mp4" />
+          <source src="/videos/solution-smart-meeting-rooms.webm" type="video/webm" />
         </video>
         <div className="absolute inset-0 bg-gradient-to-t from-slate-950/85 via-slate-950/40 to-transparent" />
         <div className="relative mx-auto w-full max-w-6xl px-6 pb-16">

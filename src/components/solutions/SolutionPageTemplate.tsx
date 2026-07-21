@@ -68,12 +68,14 @@ export default function SolutionPageTemplate({ data }: { data: SolutionPageData 
             muted
             loop
             playsInline
+            preload="metadata"
+          preload="metadata"
             poster={data.heroImage}
             aria-hidden="true"
             className="absolute inset-0 h-full w-full object-cover opacity-90"
           >
-            <source src={`/videos/solution-${data.heroVideo}.webm`} type="video/webm" />
-            <source src={`/videos/solution-${data.heroVideo}.mp4`} type="video/mp4" />
+            <source src="/videos/solution-${data.heroVideo}.mp4" type="video/mp4" />
+            <source src="/videos/solution-${data.heroVideo}.webm" type="video/webm" />
           </video>
         ) : (
           <Image src={data.heroImage} alt={data.heroAlt} fill priority className="object-cover opacity-90" />

@@ -41,7 +41,7 @@ if (files.length < 2) { console.error('not enough clips'); process.exit(1) }
 // normalise each clip: 1280x720, 24fps, no audio, slight slow-motion for calm
 const norm = files.map((f, i) => {
   const o = `${TMP}/n${i}.mp4`
-  execSync(`ffmpeg -y -i ${f} -an -vf "scale=1280:720:force_original_aspect_ratio=increase,crop=1280:720,setpts=1.15*PTS,fps=24" -c:v libx264 -crf 20 -preset medium ${o}`, { stdio: 'inherit' })
+  execSync(`ffmpeg -y -i ${f} -an -vf "scale=1280:720:force_original_aspect_ratio=increase,crop=1280:720,setpts=1.15*PTS,fps=24" -c:v libx264 -pix_fmt yuv420p -crf 20 -preset medium ${o}`, { stdio: 'inherit' })
   return o
 })
 
@@ -63,11 +63,11 @@ filter = filter.replace(/;$/, '')
 
 const inputs = norm.map((f) => `-i ${f}`).join(' ')
 const merged = `${TMP}/merged.mp4`
-execSync(`ffmpeg -y ${inputs} -filter_complex "${filter}" -map "[vout]" -c:v libx264 -crf 20 -preset medium ${merged}`, { stdio: 'inherit' })
+execSync(`ffmpeg -y ${inputs} -filter_complex "${filter}" -map "[vout]" -c:v libx264 -pix_fmt yuv420p -crf 20 -preset medium ${merged}`, { stdio: 'inherit' })
 
 // encode web deliverables
-execSync(`ffmpeg -y -i ${merged} -an -c:v libvpx-vp9 -crf 40 -b:v 0 -row-mt 1 ${resolve(OUT, 'hero-loop.webm')}`, { stdio: 'inherit' })
-execSync(`ffmpeg -y -i ${merged} -an -c:v libx264 -crf 28 -preset slow -movflags +faststart ${resolve(OUT, 'hero-loop.mp4')}`, { stdio: 'inherit' })
+execSync(`ffmpeg -y -i ${merged} -an -c:v libvpx-vp9 -crf 44 -b:v 0 -row-mt 1 -pix_fmt yuv420p ${resolve(OUT, 'hero-loop.webm')}`, { stdio: 'inherit' })
+execSync(`ffmpeg -y -i ${merged} -an -c:v libx264 -profile:v main -level 4.0 -pix_fmt yuv420p -crf 31 -preset slow -movflags +faststart ${resolve(OUT, 'hero-loop.mp4')}`, { stdio: 'inherit' })
 execSync(`ffmpeg -y -i ${merged} -vframes 1 -q:v 3 ${TMP}/poster.jpg`, { stdio: 'inherit' })
 execSync(`ffmpeg -y -i ${TMP}/poster.jpg -vf scale=1600:-2 ${resolve(ROOT, 'public/images/heroes/hero-poster.webp')}`, { stdio: 'inherit' })
 
@@ -76,8 +76,8 @@ const SOLUTION_MAP = ['religious', 'hotels', 'government', 'smart-meeting-rooms'
 norm.forEach((f, i) => {
   const slug = SOLUTION_MAP[i]
   if (!slug) return
-  execSync(`ffmpeg -y -i ${f} -an -c:v libvpx-vp9 -crf 42 -b:v 0 -row-mt 1 ${resolve(OUT, `solution-${slug}.webm`)}`, { stdio: 'inherit' })
-  execSync(`ffmpeg -y -i ${f} -an -c:v libx264 -crf 29 -preset slow -movflags +faststart ${resolve(OUT, `solution-${slug}.mp4`)}`, { stdio: 'inherit' })
+  execSync(`ffmpeg -y -i ${f} -an -c:v libvpx-vp9 -crf 46 -b:v 0 -row-mt 1 -pix_fmt yuv420p ${resolve(OUT, `solution-${slug}.webm`)}`, { stdio: 'inherit' })
+  execSync(`ffmpeg -y -i ${f} -an -c:v libx264 -profile:v main -level 4.0 -pix_fmt yuv420p -crf 32 -preset slow -movflags +faststart ${resolve(OUT, `solution-${slug}.mp4`)}`, { stdio: 'inherit' })
   console.log('solution clip:', slug)
 })
 
