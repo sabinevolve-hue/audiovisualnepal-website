@@ -5,6 +5,7 @@ import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
 import WhatsAppFloat from '@/components/ui/WhatsAppFloat'
 import { PageTransition } from '@/components/ui/PageTransition'
+import Script from 'next/script'
 import './globals.css'
 
 const inter = Inter({
@@ -64,6 +65,16 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         className="font-body antialiased"
         style={{ background: 'var(--bg-base)', color: 'var(--text-primary)' }}
       >
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-C4DN5S74PT"
+          strategy="afterInteractive"
+        />
+        <Script id="ga-gtag" strategy="afterInteractive">
+          {`window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-C4DN5S74PT');`}
+        </Script>
         <a href="#avn-main" className="skip-link">Skip to content</a>
         <Header />
         <PageTransition>
