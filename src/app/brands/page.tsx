@@ -8,7 +8,7 @@ const catSlug = (x: string) => x.toLowerCase().replace(/[^a-z0-9]+/g, '-').repla
 
 export const metadata: Metadata = {
   title: 'Our Brands | Authorized AV Distributor Nepal',
-  description: 'AudioVisual Nepal is the authorized distributor and partner for DSPPA, InfoBit, Tenveo, Evolve Podium and Lampro in Nepal. Genuine products, full manufacturer warranty.',
+  description: 'AudioVisual Nepal is the authorized distributor and partner for DSPPA, InfoBit, Tenveo, Evolve Podium, Lampro, Wincomn and Triolion in Nepal. Genuine products, full manufacturer warranty.',
   openGraph: {
     title: 'Authorised AV Brands in Nepal — DSPPA, InfoBit, Tenveo, Evolve Podium',
     description: 'Official authorised distributor and partner for DSPPA, InfoBit, Tenveo, Evolve Podium and Lampro in Nepal. Genuine products, full manufacturer warranty.',
@@ -71,6 +71,26 @@ const brands = [
     country: 'China', founded: '2004',
     color: '#0F58FB', products: 6, range: '20 series in full catalog',
   },
+  {
+    name: 'Wincomn',
+    slug: 'wincomn',
+    tagline: 'Krinda & Wincomn Laser Projectors',
+    description: 'Laser projectors from 6,500 to 25,000 lumens — true 4K UHD with HDR, WUXGA installation models, large-venue projection mapping units and infrared simulation projectors. 20,000–30,000-hour laser light, 720° installation, 3-year warranty.',
+    categories: ['4K UHD Laser', 'Installation Laser (WUXGA)', 'High-Brightness Large Venue', 'Simulation & Training'],
+    hasCatalog: false,
+    country: 'China', founded: '',
+    color: '#E11D48', products: 11, range: '',
+  },
+  {
+    name: 'Triolion',
+    slug: 'triolion',
+    tagline: 'LCD Video Walls & Video Wall Controllers',
+    description: 'Narrow-bezel 46/49/55" LCD splicing displays and the FPGA-based TMC6000-G2 video wall controller with 8K/4K inputs, IP-camera decoding and LED sending cards — for control rooms, CCTV and command centres.',
+    categories: ['LCD Video Wall Displays', 'Video Wall Controllers'],
+    hasCatalog: false,
+    country: 'China', founded: '2000',
+    color: '#0E7490', products: 4, range: '',
+  },
 ]
 
 export default function BrandsPage() {
@@ -82,10 +102,10 @@ export default function BrandsPage() {
         <div className="container-site text-center" style={{ maxWidth: 680 }}>
           <div style={{ fontSize: 11, fontWeight: 700, letterSpacing: '0.12em', textTransform: 'uppercase', color: '#2563EB', marginBottom: 14 }}>Our Technology Partners</div>
           <h1 style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(32px,5vw,56px)', fontWeight: 900, letterSpacing: '-0.03em', color: '#0B1E3D', marginBottom: 16 }}>
-            5 World-Class Brands
+            7 World-Class Brands
           </h1>
           <p style={{ fontSize: 17, lineHeight: 1.75, color: '#475569' }}>
-            Authorised distributor and partner for five specialised AV manufacturers — every product is genuine with full manufacturer warranty and local after-sales support.
+            Authorised distributor and partner for seven specialised AV manufacturers — every product is genuine with full manufacturer warranty and local after-sales support.
           </p>
         </div>
       </section>

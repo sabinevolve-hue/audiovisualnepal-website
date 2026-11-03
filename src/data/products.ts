@@ -5,6 +5,9 @@
 export type Segment =
   | "Corporate" | "Government" | "Education" | "Hotel"
   | "Hospital" | "Religious" | "Transportation" | "Stadium"
+  | "Retail" | "Broadcast" | "Events" | "Entertainment" | "Simulation"
+
+import { WINCOMN, TRIOLION } from './newBrands'
 
 export interface ProductSpec {
   label: string
@@ -29,7 +32,7 @@ export interface Product {
   category: string
   subcategory: string
   tagline: string
-  badge?: "Best Seller" | "New" | "Featured" | "Popular"
+  badge?: "Best Seller" | "New" | "Featured" | "Popular" | "Flagship"
   imageUrl: string
   imageFallback: string
   description: string
@@ -1767,7 +1770,7 @@ const LAMPRO: Product[] = [
 
 // ─── Exports ─────────────────────────────────────────────────────────────────
 export const ALL_PRODUCTS: Product[] = [
-  ...DSPPA, ...INFOBIT, ...TENVEO, ...FOCUS, ...LAMPRO,
+  ...DSPPA, ...INFOBIT, ...TENVEO, ...FOCUS, ...LAMPRO, ...WINCOMN, ...TRIOLION,
 ]
 
 export const PRODUCTS_BY_BRAND: Record<string, Product[]> = {
@@ -1776,6 +1779,8 @@ export const PRODUCTS_BY_BRAND: Record<string, Product[]> = {
   tenveo: TENVEO,
   focus: FOCUS,
   lampro: LAMPRO,
+  wincomn: WINCOMN,
+  triolion: TRIOLION,
 }
 
 export const PRODUCTS_BY_CATEGORY: Record<string, Product[]> = ALL_PRODUCTS.reduce(

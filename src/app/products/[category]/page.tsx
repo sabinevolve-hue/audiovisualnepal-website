@@ -8,8 +8,10 @@ import { PRODUCTS_BY_CATEGORY, ALL_PRODUCTS } from '@/data/products'
 export const revalidate = 3600
 
 const BRAND_COLORS: Record<string, string> = {
-  dsppa: '#DC2626', infobit: '#6366F1', tenveo: '#0891B2', focus: '#1E40AF',
+  dsppa: '#DC2626', infobit: '#6366F1', tenveo: '#0891B2', focus: '#1E40AF', lampro: '#0F58FB', wincomn: '#E11D48', triolion: '#0E7490',
 }
+const BRAND_NAMES: Record<string, string> = { focus: 'Evolve Podium', infobit: 'InfoBit', dsppa: 'DSPPA' }
+const brandName = (b: string) => BRAND_NAMES[b] || b.charAt(0).toUpperCase() + b.slice(1)
 
 const STATIC_CATS = PRODUCT_CATEGORIES.map((c, i) => ({
   id: i + 1,
@@ -19,7 +21,7 @@ const STATIC_CATS = PRODUCT_CATEGORIES.map((c, i) => ({
   count: c.count,
 }))
 
-type Props = { params: Promise<{ category: string }>; searchParams: Promise<{ brand?: string; application?: string }> }
+type Props = { params: Promise<{ category: string }>; searchParams: Promise<{ brand?: string; application?: string; segment?: string }> }
 
 export async function generateStaticParams() {
   return STATIC_CATS.map(c => ({ category: c.slug }))
@@ -39,7 +41,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 const APP_COLORS: Record<string, string> = {
   Corporate: '#6366F1', Government: '#0891B2', Education: '#16A34A',
   Hotel: '#D97706', Hospital: '#DC2626', Religious: '#7C3AED',
-  Transportation: '#0B1E3D', Stadium: '#EA580C',
+  Transportation: '#0B1E3D', Stadium: '#EA580C', Events: '#E11D48', Entertainment: '#DB2777', Simulation: '#4F46E5', Retail: '#CA8A04', Broadcast: '#0F766E',
 }
 
 export default async function ProductCategoryPage({ params, searchParams }: Props) {
@@ -47,6 +49,7 @@ export default async function ProductCategoryPage({ params, searchParams }: Prop
   const sp = await searchParams
   const activeBrand = sp.brand?.toLowerCase()
   const activeApp   = sp.application
+  const activeSeg   = sp.segment
 
   const cat = STATIC_CATS.find(c => c.slug === category)
   if (!cat) {
@@ -67,6 +70,8 @@ export default async function ProductCategoryPage({ params, searchParams }: Prop
   let products = allForCat
   if (activeBrand) products = products.filter(p => p.brandSlug === activeBrand)
   if (activeApp)   products = products.filter(p => p.applications.includes(activeApp as never))
+  if (activeSeg)   products = products.filter(p => p.subcategory === activeSeg)
+  const segsInCat = [...new Set(allForCat.map(p => p.subcategory))]
 
   // Sidebar data — brands & applications available in this category
   const brandsInCat    = [...new Set(allForCat.map(p => p.brandSlug))]
@@ -94,6 +99,27 @@ export default async function ProductCategoryPage({ params, searchParams }: Prop
         <div style={{ maxWidth: 1280, margin: '0 auto' }}>
           <h1 style={{ fontFamily: 'Manrope, sans-serif', fontSize: 'clamp(28px,4vw,44px)', fontWeight: 800, color: '#0B1E3D', marginBottom: 10 }}>{cat.name}</h1>
           <p style={{ fontSize: 16, color: '#64748B', maxWidth: 560, lineHeight: 1.65 }}>{cat.description}</p>
+          {category === 'projectors' && (
+            <div style={{ marginTop: 24, display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(200px,1fr))', gap: 12 }}>
+              {[
+                { k: '4K UHD Laser', v: '6,500–11,000 lm', d: 'Boardrooms, lecture theatres, museums & domes' },
+                { k: 'Installation Laser (WUXGA)', v: '7,000–8,000 lm', d: 'Conference halls, classrooms, hotels, worship' },
+                { k: 'High-Brightness Large Venue', v: '12,000–25,000 lm', d: 'Auditoriums, stadiums, façade & heritage mapping' },
+                { k: 'Simulation & Training', v: 'Visible + IR', d: 'Flight, driving & night-vision simulators' },
+              ].map(s => (
+                <Link key={s.k} href={`/products/projectors?segment=${encodeURIComponent(s.k)}`} style={{ display: 'block', padding: '14px 16px', borderRadius: 14, background: activeSeg === s.k ? '#FFF1F2' : '#FFFFFF', border: `1.5px solid ${activeSeg === s.k ? '#E11D48' : 'rgba(11,30,61,0.08)'}`, textDecoration: 'none' }}>
+                  <div style={{ fontSize: 11, fontWeight: 800, color: '#E11D48', letterSpacing: '0.06em', textTransform: 'uppercase' }}>{s.v}</div>
+                  <div style={{ fontSize: 15, fontWeight: 700, color: '#0B1E3D', margin: '4px 0 2px' }}>{s.k}</div>
+                  <div style={{ fontSize: 12.5, color: '#64748B', lineHeight: 1.5 }}>{s.d}</div>
+                </Link>
+              ))}
+            </div>
+          )}
+          {category === 'projectors' && (
+            <p style={{ marginTop: 16, fontSize: 13, color: '#64748B', maxWidth: 760, lineHeight: 1.6 }}>
+              <strong style={{ color: '#0B1E3D' }}>Quick sizing:</strong> throw distance = throw ratio × image width (1.5:1 × 4 m = 6 m). Allow ~7k lumens for a 4 m screen in a normal room, 12–15k for 5–8 m or bright halls, and 20k+ for outdoor mapping. Every projector has a laser light source rated 20,000–30,000 hours — no lamp replacements.
+            </p>
+          )}
         </div>
       </section>
 
@@ -103,6 +129,21 @@ export default async function ProductCategoryPage({ params, searchParams }: Prop
 
           {/* ── Sidebar ─────────────────────────────────────────── */}
           <aside style={{ position: 'sticky', top: 96 }}>
+            {/* Filter by Segment */}
+            {segsInCat.length > 1 && (
+              <div style={{ marginBottom: 28 }}>
+                <p style={{ fontSize: 11, fontWeight: 700, color: '#94A3B8', letterSpacing: '0.1em', textTransform: 'uppercase', marginBottom: 10 }}>Segment</p>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: 4 }}>
+                  <Link href={`/products/${category}`} style={{ padding: '7px 10px', borderRadius: 8, fontSize: 13, fontWeight: !activeSeg ? 700 : 500, color: !activeSeg ? '#0B1E3D' : '#64748B', background: !activeSeg ? '#F1F5F9' : 'transparent', textDecoration: 'none', display: 'block' }}>All Segments</Link>
+                  {segsInCat.map(sg => (
+                    <Link key={sg} href={`/products/${category}?segment=${encodeURIComponent(sg)}`} style={{ display: 'flex', alignItems: 'center', gap: 8, padding: '7px 10px', borderRadius: 8, fontSize: 13, fontWeight: activeSeg === sg ? 700 : 500, color: activeSeg === sg ? '#0B1E3D' : '#64748B', background: activeSeg === sg ? '#F1F5F9' : 'transparent', textDecoration: 'none' }}>
+                      {sg}<span style={{ marginLeft: 'auto', fontSize: 11, color: '#94A3B8' }}>{allForCat.filter(p => p.subcategory === sg).length}</span>
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            )}
+
             {/* Filter by Brand */}
             {brandsInCat.length > 1 && (
               <div style={{ marginBottom: 28 }}>
@@ -117,7 +158,7 @@ export default async function ProductCategoryPage({ params, searchParams }: Prop
                     return (
                       <Link key={b} href={`/products/${category}?brand=${b}`} style={{ display: 'flex', alignItems: 'center', gap: 8, padding: '7px 10px', borderRadius: 8, fontSize: 13, fontWeight: isActive ? 700 : 500, color: isActive ? (BRAND_COLORS[b] || '#0B1E3D') : '#64748B', background: isActive ? (BRAND_COLORS[b] + '12') : 'transparent', textDecoration: 'none' }}>
                         <span style={{ width: 8, height: 8, borderRadius: '50%', background: BRAND_COLORS[b] || '#64748B', flexShrink: 0 }} />
-                        {b.charAt(0).toUpperCase() + b.slice(1)}
+                        {brandName(b)}
                         <span style={{ marginLeft: 'auto', fontSize: 11, color: '#94A3B8' }}>{count}</span>
                       </Link>
                     )
@@ -172,7 +213,7 @@ export default async function ProductCategoryPage({ params, searchParams }: Prop
                 {activeBrand && <> in <strong style={{ color: BRAND_COLORS[activeBrand] || '#0B1E3D' }}>{activeBrand.charAt(0).toUpperCase() + activeBrand.slice(1)}</strong></>}
                 {activeApp && <> for <strong style={{ color: '#0B1E3D' }}>{activeApp}</strong></>}
               </p>
-              {(activeBrand || activeApp) && (
+              {(activeBrand || activeApp || activeSeg) && (
                 <Link href={`/products/${category}`} style={{ fontSize: 13, color: '#64748B', textDecoration: 'underline' }}>Clear filters</Link>
               )}
             </div>

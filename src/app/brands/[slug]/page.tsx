@@ -66,6 +66,28 @@ const BRAND_DATA = {
     highlights: ['21 Years LED Manufacturing', '600,000+ sqm Annual Production', 'COB Fine-Pitch down to P1.2', '3,000+ Global Partners'],
     color: '#0F58FB',
   },
+  wincomn: {
+    name: 'Wincomn',
+    tagline: 'Krinda & Wincomn Laser Projectors — 4K UHD to 25,000 Lumens',
+    country: 'China',
+    website: 'https://www.wincomn.com',
+    founded: '',
+    description: "Beijing Wincomn Technology Co., Ltd designs and manufactures professional DLP laser projectors under the Wincomn and Krinda names. The range runs from 7,000-lumen WUXGA installation models for halls and classrooms, through true 4K UHD engineering projectors with HDR, to 12,000–25,000-lumen large-venue units for auditoriums, projection mapping and water-screen shows — plus dedicated T-series simulation projectors with infrared output for night-vision training. Every model uses a laser light source rated 20,000–30,000 hours, supports 720° installation and runs 24/7.",
+    categories: ['4K UHD Laser Projectors', 'Installation Laser (WUXGA)', 'High-Brightness Large Venue', 'Projection Mapping & Blending', 'Simulation & Training Projectors', 'Interchangeable Lenses'],
+    highlights: ['Laser Light 20,000–30,000 h', 'True 4K UHD with HDR', 'Up to 25,000 Lumens', '3-Year Projector Warranty'],
+    color: '#E11D48',
+  },
+  triolion: {
+    name: 'Triolion',
+    tagline: 'LCD Video Walls & FPGA Video Wall Controllers',
+    country: 'China',
+    website: 'http://en.triolion.com',
+    founded: '2000',
+    description: "Beijing Triolion Science & Technology builds video wall systems for control rooms and command centres — DLP cubes, narrow-bezel LCD splicing displays, LED displays and multi-screen controllers. Its TMC6000-G2 is a pure-hardware FPGA controller with 8K/4K inputs, IP-camera decoding, fibre transmission and LED sending cards, and its B-series 46\", 49\" and 55\" LCD panels offer bezels down to 0.88 mm with 50,000-hour MTBF.",
+    categories: ['LCD Video Wall Displays', 'Video Wall Controllers', 'IP Stream Decoding', 'LED Sending Cards', 'Control Room Solutions'],
+    highlights: ['Pure FPGA Hardware Controller', '8K / 4K Input & Output', 'Bezels down to 0.88 mm', '50,000-Hour MTBF Panels'],
+    color: '#0E7490',
+  },
 }
 
 type BrandSlug = keyof typeof BRAND_DATA

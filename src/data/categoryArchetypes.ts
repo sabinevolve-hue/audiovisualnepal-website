@@ -374,3 +374,62 @@ Object.assign(ARCHETYPES, {
   'smart-podiums': { accent: '#1E40AF', outcome: 'a presenter walks up, plugs in once, and controls the whole room — screen, sound and PC — from the lectern.', builder: podiumBuilder(), diagram: podiumDiagram('#1E40AF'), faq: podiumFaq,
     packs: [{ pt: 'Classroom set', pf: 'Rollout', items: ['Compact touch podiums', 'Doc cam + wireless mic', 'Projector integration'] }, { pt: 'Boardroom', pf: 'Premium', items: ['OPS podium, dual screen', 'Gooseneck mics + PA', 'One-touch control'] }, { pt: 'Auditorium', pf: 'Flagship', items: ['Flagship OPS podium', 'Teleprompter + streaming', 'Full AV integration'] }] },
 })
+
+// ---- Projectors (Wincomn / Krinda) ----
+function projectorBuilder(): Archetype['builder'] {
+  const MODELS: [number, string, string, boolean][] = [
+    [6500, 'Wincomn C-4K650', 'True 4K UHD · 6,500 lm', true], [7000, 'Krinda C-WU700L', 'WUXGA laser · 7,000 lm', false],
+    [8000, 'Krinda C-WU800L', 'WUXGA laser + blending · 8,000 lm', false], [9000, 'Wincomn C-4K900', 'True 4K UHD · 9,000 lm', true],
+    [11000, 'Wincomn C-4K1200', 'True 4K UHD · 11,000 lm', true], [12000, 'Krinda C-WU1200L', 'Large venue · 12,000 lm', false],
+    [15000, 'Krinda C-WU1500L', 'Large venue · 15,000 lm', false], [20600, 'Krinda C-WU2000L', 'Large venue · 20,600 lm', false],
+    [25000, 'Wincomn C-WU2500', 'Dual-laser flagship · 25,000 lm', false],
+  ]
+  const BASE: Record<string, { t: number; n: string; fourK: boolean }> = {
+    boardroom: { t: 500, n: 'boardroom / meeting room', fourK: true }, hall: { t: 550, n: 'classroom / conference hall', fourK: false },
+    auditorium: { t: 320, n: 'auditorium / theatre', fourK: false }, mapping: { t: 380, n: 'outdoor / projection mapping', fourK: false },
+  }
+  return {
+    eyebrow: 'Plan it in 20 seconds', title: 'Size your projector',
+    lead: 'Tell us the room, the screen width and how bright the space is — we estimate the lumens, throw distance and the right model.',
+    segLabel: '1 · Where will it project?',
+    segs: [{ key: 'boardroom', label: 'Boardroom' }, { key: 'hall', label: 'Classroom / hall' }, { key: 'auditorium', label: 'Auditorium' }, { key: 'mapping', label: 'Outdoor / mapping' }],
+    sliders: [
+      { id: 'w', label: 'Image width', min: 15, max: 200, value: 40, fmt: (n) => (n / 10).toFixed(1) + ' m' },
+      { id: 'amb', label: 'Ambient light', min: 1, max: 3, value: 2, fmt: (n) => ['', 'Dark', 'Normal', 'Bright'][n] },
+    ],
+    note: 'Estimate for a 16:10 image on a standard 1.0-gain screen. We confirm with a site survey and the exact lens.',
+    compute: (seg, v) => {
+      const b = BASE[seg] || BASE.hall
+      const W = (v.w || 40) / 10, H = W / 1.6, area = W * H
+      const amb = ({ 1: 0.7, 2: 1, 3: 1.6 } as Record<number, number>)[v.amb || 2] || 1
+      const need = Math.round(area * b.t * amb / 100) * 100
+      const pool = MODELS.filter(m => !b.fourK || m[3] || m[0] > 11000)
+      let pick = pool.find(m => m[0] >= need)
+      let units = 1
+      if (!pick) { pick = MODELS[MODELS.length - 1]; units = Math.ceil(need / (pick[0] * 0.85)) }
+      const diag = Math.round(Math.sqrt(W * W + H * H) / 0.0254)
+      return {
+        host: (units > 1 ? units + '× ' : '') + pick[1], hostSub: units > 1 ? 'Edge-blended for one seamless image' : pick[2],
+        cells: [{ cv: '~' + need.toLocaleString() + ' lm', ck: 'Brightness needed' }, { cv: W.toFixed(1) + ' × ' + H.toFixed(1) + ' m', ck: 'Image (' + diag + '")' },
+          { cv: '~' + (W * 1.5).toFixed(1) + ' m', ck: 'Throw @ 1.5:1' }, { cv: (W * 0.5).toFixed(1) + '–' + (W * 2.5).toFixed(1) + ' m', ck: 'Lens range' }],
+        note: `${b.n}; other throw distances via optional lenses.`,
+      }
+    },
+  }
+}
+const projectorDiagram = (ac: string) => stdDiagram({ title: 'How it connects', lead: 'A projector is one part of the system. Here is what feeds it, what it projects onto and what we supply with it.', play: '▶ Play the signal path', ac, cs: 'Laser projector', cs2: 'HDBaseT / HDMI / SDI in',
+  l: [{ title: 'Presenter / Source', sub: 'Laptop, podium PC, media', shop: true, pair: 'Smart podiums & sources' }, { title: 'Switcher / Extender', sub: 'HDBaseT over Cat6', shop: true, pair: 'Matrix switchers & extenders' }, { title: 'Wireless Share', sub: 'BYOD to the screen', shop: true, pair: 'Wireless presentation' }],
+  r: [{ title: 'Projection Screen', sub: 'Motorised / fixed / ALR' }, { title: 'Sound System', sub: 'Speakers & amplifier', shop: true, pair: 'Ceiling / column speakers' }, { title: 'Blending / Mapping', sub: 'Multi-projector', shop: true, pair: 'Video wall controllers' }],
+  el: ['HDMI', 'HDBaseT', 'Share', 'Image', 'Audio', 'Blend'], f: ['① Source over HDBaseT to the projector', '② Image onto the screen or surface'], note: 'Each grey box links to the matching product — we quote the projector, lens, screen and sound as one system.' })
+const projectorFaq = [
+  { q: 'How many lumens do I need?', a: 'It depends on image size and room light. Roughly 6–7k lumens for a 4 m screen in a normal room, 12–15k for 5–8 m or bright halls, and 20k+ for outdoor mapping. The planner above gives a starting point; we confirm on survey.' },
+  { q: 'Do laser projectors need lamp changes?', a: 'No. Every Wincomn / Krinda model uses a laser light source rated 20,000–30,000 hours — years of normal use with no lamps or filters to buy.' },
+  { q: 'Can the projector sit far from the screen?', a: 'Yes. Most models take interchangeable motorised lenses from ultra-short throw (≈0.3–0.5:1) to long throw (up to 8:1), plus lens shift, so placement is flexible.' },
+  { q: 'Can several projectors make one big image?', a: 'Yes — built-in warping and edge blending join units into one seamless wide, curved or dome image for halls, mapping shows and simulators.' },
+  { q: 'Do you install, align and service them?', a: 'Yes — mounting, lens and geometry alignment, blending, control integration and local after-sales support with the 3-year manufacturer warranty.' },
+]
+Object.assign(ARCHETYPES, {
+  'projectors': { accent: '#E11D48', outcome: 'a bright, sharp image at any size — from a boardroom wall to a building façade — with no lamps to change for years.', builder: projectorBuilder(), diagram: projectorDiagram('#E11D48'), faq: projectorFaq,
+    packs: [{ pt: 'Lecture hall', pf: '4–5 m screen', items: ['Krinda C-WU700L / Wincomn C-4K650', 'Motorised screen + ceiling mount', 'Podium + HDBaseT + PA'] }, { pt: 'Auditorium', pf: '6–10 m screen', items: ['Krinda C-WU1200L / C-WU1500L', 'Long-throw lens + rigging', 'Switcher, sound & stage feeds'] }, { pt: 'Mapping show', pf: 'Façade / heritage', items: ['2–4× C-WU2000L / C-WU2500', 'Warp & blend + media server', 'Weather housing + show control'] }],
+    trust: [{ tt: 'Laser 20–30k h', ts: 'No lamp changes' }, { tt: '3-Year Warranty', ts: 'Manufacturer backed' }, { tt: 'We Align & Blend', ts: 'Local engineers' }, { tt: 'Full System Quote', ts: 'Lens, screen, sound' }] },
+})

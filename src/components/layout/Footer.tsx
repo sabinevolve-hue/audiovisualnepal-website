@@ -22,6 +22,8 @@ const brandsLinks = [
   { label: 'Tenveo', href: '/brands/tenveo', desc: 'PTZ Cameras' },
   { label: 'Evolve Podium', href: '/brands/focus', desc: 'Smart Podiums' },
   { label: 'Lampro', href: '/brands/lampro', desc: 'LED Displays' },
+  { label: 'Wincomn', href: '/brands/wincomn', desc: 'Laser Projectors' },
+  { label: 'Triolion', href: '/brands/triolion', desc: 'LCD Video Walls' },
 ]
 
 export default function Footer() {
