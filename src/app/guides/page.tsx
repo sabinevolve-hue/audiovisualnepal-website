@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { SOUND_GUIDES, PLANNED_GUIDES } from '@/data/soundGuides'
+import { SOUND_GUIDES, VENUE_GUIDES, TOPIC_GUIDES, PLANNED_GUIDES } from '@/data/soundGuides'
 import { STATIC_ARTICLES } from '@/data/staticArticles'
 
 const BASE = 'https://www.audiovisualnepal.com'
@@ -22,27 +22,30 @@ export default function GuidesHub() {
         <h1 className="mx-auto mt-4 max-w-3xl text-4xl font-extrabold text-slate-900 sm:text-5xl" style={{ fontFamily: 'Manrope, sans-serif', letterSpacing: '-0.03em' }}>Sound system design guides</h1>
         <p className="mx-auto mt-4 max-w-2xl text-lg text-slate-500">How we design professional sound for every kind of venue in Nepal — the room first, then the loudspeakers, microphones, mixing and power. Each guide includes a signal-flow drawing, a coverage plan and a recommended equipment list.</p>
       </section>
-      <section className="mx-auto max-w-6xl px-6 pb-8">
+      {[['Venue system designs', VENUE_GUIDES], ['Technology & buying guides', TOPIC_GUIDES]].map(([label, list]) => (
+      <section key={label as string} className="mx-auto max-w-6xl px-6 pb-10">
+        <h2 className="mb-5 text-2xl font-extrabold text-slate-900" style={{ fontFamily: 'Manrope, sans-serif' }}>{label as string}</h2>
         <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-          {SOUND_GUIDES.map(g => (
+          {(list as typeof SOUND_GUIDES).map(g => (
             <Link key={g.slug} href={`/guides/${g.slug}`} className="group block overflow-hidden rounded-2xl border border-slate-200 bg-white transition hover:-translate-y-1 hover:shadow-lg">
-              <div className="aspect-[16/9] overflow-hidden border-b border-slate-100 bg-white p-2">
+              <div className="aspect-[16/9] overflow-hidden border-b border-slate-100 bg-white">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src={`/images/itc-diagrams/itc-${g.diagramKey}-plan.svg`} alt={`${g.venue} sound system plan`} loading="lazy" className="h-full w-full object-contain" />
+                <img src={g.diagramKey ? `/images/itc-diagrams/itc-${g.diagramKey}-plan.svg` : g.hero} alt={g.title} loading="lazy" className={g.diagramKey ? 'h-full w-full object-contain p-2' : 'h-full w-full object-cover'} />
               </div>
               <div className="p-5">
                 <p className="text-xs font-bold uppercase tracking-wider text-orange-600">{g.venue} · {g.readMins} min</p>
-                <h2 className="mt-1 text-lg font-extrabold leading-snug text-slate-900 group-hover:text-blue-600" style={{ fontFamily: 'Manrope, sans-serif' }}>{g.title}</h2>
+                <h3 className="mt-1 text-lg font-extrabold leading-snug text-slate-900 group-hover:text-blue-600" style={{ fontFamily: 'Manrope, sans-serif' }}>{g.title}</h3>
                 <p className="mt-2 text-sm leading-relaxed text-slate-600">{g.description}</p>
               </div>
             </Link>
           ))}
         </div>
       </section>
+      ))}
       <section className="mx-auto max-w-6xl px-6 py-10">
         <h2 className="text-xl font-extrabold text-slate-900">More from the knowledge base</h2>
         <div className="mt-4 grid gap-3 sm:grid-cols-3">
-          {STATIC_ARTICLES.filter(a => !('href' in a)).map(a => (
+          {STATIC_ARTICLES.map(a => (
             <Link key={a.slug} href={`/blog/${a.slug}`} className="rounded-xl border border-slate-200 p-4 text-sm font-semibold text-slate-800 hover:border-blue-400 hover:text-blue-600">{a.title.rendered} →</Link>
           ))}
         </div>

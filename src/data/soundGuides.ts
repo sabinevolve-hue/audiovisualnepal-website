@@ -9,8 +9,10 @@ export type SoundGuide = {
   readMins: number; keywords: string[]; intro: string[]; sections: GuideSection[]; kit: GuideKit[]; faq: { q: string; a: string }[]
 }
 
+import { TOPIC_GUIDES } from './topicGuides'
+
 const P = '/products'
-export const SOUND_GUIDES: SoundGuide[] = [
+export const VENUE_GUIDES: SoundGuide[] = [
   {
     slug: 'banquet-hall-sound-system-design', venue: 'Banquet Hall', diagramKey: 'banquet-hall',
     title: 'Banquet Hall Sound System Design Guide for Nepal',
@@ -252,20 +254,17 @@ export const SOUND_GUIDES: SoundGuide[] = [
   },
 ]
 
+export { TOPIC_GUIDES }
+export const SOUND_GUIDES: SoundGuide[] = [...VENUE_GUIDES, ...TOPIC_GUIDES]
+
 export const GUIDE_BY_SLUG: Record<string, SoundGuide> = Object.fromEntries(SOUND_GUIDES.map(g => [g.slug, g]))
 
 /** Next guides to write (brainstorm) — shown on the hub as "coming next". */
 export const PLANNED_GUIDES = [
-  'Temple, church & gumba sound — speech clarity in reverberant spaces',
-  'School & college auditorium sound on a budget',
-  'Hotel ballroom audio that divides and combines',
-  'Line array vs point-source: which one for my hall?',
-  'How to size a power amplifier — watts, ohms and headroom',
-  'Wireless microphone frequency planning for events',
-  'Feedback: why it happens and how to stop it',
-  'Digital vs analog mixers for venues',
-  'Outdoor speakers for the monsoon: IP ratings explained',
-  'Immersive (spatial) audio for exhibitions and theatres',
-  'Cinema hall sound: screen channels, surrounds and subs',
-  'Parliament & council chamber audio — conference systems explained',
+  'Smart classroom AV: podium, projector, camera and sound together',
+  'IP network PA vs analog PA for campuses',
+  'Voice evacuation (EN54) — what fire inspectors check',
+  'Live-streaming a hall or temple event: audio and camera chain',
+  'LED screen vs projector for wedding venues',
+  'AMC for sound systems — what a maintenance contract should cover',
 ]

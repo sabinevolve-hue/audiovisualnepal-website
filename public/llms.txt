@@ -23,6 +23,21 @@ mixers, microphones).
   - Outdoor concert & festival: /guides/outdoor-concert-festival-sound-system-design
   - KTV / karaoke: /guides/ktv-karaoke-room-sound-system-design
   - Studio room: /guides/studio-room-monitoring-recording-design
+  - Temples, churches & gumbas: /guides/temple-church-gumba-sound-system-design
+  - School & college auditoriums: /guides/school-college-auditorium-sound-on-a-budget
+  - Line array vs point source: /guides/line-array-vs-point-source-speakers
+  - Amplifier sizing: /guides/how-to-size-a-power-amplifier
+  - Wireless mic frequency planning: /guides/wireless-microphone-frequency-planning
+  - Feedback: /guides/microphone-feedback-how-to-stop-it
+  - Laser projector buying guide: /guides/laser-projector-buying-guide-nepal
+  - LCD vs LED video walls: /guides/lcd-vs-led-video-wall-control-room
+  - Parliament & council chamber conference systems: /guides/parliament-council-chamber-conference-system
+  - Hotel ballroom divisible audio: /guides/hotel-ballroom-divisible-room-audio
+  - Digital vs analog mixers: /guides/digital-vs-analog-mixers-for-venues
+  - Outdoor speakers & IP ratings: /guides/outdoor-speakers-monsoon-ip-ratings
+  - Immersive spatial audio: /guides/immersive-spatial-audio-exhibitions-theatres
+  - Cinema hall sound: /guides/cinema-hall-sound-system-design
+- Conference systems (itc: digital, wireless, paperless, interpretation): /products/conference-systems
 - Professional sound (itc, 151 products): /brands/itc · /products/line-array-speakers · /products/pro-loudspeakers · /products/subwoofers · /products/amplifiers · /products/mixing-consoles · /products/microphones
 - Laser projectors (11 models): /products/projectors
 - Video walls (LCD walls, controllers): /products/video-walls

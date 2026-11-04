@@ -93,13 +93,13 @@ const BRAND_DATA = {
   },
   itc: {
     name: 'itc',
-    tagline: 'Professional Sound Systems — Amplifiers, Line Arrays, Mixers & Microphones',
+    tagline: 'Professional Sound & Conference Systems — Line Arrays, Amplifiers, Mixers, Microphones, Delegate & Interpretation Systems',
     country: 'China',
     website: 'https://www.itcprosound.com',
     founded: '',
-    description: "itc (Guangzhou itc) is a professional sound manufacturer with more than 30 years of OEM/ODM experience. Its pro-sound range covers high-efficiency TC, DSP, Dante and KT series digital amplifiers, line array and point-source loudspeakers, subwoofers, stage monitors, cinema and outdoor speakers, digital and analog mixers, wireless and wired microphones, the Ease immersive spatial-audio system and system peripherals. itc loudspeakers are listed in the EASE and EASE Focus libraries, so complete venue designs can be simulated before installation.",
-    categories: ['Line Array Speakers', 'Professional Loudspeakers', 'Subwoofers', 'Amplifiers', 'Mixing Consoles', 'Microphones', 'Immersive Sound', 'Audio Peripherals'],
-    highlights: ['151 Products Across 8 Segments', '>95% Efficient Digital Amplifiers', 'EASE / EASE Focus Library Listed', '30+ Years OEM/ODM Manufacturing'],
+    description: "itc (Guangzhou itc) is a professional sound manufacturer with more than 30 years of OEM/ODM experience. Its pro-sound range covers high-efficiency TC, DSP, Dante and KT series digital amplifiers, line array and point-source loudspeakers, subwoofers, stage monitors, cinema and outdoor speakers, digital and analog mixers, wireless and wired microphones, the Ease immersive spatial-audio system and system peripherals — plus a complete conference range: digital and wireless delegate systems, paperless conference terminals, simultaneous interpretation and HD video-conference cameras. itc loudspeakers are listed in the EASE and EASE Focus libraries, so complete venue designs can be simulated before installation.",
+    categories: ['Line Array Speakers', 'Professional Loudspeakers', 'Subwoofers', 'Amplifiers', 'Mixing Consoles', 'Microphones', 'Immersive Sound', 'Audio Peripherals', 'Conference Systems', 'Simultaneous Interpretation', 'Video Conferencing'],
+    highlights: ['288 Products: Pro Sound + Conference', '>95% Efficient Digital Amplifiers', 'EASE / EASE Focus Library Listed', '30+ Years OEM/ODM Manufacturing'],
     color: '#EA580C',
   },
 }

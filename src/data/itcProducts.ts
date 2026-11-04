@@ -260,7 +260,7 @@ export const ITC: Product[] = [
    "/images/itc-catalog/itc-ts-108ht.webp"
   ],
   "imageFallback": "#0B1E3D",
-  "description": "The itc TS-108HT family is a outdoor Waterproof Speaker from itc's Outdoor Loudspeakers range, built for speech and music reinforcement in conference rooms, banquet halls, theatres, KTV and multipurpose venues. It is offered in 2 versions — TS-108HT, TS-115HT — so one design language covers rooms of different sizes.\n\nKey figures: rated power 37.5W/75W/150W @100V, 150W @8Ω optional / 75W/150W/300W @100V, 400W @8Ω optional; peak power 600W / 1200W; frequency response 75Hz-18kHz / 50Hz-18kHz. Highlights include all-weather engineering plastic cabinet, coaxial driver design, high sensitivity, long transmission distance and IP56 waterproof protection.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
+  "description": "The itc TS-108HT family is an outdoor Waterproof Speaker from itc's Outdoor Loudspeakers range, built for speech and music reinforcement in conference rooms, banquet halls, theatres, KTV and multipurpose venues. It is offered in 2 versions — TS-108HT, TS-115HT — so one design language covers rooms of different sizes.\n\nKey figures: rated power 37.5W/75W/150W @100V, 150W @8Ω optional / 75W/150W/300W @100V, 400W @8Ω optional; peak power 600W / 1200W; frequency response 75Hz-18kHz / 50Hz-18kHz. Highlights include all-weather engineering plastic cabinet, coaxial driver design, high sensitivity, long transmission distance and IP56 waterproof protection.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
   "keyFeatures": [
    {
     "title": "All-weather engineering plastic cabinet",
@@ -371,7 +371,7 @@ export const ITC: Product[] = [
    "/images/itc-catalog/itc-ks-10h.webp"
   ],
   "imageFallback": "#0B1E3D",
-  "description": "The itc KS-10H is a professional Full Range Speaker from itc's Multifunction Loudspeakers range, built for speech and music reinforcement in conference rooms, banquet halls, theatres, KTV and multipurpose venues.\n\nKey figures: rated power 600W; peak power 2400W; frequency range 55Hz -20KHz. Highlights include two 10-inch neodymium magnet woofers, one Italian 100mm+65mm neodymium magnet coaxial mid-tweeter, high-quality birch wood with recise CNC machining and three-frequency single drive design.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
+  "description": "The itc KS-10H is a professional Full Range Speaker from itc's Multifunction Loudspeakers range, built for speech and music reinforcement in conference rooms, banquet halls, theatres, KTV and multipurpose venues.\n\nKey figures: rated power 600W; peak power 2400W; frequency range 55Hz -20KHz. Highlights include two 10-inch neodymium magnet woofers and three-frequency single drive design.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
   "keyFeatures": [
    {
     "title": "Two 10-inch neodymium magnet woofers",
@@ -495,7 +495,7 @@ export const ITC: Product[] = [
    "/images/itc-catalog/itc-ts-29b.webp"
   ],
   "imageFallback": "#0B1E3D",
-  "description": "The itc TS-29B is a professional Speaker from itc's Multifunction Loudspeakers range, built for speech and music reinforcement in conference rooms, banquet halls, theatres, KTV and multipurpose venues.\n\nKey figures: rated power 250W; frequency response 45-20KHz; coverage angle (H) 45 ° (V) 90 °. Highlights include high-density fiberboard with black spray paint, three-unit system with one woofer and two tweeters, one 10-inch woofer + two 3-inch tweeters and powerful bass, soft alto, and clear treble.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
+  "description": "The itc TS-29B is a professional Speaker from itc's Multifunction Loudspeakers range, built for speech and music reinforcement in conference rooms, banquet halls, theatres, KTV and multipurpose venues.\n\nKey figures: rated power 250W; frequency response 45-20KHz; coverage angle (H) 45 ° (V) 90 °. Highlights include high-density fiberboard with black spray paint, one 10-inch woofer + two 3-inch tweeters and powerful bass, soft alto, and clear treble.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
   "keyFeatures": [
    {
     "title": "High-density fiberboard with black spray paint",
@@ -710,7 +710,7 @@ export const ITC: Product[] = [
    "/images/itc-catalog/itc-ts-cj00a-g2.webp"
   ],
   "imageFallback": "#0B1E3D",
-  "description": "The itc TS-CJ00A is a immersive System Controller from itc's Immersive Sound System range, built for object-based immersive audio in theatres, exhibitions, theme venues and premium auditoriums.\n\nKey figures: power supply DC 12~24V; maximum power consumption 5W; operating system Ubuntu 18.04 LTS. Highlights include use with 3D coordinate digital system software, view the gateway status information and the location information in real-time, support OSC and ArtNet control protocol and support TCP, UDP, RS232, and RS485.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
+  "description": "The itc TS-CJ00A is an immersive System Controller from itc's Immersive Sound System range, built for object-based immersive audio in theatres, exhibitions, theme venues and premium auditoriums.\n\nKey figures: power supply DC 12~24V; maximum power consumption 5W; operating system Ubuntu 18.04 LTS. Highlights include use with 3D coordinate digital system software, support OSC and ArtNet control protocol and support TCP, UDP, RS232, and RS485.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
   "keyFeatures": [
    {
     "title": "Use with 3D coordinate digital system software",
@@ -833,7 +833,7 @@ export const ITC: Product[] = [
    "/images/itc-catalog/itc-ts-cj00g-g2.webp"
   ],
   "imageFallback": "#0B1E3D",
-  "description": "The itc TS-CJ00G is a immersive System Management Controller from itc's Immersive Sound System range, built for object-based immersive audio in theatres, exhibitions, theme venues and premium auditoriums.\n\nKey figures: power consumption 65W; cpu Intel Core i7-1165G7 (4-core 2.8GHz, maximum 4.7GHz); graphics card Intel Iris Xe Graphics. Highlights include VESA Compatible Mount and wireless Antenna.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
+  "description": "The itc TS-CJ00G is an immersive System Management Controller from itc's Immersive Sound System range, built for object-based immersive audio in theatres, exhibitions, theme venues and premium auditoriums.\n\nKey figures: power consumption 65W; cpu Intel Core i7-1165G7 (4-core 2.8GHz, maximum 4.7GHz); graphics card Intel Iris Xe Graphics. Highlights include VESA Compatible Mount and wireless Antenna.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
   "keyFeatures": [
    {
     "title": "VESA Compatible Mount",
@@ -972,7 +972,7 @@ export const ITC: Product[] = [
    "/images/itc-catalog/itc-ts-cj00r.webp"
   ],
   "imageFallback": "#0B1E3D",
-  "description": "The itc TS-CJ00R is a 3D Space Positioning System Software V3.074 from itc's Immersive Sound System range, built for object-based immersive audio in theatres, exhibitions, theme venues and premium auditoriums.\n\nHighlights include ultra-high frequency carrier communication technology, cooperate with the audio system, view the status information and the location information and free protocol configuration.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
+  "description": "The itc TS-CJ00R is a 3D Space Positioning System Software V3.074 from itc's Immersive Sound System range, built for object-based immersive audio in theatres, exhibitions, theme venues and premium auditoriums.\n\nHighlights include cooperate with the audio system and free protocol configuration.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
   "keyFeatures": [
    {
     "title": "Ultra-high frequency carrier communication technology",
@@ -1025,7 +1025,7 @@ export const ITC: Product[] = [
    "/images/itc-catalog/itc-kt-p21000.webp"
   ],
   "imageFallback": "#0B1E3D",
-  "description": "The itc KT-P21000 is a professional Digital Amplifier from itc's KT Series Amplifiers range, built for powering loudspeaker systems in halls, auditoriums, places of worship, banquet venues and live events.\n\nKey figures: output power Continuous power amplification; frequency response 20Hz~20kHz/+3~-1dB; thd+n ≤0.01%. Highlights include more than 95% ultra-high efficiency and excellent stability, with signal, power, temperature voltage limit function, MONO/STEREO/BRIDGE mode for selection and temperature-controlled fan.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
+  "description": "The itc KT-P21000 is a professional Digital Amplifier from itc's KT Series Amplifiers range, built for powering loudspeaker systems in halls, auditoriums, places of worship, banquet venues and live events.\n\nKey figures: output power Continuous power amplification; frequency response 20Hz~20kHz/+3~-1dB; thd+n ≤0.01%. Highlights include MONO/STEREO/BRIDGE mode for selection and temperature-controlled fan.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
   "keyFeatures": [
    {
     "title": "More than 95% ultra-high efficiency and excellent stability",
@@ -1207,7 +1207,7 @@ export const ITC: Product[] = [
    "/images/itc-catalog/itc-kt-p21200.webp"
   ],
   "imageFallback": "#0B1E3D",
-  "description": "The itc KT-P21200 is a professional Digital Amplifier from itc's KT Series Amplifiers range, built for powering loudspeaker systems in halls, auditoriums, places of worship, banquet venues and live events.\n\nKey figures: output power Continuous power amplification; frequency response 20Hz~20kHz/+3~-1dB; thd+n ≤0.01%. Highlights include more than 95% ultra-high efficiency and excellent stability, with signal, power, temperature voltage limit function, MONO/STEREO/BRIDGE mode for selection and temperature-controlled fan.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
+  "description": "The itc KT-P21200 is a professional Digital Amplifier from itc's KT Series Amplifiers range, built for powering loudspeaker systems in halls, auditoriums, places of worship, banquet venues and live events.\n\nKey figures: output power Continuous power amplification; frequency response 20Hz~20kHz/+3~-1dB; thd+n ≤0.01%. Highlights include MONO/STEREO/BRIDGE mode for selection and temperature-controlled fan.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
   "keyFeatures": [
    {
     "title": "More than 95% ultra-high efficiency and excellent stability",
@@ -2381,7 +2381,7 @@ export const ITC: Product[] = [
    "/images/itc-catalog/itc-tc-2500.webp"
   ],
   "imageFallback": "#0B1E3D",
-  "description": "The itc TC-2500 is a professional Amplifier from itc's TC Series Amplifiers range, built for powering loudspeaker systems in halls, auditoriums, places of worship, banquet venues and live events.\n\nKey figures: output power Stereo 8Ω: 2*500W; 4Ω: 2*800W; 2Ω: 2*1300W; Bridge 16Ω: 1000W; 8Ω: 1600W; 4Ω: 2600W;; frequency response 20-20KHz/±1dB; thd+n ≤0.01%. Highlights include more than 95% ultra-high efficiency and excellent stability, with signal, power, temperature voltage limit function, MONO/STEREO/BRIDGE mode for selection and temperature-controlled fan.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
+  "description": "The itc TC-2500 is a professional Amplifier from itc's TC Series Amplifiers range, built for powering loudspeaker systems in halls, auditoriums, places of worship, banquet venues and live events.\n\nKey figures: output power Stereo 8Ω: 2*500W; 4Ω: 2*800W; 2Ω: 2*1300W; Bridge 16Ω: 1000W; 8Ω: 1600W; 4Ω: 2600W;; frequency response 20-20KHz/±1dB; thd+n ≤0.01%. Highlights include MONO/STEREO/BRIDGE mode for selection and temperature-controlled fan.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
   "keyFeatures": [
    {
     "title": "More than 95% ultra-high efficiency and excellent stability",
@@ -2664,7 +2664,7 @@ export const ITC: Product[] = [
    "/images/itc-catalog/itc-tc-2700.webp"
   ],
   "imageFallback": "#0B1E3D",
-  "description": "The itc TC-2700 is a professional Amplifier from itc's TC Series Amplifiers range, built for powering loudspeaker systems in halls, auditoriums, places of worship, banquet venues and live events.\n\nKey figures: frequency response 20-20KHz/±1dB; thd+n ≤0.01%; power supply ~ 220 50Hz. Highlights include more than 95% ultra-high efficiency and excellent stability, with signal, power, temperature voltage limit function, MONO/STEREO/BRIDGE mode for selection and super load capacity of 8 ohms, 4 ohms, and 2 ohms.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
+  "description": "The itc TC-2700 is a professional Amplifier from itc's TC Series Amplifiers range, built for powering loudspeaker systems in halls, auditoriums, places of worship, banquet venues and live events.\n\nKey figures: frequency response 20-20KHz/±1dB; thd+n ≤0.01%; power supply ~ 220 50Hz. Highlights include MONO/STEREO/BRIDGE mode for selection.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
   "keyFeatures": [
    {
     "title": "More than 95% ultra-high efficiency and excellent stability",
@@ -2943,7 +2943,7 @@ export const ITC: Product[] = [
    "/images/itc-catalog/itc-tc-4200b.webp"
   ],
   "imageFallback": "#0B1E3D",
-  "description": "The itc TC-4200B is a professional Amplifier from itc's TC Series Amplifiers range, built for powering loudspeaker systems in halls, auditoriums, places of worship, banquet venues and live events.\n\nKey figures: output power Stereo 8Ω: 200W×4 Stereo 4Ω: 380W×4 Bridge 8Ω: 760W; frequency response 20Hz-20KHz/±1dB @8Ω; thd+n ≤0.01%. Highlights include more than 95% ultra-high efficiency and excellent stability, MONO/STEREO/BRIDGE mode for selection, super load capacity of 8 ohms and 4 ohms and comprehensive protective measures.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
+  "description": "The itc TC-4200B is a professional Amplifier from itc's TC Series Amplifiers range, built for powering loudspeaker systems in halls, auditoriums, places of worship, banquet venues and live events.\n\nKey figures: output power Stereo 8Ω: 200W×4 Stereo 4Ω: 380W×4 Bridge 8Ω: 760W; frequency response 20Hz-20KHz/±1dB @8Ω; thd+n ≤0.01%. Highlights include MONO/STEREO/BRIDGE mode for selection, super load capacity of 8 ohms and 4 ohms and comprehensive protective measures.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
   "keyFeatures": [
    {
     "title": "More than 95% ultra-high efficiency and excellent stability",
@@ -3064,7 +3064,7 @@ export const ITC: Product[] = [
    "/images/itc-catalog/itc-tc-4350b.webp"
   ],
   "imageFallback": "#0B1E3D",
-  "description": "The itc TC-4350B is a professional Amplifier from itc's TC Series Amplifiers range, built for powering loudspeaker systems in halls, auditoriums, places of worship, banquet venues and live events.\n\nKey figures: output power Stereo 8Ω: 350W×4 Stereo 4Ω: 580W×4 Bridge 8Ω: 1100W; frequency response 20Hz-20KHz/±1dB @8Ω; thd+n ≤0.01%. Highlights include more than 95% ultra-high efficiency and excellent stability, MONO/STEREO/BRIDGE mode for selection, super load capacity of 8 ohms and 4 ohms and comprehensive protective measures.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
+  "description": "The itc TC-4350B is a professional Amplifier from itc's TC Series Amplifiers range, built for powering loudspeaker systems in halls, auditoriums, places of worship, banquet venues and live events.\n\nKey figures: output power Stereo 8Ω: 350W×4 Stereo 4Ω: 580W×4 Bridge 8Ω: 1100W; frequency response 20Hz-20KHz/±1dB @8Ω; thd+n ≤0.01%. Highlights include MONO/STEREO/BRIDGE mode for selection, super load capacity of 8 ohms and 4 ohms and comprehensive protective measures.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
   "keyFeatures": [
    {
     "title": "More than 95% ultra-high efficiency and excellent stability",
@@ -3185,7 +3185,7 @@ export const ITC: Product[] = [
    "/images/itc-catalog/itc-tc-4500b.webp"
   ],
   "imageFallback": "#0B1E3D",
-  "description": "The itc TC-4500B is a professional Amplifier from itc's TC Series Amplifiers range, built for powering loudspeaker systems in halls, auditoriums, places of worship, banquet venues and live events.\n\nKey figures: output power Stereo 8Ω ：500W×4 Stereo 4Ω：850W×4 Bridge 8Ω：1700W; frequency response 20Hz-20KHz ±1dB @8Ω; thd+n ≤0.01%. Highlights include more than 95% ultra-high efficiency and excellent stability, MONO/STEREO/BRIDGE mode for selection, super load capacity of 8 ohms and 4 ohms and comprehensive protective measures.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
+  "description": "The itc TC-4500B is a professional Amplifier from itc's TC Series Amplifiers range, built for powering loudspeaker systems in halls, auditoriums, places of worship, banquet venues and live events.\n\nKey figures: output power Stereo 8Ω ：500W×4 Stereo 4Ω：850W×4 Bridge 8Ω：1700W; frequency response 20Hz-20KHz ±1dB @8Ω; thd+n ≤0.01%. Highlights include MONO/STEREO/BRIDGE mode for selection, super load capacity of 8 ohms and 4 ohms and comprehensive protective measures.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
   "keyFeatures": [
    {
     "title": "More than 95% ultra-high efficiency and excellent stability",
@@ -3306,7 +3306,7 @@ export const ITC: Product[] = [
    "/images/itc-catalog/itc-tc-4500dt.webp"
   ],
   "imageFallback": "#0B1E3D",
-  "description": "The itc TC-4500DT family is a digital Amplifier from itc's Dante Network Amplifiers range, built for powering loudspeaker systems in halls, auditoriums, places of worship, banquet venues and live events. It is offered in 3 versions — TC-4500DT, TC-4700DT, TC-41500DT — so one design language covers rooms of different sizes.\n\nKey figures: frequency response 20Hz-20kHz /+1/-1dB; thd+n ≤0.05％; power supply ~ 220V  50Hz. Highlights include unique design scheme, high-end DSP processor, multiple working modes for different user needs and 4.3-inch IPS capacitive touch screen for display and control.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
+  "description": "The itc TC-4500DT family is a digital Amplifier from itc's Dante Network Amplifiers range, built for powering loudspeaker systems in halls, auditoriums, places of worship, banquet venues and live events. It is offered in 3 versions — TC-4500DT, TC-4700DT, TC-41500DT — so one design language covers rooms of different sizes.\n\nKey figures: frequency response 20Hz-20kHz /+1/-1dB; thd+n ≤0.05％; power supply ~ 220V  50Hz. Highlights include unique design scheme, high-end DSP processor and multiple working modes for different user needs.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
   "keyFeatures": [
    {
     "title": "Unique design scheme",
@@ -3451,7 +3451,7 @@ export const ITC: Product[] = [
    "/images/itc-catalog/itc-tc-4700.webp"
   ],
   "imageFallback": "#0B1E3D",
-  "description": "The itc TC-4700 is a professional Amplifier from itc's TC Series Amplifiers range, built for powering loudspeaker systems in halls, auditoriums, places of worship, banquet venues and live events.\n\nKey figures: frequency response 20-20KHz/±1dB; thd+n ≤0.01%; power supply ~220 50Hz. Highlights include more than 95% ultra-high efficiency and excellent stability, with signal, power, temperature voltage limit function, MONO/STEREO/BRIDGE mode for selection and temperature-controlled fan.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
+  "description": "The itc TC-4700 is a professional Amplifier from itc's TC Series Amplifiers range, built for powering loudspeaker systems in halls, auditoriums, places of worship, banquet venues and live events.\n\nKey figures: frequency response 20-20KHz/±1dB; thd+n ≤0.01%; power supply ~220 50Hz. Highlights include MONO/STEREO/BRIDGE mode for selection and temperature-controlled fan.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
   "keyFeatures": [
    {
     "title": "More than 95% ultra-high efficiency and excellent stability",
@@ -3605,7 +3605,7 @@ export const ITC: Product[] = [
    "/images/itc-catalog/itc-tc-21000.webp"
   ],
   "imageFallback": "#0B1E3D",
-  "description": "The itc TC-21000 is a professional Amplifier from itc's TC Series Amplifiers range, built for powering loudspeaker systems in halls, auditoriums, places of worship, banquet venues and live events.\n\nKey figures: power at Stereo 8Ω×2 (continuous · max) 2*1000W · 2*1500W; power at Stereo 4Ω×2 (continuous · max) 2*1700W · 2*2600W; power at Stereo 2Ω×2 (continuous · max) 2*2900W · 2*4350W. Highlights include dual-channel high-power professional digital power amplifier, excellent technologies ensure high working stability, multi-track audio loop technology and audio output adaptive load power control technology.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
+  "description": "The itc TC-21000 is a professional Amplifier from itc's TC Series Amplifiers range, built for powering loudspeaker systems in halls, auditoriums, places of worship, banquet venues and live events.\n\nKey figures: power at Stereo 8Ω×2 (continuous · max) 2*1000W · 2*1500W; power at Stereo 4Ω×2 (continuous · max) 2*1700W · 2*2600W; power at Stereo 2Ω×2 (continuous · max) 2*2900W · 2*4350W. Highlights include multi-track audio loop technology.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
   "keyFeatures": [
    {
     "title": "Dual-channel high-power professional digital power amplifier",
@@ -3784,7 +3784,7 @@ export const ITC: Product[] = [
    "/images/itc-catalog/itc-tc-41500.webp"
   ],
   "imageFallback": "#0B1E3D",
-  "description": "The itc TC-41500 is a professional Amplifier from itc's TC Series Amplifiers range, built for powering loudspeaker systems in halls, auditoriums, places of worship, banquet venues and live events.\n\nKey figures: input sensitivity(rated output power, @1khz) 41dB，38dB，35dB，32dB，optional; frequency response 20-20KHz/±1dB; thd+n ≤0.01％. Highlights include four-channel high-power professional digital power amplifier, more than 95% ultra-high efficiency and excellent stability, with signal, power, temperature voltage limit function and MONO/STEREO/BRIDGE mode for selection.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
+  "description": "The itc TC-41500 is a professional Amplifier from itc's TC Series Amplifiers range, built for powering loudspeaker systems in halls, auditoriums, places of worship, banquet venues and live events.\n\nKey figures: input sensitivity(rated output power, @1khz) 41dB，38dB，35dB，32dB，optional; frequency response 20-20KHz/±1dB; thd+n ≤0.01％. Highlights include MONO/STEREO/BRIDGE mode for selection.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
   "keyFeatures": [
    {
     "title": "Four-channel high-power professional digital power amplifier",
@@ -4082,7 +4082,7 @@ export const ITC: Product[] = [
    "/images/itc-catalog/itc-ts-12pfx.webp"
   ],
   "imageFallback": "#0B1E3D",
-  "description": "The itc TS-12PFX is a mixer from itc's Analog Mixers with DSP range, built for front-of-house and installation mixing in halls, churches, temples, schools and live events.\n\nKey figures: phantom power +48V with switch; power supply External AC18V/1A（AC 230-240V 50/60Hz）power adapter; power consumption ≤18W. Highlights include ultra-low noise discrete microphone preamplifier + 48V phantom power, input channel, 3-band EQ adjustment for each mono input channel and output channel.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
+  "description": "The itc TS-12PFX is a mixer from itc's Analog Mixers with DSP range, built for front-of-house and installation mixing in halls, churches, temples, schools and live events.\n\nKey figures: phantom power +48V with switch; power supply External AC18V/1A（AC 230-240V 50/60Hz）power adapter; power consumption ≤18W. Highlights include input channel, 3-band EQ adjustment for each mono input channel and output channel.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
   "keyFeatures": [
    {
     "title": "Ultra-low noise discrete microphone preamplifier + 48V phantom power",
@@ -4265,7 +4265,7 @@ export const ITC: Product[] = [
    "/images/itc-catalog/itc-ts-14pfx-4.webp"
   ],
   "imageFallback": "#0B1E3D",
-  "description": "The itc TS-14PFX-4 is a mixer from itc's Analog Mixers with DSP range, built for front-of-house and installation mixing in halls, churches, temples, schools and live events.\n\nKey figures: rated power 30W; phantom power Each channel of CH1-CH6 has 48V phantom switch independent control; frequency response 20Hz-20kHz，±2dB. Highlights include ultra-low noise discrete microphone preamplifier + 48V phantom power, output channel, built-in 24-bit DSP audio processor and built-in 24-bit DSP audio processor.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
+  "description": "The itc TS-14PFX-4 is a mixer from itc's Analog Mixers with DSP range, built for front-of-house and installation mixing in halls, churches, temples, schools and live events.\n\nKey figures: rated power 30W; phantom power Each channel of CH1-CH6 has 48V phantom switch independent control; frequency response 20Hz-20kHz，±2dB. Highlights include output channel, built-in 24-bit DSP audio processor and built-in 24-bit DSP audio processor.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
   "keyFeatures": [
    {
     "title": "Ultra-low noise discrete microphone preamplifier + 48V phantom power",
@@ -4442,7 +4442,7 @@ export const ITC: Product[] = [
    "/images/itc-catalog/itc-ts-16pfx-4.webp"
   ],
   "imageFallback": "#0B1E3D",
-  "description": "The itc TS-16PFX-4 is a mixer from itc's Analog Mixers with DSP range, built for front-of-house and installation mixing in halls, churches, temples, schools and live events.\n\nKey figures: rated power 30W; phantom power Each channel of CH1-CH8 has 48V phantom switch independent control; frequency response 20Hz-20kHz，±2dB. Highlights include ultra-low noise discrete microphone preamplifier + 48V phantom power, input channel, CH1-CH8 microphone input with 48V phantom power for independent control and output channel.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
+  "description": "The itc TS-16PFX-4 is a mixer from itc's Analog Mixers with DSP range, built for front-of-house and installation mixing in halls, churches, temples, schools and live events.\n\nKey figures: rated power 30W; phantom power Each channel of CH1-CH8 has 48V phantom switch independent control; frequency response 20Hz-20kHz，±2dB. Highlights include input channel and output channel.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
   "keyFeatures": [
    {
     "title": "Ultra-low noise discrete microphone preamplifier + 48V phantom power",
@@ -5044,7 +5044,7 @@ export const ITC: Product[] = [
    "/images/itc-catalog/itc-ts-18b.webp"
   ],
   "imageFallback": "#0B1E3D",
-  "description": "The itc TS-18B is a desktop Socket from itc's Audio Peripherals range, built for system integration — processing, feedback control, connectivity and wireless microphone distribution.\n\nKey figures: power supply AC 220V  50-60/HZ; turn-up method Air-supported pole; overall weight 1.5KG. Highlights include all-aluminum structure with CNC engraving craft, hidden design makes the surface neat and beautiful, anodic oxidation treatment with high quality and adopt standard modules for strong signal.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
+  "description": "The itc TS-18B is a desktop Socket from itc's Audio Peripherals range, built for system integration — processing, feedback control, connectivity and wireless microphone distribution.\n\nKey figures: power supply AC 220V  50-60/HZ; turn-up method Air-supported pole; overall weight 1.5KG. Highlights include all-aluminum structure with CNC engraving craft, anodic oxidation treatment with high quality and adopt standard modules for strong signal.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
   "keyFeatures": [
    {
     "title": "All-aluminum structure with CNC engraving craft",
@@ -5151,7 +5151,7 @@ export const ITC: Product[] = [
    "/images/itc-catalog/itc-ts-18c.webp"
   ],
   "imageFallback": "#0B1E3D",
-  "description": "The itc TS-18C is a desktop Socket from itc's Audio Peripherals range, built for system integration — processing, feedback control, connectivity and wireless microphone distribution.\n\nKey figures: power supply AC 220V  50-60/HZ; pop-up method Air-supported pole; elevation angle 45 degrees, fully accord with engineering principles. Highlights include all-aluminum structure with CNC engraving craft, hidden design makes the surface neat and beautiful, anodic oxidation treatment with high quality and adopt standard modules for strong signal.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
+  "description": "The itc TS-18C is a desktop Socket from itc's Audio Peripherals range, built for system integration — processing, feedback control, connectivity and wireless microphone distribution.\n\nKey figures: power supply AC 220V  50-60/HZ; pop-up method Air-supported pole; elevation angle 45 degrees, fully accord with engineering principles. Highlights include all-aluminum structure with CNC engraving craft, anodic oxidation treatment with high quality and adopt standard modules for strong signal.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
   "keyFeatures": [
    {
     "title": "All-aluminum structure with CNC engraving craft",
@@ -5263,7 +5263,7 @@ export const ITC: Product[] = [
    "/images/itc-catalog/itc-ts-18d.webp"
   ],
   "imageFallback": "#0B1E3D",
-  "description": "The itc TS-18D is a desktop Socket from itc's Audio Peripherals range, built for system integration — processing, feedback control, connectivity and wireless microphone distribution.\n\nKey figures: power supply AC 220V  50-60/HZ; turn-up method Air-supported pole; overall weight 1.5Kg. Highlights include all-aluminum structure with CNC engraving craft, hidden design makes the surface neat and beautiful, anodic oxidation treatment with high quality and adopt standard modules for strong signal.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
+  "description": "The itc TS-18D is a desktop Socket from itc's Audio Peripherals range, built for system integration — processing, feedback control, connectivity and wireless microphone distribution.\n\nKey figures: power supply AC 220V  50-60/HZ; turn-up method Air-supported pole; overall weight 1.5Kg. Highlights include all-aluminum structure with CNC engraving craft, anodic oxidation treatment with high quality and adopt standard modules for strong signal.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
   "keyFeatures": [
    {
     "title": "All-aluminum structure with CNC engraving craft",
@@ -5370,7 +5370,7 @@ export const ITC: Product[] = [
    "/images/itc-catalog/itc-t-521cf.webp"
   ],
   "imageFallback": "#0B1E3D",
-  "description": "The itc T-521CF is a charger from itc's Audio Peripherals range, built for system integration — processing, feedback control, connectivity and wireless microphone distribution.\n\nKey figures: input power DC 12V / 1A; battery AA Ni-MH rechargeable battery; charging method Constant voltage PWM mode and trickle charging mode. Highlights include constant voltage PWM and trickle charging mode, automatically identify the faulty battery with irregular flash, charging status on LCD display and two charging sockets.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
+  "description": "The itc T-521CF is a charger from itc's Audio Peripherals range, built for system integration — processing, feedback control, connectivity and wireless microphone distribution.\n\nKey figures: input power DC 12V / 1A; battery AA Ni-MH rechargeable battery; charging method Constant voltage PWM mode and trickle charging mode. Highlights include constant voltage PWM and trickle charging mode, charging status on LCD display and two charging sockets.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
   "keyFeatures": [
    {
     "title": "Constant voltage PWM and trickle charging mode",
@@ -5459,7 +5459,7 @@ export const ITC: Product[] = [
    "/images/itc-catalog/itc-t-522b.webp"
   ],
   "imageFallback": "#0B1E3D",
-  "description": "The itc T-522B is a microphone Antenna from itc's Audio Peripherals range, built for system integration — processing, feedback control, connectivity and wireless microphone distribution.\n\nKey figures: maximum power 50W; frequency range 680~960MHz; input impedance 50Ω. Highlights include broadband directional antenna, applicable to GSM, CDMA, WCDMA, WLAN, and LTE network and powerful characteristics.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
+  "description": "The itc T-522B is a microphone Antenna from itc's Audio Peripherals range, built for system integration — processing, feedback control, connectivity and wireless microphone distribution.\n\nKey figures: maximum power 50W; frequency range 680~960MHz; input impedance 50Ω. Highlights include broadband directional antenna and powerful characteristics.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
   "keyFeatures": [
    {
     "title": "Broadband directional antenna",
@@ -5574,7 +5574,7 @@ export const ITC: Product[] = [
    "/images/itc-catalog/itc-t-522s.webp"
   ],
   "imageFallback": "#0B1E3D",
-  "description": "The itc T-522S is a microphone Antenna from itc's Audio Peripherals range, built for system integration — processing, feedback control, connectivity and wireless microphone distribution.\n\nKey figures: half power lobe width H:76°±5°, V:76°±5°; maximum power 50W; frequency range 550MHz～850MHz. Highlights include 45 degree polarized broadband omni-directional antenna, the beam is focused in front of the antenna, the beam is focused in front of the antenna and powerful performance.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
+  "description": "The itc T-522S is a microphone Antenna from itc's Audio Peripherals range, built for system integration — processing, feedback control, connectivity and wireless microphone distribution.\n\nKey figures: half power lobe width H:76°±5°, V:76°±5°; maximum power 50W; frequency range 550MHz～850MHz. Highlights include the beam is focused in front of the antenna, the beam is focused in front of the antenna and powerful performance.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
   "keyFeatures": [
    {
     "title": "45 degree polarized broadband omni-directional antenna",
@@ -5739,7 +5739,7 @@ export const ITC: Product[] = [
    "/images/itc-catalog/itc-t-522a.webp"
   ],
   "imageFallback": "#0B1E3D",
-  "description": "The itc T-522A is a antenna Splitter from itc's Audio Peripherals range, built for system integration — processing, feedback control, connectivity and wireless microphone distribution.\n\nKey figures: power supply 12V DC 3000mA; distributed power output 12V DC, total load of 4 receivers can not exceed 3A; frequency band 470-960MHz. Highlights include provide automatic channel selection for 4 T-521UH series, simplify the antenna assembly project and system composition.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
+  "description": "The itc T-522A is an antenna Splitter from itc's Audio Peripherals range, built for system integration — processing, feedback control, connectivity and wireless microphone distribution.\n\nKey figures: power supply 12V DC 3000mA; distributed power output 12V DC, total load of 4 receivers can not exceed 3A; frequency band 470-960MHz. Highlights include simplify the antenna assembly project and system composition.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
   "keyFeatures": [
    {
     "title": "Provide automatic channel selection for 4 T-521UH series",
@@ -5880,7 +5880,7 @@ export const ITC: Product[] = [
    "/images/itc-catalog/itc-t-523a.webp"
   ],
   "imageFallback": "#0B1E3D",
-  "description": "The itc T-523A is a antenna Splitter from itc's Audio Peripherals range, built for system integration — processing, feedback control, connectivity and wireless microphone distribution.\n\nKey figures: power input 12V DC 3000mA; distribution power output 12V DC, the load of 4 receivers cannot exceed 3A; frequency range Working frequency: all frequencies within 470-960M. Highlights include support 8 receivers with 2 antennas or 4 receivers with 4 antennas and system composition.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
+  "description": "The itc T-523A is an antenna Splitter from itc's Audio Peripherals range, built for system integration — processing, feedback control, connectivity and wireless microphone distribution.\n\nKey figures: power input 12V DC 3000mA; distribution power output 12V DC, the load of 4 receivers cannot exceed 3A; frequency range Working frequency: all frequencies within 470-960M. Highlights include system composition.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
   "keyFeatures": [
    {
     "title": "Support 8 receivers with 2 antennas or 4 receivers with 4 antennas",
@@ -6777,7 +6777,7 @@ export const ITC: Product[] = [
    "/images/itc-catalog/itc-t-592ul.webp"
   ],
   "imageFallback": "#0B1E3D",
-  "description": "The itc T-592UL is a wireless Microphone from itc's Wireless Microphones range, built for speech, vocal and instrument pickup for conferences, lectures, worship and live performance.\n\nKey figures: output power ≥10dBm; power supply DC 12V/1A; frequency r ange 540MHz-590MHz、640MHz-690MHz. Highlights include digital U-band transmission technology with pi/4-DQPSK modulation, unique encryption method for audio transmission, one-key frequency scanning and infrared frequency matching and support reverberation and treble/alto/bass adjustment.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
+  "description": "The itc T-592UL is a wireless Microphone from itc's Wireless Microphones range, built for speech, vocal and instrument pickup for conferences, lectures, worship and live performance.\n\nKey figures: output power ≥10dBm; power supply DC 12V/1A; frequency r ange 540MHz-590MHz、640MHz-690MHz. Highlights include unique encryption method for audio transmission.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
   "keyFeatures": [
    {
     "title": "Digital U-band transmission technology with pi/4-DQPSK modulation",
@@ -6947,7 +6947,7 @@ export const ITC: Product[] = [
    "/images/itc-catalog/itc-t-592uh-g2.webp"
   ],
   "imageFallback": "#0B1E3D",
-  "description": "The itc T-592UH is a wireless Microphone from itc's Wireless Microphones range, built for speech, vocal and instrument pickup for conferences, lectures, worship and live performance.\n\nKey figures: output power ≥10dBm; power supply DC 12V/1A; frequency range 470-510MHz、540MHz-590MHz、640MHz-690MHz、807MHz-830MHz. Highlights include digital U-band transmission technology with pi/4-DQPSK modulation, unique encryption method for audio transmission, unique ID code pilot technology and natural and original sound quality.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
+  "description": "The itc T-592UH is a wireless Microphone from itc's Wireless Microphones range, built for speech, vocal and instrument pickup for conferences, lectures, worship and live performance.\n\nKey figures: output power ≥10dBm; power supply DC 12V/1A; frequency range 470-510MHz、540MHz-590MHz、640MHz-690MHz、807MHz-830MHz. Highlights include unique encryption method for audio transmission, unique ID code pilot technology and natural and original sound quality.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
   "keyFeatures": [
    {
     "title": "Digital U-band transmission technology with pi/4-DQPSK modulation",
@@ -7141,7 +7141,7 @@ export const ITC: Product[] = [
    "/images/itc-catalog/itc-t-592us.webp"
   ],
   "imageFallback": "#0B1E3D",
-  "description": "The itc T-592US is a wireless Microphone from itc's Wireless Microphones range, built for speech, vocal and instrument pickup for conferences, lectures, worship and live performance.\n\nKey figures: output power ≥10dBm; power supply DC 12V/1A; frequency range 640MHz-690MHz. Highlights include digital U-band transmission technology with pi/4-DQPSK modulation, unique encryption method for audio transmission, unique ID code pilot technology and one-key frequency scanning and infrared frequency matching.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
+  "description": "The itc T-592US is a wireless Microphone from itc's Wireless Microphones range, built for speech, vocal and instrument pickup for conferences, lectures, worship and live performance.\n\nKey figures: output power ≥10dBm; power supply DC 12V/1A; frequency range 640MHz-690MHz. Highlights include unique encryption method for audio transmission and unique ID code pilot technology.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
   "keyFeatures": [
    {
     "title": "Digital U-band transmission technology with pi/4-DQPSK modulation",
@@ -7310,7 +7310,7 @@ export const ITC: Product[] = [
    "/images/itc-catalog/itc-t-592ut1.webp"
   ],
   "imageFallback": "#0B1E3D",
-  "description": "The itc T-592UT1 is a wireless Microphone from itc's Wireless Microphones range, built for speech, vocal and instrument pickup for conferences, lectures, worship and live performance.\n\nKey figures: output power ≤200mA; power supply DC 12V/1A; frequency range 540MHz-590MHz、640MHz-690MHz. Highlights include digital U-band transmission technology with pi/4-DQPSK modulation, unique encryption method for audio transmission, one-key frequency scanning and infrared frequency matching and support reverberation and treble/alto/bass adjustment.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
+  "description": "The itc T-592UT1 is a wireless Microphone from itc's Wireless Microphones range, built for speech, vocal and instrument pickup for conferences, lectures, worship and live performance.\n\nKey figures: output power ≤200mA; power supply DC 12V/1A; frequency range 540MHz-590MHz、640MHz-690MHz. Highlights include unique encryption method for audio transmission.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
   "keyFeatures": [
    {
     "title": "Digital U-band transmission technology with pi/4-DQPSK modulation",
@@ -7479,7 +7479,7 @@ export const ITC: Product[] = [
    "/images/itc-catalog/itc-t-592ut.webp"
   ],
   "imageFallback": "#0B1E3D",
-  "description": "The itc T-592UT is a wireless Microphone from itc's Wireless Microphones range, built for speech, vocal and instrument pickup for conferences, lectures, worship and live performance.\n\nKey figures: output power ≥10dBm; power supply DC 12V/1A; frequency range 470MHz-510MHz、540MHz-590MHz、640MHz-690MHz、807MHz-830MHz. Highlights include digital U-band transmission technology with pi/4-DQPSK modulation, unique encryption method for audio transmission, unique ID code pilot technology and one-key frequency scanning and infrared frequency matching.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
+  "description": "The itc T-592UT is a wireless Microphone from itc's Wireless Microphones range, built for speech, vocal and instrument pickup for conferences, lectures, worship and live performance.\n\nKey figures: output power ≥10dBm; power supply DC 12V/1A; frequency range 470MHz-510MHz、540MHz-590MHz、640MHz-690MHz、807MHz-830MHz. Highlights include unique encryption method for audio transmission and unique ID code pilot technology.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
   "keyFeatures": [
    {
     "title": "Digital U-band transmission technology with pi/4-DQPSK modulation",
@@ -7653,7 +7653,7 @@ export const ITC: Product[] = [
    "/images/itc-catalog/itc-t-592uv.webp"
   ],
   "imageFallback": "#0B1E3D",
-  "description": "The itc T-592UV is a wireless Microphone from itc's Wireless Microphones range, built for speech, vocal and instrument pickup for conferences, lectures, worship and live performance.\n\nKey figures: output power ≥10dBm; power supply DC 12V/1A; frequency range 470MHz-510MHz、540MHz-590MHz、640MHz-690MHz、807MHz-830MHz. Highlights include digital U-band transmission technology with pi/4-DQPSK modulation, unique encryption method for audio transmission, one-key frequency scanning and infrared frequency matching and support reverberation and treble/alto/bass adjustment.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
+  "description": "The itc T-592UV is a wireless Microphone from itc's Wireless Microphones range, built for speech, vocal and instrument pickup for conferences, lectures, worship and live performance.\n\nKey figures: output power ≥10dBm; power supply DC 12V/1A; frequency range 470MHz-510MHz、540MHz-590MHz、640MHz-690MHz、807MHz-830MHz. Highlights include unique encryption method for audio transmission.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
   "keyFeatures": [
    {
     "title": "Digital U-band transmission technology with pi/4-DQPSK modulation",
@@ -7827,7 +7827,7 @@ export const ITC: Product[] = [
    "/images/itc-catalog/itc-t-592uw.webp"
   ],
   "imageFallback": "#0B1E3D",
-  "description": "The itc T-592UW is a wireless Microphone from itc's Wireless Microphones range, built for speech, vocal and instrument pickup for conferences, lectures, worship and live performance.\n\nKey figures: output power ≥10dBm; power supply DC 12V/1A; frequency range 640MHz-690MHz. Highlights include digital U-band transmission technology with pi/4-DQPSK modulation, unique encryption method for audio transmission, unique ID code pilot technology and one-key frequency scanning and infrared frequency matching.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
+  "description": "The itc T-592UW is a wireless Microphone from itc's Wireless Microphones range, built for speech, vocal and instrument pickup for conferences, lectures, worship and live performance.\n\nKey figures: output power ≥10dBm; power supply DC 12V/1A; frequency range 640MHz-690MHz. Highlights include unique encryption method for audio transmission and unique ID code pilot technology.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
   "keyFeatures": [
    {
     "title": "Digital U-band transmission technology with pi/4-DQPSK modulation",
@@ -7996,7 +7996,7 @@ export const ITC: Product[] = [
    "/images/itc-catalog/itc-ts-316m.webp"
   ],
   "imageFallback": "#0B1E3D",
-  "description": "The itc TS-316M is a small Diaphragm Microphone from itc's Wireless Microphones range, built for speech, vocal and instrument pickup for conferences, lectures, worship and live performance.\n\nKey figures: phantom power +48V; power consumption 3mA; frequency response 80Hz-20kHz. Highlights include electret condenser microphone design, can be used for stereo recording, single or multiple microphones can be used at the same time and suitable for group pickups such as chorus and musical instruments.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
+  "description": "The itc TS-316M is a small Diaphragm Microphone from itc's Wireless Microphones range, built for speech, vocal and instrument pickup for conferences, lectures, worship and live performance.\n\nKey figures: phantom power +48V; power consumption 3mA; frequency response 80Hz-20kHz. Highlights include electret condenser microphone design and can be used for stereo recording.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
   "keyFeatures": [
    {
     "title": "Electret condenser microphone design",
@@ -8128,7 +8128,7 @@ export const ITC: Product[] = [
    "/images/itc-catalog/itc-ts-548md-g2.webp"
   ],
   "imageFallback": "#0B1E3D",
-  "description": "The itc TS-548MD is a microphone from itc's Wireless Microphones range, built for speech, vocal and instrument pickup for conferences, lectures, worship and live performance.\n\nKey figures: power voltage Phantom + 48V power supply; frequency response 40Hz-18kHz; sensitivity -45dB. Highlights include electret condenser microphone, advanced PLL phase-locked loop, CPU bus control system of microcomputer integrated central processor and intelligent frequency adjustment.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
+  "description": "The itc TS-548MD is a microphone from itc's Wireless Microphones range, built for speech, vocal and instrument pickup for conferences, lectures, worship and live performance.\n\nKey figures: power voltage Phantom + 48V power supply; frequency response 40Hz-18kHz; sensitivity -45dB. Highlights include electret condenser microphone, advanced PLL phase-locked loop and intelligent frequency adjustment.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
   "keyFeatures": [
    {
     "title": "Electret condenser microphone",
@@ -8257,7 +8257,7 @@ export const ITC: Product[] = [
    "/images/itc-catalog/itc-tp-10.webp"
   ],
   "imageFallback": "#0B1E3D",
-  "description": "The itc TP-10 is a professional Speaker from itc's Outdoor Loudspeakers range, built for speech and music reinforcement in conference rooms, banquet halls, theatres, KTV and multipurpose venues.\n\nKey figures: rated power 250W; peak power 1000W; frequency response 60Hz-20KHz. Highlights include one 10-inch mid-woofer, one 1.4-icnh annular polyethylene diaphragm compression tweeter, integral ABS plastic molding cabinet with dust-proof iron net cover and multiple screw hoisting holes for various installation methods.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
+  "description": "The itc TP-10 is a professional Speaker from itc's Outdoor Loudspeakers range, built for speech and music reinforcement in conference rooms, banquet halls, theatres, KTV and multipurpose venues.\n\nKey figures: rated power 250W; peak power 1000W; frequency response 60Hz-20KHz. Highlights include one 10-inch mid-woofer.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
   "keyFeatures": [
    {
     "title": "One 10-inch mid-woofer",
@@ -8500,7 +8500,7 @@ export const ITC: Product[] = [
    "/images/itc-catalog/itc-kf-d10f-g3.webp"
   ],
   "imageFallback": "#0B1E3D",
-  "description": "The itc KF-D10F is a professional Speaker from itc's Multifunction Loudspeakers range, built for speech and music reinforcement in conference rooms, banquet halls, theatres, KTV and multipurpose venues.\n\nKey figures: power 350W; peak power 1400W; frequency range 55Hz-20kHz. Highlights include one 10-inch woofer and one 1.75-inch compression high-frequency driver, strong and wear-resistant cabinet, high-precision two-frequency design and technology to realize excellent vocal.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
+  "description": "The itc KF-D10F is a professional Speaker from itc's Multifunction Loudspeakers range, built for speech and music reinforcement in conference rooms, banquet halls, theatres, KTV and multipurpose venues.\n\nKey figures: power 350W; peak power 1400W; frequency range 55Hz-20kHz. Highlights include strong and wear-resistant cabinet, high-precision two-frequency design and technology to realize excellent vocal.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
   "keyFeatures": [
    {
     "title": "One 10-inch woofer and one 1.75-inch compression high-frequency driver",
@@ -8627,7 +8627,7 @@ export const ITC: Product[] = [
    "/images/itc-catalog/itc-kf-d12f-g3.webp"
   ],
   "imageFallback": "#0B1E3D",
-  "description": "The itc KF-D12F is a professional Speaker from itc's Multifunction Loudspeakers range, built for speech and music reinforcement in conference rooms, banquet halls, theatres, KTV and multipurpose venues.\n\nKey figures: power 450W; peak power 1800W; frequency range 50Hz-20kHz. Highlights include one 12-inch woofer and one 1.75-inch compression high-frequency driver, strong and wear-resistant cabinet, high-precision two-frequency design and technology to realize excellent vocal.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
+  "description": "The itc KF-D12F is a professional Speaker from itc's Multifunction Loudspeakers range, built for speech and music reinforcement in conference rooms, banquet halls, theatres, KTV and multipurpose venues.\n\nKey figures: power 450W; peak power 1800W; frequency range 50Hz-20kHz. Highlights include strong and wear-resistant cabinet, high-precision two-frequency design and technology to realize excellent vocal.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
   "keyFeatures": [
    {
     "title": "One 12-inch woofer and one 1.75-inch compression high-frequency driver",
@@ -8754,7 +8754,7 @@ export const ITC: Product[] = [
    "/images/itc-catalog/itc-kf-d12h-g3.webp"
   ],
   "imageFallback": "#0B1E3D",
-  "description": "The itc KF-D12H is a professional Speaker from itc's Multifunction Loudspeakers range, built for speech and music reinforcement in conference rooms, banquet halls, theatres, KTV and multipurpose venues.\n\nKey figures: rated power 500W; peak power 2000W; frequency range 55Hz-20kHz. Highlights include one 12-inch woofer and one 1.75-inch compression high-frequency driver, strong and wear-resistant cabinet, high-precision two-frequency design and technology to realize excellent vocal.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
+  "description": "The itc KF-D12H is a professional Speaker from itc's Multifunction Loudspeakers range, built for speech and music reinforcement in conference rooms, banquet halls, theatres, KTV and multipurpose venues.\n\nKey figures: rated power 500W; peak power 2000W; frequency range 55Hz-20kHz. Highlights include strong and wear-resistant cabinet, high-precision two-frequency design and technology to realize excellent vocal.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
   "keyFeatures": [
    {
     "title": "One 12-inch woofer and one 1.75-inch compression high-frequency driver",
@@ -8886,7 +8886,7 @@ export const ITC: Product[] = [
    "/images/itc-catalog/itc-kf-d15f-g3.webp"
   ],
   "imageFallback": "#0B1E3D",
-  "description": "The itc KF-D15F is a professional Speaker from itc's Multifunction Loudspeakers range, built for speech and music reinforcement in conference rooms, banquet halls, theatres, KTV and multipurpose venues.\n\nKey figures: power 550W; peak power 2200W; frequency range 45Hz-20kHz. Highlights include one 12-inch woofer and one 1.75-inch compression high-frequency driver, strong and wear-resistant cabinet, high-precision two-frequency design and technology to realize excellent vocal.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
+  "description": "The itc KF-D15F is a professional Speaker from itc's Multifunction Loudspeakers range, built for speech and music reinforcement in conference rooms, banquet halls, theatres, KTV and multipurpose venues.\n\nKey figures: power 550W; peak power 2200W; frequency range 45Hz-20kHz. Highlights include strong and wear-resistant cabinet, high-precision two-frequency design and technology to realize excellent vocal.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
   "keyFeatures": [
    {
     "title": "One 12-inch woofer and one 1.75-inch compression high-frequency driver",
@@ -9013,7 +9013,7 @@ export const ITC: Product[] = [
    "/images/itc-catalog/itc-kf-d15h-g3.webp"
   ],
   "imageFallback": "#0B1E3D",
-  "description": "The itc KF-D15H is a professional Speaker from itc's Multifunction Loudspeakers range, built for speech and music reinforcement in conference rooms, banquet halls, theatres, KTV and multipurpose venues.\n\nKey figures: rated power 600W; peak power 2400W; frequency range 50Hz-20kHz. Highlights include one 12-inch woofer and one 1.75-inch compression high-frequency driver, strong and wear-resistant cabinet, high-precision two-frequency design and technology to realize excellent vocal.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
+  "description": "The itc KF-D15H is a professional Speaker from itc's Multifunction Loudspeakers range, built for speech and music reinforcement in conference rooms, banquet halls, theatres, KTV and multipurpose venues.\n\nKey figures: rated power 600W; peak power 2400W; frequency range 50Hz-20kHz. Highlights include strong and wear-resistant cabinet, high-precision two-frequency design and technology to realize excellent vocal.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
   "keyFeatures": [
    {
     "title": "One 12-inch woofer and one 1.75-inch compression high-frequency driver",
@@ -9146,7 +9146,7 @@ export const ITC: Product[] = [
    "/images/itc-catalog/itc-kf-d212-g4.webp"
   ],
   "imageFallback": "#0B1E3D",
-  "description": "The itc KF-D212 is a linear Array Speaker from itc's Line Array Speakers range, built for flown or ground-stacked main systems in concert halls, stadiums, outdoor shows and large auditoriums.\n\nKey figures: rated power Woofer: 800W, Tweeter: 160W; peak power Woofer: 3200W, Tweeter: 640W; frequency range 50Hz-20KHz. Highlights include one 12-inch woofer and one 1.75-inch compression high-frequency driver, strong and wear-resistant cabinet, high-precision two-frequency design and technology to realize excellent vocal.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
+  "description": "The itc KF-D212 is a linear Array Speaker from itc's Line Array Speakers range, built for flown or ground-stacked main systems in concert halls, stadiums, outdoor shows and large auditoriums.\n\nKey figures: rated power Woofer: 800W, Tweeter: 160W; peak power Woofer: 3200W, Tweeter: 640W; frequency range 50Hz-20KHz. Highlights include strong and wear-resistant cabinet, high-precision two-frequency design and technology to realize excellent vocal.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
   "keyFeatures": [
    {
     "title": "One 12-inch woofer and one 1.75-inch compression high-frequency driver",
@@ -9273,7 +9273,7 @@ export const ITC: Product[] = [
    "/images/itc-catalog/itc-kf-d218s-g4.webp"
   ],
   "imageFallback": "#0B1E3D",
-  "description": "The itc KF-D218S is a linear Array Subwoofer from itc's Line Array Speakers range, built for flown or ground-stacked main systems in concert halls, stadiums, outdoor shows and large auditoriums.\n\nKey figures: rated power 1600W; peak power 6400W; frequency range 35Hz-200Hz. Highlights include one 12-inch woofer and one 1.75-inch compression high-frequency driver, strong and wear-resistant cabinet, high-precision two-frequency design and technology to realize excellent vocal.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
+  "description": "The itc KF-D218S is a linear Array Subwoofer from itc's Line Array Speakers range, built for flown or ground-stacked main systems in concert halls, stadiums, outdoor shows and large auditoriums.\n\nKey figures: rated power 1600W; peak power 6400W; frequency range 35Hz-200Hz. Highlights include strong and wear-resistant cabinet, high-precision two-frequency design and technology to realize excellent vocal.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
   "keyFeatures": [
    {
     "title": "One 12-inch woofer and one 1.75-inch compression high-frequency driver",
@@ -9385,7 +9385,7 @@ export const ITC: Product[] = [
    "/images/itc-catalog/itc-kh-118-g4.webp"
   ],
   "imageFallback": "#0B1E3D",
-  "description": "The itc KH-118 is a linear Array Subwoofer from itc's Line Array Speakers range, built for flown or ground-stacked main systems in concert halls, stadiums, outdoor shows and large auditoriums.\n\nKey figures: rated power 800W; peak power 3200W; frequency range 50Hz- 400Hz. Highlights include band-pass subwoofer with compact structure and high performance and long stroke ferrite magnetic steel driver.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
+  "description": "The itc KH-118 is a linear Array Subwoofer from itc's Line Array Speakers range, built for flown or ground-stacked main systems in concert halls, stadiums, outdoor shows and large auditoriums.\n\nKey figures: rated power 800W; peak power 3200W; frequency range 50Hz- 400Hz. Highlights include long stroke ferrite magnetic steel driver.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
   "keyFeatures": [
    {
     "title": "Band-pass subwoofer with compact structure and high performance",
@@ -9485,7 +9485,7 @@ export const ITC: Product[] = [
    "/images/itc-catalog/itc-kh-208-g4.webp"
   ],
   "imageFallback": "#0B1E3D",
-  "description": "The itc KH-208 is a linear Array Speaker from itc's Line Array Speakers range, built for flown or ground-stacked main systems in concert halls, stadiums, outdoor shows and large auditoriums.\n\nKey figures: rated power 600W; peak power 2400W; frequency range 5 0Hz-20KHz. Highlights include band-pass subwoofer with compact structure and high performance and long stroke ferrite magnetic steel driver.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
+  "description": "The itc KH-208 is a linear Array Speaker from itc's Line Array Speakers range, built for flown or ground-stacked main systems in concert halls, stadiums, outdoor shows and large auditoriums.\n\nKey figures: rated power 600W; peak power 2400W; frequency range 5 0Hz-20KHz. Highlights include long stroke ferrite magnetic steel driver.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
   "keyFeatures": [
    {
     "title": "Band-pass subwoofer with compact structure and high performance",
@@ -9600,7 +9600,7 @@ export const ITC: Product[] = [
    "/images/itc-catalog/itc-kf-y10-g4.webp"
   ],
   "imageFallback": "#0B1E3D",
-  "description": "The itc KF-Y10 is a professional Full Range Speaker from itc's Cinema Loudspeakers range, built for speech and music reinforcement in conference rooms, banquet halls, theatres, KTV and multipurpose venues.\n\nKey figures: rated power 250W; peak power 1000W; frequency range 65Hz-18.5KHz. Highlights include band-pass subwoofer with compact structure and high performance and long stroke ferrite magnetic steel driver.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
+  "description": "The itc KF-Y10 is a professional Full Range Speaker from itc's Cinema Loudspeakers range, built for speech and music reinforcement in conference rooms, banquet halls, theatres, KTV and multipurpose venues.\n\nKey figures: rated power 250W; peak power 1000W; frequency range 65Hz-18.5KHz. Highlights include long stroke ferrite magnetic steel driver.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
   "keyFeatures": [
    {
     "title": "Band-pass subwoofer with compact structure and high performance",
@@ -10078,7 +10078,7 @@ export const ITC: Product[] = [
    "/images/itc-catalog/itc-kf-ys18-g4.webp"
   ],
   "imageFallback": "#0B1E3D",
-  "description": "The itc KF-YS18 is a subwoofer from itc's Subwoofers range, built for low-frequency extension for line arrays and full-range systems in live, club and installation work.\n\nKey figures: rated power 800W; peak power 3200W; frequency range 42.5Hz-300Hz. Highlights include one 18-inch subwoofer unit, strong and wear-resistant cabinet, mesh cover with cotton attachment process and professional sockets and plugs with good electrical characteristics.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
+  "description": "The itc KF-YS18 is a subwoofer from itc's Subwoofers range, built for low-frequency extension for line arrays and full-range systems in live, club and installation work.\n\nKey figures: rated power 800W; peak power 3200W; frequency range 42.5Hz-300Hz. Highlights include one 18-inch subwoofer unit, strong and wear-resistant cabinet and mesh cover with cotton attachment process.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
   "keyFeatures": [
    {
     "title": "One 18-inch subwoofer unit",
@@ -10185,7 +10185,7 @@ export const ITC: Product[] = [
    "/images/itc-catalog/itc-kf-ys218-g3.webp"
   ],
   "imageFallback": "#0B1E3D",
-  "description": "The itc KF-YS218 is a professional Subwoofer Speaker from itc's Subwoofers range, built for low-frequency extension for line arrays and full-range systems in live, club and installation work.\n\nKey figures: power 1600W; frequency range 33Hz-200KHz; maximum spl(rated/peak) 131dB/137dB. Highlights include two 18-inch woofers, strong and wear-resistant cabinet, mesh cover with cotton attachment process and professional sockets and plugs with good electrical characteristics.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
+  "description": "The itc KF-YS218 is a professional Subwoofer Speaker from itc's Subwoofers range, built for low-frequency extension for line arrays and full-range systems in live, club and installation work.\n\nKey figures: power 1600W; frequency range 33Hz-200KHz; maximum spl(rated/peak) 131dB/137dB. Highlights include two 18-inch woofers, strong and wear-resistant cabinet and mesh cover with cotton attachment process.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
   "keyFeatures": [
    {
     "title": "Two 18-inch woofers",
@@ -10423,7 +10423,7 @@ export const ITC: Product[] = [
    "/images/itc-catalog/itc-ks-14f.webp"
   ],
   "imageFallback": "#0B1E3D",
-  "description": "The itc KS-14F is a professional Three-frequency Coaxial Monitor speaker from itc's Stage Monitors range, built for speech and music reinforcement in conference rooms, banquet halls, theatres, KTV and multipurpose venues.\n\nKey figures: rated power 500W; peak power 2000W; frequency range 60Hz-20KHz. Highlights include one 14-inch coaxial woofer, one 100mm+65mm Italian neodymium magnetic coaxial compression driven mid-tweeter, high-quality birch wood with recise CNC machining and with hanging parts to realize stage sound monitoring.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
+  "description": "The itc KS-14F is a professional Three-frequency Coaxial Monitor speaker from itc's Stage Monitors range, built for speech and music reinforcement in conference rooms, banquet halls, theatres, KTV and multipurpose venues.\n\nKey figures: rated power 500W; peak power 2000W; frequency range 60Hz-20KHz. Highlights include one 14-inch coaxial woofer.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
   "keyFeatures": [
    {
     "title": "One 14-inch coaxial woofer",
@@ -10547,7 +10547,7 @@ export const ITC: Product[] = [
    "/images/itc-catalog/itc-ks-15a.webp"
   ],
   "imageFallback": "#0B1E3D",
-  "description": "The itc KS-15A is a professional Speaker from itc's Multifunction Loudspeakers range, built for speech and music reinforcement in conference rooms, banquet halls, theatres, KTV and multipurpose venues.\n\nKey figures: rated power 500W; peak power 2000W; frequency range（-10db） 45HZ-20KHZ. Highlights include one 14-inch coaxial woofer, one 100mm+65mm Italian neodymium magnetic coaxial compression driven mid-tweeter, high-quality birch wood with recise CNC machining and with hanging parts to realize stage sound monitoring.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
+  "description": "The itc KS-15A is a professional Speaker from itc's Multifunction Loudspeakers range, built for speech and music reinforcement in conference rooms, banquet halls, theatres, KTV and multipurpose venues.\n\nKey figures: rated power 500W; peak power 2000W; frequency range（-10db） 45HZ-20KHZ. Highlights include one 14-inch coaxial woofer.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
   "keyFeatures": [
    {
     "title": "One 14-inch coaxial woofer",
@@ -10676,7 +10676,7 @@ export const ITC: Product[] = [
    "/images/itc-catalog/itc-ks-206a.webp"
   ],
   "imageFallback": "#0B1E3D",
-  "description": "The itc KS-206A is a professional Column Speaker from itc's Multifunction Loudspeakers range, built for speech and music reinforcement in conference rooms, banquet halls, theatres, KTV and multipurpose venues.\n\nKey figures: rated power 300W; peak power 1200W; frequency range 90HZ-20KHZ. Highlights include two 6.5-inch specially customized high-efficiency speaker units, one 1-inch tweeter unit, carefully debugged crossover network and multi-angle adjustment of sound field coverage.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
+  "description": "The itc KS-206A is a professional Column Speaker from itc's Multifunction Loudspeakers range, built for speech and music reinforcement in conference rooms, banquet halls, theatres, KTV and multipurpose venues.\n\nKey figures: rated power 300W; peak power 1200W; frequency range 90HZ-20KHZ. Highlights include one 1-inch tweeter unit, carefully debugged crossover network and multi-angle adjustment of sound field coverage.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
   "keyFeatures": [
    {
     "title": "Two 6.5-inch specially customized high-efficiency speaker units",
@@ -10921,7 +10921,7 @@ export const ITC: Product[] = [
    "/images/itc-catalog/itc-ks-s218-g2.webp"
   ],
   "imageFallback": "#0B1E3D",
-  "description": "The itc KS-S218 is a linear Array Subwoofer from itc's Line Array Speakers range, built for flown or ground-stacked main systems in concert halls, stadiums, outdoor shows and large auditoriums.\n\nKey figures: rated power 1600W; peak power 6400W; frequency range 28Hz-150Hz. Highlights include two 18-inch ferrite subwoofers, strong and wear-resistant cabinet, push-pull six-order band-pass structure and used with linear array full-range speaker to form a linear array.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
+  "description": "The itc KS-S218 is a linear Array Subwoofer from itc's Line Array Speakers range, built for flown or ground-stacked main systems in concert halls, stadiums, outdoor shows and large auditoriums.\n\nKey figures: rated power 1600W; peak power 6400W; frequency range 28Hz-150Hz. Highlights include two 18-inch ferrite subwoofers, strong and wear-resistant cabinet and push-pull six-order band-pass structure.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
   "keyFeatures": [
    {
     "title": "Two 18-inch ferrite subwoofers",
@@ -11037,7 +11037,7 @@ export const ITC: Product[] = [
    "/images/itc-catalog/itc-kt-d12-g4.webp"
   ],
   "imageFallback": "#0B1E3D",
-  "description": "The itc KT-D12 is a professional Full-range Speaker from itc's Multifunction Loudspeakers range, built for speech and music reinforcement in conference rooms, banquet halls, theatres, KTV and multipurpose venues.\n\nKey figures: rated power 500W; peak power 2000W; frequency range 45Hz-20KHz. Highlights include one 12-inch woofer and one 1.75-inch compression high-frequency driver, strong and wear-resistant cabinet, high-precision two-frequency design and technology to realize excellent vocal.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
+  "description": "The itc KT-D12 is a professional Full-range Speaker from itc's Multifunction Loudspeakers range, built for speech and music reinforcement in conference rooms, banquet halls, theatres, KTV and multipurpose venues.\n\nKey figures: rated power 500W; peak power 2000W; frequency range 45Hz-20KHz. Highlights include strong and wear-resistant cabinet, high-precision two-frequency design and technology to realize excellent vocal.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
   "keyFeatures": [
    {
     "title": "One 12-inch woofer and one 1.75-inch compression high-frequency driver",
@@ -11160,7 +11160,7 @@ export const ITC: Product[] = [
    "/images/itc-catalog/itc-kt-ds18-g4.webp"
   ],
   "imageFallback": "#0B1E3D",
-  "description": "The itc KT-DS18 is a professional Subwoofer from itc's Subwoofers range, built for low-frequency extension for line arrays and full-range systems in live, club and installation work.\n\nKey figures: rated power 800W; peak power 3200W; frequency range 3 5Hz-200Hz. Highlights include one 18-inch subwoofer, strong and wear-resistant cabinet and unique construction, relevant ratios, and superior damping characteristics.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
+  "description": "The itc KT-DS18 is a professional Subwoofer from itc's Subwoofers range, built for low-frequency extension for line arrays and full-range systems in live, club and installation work.\n\nKey figures: rated power 800W; peak power 3200W; frequency range 3 5Hz-200Hz. Highlights include one 18-inch subwoofer and strong and wear-resistant cabinet.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
   "keyFeatures": [
    {
     "title": "One 18-inch subwoofer",
@@ -11263,7 +11263,7 @@ export const ITC: Product[] = [
    "/images/itc-catalog/itc-kt-ds218-g3.webp"
   ],
   "imageFallback": "#0B1E3D",
-  "description": "The itc KT-DS218 is a professional Subwoofer from itc's Subwoofers range, built for low-frequency extension for line arrays and full-range systems in live, club and installation work.\n\nKey figures: rated power 1600W; peak power 6400W; frequency range 35Hz-200Hz. Highlights include one 18-inch subwoofer, strong and wear-resistant cabinet and unique construction, relevant ratios, and superior damping characteristics.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
+  "description": "The itc KT-DS218 is a professional Subwoofer from itc's Subwoofers range, built for low-frequency extension for line arrays and full-range systems in live, club and installation work.\n\nKey figures: rated power 1600W; peak power 6400W; frequency range 35Hz-200Hz. Highlights include one 18-inch subwoofer and strong and wear-resistant cabinet.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
   "keyFeatures": [
    {
     "title": "One 18-inch subwoofer",
@@ -11364,7 +11364,7 @@ export const ITC: Product[] = [
    "/images/itc-catalog/itc-kt-h12.webp"
   ],
   "imageFallback": "#0B1E3D",
-  "description": "The itc KT-H12 is a professional Full Range Speaker from itc's Multifunction Loudspeakers range, built for speech and music reinforcement in conference rooms, banquet halls, theatres, KTV and multipurpose venues.\n\nKey figures: rated power 500W; peak power 2000W; frequency range 4 5Hz-20KHz. Highlights include one 12-inch woofer, one 1.75-inch neodymium magnetic compression driven tweeter, strong and wear-resistant cabinet and mesh cover with cotton attachment process.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
+  "description": "The itc KT-H12 is a professional Full Range Speaker from itc's Multifunction Loudspeakers range, built for speech and music reinforcement in conference rooms, banquet halls, theatres, KTV and multipurpose venues.\n\nKey figures: rated power 500W; peak power 2000W; frequency range 4 5Hz-20KHz. Highlights include one 12-inch woofer, strong and wear-resistant cabinet and mesh cover with cotton attachment process.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
   "keyFeatures": [
    {
     "title": "One 12-inch woofer",
@@ -12165,7 +12165,7 @@ export const ITC: Product[] = [
    "/images/itc-catalog/itc-ts-628s.webp"
   ],
   "imageFallback": "#0B1E3D",
-  "description": "The itc TS-628S is a professional Speaker from itc's Subwoofers range, built for low-frequency extension for line arrays and full-range systems in live, club and installation work.\n\nKey figures: rated power 1200W; peak power 4800W; frequency response 40Hz-400Hz. Highlights include two 18-inch ferrite subwoofer units, strong and wear-resistant cabinet, inverted design and professional sockets and plugs with good electrical characteristics.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
+  "description": "The itc TS-628S is a professional Speaker from itc's Subwoofers range, built for low-frequency extension for line arrays and full-range systems in live, club and installation work.\n\nKey figures: rated power 1200W; peak power 4800W; frequency response 40Hz-400Hz. Highlights include two 18-inch ferrite subwoofer units, strong and wear-resistant cabinet and inverted design.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
   "keyFeatures": [
    {
     "title": "Two 18-inch ferrite subwoofer units",
@@ -12270,7 +12270,7 @@ export const ITC: Product[] = [
    "/images/itc-catalog/itc-ts-628skw.webp"
   ],
   "imageFallback": "#0B1E3D",
-  "description": "The itc TS-628SKW is a professional Speaker from itc's Subwoofers range, built for low-frequency extension for line arrays and full-range systems in live, club and installation work.\n\nKey figures: rated power 1200W; peak power 4800W; frequency response 40Hz-400Hz. Highlights include two 18-inch ferrite subwoofer units, strong and wear-resistant cabinet, inverted design and professional sockets and plugs with good electrical characteristics.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
+  "description": "The itc TS-628SKW is a professional Speaker from itc's Subwoofers range, built for low-frequency extension for line arrays and full-range systems in live, club and installation work.\n\nKey figures: rated power 1200W; peak power 4800W; frequency response 40Hz-400Hz. Highlights include two 18-inch ferrite subwoofer units, strong and wear-resistant cabinet and inverted design.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
   "keyFeatures": [
    {
     "title": "Two 18-inch ferrite subwoofer units",
@@ -12380,7 +12380,7 @@ export const ITC: Product[] = [
    "/images/itc-catalog/itc-ts-605t.webp"
   ],
   "imageFallback": "#0B1E3D",
-  "description": "The itc TS-605T is a wall-mounted Speaker from itc's Conference & Column Loudspeakers range, built for speech and music reinforcement in conference rooms, banquet halls, theatres, KTV and multipurpose venues.\n\nKey figures: rated power 100W; peak power 400W; frequency response 80Hz-20kHz. Highlights include one 5.25-inch mid-woofer unit and one 25mm silk film tweeter unit, made of the integral molding of polystyrene material and multi-angle adjustable mounting bracket.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
+  "description": "The itc TS-605T is a wall-mounted Speaker from itc's Conference & Column Loudspeakers range, built for speech and music reinforcement in conference rooms, banquet halls, theatres, KTV and multipurpose venues.\n\nKey figures: rated power 100W; peak power 400W; frequency response 80Hz-20kHz. Highlights include multi-angle adjustable mounting bracket.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
   "keyFeatures": [
    {
     "title": "One 5.25-inch mid-woofer unit and one 25mm silk film tweeter unit",
@@ -12482,7 +12482,7 @@ export const ITC: Product[] = [
    "/images/itc-catalog/itc-ts-605tb.webp"
   ],
   "imageFallback": "#0B1E3D",
-  "description": "The itc TS-605TB is a wall-mounted Speaker from itc's Conference & Column Loudspeakers range, built for speech and music reinforcement in conference rooms, banquet halls, theatres, KTV and multipurpose venues.\n\nKey figures: rated power 100W; peak power 400W; frequency response 80Hz-20kHz. Highlights include one 5.25-inch mid-woofer unit and one 25mm silk film tweeter unit, made of the integral molding of polystyrene material and multi-angle adjustable mounting bracket.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
+  "description": "The itc TS-605TB is a wall-mounted Speaker from itc's Conference & Column Loudspeakers range, built for speech and music reinforcement in conference rooms, banquet halls, theatres, KTV and multipurpose venues.\n\nKey figures: rated power 100W; peak power 400W; frequency response 80Hz-20kHz. Highlights include multi-angle adjustable mounting bracket.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
   "keyFeatures": [
    {
     "title": "One 5.25-inch mid-woofer unit and one 25mm silk film tweeter unit",
@@ -12681,7 +12681,7 @@ export const ITC: Product[] = [
    "/images/itc-catalog/itc-ts-605y.webp"
   ],
   "imageFallback": "#0B1E3D",
-  "description": "The itc TS-605Y is a wall-mounted Speaker from itc's Conference & Column Loudspeakers range, built for speech and music reinforcement in conference rooms, banquet halls, theatres, KTV and multipurpose venues.\n\nKey figures: rated power 100W; peak power 400W; frequency response 80Hz-20kHz. Highlights include one 5.25-inch mid-woofer unit and one 25mm silk film tweeter unit, made of the integral molding of polystyrene material, multi-angle adjustable mounting bracket and 5-level switch for constant voltage volume adjustment.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
+  "description": "The itc TS-605Y is a wall-mounted Speaker from itc's Conference & Column Loudspeakers range, built for speech and music reinforcement in conference rooms, banquet halls, theatres, KTV and multipurpose venues.\n\nKey figures: rated power 100W; peak power 400W; frequency response 80Hz-20kHz. Highlights include multi-angle adjustable mounting bracket.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
   "keyFeatures": [
    {
     "title": "One 5.25-inch mid-woofer unit and one 25mm silk film tweeter unit",
@@ -12791,7 +12791,7 @@ export const ITC: Product[] = [
    "/images/itc-catalog/itc-ts-605yb.webp"
   ],
   "imageFallback": "#0B1E3D",
-  "description": "The itc TS-605YB is a wall-mounted Speaker from itc's Conference & Column Loudspeakers range, built for speech and music reinforcement in conference rooms, banquet halls, theatres, KTV and multipurpose venues.\n\nKey figures: rated power 100W; peak power 400W; frequency response 80Hz-20kHz. Highlights include one 5.25-inch mid-woofer unit and one 25mm silk film tweeter unit, made of the integral molding of polystyrene material, multi-angle adjustable mounting bracket and 5-level switch for constant voltage volume adjustment.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
+  "description": "The itc TS-605YB is a wall-mounted Speaker from itc's Conference & Column Loudspeakers range, built for speech and music reinforcement in conference rooms, banquet halls, theatres, KTV and multipurpose venues.\n\nKey figures: rated power 100W; peak power 400W; frequency response 80Hz-20kHz. Highlights include multi-angle adjustable mounting bracket.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
   "keyFeatures": [
    {
     "title": "One 5.25-inch mid-woofer unit and one 25mm silk film tweeter unit",
@@ -13144,7 +13144,7 @@ export const ITC: Product[] = [
    "/images/itc-catalog/itc-ts-612tw.webp"
   ],
   "imageFallback": "#0B1E3D",
-  "description": "The itc TS-612TW is a professional Speaker from itc's Stage Monitors range, built for speech and music reinforcement in conference rooms, banquet halls, theatres, KTV and multipurpose venues.\n\nKey figures: rated power 400W; peak power 1600W; frequency response 50Hz-20KHz. Highlights include one mid-woofer, one annular polyethylene diaphragm compressed tweeter, strong and wear-resistant cabinet and frequency divider in precise design.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
+  "description": "The itc TS-612TW is a professional Speaker from itc's Stage Monitors range, built for speech and music reinforcement in conference rooms, banquet halls, theatres, KTV and multipurpose venues.\n\nKey figures: rated power 400W; peak power 1600W; frequency response 50Hz-20KHz. Highlights include one mid-woofer, strong and wear-resistant cabinet and frequency divider in precise design.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
   "keyFeatures": [
    {
     "title": "One mid-woofer",
@@ -13404,7 +13404,7 @@ export const ITC: Product[] = [
    "/images/itc-catalog/itc-la-2100-g2.webp"
   ],
   "imageFallback": "#0B1E3D",
-  "description": "The itc LA-2100 family is a linear Array Speaker from itc's Line Array Speakers range, built for flown or ground-stacked main systems in concert halls, stadiums, outdoor shows and large auditoriums. It is offered in 2 versions — LA-2100, LA-1180 — so one design language covers rooms of different sizes.\n\nKey figures: rated power 600W (AES) / 800W (AES); peak power 2400W / 3200W; frequency range 65Hz~20KHz / 40Hz~400Hz. Highlights include two quality 10-inch woofer drivers and one 75mm tweeter driver, frequency divider?in precise design, hoisting linear array design and strong and durable cabinet.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
+  "description": "The itc LA-2100 family is a linear Array Speaker from itc's Line Array Speakers range, built for flown or ground-stacked main systems in concert halls, stadiums, outdoor shows and large auditoriums. It is offered in 2 versions — LA-2100, LA-1180 — so one design language covers rooms of different sizes.\n\nKey figures: rated power 600W (AES) / 800W (AES); peak power 2400W / 3200W; frequency range 65Hz~20KHz / 40Hz~400Hz. Highlights include frequency divider?in precise design, hoisting linear array design and strong and durable cabinet.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
   "keyFeatures": [
    {
     "title": "Two quality 10-inch woofer drivers and one 75mm tweeter driver",
@@ -13534,7 +13534,7 @@ export const ITC: Product[] = [
    "/images/itc-catalog/itc-la-2100k-g2.webp"
   ],
   "imageFallback": "#0B1E3D",
-  "description": "The itc LA-2100K family is a linear Array Speaker from itc's Line Array Speakers range, built for flown or ground-stacked main systems in concert halls, stadiums, outdoor shows and large auditoriums. It is offered in 2 versions — LA-2100K, LA-1180K — so one design language covers rooms of different sizes.\n\nKey figures: rated power 700W(AES) / 800W(AES); peak power 2800W / 3200W; frequency range 60Hz-20KHz / 40Hz-400Hz. Highlights include linear array speaker composition, frequency divider in recise design, hoisting linear array design and professional hanger combination for convenient assembly.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
+  "description": "The itc LA-2100K family is a linear Array Speaker from itc's Line Array Speakers range, built for flown or ground-stacked main systems in concert halls, stadiums, outdoor shows and large auditoriums. It is offered in 2 versions — LA-2100K, LA-1180K — so one design language covers rooms of different sizes.\n\nKey figures: rated power 700W(AES) / 800W(AES); peak power 2800W / 3200W; frequency range 60Hz-20KHz / 40Hz-400Hz. Highlights include linear array speaker composition, frequency divider in recise design and hoisting linear array design.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
   "keyFeatures": [
    {
     "title": "Linear array speaker composition",
@@ -13660,7 +13660,7 @@ export const ITC: Product[] = [
    "/images/itc-catalog/itc-la-2100kw-g2.webp"
   ],
   "imageFallback": "#0B1E3D",
-  "description": "The itc LA-2100KW family is a linear Array Speaker from itc's Line Array Speakers range, built for flown or ground-stacked main systems in concert halls, stadiums, outdoor shows and large auditoriums. It is offered in 2 versions — LA-2100K, LA-1180K — so one design language covers rooms of different sizes.\n\nKey figures: rated power 700W(AES) / 800W(AES); peak power 2800W / 3200W; frequency range 60Hz-20KHz / 40Hz-400Hz. Highlights include linear array speaker composition, frequency divider in recise design, hoisting linear array design and professional hanger combination for convenient assembly.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
+  "description": "The itc LA-2100KW family is a linear Array Speaker from itc's Line Array Speakers range, built for flown or ground-stacked main systems in concert halls, stadiums, outdoor shows and large auditoriums. It is offered in 2 versions — LA-2100K, LA-1180K — so one design language covers rooms of different sizes.\n\nKey figures: rated power 700W(AES) / 800W(AES); peak power 2800W / 3200W; frequency range 60Hz-20KHz / 40Hz-400Hz. Highlights include linear array speaker composition, frequency divider in recise design and hoisting linear array design.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
   "keyFeatures": [
    {
     "title": "Linear array speaker composition",
@@ -14043,7 +14043,7 @@ export const ITC: Product[] = [
    "/images/itc-catalog/itc-la-2800-g2.webp"
   ],
   "imageFallback": "#0B1E3D",
-  "description": "The itc LA-2800 family is a linear Array Speaker from itc's Line Array Speakers range, built for flown or ground-stacked main systems in concert halls, stadiums, outdoor shows and large auditoriums. It is offered in 2 versions — LA-2800, LA-1800 — so one design language covers rooms of different sizes.\n\nKey figures: rated power 500W(AES) / 600W(AES); peak power 2000W / 2400W; frequency range 70Hz-20kHz / 40Hz-400Hz. Highlights include two 8-inch woofers and one 75mm tweeter driver and special aluminum alloy hanger combination for convenient assembly.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
+  "description": "The itc LA-2800 family is a linear Array Speaker from itc's Line Array Speakers range, built for flown or ground-stacked main systems in concert halls, stadiums, outdoor shows and large auditoriums. It is offered in 2 versions — LA-2800, LA-1800 — so one design language covers rooms of different sizes.\n\nKey figures: rated power 500W(AES) / 600W(AES); peak power 2000W / 2400W; frequency range 70Hz-20kHz / 40Hz-400Hz. Highlights include two 8-inch woofers and one 75mm tweeter driver.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
   "keyFeatures": [
    {
     "title": "Two 8-inch woofers and one 75mm tweeter driver",
@@ -14161,7 +14161,7 @@ export const ITC: Product[] = [
    "/images/itc-catalog/itc-la-2800k-g2.webp"
   ],
   "imageFallback": "#0B1E3D",
-  "description": "The itc LA-2800K family is a linear Array Speaker from itc's Line Array Speakers range, built for flown or ground-stacked main systems in concert halls, stadiums, outdoor shows and large auditoriums. It is offered in 2 versions — LA-2800K, LA-1800K — so one design language covers rooms of different sizes.\n\nKey figures: rated power 600W (AES) / 800W (AES); peak power 2400W; frequency range 65Hz-20KHz / 40Hz-400Hz. Highlights include linear array speaker composition, frequency divider in precise design, hoisting linear array design and professional hanger combination for convenient assembly.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
+  "description": "The itc LA-2800K family is a linear Array Speaker from itc's Line Array Speakers range, built for flown or ground-stacked main systems in concert halls, stadiums, outdoor shows and large auditoriums. It is offered in 2 versions — LA-2800K, LA-1800K — so one design language covers rooms of different sizes.\n\nKey figures: rated power 600W (AES) / 800W (AES); peak power 2400W; frequency range 65Hz-20KHz / 40Hz-400Hz. Highlights include linear array speaker composition, frequency divider in precise design and hoisting linear array design.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
   "keyFeatures": [
    {
     "title": "Linear array speaker composition",
@@ -14416,7 +14416,7 @@ export const ITC: Product[] = [
    "/images/itc-catalog/itc-tk-l210.webp"
   ],
   "imageFallback": "#0B1E3D",
-  "description": "The itc TK-L210 is a linear Array Speaker from itc's Line Array Speakers range, built for flown or ground-stacked main systems in concert halls, stadiums, outdoor shows and large auditoriums.\n\nKey figures: rated power Woofer 500W, tweeter 80W; peak power Woofer 2000W, tweeter 320W; frequency range 60Hz-20kHz. Highlights include two 10\" woofers and one 3\" tweeter driver, specially designed horn tweeter, distortion-free wavefront transmission technology and strong and wear-resistant cabinet.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
+  "description": "The itc TK-L210 is a linear Array Speaker from itc's Line Array Speakers range, built for flown or ground-stacked main systems in concert halls, stadiums, outdoor shows and large auditoriums.\n\nKey figures: rated power Woofer 500W, tweeter 80W; peak power Woofer 2000W, tweeter 320W; frequency range 60Hz-20kHz. Highlights include two 10\" woofers and one 3\" tweeter driver, specially designed horn tweeter and strong and wear-resistant cabinet.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
   "keyFeatures": [
    {
     "title": "Two 10\" woofers and one 3\" tweeter driver",
@@ -14549,7 +14549,7 @@ export const ITC: Product[] = [
    "/images/itc-catalog/itc-tk-s180.webp"
   ],
   "imageFallback": "#0B1E3D",
-  "description": "The itc TK-S180 is a linear Array Speaker from itc's Line Array Speakers range, built for flown or ground-stacked main systems in concert halls, stadiums, outdoor shows and large auditoriums.\n\nKey figures: rated power 800W; peak power 3200W; frequency range 35Hz-250Hz. Highlights include one 18\" woofer with high efficiency and high sensitivity, compressed acoustic design to enable farther sound transmission, strong and wear-resistant cabinet and professional sockets and plugs with good electrical characteristics.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
+  "description": "The itc TK-S180 is a linear Array Speaker from itc's Line Array Speakers range, built for flown or ground-stacked main systems in concert halls, stadiums, outdoor shows and large auditoriums.\n\nKey figures: rated power 800W; peak power 3200W; frequency range 35Hz-250Hz. Highlights include strong and wear-resistant cabinet.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
   "keyFeatures": [
    {
     "title": "One 18\" woofer with high efficiency and high sensitivity",
@@ -14791,7 +14791,7 @@ export const ITC: Product[] = [
    "/images/itc-catalog/itc-tp-12.webp"
   ],
   "imageFallback": "#0B1E3D",
-  "description": "The itc TP-12 is a professional Speaker from itc's Outdoor Loudspeakers range, built for speech and music reinforcement in conference rooms, banquet halls, theatres, KTV and multipurpose venues.\n\nKey figures: rated power 300W; peak power 1200W; frequency response 55Hz-20KHz. Highlights include one 12-inch mid-woofer, one 1.4-icnh annular polyethylene diaphragm compression tweeter, integral ABS plastic molding cabinet with dust-proof iron net cover and multiple screw hoisting holes for various installation methods.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
+  "description": "The itc TP-12 is a professional Speaker from itc's Outdoor Loudspeakers range, built for speech and music reinforcement in conference rooms, banquet halls, theatres, KTV and multipurpose venues.\n\nKey figures: rated power 300W; peak power 1200W; frequency response 55Hz-20KHz. Highlights include one 12-inch mid-woofer.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
   "keyFeatures": [
    {
     "title": "One 12-inch mid-woofer",
@@ -14907,7 +14907,7 @@ export const ITC: Product[] = [
    "/images/itc-catalog/itc-tp-15.webp"
   ],
   "imageFallback": "#0B1E3D",
-  "description": "The itc TP-15 is a professional Speaker from itc's Outdoor Loudspeakers range, built for speech and music reinforcement in conference rooms, banquet halls, theatres, KTV and multipurpose venues.\n\nKey figures: rated power 400W; peak power 1600W; frequency response 50Hz-20KHz. Highlights include one 15-inch mid-woofer, one 1.7-icnh annular polyethylene diaphragm compression tweeter, integral ABS plastic molding cabinet with dust-proof iron net cover and multiple screw hoisting holes for various installation methods.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
+  "description": "The itc TP-15 is a professional Speaker from itc's Outdoor Loudspeakers range, built for speech and music reinforcement in conference rooms, banquet halls, theatres, KTV and multipurpose venues.\n\nKey figures: rated power 400W; peak power 1600W; frequency response 50Hz-20KHz. Highlights include one 15-inch mid-woofer.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
   "keyFeatures": [
    {
     "title": "One 15-inch mid-woofer",
@@ -15023,7 +15023,7 @@ export const ITC: Product[] = [
    "/images/itc-catalog/itc-ts-3h.webp"
   ],
   "imageFallback": "#0B1E3D",
-  "description": "The itc TS-3H is a professional Speaker from itc's Stadium Horn Speakers range, built for speech and music reinforcement in conference rooms, banquet halls, theatres, KTV and multipurpose venues.\n\nKey figures: power 400W; frequency response 100Hz~20KHz; maximum spl(±3db) 124dB. Highlights include plastic injection molding cabinet, integrated stamping molding rigid mesh cover, one high-efficient 12-inch neodymium magnet mid-woofer and one high-quality 44-pin neodymium magnetic tweeter driver.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
+  "description": "The itc TS-3H is a professional Speaker from itc's Stadium Horn Speakers range, built for speech and music reinforcement in conference rooms, banquet halls, theatres, KTV and multipurpose venues.\n\nKey figures: power 400W; frequency response 100Hz~20KHz; maximum spl(±3db) 124dB. Highlights include plastic injection molding cabinet and integrated stamping molding rigid mesh cover.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
   "keyFeatures": [
    {
     "title": "Plastic injection molding cabinet",
@@ -15524,7 +15524,7 @@ export const ITC: Product[] = [
    "/images/itc-catalog/itc-ts-3400mix.webp"
   ],
   "imageFallback": "#0B1E3D",
-  "description": "The itc TS-3400MIX is a audio Processor from itc's Audio Peripherals range, built for system integration — processing, feedback control, connectivity and wireless microphone distribution.\n\nKey figures: main power supply 100-240AC/50-60Hz; static power consumption 3.3W; frequency response 80Hz ~ 16kHz. Highlights include one 10\" mid-woofer and one 1.4\" compressed tweeter, precise frequency divider, built-in DANTE function of dual network ports and high-quality and long-distance signal transmission.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
+  "description": "The itc TS-3400MIX is an audio Processor from itc's Audio Peripherals range, built for system integration — processing, feedback control, connectivity and wireless microphone distribution.\n\nKey figures: main power supply 100-240AC/50-60Hz; static power consumption 3.3W; frequency response 80Hz ~ 16kHz. Highlights include precise frequency divider and built-in DANTE function of dual network ports.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
   "keyFeatures": [
    {
     "title": "One 10\" mid-woofer and one 1.4\" compressed tweeter",
@@ -16318,7 +16318,7 @@ export const ITC: Product[] = [
    "/images/itc-catalog/itc-tm-10h.webp"
   ],
   "imageFallback": "#0B1E3D",
-  "description": "The itc TM-10H/TM-12H/TM-15H is a professional Speaker from itc's Multifunction Loudspeakers range, built for speech and music reinforcement in conference rooms, banquet halls, theatres, KTV and multipurpose venues.\n\nKey figures: rated power 500W; peak power 2000W; frequency response 40Hz-20kHz. Highlights include one woofer and one tweeter imported from Italy, strong and wear-resistant cabinet, multiple screw hoisting holes for various installation methods and four color options for the upper and lower covers.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
+  "description": "The itc TM-10H/TM-12H/TM-15H is a professional Speaker from itc's Multifunction Loudspeakers range, built for speech and music reinforcement in conference rooms, banquet halls, theatres, KTV and multipurpose venues.\n\nKey figures: rated power 500W; peak power 2000W; frequency response 40Hz-20kHz. Highlights include one woofer and one tweeter imported from Italy and strong and wear-resistant cabinet.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
   "keyFeatures": [
    {
     "title": "One woofer and one tweeter imported from Italy",
@@ -16434,7 +16434,7 @@ export const ITC: Product[] = [
    "/images/itc-catalog/itc-ts-608.webp"
   ],
   "imageFallback": "#0B1E3D",
-  "description": "The itc TS-608 family is a professional Speaker from itc's Conference & Column Loudspeakers range, built for speech and music reinforcement in conference rooms, banquet halls, theatres, KTV and multipurpose venues. It is offered in 2 versions — TS-608, TS-610 — so one design language covers rooms of different sizes.\n\nKey figures: rated power 200W / 300W; rated power 350W / 450W; peak power 800W / 1200W. Highlights include one mid-woofer and one circular polyethylene diaphragm compressed tweeter, strong and wear-resistant cabinet, frequency divider in precise design and multiple screw hoisting holes for various installation methods.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
+  "description": "The itc TS-608 family is a professional Speaker from itc's Conference & Column Loudspeakers range, built for speech and music reinforcement in conference rooms, banquet halls, theatres, KTV and multipurpose venues. It is offered in 2 versions — TS-608, TS-610 — so one design language covers rooms of different sizes.\n\nKey figures: rated power 200W / 300W; rated power 350W / 450W; peak power 800W / 1200W. Highlights include strong and wear-resistant cabinet and frequency divider in precise design.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
   "keyFeatures": [
    {
     "title": "One mid-woofer and one circular polyethylene diaphragm compressed tweeter",
@@ -16610,7 +16610,7 @@ export const ITC: Product[] = [
    "/images/itc-catalog/itc-ts-606h.webp"
   ],
   "imageFallback": "#0B1E3D",
-  "description": "The itc TS-606H is a professional Speaker from itc's Conference & Column Loudspeakers range, built for speech and music reinforcement in conference rooms, banquet halls, theatres, KTV and multipurpose venues.\n\nKey figures: rated power 120W; peak power 480W; frequency response 70Hz-20KHz. Highlights include one 6.5/8 inch mid-woofer unit and two 3\" cone tweeter units, strong and wear-resistant cabinet and frequency divider in precise design.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
+  "description": "The itc TS-606H is a professional Speaker from itc's Conference & Column Loudspeakers range, built for speech and music reinforcement in conference rooms, banquet halls, theatres, KTV and multipurpose venues.\n\nKey figures: rated power 120W; peak power 480W; frequency response 70Hz-20KHz. Highlights include strong and wear-resistant cabinet and frequency divider in precise design.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
   "keyFeatures": [
    {
     "title": "One 6.5/8 inch mid-woofer unit and two 3\" cone tweeter units",
@@ -16722,7 +16722,7 @@ export const ITC: Product[] = [
    "/images/itc-catalog/itc-ts-606hw.webp"
   ],
   "imageFallback": "#0B1E3D",
-  "description": "The itc TS-606HW is a professional Speaker from itc's Conference & Column Loudspeakers range, built for speech and music reinforcement in conference rooms, banquet halls, theatres, KTV and multipurpose venues.\n\nKey figures: rated power 120W; peak power 480W; frequency response 70Hz-20KHz. Highlights include one 6.5/8 inch mid-woofer unit and two 3\" cone tweeter units, strong and wear-resistant cabinet and frequency divider in precise design.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
+  "description": "The itc TS-606HW is a professional Speaker from itc's Conference & Column Loudspeakers range, built for speech and music reinforcement in conference rooms, banquet halls, theatres, KTV and multipurpose venues.\n\nKey figures: rated power 120W; peak power 480W; frequency response 70Hz-20KHz. Highlights include strong and wear-resistant cabinet and frequency divider in precise design.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
   "keyFeatures": [
    {
     "title": "One 6.5/8 inch mid-woofer unit and two 3\" cone tweeter units",
@@ -16951,7 +16951,7 @@ export const ITC: Product[] = [
    "/images/itc-catalog/itc-ts-608a.webp"
   ],
   "imageFallback": "#0B1E3D",
-  "description": "The itc TS-608A is a professional Speaker from itc's Conference & Column Loudspeakers range, built for speech and music reinforcement in conference rooms, banquet halls, theatres, KTV and multipurpose venues.\n\nKey figures: rated power 150W; peak power 600W; frequency response 65Hz~20KHz. Highlights include one 8-inch ferrite mid-woofer unit and two 3-inch cone tweeters, strong and wear-resistant cabinet, inverted trapezoidal structure and technology to achieve bright treble, rich bass, and clear vocals.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
+  "description": "The itc TS-608A is a professional Speaker from itc's Conference & Column Loudspeakers range, built for speech and music reinforcement in conference rooms, banquet halls, theatres, KTV and multipurpose venues.\n\nKey figures: rated power 150W; peak power 600W; frequency response 65Hz~20KHz. Highlights include strong and wear-resistant cabinet and inverted trapezoidal structure.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
   "keyFeatures": [
    {
     "title": "One 8-inch ferrite mid-woofer unit and two 3-inch cone tweeters",
@@ -17067,7 +17067,7 @@ export const ITC: Product[] = [
    "/images/itc-catalog/itc-ts-608aw.webp"
   ],
   "imageFallback": "#0B1E3D",
-  "description": "The itc TS-608AW is a professional Speaker from itc's Conference & Column Loudspeakers range, built for speech and music reinforcement in conference rooms, banquet halls, theatres, KTV and multipurpose venues.\n\nKey figures: rated power 150W; peak power 600W; frequency response 65Hz~20KHz. Highlights include one 8-inch mid-woofer unit and two 3-inch cone tweeters, strong and wear-resistant cabinet, frequency divider in precise design and multiple screw hoisting holes for various installation methods.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
+  "description": "The itc TS-608AW is a professional Speaker from itc's Conference & Column Loudspeakers range, built for speech and music reinforcement in conference rooms, banquet halls, theatres, KTV and multipurpose venues.\n\nKey figures: rated power 150W; peak power 600W; frequency response 65Hz~20KHz. Highlights include strong and wear-resistant cabinet and frequency divider in precise design.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
   "keyFeatures": [
    {
     "title": "One 8-inch mid-woofer unit and two 3-inch cone tweeters",
@@ -17188,7 +17188,7 @@ export const ITC: Product[] = [
    "/images/itc-catalog/itc-ts-608h.webp"
   ],
   "imageFallback": "#0B1E3D",
-  "description": "The itc TS-608H is a professional Speaker from itc's Conference & Column Loudspeakers range, built for speech and music reinforcement in conference rooms, banquet halls, theatres, KTV and multipurpose venues.\n\nKey figures: rated power 150W; peak power 600W; frequency response 70Hz-20KHz. Highlights include one 8-inch mid-woofer unit and two 3-inch cone tweeters, strong and wear-resistant cabinet and frequency divider in precise design.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
+  "description": "The itc TS-608H is a professional Speaker from itc's Conference & Column Loudspeakers range, built for speech and music reinforcement in conference rooms, banquet halls, theatres, KTV and multipurpose venues.\n\nKey figures: rated power 150W; peak power 600W; frequency response 70Hz-20KHz. Highlights include strong and wear-resistant cabinet and frequency divider in precise design.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
   "keyFeatures": [
    {
     "title": "One 8-inch mid-woofer unit and two 3-inch cone tweeters",
@@ -17300,7 +17300,7 @@ export const ITC: Product[] = [
    "/images/itc-catalog/itc-ts-610w.webp"
   ],
   "imageFallback": "#0B1E3D",
-  "description": "The itc TS-610W is a professional Speaker from itc's Conference & Column Loudspeakers range, built for speech and music reinforcement in conference rooms, banquet halls, theatres, KTV and multipurpose venues.\n\nKey figures: rated power 300W; peak power 1200W; frequency response 55Hz~20KHz. Highlights include one 10-inch mid-woofer, one 1.4-inch annular polyethylene diaphragm compressed tweeter, strong and wear-resistant cabinet and frequency divider in precise design.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
+  "description": "The itc TS-610W is a professional Speaker from itc's Conference & Column Loudspeakers range, built for speech and music reinforcement in conference rooms, banquet halls, theatres, KTV and multipurpose venues.\n\nKey figures: rated power 300W; peak power 1200W; frequency response 55Hz~20KHz. Highlights include one 10-inch mid-woofer, strong and wear-resistant cabinet and frequency divider in precise design.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
   "keyFeatures": [
    {
     "title": "One 10-inch mid-woofer",
@@ -17425,7 +17425,7 @@ export const ITC: Product[] = [
    "/images/itc-catalog/itc-ts-612w.webp"
   ],
   "imageFallback": "#0B1E3D",
-  "description": "The itc TS-612W is a professional Speaker from itc's Conference & Column Loudspeakers range, built for speech and music reinforcement in conference rooms, banquet halls, theatres, KTV and multipurpose venues.\n\nKey figures: rated power 350W; peak power 1400W; frequency response 50Hz~20KHz. Highlights include one 12-inch mid-woofer, one 1.7-inch annular polyethylene diaphragm compressed tweeter, strong and wear-resistant cabinet and frequency divider in precise design.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
+  "description": "The itc TS-612W is a professional Speaker from itc's Conference & Column Loudspeakers range, built for speech and music reinforcement in conference rooms, banquet halls, theatres, KTV and multipurpose venues.\n\nKey figures: rated power 350W; peak power 1400W; frequency response 50Hz~20KHz. Highlights include one 12-inch mid-woofer, strong and wear-resistant cabinet and frequency divider in precise design.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
   "keyFeatures": [
    {
     "title": "One 12-inch mid-woofer",
@@ -17550,7 +17550,7 @@ export const ITC: Product[] = [
    "/images/itc-catalog/itc-ts-615w.webp"
   ],
   "imageFallback": "#0B1E3D",
-  "description": "The itc TS-615W is a professional Speaker from itc's Conference & Column Loudspeakers range, built for speech and music reinforcement in conference rooms, banquet halls, theatres, KTV and multipurpose venues.\n\nKey figures: rated power 450W; peak power 1800; frequency response 45Hz~20KHz. Highlights include one 15-inch mid-woofer, one 1.73-inch annular polyethylene diaphragm compressed tweeter, strong and wear-resistant cabinet and frequency divider in precise design.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
+  "description": "The itc TS-615W is a professional Speaker from itc's Conference & Column Loudspeakers range, built for speech and music reinforcement in conference rooms, banquet halls, theatres, KTV and multipurpose venues.\n\nKey figures: rated power 450W; peak power 1800; frequency response 45Hz~20KHz. Highlights include one 15-inch mid-woofer, strong and wear-resistant cabinet and frequency divider in precise design.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
   "keyFeatures": [
    {
     "title": "One 15-inch mid-woofer",
@@ -17675,7 +17675,7 @@ export const ITC: Product[] = [
    "/images/itc-catalog/itc-ts-615h.webp"
   ],
   "imageFallback": "#0B1E3D",
-  "description": "The itc TS-615H is a professional Speaker from itc's Conference & Column Loudspeakers range, built for speech and music reinforcement in conference rooms, banquet halls, theatres, KTV and multipurpose venues.\n\nKey figures: rated power 650W; peak power 2600W; frequency response 45Hz~20KHz. Highlights include one 15-inch mid-woofer, one 1.73-inch annular polyethylene diaphragm compressed tweeter, strong and wear-resistant cabinet and frequency divider in precise design.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
+  "description": "The itc TS-615H is a professional Speaker from itc's Conference & Column Loudspeakers range, built for speech and music reinforcement in conference rooms, banquet halls, theatres, KTV and multipurpose venues.\n\nKey figures: rated power 650W; peak power 2600W; frequency response 45Hz~20KHz. Highlights include one 15-inch mid-woofer, strong and wear-resistant cabinet and frequency divider in precise design.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
   "keyFeatures": [
    {
     "title": "One 15-inch mid-woofer",
@@ -17798,7 +17798,7 @@ export const ITC: Product[] = [
    "/images/itc-catalog/itc-ts-710h-g4.webp"
   ],
   "imageFallback": "#0B1E3D",
-  "description": "The itc TS-710H is a professional Speaker from itc's Conference & Column Loudspeakers range, built for speech and music reinforcement in conference rooms, banquet halls, theatres, KTV and multipurpose venues.\n\nKey figures: rated power 300W; peak power 1200W; frequency response 45Hz-20KHz. Highlights include one 10-inch mid-woofer and one 1.7-inch compressed tweeter, strong and wear-resistant cabinet, frequency divider in precise design and multiple screw hoisting holes for various installation methods.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
+  "description": "The itc TS-710H is a professional Speaker from itc's Conference & Column Loudspeakers range, built for speech and music reinforcement in conference rooms, banquet halls, theatres, KTV and multipurpose venues.\n\nKey figures: rated power 300W; peak power 1200W; frequency response 45Hz-20KHz. Highlights include strong and wear-resistant cabinet and frequency divider in precise design.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
   "keyFeatures": [
    {
     "title": "One 10-inch mid-woofer and one 1.7-inch compressed tweeter",
@@ -17916,7 +17916,7 @@ export const ITC: Product[] = [
    "/images/itc-catalog/itc-ts-715h-g3.webp"
   ],
   "imageFallback": "#0B1E3D",
-  "description": "The itc TS-715H is a professional Speaker from itc's Conference & Column Loudspeakers range, built for speech and music reinforcement in conference rooms, banquet halls, theatres, KTV and multipurpose venues.\n\nKey figures: rated power 500W; peak power 2000W; frequency response 40Hz-20KHz. Highlights include one 15-inch mid-woofer and one 1.7-inch compressed tweeter, strong and wear-resistant cabinet, frequency divider in precise design and multiple screw hoisting holes for various installation methods.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
+  "description": "The itc TS-715H is a professional Speaker from itc's Conference & Column Loudspeakers range, built for speech and music reinforcement in conference rooms, banquet halls, theatres, KTV and multipurpose venues.\n\nKey figures: rated power 500W; peak power 2000W; frequency response 40Hz-20KHz. Highlights include strong and wear-resistant cabinet and frequency divider in precise design.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
   "keyFeatures": [
    {
     "title": "One 15-inch mid-woofer and one 1.7-inch compressed tweeter",
@@ -18246,7 +18246,7 @@ export const ITC: Product[] = [
    "/images/itc-catalog/itc-ts-404hk.webp"
   ],
   "imageFallback": "#0B1E3D",
-  "description": "The itc TS-404HK is a professional Column Speaker from itc's Conference & Column Loudspeakers range, built for speech and music reinforcement in conference rooms, banquet halls, theatres, KTV and multipurpose venues.\n\nKey figures: rated power 250W; peak power 1000W; frequency range 70HZ-20KHZ. Highlights include one 8-inch ferrite mid-woofer unit and two 3-inch cone tweeters, strong and wear-resistant cabinet, inverted trapezoidal structure and technology to achieve bright treble, rich bass, and clear vocals.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
+  "description": "The itc TS-404HK is a professional Column Speaker from itc's Conference & Column Loudspeakers range, built for speech and music reinforcement in conference rooms, banquet halls, theatres, KTV and multipurpose venues.\n\nKey figures: rated power 250W; peak power 1000W; frequency range 70HZ-20KHZ. Highlights include strong and wear-resistant cabinet and inverted trapezoidal structure.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
   "keyFeatures": [
    {
     "title": "One 8-inch ferrite mid-woofer unit and two 3-inch cone tweeters",
@@ -18484,7 +18484,7 @@ export const ITC: Product[] = [
    "/images/itc-catalog/itc-ts-603b.webp"
   ],
   "imageFallback": "#0B1E3D",
-  "description": "The itc TS-603B is a linear Full Range Speaker from itc's Conference & Column Loudspeakers range, built for speech and music reinforcement in conference rooms, banquet halls, theatres, KTV and multipurpose venues.\n\nKey figures: rated power 150W; peak power 600W; frequency response 80Hz-20kHz. Highlights include six 3-inch full frequency units, precise adjustment by professional acoustic engineers, spliced array design and strong and durable cabinet.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
+  "description": "The itc TS-603B is a linear Full Range Speaker from itc's Conference & Column Loudspeakers range, built for speech and music reinforcement in conference rooms, banquet halls, theatres, KTV and multipurpose venues.\n\nKey figures: rated power 150W; peak power 600W; frequency response 80Hz-20kHz. Highlights include six 3-inch full frequency units, spliced array design and strong and durable cabinet.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
   "keyFeatures": [
    {
     "title": "Six 3-inch full frequency units",
@@ -18834,7 +18834,7 @@ export const ITC: Product[] = [
    "/images/itc-catalog/itc-tc-21200.webp"
   ],
   "imageFallback": "#0B1E3D",
-  "description": "The itc TC-21200 is a professional Amplifier from itc's TC Series Amplifiers range, built for powering loudspeaker systems in halls, auditoriums, places of worship, banquet venues and live events.\n\nKey figures: power at Stereo 8Ω×2 (continuous · max) 2*1200W · 2*2000W; power at Stereo 4Ω×2 (continuous · max) 2*1900W · 2*3400W; power at Stereo 2Ω×2 (continuous · max) 2*3200W · 2*4800W. Highlights include dual-channel high-power professional digital power amplifier, excellent technologies ensure high working stability, multi-track audio loop technology and audio output adaptive load power control technology.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
+  "description": "The itc TC-21200 is a professional Amplifier from itc's TC Series Amplifiers range, built for powering loudspeaker systems in halls, auditoriums, places of worship, banquet venues and live events.\n\nKey figures: power at Stereo 8Ω×2 (continuous · max) 2*1200W · 2*2000W; power at Stereo 4Ω×2 (continuous · max) 2*1900W · 2*3400W; power at Stereo 2Ω×2 (continuous · max) 2*3200W · 2*4800W. Highlights include multi-track audio loop technology.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
   "keyFeatures": [
    {
     "title": "Dual-channel high-power professional digital power amplifier",
@@ -19013,7 +19013,7 @@ export const ITC: Product[] = [
    "/images/itc-catalog/itc-tc-23000.webp"
   ],
   "imageFallback": "#0B1E3D",
-  "description": "The itc TC-23000 is a professional Amplifier from itc's TC Series Amplifiers range, built for powering loudspeaker systems in halls, auditoriums, places of worship, banquet venues and live events.\n\nKey figures: input sensitivity 44dB, 41dB, 38dB, 35dB, optional; frequency response 20Hz-20KHz/±1dB; thd+n ≤0.01％. Highlights include dual-channel high-power professional digital power amplifier, excellent technologies ensure high working stability, multi-track audio loop technology and audio output adaptive load power control technology.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
+  "description": "The itc TC-23000 is a professional Amplifier from itc's TC Series Amplifiers range, built for powering loudspeaker systems in halls, auditoriums, places of worship, banquet venues and live events.\n\nKey figures: input sensitivity 44dB, 41dB, 38dB, 35dB, optional; frequency response 20Hz-20KHz/±1dB; thd+n ≤0.01％. Highlights include multi-track audio loop technology.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
   "keyFeatures": [
    {
     "title": "Dual-channel high-power professional digital power amplifier",
@@ -19162,7 +19162,7 @@ export const ITC: Product[] = [
    "/images/itc-catalog/itc-tc-4500.webp"
   ],
   "imageFallback": "#0B1E3D",
-  "description": "The itc TC-4500 is a professional Amplifier from itc's TC Series Amplifiers range, built for powering loudspeaker systems in halls, auditoriums, places of worship, banquet venues and live events.\n\nKey figures: output power Stereo 8Ω: 4*500W; 4Ω: 4*800W; 2Ω: 4*1300W; Bridge 16Ω: 2*1000W; 8Ω: 2*1600W; 4Ω: 2*2600W; frequency response 20-20KHz/±1dB; thd+n ≤0.01%. Highlights include more than 95% ultra-high efficiency and excellent stability, with signal, power, temperature voltage limit function, MONO/STEREO/BRIDGE mode for selection and temperature-controlled fan.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
+  "description": "The itc TC-4500 is a professional Amplifier from itc's TC Series Amplifiers range, built for powering loudspeaker systems in halls, auditoriums, places of worship, banquet venues and live events.\n\nKey figures: output power Stereo 8Ω: 4*500W; 4Ω: 4*800W; 2Ω: 4*1300W; Bridge 16Ω: 2*1000W; 8Ω: 2*1600W; 4Ω: 2*2600W; frequency response 20-20KHz/±1dB; thd+n ≤0.01%. Highlights include MONO/STEREO/BRIDGE mode for selection and temperature-controlled fan.\n\nAudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.",
   "keyFeatures": [
    {
     "title": "More than 95% ultra-high efficiency and excellent stability",

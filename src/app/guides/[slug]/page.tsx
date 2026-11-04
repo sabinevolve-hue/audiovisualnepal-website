@@ -22,7 +22,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     description: g.description,
     keywords: g.keywords,
     alternates: { canonical: `${BASE}/guides/${g.slug}` },
-    openGraph: { title: g.title, description: g.description, type: 'article', url: `${BASE}/guides/${g.slug}`, images: [{ url: `/images/itc-diagrams/itc-${g.diagramKey}-flow.png` }] },
+    openGraph: { title: g.title, description: g.description, type: 'article', url: `${BASE}/guides/${g.slug}`, images: [{ url: g.diagramKey ? `/images/itc-diagrams/itc-${g.diagramKey}-flow.png` : g.hero }] },
   }
 }
 
@@ -48,7 +48,7 @@ export default async function GuidePage({ params }: Props) {
   const others = SOUND_GUIDES.filter(x => x.slug !== g.slug)
   const ld = [
     { '@context': 'https://schema.org', '@type': 'Article', headline: g.title, description: g.description, datePublished: g.date, dateModified: g.date,
-      image: `${BASE}/images/itc-diagrams/itc-${g.diagramKey}-flow.png`, author: { '@type': 'Organization', name: 'AudioVisual Nepal' },
+      image: g.diagramKey ? `${BASE}/images/itc-diagrams/itc-${g.diagramKey}-flow.png` : `${BASE}${g.hero}`, author: { '@type': 'Organization', name: 'AudioVisual Nepal' },
       publisher: { '@type': 'Organization', name: 'AudioVisual Nepal', url: BASE }, mainEntityOfPage: `${BASE}/guides/${g.slug}`, keywords: g.keywords.join(', ') },
     { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: g.faq.map(f => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })) },
     { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [
@@ -66,7 +66,7 @@ export default async function GuidePage({ params }: Props) {
         </nav>
       </div>
       <article className="mx-auto max-w-3xl px-6 py-12">
-        <p className="text-sm font-semibold uppercase tracking-widest text-orange-600">Venue system design · {g.readMins} min read</p>
+        <p className="text-sm font-semibold uppercase tracking-widest text-orange-600">{g.diagramKey ? 'Venue system design' : 'Technology & buying guide'} · {g.readMins} min read</p>
         <h1 className="mt-3 text-3xl font-extrabold text-slate-900 sm:text-4xl" style={{ fontFamily: 'Manrope, sans-serif', letterSpacing: '-0.02em' }}>{g.title}</h1>
         <p className="mt-3 text-lg text-slate-500">{g.description}</p>
         <div className="relative mt-8 aspect-video overflow-hidden rounded-2xl bg-slate-900">
@@ -78,7 +78,7 @@ export default async function GuidePage({ params }: Props) {
           <p className="text-xs font-bold uppercase tracking-widest text-slate-500">On this page</p>
           <ol className="mt-2 list-decimal space-y-1 pl-5 text-sm text-slate-700">
             {g.sections.map((s, i) => <li key={i}><a href={`#s${i}`} className="hover:text-blue-600">{s.h}</a></li>)}
-            <li><a href="#design" className="hover:text-blue-600">System design drawings</a></li>
+            {g.diagramKey && <li><a href="#design" className="hover:text-blue-600">System design drawings</a></li>}
             <li><a href="#kit" className="hover:text-blue-600">Recommended equipment</a></li>
             <li><a href="#faq" className="hover:text-blue-600">FAQ</a></li>
           </ol>
@@ -92,14 +92,14 @@ export default async function GuidePage({ params }: Props) {
           </section>
         ))}
 
-        <section id="design" className="scroll-mt-24">
+        {g.diagramKey && <section id="design" className="scroll-mt-24">
           <h2 className="mt-12 text-2xl font-extrabold text-slate-900" style={{ fontFamily: 'Manrope, sans-serif' }}>System design drawings</h2>
           <p className="mt-3 text-slate-600">Indicative AudioVisual Nepal design for a typical {g.venue.toLowerCase()} — signal flow and loudspeaker coverage. Quantities are confirmed on a free site survey.</p>
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src={`/images/itc-diagrams/itc-${g.diagramKey}-flow.svg`} alt={`${g.venue} sound system signal flow`} className="mt-5 w-full rounded-xl border border-slate-200" loading="lazy" />
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src={`/images/itc-diagrams/itc-${g.diagramKey}-plan.svg`} alt={`${g.venue} loudspeaker plan view and coverage`} className="mt-4 w-full rounded-xl border border-slate-200" loading="lazy" />
-        </section>
+        </section>}
 
         <section id="kit" className="scroll-mt-24">
           <h2 className="mt-12 text-2xl font-extrabold text-slate-900" style={{ fontFamily: 'Manrope, sans-serif' }}>Recommended equipment</h2>
@@ -132,7 +132,7 @@ export default async function GuidePage({ params }: Props) {
         </section>
 
         <div className="mt-12 rounded-2xl bg-slate-900 p-8 text-center text-white">
-          <h2 className="text-xl font-extrabold" style={{ fontFamily: 'Manrope, sans-serif' }}>Planning a {g.venue.toLowerCase()} sound system?</h2>
+          <h2 className="text-xl font-extrabold" style={{ fontFamily: 'Manrope, sans-serif' }}>{g.diagramKey ? `Planning a ${g.venue.toLowerCase()} sound system?` : 'Want an engineer to check your plan?'}</h2>
           <p className="mx-auto mt-2 max-w-md text-sm text-slate-300">Free site survey, system design and an itemised quotation from our engineers.</p>
           <div className="mt-5 flex flex-wrap justify-center gap-3">
             <Link href={`/contact?product=${encodeURIComponent(g.venue + ' sound system')}`} className="rounded-full bg-orange-500 px-6 py-2.5 text-sm font-semibold text-white hover:bg-orange-600">Request a design</Link>
@@ -141,7 +141,7 @@ export default async function GuidePage({ params }: Props) {
         </div>
 
         <section className="mt-12">
-          <h2 className="text-lg font-extrabold text-slate-900">More venue design guides</h2>
+          <h2 className="text-lg font-extrabold text-slate-900">More guides</h2>
           <div className="mt-3 flex flex-wrap gap-2">
             {others.map(o => <Link key={o.slug} href={`/guides/${o.slug}`} className="rounded-full border border-slate-200 px-4 py-1.5 text-sm text-slate-700 hover:border-blue-400 hover:text-blue-600">{o.venue} →</Link>)}
           </div>

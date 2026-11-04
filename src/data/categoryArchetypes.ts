@@ -488,3 +488,17 @@ Object.assign(ARCHETYPES, {
   'audio-peripherals': { accent: '#EA580C', outcome: 'the small parts that make a system dependable — clean processing, feedback control and tidy connectivity.', diagram: proDiagram('#EA580C'), faq: proFaq, packs: proPacks },
   'immersive-sound': { accent: '#EA580C', outcome: 'sound that moves with the performer — the audience hears every source exactly where it is on stage.', diagram: proDiagram('#EA580C'), faq: proFaq, packs: proPacks },
 })
+
+// ---- Conference systems (itc) ----
+Object.assign(ARCHETYPES, {
+  'conference-systems': { accent: '#EA580C', outcome: 'an orderly meeting where every member is heard clearly, the chair stays in control and the record is complete.', builder: roomBuilder(), diagram: stdDiagram({ title: 'How it connects', lead: 'Every seat has its own unit; the controller manages speaking order, voting, recording and the room PA.', play: '▶ Play the meeting path', ac: '#EA580C', cs: 'Conference controller', cs2: 'Digital + analog backup link',
+    l: [{ title: 'Chairman Unit', sub: 'Priority & mute-all', shop: true, pair: 'Conference systems' }, { title: 'Delegate Units', sub: 'Request to speak', shop: true, pair: 'Conference systems' }, { title: 'Interpretation', sub: 'IR language channels', shop: true, pair: 'Simultaneous interpretation' }],
+    r: [{ title: 'Room PA', sub: 'Speakers & amplifier', shop: true, pair: 'Pro loudspeakers' }, { title: 'Camera Tracking', sub: 'Follows the speaker', shop: true, pair: 'Conference cameras' }, { title: 'Recording / Stream', sub: 'Minutes & broadcast' }],
+    el: ['Cascade', 'Units', 'IR', 'Audio', 'Track', 'Record'], f: ['① Delegates request to speak', '② Controller routes audio, camera & record'], note: 'Each grey box links to the matching product — specify the whole chamber in one quote.' }),
+    faq: [
+      { q: 'How many delegate units can one controller handle?', a: 'From a small board room to large assemblies — controllers expand with extension units. We size it from your seat plan.' },
+      { q: 'Wired or wireless?', a: 'Wired digital units for permanent chambers (no batteries); wireless units for flexible or listed rooms.' },
+      { q: 'Can it add voting and interpretation later?', a: 'Yes — both are layers on the same controller, so you can start with discussion only.' },
+    ],
+    packs: [{ pt: 'Board room', pf: '10–30 seats', items: ['Controller + chairman/delegate units', 'Ceiling or column speakers', 'Recording'] }, { pt: 'Council chamber', pf: '30–100 seats', items: ['Digital controller + expansion', 'Voting + chamber display', 'Camera tracking'] }, { pt: 'Assembly hall', pf: '100+ seats', items: ['Interpretation (IR)', 'Paperless terminals', 'Broadcast feed'] }] },
+})

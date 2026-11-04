@@ -3,18 +3,25 @@ usage: gen_itc.py <itc_dir> <repo_dir>"""
 import json, os, sys, re, glob
 D, REPO = sys.argv[1], sys.argv[2]
 cat = json.load(open(os.path.join(D, 'itc_catalog.json')))
-venues = json.load(open(os.path.join(D, 'diagrams', 'venues.json')))
-sols = {s['file']: s for s in json.load(open(os.path.join(D, 'solutions.json')))}
+MODE = os.environ.get('ITC_MODE', 'prosound')
+CONF = MODE == 'conference'
+venues = {} if CONF else json.load(open(os.path.join(D, 'diagrams', 'venues.json')))
+sols = {} if CONF else {s['file']: s for s in json.load(open(os.path.join(D, 'solutions.json')))}
 SITE = 'https://www.audiovisualnepal.com'
 CAT_LABEL = {'amplifiers': 'Amplifiers', 'line-array-speakers': 'Line Array Speakers', 'pro-loudspeakers': 'Professional Loudspeakers', 'subwoofers': 'Subwoofers',
              'mixing-consoles': 'Mixing Consoles', 'microphones': 'Microphones', 'immersive-sound': 'Immersive Sound', 'audio-peripherals': 'Audio Peripherals'}
+if CONF:
+    CAT_LABEL = {'conference-systems': 'Conference Systems', 'video-conferencing': 'Video Conferencing'}
 CAT_ORDER = list(CAT_LABEL)
+TITLE = 'itc Conference Systems' if CONF else 'itc Professional Sound'
+PFX = 'itc-conference' if CONF else 'itc-prosound'
 
 def low(s): return s[0].lower() + s[1:] if s and not s[:2].isupper() else s
 
 def describe(r):
     vs = r['variants']
-    p1 = f"The itc {r['model'].split('/')[0] if vs else r['model']} {'family' if vs else ''} is a {low(r['type'])} from itc's {r['segment_label']} range, built for {r['use']}.".replace('  ', ' ')
+    art = 'an' if low(r['type'])[:1].lower() in 'aeiou' else 'a'
+    p1 = f"The itc {r['model'].split('/')[0] if vs else r['model']} {'family' if vs else ''} is {art} {low(r['type'])} from itc's {r['segment_label']} range, built for {r['use']}.".replace('  ', ' ')
     if vs: p1 += f" It is offered in {len(vs)} versions — {', '.join(vs)} — so one design language covers rooms of different sizes."
     hl = r['highlights'][:3]
     p2 = ''
@@ -23,9 +30,9 @@ def describe(r):
             if ' — ' in l: return 'power at ' + l.split(' — ')[-1] + ' (continuous · max)'
             return l.split(' (')[0].lower()
         p2 = 'Key figures: ' + '; '.join(f"{lab(l)} {v}" for l, v in hl) + '.'
-    ft = [f[0] for f in r['features'][:4]]
+    ft = [f[0] for f in r['features'][:4] if len(f[0]) <= 48 and not f[0].endswith('…')]
     if ft: p2 += ' Highlights include ' + ', '.join(low(x).rstrip('.') for x in ft[:-1]) + (f" and {low(ft[-1]).rstrip('.')}" if len(ft) > 1 else low(ft[0]).rstrip('.')) + '.'
-    p3 = "AudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support."
+    p3 = ("AudioVisual Nepal designs, supplies and commissions itc conference systems across Nepal — from municipal board rooms to assembly chambers — with training and local after-sales support." if r['site_category'] in ('conference-systems', 'video-conferencing') else "AudioVisual Nepal supplies, installs and commissions itc professional sound systems across Nepal — with system design, acoustic simulation on request, and local after-sales support.")
     return [p1, p2.strip(), p3]
 
 for r in cat:
@@ -36,8 +43,8 @@ for r in cat:
 # ---------- markdown ----------
 DOCS = os.path.join(D, 'docs'); os.makedirs(DOCS, exist_ok=True)
 def url(r): return f"{SITE}/products/{r['site_category']}/{r['id']}"
-md = ['# itc Professional Sound — Product Catalogue', '',
-      '> Source: itcprosound.com (Guangzhou itc), scraped November 2026. Specifications as published by the manufacturer; descriptions rewritten by AudioVisual Nepal. Confirm figures at quotation.', '',
+md = [f'# {TITLE} — Product Catalogue', '',
+      ('> Source: itctech.com.cn conference & video-conference catalogue (itcconferencesys.com was offline), captured November 2026.' if CONF else '> Source: itcprosound.com (Guangzhou itc), scraped November 2026.') + ' Specifications as published by the manufacturer; descriptions rewritten by AudioVisual Nepal. Confirm figures at quotation.', '',
       '**Manufacturer:** Guangzhou itc Professional Sound — HQ: Building A13-1, Yiku Industrial Park, Panyu District, Guangzhou, China · Factory: No.56 Nanlidong Road, Shiqi, Panyu · OEM/ODM manufacturer with 30+ years of experience; products listed in the EASE / EASE Focus libraries.', '',
       '## Segment overview', '', '| AVN category | itc series | Products |', '|---|---|---|']
 for c in CAT_ORDER:
@@ -58,10 +65,19 @@ for c in CAT_ORDER:
             k = '; '.join(f"{l.split(' (')[0]}: {v}" for l, v in r['highlights'][:3]).replace('|', '/')
             md.append(f"| {r['model']} | {r['type']} | {k} | [view]({url(r)}) |")
         md.append('')
-open(os.path.join(DOCS, 'itc-prosound-catalogue.md'), 'w').write('\n'.join(md))
+if CONF:
+    md = [l for l in md if 'itc-segment-map' not in l and not l.startswith('- **Amplifiers:**') and not l.startswith('- **Loudspeakers:**') and not l.startswith('- **Ease Immersive:**')]
+    i = md.index('## Core technology'); md[i+2:i+2] = [
+        '- **Digital conference:** uncompressed digital audio between controller and units, with automatic gap-free fallback to an analog backup link; per-unit web configuration (ID, sensitivity, EQ); chairman priority, request-to-speak and voting.',
+        '- **Wireless conference:** 2.4 / 5 GHz Wi-Fi units with built-in lithium batteries (around 12 h speaking per the manufacturer) and AP transmitters.',
+        '- **Paperless:** motorised retractable screens, document distribution, voting, facial-recognition sign-in and streaming servers.',
+        '- **Simultaneous interpretation:** digital infrared transmission (8/16 channels), interpreter desks and personal receivers — signals stay inside the room.',
+        '- **Video conference:** PTZ and 4K cameras, camera controllers and HD terminals that can follow the active speaker.']
+    md = [l.replace('Guangzhou itc Professional Sound — HQ: Building A13-1, Yiku Industrial Park, Panyu District, Guangzhou, China · Factory: No.56 Nanlidong Road, Shiqi, Panyu · OEM/ODM manufacturer with 30+ years of experience; products listed in the EASE / EASE Focus libraries.', 'Guangdong itc (itctech.com.cn) — audiovisual system solutions: PA, IP broadcast, professional audio, audio & video conference.') for l in md]
+open(os.path.join(DOCS, f'{PFX}-catalogue.md'), 'w').write('\n'.join(md))
 
 # full spec sheets md (one file, every product)
-ss = ['# itc Professional Sound — Technical Specifications (all products)', '', '> Companion to itc-prosound-catalogue.md. One section per product: description, highlights, full parameter table.', '']
+ss = [f'# {TITLE} — Technical Specifications (all products)', '', f'> Companion to {PFX}-catalogue.md. One section per product: description, highlights, full parameter table.', '']
 for c in CAT_ORDER:
     ss += [f'## {CAT_LABEL[c]}', '']
     for r in [x for x in cat if x['site_category'] == c]:
@@ -71,7 +87,7 @@ for c in CAT_ORDER:
             ss += ['**Features**', ''] + [f"- **{t}**{(' — ' + d) if d else ''}" for t, d in r['features']] + ['']
         if r['variants']: ss += [f"**Versions:** {' · '.join(r['variants'])} (values listed in the same order)", '']
         ss += ['| Group | Parameter | Value |', '|---|---|---|'] + [f"| {g} | {l} | {v.replace('|', '/')} |" for g, l, v in r['specs']] + ['', f"**Applications:** {', '.join(r['applications'])}", '', '---', '']
-open(os.path.join(DOCS, 'itc-technical-specifications.md'), 'w').write('\n'.join(ss))
+open(os.path.join(DOCS, ('itc-conference-technical-specifications.md' if CONF else 'itc-technical-specifications.md')), 'w').write('\n'.join(ss))
 
 # solutions md
 SOLMAP = {'stadium': '3326.html', 'banquet-hall': '3319.html', 'concert-hall': '3321.html', 'conference-hall': '3325.html', 'ktv': '3324.html', 'studio-room': '3322.html', 'theatre': '3320.html', 'vocal-concert': '3323.html'}
@@ -89,7 +105,7 @@ for k, v in venues.items():
     sm += [f'| Source | {a} | {b} |' for a, b in v['sources']] + [f"| Mix | {v['mixer'][0]} | {v['mixer'][1]} |", f"| Process | {v['proc'][0]} | {v['proc'][1]} |"]
     sm += [f'| Power | {a} | {b} |' for a, b in v['amps']] + [f'| Loudspeakers | {a} | {b} |' for a, b in v['spk']] + ['']
     if adv: sm += ['**System goals (manufacturer):**', ''] + [f'- {a}' for a in adv] + ['']
-open(os.path.join(DOCS, 'itc-venue-solutions.md'), 'w').write('\n'.join(sm))
+(None if CONF else open(os.path.join(DOCS, 'itc-venue-solutions.md'), 'w').write('\n'.join(sm)))
 
 # ---------- spec sheet PDFs ----------
 from reportlab.lib.pagesizes import A4
@@ -102,11 +118,11 @@ pdfmetrics.registerFont(TTFont('DVB', '/usr/share/fonts/truetype/dejavu/DejaVuSa
 SH = os.path.join(REPO, 'public', 'downloads', 'itc'); os.makedirs(SH, exist_ok=True)
 NAVY, BLUE, GREY = (11/255, 30/255, 61/255), (37/255, 99/255, 235/255), (100/255, 116/255, 139/255)
 def sheet(r):
-    W, H = A4; c = canvas.Canvas(os.path.join(SH, f"{r['id']}-spec-sheet.pdf"), pagesize=A4)
+    W, H = A4; c = canvas.Canvas(os.path.join(SH, f"{r['id']}-spec-sheet.pdf"), pagesize=A4, pageCompression=1)
     c.setTitle(f"{r['full_name']} — Spec sheet"); c.setAuthor('AudioVisual Nepal')
     c.setFillColorRGB(*NAVY); c.rect(0, H - 70, W, 70, fill=1, stroke=0)
     c.setFillColorRGB(1, 1, 1); c.setFont('DVB', 15); c.drawString(36, H - 40, 'AudioVisual Nepal'); c.setFont('DV', 8.5)
-    c.drawString(36, H - 56, 'Authorised itc professional sound supplier · Kathmandu · +977 9762109538 · audiovisualnepal.com')
+    c.drawString(36, H - 56, ('Authorised itc conference systems supplier' if CONF else 'Authorised itc professional sound supplier') + ' · Kathmandu · +977 9762109538 · audiovisualnepal.com')
     c.drawRightString(W - 36, H - 40, 'PRODUCT SPEC SHEET')
     y = H - 104
     c.setFillColorRGB(*BLUE); c.setFont('DVB', 9); c.drawString(36, y, f"itc · {r['segment_label'].upper()}")
@@ -166,8 +182,8 @@ for it in items: by_sub.setdefault(it['subcategory'], []).append(it['slug'])
 for it in items:
     sib = [s for s in by_sub[it['subcategory']] if s != it['slug']]
     it['relatedSlugs'] = sib[:3]
-open(os.path.join(REPO, 'src', 'data', 'itcProducts.ts'), 'w').write(
+open(os.path.join(REPO, 'src', 'data', 'itcConferenceProducts.ts' if CONF else 'itcProducts.ts'), 'w').write(
     '// AUTO-GENERATED from the itc catalogue scrape (see docs/catalogues/itc-*.md). Edit the source, then regenerate.\n'
     "import type { Product } from './products'\n\n"
-    f"export const ITC: Product[] = {json.dumps(items, ensure_ascii=False, indent=1)} as Product[]\n")
+    f"export const {'ITC_CONFERENCE' if CONF else 'ITC'}: Product[] = {json.dumps(items, ensure_ascii=False, indent=1)} as Product[]\n")
 print('md + ', len(glob.glob(SH + '/*.pdf')), 'sheets, ', len(items), 'ts items')

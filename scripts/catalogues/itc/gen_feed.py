@@ -3,10 +3,13 @@ usage: gen_feed.py <repo>"""
 import json, re, sys, os, html
 REPO = sys.argv[1]
 SITE = 'https://www.audiovisualnepal.com'
-ts = open(os.path.join(REPO, 'src/data/itcProducts.ts')).read()
-items = json.loads(ts[ts.index('= [') + 2: ts.rindex('] as Product[]') + 1])
+items = []
+for fn in ('itcProducts.ts', 'itcConferenceProducts.ts'):
+    ts = open(os.path.join(REPO, 'src/data', fn)).read()
+    items += json.loads(ts[ts.index('= [') + 2: ts.rindex('] as Product[]') + 1])
 CAT = {'amplifiers': 'itc Amplifiers', 'line-array-speakers': 'itc Line Array Speakers', 'pro-loudspeakers': 'itc Professional Loudspeakers', 'subwoofers': 'itc Subwoofers',
-       'mixing-consoles': 'itc Mixing Consoles', 'microphones': 'itc Microphones', 'immersive-sound': 'itc Immersive Sound', 'audio-peripherals': 'itc Audio Peripherals'}
+       'mixing-consoles': 'itc Mixing Consoles', 'microphones': 'itc Microphones', 'immersive-sound': 'itc Immersive Sound', 'audio-peripherals': 'itc Audio Peripherals',
+       'conference-systems': 'itc Conference Systems', 'video-conferencing': 'itc Video Conference'}
 E = html.escape
 out = []
 for p in items:

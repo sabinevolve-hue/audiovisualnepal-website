@@ -10,6 +10,8 @@ Markdown reference docs generated from manufacturer catalogues. Source of truth:
 | [itc-prosound-catalogue.md](itc-prosound-catalogue.md) | itc | 151 pro-sound products, 8 segments |
 | [itc-technical-specifications.md](itc-technical-specifications.md) | itc | Full parameter tables |
 | [itc-venue-solutions.md](itc-venue-solutions.md) | itc | 8 venue system designs + drawings |
+| [itc-conference-catalogue.md](itc-conference-catalogue.md) | itc | 137 conference & video-conference products |
+| [itc-conference-technical-specifications.md](itc-conference-technical-specifications.md) | itc | Conference full parameter tables |
 | [itc-drawings-and-diagrams-plan.md](itc-drawings-and-diagrams-plan.md) | itc | Drawings brainstorm & style rules |
 | [projectors-segment-plan.md](projectors-segment-plan.md) | — | Projector segment brainstorm & roadmap |
 

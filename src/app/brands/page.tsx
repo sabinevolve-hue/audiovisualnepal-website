@@ -94,12 +94,12 @@ const brands = [
   {
     name: 'itc',
     slug: 'itc',
-    tagline: 'Professional Sound Systems',
-    description: 'Line array and point-source loudspeakers, subwoofers, high-efficiency TC/DSP/Dante/KT digital amplifiers, digital and analog mixers, wireless and wired microphones, the Ease immersive system and peripherals — 151 products, EASE-library listed.',
-    categories: ['Line Array Speakers', 'Professional Loudspeakers', 'Amplifiers', 'Mixing Consoles', 'Microphones', 'Immersive Sound'],
+    tagline: 'Professional Sound & Conference Systems',
+    description: 'Conference systems (digital, wireless, paperless, interpretation) plus line array and point-source loudspeakers, subwoofers, high-efficiency TC/DSP/Dante/KT digital amplifiers, digital and analog mixers, wireless and wired microphones, the Ease immersive system and peripherals — 151 products, EASE-library listed.',
+    categories: ['Line Array Speakers', 'Professional Loudspeakers', 'Amplifiers', 'Mixing Consoles', 'Microphones', 'Conference Systems'],
     hasCatalog: false,
     country: 'China', founded: '',
-    color: '#EA580C', products: 151, range: '8 product segments',
+    color: '#EA580C', products: 288, range: '13 product series groups',
   },
 ]
 
