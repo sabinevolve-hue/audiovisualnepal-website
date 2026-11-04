@@ -36,6 +36,10 @@ const SECTOR_COLORS: Record<string, string> = {
 }
 const FULL_VB = [0, 0, 1000, 579]
 const SHADES = ['#F1F5F9', '#DBEAFE', '#93C5FD', '#3B82F6', '#1D4ED8']
+// Kathmandu Valley districts are tiny at national scale — treat them as one zoom group
+const VALLEY = ['306', '307', '308']
+const groupOf = (d: string) => (VALLEY.includes(d) ? 'KV' : d)
+const members = (g: string | null) => (!g ? [] : g === 'KV' ? VALLEY : [g])
 
 function shade(n: number, max: number) {
   if (!n) return SHADES[0]
@@ -72,7 +76,8 @@ export default function NepalProjectMap({ compact = false, sectors, lines, title
 
   const sectorList = useMemo(() => ['All', ...Array.from(new Set(base.map(p => p.sector))).sort()], [base])
   const filtered = useMemo(() => base.filter(p => sector === 'All' || p.sector === sector), [base, sector])
-  const listed = useMemo(() => filtered.filter(p => !district || p.district === district), [filtered, district])
+  const inSel = (d: string) => !district || members(district).includes(d)
+  const listed = useMemo(() => filtered.filter(p => inSel(p.district)), [filtered, district]) // eslint-disable-line react-hooks/exhaustive-deps
 
   const byDistrict = useMemo(() => {
     const m: Record<string, MapProject[]> = {}
@@ -81,9 +86,14 @@ export default function NepalProjectMap({ compact = false, sectors, lines, title
   }, [filtered])
   const byLocal = useMemo(() => {
     const m: Record<string, MapProject[]> = {}
-    filtered.filter(p => !district || p.district === district).forEach(p => { (m[p.local] ||= []).push(p) })
+    filtered.filter(p => inSel(p.district)).forEach(p => { (m[p.local] ||= []).push(p) })
     return m
-  }, [filtered, district])
+  }, [filtered, district]) // eslint-disable-line react-hooks/exhaustive-deps
+  const bubbles = useMemo(() => {
+    const m: Record<string, number> = {}
+    filtered.forEach(p => { const g = groupOf(p.district); m[g] = (m[g] ?? 0) + 1 })
+    return m
+  }, [filtered])
   const maxD = Math.max(1, ...Object.values(byDistrict).map(a => a.length))
   const provinces = new Set(filtered.map(p => p.province)).size
   const municipalities = new Set(filtered.map(p => p.local)).size
@@ -91,9 +101,11 @@ export default function NepalProjectMap({ compact = false, sectors, lines, title
   // zoom to a district using the path's own bounding box
   useEffect(() => {
     if (!district || !svgRef.current) { setVb(FULL_VB); return }
-    const el = svgRef.current.querySelector<SVGPathElement>(`[data-d="${district}"]`)
-    if (!el) return
-    const b = el.getBBox()
+    const els = members(district).map(c => svgRef.current!.querySelector<SVGPathElement>(`[data-d="${c}"]`)).filter(Boolean) as SVGPathElement[]
+    if (!els.length) return
+    const bs = els.map(e => e.getBBox())
+    const x0 = Math.min(...bs.map(b => b.x)), y0 = Math.min(...bs.map(b => b.y))
+    const b = { x: x0, y: y0, width: Math.max(...bs.map(b => b.x + b.width)) - x0, height: Math.max(...bs.map(b => b.y + b.height)) - y0 }
     const pad = Math.max(b.width, b.height) * 0.25
     let w = b.width + pad * 2, h = b.height + pad * 2
     const ar = 1000 / 579
@@ -102,11 +114,11 @@ export default function NepalProjectMap({ compact = false, sectors, lines, title
   }, [district, map])
 
   const k = vb[2] / 1000 // scale for pins / strokes
-  const nm = (c: string) => map?.name[c] ?? c
+  const nm = (c: string) => (c === 'KV' ? 'Kathmandu Valley' : map?.name[c] ?? c)
 
   function pick(p: MapProject) {
     setActive(p.slug)
-    if (district !== p.district) setDistrict(p.district)
+    if (district !== groupOf(p.district)) setDistrict(groupOf(p.district))
   }
 
   function move(e: React.MouseEvent, code: string) {
@@ -161,19 +173,19 @@ export default function NepalProjectMap({ compact = false, sectors, lines, title
               <path d={map.nepal} fill="#E2E8F0" stroke="none" />
               {Object.entries(map.district).map(([c, d]) => {
                 const n = byDistrict[c]?.length ?? 0
-                const sel = district === c
+                const sel = members(district).includes(c)
                 return (
                   <path key={c} d={d} data-d={c}
                     fill={district && !sel ? (n ? '#E0EAFF' : '#F1F5F9') : sel ? '#FFFFFF' : shade(n, maxD)}
                     stroke="#FFFFFF" strokeWidth={0.8 * k}
                     className="cursor-pointer transition-colors hover:brightness-95"
                     onMouseMove={e => move(e, c)}
-                    onClick={() => { setDistrict(sel ? null : c); setActive(null) }}>
+                    onClick={() => { if (!sel) { setDistrict(groupOf(c)); setActive(null) } }}>
                     <title>{`${nm(c)} — ${n} project${n === 1 ? '' : 's'}`}</title>
                   </path>
                 )
               })}
-              {district && Object.entries(map.local).filter(([c]) => c.startsWith(district)).map(([c, d]) => (
+              {district && Object.entries(map.local).filter(([c]) => members(district).includes(c.slice(0, 3))).map(([c, d]) => (
                 <path key={c} d={d} fill={byLocal[c] ? '#DBEAFE' : '#F8FAFC'} stroke="#94A3B8" strokeWidth={0.35 * k}
                   onMouseMove={e => move(e, c)} className="cursor-default">
                   <title>{`${nm(c)} (${map.ltype[c] ?? 'local level'})`}</title>
@@ -182,19 +194,20 @@ export default function NepalProjectMap({ compact = false, sectors, lines, title
               {Object.values(map.province).map((d, i) => (
                 <path key={i} d={d} fill="none" stroke="#64748B" strokeWidth={1.1 * k} pointerEvents="none" />
               ))}
-              {district && map.district[district] && (
-                <path d={map.district[district]} fill="none" stroke="#1D4ED8" strokeWidth={1.6 * k} pointerEvents="none" />
-              )}
+              {members(district).map(c => map.district[c] && (
+                <path key={c} d={map.district[c]} fill="none" stroke="#1D4ED8" strokeWidth={1.6 * k} pointerEvents="none" />
+              ))}
 
               {/* full view: one bubble per district; zoomed: one pin per municipality */}
-              {!district && Object.entries(byDistrict).map(([c, arr]) => {
-                const pt = map.label[c]; if (!pt) return null
-                const r = (7 + Math.sqrt(arr.length) * 3) * k
+              {!district && Object.entries(bubbles).map(([c, n]) => {
+                const pt = c === 'KV' ? [(map.label['306'][0] + map.label['307'][0] + map.label['308'][0]) / 3, (map.label['306'][1] + map.label['307'][1] + map.label['308'][1]) / 3] : map.label[c]
+                if (!pt) return null
+                const r = (7 + Math.sqrt(n) * 3) * k
                 return (
                   <g key={c} className="cursor-pointer" onClick={() => setDistrict(c)} onMouseMove={e => move(e, c)}>
                     <circle cx={pt[0]} cy={pt[1]} r={r + 3 * k} fill="#2563EB" opacity={0.18} />
                     <circle cx={pt[0]} cy={pt[1]} r={r} fill="#1D4ED8" stroke="#fff" strokeWidth={1.5 * k} />
-                    <text x={pt[0]} y={pt[1]} dy="0.35em" textAnchor="middle" fontSize={r * 1.05} fontWeight={800} fill="#fff" pointerEvents="none">{arr.length}</text>
+                    <text x={pt[0]} y={pt[1]} dy="0.35em" textAnchor="middle" fontSize={r * 1.05} fontWeight={800} fill="#fff" pointerEvents="none">{n}</text>
                   </g>
                 )
               })}
@@ -220,7 +233,8 @@ export default function NepalProjectMap({ compact = false, sectors, lines, title
               <div className="font-bold">{nm(hover.code)}</div>
               <div className="opacity-80">
                 {hover.code.length === 5 ? `${map.ltype[hover.code] ?? 'Local level'} · ${(byLocal[hover.code] ?? []).length} project(s)`
-                  : hover.code.length === 3 ? `District · ${(byDistrict[hover.code] ?? []).length} project(s)` : ''}
+                  : hover.code.length === 3 ? `District · ${(byDistrict[hover.code] ?? []).length} project(s)`
+                  : hover.code === 'KV' ? `Kathmandu, Lalitpur & Bhaktapur · ${bubbles.KV ?? 0} project(s)` : ''}
               </div>
             </div>
           )}
@@ -233,7 +247,7 @@ export default function NepalProjectMap({ compact = false, sectors, lines, title
             )}
             {district && map && (
               <span className="rounded-full bg-white/95 px-3 py-1 text-xs font-semibold text-slate-700 shadow ring-1 ring-slate-200">
-                {nm(district)} district · {nm(district.slice(0, 1))}
+                {district === 'KV' ? 'Kathmandu Valley' : `${nm(district)} district`} · {nm(members(district)[0].slice(0, 1))}
               </span>
             )}
           </div>
