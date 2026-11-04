@@ -433,3 +433,58 @@ Object.assign(ARCHETYPES, {
     packs: [{ pt: 'Lecture hall', pf: '4–5 m screen', items: ['Krinda C-WU700L / Wincomn C-4K650', 'Motorised screen + ceiling mount', 'Podium + HDBaseT + PA'] }, { pt: 'Auditorium', pf: '6–10 m screen', items: ['Krinda C-WU1200L / C-WU1500L', 'Long-throw lens + rigging', 'Switcher, sound & stage feeds'] }, { pt: 'Mapping show', pf: 'Façade / heritage', items: ['2–4× C-WU2000L / C-WU2500', 'Warp & blend + media server', 'Weather housing + show control'] }],
     trust: [{ tt: 'Laser 20–30k h', ts: 'No lamp changes' }, { tt: '3-Year Warranty', ts: 'Manufacturer backed' }, { tt: 'We Align & Blend', ts: 'Local engineers' }, { tt: 'Full System Quote', ts: 'Lens, screen, sound' }] },
 })
+
+// ---- Professional sound (itc) ----
+function proSoundBuilder(): Archetype['builder'] {
+  const V: Record<string, { per: number; n: string; main: string; sub: string; amp: string }> = {
+    conference: { per: 1.2, n: 'conference hall', main: 'itc TS-803C column speakers', sub: '—', amp: 'itc TC-D4350 4-ch DSP amplifier' },
+    banquet: { per: 1.4, n: 'banquet hall', main: 'itc KS-210 line array', sub: 'itc KS-S218', amp: 'itc TC-21000' },
+    worship: { per: 1.3, n: 'temple / church / hall', main: 'itc KS-10H + TS-1203C columns', sub: 'itc TS-618S', amp: 'itc TC-21000' },
+    concert: { per: 1.0, n: 'concert / outdoor show', main: 'itc LA-2800K line array', sub: 'itc LA-1800K', amp: 'itc TC-21200' },
+  }
+  return {
+    eyebrow: 'Plan it in 20 seconds', title: 'Size your sound system',
+    lead: 'Pick the venue and audience size — we estimate the loudspeakers, subwoofers and amplifier channels, then quote it as one BOQ.',
+    segLabel: '1 · Venue',
+    segs: [{ key: 'conference', label: 'Conference' }, { key: 'banquet', label: 'Banquet hall' }, { key: 'worship', label: 'Place of worship' }, { key: 'concert', label: 'Concert / outdoor' }],
+    sliders: [{ id: 'aud', label: 'Audience', min: 50, max: 5000, value: 400, fmt: (n) => n.toLocaleString() + ' people' }, { id: 'len', label: 'Room depth', min: 10, max: 120, value: 30, fmt: (n) => n + ' m' }],
+    note: 'Indicative only — final design from a site survey and EASE simulation (itc speakers are in the EASE library).',
+    compute: (seg, v) => {
+      const s = V[seg] || V.banquet
+      const aud = v.aud || 400, len = v.len || 30
+      const perSide = Math.max(2, Math.min(16, Math.round((len / 8) * s.per + aud / 1500)))
+      const subs = s.sub === '—' ? 0 : Math.max(1, Math.round(perSide / 2))
+      const delays = len > 35 ? Math.ceil((len - 35) / 25) * 2 : 0
+      const ch = perSide * 2 / 2 + subs * 2 / 2 + delays
+      return {
+        host: s.main, hostSub: `Main system for a ${s.n}`,
+        cells: [{ cv: `${perSide} / side`, ck: 'Main boxes' }, { cv: subs ? `${subs} / side` : '—', ck: 'Subwoofers' }, { cv: delays ? `${delays}` : 'none', ck: 'Delay fills' }, { cv: `~${Math.ceil(ch)} ch`, ck: s.amp.replace('itc ', '') }],
+        note: `${aud.toLocaleString()} people, ${len} m deep.`,
+      }
+    },
+  }
+}
+const proDiagram = (ac: string) => stdDiagram({ title: 'How it connects', lead: 'A professional sound system is a signal chain — capture, mix, process, amplify, reproduce. Here is where this product sits.', play: '▶ Play the signal path', ac, cs: 'itc pro sound', cs2: 'XLR / Speakon / Dante',
+  l: [{ title: 'Microphones', sub: 'Wireless & wired', shop: true, pair: 'Microphones' }, { title: 'Mixing Console', sub: 'FOH mix', shop: true, pair: 'Mixing consoles' }, { title: 'Processor', sub: 'EQ · delay · anti-feedback', shop: true, pair: 'Audio peripherals' }],
+  r: [{ title: 'Amplifiers', sub: 'TC / DSP / Dante', shop: true, pair: 'Amplifiers' }, { title: 'Loudspeakers', sub: 'Line array · full-range', shop: true, pair: 'Line array & pro loudspeakers' }, { title: 'Subwoofers', sub: 'Low-frequency', shop: true, pair: 'Subwoofers' }],
+  el: ['Mic', 'Line', 'Process', 'Drive', 'Speaker', 'LF'], f: ['① Sources into the mixer', '② Amplified out to the loudspeakers'], note: 'Each grey box links to the matching itc product — design the whole system in one quote.' })
+const proFaq = [
+  { q: 'Do you design the system for my venue?', a: 'Yes — free site survey, loudspeaker layout and amplifier sizing, with EASE acoustic simulation available because itc models are in the EASE / EASE Focus libraries.' },
+  { q: 'Can itc work with my existing mixer or speakers?', a: 'Usually yes. itc amplifiers take standard XLR inputs and drive any professional loudspeaker within their load rating; we check impedance and power matching before quoting.' },
+  { q: 'Do you install, tune and support it?', a: 'Yes — rigging, cabling, system tuning (EQ, delay, limiting), operator training and local after-sales support across Nepal.' },
+]
+const proPacks = [
+  { pt: 'Conference hall', pf: '100–300 seats', items: ['Column speakers + DSP amplifier', 'Gooseneck & wireless mics', 'Smart mixer + feedback suppressor'] },
+  { pt: 'Banquet / worship', pf: '300–1,000 people', items: ['KS-210 line array + KS-S218 subs', 'TC-21000 amplifiers', 'Digital mixer + 4 wireless mics'] },
+  { pt: 'Concert / outdoor', pf: '1,000–5,000 people', items: ['LA-series flown arrays + ground subs', 'TC-21200 / TC-23000 amps', 'TS-32PD-12 digital mixer + monitors'] },
+]
+Object.assign(ARCHETYPES, {
+  'pro-amplifiers': { accent: '#EA580C', outcome: 'clean, reliable power for every loudspeaker — with the headroom to stay clear at full level, all night.', builder: proSoundBuilder(), diagram: proDiagram('#EA580C'), faq: proFaq, packs: proPacks },
+  'line-array-speakers': { accent: '#EA580C', outcome: 'even, powerful sound from the front row to the back wall — controlled coverage that stays clear in big rooms and outdoors.', builder: proSoundBuilder(), diagram: proDiagram('#EA580C'), faq: proFaq, packs: proPacks },
+  'pro-loudspeakers': { accent: '#EA580C', outcome: 'clear speech and full-range music exactly where the audience sits — no harshness, no dead spots.', builder: proSoundBuilder(), diagram: proDiagram('#EA580C'), faq: proFaq, packs: proPacks },
+  'subwoofers': { accent: '#EA580C', outcome: 'deep, tight low end that the audience feels — without muddying speech or rattling the room.', builder: proSoundBuilder(), diagram: proDiagram('#EA580C'), faq: proFaq, packs: proPacks },
+  'mixing-consoles': { accent: '#EA580C', outcome: 'every microphone and source balanced from one desk — with effects, scenes and recall built in.', diagram: proDiagram('#EA580C'), faq: proFaq, packs: proPacks },
+  'microphones': { accent: '#EA580C', outcome: 'every voice picked up cleanly and reliably — no dropouts, no feedback, no handling noise.', diagram: proDiagram('#EA580C'), faq: proFaq, packs: proPacks },
+  'audio-peripherals': { accent: '#EA580C', outcome: 'the small parts that make a system dependable — clean processing, feedback control and tidy connectivity.', diagram: proDiagram('#EA580C'), faq: proFaq, packs: proPacks },
+  'immersive-sound': { accent: '#EA580C', outcome: 'sound that moves with the performer — the audience hears every source exactly where it is on stage.', diagram: proDiagram('#EA580C'), faq: proFaq, packs: proPacks },
+})

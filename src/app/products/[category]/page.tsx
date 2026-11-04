@@ -8,7 +8,7 @@ import { PRODUCTS_BY_CATEGORY, ALL_PRODUCTS } from '@/data/products'
 export const revalidate = 3600
 
 const BRAND_COLORS: Record<string, string> = {
-  dsppa: '#DC2626', infobit: '#6366F1', tenveo: '#0891B2', focus: '#1E40AF', lampro: '#0F58FB', wincomn: '#E11D48', triolion: '#0E7490',
+  dsppa: '#DC2626', infobit: '#6366F1', tenveo: '#0891B2', focus: '#1E40AF', lampro: '#0F58FB', wincomn: '#E11D48', triolion: '#0E7490', itc: '#EA580C',
 }
 const BRAND_NAMES: Record<string, string> = { focus: 'Evolve Podium', infobit: 'InfoBit', dsppa: 'DSPPA' }
 const brandName = (b: string) => BRAND_NAMES[b] || b.charAt(0).toUpperCase() + b.slice(1)

@@ -33,10 +33,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 const BRAND_COLORS: Record<string, string> = {
-  dsppa: '#00AEAD', infobit: '#6366F1', tenveo: '#0891B2', focus: '#1E40AF', lampro: '#0F58FB', wincomn: '#E11D48', triolion: '#0E7490',
+  dsppa: '#00AEAD', infobit: '#6366F1', tenveo: '#0891B2', focus: '#1E40AF', lampro: '#0F58FB', wincomn: '#E11D48', triolion: '#0E7490', itc: '#EA580C',
 }
 const BRAND_LOGOS: Record<string, string> = {
-  dsppa: 'DSPPA', infobit: 'InfoBit', tenveo: 'Tenveo', focus: 'Evolve Podium', lampro: 'Lampro', wincomn: 'Wincomn', triolion: 'Triolion',
+  dsppa: 'DSPPA', infobit: 'InfoBit', tenveo: 'Tenveo', focus: 'Evolve Podium', lampro: 'Lampro', wincomn: 'Wincomn', triolion: 'Triolion', itc: 'itc',
 }
 const DOWNLOAD_ICONS: Record<string, string> = {
   brochure: '📄',
@@ -51,7 +51,8 @@ export default async function ProductDetailPage({ params }: Props) {
   const product = getProduct(slug)
   if (!product) notFound()
 
-  if (product && ARCHETYPES[product.category]) return <ProductPageV2 product={product as never} categoryKey={product.category} />
+  const archKey = product && product.brandSlug === 'itc' && product.category === 'amplifiers' ? 'pro-amplifiers' : product?.category
+  if (product && archKey && ARCHETYPES[archKey]) return <ProductPageV2 product={product as never} categoryKey={archKey} />
 
   const related = getRelatedProducts(product)
   const brandColor = BRAND_COLORS[product.brandSlug] || '#2563EB'

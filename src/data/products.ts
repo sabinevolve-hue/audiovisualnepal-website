@@ -8,6 +8,7 @@ export type Segment =
   | "Retail" | "Broadcast" | "Events" | "Entertainment" | "Simulation"
 
 import { WINCOMN, TRIOLION } from './newBrands'
+import { ITC } from './itcProducts'
 
 export interface ProductSpec {
   label: string
@@ -1770,7 +1771,7 @@ const LAMPRO: Product[] = [
 
 // ─── Exports ─────────────────────────────────────────────────────────────────
 export const ALL_PRODUCTS: Product[] = [
-  ...DSPPA, ...INFOBIT, ...TENVEO, ...FOCUS, ...LAMPRO, ...WINCOMN, ...TRIOLION,
+  ...DSPPA, ...INFOBIT, ...TENVEO, ...FOCUS, ...LAMPRO, ...WINCOMN, ...TRIOLION, ...ITC,
 ]
 
 export const PRODUCTS_BY_BRAND: Record<string, Product[]> = {
@@ -1781,6 +1782,7 @@ export const PRODUCTS_BY_BRAND: Record<string, Product[]> = {
   lampro: LAMPRO,
   wincomn: WINCOMN,
   triolion: TRIOLION,
+  itc: ITC,
 }
 
 export const PRODUCTS_BY_CATEGORY: Record<string, Product[]> = ALL_PRODUCTS.reduce(

@@ -44,7 +44,14 @@ export const SOLUTIONS_NAV = [
 export const PRODUCT_CATEGORIES = [
   { label: 'Voice Evacuation',      href: '/products/voice-evacuation',      icon: 'evacuation', count: 3,  description: 'EN54-certified life-safety PA & voice alarm systems for large buildings' },
   { label: 'IP Network Audio',      href: '/products/ip-network-audio',      icon: 'network',    count: 4,  description: 'TCP/IP-based distributed audio over Cat5/6 for campuses & multi-building sites' },
-  { label: 'Amplifiers',            href: '/products/amplifiers',            icon: 'amp',        count: 3,  description: 'Mixer amplifiers, matrix amplifiers & integrated PA amplifiers' },
+  { label: 'Amplifiers',            href: '/products/amplifiers',            icon: 'amp',        count: 28, description: 'itc TC/DSP/Dante/KT pro amplifiers plus DSPPA mixer & matrix PA amplifiers' },
+  { label: 'Line Array Speakers',   href: '/products/line-array-speakers',   icon: 'column',     count: 17, description: 'itc line arrays and array subwoofers for concerts, stadiums and large auditoriums' },
+  { label: 'Professional Loudspeakers', href: '/products/pro-loudspeakers',  icon: 'speaker',    count: 61, description: 'itc full-range, conference, column, monitor, cinema, outdoor and horn loudspeakers' },
+  { label: 'Subwoofers',            href: '/products/subwoofers',            icon: 'sub',        count: 9,  description: 'itc single and dual 15/18-inch subwoofers for live, club and installation systems' },
+  { label: 'Mixing Consoles',       href: '/products/mixing-consoles',       icon: 'mixer',      count: 5,  description: 'itc digital mixers and analog mixers with built-in DSP effects' },
+  { label: 'Microphones',           href: '/products/microphones',           icon: 'mic',        count: 16, description: 'itc UHF wireless systems, wired vocal, gooseneck and instrument microphones' },
+  { label: 'Immersive Sound',       href: '/products/immersive-sound',       icon: 'wireless',   count: 3,  description: 'itc Ease immersive spatial-audio controllers and 3D positioning software' },
+  { label: 'Audio Peripherals',     href: '/products/audio-peripherals',     icon: 'matrix',     count: 15, description: 'Processors, feedback suppressors, smart mixers, antenna splitters, sockets & stands'  },
   { label: 'Ceiling Speakers',      href: '/products/ceiling-speakers',      icon: 'ceiling',    count: 2,  description: 'Frameless & coaxial flush-mount ceiling speakers for commercial spaces' },
   { label: 'Column Speakers',       href: '/products/column-speakers',       icon: 'column',     count: 1,  description: 'Weatherproof column speakers for outdoor & semi-outdoor installations' },
   { label: 'Horn Speakers',         href: '/products/horn-speakers',         icon: 'horn',       count: 1,  description: 'Hi-fi horn speakers for wide-area coverage — transport, worship, stadiums' },
@@ -120,6 +127,25 @@ export const PRODUCT_GROUPS = [
     categories: [
       { label: 'Video Walls', href: '/products/video-walls', count: 6, desc: 'LCD walls & controllers' },
       { label: 'LED Displays', href: '/products/led-displays', count: 6, desc: 'Fine-pitch & outdoor LED' },
+    ],
+  },
+  {
+    id: 'pro-sound',
+    label: 'Professional Sound',
+    tagline: 'Line arrays, amplifiers, mixers and microphones for halls, stadiums and live events',
+    brand: 'itc',
+    brandColor: '#EA580C',
+    accent: '#FFF7ED',
+    icon: '🎚️',
+    categories: [
+      { label: 'Line Array Speakers', href: '/products/line-array-speakers', count: 17, desc: 'Arrays & array subs' },
+      { label: 'Professional Loudspeakers', href: '/products/pro-loudspeakers', count: 61, desc: 'Full-range, column, monitor' },
+      { label: 'Subwoofers', href: '/products/subwoofers', count: 9, desc: '15/18-inch subs' },
+      { label: 'Amplifiers', href: '/products/amplifiers', count: 28, desc: 'TC, DSP, Dante, KT' },
+      { label: 'Mixing Consoles', href: '/products/mixing-consoles', count: 5, desc: 'Digital & DSP mixers' },
+      { label: 'Microphones', href: '/products/microphones', count: 16, desc: 'Wireless & wired' },
+      { label: 'Immersive Sound', href: '/products/immersive-sound', count: 3, desc: 'Spatial audio' },
+      { label: 'Audio Peripherals', href: '/products/audio-peripherals', count: 15, desc: 'Processors & accessories' },
     ],
   },
   {
@@ -220,6 +246,16 @@ export const BRANDS = [
     founded: '2000',
     logoColor: '#0E7490',
   },
+  {
+    name: 'itc',
+    slug: 'itc',
+    href: '/brands/itc',
+    category: 'Professional Sound Systems',
+    tagline: 'Line arrays, digital amplifiers, mixers and microphones — 30+ years of pro-audio manufacturing',
+    origin: 'China',
+    founded: '',
+    logoColor: '#EA580C',
+  },
 ] as const
 
 export const STATS = [
@@ -260,6 +296,9 @@ export const DEFAULT_SEO = {
     'video conferencing nepal',
     'wireless presentation nepal',
     'laser projector nepal',
+    'itc pro sound nepal',
+    'line array speaker nepal',
+    'professional amplifier nepal',
     'video wall nepal',
   ],
 } as const

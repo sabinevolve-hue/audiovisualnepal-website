@@ -24,6 +24,7 @@ const brandsLinks = [
   { label: 'Lampro', href: '/brands/lampro', desc: 'LED Displays' },
   { label: 'Wincomn', href: '/brands/wincomn', desc: 'Laser Projectors' },
   { label: 'Triolion', href: '/brands/triolion', desc: 'LCD Video Walls' },
+  { label: 'itc', href: '/brands/itc', desc: 'Pro Sound Systems' },
 ]
 
 export default function Footer() {

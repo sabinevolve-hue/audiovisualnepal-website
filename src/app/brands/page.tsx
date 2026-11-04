@@ -8,7 +8,7 @@ const catSlug = (x: string) => x.toLowerCase().replace(/[^a-z0-9]+/g, '-').repla
 
 export const metadata: Metadata = {
   title: 'Our Brands | Authorized AV Distributor Nepal',
-  description: 'AudioVisual Nepal is the authorized distributor and partner for DSPPA, InfoBit, Tenveo, Evolve Podium, Lampro, Wincomn and Triolion in Nepal. Genuine products, full manufacturer warranty.',
+  description: 'AudioVisual Nepal is the authorized distributor and partner for DSPPA, InfoBit, Tenveo, Evolve Podium, Lampro, Wincomn, Triolion and itc in Nepal. Genuine products, full manufacturer warranty.',
   openGraph: {
     title: 'Authorised AV Brands in Nepal — DSPPA, InfoBit, Tenveo, Evolve Podium',
     description: 'Official authorised distributor and partner for DSPPA, InfoBit, Tenveo, Evolve Podium and Lampro in Nepal. Genuine products, full manufacturer warranty.',
@@ -91,6 +91,16 @@ const brands = [
     country: 'China', founded: '2000',
     color: '#0E7490', products: 4, range: '',
   },
+  {
+    name: 'itc',
+    slug: 'itc',
+    tagline: 'Professional Sound Systems',
+    description: 'Line array and point-source loudspeakers, subwoofers, high-efficiency TC/DSP/Dante/KT digital amplifiers, digital and analog mixers, wireless and wired microphones, the Ease immersive system and peripherals — 151 products, EASE-library listed.',
+    categories: ['Line Array Speakers', 'Professional Loudspeakers', 'Amplifiers', 'Mixing Consoles', 'Microphones', 'Immersive Sound'],
+    hasCatalog: false,
+    country: 'China', founded: '',
+    color: '#EA580C', products: 151, range: '8 product segments',
+  },
 ]
 
 export default function BrandsPage() {
@@ -102,10 +112,10 @@ export default function BrandsPage() {
         <div className="container-site text-center" style={{ maxWidth: 680 }}>
           <div style={{ fontSize: 11, fontWeight: 700, letterSpacing: '0.12em', textTransform: 'uppercase', color: '#2563EB', marginBottom: 14 }}>Our Technology Partners</div>
           <h1 style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(32px,5vw,56px)', fontWeight: 900, letterSpacing: '-0.03em', color: '#0B1E3D', marginBottom: 16 }}>
-            7 World-Class Brands
+            8 World-Class Brands
           </h1>
           <p style={{ fontSize: 17, lineHeight: 1.75, color: '#475569' }}>
-            Authorised distributor and partner for seven specialised AV manufacturers — every product is genuine with full manufacturer warranty and local after-sales support.
+            Authorised distributor and partner for eight specialised AV manufacturers — every product is genuine with full manufacturer warranty and local after-sales support.
           </p>
         </div>
       </section>

@@ -88,6 +88,17 @@ const BRAND_DATA = {
     highlights: ['Pure FPGA Hardware Controller', '8K / 4K Input & Output', 'Bezels down to 0.88 mm', '50,000-Hour MTBF Panels'],
     color: '#0E7490',
   },
+  itc: {
+    name: 'itc',
+    tagline: 'Professional Sound Systems — Amplifiers, Line Arrays, Mixers & Microphones',
+    country: 'China',
+    website: 'https://www.itcprosound.com',
+    founded: '',
+    description: "itc (Guangzhou itc) is a professional sound manufacturer with more than 30 years of OEM/ODM experience. Its pro-sound range covers high-efficiency TC, DSP, Dante and KT series digital amplifiers, line array and point-source loudspeakers, subwoofers, stage monitors, cinema and outdoor speakers, digital and analog mixers, wireless and wired microphones, the Ease immersive spatial-audio system and system peripherals. itc loudspeakers are listed in the EASE and EASE Focus libraries, so complete venue designs can be simulated before installation.",
+    categories: ['Line Array Speakers', 'Professional Loudspeakers', 'Subwoofers', 'Amplifiers', 'Mixing Consoles', 'Microphones', 'Immersive Sound', 'Audio Peripherals'],
+    highlights: ['151 Products Across 8 Segments', '>95% Efficient Digital Amplifiers', 'EASE / EASE Focus Library Listed', '30+ Years OEM/ODM Manufacturing'],
+    color: '#EA580C',
+  },
 }
 
 type BrandSlug = keyof typeof BRAND_DATA
@@ -120,7 +131,11 @@ export default async function BrandPage({ params }: Props) {
   const brand = BRAND_DATA[slug as BrandSlug]
   if (!brand) notFound()
 
-  const brandProducts = PRODUCTS_BY_BRAND[slug] || []
+  const allBrandProducts = PRODUCTS_BY_BRAND[slug] || []
+  // Large ranges: show one representative per series, with a link to the full filtered list.
+  const bySeries = allBrandProducts.reduce((m, p) => { (m[p.subcategory] = m[p.subcategory] || []).push(p); return m }, {} as Record<string, typeof allBrandProducts>)
+  const condensed = allBrandProducts.length > 24
+  const brandProducts = condensed ? Object.values(bySeries).map(list => list[0]) : allBrandProducts
   const otherBrands = Object.entries(BRAND_DATA).filter(([s]) => s !== slug)
 
   return (
@@ -210,10 +225,11 @@ export default async function BrandPage({ params }: Props) {
             {/* Product Grid */}
             {brandProducts.length > 0 && (
               <div>
-                <h2 style={{ fontFamily: 'var(--font-display)', fontSize: 24, fontWeight: 800, color: '#0B1E3D', marginBottom: 20 }}>Featured Products</h2>
+                <h2 style={{ fontFamily: 'var(--font-display)', fontSize: 24, fontWeight: 800, color: '#0B1E3D', marginBottom: condensed ? 6 : 20 }}>{condensed ? `${allBrandProducts.length} products in ${Object.keys(bySeries).length} series` : 'Featured Products'}</h2>
+                {condensed && <p style={{ fontSize: 14, color: '#64748B', marginBottom: 20 }}>One representative model per series — open a series to see every model with full specifications and a downloadable spec sheet.</p>}
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   {brandProducts.map(product => (
-                    <a key={product.slug} href={`/products/${product.category}/${product.slug}`}
+                    <a key={product.slug} href={condensed && bySeries[product.subcategory].length > 1 ? `/products/${product.category}?brand=${slug}&segment=${encodeURIComponent(product.subcategory)}` : `/products/${product.category}/${product.slug}`}
                       className="block rounded-2xl overflow-hidden transition-all hover:-translate-y-1"
                       style={{ background: '#FFFFFF', border: '1.5px solid rgba(11,30,61,0.08)', boxShadow: '0 1px 6px rgba(11,30,61,0.05)', textDecoration: 'none' }}>
                       <div className="h-40 relative overflow-hidden"
@@ -230,6 +246,9 @@ export default async function BrandPage({ params }: Props) {
                         <div style={{ fontSize: 15, fontWeight: 700, color: '#0B1E3D', marginBottom: 4 }}>{product.name}</div>
                         <div style={{ fontSize: 12, color: '#94A3B8', marginBottom: 8 }}>{product.subcategory}</div>
                         <div style={{ fontSize: 13, lineHeight: 1.55, color: '#475569' }}>{product.tagline}</div>
+                        {condensed && bySeries[product.subcategory].length > 1 && (
+                          <div style={{ fontSize: 12, fontWeight: 700, color: brand.color, marginTop: 8 }}>+ {bySeries[product.subcategory].length - 1} more in {product.subcategory} →</div>
+                        )}
                         {product.specs.filter(s => s.highlight).slice(0,2).length > 0 && (
                           <div className="flex gap-2 mt-3 flex-wrap">
                             {product.specs.filter(s => s.highlight).slice(0,2).map(spec => (
@@ -243,6 +262,35 @@ export default async function BrandPage({ params }: Props) {
                       </div>
                     </a>
                   ))}
+                </div>
+              </div>
+            )}
+
+            {/* itc system designs — original AVN drawings */}
+            {slug === 'itc' && (
+              <div>
+                <h2 style={{ fontFamily: 'var(--font-display)', fontSize: 24, fontWeight: 800, color: '#0B1E3D', marginBottom: 6 }}>How the itc range fits together</h2>
+                <p style={{ fontSize: 14, color: '#64748B', marginBottom: 16 }}>Capture → mix → process → amplify → reproduce. Indicative AVN system designs — quantities are confirmed by site survey.</p>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src="/images/itc-diagrams/itc-segment-map.svg" alt="itc professional sound product segment map" style={{ width: '100%', height: 'auto', borderRadius: 16, border: '1.5px solid rgba(11,30,61,0.08)' }} />
+                <h3 style={{ fontFamily: 'var(--font-display)', fontSize: 20, fontWeight: 800, color: '#0B1E3D', margin: '32px 0 14px' }}>Venue system designs</h3>
+                <div className="space-y-8">
+                  {[['banquet-hall', 'Banquet Hall'], ['conference-hall', 'Conference Hall'], ['concert-hall', 'Concert Hall'], ['theatre', 'Theatre'], ['stadium', 'Stadium & Sports Ground'], ['vocal-concert', 'Vocal Concert / Outdoor Show'], ['ktv', 'KTV / Karaoke Room'], ['studio-room', 'Studio Room']].map(([k, t]) => (
+                    <details key={k} className="rounded-2xl" style={{ border: '1.5px solid rgba(11,30,61,0.08)', background: '#FFFFFF' }}>
+                      <summary style={{ cursor: 'pointer', padding: '14px 18px', fontSize: 15, fontWeight: 700, color: '#0B1E3D' }}>{t} — signal flow &amp; coverage plan</summary>
+                      <div style={{ padding: '0 14px 14px' }} className="space-y-3">
+                        {/* eslint-disable-next-line @next/next/no-img-element */}
+                        <img src={`/images/itc-diagrams/itc-${k}-flow.svg`} alt={`${t} — itc system signal flow`} loading="lazy" style={{ width: '100%', height: 'auto' }} />
+                        {/* eslint-disable-next-line @next/next/no-img-element */}
+                        <img src={`/images/itc-diagrams/itc-${k}-plan.svg`} alt={`${t} — loudspeaker plan view and coverage`} loading="lazy" style={{ width: '100%', height: 'auto' }} />
+                      </div>
+                    </details>
+                  ))}
+                  <details className="rounded-2xl" style={{ border: '1.5px solid rgba(11,30,61,0.08)', background: '#FFFFFF' }}>
+                    <summary style={{ cursor: 'pointer', padding: '14px 18px', fontSize: 15, fontWeight: 700, color: '#0B1E3D' }}>Typical FOH / amplifier rack</summary>
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img src="/images/itc-diagrams/itc-rack-elevation.svg" alt="FOH and amplifier rack elevation" loading="lazy" style={{ width: '100%', maxWidth: 620, height: 'auto', display: 'block', margin: '0 auto 14px' }} />
+                  </details>
                 </div>
               </div>
             )}
