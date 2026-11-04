@@ -5,6 +5,7 @@ import media from "@/data/lampro-catalog-media.json";
 import { ALL_PRODUCTS } from "@/data/products";
 import relations from "@/data/relations.json";
 import CatalogProductShell from "@/components/products/CatalogProductShell";
+import LamproOfficialSite from "@/components/brands/LamproOfficialSite";
 
 type MediaEntry = { slug: string; img: string; desc: string; source: string; gallery?: string[] };
 type Rel = { label: string; href: string };
@@ -104,6 +105,9 @@ export default async function CatalogProductPage({ params }: Props) {
         brandHref="/brands/lampro"
         catalogHref="/brands/lampro/catalog"
       />
+      <div className="pb-10">
+        <LamproOfficialSite compact />
+      </div>
     </>
   );
 }

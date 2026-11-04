@@ -21,6 +21,14 @@ export const SITE = {
   },
 } as const
 
+// ─── SITE NETWORK (LED / AV cluster) ─────────────────────────────────────────
+// Sister sites linked from the footer and llms.txt. Keep to the LED/AV cluster only.
+export const SISTER_SITES = [
+  { domain: 'evolvetech.com.np', href: 'https://evolvetech.com.np/', role: 'LED display shop: prices, buy online, Novastar controllers' },
+  { domain: 'lampronepal.com', href: 'https://lampronepal.com/', role: 'Lampro LED display series, specs and warranty in Nepal' },
+  { domain: 'leddisplaynepal.com', href: 'https://leddisplaynepal.com/', role: 'LED video wall solutions, guides, rental and installation across Nepal' },
+] as const
+
 // ─── NAV ─────────────────────────────────────────────────────────────────────
 
 interface NavLink { label: string; href: string; hasDropdown?: boolean }

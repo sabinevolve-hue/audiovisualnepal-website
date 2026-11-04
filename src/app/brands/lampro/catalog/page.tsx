@@ -6,6 +6,7 @@ import Image from "next/image";
 import media from "@/data/lampro-catalog-media.json";
 
 import BrandCatalog from "@/components/brands/BrandCatalog";
+import LamproOfficialSite from "@/components/brands/LamproOfficialSite";
 type MediaEntry = { slug: string; img: string; desc: string; source: string };
 const MEDIA = media as Record<string, MediaEntry>;
 
@@ -31,6 +32,8 @@ const slug = (s: string) => s.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(
 
 export default function LamproCatalogPage() {
   return (
+    <>
+    <LamproOfficialSite compact />
     <BrandCatalog
       brand="Lampro"
       brandSlug="lampro"
@@ -39,5 +42,6 @@ export default function LamproCatalogPage() {
       media={media as Record<string, MediaEntry>}
       totalModels={catalog.totalModels}
     />
+    </>
   );
 }

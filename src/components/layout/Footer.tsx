@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import { SITE, SOLUTIONS_NAV, PRODUCT_CATEGORIES } from '@/lib/constants'
+import { SITE, SOLUTIONS_NAV, PRODUCT_CATEGORIES, SISTER_SITES } from '@/lib/constants'
 import { Phone, Mail, MapPin } from 'lucide-react'
 
 const quickLinks = [
@@ -144,6 +144,23 @@ export default function Footer() {
             </ul>
           </div>
         </div>
+
+        {/* Our other sites (LED / AV sister sites) */}
+        <nav aria-label="Our other sites" style={{ paddingTop: 28, paddingBottom: 28, borderBottom: '1px solid rgba(255,255,255,0.07)' }}>
+          <h4 style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.3)', marginBottom: 14 }}>Our other sites</h4>
+          <ul className="grid grid-cols-1 md:grid-cols-3 gap-3" style={{ listStyle: 'none', padding: 0, margin: 0 }}>
+            {SISTER_SITES.map((s) => (
+              <li key={s.href}>
+                <a href={s.href} style={{ fontSize: 13, color: 'rgba(255,255,255,0.45)', textDecoration: 'none', lineHeight: 1.6 }}
+                  onMouseEnter={e => { (e.currentTarget as HTMLAnchorElement).style.color = '#FFFFFF' }}
+                  onMouseLeave={e => { (e.currentTarget as HTMLAnchorElement).style.color = 'rgba(255,255,255,0.45)' }}
+                >
+                  {s.role} — <span style={{ fontWeight: 700 }}>{s.domain}</span>
+                </a>
+              </li>
+            ))}
+          </ul>
+        </nav>
 
         {/* Bottom bar */}
         <div style={{ paddingTop: 24, display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', gap: '12px', alignItems: 'center' }}>
