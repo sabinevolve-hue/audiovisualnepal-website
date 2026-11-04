@@ -50,6 +50,11 @@ export const metadata: Metadata = {
     follow: true,
     googleBot: { index: true, follow: true, 'max-video-preview': -1, 'max-image-preview': 'large' },
   },
+  // Google Search Console ownership (URL-prefix property https://www.audiovisualnepal.com/).
+  // Do not remove — Search Console drops verification if this tag disappears.
+  verification: {
+    google: '4pw0_c6SwinoVZfAEQYpZvWWPXSIm-fbFQ9N9CF-x7I',
+  },
 }
 
 export const viewport: Viewport = {
