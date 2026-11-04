@@ -37,6 +37,7 @@ const data: SolutionPageData = {
     { name: "Mixing & amplification", desc: "DMA6250U integrated mixer amplifier — USB, Bluetooth and multi-zone routing from one panel.", href: "/products/amplifiers/dsppa-dma6250u", img: "/images/products/dsppa/dsppa-dma6250u/main.jpg" },
     { name: "Event presentation", desc: "iShare X400 wireless presentation — presenters cast to event screens from any seat.", href: "/products/wireless-presentation/infobit-ishare-x400", img: "/images/products/infobit/infobit-ishare-x400/main.webp" },
   ],
+  mapSectors: ["Hospitality"],
   projectsBlurb: "Display and AV installations for hospitality venues — verified completed projects.",
   projects: [
     { title: "Inland Multi Cuisine & Stay", location: "Budhanilkantha, Kathmandu" },

@@ -36,6 +36,7 @@ const data: SolutionPageData = {
     { name: "Wireless presentation", desc: "iShare X400 — dongle-free casting with up to 4 sources on screen for agile workspaces.", href: "/products/wireless-presentation/infobit-ishare-x400", img: "/images/products/infobit/infobit-ishare-x400/main.webp" },
     { name: "Background music zones", desc: "DSPPA DMA6112 matrix amplifier — different sources in reception, cafeteria and work floors.", href: "/products/amplifiers/dsppa-dma6112", img: "/images/products/dsppa/dsppa-dma6112/main.jpg" },
   ],
+  mapSectors: ["Banking", "Corporate"],
   projectsBlurb: "LED and AV installations for Nepal's corporate and banking sector — verified completed projects.",
   projects: [
     { title: "Siddhartha Bank Head Office", location: "Naxal, Kathmandu" },

@@ -1,3 +1,4 @@
+import NepalProjectMap from '@/components/projects/NepalProjectMap'
 import { Metadata } from 'next'
 import Link from 'next/link'
 import relationsData from '@/data/relations.json'
@@ -54,7 +55,14 @@ export default async function ProductDetailPage({ params }: Props) {
   if (!product) notFound()
 
   const archKey = product && product.brandSlug === 'itc' && product.category === 'amplifiers' ? 'pro-amplifiers' : product?.category
-  if (product && archKey && ARCHETYPES[archKey]) return <ProductPageV2 product={product as never} categoryKey={archKey} />
+  const ledMap = product?.category === 'led-displays' ? (
+    <section style={{ padding: '0 24px 72px', background: '#FFFFFF' }}>
+      <div style={{ maxWidth: 1200, margin: '0 auto' }}>
+        <NepalProjectMap compact lines={['LED Displays']} title="LED screens we have installed in Nepal" subtitle="See completed LED installations by district and municipality — ask us for a reference visit near your site." />
+      </div>
+    </section>
+  ) : null
+  if (product && archKey && ARCHETYPES[archKey]) return <>{<ProductPageV2 product={product as never} categoryKey={archKey} />}{ledMap}</>
 
   const related = getRelatedProducts(product)
   const brandColor = BRAND_COLORS[product.brandSlug] || '#2563EB'
@@ -483,6 +491,7 @@ export default async function ProductDetailPage({ params }: Props) {
         </div>
       </section>
 
+      {ledMap}
     </main>
   )
 }

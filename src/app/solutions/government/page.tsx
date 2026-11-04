@@ -37,6 +37,7 @@ const data: SolutionPageData = {
     { name: "Session broadcast", desc: "Tenveo X60 NDI PTZ cameras record and stream proceedings in broadcast quality.", href: "/products/conference-cameras/tenveo-x60ndi", img: "/images/products/tenveo/tenveo-x60ndi/main.png" },
     { name: "Building-wide IP PA", desc: "DSPPA MAG6182II IP network PA server — announcements and emergency broadcast across every floor.", href: "/products/ip-network-audio/dsppa-mag6182ii", img: "/images/products/dsppa/dsppa-mag6182ii/main.jpg" },
   ],
+  mapSectors: ["Government"],
   projectsBlurb: "Client references for this sector are shared on request during consultation — contact us and we'll connect you with comparable completed projects.",
   projects: [],
   faqs: [

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import NepalProjectMap from "@/components/projects/NepalProjectMap";
 import InteractiveScene, { type SceneConfig } from "@/components/solutions/InteractiveScene";
 import Reveal from "@/components/solutions/Reveal";
 import { SOLUTIONS_NAV } from "@/lib/constants";
@@ -21,6 +22,7 @@ export type SolutionPageData = {
   scene: SceneConfig;
   systems: SolutionSystem[];
   projectsBlurb: string;
+  mapSectors?: string[];
   projects: SolutionProject[];
   faqs: SolutionFaq[];
 };
@@ -153,6 +155,9 @@ export default function SolutionPageTemplate({ data }: { data: SolutionPageData 
           ))}
         </div>
         )}
+        <div className="mt-10">
+          <NepalProjectMap compact sectors={data.mapSectors} title={data.mapSectors?.length ? 'Sector installations on the map' : 'Our installations across Nepal'} />
+        </div>
         <Reveal delay={0.2} className="mt-6">
           <Link href="/projects" className="text-sm font-semibold text-blue-600 hover:underline">
             View all projects →
