@@ -114,6 +114,20 @@ export default function ContactPage() {
               </div>
             </a>
 
+            <div style={{ ...darkCard, padding: '20px 24px' }}>
+              <div style={{ fontSize: 12, color: '#64748B', marginBottom: 10 }}>Follow our latest installs</div>
+              <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8 }}>
+                {[
+                  { href: SITE.social.instagram, label: 'Instagram' },
+                  { href: SITE.social.tiktok, label: 'TikTok' },
+                  { href: SITE.social.facebook, label: 'Facebook' },
+                  { href: SITE.social.linkedin, label: 'LinkedIn' },
+                ].map(s => (
+                  <a key={s.label} href={s.href} target="_blank" rel="noopener noreferrer" style={{ padding: '7px 14px', borderRadius: 980, border: '1px solid rgba(11,30,61,0.12)', fontSize: 13, fontWeight: 600, color: '#1D4ED8', textDecoration: 'none' }}>{s.label}</a>
+                ))}
+              </div>
+            </div>
+
             <div style={{ ...darkCard, padding: '24px' }}>
               <h3 style={{ fontFamily: 'Manrope, sans-serif', fontSize: 16, fontWeight: 700, color: '#0B1E3D', marginBottom: 16 }}>Office Hours</h3>
               <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>

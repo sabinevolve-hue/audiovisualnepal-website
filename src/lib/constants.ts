@@ -12,7 +12,8 @@ export const SITE = {
   whatsapp: 'https://wa.me/+9779762109538',
   social: {
     facebook: 'https://www.facebook.com/profile.php?id=61591762197024',
-    instagram: 'https://instagram.com/audiovisualnepal',
+    instagram: 'https://www.instagram.com/audiovisualsolutionnepal/',
+    tiktok: 'https://www.tiktok.com/@audiovisualnepal',
     youtube: 'https://youtube.com/audiovisualnepal',
     linkedin: 'https://www.linkedin.com/company/audio-visual-nepal/',
   },
