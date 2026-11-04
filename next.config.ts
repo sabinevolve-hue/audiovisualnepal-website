@@ -32,6 +32,14 @@ const nextConfig: NextConfig = {
   async headers() {
     return [
       {
+        // Partner-site import feed (evolvetech.com.np WooCommerce) — read-only JSON
+        source: '/feeds/:path*',
+        headers: [
+          { key: 'Access-Control-Allow-Origin', value: 'https://evolvetech.com.np' },
+          { key: 'Cache-Control', value: 'public, max-age=300' },
+        ],
+      },
+      {
         source: '/(.*)',
         headers: [
           { key: 'X-Content-Type-Options', value: 'nosniff' },
