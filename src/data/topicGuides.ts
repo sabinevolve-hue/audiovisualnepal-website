@@ -1,6 +1,7 @@
 // Topic guides (technology / buying) — same shape as venue guides; diagramKey '' = no venue drawings.
 import type { SoundGuide } from './soundGuides'
 import { TOPIC_GUIDES_2 } from './topicGuides2'
+import { TOPIC_GUIDES_3 } from './topicGuides3'
 
 const P = '/products'
 const TOPIC_GUIDES_1: SoundGuide[] = [
@@ -236,4 +237,4 @@ const TOPIC_GUIDES_1: SoundGuide[] = [
   },
 ]
 
-export const TOPIC_GUIDES: SoundGuide[] = [...TOPIC_GUIDES_2.slice(0, 1), ...TOPIC_GUIDES_1, ...TOPIC_GUIDES_2.slice(1)]
+export const TOPIC_GUIDES: SoundGuide[] = [...TOPIC_GUIDES_3, ...TOPIC_GUIDES_2.slice(0, 1), ...TOPIC_GUIDES_1, ...TOPIC_GUIDES_2.slice(1)]
