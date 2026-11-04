@@ -6,6 +6,7 @@ import { ProductImg } from '@/components/ui/ProductImg'
 import { SITE } from '@/lib/constants'
 import { PRODUCTS_BY_BRAND } from '@/data/products'
 import { SOUND_GUIDES } from '@/data/soundGuides'
+import LamproOfficialSite from '@/components/brands/LamproOfficialSite'
 
 const GUIDE_FOR: Record<string, string> = Object.fromEntries(SOUND_GUIDES.map(g => [g.diagramKey, g.slug]))
 
@@ -175,6 +176,11 @@ export default async function BrandPage({ params }: Props) {
                   style={{ background: brand.color, textDecoration: 'none' }}>
                   Browse the full {brand.name} catalog — {slug === 'infobit' ? '550+ models' : slug === 'dsppa' ? '200+ models' : slug === 'tenveo' ? '60+ models' : '20 series'} →
                 </Link>
+              )}
+              {slug === 'lampro' && (
+                <div className="mt-5 max-w-[640px]">
+                  <LamproOfficialSite />
+                </div>
               )}
             </div>
           </div>

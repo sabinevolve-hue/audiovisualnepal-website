@@ -30,6 +30,7 @@ export const metadata: Metadata = {
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Organization',
+  '@id': `${SITE.url}/#organization`,
   name: 'AudioVisual Nepal',
   legalName: SITE.legalName,
   url: SITE.url,
