@@ -282,13 +282,13 @@ export default async function ProductCategoryPage({ params, searchParams }: Prop
           </div>
         </div>
       </section>
-      {category === 'led-displays' && (
-        <section style={{ padding: '0 24px 72px' }}>
-          <div style={{ maxWidth: 1200, margin: '0 auto' }}>
-            <NepalProjectMap compact lines={['LED Displays']} title="LED displays we have installed in Nepal" subtitle="Every pin is a completed LED screen installation — click a district to see the municipalities and the screens in each." />
-          </div>
-        </section>
-      )}
+      <section style={{ padding: '0 24px 72px' }}>
+        <div style={{ maxWidth: 1200, margin: '0 auto' }}>
+          <NepalProjectMap compact lines={[cat.name]} segment={cat.name}
+            title={`${cat.name} we have installed in Nepal`}
+            subtitle={`Every pin is a completed ${cat.name.toLowerCase()} installation — click a district to see the municipalities and the projects in each.`} />
+        </div>
+      </section>
     </main>
   )
 }

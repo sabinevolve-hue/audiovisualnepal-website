@@ -1,3 +1,4 @@
+import NepalProjectMap from '@/components/projects/NepalProjectMap'
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { ArrowRight, ChevronRight } from 'lucide-react'
@@ -131,6 +132,11 @@ export default function ProductsPage() {
               WhatsApp Us
             </Link>
           </div>
+        </div>
+      </section>
+      <section style={{ padding: '0 24px 72px' }}>
+        <div style={{ maxWidth: 1200, margin: '0 auto' }}>
+          <NepalProjectMap compact title="Where our products are installed" />
         </div>
       </section>
     </main>

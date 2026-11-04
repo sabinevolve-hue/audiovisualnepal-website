@@ -28,6 +28,7 @@ type Props = {
   lines?: string[]
   title?: string
   subtitle?: string
+  segment?: string // product segment shown on this page, for the fallback note
 }
 
 const SECTOR_COLORS: Record<string, string> = {
@@ -47,7 +48,7 @@ function shade(n: number, max: number) {
   return SHADES[Math.min(4, 1 + Math.floor(t * 3.999))]
 }
 
-export default function NepalProjectMap({ compact = false, sectors, lines, title, subtitle }: Props) {
+export default function NepalProjectMap({ compact = false, sectors, lines, title, subtitle, segment }: Props) {
   const [map, setMap] = useState<MapData | null>(null)
   const [err, setErr] = useState(false)
   const [district, setDistrict] = useState<string | null>(null)
@@ -64,15 +65,17 @@ export default function NepalProjectMap({ compact = false, sectors, lines, title
     return () => { live = false }
   }, [])
 
+  // when a segment has no mapped installs yet, fall back to all installs and say so
+  const lineHits = lines?.length ? MAP_PROJECTS.filter(x => lines.includes(x.line)) : MAP_PROJECTS
+  const fallback = !!lines?.length && !lineHits.length
   const base = useMemo(() => {
-    let p = MAP_PROJECTS
-    if (lines?.length) p = p.filter(x => lines.includes(x.line))
+    let p = fallback ? MAP_PROJECTS : lineHits
     if (sectors?.length) {
       const f = p.filter(x => sectors.includes(x.sector))
       if (f.length) p = f
     }
     return p
-  }, [sectors, lines])
+  }, [sectors, lines, fallback]) // eslint-disable-line react-hooks/exhaustive-deps
 
   const sectorList = useMemo(() => ['All', ...Array.from(new Set(base.map(p => p.sector))).sort()], [base])
   const filtered = useMemo(() => base.filter(p => sector === 'All' || p.sector === sector), [base, sector])
@@ -135,10 +138,10 @@ export default function NepalProjectMap({ compact = false, sectors, lines, title
         <div>
           <p className="text-xs font-bold uppercase tracking-[0.15em] text-blue-600">Installations across Nepal</p>
           <h2 className="mt-1 text-2xl font-extrabold text-slate-900 sm:text-3xl" style={{ fontFamily: 'Manrope, sans-serif', letterSpacing: '-0.02em' }}>
-            {title ?? 'Where our systems are installed'}
+            {fallback ? 'Our installations across Nepal' : title ?? 'Where our systems are installed'}
           </h2>
           <p className="mt-1 max-w-2xl text-sm text-slate-600">
-            {subtitle ?? 'Click a district to zoom to its municipalities. Pins sit on the local level (metro, sub-metro, municipality or rural municipality) where each project is installed.'}
+            {fallback ? `No ${segment ?? 'installations of this segment'} projects are on the map yet — the pins show our other completed installations across Nepal. Ask us for ${segment ?? 'segment'} references near your site.` : subtitle ?? 'Click a district to zoom to its municipalities. Pins sit on the local level (metro, sub-metro, municipality or rural municipality) where each project is installed.'}
           </p>
         </div>
         <div className="flex gap-2 text-center">

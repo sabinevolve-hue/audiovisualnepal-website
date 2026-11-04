@@ -126,9 +126,9 @@ export default function ProductPageV2({ product, categoryKey }: { product: Produ
       {/* sticky */}
       <div className={'pv2-sticky' + (stuck ? ' show' : '')}><div className="in">
         <div className="nm">{product.name}<small>{product.tagline}</small></div><div className="sp" />
-        <span className="resp">⚡ Engineer replies in ~2 hrs</span>
+        <span className="resp"><b style={{ color: '#0B1E3D' }}>Price on Request</b> · ⚡ Engineer replies in ~2 hrs</span>
         <a className="btn wa" href={wa(`Hi, I'm interested in the ${product.name}. Please share pricing.`)}>WhatsApp</a>
-        <Link className="btn q" href={`/contact?product=${encodeURIComponent(product.name)}`}>Request price</Link>
+        <Link className="btn q" href={`/contact?product=${encodeURIComponent(product.name)}`}>Price on Request</Link>
       </div></div>
 
       <div className="cw">

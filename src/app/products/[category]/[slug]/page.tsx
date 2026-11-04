@@ -1,3 +1,4 @@
+import { PRODUCT_CATEGORIES } from '@/lib/constants'
 import NepalProjectMap from '@/components/projects/NepalProjectMap'
 import { Metadata } from 'next'
 import Link from 'next/link'
@@ -55,10 +56,13 @@ export default async function ProductDetailPage({ params }: Props) {
   if (!product) notFound()
 
   const archKey = product && product.brandSlug === 'itc' && product.category === 'amplifiers' ? 'pro-amplifiers' : product?.category
-  const ledMap = product?.category === 'led-displays' ? (
+  const segName = PRODUCT_CATEGORIES.find(c => c.href === `/products/${product?.category}`)?.label ?? 'AV'
+  const ledMap = product ? (
     <section style={{ padding: '0 24px 72px', background: '#FFFFFF' }}>
       <div style={{ maxWidth: 1200, margin: '0 auto' }}>
-        <NepalProjectMap compact lines={['LED Displays']} title="LED screens we have installed in Nepal" subtitle="See completed LED installations by district and municipality — ask us for a reference visit near your site." />
+        <NepalProjectMap compact lines={[segName]} segment={segName}
+          title={`${segName} we have installed in Nepal`}
+          subtitle="See completed installations by district and municipality — ask us for a reference visit near your site." />
       </div>
     </section>
   ) : null
@@ -299,6 +303,10 @@ export default async function ProductDetailPage({ params }: Props) {
 
             {/* Summary card + quote CTA */}
             <div>
+              <div style={{ padding: '14px 20px', background: '#EFF6FF', borderRadius: 12, border: '1px solid #BFDBFE', marginBottom: 12, display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 12 }}>
+                <span style={{ fontSize: 12, fontWeight: 700, color: '#64748B', textTransform: 'uppercase', letterSpacing: '0.08em' }}>Price</span>
+                <Link href={`/contact?product=${encodeURIComponent(product.name)}&inquiry=price`} style={{ fontSize: 15, fontWeight: 800, color: '#1D4ED8', textDecoration: 'none' }}>Price on Request →</Link>
+              </div>
               <div style={{ padding: 28, background: '#FFFFFF', borderRadius: 16, border: '1px solid rgba(11,30,61,0.1)', marginBottom: 16 }}>
                 <h3 style={{ fontFamily: 'Manrope, sans-serif', fontSize: 16, fontWeight: 700, color: '#0B1E3D', marginBottom: 8 }}>Need the full technical datasheet?</h3>
                 <p style={{ fontSize: 13, color: '#64748B', lineHeight: 1.7, marginBottom: 20 }}>Our engineers will send the complete specification sheet, wiring diagrams, and installation guide within 24 hours.</p>
@@ -389,7 +397,7 @@ export default async function ProductDetailPage({ params }: Props) {
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 24, marginBottom: 64 }}>
             {/* Quote CTA */}
             <div style={{ padding: 36, background: `linear-gradient(135deg, ${brandColor} 0%, ${brandColor}CC 100%)`, borderRadius: 20, color: '#fff' }}>
-              <div style={{ fontSize: 11, fontWeight: 700, letterSpacing: '0.15em', textTransform: 'uppercase', opacity: 0.7, marginBottom: 12 }}>Get a Price</div>
+              <div style={{ fontSize: 11, fontWeight: 700, letterSpacing: '0.15em', textTransform: 'uppercase', opacity: 0.7, marginBottom: 12 }}>Price on Request</div>
               <h3 style={{ fontFamily: 'Manrope, sans-serif', fontSize: 22, fontWeight: 800, marginBottom: 10, letterSpacing: '-0.02em' }}>Request a Quotation</h3>
               <p style={{ fontSize: 14, opacity: 0.85, lineHeight: 1.7, marginBottom: 24 }}>Tell us your project requirements and we&apos;ll send a detailed quotation with installation cost within 48 hours.</p>
               <Link href={`/contact?product=${encodeURIComponent(product.name)}&brand=${product.brand}`}
