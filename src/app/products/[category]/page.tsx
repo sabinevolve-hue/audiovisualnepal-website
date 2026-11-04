@@ -32,7 +32,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const cat = STATIC_CATS.find(c => c.slug === category)
   if (!cat) return { title: 'Products' }
   return {
-    title: `${cat.name} — Professional AV Nepal`,
+    title: `${cat.name} in Nepal — Authorised Dealer, Supply & Installation`,
+    alternates: { canonical: `https://www.audiovisualnepal.com/products/${cat.slug}` },
+    keywords: [`${cat.name} Nepal`, `${cat.name} Kathmandu`, `${cat.name} price in Nepal`, `buy ${cat.name.toLowerCase()} Nepal`],
     description: cat.description || `Professional ${cat.name.toLowerCase()} for Nepal — genuine products, manufacturer warranty, expert support, nationwide delivery.`,
   }
 }

@@ -49,6 +49,17 @@ export default async function BlogPage({ searchParams }: { searchParams: Promise
         </div>
       </section>
 
+      {/* Venue design guides band */}
+      <section style={{ padding: '28px 24px', background: '#FFF7ED', borderTop: '1px solid #FED7AA', borderBottom: '1px solid #FED7AA' }}>
+        <div style={{ maxWidth: 1200, margin: '0 auto', display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 16, flexWrap: 'wrap' }}>
+          <div>
+            <p style={{ fontSize: 11, fontWeight: 800, letterSpacing: '0.12em', textTransform: 'uppercase', color: '#EA580C', margin: 0 }}>New · Venue system design guides</p>
+            <p style={{ fontSize: 17, fontWeight: 700, color: '#0B1E3D', margin: '6px 0 0' }}>Banquet hall, conference hall, auditorium, theatre, stadium, outdoor concert, KTV and studio — with drawings and equipment lists.</p>
+          </div>
+          <Link href="/guides" style={{ padding: '10px 22px', borderRadius: 999, background: '#EA580C', color: '#FFFFFF', fontSize: 14, fontWeight: 700, textDecoration: 'none' }}>Read the guides →</Link>
+        </div>
+      </section>
+
       {/* Category Filter */}
       {categories.length > 0 && (
         <section style={{ padding: '20px 24px', background: '#F1F5F9', borderBottom: '1px solid rgba(11,30,61,0.05)' }}>

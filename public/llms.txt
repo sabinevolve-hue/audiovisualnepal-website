@@ -2,8 +2,9 @@
 
 Nepal's professional audio-visual solutions provider: design, supply and installation
 of PA systems, voice evacuation (EN54), IP network audio, video conferencing,
-smart podiums and LED displays across Nepal. Authorised distributor for DSPPA,
-InfoBit, Tenveo and Focus; authorised Lampro partner.
+smart podiums and LED displays across Nepal. Brands: DSPPA, InfoBit, Tenveo, Evolve Podium, Lampro (LED), Wincomn/Krinda (laser projectors),
+Triolion (LCD video walls & controllers) and itc (professional sound: line arrays, amplifiers,
+mixers, microphones).
 
 ## Key pages
 - Solutions by industry: https://www.audiovisualnepal.com/solutions
@@ -13,6 +14,18 @@ InfoBit, Tenveo and Focus; authorised Lampro partner.
 - Brand catalogs (860+ models): /brands/dsppa/catalog, /brands/infobit/catalog, /brands/tenveo/catalog, /brands/lampro/catalog
 - Verified projects: https://www.audiovisualnepal.com/projects
 - Knowledge center: https://www.audiovisualnepal.com/blog
+- Venue sound-system design guides: https://www.audiovisualnepal.com/guides
+  - Banquet hall: /guides/banquet-hall-sound-system-design
+  - Conference hall: /guides/conference-hall-sound-system-design
+  - Concert hall & auditorium: /guides/concert-hall-auditorium-sound-system-design
+  - Theatre: /guides/theatre-sound-system-design
+  - Stadium & sports ground: /guides/stadium-sports-ground-sound-system-design
+  - Outdoor concert & festival: /guides/outdoor-concert-festival-sound-system-design
+  - KTV / karaoke: /guides/ktv-karaoke-room-sound-system-design
+  - Studio room: /guides/studio-room-monitoring-recording-design
+- Professional sound (itc, 151 products): /brands/itc · /products/line-array-speakers · /products/pro-loudspeakers · /products/subwoofers · /products/amplifiers · /products/mixing-consoles · /products/microphones
+- Laser projectors (11 models): /products/projectors
+- Video walls (LCD walls, controllers): /products/video-walls
 
 ## Facts
 - 100+ verified installations across Nepal; references on request.

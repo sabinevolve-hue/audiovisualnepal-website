@@ -26,6 +26,7 @@ export const NAV_LINKS: NavLink[] = [
   { label: 'Products',  href: '/products',  hasDropdown: true },
   { label: 'Projects',  href: '/projects' },
   { label: 'Brands',    href: '/brands' },
+  { label: 'Guides',    href: '/guides' },
   { label: 'Blog',      href: '/blog' },
   { label: 'About',     href: '/about' },
 ]
@@ -282,7 +283,7 @@ export const DEFAULT_SEO = {
   titleTemplate: '%s | AudioVisual Nepal',
   defaultTitle: 'AudioVisual Nepal — Professional Audio Visual Solutions',
   description:
-    "Nepal's professional AV solutions provider — PA systems, voice evacuation, conferencing, smart podiums and LED displays for every sector.",
+    "Nepal's professional AV solutions provider — professional sound (line arrays, amplifiers, mixers, microphones), PA and voice evacuation, conferencing, laser projectors, LED and LCD video walls and smart podiums. Design, supply and installation across Nepal.",
   keywords: [
     'audio visual nepal',
     'PA system nepal',

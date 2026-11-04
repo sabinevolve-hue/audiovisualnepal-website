@@ -11,6 +11,7 @@ const quickLinks = [
   { label: 'BOQ Lookup', href: '/boq-lookup' },
   { label: 'InfoBit Catalog', href: '/brands/infobit/catalog' },
   { label: 'Projects', href: '/projects' },
+  { label: 'Sound Design Guides', href: '/guides' },
   { label: 'Brands', href: '/brands' },
   { label: 'About', href: '/about' },
   { label: 'Contact', href: '/contact' },

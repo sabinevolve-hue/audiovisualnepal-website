@@ -22,8 +22,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const product = getProduct(slug)
   if (!product) return { title: 'Product Not Found' }
   return {
-    title: `${product.name} — ${product.subcategory}`,
-    description: product.description.slice(0, 155),
+    title: `${product.name} — ${product.subcategory} in Nepal`,
+    description: `${product.tagline}. ${product.description}`.replace(/\s+/g, ' ').slice(0, 158),
+    keywords: [`${product.name} Nepal`, `${product.brand} ${product.subcategory} Nepal`, `${product.subcategory} price Nepal`, `${product.brand} dealer Nepal`],
+    alternates: { canonical: `https://www.audiovisualnepal.com/products/${product.category}/${product.slug}` },
     openGraph: {
       title: `${product.name} | AudioVisual Nepal`,
       description: product.description.slice(0, 155),

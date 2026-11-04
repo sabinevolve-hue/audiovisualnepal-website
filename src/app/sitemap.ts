@@ -3,6 +3,7 @@ import { SITE, PRODUCT_CATEGORIES, SOLUTIONS_NAV } from '@/lib/constants'
 import { ALL_PRODUCTS } from '@/data/products'
 import { CASE_STUDIES } from '@/data/caseStudies'
 import { STATIC_ARTICLES } from '@/data/staticArticles'
+import { SOUND_GUIDES } from '@/data/soundGuides'
 import infobitCat from '@/data/infobit-catalog.json'
 import dsppaCat from '@/data/dsppa-catalog.json'
 import tenveoCat from '@/data/tenveo-catalog.json'
@@ -24,13 +25,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/products`,lastModified: now, changeFrequency: 'weekly',  priority: 0.9 },
     { url: `${base}/solutions`, lastModified: now, changeFrequency: 'monthly', priority: 0.9 },
     { url: `${base}/solution-finder`, lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${base}/guides`, lastModified: now, changeFrequency: 'weekly', priority: 0.9 },
+    ...SOUND_GUIDES.map(g => ({ url: `${base}/guides/${g.slug}`, lastModified: g.date, changeFrequency: 'monthly' as const, priority: 0.85 })),
     { url: `${base}/brands/infobit/catalog`, lastModified: now, changeFrequency: 'weekly', priority: 0.8 },
     { url: `${base}/brands/dsppa/catalog`, lastModified: now, changeFrequency: 'weekly', priority: 0.8 },
     { url: `${base}/brands/tenveo/catalog`, lastModified: now, changeFrequency: 'weekly', priority: 0.8 },
     { url: `${base}/brands/lampro/catalog`, lastModified: now, changeFrequency: 'weekly', priority: 0.8 },
   ]
 
-  const brandPages: MetadataRoute.Sitemap = ['dsppa', 'infobit', 'tenveo', 'focus'].map(slug => ({
+  const brandPages: MetadataRoute.Sitemap = ['dsppa', 'infobit', 'tenveo', 'focus', 'lampro', 'wincomn', 'triolion', 'itc'].map(slug => ({
     url:             `${base}/brands/${slug}`,
     lastModified:    now,
     changeFrequency: 'monthly' as const,

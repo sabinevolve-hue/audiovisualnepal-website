@@ -5,6 +5,9 @@ import { ChevronRight, ExternalLink, Phone } from 'lucide-react'
 import { ProductImg } from '@/components/ui/ProductImg'
 import { SITE } from '@/lib/constants'
 import { PRODUCTS_BY_BRAND } from '@/data/products'
+import { SOUND_GUIDES } from '@/data/soundGuides'
+
+const GUIDE_FOR: Record<string, string> = Object.fromEntries(SOUND_GUIDES.map(g => [g.diagramKey, g.slug]))
 
 export const revalidate = 86400
 
@@ -283,6 +286,7 @@ export default async function BrandPage({ params }: Props) {
                         <img src={`/images/itc-diagrams/itc-${k}-flow.svg`} alt={`${t} — itc system signal flow`} loading="lazy" style={{ width: '100%', height: 'auto' }} />
                         {/* eslint-disable-next-line @next/next/no-img-element */}
                         <img src={`/images/itc-diagrams/itc-${k}-plan.svg`} alt={`${t} — loudspeaker plan view and coverage`} loading="lazy" style={{ width: '100%', height: 'auto' }} />
+                        {GUIDE_FOR[k] && <Link href={`/guides/${GUIDE_FOR[k]}`} style={{ display: 'inline-block', fontSize: 14, fontWeight: 700, color: '#EA580C', textDecoration: 'none' }}>Read the full {t.toLowerCase()} design guide →</Link>}
                       </div>
                     </details>
                   ))}
