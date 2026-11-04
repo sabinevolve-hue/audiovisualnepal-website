@@ -2,11 +2,13 @@
 // Rendered at /guides/<slug>. Inline links use [text](/path). Diagrams are original AVN drawings
 // in /public/images/itc-diagrams. Figures are rules of thumb; every design is confirmed on survey.
 
-export type GuideSection = { h: string; p?: string[]; list?: string[] }
+export type GuideSection = { h: string; p?: string[]; list?: string[]; table?: { head: string[]; rows: string[][] } }
 export type GuideKit = { role: string; model: string; href: string; why: string }
 export type SoundGuide = {
   slug: string; venue: string; diagramKey: string; title: string; description: string; hero: string; date: string
   readMins: number; keywords: string[]; intro: string[]; sections: GuideSection[]; kit: GuideKit[]; faq: { q: string; a: string }[]
+  /** Optional overrides for non-sound guides (hero alt text, closing CTA button and contact topic). */
+  heroAlt?: string; cta?: { label: string; href: string; topic: string }
 }
 
 import { TOPIC_GUIDES } from './topicGuides'

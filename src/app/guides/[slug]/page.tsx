@@ -70,7 +70,7 @@ export default async function GuidePage({ params }: Props) {
         <h1 className="mt-3 text-3xl font-extrabold text-slate-900 sm:text-4xl" style={{ fontFamily: 'Manrope, sans-serif', letterSpacing: '-0.02em' }}>{g.title}</h1>
         <p className="mt-3 text-lg text-slate-500">{g.description}</p>
         <div className="relative mt-8 aspect-video overflow-hidden rounded-2xl bg-slate-900">
-          <Image src={g.hero} alt={`${g.venue} sound system`} fill priority className="object-cover" sizes="(max-width: 768px) 100vw, 768px" />
+          <Image src={g.hero} alt={g.heroAlt ?? `${g.venue} sound system`} fill priority className="object-cover" sizes="(max-width: 768px) 100vw, 768px" />
         </div>
         {g.intro.map((p, i) => <p key={i} className="mt-6 text-[17px] leading-relaxed text-slate-700"><Rich text={p} /></p>)}
 
@@ -89,6 +89,22 @@ export default async function GuidePage({ params }: Props) {
             <h2 className="mt-10 text-2xl font-extrabold text-slate-900" style={{ fontFamily: 'Manrope, sans-serif' }}>{s.h}</h2>
             {s.p?.map((p, j) => <p key={j} className="mt-4 leading-relaxed text-slate-600"><Rich text={p} /></p>)}
             {s.list && <ul className="mt-4 list-disc space-y-2 pl-6 text-slate-600">{s.list.map((l, j) => <li key={j}><Rich text={l} /></li>)}</ul>}
+            {s.table && (
+              <div className="mt-5 overflow-x-auto rounded-2xl border border-slate-200">
+                <table className="w-full min-w-[640px] text-left text-sm">
+                  <thead className="bg-slate-50 text-xs uppercase tracking-wider text-slate-500"><tr>{s.table.head.map(h => <th key={h} scope="col" className="px-4 py-3 align-bottom">{h}</th>)}</tr></thead>
+                  <tbody>
+                    {s.table.rows.map((r, j) => (
+                      <tr key={j} className="border-t border-slate-100 align-top">
+                        {r.map((c, k) => k === 0
+                          ? <th key={k} scope="row" className="px-4 py-3 font-semibold text-slate-900"><Rich text={c} /></th>
+                          : <td key={k} className="px-4 py-3 text-slate-600"><Rich text={c} /></td>)}
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            )}
           </section>
         ))}
 
@@ -135,8 +151,8 @@ export default async function GuidePage({ params }: Props) {
           <h2 className="text-xl font-extrabold" style={{ fontFamily: 'Manrope, sans-serif' }}>{g.diagramKey ? `Planning a ${g.venue.toLowerCase()} sound system?` : 'Want an engineer to check your plan?'}</h2>
           <p className="mx-auto mt-2 max-w-md text-sm text-slate-300">Free site survey, system design and an itemised quotation from our engineers.</p>
           <div className="mt-5 flex flex-wrap justify-center gap-3">
-            <Link href={`/contact?product=${encodeURIComponent(g.venue + ' sound system')}`} className="rounded-full bg-orange-500 px-6 py-2.5 text-sm font-semibold text-white hover:bg-orange-600">Request a design</Link>
-            <Link href="/brands/itc" className="rounded-full border border-white/30 px-6 py-2.5 text-sm font-semibold text-white hover:bg-white/10">Browse itc pro sound</Link>
+            <Link href={`/contact?product=${encodeURIComponent(g.cta?.topic ?? g.venue + ' sound system')}`} className="rounded-full bg-orange-500 px-6 py-2.5 text-sm font-semibold text-white hover:bg-orange-600">Request a design</Link>
+            <Link href={g.cta?.href ?? '/brands/itc'} className="rounded-full border border-white/30 px-6 py-2.5 text-sm font-semibold text-white hover:bg-white/10">{g.cta?.label ?? 'Browse itc pro sound'}</Link>
           </div>
         </div>
 

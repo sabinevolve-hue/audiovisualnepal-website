@@ -37,6 +37,8 @@ mixers, microphones).
   - Outdoor speakers & IP ratings: /guides/outdoor-speakers-monsoon-ip-ratings
   - Immersive spatial audio: /guides/immersive-spatial-audio-exhibitions-theatres
   - Cinema hall sound: /guides/cinema-hall-sound-system-design
+  - Simultaneous interpretation systems in Nepal (equipment, setup, sizing): /guides/simultaneous-interpretation-system-nepal
+  - Conference room AV & video conferencing, huddle to boardroom: /guides/conference-room-video-conferencing-system-nepal
 - Conference systems (itc: digital, wireless, paperless, interpretation): /products/conference-systems
 - Professional sound (itc, 151 products): /brands/itc · /products/line-array-speakers · /products/pro-loudspeakers · /products/subwoofers · /products/amplifiers · /products/mixing-consoles · /products/microphones
 - Laser projectors (11 models): /products/projectors
