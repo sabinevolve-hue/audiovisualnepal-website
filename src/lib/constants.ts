@@ -2,6 +2,8 @@
 
 export const SITE = {
   name: 'AudioVisual Nepal',
+  // Registered company behind audiovisualnepal.com (Evolve Tech Pvt. Ltd. runs the other brand sites).
+  legalName: 'Audio Visual Solutions Pvt. Ltd.',
   tagline: "Nepal's Leading Professional Audio Visual Solutions Provider",
   url: 'https://www.audiovisualnepal.com',
   phone: '+977 9762109538',

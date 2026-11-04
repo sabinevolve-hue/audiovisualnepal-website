@@ -31,6 +31,7 @@ const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Organization',
   name: 'AudioVisual Nepal',
+  legalName: SITE.legalName,
   url: SITE.url,
   logo: `${SITE.url}/logo.png`,
   telephone: SITE.phone,
