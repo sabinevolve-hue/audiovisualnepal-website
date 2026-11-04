@@ -148,7 +148,7 @@ export default function Footer() {
         {/* Bottom bar */}
         <div style={{ paddingTop: 24, display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', gap: '12px', alignItems: 'center' }}>
           <p style={{ fontSize: 12, color: 'rgba(255,255,255,0.25)' }}>
-            © {new Date().getFullYear()} AudioVisual Nepal. All rights reserved.
+            © {new Date().getFullYear()} AudioVisual Nepal · {SITE.legalName}. All rights reserved.
           </p>
           <div style={{ display: 'flex', gap: 20 }}>
             {[{ label: 'Privacy Policy', href: '/privacy-policy' }, { label: 'Terms', href: '/terms' }].map(l => (
