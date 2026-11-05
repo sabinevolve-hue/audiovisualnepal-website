@@ -4,6 +4,7 @@ import { DEFAULT_SEO, SITE } from '@/lib/constants'
 import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
 import WhatsAppFloat from '@/components/ui/WhatsAppFloat'
+import LeadAttribution from '@/components/analytics/LeadAttribution'
 import { PageTransition } from '@/components/ui/PageTransition'
 import Script from 'next/script'
 import './globals.css'
@@ -87,6 +88,7 @@ gtag('config', 'G-C4DN5S74PT');`}
         </PageTransition>
         <Footer />
         <WhatsAppFloat />
+        <LeadAttribution />
       </body>
     </html>
   )
