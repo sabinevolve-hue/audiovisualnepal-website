@@ -19,7 +19,7 @@ const inputStyle = {
 
 export default function ContactPage() {
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle')
-  const [form, setForm] = useState({ name: '', company: '', email: '', phone: '', projectType: '', message: '' })
+  const [form, setForm] = useState({ name: '', company: '', email: '', phone: '', projectType: '', message: '', website: '' })
 
   useEffect(() => {
     try {
@@ -50,6 +50,12 @@ export default function ContactPage() {
       const data = await res.json().catch(() => ({}))
       if (!res.ok) { setStatus('error'); return }
       setStatus('success')
+      // GA4 recommended conversion event — only after the API accepts the
+      // enquiry. No personal data: just which form and the project type.
+      const gtag = (window as unknown as { gtag?: (...args: unknown[]) => void }).gtag
+      if (typeof gtag === 'function' && !form.website) {
+        gtag('event', 'generate_lead', { form: 'contact', project_type: form.projectType || 'unspecified' })
+      }
       // If server couldn't confirm email delivery, offer the WhatsApp fallback so no lead is lost.
       if (data && data.delivered === false) waFallback()
     } catch { setStatus('error') }
