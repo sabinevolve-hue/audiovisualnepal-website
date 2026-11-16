@@ -2,14 +2,18 @@ import NepalProjectMap from '@/components/projects/NepalProjectMap'
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { ArrowRight, ChevronRight } from 'lucide-react'
-import { PRODUCT_GROUPS, VENUE_SOLUTIONS } from '@/lib/constants'
+import { PRODUCT_GROUPS, VENUE_SOLUTIONS, PRODUCT_CATEGORIES } from '@/lib/constants'
+import { ALL_PRODUCTS } from '@/data/products'
+
+const N_PRODUCTS = Math.floor(ALL_PRODUCTS.length / 10) * 10
+const N_CATS = PRODUCT_CATEGORIES.length
 
 export const metadata: Metadata = {
   title: 'Products | Professional AV Systems Nepal',
-  description: 'Complete professional AV product catalog — PA systems, voice evacuation, conference cameras, smart podiums, video conferencing and display solutions. Authorised brands, NPR pricing, nationwide delivery.',
+  description: 'Complete professional AV and security product catalog — PA systems, voice evacuation, conference systems, pro sound, LED displays, projectors, CCTV cameras, NVRs and PoE switches. Authorised brands, nationwide supply and installation.',
   openGraph: {
     title: 'Professional AV Products Nepal — PA, Conference & Display Systems',
-    description: 'Browse 38+ products across 14 categories. DSPPA, InfoBit, Tenveo, Evolve Podium — genuine products with full manufacturer warranty.',
+    description: `Browse ${N_PRODUCTS}+ products across ${N_CATS} categories from DSPPA, InfoBit, Tenveo, Evolve Podium, Lampro, Wincomn, Triolion, itc and Uniview — genuine products with full manufacturer warranty.`,
     url: 'https://www.audiovisualnepal.com/products',
     siteName: 'AudioVisual Nepal',
     images: [{ url: '/og-image.svg', width: 1200, height: 630, alt: 'AudioVisual Nepal Products' }],
@@ -47,11 +51,11 @@ export default function ProductsPage() {
             Professional AV Systems
           </h1>
           <p style={{ fontSize: 17, color: '#64748B', lineHeight: 1.7, maxWidth: 500, margin: '0 auto 36px' }}>
-            38+ products across 14 categories — sourced from authorised brands, delivered and installed across Nepal.
+            {N_PRODUCTS}+ products across {N_CATS} categories — sourced from authorised brands, delivered and installed across Nepal.
           </p>
           {/* Brand strip */}
           <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            {['DSPPA', 'InfoBit', 'Tenveo', 'Evolve Podium'].map(b => (
+            {['DSPPA', 'InfoBit', 'Tenveo', 'Evolve Podium', 'Lampro', 'Wincomn', 'Triolion', 'itc', 'Uniview'].map(b => (
               <span key={b} style={{ background: '#FFFFFF', border: '1px solid rgba(11,30,61,0.12)', borderRadius: 8, padding: '6px 16px', fontSize: 13, fontWeight: 600, color: '#0B1E3D' }}>{b}</span>
             ))}
           </div>

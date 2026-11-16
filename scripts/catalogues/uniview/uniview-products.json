@@ -1,0 +1,4207 @@
+[
+ {
+  "model": "UAC-T115-AF40-W",
+  "line": "Uniview",
+  "name": "5MP ColorHunter Fixed Warm Light Turret Analog Camera",
+  "category": "cctv-cameras",
+  "sub": "HD Analog Cameras",
+  "features": [
+   "1/2.7\", 5.0 MP, CMOS Sensor",
+   "4.0mm@F1.6 Lens",
+   "Up to 5MP@25fps: 2880(H)×1620(V)",
+   "Up to 20m white light distance",
+   "DC 12 V±25%, Power Supply"
+  ],
+  "img": "uniview-uac-t115-af40-w.webp",
+  "slug": "uniview-uac-t115-af40-w",
+  "verify": []
+ },
+ {
+  "model": "UAC-T112-AF28-DL",
+  "line": "Uniview",
+  "name": "2MP ColorHunter Fixed Dual-light Turret Analog Camera",
+  "category": "cctv-cameras",
+  "sub": "HD Analog Cameras",
+  "features": [
+   "2MP 1/3.0\" CMOS sensor for high quality image",
+   "TVI/AHD/CVI/CVBS Video Output through BNC",
+   "20M of IR/White light Illumination distance",
+   "2.8mm@F1.6 lens, Max 1080P@25fps: 1920(H)×1080(V) Video Resolution",
+   "DC 12V(±25%) Power input with reverse polarity protection and surge protection"
+  ],
+  "img": "uniview-uac-t112-af28-dl.webp",
+  "slug": "uniview-uac-t112-af28-dl",
+  "verify": []
+ },
+ {
+  "model": "UAC-T142-AF28LM-DL",
+  "line": "Uniview",
+  "name": "2MP ColorHunter Fixed Dual-light Turret Analog Camera",
+  "category": "cctv-cameras",
+  "sub": "HD Analog Cameras",
+  "features": [
+   "2MP 1/3\" CMOS sensor for high quality image",
+   "TVI/AHD/CVI/CVBS Video Output through BNC",
+   "40M of IR/White light Illumination distance",
+   "2.8mm@F1.6 lens, Max 1080P@25fps: 1920(H)×1080(V) Video Resolution",
+   "DC 12V(±25%) Power input with reverse polarity protection and surge protection"
+  ],
+  "img": "uniview-uac-t142-af28lm-dl.webp",
+  "slug": "uniview-uac-t142-af28lm-dl",
+  "verify": []
+ },
+ {
+  "model": "UAC-T122-AF28M-W",
+  "line": "Uniview",
+  "name": "2MP ColorHunter HD Fixed Turret Analog Camera",
+  "category": "cctv-cameras",
+  "sub": "HD Analog Cameras",
+  "features": [
+   "2MP 1/2.7\" CMOS sensor for high quality image",
+   "TVI/AHD/CVI/CVBS Video Output through BNC",
+   "40M of white light Illumination distance",
+   "2.8mm@F1.6 lens, Supports 180° horizontal flip, 180° vertical flip",
+   "Max 1080P@30fps: 1920(H)×1080(V) Video Resolution",
+   "DC 12V(±25%) Power input with reverse polarity protection and surge protection"
+  ],
+  "img": "uniview-uac-t122-af28m-w.webp",
+  "slug": "uniview-uac-t122-af28m-w",
+  "verify": []
+ },
+ {
+  "model": "UAC-B125-AF28M-W",
+  "line": "Uniview",
+  "name": "5MP ColorHunter HD Fixed Mini Bullet Analog Camera",
+  "category": "cctv-cameras",
+  "sub": "HD Analog Cameras",
+  "features": [
+   "5MP 1/2.7\" CMOS sensor for high quality image",
+   "TVI/AHD/CVI/CVBS Video Output through BNC",
+   "40M of white light Illumination distance",
+   "2.8mm@F1.4 lens, Supports 180° horizontal flip, 180° vertical flip",
+   "Max 5MP@25fps: 2880(H)×1620(V) Video Resolution",
+   "DC 12V(±25%) Power input with reverse polarity protection and surge protection"
+  ],
+  "img": "uniview-uac-b125-af28m-w.webp",
+  "slug": "uniview-uac-b125-af28m-w",
+  "verify": []
+ },
+ {
+  "model": "UAC-T132-F40",
+  "line": "Uniview",
+  "name": "2MP HD IR Dome Analog Camera",
+  "category": "cctv-cameras",
+  "sub": "HD Analog Cameras",
+  "features": [
+   "2MP 1/3.2\" CMOS sensor for high quality image",
+   "TVI/AHD/CVI/CVBS Video Output through BNC",
+   "20M of IR Illumination distance",
+   "4.0mm@F2.0 lens, Supports 180° horizontal flip, 180° vertical flip",
+   "Max 1080P@25fps: 1920(H)×1080(V) Video Resolution",
+   "DC 12V(±25%) Power input with reverse polarity protection and surge protection"
+  ],
+  "img": "uniview-uac-t132-f40.webp",
+  "slug": "uniview-uac-t132-f40",
+  "verify": []
+ },
+ {
+  "model": "UAC-T132-F28",
+  "line": "Uniview",
+  "name": "2MP HD IR Dome Analog Camera",
+  "category": "cctv-cameras",
+  "sub": "HD Analog Cameras",
+  "features": [
+   "2MP 1/3.2\" CMOS sensor for high quality image",
+   "TVI/AHD/CVI/CVBS Video Output through BNC",
+   "20M of IR Illumination distance",
+   "2.8mm@F2.0 lens, Supports 180° horizontal flip, 180° vertical flip",
+   "Max 1080P@25fps: 1920(H)×1080(V) Video Resolution",
+   "DC 12V(±25%) Power input with reverse polarity protection and surge protection"
+  ],
+  "img": "uniview-uac-t132-f28.webp",
+  "slug": "uniview-uac-t132-f28",
+  "verify": []
+ },
+ {
+  "model": "UAC-T125-AF28M-W",
+  "line": "Uniview",
+  "name": "5MP ColorHunter HD Fixed Turret Analog Camera",
+  "category": "cctv-cameras",
+  "sub": "HD Analog Cameras",
+  "features": [
+   "5MP 1/2.7\" CMOS sensor for high quality image",
+   "TVI/AHD/CVI/CVBS Video Output through BNC",
+   "40M of white light Illumination distance",
+   "2.8mm@F1.4 lens, Supports 180° horizontal flip, 180° vertical flip",
+   "5MP@25fps: 2880(H)×1620(V) Video Resolution",
+   "DC 12V(±25%) Power input with reverse polarity protection and surge protection"
+  ],
+  "img": "uniview-uac-t125-af28m-w.webp",
+  "slug": "uniview-uac-t125-af28m-w",
+  "verify": []
+ },
+ {
+  "model": "UAC-T115-F28-W",
+  "line": "Uniview",
+  "name": "5MP ColorHunter HD Fixed Turret Analog Camera",
+  "category": "cctv-cameras",
+  "sub": "HD Analog Cameras",
+  "features": [
+   "5MP 1/2.7\" CMOS sensor for high quality image",
+   "TVI/AHD/CVI/CVBS Video Output through BNC",
+   "More than 20M of white light Illumination distance",
+   "2.8mm@F1.6 lens, Supports 180° horizontal flip, 180° vertical flip",
+   "Max 5MP@25fps: 2880(H)×1620(V) Video Resolution",
+   "DC 12V(±25%) Power input with reverse polarity protection and surge protection"
+  ],
+  "img": "uniview-uac-t115-f28-w.webp",
+  "slug": "uniview-uac-t115-f28-w",
+  "verify": []
+ },
+ {
+  "model": "UAC-T115-F28",
+  "line": "Uniview",
+  "name": "5MP HD Fixed IR Turret Analog Camera",
+  "category": "cctv-cameras",
+  "sub": "HD Analog Cameras",
+  "features": [
+   "5MP 1/2.7\" CMOS sensor for high quality image",
+   "TVI/AHD/CVI/CVBS Video Output through BNC",
+   "IR-cut filter with auto switch (ICR) 20mtr IR",
+   "2.8mm@F2.0 lens, Supports 180° horizontal flip, 180° vertical flip",
+   "Max 5MP@25fps: 2880(H)×1620(V) Video Resolution",
+   "DC 12V(±25%) Power input with reverse polarity protection and surge protection"
+  ],
+  "img": "uniview-uac-t115-f28.webp",
+  "slug": "uniview-uac-t115-f28",
+  "verify": []
+ },
+ {
+  "model": "UAC-P112-AF40-W",
+  "line": "Uniview",
+  "name": "2MP ColorHunter HD Fixed PT Analog Camera",
+  "category": "cctv-cameras",
+  "sub": "HD Analog Cameras",
+  "features": [
+   "2MP 1/2.9\" CMOS sensor for high quality image",
+   "TVI/AHD/CVI/CVBS Video Output through BNC",
+   "30M of white light Illumination distance",
+   "4.0mm@F1.6 lens, Supports 180° horizontal flip, 180° vertical flip",
+   "Supports 0 to 345° pan range, 0 to 90° tilt range",
+   "Max 1080P@30fps: 1920(H)×1080(V) Video Resolution",
+   "DC 12V(±25%) Power input with reverse polarity protection and surge protection"
+  ],
+  "img": "uniview-uac-p112-af40-w.webp",
+  "slug": "uniview-uac-p112-af40-w",
+  "verify": []
+ },
+ {
+  "model": "UAC-D122-AF28M",
+  "line": "Uniview",
+  "name": "2MP LightHunter HD IR Fixed Dome Analog Camera",
+  "category": "cctv-cameras",
+  "sub": "HD Analog Cameras",
+  "features": [
+   "2MP 1/2.9\" CMOS sensor for high quality image",
+   "TVI/AHD/CVI/CVBS Video Output through BNC",
+   "30M of IR Illumination distance",
+   "2.8mm@F1.6 lens, Supports 180° horizontal flip, 180° vertical flip",
+   "Max 1080P@25fps: 1920(H)×1080(V) Video Resolution",
+   "DC 12V(±25%) Power input with reverse polarity protection and surge protection"
+  ],
+  "img": "uniview-uac-d122-af28m.webp",
+  "slug": "uniview-uac-d122-af28m",
+  "verify": []
+ },
+ {
+  "model": "UAC-B142-AF40LM-DL",
+  "line": "Uniview",
+  "name": "2MP ColorHunter With Smart Dual Light Bullet Analog Camera",
+  "category": "cctv-cameras",
+  "sub": "HD Analog Cameras",
+  "features": [
+   "2MP 1/3\" CMOS sensor for high quality image",
+   "TVI/AHD/CVI/CVBS Video Output through BNC",
+   "40M of IR/White light Illumination distance",
+   "4.0mm@F1.6 lens, Supports 180° horizontal flip, 180° vertical flip",
+   "Max 1080P@25fps: 1920(H)×1080(V) Video Resolution",
+   "DC 12V(±25%) Power input with reverse polarity protection and surge protection"
+  ],
+  "img": "uniview-uac-b142-af40lm-dl.webp",
+  "slug": "uniview-uac-b142-af40lm-dl",
+  "verify": []
+ },
+ {
+  "model": "UAC-B122-AF40M-W",
+  "line": "Uniview",
+  "name": "2MP ColorHunter HD Fixed Mini Bullet Analog Camera",
+  "category": "cctv-cameras",
+  "sub": "HD Analog Cameras",
+  "features": [
+   "2MP 1/2.9\" CMOS sensor for high quality image",
+   "TVI/AHD/CVI/CVBS Video Output through BNC",
+   "40M of white light Illumination distance",
+   "4.0mm@F1.6 lens, Supports 180° horizontal flip, 180° vertical flip",
+   "Max 1080P@30fps: 1920(H)×1080(V) Video Resolution",
+   "DC 12V(±25%) Power input with reverse polarity protection and surge protection"
+  ],
+  "img": "uniview-uac-b122-af40m-w.webp",
+  "slug": "uniview-uac-b122-af40m-w",
+  "verify": []
+ },
+ {
+  "model": "UAC-B112-F40-W",
+  "line": "Uniview",
+  "name": "2MP ColorHunter HD Fixed Mini Bullet Analog Camera",
+  "category": "cctv-cameras",
+  "sub": "HD Analog Cameras",
+  "features": [
+   "2MP 1/3\" sensor for high quality image",
+   "TVI/AHD/CVI/CVBS Video Output",
+   "IR-cut filter with auto switch (ICR) 20mtr IR",
+   "4.0mm@F1.6 lens, Supports 180° horizontal flip, 180° vertical flip",
+   "DC 12V(±25%) Power input"
+  ],
+  "img": "uniview-uac-b112-f40-w.webp",
+  "slug": "uniview-uac-b112-f40-w",
+  "verify": []
+ },
+ {
+  "model": "UAC-B112-F40",
+  "line": "Uniview",
+  "name": "2MP HD Fixed IR Mini Bullet Analog Camera",
+  "category": "cctv-cameras",
+  "sub": "HD Analog Cameras",
+  "features": [
+   "2MP 1/3\" sensor for high quality image",
+   "TVI/AHD/CVI/CVBS Video Output",
+   "IR-cut filter with auto switch (ICR) 20mtr IR",
+   "4.0mm@F2.0 lens, Supports 180° horizontal flip, 180° vertical flip",
+   "DC 12V(±25%) Power input"
+  ],
+  "img": "uniview-uac-b112-f40.webp",
+  "slug": "uniview-uac-b112-f40",
+  "verify": []
+ },
+ {
+  "model": "UAC-B112-AF40-DL",
+  "line": "Uniview",
+  "name": "2MP ColorHunter Fixed Dual-light Bullet Analog Camera",
+  "category": "cctv-cameras",
+  "sub": "HD Analog Cameras",
+  "features": [
+   "2MP 1/3.0\" CMOS sensor for high quality image",
+   "TVI/AHD/CVI/CVBS Video Output through BNC",
+   "20M of IR/White light Illumination distance",
+   "4.0mm@F1.6 lens, Max 1080P@25fps: 1920(H)×1080(V) Video Resolution",
+   "DC 12V(±25%) Power input with reverse polarity protection and surge protection"
+  ],
+  "img": "uniview-uac-b112-af40-dl.webp",
+  "slug": "uniview-uac-b112-af40-dl",
+  "verify": []
+ },
+ {
+  "model": "XVR301-16G3",
+  "line": "Uniview",
+  "name": "1 Hard Disk 16-Channel Hybrid Network Video Recorder",
+  "category": "video-recorders",
+  "sub": "Hybrid Video Recorders (XVR)",
+  "features": [
+   "Support H.265/H.264 video formats",
+   "Support audio over coaxial, 16-channel BNC input",
+   "8-ch(up to 16-ch after analog camera conversion) IP Video Input",
+   "40Mbps (Up to 56Mbps after all analog channel conversion) incoming and 64Mbps Outgoing bandwidth",
+   "Support TVI, AHD, CVI, CVBS, IP cameras",
+   "1-ch HDMI output, 1-ch VGA output at up to 1920*1080",
+   "Long transmission distance over coaxial cable",
+   "1-SATA interface, Up to 8TB for each HDD",
+   "12V DC Power Supply"
+  ],
+  "img": "uniview-xvr301-16g3.webp",
+  "slug": "uniview-xvr301-16g3",
+  "verify": []
+ },
+ {
+  "model": "XVR301-16F",
+  "line": "Uniview",
+  "name": "1 Hard Disk 16-Channel Hybrid Network Video Recorder",
+  "category": "video-recorders",
+  "sub": "Hybrid Video Recorders (XVR)",
+  "features": [
+   "Support H.265/H.264 video formats",
+   "Support audio over coaxial cable e(only for TVI cameras)",
+   "16-channel BNC input",
+   "2-ch(only IP up to 18ch) IP video input, each channel up to 8MP",
+   "24Mbps (Up to 56Mbps after all analog channel conversion) incoming and 64Mbps Outgoing bandwidth",
+   "Support TVI, AHD, CVI, CVBS, IP cameras",
+   "1-ch HDMI output, 1-ch VGA output at up to 1920*1080",
+   "Long transmission distance over coaxial cable",
+   "1-SATA interface, Up to 6TB for each HDD",
+   "12V DC Power Supply"
+  ],
+  "img": "uniview-xvr301-16f.webp",
+  "slug": "uniview-xvr301-16f",
+  "verify": []
+ },
+ {
+  "model": "XVR301-08Q",
+  "line": "Uniview",
+  "name": "8-CH 1-SATA hybrid Network Video Recorder",
+  "category": "video-recorders",
+  "sub": "Hybrid Video Recorders (XVR)",
+  "features": [
+   "Support H.265/H.264 video formats",
+   "Support audio over coaxial cable, 8-channel BNC input",
+   "4-ch(only IP up to 12ch) IP video input, each channel up to 4K",
+   "56Mbps incoming and 64Mbps Outgoing bandwidth",
+   "Support TVI, AHD, CVI, CVBS, IP cameras",
+   "Support 1-ch HDMI output, 1-ch VGA output at up to 1920*1080",
+   "Long transmission distance over coaxial cable",
+   "1-SATA interface, Up to 6TB for each HDD",
+   "12V DC Power Supply"
+  ],
+  "img": "uniview-xvr301-08q.webp",
+  "slug": "uniview-xvr301-08q",
+  "verify": []
+ },
+ {
+  "model": "XVR301-08G3",
+  "line": "Uniview",
+  "name": "1 Hard Disk 8-Channel Hybrid Network Video Recorder",
+  "category": "video-recorders",
+  "sub": "Hybrid Video Recorders (XVR)",
+  "features": [
+   "Support H.265/H.264 video formats",
+   "Support audio over coaxial cable, 8-channel BNC input",
+   "4-ch(only IP up to 8ch) IP video input, each channel up to 4MP",
+   "32Mbps (Up to 40Mbps after all analog channel conversion) incoming and 64Mbps Outgoing bandwidth",
+   "Support TVI, AHD, CVI, CVBS, IP cameras",
+   "1-ch HDMI output, 1-ch VGA output at up to 1920*1080",
+   "Long transmission distance over coaxial cable",
+   "1-SATA interface, Up to 8TB for each HDD",
+   "12V DC Power Supply"
+  ],
+  "img": "uniview-xvr301-08g3.webp",
+  "slug": "uniview-xvr301-08g3",
+  "verify": []
+ },
+ {
+  "model": "XVR301-08F",
+  "line": "Uniview",
+  "name": "1 Hard Disk 8-Channel Hybrid Network Video Recorder",
+  "category": "video-recorders",
+  "sub": "Hybrid Video Recorders (XVR)",
+  "features": [
+   "Support H.265/H.264 video formats",
+   "Support audio over coaxial cable e(only for TVI cameras)",
+   "8-channel BNC input",
+   "2-ch(only IP up to 10ch) IP video input, each channel up to 6MP",
+   "24Mbps (Up to 40Mbps after all analog channel conversion) incoming and 64Mbps Outgoing bandwidth",
+   "Support TVI, AHD, CVI, CVBS, IP cameras",
+   "1-ch HDMI output, 1-ch VGA output at up to 1920*1080",
+   "Long transmission distance over coaxial cable",
+   "1-SATA interface, Up to 6TB for each HDD",
+   "12V DC Power Supply"
+  ],
+  "img": "uniview-xvr301-08f.webp",
+  "slug": "uniview-xvr301-08f",
+  "verify": []
+ },
+ {
+  "model": "XVR301-04Q",
+  "line": "Uniview",
+  "name": "4-CH 1-SATA Hybrid Network Video Recorder",
+  "category": "video-recorders",
+  "sub": "Hybrid Video Recorders (XVR)",
+  "features": [
+   "Support H.265/H.264 video formats",
+   "Support audio over coaxial cable, 4-channel BNC input",
+   "2-ch(only IP up to 6ch) IP video input, each channel up to 4K",
+   "48Mbps incoming and 60Mbps Outgoing bandwidth",
+   "Support TVI, AHD, CVI, CVBS, IP cameras",
+   "Support 1-ch HDMI output, 1-ch VGA output at up to 1920*1080, Audio Output 1-ch, RCA",
+   "1-SATA interface, Up to 6TB for each HDD",
+   "12V DC Power Supply"
+  ],
+  "img": "uniview-xvr301-04q.webp",
+  "slug": "uniview-xvr301-04q",
+  "verify": []
+ },
+ {
+  "model": "XVR301-04G3",
+  "line": "Uniview",
+  "name": "1 Hard Disk 4-Channel Hybrid Network Video Recorder",
+  "category": "video-recorders",
+  "sub": "Hybrid Video Recorders (XVR)",
+  "features": [
+   "Support H.265/H.264 video formats",
+   "Support audio over coaxial cable, 4-channel BNC input",
+   "2-ch(only IP up to 6ch) IP video input, each channel up to 4MP",
+   "16Mbps (Up to 24Mbps after all analog channel conversion) incoming and 48Mbps Outgoing bandwidth",
+   "Support TVI, AHD, CVI, CVBS, IP cameras",
+   "1-ch HDMI output, 1-ch VGA output at up to 1920*1080",
+   "Long transmission distance over coaxial cable",
+   "1-SATA interface, Up to 8TB for each HDD",
+   "12V DC Power Supply"
+  ],
+  "img": "uniview-xvr301-04g3.webp",
+  "slug": "uniview-xvr301-04g3",
+  "verify": []
+ },
+ {
+  "model": "XVR301-04F",
+  "line": "Uniview",
+  "name": "1 Hard Disk 4-Channel Hybrid Network Video Recorder",
+  "category": "video-recorders",
+  "sub": "Hybrid Video Recorders (XVR)",
+  "features": [
+   "Support H.265/H.264 video formats",
+   "Support audio over coaxial cable e(only for TVI cameras)",
+   "4-channel BNC input",
+   "2-ch(only IP up to 6ch) IP video input, each channel up to 6MP",
+   "24Mbps (Up to 32Mbps after all analog channel conversion) incoming and 48Mbps Outgoing bandwidth",
+   "Support TVI, AHD, CVI, CVBS, IP cameras",
+   "1-ch HDMI output, 1-ch VGA output at up to 1920*1080",
+   "Long transmission distance over coaxial cable",
+   "1-SATA interface, Up to 6TB for each HDD",
+   "12V DC Power Supply"
+  ],
+  "img": "uniview-xvr301-04f.webp",
+  "slug": "uniview-xvr301-04f",
+  "verify": []
+ },
+ {
+  "model": "UHO-P1A-M5F4D",
+  "line": "Uniarch",
+  "name": "5MP HD Outdoor Pan & Tilt Wi-Fi Camera",
+  "category": "cctv-cameras",
+  "sub": "Wi-Fi & 4G Cameras",
+  "features": [
+   "1/2.8\", 3.0 megapixel, progressive scan, CMOS",
+   "4.0mm@F1.6",
+   "Ultra 265, H.264, H.265 Video Compression",
+   "3MP (2304*1296), Max 20fps",
+   "DC 12V±25% Power Input",
+   "Up to Up to 20m (66ft) IR distance",
+   "Micro SD, up to 512GB",
+   "Pan0°~345°, tilt-0°~90° Range"
+  ],
+  "img": "uniview-uho-p1a-m5f4d.webp",
+  "slug": "uniview-uho-p1a-m5f4d",
+  "verify": [
+   "price list features say 3MP but model code indicates 5MP"
+  ]
+ },
+ {
+  "model": "UHO-S3S-M33D",
+  "line": "Uniarch",
+  "name": "3MP+3MP Smart Pan & Tilt Camera",
+  "category": "cctv-cameras",
+  "sub": "Wi-Fi & 4G Cameras",
+  "features": [
+   "1/2.8\", 3.0 MP, Progressive Scan CMOS Sensor Panorama",
+   "1/2.8\", 3.0 MP, Progressive Scan CMOS Sensor Detail",
+   "4.0mm@F2.0 Lens Dual",
+   "Ultra 265, H.264, H.265 Video Compression",
+   "3MP (2304*1296), Max 15fps micro USB DC 5V1.5A Power Input",
+   "Up to 10m IR and 10m warmlight distance",
+   "Pan0°~355°, tilt-5°~90° Range"
+  ],
+  "img": "uniview-uho-s3s-m33d.webp",
+  "slug": "uniview-uho-s3s-m33d",
+  "verify": []
+ },
+ {
+  "model": "UHO-P3C-M5F4",
+  "line": "Uniarch",
+  "name": "5MP ColorHunter with Wise-ISP Outdoor Pan & Tilt Wi-Fi Camera",
+  "category": "cctv-cameras",
+  "sub": "Wi-Fi & 4G Cameras",
+  "features": [
+   "1/1.8\", 5.0 megapixel, progressive scan, CMOS sensor",
+   "4mm@F1.0 Lens",
+   "Up to 5MP (2880*1620), Max 25fps; Recording",
+   "G.711U, G.711A Audio Compression",
+   "DC12V±25%",
+   "Micro SD, up to 256GB",
+   "Smart IR, up to 30m (98ft) IR distance",
+   "Up to 10m (33ft) Warm Light Range"
+  ],
+  "img": "uniview-uho-p3c-m5f4.webp",
+  "slug": "uniview-uho-p3c-m5f4",
+  "verify": []
+ },
+ {
+  "model": "UHO-P2G-M3F4D",
+  "line": "Uniarch",
+  "name": "3MP Outdoor Colour Pan & Tilt 4G Cellular Camera",
+  "category": "cctv-cameras",
+  "sub": "Wi-Fi & 4G Cameras",
+  "features": [
+   "1/3.0\", 3.0 MP, CMOS Sensor",
+   "4.0mm@F1.6 Lens",
+   "Up to 3MP (2304*1296), Max 25fps",
+   "Up to 30 m (98.4 ft) IR and white-light distance",
+   "DC 12 V±25%, Power Supply"
+  ],
+  "img": "uniview-uho-p2g-m3f4d.webp",
+  "slug": "uniview-uho-p2g-m3f4d",
+  "verify": []
+ },
+ {
+  "model": "UHO-B2D-M3F3D",
+  "line": "Uniarch",
+  "name": "3MP HD Outdoor Bullet Wi-Fi Camera",
+  "category": "cctv-cameras",
+  "sub": "Wi-Fi & 4G Cameras",
+  "features": [
+   "1/3.0\", 2.0 megapixel, progressive scan, CMOS",
+   "2.8mm@F1.6",
+   "Ultra 265, H.264, H.265 Video Compression",
+   "1080P (1920*1080), Max 30fps",
+   "DC 12V±25% Power Input",
+   "Up to Up to 20m (66ft) IR distance",
+   "Micro SD, up to 128GB",
+   "Pan0°~360°, tilt-0°~90° Range"
+  ],
+  "img": "uniview-uho-b2d-m3f3d.webp",
+  "slug": "uniview-uho-b2d-m3f3d",
+  "verify": [
+   "price list features say 2MP but model code indicates 3MP"
+  ]
+ },
+ {
+  "model": "UHO-S3S-M55D",
+  "line": "Uniarch",
+  "name": "5MP+5MP HD Indoor Dual-lens PT Wi-Fi Camera",
+  "category": "cctv-cameras",
+  "sub": "Wi-Fi & 4G Cameras",
+  "features": [
+   "1/3.0\", 5.0MP, progressive scan, CMOS Pano/Detail Sensor",
+   "4.0mm@F2.0 Pano/Detail Lens",
+   "Ultra 265, H.264, H.265 Video Compression",
+   "5MP (2880*1620), Max 15fps; Recording",
+   "DC 12V±25% Power Input",
+   "Up to Up to 10m (33ft) IR distance/10m (33ft) Warmlight",
+   "Micro SD, up to 512GB",
+   "Pan0°~345°, tilt-0°~90° Range"
+  ],
+  "img": "uniview-uho-s3s-m55d.webp",
+  "slug": "uniview-uho-s3s-m55d",
+  "verify": []
+ },
+ {
+  "model": "UHO-S3E-M5TD-A",
+  "line": "Uniarch",
+  "name": "5MP Smart Pan & Tilt Camera",
+  "category": "cctv-cameras",
+  "sub": "Wi-Fi & 4G Cameras",
+  "features": [
+   "1/3\", 5.0 MP, CMOS Sensor",
+   "4.0mm@F2.0 Lens",
+   "Ultra 265, H.264, H.265 Video Compression",
+   "3MP (2304*1296), Max 25fps micro USB DC 5V1.5A Power Input",
+   "Up to 10m IR and 10m warmlight distance",
+   "Pan0°~355°, tilt-5°~90° Range"
+  ],
+  "img": "uniview-uho-s3e-m5td-a.webp",
+  "slug": "uniview-uho-s3e-m5td-a",
+  "verify": []
+ },
+ {
+  "model": "UHO-S3E-M3TD-A",
+  "line": "Uniarch",
+  "name": "3MP Indoor Pan & Tilt Wi-Fi Camera",
+  "category": "cctv-cameras",
+  "sub": "Wi-Fi & 4G Cameras",
+  "features": [
+   "1/3\", 5.0 MP, CMOS Sensor",
+   "4.0mm@F2.0 Lens",
+   "Ultra 265, H.264, H.265 Video Compression",
+   "3MP (2304*1296), Max 25fps micro USB DC 5V1.5A Power Input",
+   "Up to 10m IR and 10m warmlight distance",
+   "Pan0°~355°, tilt-5°~90° Range"
+  ],
+  "img": "uniview-uho-s3e-m3td-a.webp",
+  "slug": "uniview-uho-s3e-m3td-a",
+  "verify": [
+   "price list features say 5MP but model code indicates 3MP"
+  ]
+ },
+ {
+  "model": "UHO-S3E-M3-A",
+  "line": "Uniarch",
+  "name": "3MP Smart Pan & Tilt Camera",
+  "category": "cctv-cameras",
+  "sub": "Wi-Fi & 4G Cameras",
+  "features": [
+   "1/3\", 3.0 MP, CMOS Sensor",
+   "4.0mm@F2.0 Lens",
+   "Ultra 265, H.264, H.265 Video Compression",
+   "3MP (2304*1296), Max 25fps micro USB DC 5V1.5A Power Input",
+   "Up to 10 m IR distance",
+   "Pan0°~355°, tilt-5°~90° Range"
+  ],
+  "img": "uniview-uho-s3e-m3-a.webp",
+  "slug": "uniview-uho-s3e-m3-a",
+  "verify": []
+ },
+ {
+  "model": "UHO-P2S-M33F34",
+  "line": "Uniarch",
+  "name": "3MP HD Outdoor Pan & Tilt Wi-Fi Camera",
+  "category": "cctv-cameras",
+  "sub": "Wi-Fi & 4G Cameras",
+  "features": [
+   "1/2.8\", 3.0 MP, Progressive Scan CMOS Sensor Panorama",
+   "1/2.8\", 3.0 MP, Progressive Scan CMOS Sensor Detail",
+   "4.0mm@F2.0 Lens Dual",
+   "Ultra 265, H.264, H.265 Video Compression",
+   "3MP (2304*1296), Max 15fps micro USB DC 5V1.5A Power Input",
+   "Up to 10m IR and 10m warmlight distance",
+   "Pan0°~355°, tilt-5°~90° Range"
+  ],
+  "img": "uniview-uho-p2s-m33f34.webp",
+  "slug": "uniview-uho-p2s-m33f34",
+  "verify": []
+ },
+ {
+  "model": "UHO-P2A-M3F4D",
+  "line": "Uniarch",
+  "name": "3MP HD Outdoor Pan & Tilt Wi-Fi Camera",
+  "category": "cctv-cameras",
+  "sub": "Wi-Fi & 4G Cameras",
+  "features": [
+   "1/3.0\", 3.0 megapixel, progressive scan, CMOS",
+   "4.0mm@F1.6",
+   "Ultra 265, H.264, H.265 Video Compression",
+   "3MP (2304*1296), Max 20fps",
+   "DC 12V±25% Power Input",
+   "Up to Up to 20m (66ft) IR distance",
+   "Micro SD, up to 128GB",
+   "Pan0°~360°, tilt-0°~90° Range, Rotate-0°~360°"
+  ],
+  "img": "uniview-uho-p2a-m3f4d.webp",
+  "slug": "uniview-uho-p2a-m3f4d",
+  "verify": []
+ },
+ {
+  "model": "UHO-P1H-M3F4D",
+  "line": "Uniarch",
+  "name": "3MP HD Outdoor Bullet Wi-Fi Camera",
+  "category": "cctv-cameras",
+  "sub": "Wi-Fi & 4G Cameras",
+  "features": [
+   "1/2.8\", 3.0 megapixel, progressive scan, CMOS",
+   "4.0mm@F1.6",
+   "Ultra 265, H.264, H.265 Video Compression",
+   "3MP (2304*1296), Max 20fps",
+   "DC 12V±25% Power Input",
+   "Up to Up to 20m (66ft) IR distance",
+   "Micro SD, up to 512GB",
+   "Pan0°~345°, tilt-0°~90° Range"
+  ],
+  "img": "uniview-uho-p1h-m3f4d.webp",
+  "slug": "uniview-uho-p1h-m3f4d",
+  "verify": []
+ },
+ {
+  "model": "UHO-P1G-M3F4D-EU",
+  "line": "Uniarch",
+  "name": "3MP Outdoor Colour Pan & Tilt 4G Cellular Camera",
+  "category": "cctv-cameras",
+  "sub": "Wi-Fi & 4G Cameras",
+  "features": [
+   "1/3.0\", 3.0 MP, CMOS Sensor",
+   "4.0mm@F1.6 Lens",
+   "Up to 3MP (2304*1296), Max 25fps",
+   "Up to 30 m (98.4 ft) IR and white-light distance",
+   "DC 12 V±25%, Power Supply"
+  ],
+  "img": "uniview-uho-p1g-m3f4d-eu.webp",
+  "slug": "uniview-uho-p1g-m3f4d-eu",
+  "verify": []
+ },
+ {
+  "model": "UHO-C1-M3F3",
+  "line": "Uniarch",
+  "name": "3MP Wi-Fi Cube Camera",
+  "category": "cctv-cameras",
+  "sub": "Wi-Fi & 4G Cameras",
+  "features": [
+   "1/3\", 3.0 MP, CMOS Sensor",
+   "2.8mm@F2.0 Lens",
+   "H.264, H.265 Video Compression",
+   "3MP (2304*1296), Max 15fps micro USB DC 5V1A Power Input",
+   "Up to 10 m IR distance",
+   "Pan0°~355°, tilt-5°~90° Range"
+  ],
+  "img": "uniview-uho-c1-m3f3.webp",
+  "slug": "uniview-uho-c1-m3f3",
+  "verify": []
+ },
+ {
+  "model": "UHO-B2R-M2F3",
+  "line": "Uniarch",
+  "name": "2MP HD Outdoor Bullet Wi-Fi Camera",
+  "category": "cctv-cameras",
+  "sub": "Wi-Fi & 4G Cameras",
+  "features": [
+   "1/3.0\", 2.0 megapixel, progressive scan, CMOS",
+   "2.8mm@F1.6",
+   "Ultra 265, H.264, H.265 Video Compression",
+   "1080P (1920*1080), Max 30fps",
+   "DC 12V±25% Power Input",
+   "Up to Up to 20m (66ft) IR distance",
+   "Micro SD, up to 128GB",
+   "Pan0°~360°, tilt-0°~90° Range, Rotate-0°~360°"
+  ],
+  "img": "uniview-uho-b2r-m2f3.webp",
+  "slug": "uniview-uho-b2r-m2f3",
+  "verify": []
+ },
+ {
+  "model": "IPC-T122-APF28-ECO",
+  "line": "Uniarch",
+  "name": "2MP Fixed Dome Network Camera",
+  "category": "cctv-cameras",
+  "sub": "Uniarch IP Cameras",
+  "features": [
+   "1/2.8\", 2.0 megapixel, progressive scan, CMOS Sensor",
+   "2.8mm@F2.1 lens",
+   "Up to 1080P (1920*1080), Max 25fps; Recording",
+   "Smart IR, up to 30m (98ft) IR distance",
+   "DC 12V±25%, PoE (IEEE 802.3af)"
+  ],
+  "img": "uniview-ipc-t122-apf28-eco.webp",
+  "slug": "uniview-ipc-t122-apf28-eco",
+  "verify": []
+ },
+ {
+  "model": "IPC-B122-APF40-ECO",
+  "line": "Uniarch",
+  "name": "2MP Mini Fixed Bullet Network Camera",
+  "category": "cctv-cameras",
+  "sub": "Uniarch IP Cameras",
+  "features": [
+   "1/2.7\", 3.0 megapixel, progressive scan, CMOS sensor",
+   "4mm@F2.1 Lens",
+   "Up to 1080P (1920*1080), Max 25fps; Recording",
+   "G.711U, G.711A Audio Compression",
+   "DC 12V±25%, PoE Power Supply",
+   "Smart IR, up to 30m (98ft) IR distance"
+  ],
+  "img": "uniview-ipc-b122-apf40-eco.webp",
+  "slug": "uniview-ipc-b122-apf40-eco",
+  "verify": [
+   "price list features say 3MP but model code indicates 2MP"
+  ]
+ },
+ {
+  "model": "IPC-B233-APF40W",
+  "line": "Uniarch",
+  "name": "3MP Fixed Dual-light Bullet Network Camera",
+  "category": "cctv-cameras",
+  "sub": "Uniarch IP Cameras",
+  "features": [
+   "1/2.7\", 3.0 megapixel, progressive scan, CMOS sensor",
+   "4mm@F2.0 Lens",
+   "Up to 3MP (2304*1296),Max 25fps; Recording",
+   "G.711U, G.711A Audio Compression",
+   "DC 12V±25%, PoE Power Supply",
+   "Smart IR, up to 50m (98ft) IR distance",
+   "White Light, up to 15m (49ft) WL distance"
+  ],
+  "img": "uniview-ipc-b233-apf40w.webp",
+  "slug": "uniview-ipc-b233-apf40w",
+  "verify": []
+ },
+ {
+  "model": "IPC-T213-APF28W",
+  "line": "Uniarch",
+  "name": "3MP Fixed Dual-light Eyeball Network Camera",
+  "category": "cctv-cameras",
+  "sub": "Uniarch IP Cameras",
+  "features": [
+   "3MP 1/2.7\", progressive scan, CMOS Sensor",
+   "2.8mm@F2.1 lens",
+   "Up to 3MP (2304*1296), Max 25fps; Recording",
+   "Smart IR, up to 30m (98ft) IR distance",
+   "White Light, up to 15m (49ft) white light distance",
+   "DC 12V±25%, PoE (IEEE 802.3af)"
+  ],
+  "img": "uniview-ipc-t213-apf28w.webp",
+  "slug": "uniview-ipc-t213-apf28w",
+  "verify": []
+ },
+ {
+  "model": "IPC-T134-AF28-ECO",
+  "line": "Uniarch",
+  "name": "4MP Fixed IR Turret Network Camera",
+  "category": "cctv-cameras",
+  "sub": "Uniarch IP Cameras",
+  "features": [
+   "1/3.0\", 4.0 megapixel, CMOS Sensor",
+   "4.0mm@F2.0 lens",
+   "Up to 4MP (2560 × 1440), Max 25 fps; Recording",
+   "Smart IR, up to 30m (98ft) IR distance",
+   "DC 12V±25%, PoE (IEEE 802.3af)"
+  ],
+  "img": "uniview-ipc-t134-af28-eco.webp",
+  "slug": "uniview-ipc-t134-af28-eco",
+  "verify": []
+ },
+ {
+  "model": "IPC-T134-AF28-DL-ECO",
+  "line": "Uniarch",
+  "name": "4MP Fixed Dual-light Turret Network Camera",
+  "category": "cctv-cameras",
+  "sub": "Uniarch IP Cameras",
+  "features": [
+   "4MP 1/3.0, progressive scan, CMOS Sensor",
+   "2.8mm@F1.6 lens",
+   "Up to 3MP (2304*1296), Max 25fps; Recording",
+   "Smart IR, up to 30m (98ft) IR distance",
+   "White Light, up to 15m (49ft) white light distance",
+   "DC 12V±25%, PoE (IEEE 802.3af)"
+  ],
+  "img": "uniview-ipc-t134-af28-dl-eco.webp",
+  "slug": "uniview-ipc-t134-af28-dl-eco",
+  "verify": []
+ },
+ {
+  "model": "IPC-T132-AF28-ECO",
+  "line": "Uniarch",
+  "name": "2MP Fixed IR Turret Network Camera",
+  "category": "cctv-cameras",
+  "sub": "Uniarch IP Cameras",
+  "features": [
+   "1/3.0\", 2.0 megapixel, CMOS Sensor",
+   "2.8mm@F2.0 lens",
+   "Up to 1080P (1920*1080), Max 30fps; Recording",
+   "Smart IR, up to 30m (98ft) IR distance",
+   "DC 12V±25%, PoE (IEEE 802.3af)"
+  ],
+  "img": "uniview-ipc-t132-af28-eco.webp",
+  "slug": "uniview-ipc-t132-af28-eco",
+  "verify": []
+ },
+ {
+  "model": "IPC-T132-AF28-DL-ECO",
+  "line": "Uniarch",
+  "name": "2MP Fixed Dual-light Bullet Network Camera",
+  "category": "cctv-cameras",
+  "sub": "Uniarch IP Cameras",
+  "features": [
+   "1/3.0\", 2.0 megapixel, CMOS Sensor",
+   "2.8mm@F1.6 lens",
+   "Up to 1080P (1920*1080), Max 30fps; Recording",
+   "Smart IR, up to 30m (98ft) IR distance",
+   "Up to 15 m (49.3 ft) Warmlight Illumination Distance",
+   "DC 12V±25%, PoE (IEEE 802.3af)"
+  ],
+  "img": "uniview-ipc-t132-af28-dl-eco.webp",
+  "slug": "uniview-ipc-t132-af28-dl-eco",
+  "verify": []
+ },
+ {
+  "model": "IPC-B134-AF40-ECO",
+  "line": "Uniarch",
+  "name": "4MP Fixed IR Mini Bullet Network Camera",
+  "category": "cctv-cameras",
+  "sub": "Uniarch IP Cameras",
+  "features": [
+   "1/3.0\", 4.0 megapixel, CMOS Sensor",
+   "4.0mm@F2.0 lens",
+   "Up to 4MP (2560 × 1440), Max 25 fps; Recording",
+   "Smart IR, up to 30m (98ft) IR distance",
+   "DC 12V±25%, PoE (IEEE 802.3af)"
+  ],
+  "img": "uniview-ipc-b134-af40-eco.webp",
+  "slug": "uniview-ipc-b134-af40-eco",
+  "verify": []
+ },
+ {
+  "model": "IPC-B134-AF40-DL-ECO",
+  "line": "Uniarch",
+  "name": "4MP Fixed Dual-light Bullet Network Camera",
+  "category": "cctv-cameras",
+  "sub": "Uniarch IP Cameras",
+  "features": [
+   "1/3.0\", 4.0 megapixel, CMOS Sensor",
+   "4.0mm@F1.6 lens",
+   "Up to 4MP (2560 × 1440), Max 25 fps; Recording",
+   "Smart IR, up to 30m (98ft) IR distance",
+   "Up to 15 m (49.3 ft) Warmlight Illumination Distance",
+   "DC 12V±25%, PoE (IEEE 802.3af)"
+  ],
+  "img": "uniview-ipc-b134-af40-dl-eco.webp",
+  "slug": "uniview-ipc-b134-af40-dl-eco",
+  "verify": []
+ },
+ {
+  "model": "IPC-B132-AF40-ECO",
+  "line": "Uniarch",
+  "name": "2MP Fixed IR Turret Network Camera",
+  "category": "cctv-cameras",
+  "sub": "Uniarch IP Cameras",
+  "features": [
+   "1/3.0\", 2.0 megapixel, CMOS Sensor",
+   "4.0mm@F2.0 lens",
+   "Up to 1080P (1920*1080), Max 30fps; Recording",
+   "Smart IR, up to 30m (98ft) IR distance",
+   "DC 12V±25%, PoE (IEEE 802.3af)"
+  ],
+  "img": "uniview-ipc-b132-af40-eco.webp",
+  "slug": "uniview-ipc-b132-af40-eco",
+  "verify": []
+ },
+ {
+  "model": "IPC-B132-AF40-DL-ECO",
+  "line": "Uniarch",
+  "name": "2MP Fixed Dual-light Bullet Network Camera",
+  "category": "cctv-cameras",
+  "sub": "Uniarch IP Cameras",
+  "features": [
+   "1/3.0\", 2.0 megapixel, CMOS Sensor",
+   "4.0mm@F1.6 lens",
+   "Up to 3MP (2304*1296), Max 20fps; Recording",
+   "Smart IR, up to 30m (98ft) IR distance",
+   "Up to 15 m (49.3 ft) Warmlight Illumination Distance",
+   "DC 12V±25%, PoE (IEEE 802.3af)"
+  ],
+  "img": "uniview-ipc-b132-af40-dl-eco.webp",
+  "slug": "uniview-ipc-b132-af40-dl-eco",
+  "verify": []
+ },
+ {
+  "model": "NVR-110E2",
+  "line": "Uniarch",
+  "name": "10-CH 1-SATA Network Video Recorder",
+  "category": "video-recorders",
+  "sub": "Uniarch NVRs",
+  "features": [
+   "Support Ultra H.265/H.265/H.264 video formats",
+   "10-channel IP video input",
+   "Third-party IP cameras supported with ONVIF conformance: Profile S, Profile G, Profile T",
+   "Support 1-ch HDMI, 1-ch VGA",
+   "Incoming 64Mbps and outgoing 32Mbps Bandwidth",
+   "HDMI1/VGA1, outputs provided",
+   "Up to 8Megapixels resolution recording",
+   "1 SATA HDDs, Up to 6TB",
+   "1 RJ45 10M/100M self-adaptive Ethernet Port"
+  ],
+  "img": "uniview-nvr-110e2.webp",
+  "slug": "uniview-nvr-110e2",
+  "verify": []
+ },
+ {
+  "model": "NVR-108S3-P8-ECO",
+  "line": "Uniarch",
+  "name": "8-CH 1-SATA PoE Network Video Recorder",
+  "category": "video-recorders",
+  "sub": "Uniarch NVRs",
+  "features": [
+   "Support Ultra H.265/H.265/H.264 video formats",
+   "Built in PoE 8-channel IP video input",
+   "Third-party IP cameras supported with ONVIF conformance: Profile S, Profile G, Profile T",
+   "Support 1-ch HDMI, 1-ch VGA",
+   "Incoming 64Mbps and outgoing 48Mbps Bandwidth",
+   "HDMI1/VGA1 outputs provided",
+   "Up to 6Megapixels resolution recording",
+   "1 SATA HDDs, Up to 6TB",
+   "1 RJ45 10M/100M self-adaptive Ethernet Port"
+  ],
+  "img": "uniview-nvr-108s3-p8-eco.webp",
+  "slug": "uniview-nvr-108s3-p8-eco",
+  "verify": []
+ },
+ {
+  "model": "NVR-104S3-P4-ECO",
+  "line": "Uniarch",
+  "name": "4-CH 1-SATA PoE Network Video Recorder",
+  "category": "video-recorders",
+  "sub": "Uniarch NVRs",
+  "features": [
+   "Support Ultra H.265/H.265/H.264 video formats",
+   "Built in PoE 8-channel IP video input",
+   "Third-party IP cameras supported with ONVIF conformance: Profile S, Profile G, Profile T",
+   "Support 1-ch HDMI, 1-ch VGA",
+   "Incoming 64Mbps and outgoing 48Mbps Bandwidth",
+   "HDMI1/VGA1 outputs provided",
+   "Up to 6Megapixels resolution recording",
+   "1 SATA HDDs, Up to 6TB",
+   "1 RJ45 10M/100M self-adaptive Ethernet Port"
+  ],
+  "img": "uniview-nvr-104s3-p4-eco.webp",
+  "slug": "uniview-nvr-104s3-p4-eco",
+  "verify": []
+ },
+ {
+  "model": "NVR-104E2",
+  "line": "Uniarch",
+  "name": "4-CH 1-SATA Network Video Recorder",
+  "category": "video-recorders",
+  "sub": "Uniarch NVRs",
+  "features": [
+   "Support Ultra H.265/H.265/H.264 video formats",
+   "4-channel IP video input",
+   "Third-party IP cameras supported with ONVIF conformance: Profile S, Profile G, Profile T",
+   "Support 1-ch HDMI, 1-ch VGA",
+   "Incoming 64Mbps and outgoing 32Mbps Bandwidth",
+   "HDMI1/VGA1, outputs provided",
+   "Up to 8Megapixels resolution recording",
+   "1 SATA HDDs, Up to 6TB",
+   "1 RJ45 10M/100M self-adaptive Ethernet Port"
+  ],
+  "img": "uniview-nvr-104e2.webp",
+  "slug": "uniview-nvr-104e2",
+  "verify": []
+ },
+ {
+  "model": "IPC2325LB-ADZK-H",
+  "line": "Uniview",
+  "name": "5MP VF IR Bullet Network Camera",
+  "category": "cctv-cameras",
+  "sub": "IP Network Cameras",
+  "features": [
+   "1/2.7\", 5.0 MP, CMOS Sensor",
+   "2.8 ~ 12mm@F1.6 Lens",
+   "H.264, H.265 Video Compression",
+   "Up to 5 MP (2880 × 1620), max. 25 fps Recording",
+   "Up to 50 m (164.0 ft) IR distance",
+   "DC 12 V±25%, PoE (IEEE 802.3af) Power Supply"
+  ],
+  "img": "uniview-ipc2325lb-adzk-h.webp",
+  "slug": "uniview-ipc2325lb-adzk-h",
+  "verify": []
+ },
+ {
+  "model": "IPC2228SE-DF60K-WL-I0",
+  "line": "Uniview",
+  "name": "4K HD Intelligent ColorHunter Fixed Bullet Network Camera",
+  "category": "cctv-cameras",
+  "sub": "IP Network Cameras",
+  "features": [
+   "1/1.8\", 8.0 megapixel, progressive scan, CMOS sensor",
+   "Up to 8MP (3840*2160)@30fps Recording",
+   "Smart IR, up to 30m (98ft) IR distance",
+   "Built-in Mic, G.711 Audio Compression",
+   "6.0mm@F1.0 Lens",
+   "Supports 256 G Micro SD card",
+   "DC 12V±25%, PoE (IEEE 802.3af)"
+  ],
+  "img": "uniview-ipc2228se-df60k-wl-i0.webp",
+  "slug": "uniview-ipc2228se-df60k-wl-i0",
+  "verify": []
+ },
+ {
+  "model": "IPC2124SB-ADF28KMC-I0",
+  "line": "Uniview",
+  "name": "4MP HD Intelligent Light and Audible Warning Fixed Bullet Network Camera",
+  "category": "cctv-cameras",
+  "sub": "IP Network Cameras",
+  "features": [
+   "1/2.7\", 4.0 megapixel, progressive scan, CMOS sensor",
+   "2.8mm@F1.6 Lens",
+   "Up to4MP (2688*1520), Max 30fps Recording",
+   "Smart IR, up to 30m (98ft) IR & Warmlight distance",
+   "Supports 256 G Micro SD card",
+   "DC 12V±25%, PoE (IEEE 802.3af)"
+  ],
+  "img": "uniview-ipc2124sb-adf28kmc-i0.webp",
+  "slug": "uniview-ipc2124sb-adf28kmc-i0",
+  "verify": []
+ },
+ {
+  "model": "IPC2124SB-ADF28KM-I0",
+  "line": "Uniview",
+  "name": "4MP HD LightHunter IR Fixed Bullet Network Camera",
+  "category": "cctv-cameras",
+  "sub": "IP Network Cameras",
+  "features": [
+   "1/3\", 4.0 megapixel, progressive scan, CMOS Sensor",
+   "2.8mm@F1.6 Lens",
+   "Up to 4MP (2688*1520)@30fps; Recording",
+   "Built-in Mic, G.711 Audio Compression",
+   "Smart IR, up to 40m (131ft) IR distance",
+   "Supports Up to 256 G Micro SD card",
+   "DC 12V±25%, PoE (IEEE 802.3af)"
+  ],
+  "img": "uniview-ipc2124sb-adf28km-i0.webp",
+  "slug": "uniview-ipc2124sb-adf28km-i0",
+  "verify": []
+ },
+ {
+  "model": "IPC2122SB-ADF28KM-I0",
+  "line": "Uniview",
+  "name": "2MP HD LightHunter IR Fixed Bullet Network Camera",
+  "category": "cctv-cameras",
+  "sub": "IP Network Cameras",
+  "features": [
+   "1/2.8\", 2.0 megapixel, progressive scan, CMOS Sensor",
+   "2.8mm@F1.6 Lens",
+   "Up to 2MP (1920*1080)@30/25fps; Recording",
+   "Built-in Mic, G.711 Audio Compression",
+   "Smart IR, up to 40m (131ft) IR distance",
+   "Supports Up to 256 G Micro SD card",
+   "DC 12V±25%, PoE (IEEE 802.3af)"
+  ],
+  "img": "uniview-ipc2122sb-adf28km-i0.webp",
+  "slug": "uniview-ipc2122sb-adf28km-i0",
+  "verify": []
+ },
+ {
+  "model": "IPC312SB-ADF28K-I0",
+  "line": "Uniview",
+  "name": "2MP HD Intelligent LightHunter IR Fixed Mini Dome Camera",
+  "category": "cctv-cameras",
+  "sub": "IP Network Cameras",
+  "features": [
+   "1/2.8\", 2.0 megapixel, progressive scan, CMOS Sensor",
+   "2.8mm@F1.6 Lens",
+   "Up to 2MP (1920*1080)@30fps; Recording",
+   "Built-in Mic, G.711 Audio Compression",
+   "Smart IR, up to 40m (131ft) IR distance",
+   "Supports Up to 256 G Micro SD card",
+   "DC 12V±25%, PoE (IEEE 802.3af)"
+  ],
+  "img": "uniview-ipc312sb-adf28k-i0.webp",
+  "slug": "uniview-ipc312sb-adf28k-i0",
+  "verify": []
+ },
+ {
+  "model": "IPC322SB-DF40K-I0",
+  "line": "Uniview",
+  "name": "2MP HD LightHunter IR Fixed Dome Network Camera",
+  "category": "cctv-cameras",
+  "sub": "IP Network Cameras",
+  "features": [
+   "1/2.8\", 2.0 MP, progressive scan, CMOS sensor",
+   "2.8 mm@ F1.6 lens",
+   "2MP (1920*1080)@30/25fps; 720P (1280*720)@30/25fps",
+   "Up to 30m IR distance",
+   "G.711 Audio Compression",
+   "Micro SD, up to 256 GB",
+   "DC 12V±25%, PoE (IEEE 802.3af)"
+  ],
+  "img": "uniview-ipc322sb-df40k-i0.webp",
+  "slug": "uniview-ipc322sb-df40k-i0",
+  "verify": []
+ },
+ {
+  "model": "IPC2124LB-SF40-A",
+  "line": "Uniview",
+  "name": "4MP Fixed IR Mini Bullet Network Camera",
+  "category": "cctv-cameras",
+  "sub": "IP Network Cameras",
+  "features": [
+   "1/3\", 4.0 megapixel, progressive scan, CMOS Sensor",
+   "4.0mm@F2.0, Fixed-Focal Lens",
+   "Up to 4MP (2560*1440)@25fps; Recording",
+   "120dB true WDR technology for strong light scene",
+   "Smart IR, up to 30m (98ft) IR distance",
+   "DC 12V±25%, PoE (IEEE 802.3af)"
+  ],
+  "img": "uniview-ipc2124lb-sf40-a.webp",
+  "slug": "uniview-ipc2124lb-sf40-a",
+  "verify": []
+ },
+ {
+  "model": "IPC324LB-SF28-A",
+  "line": "Uniview",
+  "name": "4MP Fixed IR Dome Network Camera",
+  "category": "cctv-cameras",
+  "sub": "IP Network Cameras",
+  "features": [
+   "1/3\", 4.0 megapixel, progressive scan, CMOS Sensor",
+   "2.8mm@F2.0, Fixed-Focal Lens",
+   "Up to 4MP (2560*1440)@25fps; Recording",
+   "120dB true WDR technology for strong light scene",
+   "Smart IR, up to 30m (98ft) IR distance",
+   "DC 12V±25%, PoE (IEEE 802.3af)"
+  ],
+  "img": "uniview-ipc324lb-sf28-a.webp",
+  "slug": "uniview-ipc324lb-sf28-a",
+  "verify": []
+ },
+ {
+  "model": "IPC3534LB-ADZK-H",
+  "line": "Uniview",
+  "name": "4MP HD IR Fixed Eyeball Network Camera",
+  "category": "cctv-cameras",
+  "sub": "IP Network Cameras",
+  "features": [
+   "1/2.7\", 2.0 megapixel, progressive scan, CMOS Sensor",
+   "2.8mm@F2.0, Fixed-Focal Lens",
+   "Up to 2MP (1920*1080)@30fps; Recording",
+   "120dB true WDR technology for strong light scene",
+   "Smart IR, up to 30m (98ft) IR distance",
+   "Supports Up to 128G Micro SD card",
+   "DC 12V±25%, PoE (IEEE 802.3af)"
+  ],
+  "img": "uniview-ipc3534lb-adzk-h.webp",
+  "slug": "uniview-ipc3534lb-adzk-h",
+  "verify": [
+   "price list features say 2MP but model code indicates 4MP"
+  ]
+ },
+ {
+  "model": "IPC3534LB-ADZK-G",
+  "line": "Uniview",
+  "name": "4MP HD IR VF Dome Network Camera",
+  "category": "cctv-cameras",
+  "sub": "IP Network Cameras",
+  "features": [
+   "1/3\", 4.0 megapixel, progressive scan, CMOS Sensor",
+   "2.8 ~ 12mm, AF automatic focusing and motorized zoom lens",
+   "Up to 4MP (2688*1520), Max 25fps; Recording",
+   "120dB true WDR technology for strong light scene",
+   "Smart IR, up to 40m (131ft) IR distance",
+   "Supports 256GB Micro SD card",
+   "DC 12V±25%, PoE (IEEE 802.3af)"
+  ],
+  "img": "uniview-ipc3534lb-adzk-g.webp",
+  "slug": "uniview-ipc3534lb-adzk-g",
+  "verify": []
+ },
+ {
+  "model": "IPC2122LB-ADF40KM-G",
+  "line": "Uniview",
+  "name": "2MP HD WDR Fixed IR Bullet Network Camera",
+  "category": "cctv-cameras",
+  "sub": "IP Network Cameras",
+  "features": [
+   "1/2.7\", 2.0 MP, progressive scan, CMOS sensor",
+   "4.0mm@F2.0 Lens",
+   "Up to 1080P (1920*1080), Max 30fps; recording",
+   "120dB true WDR technology for strong light scene",
+   "Smart IR, up to 30m (98ft) IR distance",
+   "Supports Up to 128 G Micro SD card",
+   "DC 12V±25%, PoE (IEEE 802.3af)"
+  ],
+  "img": "uniview-ipc2122lb-adf40km-g.webp",
+  "slug": "uniview-ipc2122lb-adf40km-g",
+  "verify": []
+ },
+ {
+  "model": "IPC2C22LE-SF40-WL",
+  "line": "Uniview",
+  "name": "2MP EasyColor Fixed Bullet Network Camera",
+  "category": "cctv-cameras",
+  "sub": "IP Network Cameras",
+  "features": [
+   "1/2.7\", 2.0 MP, progressive scan, CMOS Sensor",
+   "4.0mm@F1.6 Lens",
+   "2MP (1920*1080), Max 30fps; Recording",
+   "Built-in LEDs, Up to 30m (98ft) LED distance",
+   "ROI (Region of Interest)",
+   "Wide temperature range: -30°C ~ 60°C (-22°F ~ 140°F)",
+   "DC 12V±25%, PoE (IEEE 802.3af)"
+  ],
+  "img": "uniview-ipc2c22le-sf40-wl.webp",
+  "slug": "uniview-ipc2c22le-sf40-wl",
+  "verify": []
+ },
+ {
+  "model": "IPC2324LB-ADZK-H",
+  "line": "Uniview",
+  "name": "4MP VF IR Bullet Network Camera",
+  "category": "cctv-cameras",
+  "sub": "IP Network Cameras",
+  "features": [
+   "1/3\", 4.0 MP, progressive scan, CMOS sensor",
+   "2.8~12mm,F1.6 Fixed Iris Lens",
+   "Up to 4MP (2688*1520), Max 25fps; Recording",
+   "120dB true WDR technology for strong light scene",
+   "Smart IR, up to 50m (164ft) IR distance",
+   "Supports Up to 512 G Micro SD card",
+   "DC 12V±25%, PoE (IEEE 802.3af)"
+  ],
+  "img": "uniview-ipc2324lb-adzk-h.webp",
+  "slug": "uniview-ipc2324lb-adzk-h",
+  "verify": []
+ },
+ {
+  "model": "IPC2324LB-ADZK-G",
+  "line": "Uniview",
+  "name": "4MP HD IR Bullet Network Camera",
+  "category": "cctv-cameras",
+  "sub": "IP Network Cameras",
+  "features": [
+   "1/3\", 4.0 MP, progressive scan, CMOS sensor",
+   "2.8~12mm, AF automatic focusing and motorized zoom lens",
+   "Up to 4MP (2688*1520), Max 25fps; Recording",
+   "120dB true WDR technology for strong light scene",
+   "Smart IR, up to 50m (164ft) IR distance",
+   "Supports Up to 256 G Micro SD card",
+   "DC 12V±25%, PoE (IEEE 802.3af)"
+  ],
+  "img": "uniview-ipc2324lb-adzk-g.webp",
+  "slug": "uniview-ipc2324lb-adzk-g",
+  "verify": []
+ },
+ {
+  "model": "IPC322LB-DSF28K-G",
+  "line": "Uniview",
+  "name": "2MP HD IR Fixed Dome Network Camera",
+  "category": "cctv-cameras",
+  "sub": "IP Network Cameras",
+  "features": [
+   "1/2.7\", 2.0 megapixel, progressive scan, CMOS sensor",
+   "2.8mm@F2.0 Lens",
+   "Up to 1080P (1920*1080), Max 30fps; Recording",
+   "120dB true WDR technology for strong light scene",
+   "Smart IR, up to 30m (98ft) IR distance",
+   "Supports Up to 128 G Micro SD card",
+   "DC 12V±25%, PoE (IEEE 802.3af)"
+  ],
+  "img": "uniview-ipc322lb-dsf28k-g.webp",
+  "slug": "uniview-ipc322lb-dsf28k-g",
+  "verify": []
+ },
+ {
+  "model": "IPC324LE-DSF28K-G",
+  "line": "Uniview",
+  "name": "4MP HD Vandal-resistant IR Fixed Dome Network Camera",
+  "category": "cctv-cameras",
+  "sub": "IP Network Cameras",
+  "features": [
+   "1/3\", 4.0 MP, progressive scan, CMOS sensor",
+   "2.8mm@F1.6 Lens",
+   "Up To 4MP (2688*1520)@ 25/20fps Recording",
+   "Smart IR, up to 30m (98ft) IR distance",
+   "Supports Upto 256 G Micro SD card",
+   "DC 12V±25%, PoE (IEEE 802.3af)"
+  ],
+  "img": "uniview-ipc324le-dsf28k-g.webp",
+  "slug": "uniview-ipc324le-dsf28k-g",
+  "verify": []
+ },
+ {
+  "model": "IPC2124LE-ADF40KMC-WL",
+  "line": "Uniview",
+  "name": "4MP HD ColorHunter Mini IR Fixed Bullet Network Camera",
+  "category": "cctv-cameras",
+  "sub": "IP Network Cameras",
+  "features": [
+   "1/3\", 4.0 MP, progressive scan, CMOS Sensor",
+   "4.0mm@F1.6 Lens",
+   "Up to 4MP (2688*1520), Max 25fps; Recording",
+   "API Compatible Integration",
+   "IR backlight Up to 30m (98ft)",
+   "Up to 30m (98ft) white light range",
+   "DC 12V±25%, PoE (IEEE 802.3af)"
+  ],
+  "img": "uniview-ipc2124le-adf40kmc-wl.webp",
+  "slug": "uniview-ipc2124le-adf40kmc-wl",
+  "verify": []
+ },
+ {
+  "model": "IPC3614LE-ADF28KC-WL",
+  "line": "Uniview",
+  "name": "4MP HD ColorHunter IR Fixed Eyeball Network Camera",
+  "category": "cctv-cameras",
+  "sub": "IP Network Cameras",
+  "features": [
+   "1/3\", 4.0 MP, progressive scan, CMOS Sensor",
+   "2.8mm@F1.6 Lens",
+   "Up to 1080P (1920*1080), Max 30fps; Recording",
+   "API Compatible Integration",
+   "IR backlight Up to 30m (98ft)",
+   "DC 12V±25%, PoE (IEEE 802.3af)"
+  ],
+  "img": "uniview-ipc3614le-adf28kc-wl.webp",
+  "slug": "uniview-ipc3614le-adf28kc-wl",
+  "verify": []
+ },
+ {
+  "model": "IPC3614LB-SF28-A",
+  "line": "Uniview",
+  "name": "4MP Fixed Dome Network Camera",
+  "category": "cctv-cameras",
+  "sub": "IP Network Cameras",
+  "features": [
+   "1/2.8\", 4.0 MP, progressive scan, CMOS Sensor",
+   "2.8mm@F2.0 Lens",
+   "Up to 1080P (1920*1080), Max 30fps; Recording",
+   "API Compatible Integration",
+   "IR backlight and whitelight Range Up to 30m (98ft)",
+   "DC 12V±25%, PoE (IEEE 802.3af)"
+  ],
+  "img": "uniview-ipc3614lb-sf28-a.webp",
+  "slug": "uniview-ipc3614lb-sf28-a",
+  "verify": []
+ },
+ {
+  "model": "IPC3612LE-ADF28KC-WL",
+  "line": "Uniview",
+  "name": "2MP Fixed Dome Network Camera",
+  "category": "cctv-cameras",
+  "sub": "IP Network Cameras",
+  "features": [
+   "1/2.8\", 2.0 MP, progressive scan, CMOS Sensor",
+   "2.8mm@F1.6 Lens",
+   "Up to 1080P (1920*1080), Max 30fps; Recording",
+   "API Compatible Integration",
+   "IR backlight and whitelight Range Up to 30m (98ft)",
+   "DC 12V±25%, PoE (IEEE 802.3af)"
+  ],
+  "img": "uniview-ipc3612le-adf28kc-wl.webp",
+  "slug": "uniview-ipc3612le-adf28kc-wl",
+  "verify": []
+ },
+ {
+  "model": "IPC2122LE-ADF40KMC-WL",
+  "line": "Uniview",
+  "name": "2MP Fixed Dome Network Camera",
+  "category": "cctv-cameras",
+  "sub": "IP Network Cameras",
+  "features": [
+   "1/2.8\", 2.0 MP, progressive scan, CMOS Sensor",
+   "4.0mm@F1.6 Lens",
+   "Up to 1080P (1920*1080), Max 30fps; Recording",
+   "API Compatible Integration",
+   "IR backlight and whitelight Range Up to 30m (98ft)",
+   "DC 12V±25%, PoE (IEEE 802.3af)"
+  ],
+  "img": "uniview-ipc2122le-adf40kmc-wl.webp",
+  "slug": "uniview-ipc2122le-adf40kmc-wl",
+  "verify": []
+ },
+ {
+  "model": "IPC3612LB-AF28K-WL",
+  "line": "Uniview",
+  "name": "2MP HD ColorHunter Fixed Eyeball Network Camera",
+  "category": "cctv-cameras",
+  "sub": "IP Network Cameras",
+  "features": [
+   "1/2.9\", 2.0 MP, progressive scan, CMOS Sensor",
+   "2.8mm@F1.6 Lens",
+   "Up to 2MP (1920*1080), Max 30fps; Recording",
+   "API Compatible Integration",
+   "Micro SD, up to 128 GB",
+   "Warm Light Range Up to 30m (98ft)",
+   "DC 12V±25%, PoE (IEEE 802.3af)"
+  ],
+  "img": "uniview-ipc3612lb-af28k-wl.webp",
+  "slug": "uniview-ipc3612lb-af28k-wl",
+  "verify": []
+ },
+ {
+  "model": "IPC2122LB-SF40-A",
+  "line": "Uniview",
+  "name": "2MP Mini Fixed Bullet Network Camera",
+  "category": "cctv-cameras",
+  "sub": "IP Network Cameras",
+  "features": [
+   "1/2.8\", 2.0 megapixel, progressive scan, CMOS sensor",
+   "4.0mm@F2.0 Lens",
+   "Up to 2MP 1080P (1920*1080), Max 30fps; Recording",
+   "API Compatible Integration",
+   "Smart IR, up to 30m (98ft) IR distance",
+   "DC 12V±25%, PoE (IEEE 802.3af)• 3-Axis"
+  ],
+  "img": "uniview-ipc2122lb-sf40-a.webp",
+  "slug": "uniview-ipc2122lb-sf40-a",
+  "verify": []
+ },
+ {
+  "model": "IPC3234LR3-VSPZ28-D",
+  "line": "Uniview",
+  "name": "4MP VF Vandal-resistant IR Dome Network Camera",
+  "category": "cctv-cameras",
+  "sub": "IP Network Cameras",
+  "features": [
+   "1/2.7\" 4.0 MP, Progressive Scan, CMOS Sensor",
+   "2.8 ~ 12mm, motorized zoom lens",
+   "Up to : 4MP (2592*1520), Max 20fps Recording",
+   "Smart IR, up to 30m IR distance",
+   "DC 12V±25%, PoE (IEEE 802.3af)"
+  ],
+  "img": "uniview-ipc3234lr3-vspz28-d.webp",
+  "slug": "uniview-ipc3234lr3-vspz28-d",
+  "verify": []
+ },
+ {
+  "model": "IPC3612LE-ADF28KC-DL",
+  "line": "Uniview",
+  "name": "2MP HD ColorHunter IR Fixed Eyeball Network Camera",
+  "category": "cctv-cameras",
+  "sub": "IP Network Cameras",
+  "features": [
+   "1/2.8\", 2.0 megapixel, progressive scan, CMOS Sensor",
+   "2.8mm@F1.6 fixed lens",
+   "Up to 2MP (1920*1080),Max 30fps; Recording",
+   "Up to 30m (98ft) IR distance and Warmlight Distance,Smart IR",
+   "Micro SD, up to 512 GB",
+   "ONVIF (Profile S, Profile T, Profile G),API,SDK",
+   "DC12V±25% or PoE(IEEE 802.3af) power supply"
+  ],
+  "img": "uniview-ipc3612le-adf28kc-dl.webp",
+  "slug": "uniview-ipc3612le-adf28kc-dl",
+  "verify": []
+ },
+ {
+  "model": "IPC2122LB-AF40K-DL",
+  "line": "Uniview",
+  "name": "2MP HD ColorHunter Mini Fixed Bullet Network Camera",
+  "category": "cctv-cameras",
+  "sub": "IP Network Cameras",
+  "features": [
+   "1/3\", 4.0 megapixel, progressive scan, CMOS Sensor",
+   "4.0mm@F1.6 fixed lens",
+   "Up to 4MP (2560*1440), Max 25fps; Recording",
+   "Up to 30m (98ft) IR and Warmlight Distance, Smart IR",
+   "Micro SD, up to 128 GB",
+   "ONVIF (Profile S, Profile T, Profile G),API,SDK",
+   "DC12V±25% or PoE(IEEE 802.3af) power supply"
+  ],
+  "img": "uniview-ipc2122lb-af40k-dl.webp",
+  "slug": "uniview-ipc2122lb-af40k-dl",
+  "verify": [
+   "price list features say 4MP but model code indicates 2MP"
+  ]
+ },
+ {
+  "model": "IPC2124LB-AF40K-DL",
+  "line": "Uniview",
+  "name": "4MP HD ColorHunter Mini Fixed Bullet Network Camera",
+  "category": "cctv-cameras",
+  "sub": "IP Network Cameras",
+  "features": [
+   "1/3\", 4.0 megapixel, progressive scan, CMOS Sensor",
+   "4.0mm@F1.6 fixed lens",
+   "Up to 4MP (2560*1440), Max 25fps; Recording",
+   "Up to 30m (98ft) IR distance and Warmlight Distance, Smart IR",
+   "Micro SD, up to 128 GB",
+   "ONVIF (Profile S, Profile T, Profile G),API,SDK",
+   "DC12V±25% or PoE(IEEE 802.3af) power supply"
+  ],
+  "img": "uniview-ipc2124lb-af40k-dl.webp",
+  "slug": "uniview-ipc2124lb-af40k-dl",
+  "verify": []
+ },
+ {
+  "model": "IPC3614LB-AF28K-DL",
+  "line": "Uniview",
+  "name": "4MP HD ColorHunter Fixed Eyeball Network Camera",
+  "category": "cctv-cameras",
+  "sub": "IP Network Cameras",
+  "features": [
+   "1/3\", 4.0 megapixel, progressive scan, CMOS Sensor",
+   "2.8mm@F1.6 fixed lens",
+   "Up to 4MP (2560*1440), Max 25fps; Recording",
+   "Up to 30m (98ft) IR distance and Warmlight Distance, Smart IR",
+   "Micro SD, up to 128 GB",
+   "ONVIF (Profile S, Profile T, Profile G),API,SDK",
+   "DC12V±25% or PoE(IEEE 802.3af) power supply"
+  ],
+  "img": "uniview-ipc3614lb-af28k-dl.webp",
+  "slug": "uniview-ipc3614lb-af28k-dl",
+  "verify": []
+ },
+ {
+  "model": "IPC322LB-ASF28K-A",
+  "line": "Uniview",
+  "name": "2MP HD IR Fixed Dome Network Camera",
+  "category": "cctv-cameras",
+  "sub": "IP Network Cameras",
+  "features": [
+   "1/2.9\", 2MP CMOS Sensor",
+   "2.8mm @ f2.0 fixed lens",
+   "Up to 2MP (1920*1080)@30/25fps; Recording",
+   "Smart IR, Up to 30m (98ft) IR distance",
+   "Micro SD, up to 128 GB",
+   "ONVIF (Profile S, Profile T, Profile G),API,SDK",
+   "DC12V±25% or PoE(IEEE 802.3af) power supply"
+  ],
+  "img": "uniview-ipc322lb-asf28k-a.webp",
+  "slug": "uniview-ipc322lb-asf28k-a",
+  "verify": []
+ },
+ {
+  "model": "IPC3624LE-ADF28K-WP-L",
+  "line": "Uniview",
+  "name": "4MP OwlView Wise-ISP Fixed Warm Light Turret Network Camera",
+  "category": "cctv-cameras",
+  "sub": "IP Network Cameras",
+  "features": [
+   "4MP 1/1.8\", CMOS Sensor",
+   "2.8mm@F1.0 lens",
+   "Up to 4MP (2560*1440), Max 25fps Recording",
+   "Up to 30m (98.4 ft) warmlight distance",
+   "Auto/Manual Light On/Off Control",
+   "DC 12V±25%, PoE (IEEE 802.3af)",
+   "Micro SD, up to 512GB"
+  ],
+  "img": "uniview-ipc3624le-adf28k-wp-l.webp",
+  "slug": "uniview-ipc3624le-adf28k-wp-l",
+  "verify": []
+ },
+ {
+  "model": "IPC2312LE-ADF40KM-WP",
+  "line": "Uniview",
+  "name": "2MP ColorHunter with Wise-ISP Fixed Bullet Network Camera",
+  "category": "cctv-cameras",
+  "sub": "IP Network Cameras",
+  "features": [
+   "2MP 1/2.7\", progressive scan, CMOS Sensor",
+   "4.0mm@F1.0 lens",
+   "Up to 1080P (1920*1080), Max 30fps; Recording",
+   "Auto/Manual Light On/Off Control",
+   "DC 12V±25%, PoE (IEEE 802.3af)",
+   "Micro SD, up to 512GB"
+  ],
+  "img": "uniview-ipc2312le-adf40km-wp.webp",
+  "slug": "uniview-ipc2312le-adf40km-wp",
+  "verify": []
+ },
+ {
+  "model": "IPC225LE-AF60C-WP",
+  "line": "Uniview",
+  "name": "5MP OwlView ColorHunter with Wise-ISP Fixed Warm Light Bullet Network Camera",
+  "category": "cctv-cameras",
+  "sub": "IP Network Cameras",
+  "features": [
+   "5MP 1/1.8\", progressive scan, CMOS Sensor",
+   "6.0mm@F1.0 lens",
+   "Up to 5MP (2880*1620), Max 25fps; Recording",
+   "Auto/Manual Light On/Off Control",
+   "DC 12V±25%, PoE (IEEE 802.3af)"
+  ],
+  "img": "uniview-ipc225le-af60c-wp.webp",
+  "slug": "uniview-ipc225le-af60c-wp",
+  "verify": []
+ },
+ {
+  "model": "IPC2124LB-AF40-A2",
+  "line": "Uniview",
+  "name": "4MP Fixed IR Bullet Network Camera",
+  "category": "cctv-cameras",
+  "sub": "IP Network Cameras",
+  "features": [
+   "1/3.0\", 4.0 MP, CMOS sensor",
+   "Up to 4 MP (2560 × 1440)@25/20 fps Recording",
+   "Smart IR, up to 30 m (98.4 ft) IR distance",
+   "Built-in Mic, G.711U, G.711A Audio Compression",
+   "4.0mm@F2.0 Lens",
+   "DC 12V±25%, PoE (IEEE 802.3af)"
+  ],
+  "img": "uniview-ipc2124lb-af40-a2.webp",
+  "slug": "uniview-ipc2124lb-af40-a2",
+  "verify": []
+ },
+ {
+  "model": "IPC2328SB-ADZKM-DL-I1",
+  "line": "Uniview",
+  "name": "8MP Dual-light VF Bullet Network Camera",
+  "category": "cctv-cameras",
+  "sub": "IP Network Cameras",
+  "features": [
+   "1/2.7\", 8.0 MP, CMOS sensor",
+   "Up to 8 MP (3840 × 2160)@25/24 fps Recording",
+   "Up to 60 m (196.9 ft) IR/Warmlight distance",
+   "Built-in Mic, G.711U, G.711A Audio Compression",
+   "2.8 to 12 mm@F1.4 Lens",
+   "DC 12V±25%, PoE (IEEE 802.3af)"
+  ],
+  "img": "uniview-ipc2328sb-adzkm-dl-i1.webp",
+  "slug": "uniview-ipc2328sb-adzkm-dl-i1",
+  "verify": []
+ },
+ {
+  "model": "IPC245LP-ADF40KC-WP",
+  "line": "Uniview",
+  "name": "5MP ColorHunter with Wise-ISP Fixed Bullet Network Camera",
+  "category": "cctv-cameras",
+  "sub": "IP Network Cameras",
+  "features": [
+   "5MP 1/1.8\", CMOS Sensor",
+   "4.0mm@F1.0 lens",
+   "Up to 5MP (2880*1620), Max 25fps Recording",
+   "Auto/Manual Light On/Off Control",
+   "DC 12V±25%, PoE (IEEE 802.3af)",
+   "Micro SD, up to 512GB"
+  ],
+  "img": "uniview-ipc245lp-adf40kc-wp.webp",
+  "slug": "uniview-ipc245lp-adf40kc-wp",
+  "verify": []
+ },
+ {
+  "model": "IPC815SB-ADF14K-I0",
+  "line": "Uniview",
+  "name": "5MP Fisheye Fixed Dome Network Camera",
+  "category": "cctv-cameras",
+  "sub": "IP Network Cameras",
+  "features": [
+   "1/2.8\", progressive scan, 5.0 megapixel, CMOS sensor",
+   "Up to 5MP (2592*1944): Max.30fps Recording",
+   "Smart IR, up to 10m (33ft) IR distance",
+   "Built-in 2 Mic, G.711 Audio Compression",
+   "1.4mm@F2.0 Lens",
+   "Supports 256 G Micro SD card",
+   "DC 12V±25%, PoE (IEEE 802.3af)"
+  ],
+  "img": "uniview-ipc815sb-adf14k-i0.webp",
+  "slug": "uniview-ipc815sb-adf14k-i0",
+  "verify": []
+ },
+ {
+  "model": "IPC3628LE-ADF28K-WP",
+  "line": "Uniview",
+  "name": "8MP ColorHunter Wise-ISP Warm Light Turret Network Camera",
+  "category": "cctv-cameras",
+  "sub": "IP Network Cameras",
+  "features": [
+   "8MP 1/1.8\", CMOS Sensor",
+   "2.8mm@F1.0 lens",
+   "Up to 8MP (3840*2160), Max 20fps Recording",
+   "Up to 30m (98.4 ft) warmlight distance",
+   "Auto/Manual Light On/Off Control",
+   "DC 12V±25%, PoE (IEEE 802.3af)",
+   "Micro SD, up to 512GB"
+  ],
+  "img": "uniview-ipc3628le-adf28k-wp.webp",
+  "slug": "uniview-ipc3628le-adf28k-wp",
+  "verify": []
+ },
+ {
+  "model": "IPC3624LE-ADF28K-WP",
+  "line": "Uniview",
+  "name": "4MP ColorHunter with Wise-ISP Fixed Eyeball Network Camera",
+  "category": "cctv-cameras",
+  "sub": "IP Network Cameras",
+  "features": [
+   "4MP 1/1.8\", progressive scan, CMOS Sensor",
+   "2.8mm@F1.0 lens",
+   "Up to 4MP (2688*1520), Max 25fps; Recording",
+   "Auto/Manual Light On/Off Control",
+   "White Light, up to 30m (98ft) white light distance",
+   "Micro SD, up to 256GB",
+   "DC 12V±25%, PoE (IEEE 802.3af)"
+  ],
+  "img": "uniview-ipc3624le-adf28k-wp.webp",
+  "slug": "uniview-ipc3624le-adf28k-wp",
+  "verify": []
+ },
+ {
+  "model": "IPC3622LE-ADF28K-WP-L",
+  "line": "Uniview",
+  "name": "2MP OwlView Wise-ISP Fixed Warm Light Turret Network Camera",
+  "category": "cctv-cameras",
+  "sub": "IP Network Cameras",
+  "features": [
+   "2MP 1/2.7\", CMOS Sensor",
+   "2.8mm@F1.0 lens",
+   "Up to 1080P(1920×1080), Max 30/25fps Recording",
+   "Up to 30m (98.4 ft) warmlight distance",
+   "Auto/Manual Light On/Off Control",
+   "DC 12V±25%, PoE (IEEE 802.3af)",
+   "Micro SD, up to 512GB"
+  ],
+  "img": "uniview-ipc3622le-adf28k-wp-l.webp",
+  "slug": "uniview-ipc3622le-adf28k-wp-l",
+  "verify": []
+ },
+ {
+  "model": "IPC3622LE-ADF28K-WP",
+  "line": "Uniview",
+  "name": "2MP ColorHunter Wise-ISP Fixed Warm Light Turret Network Camera",
+  "category": "cctv-cameras",
+  "sub": "IP Network Cameras",
+  "features": [
+   "2MP 1/2.7\", progressive scan, CMOS Sensor",
+   "2.8mm@F1.0 lens",
+   "Up to 1080P (1920*1080), Max 30fps; Recording",
+   "Auto/Manual Light On/Off Control",
+   "DC 12V±25%, PoE (IEEE 802.3af)",
+   "Micro SD, up to 512GB"
+  ],
+  "img": "uniview-ipc3622le-adf28k-wp.webp",
+  "slug": "uniview-ipc3622le-adf28k-wp",
+  "verify": []
+ },
+ {
+  "model": "IPC3615SB-ADF28KMC-I0",
+  "line": "Uniview",
+  "name": "5MP HD Intelligent Light and Audible Warning Fixed Eyeball Network Camera",
+  "category": "cctv-cameras",
+  "sub": "IP Network Cameras",
+  "features": [
+   "1/2.7\", 5.0 megapixel, progressive scan, CMOS Sensor",
+   "2.8mm@F1.6",
+   "Up to 5MP (2880*1620, Max 30fps; Recording Built-in Mic and Speaker, G.711 Audio Compression Smart IR, up to 30m (98ft) IR distance and warm light Supports Up to 256G Micro SD card DC 12V±25%, PoE (IEEE 802.3af)"
+  ],
+  "img": "uniview-ipc3615sb-adf28kmc-i0.webp",
+  "slug": "uniview-ipc3615sb-adf28kmc-i0",
+  "verify": []
+ },
+ {
+  "model": "IPC3614SB-ADF28KMC-I0",
+  "line": "Uniview",
+  "name": "4MP Intelligence Double Light Full Color Active Deterrence Eyeball Network Camera",
+  "category": "cctv-cameras",
+  "sub": "IP Network Cameras",
+  "features": [
+   "1/2.7\", 4.0 megapixel, progressive scan, CMOS Sensor",
+   "2.8mm@F1.6",
+   "Up to 4MP (2688*1520), Max 30fps; Recording",
+   "Built-in Mic and Speaker, G.711 Audio Compression",
+   "Smart IR, up to 30m (98ft) IR distance",
+   "Supports Up to 256G Micro SD card",
+   "DC 12V±25%, PoE (IEEE 802.3af)"
+  ],
+  "img": "uniview-ipc3614sb-adf28kmc-i0.webp",
+  "slug": "uniview-ipc3614sb-adf28kmc-i0",
+  "verify": []
+ },
+ {
+  "model": "IPC3614LE-ADF28KC-DL",
+  "line": "Uniview",
+  "name": "4MP HD ColorHunter IR Fixed Eyeball Network Camera",
+  "category": "cctv-cameras",
+  "sub": "IP Network Cameras",
+  "features": [
+   "1/3.0\", 4.0 megapixel, progressive scan, CMOS Sensor",
+   "2.8mm@F1.6 fixed lens",
+   "Up to 4MP (2688*1520), Max 25fps; Recording",
+   "Up to 30m (98ft) IR and Warmlight Distance, Smart IR",
+   "Micro SD, up to 512 GB",
+   "ONVIF (Profile S, Profile T, Profile G),API,SDK",
+   "DC12V±25% or PoE(IEEE 802.3af) power supply"
+  ],
+  "img": "uniview-ipc3614le-adf28kc-dl.webp",
+  "slug": "uniview-ipc3614le-adf28kc-dl",
+  "verify": []
+ },
+ {
+  "model": "IPC3614LB-AF28K-DL2",
+  "line": "Uniview",
+  "name": "4MP HD ColorHunter Fixed Eyeball Network Camera",
+  "category": "cctv-cameras",
+  "sub": "IP Network Cameras",
+  "features": [
+   "1/3\", 4.0 megapixel, progressive scan, CMOS Sensor",
+   "2.8mm@F1.6 fixed lens",
+   "Up to 4MP (2560*1440), Max 25fps; Recording",
+   "Up to 30m (98ft) IR distance and Warmlight Distance, Smart IR",
+   "Micro SD, up to 512 GB",
+   "ONVIF (Profile S, Profile T, Profile G),API,SDK",
+   "DC12V±25% or PoE(IEEE 802.3af) power supply"
+  ],
+  "img": "uniview-ipc3614lb-af28k-dl2.webp",
+  "slug": "uniview-ipc3614lb-af28k-dl2",
+  "verify": []
+ },
+ {
+  "model": "IPC3612LB-SF28-A",
+  "line": "Uniview",
+  "name": "2MP Fixed Dome Network Camera",
+  "category": "cctv-cameras",
+  "sub": "IP Network Cameras",
+  "features": [
+   "1/2.8\", 2.0 MP, progressive scan, CMOS Sensor",
+   "2.8mm@F2.0 Lens",
+   "Up to 1080P (1920*1080), Max 30fps; Recording",
+   "API Compatible Integration",
+   "IR backlight Up to 30m (98ft)",
+   "DC 12V±25%, PoE (IEEE 802.3af)"
+  ],
+  "img": "uniview-ipc3612lb-sf28-a.webp",
+  "slug": "uniview-ipc3612lb-sf28-a",
+  "verify": []
+ },
+ {
+  "model": "IPC3612LB-AF28K-DL2",
+  "line": "Uniview",
+  "name": "2 MP Dual-Light ColorHunter Audio IP Dome Camera",
+  "category": "cctv-cameras",
+  "sub": "IP Network Cameras",
+  "features": [
+   "1/2.9\", 2.0 megapixel, progressive scan, CMOS Sensor",
+   "2.8mm@F2.0 fixed lens",
+   "Up to 2MP (1920*1080), Max 30/25fps; Recording",
+   "Up to 30m (98ft) IR distance and Warmlight Distance, Smart IR",
+   "Micro SD, up to 128 GB",
+   "ONVIF (Profile S, Profile T, Profile G),API,SDK",
+   "DC12V±25% or PoE(IEEE 802.3af) power supply"
+  ],
+  "img": "uniview-ipc3612lb-af28k-dl2.webp",
+  "slug": "uniview-ipc3612lb-af28k-dl2",
+  "verify": []
+ },
+ {
+  "model": "IPC3612LB-AF28K-DL",
+  "line": "Uniview",
+  "name": "2MP HD ColorHunter Fixed Eyeball Network Camera",
+  "category": "cctv-cameras",
+  "sub": "IP Network Cameras",
+  "features": [
+   "1/2.9\", 2.0 megapixel, progressive scan, CMOS Sensor",
+   "2.8mm@F1.6 fixed lens",
+   "Up to 2MP (1920*1080),Max 30fps; Recording",
+   "Up to 30m (98ft) IR and Warmlight Distance, Smart IR",
+   "Micro SD, up to 512 GB",
+   "ONVIF (Profile S, Profile T, Profile G),API,SDK",
+   "DC12V±25% or PoE(IEEE 802.3af) power supply"
+  ],
+  "img": "uniview-ipc3612lb-af28k-dl.webp",
+  "slug": "uniview-ipc3612lb-af28k-dl",
+  "verify": []
+ },
+ {
+  "model": "IPC3612LB-AF28-A2",
+  "line": "Uniview",
+  "name": "2MP Fixed IR Turret Network Camera",
+  "category": "cctv-cameras",
+  "sub": "IP Network Cameras",
+  "features": [
+   "2MP, 1/3.0\" CMOS sensor",
+   "2MP (1920 × 1080)@30/25 fps; 720P (1280 × 720)@30/25 fps",
+   "2.8mm@F2.0 lens",
+   "Ultra H.265, H.265, H.264",
+   "Smart IR, up to 30 m (98 ft) IR distance",
+   "2D/3D DNR (Digital Noise Reduction)",
+   "DC12 V or PoE (IEEE 802.3af) power supply"
+  ],
+  "img": "uniview-ipc3612lb-af28-a2.webp",
+  "slug": "uniview-ipc3612lb-af28-a2",
+  "verify": []
+ },
+ {
+  "model": "IPC3514LE-ADF28K-WP",
+  "line": "Uniview",
+  "name": "4MP ColorHunter with Wise-ISP Fixed Dome Network Camera",
+  "category": "cctv-cameras",
+  "sub": "IP Network Cameras",
+  "features": [
+   "4MP 1/1.8\", progressive scan, CMOS Sensor",
+   "2.8mm@F1.0 lens",
+   "Up to 4MP (2688*1520), Max 25fps; Recording",
+   "Auto/Manual Light On/Off Control",
+   "Micro SD, up to 256GB",
+   "DC 12V±25%, PoE (IEEE 802.3af)"
+  ],
+  "img": "uniview-ipc3514le-adf28k-wp.webp",
+  "slug": "uniview-ipc3514le-adf28k-wp",
+  "verify": []
+ },
+ {
+  "model": "IPC3512LE-ADF28K-WP",
+  "line": "Uniview",
+  "name": "2MP ColorHunter Wise-ISP Fixed Dome Network Camera",
+  "category": "cctv-cameras",
+  "sub": "IP Network Cameras",
+  "features": [
+   "2MP 1/1.7\", progressive scan, CMOS Sensor",
+   "2.8mm@F1.0 lens",
+   "Up to 1080P (1920*1080), Max 30fps; Recording",
+   "Auto/Manual Light On/Off Control",
+   "Micro SD, up to 512GB",
+   "DC 12V±25%, PoE (IEEE 802.3af)"
+  ],
+  "img": "uniview-ipc3512le-adf28k-wp.webp",
+  "slug": "uniview-ipc3512le-adf28k-wp",
+  "verify": []
+ },
+ {
+  "model": "IPC328SB-ADF28K-I0",
+  "line": "Uniview",
+  "name": "8MP LightHunter Fixed IR Dome Network Camera",
+  "category": "cctv-cameras",
+  "sub": "IP Network Cameras",
+  "features": [
+   "1/2.7\", 8.0 MP, progressive scan, CMOS sensor",
+   "2.8 mm@ F1.6 lens",
+   "2MP (1920*1080)@30/25fps; 720P (1280*720)@30/25fps",
+   "Up to 30m IR distance",
+   "G.711 Audio Compression",
+   "Micro SD, up to 512 GB",
+   "DC 12V±25%, PoE (IEEE 802.3af)"
+  ],
+  "img": "uniview-ipc328sb-adf28k-i0.webp",
+  "slug": "uniview-ipc328sb-adf28k-i0",
+  "verify": []
+ },
+ {
+  "model": "IPC322LB-SF28-A",
+  "line": "Uniview",
+  "name": "2MP Vandal-resistant Network IR Fixed Dome Camera",
+  "category": "cctv-cameras",
+  "sub": "IP Network Cameras",
+  "features": [
+   "1/2.8\", progressive scan, 2.0 megapixel, CMOS Sensor",
+   "2.8mm@F2.0 Lens",
+   "1080P (1920*1080), Max 30fps; Recording",
+   "Smart IR, up to 30m (98ft) IR distance",
+   "API Compatible Integration",
+   "DC 12V±25%, PoE (IEEE 802.3af)"
+  ],
+  "img": "uniview-ipc322lb-sf28-a.webp",
+  "slug": "uniview-ipc322lb-sf28-a",
+  "verify": []
+ },
+ {
+  "model": "IPC322LB-AF28-A2",
+  "line": "Uniview",
+  "name": "2MP HD IR Fixed Mini Bullet Network Camera",
+  "category": "cctv-cameras",
+  "sub": "IP Network Cameras",
+  "features": [
+   "High quality image with 2MP, 1/3.0\" CMOS sensor",
+   "2MP (1920 × 1080)@30/25 fps; 720P (1280 × 720)@30/25 fps",
+   "2.8mm@F1.0 lens",
+   "Ultra H.265, H.265, H.264",
+   "Smart IR, up to 30 m (98 ft) IR distance",
+   "2D/3D DNR (Digital Noise Reduction)",
+   "DC12 V or PoE (IEEE 802.3af) power supply"
+  ],
+  "img": "uniview-ipc322lb-af28-a2.webp",
+  "slug": "uniview-ipc322lb-af28-a2",
+  "verify": []
+ },
+ {
+  "model": "IPC2K24SE-ADF40KMC-WL-I0",
+  "line": "Uniview",
+  "name": "4MP HD ColorHunter Wide Angle Fixed Bullet Network Camera",
+  "category": "cctv-cameras",
+  "sub": "IP Network Cameras",
+  "features": [
+   "1/2.7\", 8.0 megapixel, progressive scan, CMOS sensor",
+   "Up to 8MP (3840*2160)@20fps Recording",
+   "2 LED Light with up to 30m (98ft) distance",
+   "Built-in Mic, G.711 Audio Compression",
+   "2 * 4.0mm@F1.0 Lenses",
+   "Supports 256 G Micro SD card",
+   "DC 12V±25%, PoE (IEEE 802.3af)"
+  ],
+  "img": "uniview-ipc2k24se-adf40kmc-wl-i0.webp",
+  "slug": "uniview-ipc2k24se-adf40kmc-wl-i0",
+  "verify": []
+ },
+ {
+  "model": "IPC2324SE-ADZK-WL-I0",
+  "line": "Uniview",
+  "name": "4MP HD Intelligent Dual Illuminators ColorHunter VF Bullet Network Camera",
+  "category": "cctv-cameras",
+  "sub": "IP Network Cameras",
+  "features": [
+   "1/1.8\", 4.0 megapixel, progressive scan, CMOS sensor",
+   "2.8 ~ 12mm, AF and motorized zoom lens",
+   "Up to4MP (3840*2160), Max 20fps Recording",
+   "Smart IR/Warm LED, up to 30m (98ft) IR distance",
+   "Built-in Mic, G.711 Audio Compression",
+   "Supports 256 G Micro SD card",
+   "DC 12V±25%, PoE (IEEE 802.3af)"
+  ],
+  "img": "uniview-ipc2324se-adzk-wl-i0.webp",
+  "slug": "uniview-ipc2324se-adzk-wl-i0",
+  "verify": []
+ },
+ {
+  "model": "IPC2322SB-DZK-I0",
+  "line": "Uniview",
+  "name": "2MP HD LightHunter IR Fixed Bullet Network Camera",
+  "category": "cctv-cameras",
+  "sub": "IP Network Cameras",
+  "features": [
+   "1/2.8\", 2.0 megapixel, progressive scan, CMOS Sensor",
+   "2.7 ~ 13.5mm, AF automatic focusing and motorized zoom lens",
+   "Up to 2MP (1920*1080)@30fps; Recording",
+   "Built-in Mic, G.711 Audio Compression",
+   "Smart IR, up to 50m (164ft) IR distance",
+   "Supports Up to 256 G Micro SD card",
+   "DC 12V±25%, PoE (IEEE 802.3af)"
+  ],
+  "img": "uniview-ipc2322sb-dzk-i0.webp",
+  "slug": "uniview-ipc2322sb-dzk-i0",
+  "verify": []
+ },
+ {
+  "model": "IPC2322LB-ADZK-G",
+  "line": "Uniview",
+  "name": "2MP HD IR VF Bullet Network Camera",
+  "category": "cctv-cameras",
+  "sub": "IP Network Cameras",
+  "features": [
+   "1/2.7\", 2.0 MP, progressive scan, CMOS Sensor",
+   "2.8 ~ 12mm, AF automatic focusing and motorized zoom lens",
+   "Up to 2MP (1920*1080)@30/25fps; Recording",
+   "120dB true WDR technology for strong light scene",
+   "Smart IR, up to 50m (164ft) IR distance",
+   "Supports 128 G Micro SD card",
+   "DC 12V±25%, PoE (IEEE 802.3af)"
+  ],
+  "img": "uniview-ipc2322lb-adzk-g.webp",
+  "slug": "uniview-ipc2322lb-adzk-g",
+  "verify": []
+ },
+ {
+  "model": "IPC2318LE-ADF40KM-WP",
+  "line": "Uniview",
+  "name": "8MP ColorHunter with Wise-ISP Fixed Bullet Network Camera",
+  "category": "cctv-cameras",
+  "sub": "IP Network Cameras",
+  "features": [
+   "8MP 1/1.8\", CMOS Sensor",
+   "4.0mm@F1.0 lens",
+   "Up to 8MP (3840*2160), Max 20fps Recording",
+   "Up to 30m (98.4 ft) warmlight distance",
+   "Auto/Manual Light On/Off Control",
+   "DC 12V±25%, PoE (IEEE 802.3af)",
+   "Micro SD, up to 512GB"
+  ],
+  "img": "uniview-ipc2318le-adf40km-wp.webp",
+  "slug": "uniview-ipc2318le-adf40km-wp",
+  "verify": []
+ },
+ {
+  "model": "IPC2314SB-ADF60KM-I0",
+  "line": "Uniview",
+  "name": "4MP HD Intelligent 80m IR Fixed Bullet Network Camera",
+  "category": "cctv-cameras",
+  "sub": "IP Network Cameras",
+  "features": [
+   "1/2.7\", 4.0 megapixel, progressive scan, CMOS Sensor",
+   "6.0mm@F1.6",
+   "Up to 4MP (2688*1520), Max 30fps; Recording",
+   "Built-in Mic, G.711 Audio Compression",
+   "Smart IR, up to 80m (262 ft) IR distance",
+   "Supports Up to 256G Micro SD card",
+   "DC 12V±25%, PoE (IEEE 802.3af)"
+  ],
+  "img": "uniview-ipc2314sb-adf60km-i0.webp",
+  "slug": "uniview-ipc2314sb-adf60km-i0",
+  "verify": []
+ },
+ {
+  "model": "IPC2314SB-ADF40KM-I0",
+  "line": "Uniview",
+  "name": "4MP HD Intelligent 80m IR Fixed Bullet Network Camera",
+  "category": "cctv-cameras",
+  "sub": "IP Network Cameras",
+  "features": [
+   "1/2.7\", 4.0 megapixel, progressive scan, CMOS Sensor",
+   "4.0mm@F1.6",
+   "Up to 4MP (2688*1520), Max 30fps; Recording",
+   "Built-in Mic, G.711 Audio Compression",
+   "Smart IR, up to 80m (262 ft) IR distance and warm light",
+   "Supports Up to 256G Micro SD card",
+   "DC 12V±25%, PoE (IEEE 802.3af)"
+  ],
+  "img": "uniview-ipc2314sb-adf40km-i0.webp",
+  "slug": "uniview-ipc2314sb-adf40km-i0",
+  "verify": []
+ },
+ {
+  "model": "IPC2314LE-ADF40KM-WP",
+  "line": "Uniview",
+  "name": "4MP ColorHunter with Wise-ISP Fixed Bullet Network Camera",
+  "category": "cctv-cameras",
+  "sub": "IP Network Cameras",
+  "features": [
+   "4MP 1/1.8\", progressive scan, CMOS Sensor",
+   "4.0mm@F1.0 lens",
+   "Up to 4MP (2688*1520), Max 25fps; Recording",
+   "Auto/Manual Light On/Off Control",
+   "White Light, up to 30m (98ft) white light distance",
+   "Micro SD, up to 256GB",
+   "DC 12V±25%, PoE (IEEE 802.3af)"
+  ],
+  "img": "uniview-ipc2314le-adf40km-wp.webp",
+  "slug": "uniview-ipc2314le-adf40km-wp",
+  "verify": []
+ },
+ {
+  "model": "IPC2314LE-ADF40KM-WL",
+  "line": "Uniview",
+  "name": "4MP ColorHunter Fixed Warm Light Bullet Network Camera",
+  "category": "cctv-cameras",
+  "sub": "IP Network Cameras",
+  "features": [
+   "1/1.8\", 4.0 MP, progressive scan, CMOS Sensor",
+   "4.0mm@F1.0 Lens",
+   "Up to 4MP (2688*1520), Max 25fps; Recording",
+   "API Compatible Integration",
+   "Up to 30m (98ft) white light range",
+   "Supports 128 GB Micro SD card",
+   "DC 12V±25%, PoE (IEEE 802.3af)"
+  ],
+  "img": "uniview-ipc2314le-adf40km-wl.webp",
+  "slug": "uniview-ipc2314le-adf40km-wl",
+  "verify": []
+ },
+ {
+  "model": "IPC2312LE-ADF40K-WP-L",
+  "line": "Uniview",
+  "name": "2MP OwlView Wise-ISP Fixed Warm Light Bullet Network Camera",
+  "category": "cctv-cameras",
+  "sub": "IP Network Cameras",
+  "features": [
+   "2MP 1/2.7\", CMOS Sensor",
+   "4.0mm@F1.0 lens",
+   "Up to 1080P (1920 × 1080), max. 30 fps Recording",
+   "Up to 30m (98.4 ft) warmlight distance",
+   "Auto/Manual Light On/Off Control",
+   "DC 12V±25%, PoE (IEEE 802.3af)",
+   "Micro SD, up to 512GB"
+  ],
+  "img": "uniview-ipc2312le-adf40k-wp-l.webp",
+  "slug": "uniview-ipc2312le-adf40k-wp-l",
+  "verify": []
+ },
+ {
+  "model": "IPC225LE-AF40C-WP",
+  "line": "Uniview",
+  "name": "5MP OwlView ColorHunter with Wise-ISP Fixed Warm Light Bullet Network Camera",
+  "category": "cctv-cameras",
+  "sub": "IP Network Cameras",
+  "features": [
+   "5MP 1/1.8\", progressive scan, CMOS Sensor",
+   "4.0mm@F1.0 lens",
+   "Up to 5MP (2880*1620), Max 25fps; Recording",
+   "Auto/Manual Light On/Off Control",
+   "DC 12V±25%, PoE (IEEE 802.3af)"
+  ],
+  "img": "uniview-ipc225le-af40c-wp.webp",
+  "slug": "uniview-ipc225le-af40c-wp",
+  "verify": []
+ },
+ {
+  "model": "IPC2225SE-DF40K-WL-I0",
+  "line": "Uniview",
+  "name": "5MP HD ColorHunter Fixed Bullet Network Camera",
+  "category": "cctv-cameras",
+  "sub": "IP Network Cameras",
+  "features": [
+   "1/2.7\", 5.0 megapixel, progressive scan, CMOS Sensor",
+   "4.0mm@F1.0 lens",
+   "Colorhunter technology for 24-hour full-color images",
+   "G.711 Audio Compression",
+   "Supports 256 G Micro SD card",
+   "DC 12V±25%, PoE (IEEE 802.3af)"
+  ],
+  "img": "uniview-ipc2225se-df40k-wl-i0.webp",
+  "slug": "uniview-ipc2225se-df40k-wl-i0",
+  "verify": []
+ },
+ {
+  "model": "IPC2128SE-ADF40KM-WL-I0",
+  "line": "Uniview",
+  "name": "8MP HD Intelligent ColorHunter Fixed Bullet Network Camera",
+  "category": "cctv-cameras",
+  "sub": "IP Network Cameras",
+  "features": [
+   "1/2.8\", 8.0 megapixel, progressive scan, CMOS Sensor",
+   "4.0mm@F1.1",
+   "Up to 8MP (3840*2160), Max 20fps; Recording",
+   "120dB true WDR technology for strong light scene",
+   "Built-in Mic, G.711 Audio Compression",
+   "Smart IR, up to 30m (98ft) IR distance and warm light",
+   "Supports Up to 256G Micro SD card",
+   "DC 12V±25%, PoE (IEEE 802.3af)"
+  ],
+  "img": "uniview-ipc2128se-adf40km-wl-i0.webp",
+  "slug": "uniview-ipc2128se-adf40km-wl-i0",
+  "verify": []
+ },
+ {
+  "model": "IPC2128SB-ADF40KMC-I0",
+  "line": "Uniview",
+  "name": "8MP HD Intelligent Light and Audible Warning Fixed Bullet Network Camera",
+  "category": "cctv-cameras",
+  "sub": "IP Network Cameras",
+  "features": [
+   "1/2.7\", 8.0 megapixel, progressive scan, CMOS sensor",
+   "4.0mm@F1.6 Lens",
+   "Up to8MP (3840*2160), Max 20fps Recording",
+   "Smart IR/Warm LED, up to 30m (98ft) IR distance",
+   "Built-in Mic, G.711 Audio Compression",
+   "Supports 256 G Micro SD card",
+   "DC 12V±25%, PoE (IEEE 802.3af)"
+  ],
+  "img": "uniview-ipc2128sb-adf40kmc-i0.webp",
+  "slug": "uniview-ipc2128sb-adf40kmc-i0",
+  "verify": []
+ },
+ {
+  "model": "IPC2128LE-ADF40KM-G",
+  "line": "Uniview",
+  "name": "4K Mini Fixed Bullet Network Camera",
+  "category": "cctv-cameras",
+  "sub": "IP Network Cameras",
+  "features": [
+   "1/2.7\", 8MP CMOS Sensor",
+   "2.4mm @ f1.6 fixed lens",
+   "Up to 2MP (1920*1080)@30/25fps; Recording",
+   "Smart IR, Up to 50m (164 ft) IR distance",
+   "Micro SD, up to 256 GB",
+   "ONVIF (Profile S, Profile T, Profile G),API,SDK",
+   "DC12V±25% or PoE(IEEE 802.3af) power supply"
+  ],
+  "img": "uniview-ipc2128le-adf40km-g.webp",
+  "slug": "uniview-ipc2128le-adf40km-g",
+  "verify": []
+ },
+ {
+  "model": "IPC2125LE-ADF40KM-G",
+  "line": "Uniview",
+  "name": "5MP HD Mini IR Fixed Bullet Network Camera",
+  "category": "cctv-cameras",
+  "sub": "IP Network Cameras",
+  "features": [
+   "1/2.7\", 5.0 megapixel, progressive scan, CMOS Sensor",
+   "4.0mm@F1.6 Lens",
+   "Up to 5MP (2880*1620)@ 25/20fps; Recording",
+   "Smart IR, up to 50m (164ft) IR distance",
+   "Supports 256 G Micro SD card",
+   "DC 12V±25%, PoE (IEEE 802.3af)"
+  ],
+  "img": "uniview-ipc2125le-adf40km-g.webp",
+  "slug": "uniview-ipc2125le-adf40km-g",
+  "verify": []
+ },
+ {
+  "model": "IPC2124SB-ADF40KMC-I0",
+  "line": "Uniview",
+  "name": "4MP HD Intelligent Light and Audible Warning Fixed Bullet Network Camera",
+  "category": "cctv-cameras",
+  "sub": "IP Network Cameras",
+  "features": [
+   "1/2.7\", 4.0 megapixel, progressive scan, CMOS sensor",
+   "4.0mm@F1.6 Lens",
+   "Up to4MP (2688*1520), Max 30fps Recording",
+   "120dB true WDR technology for strong light scene",
+   "Smart IR, up to 30m (98ft) IR & Warmlight distance",
+   "Supports 256 G Micro SD card",
+   "DC 12V±25%, PoE (IEEE 802.3af)"
+  ],
+  "img": "uniview-ipc2124sb-adf40kmc-i0.webp",
+  "slug": "uniview-ipc2124sb-adf40kmc-i0",
+  "verify": []
+ },
+ {
+  "model": "IPC2124LE-ADF40KM-G",
+  "line": "Uniview",
+  "name": "4MP HD Mini IR Fixed Bullet Network Camera",
+  "category": "cctv-cameras",
+  "sub": "IP Network Cameras",
+  "features": [
+   "1/3\", 4.0 MP, progressive scan, CMOS Sensor",
+   "2.8mm@F1.6 Lens",
+   "Up to 4MP (2688*1520)@ 25/20fps; Recording",
+   "Smart IR, up to 50m (164ft) IR distance",
+   "Supports 256 G Micro SD card",
+   "DC 12V±25%, PoE (IEEE 802.3af)"
+  ],
+  "img": "uniview-ipc2124le-adf40km-g.webp",
+  "slug": "uniview-ipc2124le-adf40km-g",
+  "verify": []
+ },
+ {
+  "model": "IPC2124LB-AF40K-DL2",
+  "line": "Uniview",
+  "name": "4MP HD ColorHunter Mini Fixed Bullet Network Camera",
+  "category": "cctv-cameras",
+  "sub": "IP Network Cameras",
+  "features": [
+   "1/3\", 4.0 megapixel, progressive scan, CMOS Sensor",
+   "4.0mm@F1.6 fixed lens",
+   "Up to 4MP (2560*1440), Max 25fps; Recording",
+   "Up to 30m (98ft) IR distance and Warmlight Distance, Smart IR",
+   "Micro SD, up to 512 GB",
+   "ONVIF (Profile S, Profile T, Profile G),API,SDK",
+   "DC12V±25% or PoE(IEEE 802.3af) power supply"
+  ],
+  "img": "uniview-ipc2124lb-af40k-dl2.webp",
+  "slug": "uniview-ipc2124lb-af40k-dl2",
+  "verify": []
+ },
+ {
+  "model": "IPC2122SB-ADF40KM-I0",
+  "line": "Uniview",
+  "name": "2MP HD Intelligent LightHunter IR Fixed Bullet Network Camera",
+  "category": "cctv-cameras",
+  "sub": "IP Network Cameras",
+  "features": [
+   "1/2.8\", 2.0 megapixel, progressive scan, CMOS Sensor",
+   "4.0mm@F1.6",
+   "Up to 2MP (1920*1080), Max 30fps; Recording",
+   "Built-in Mic, G.711 Audio Compression",
+   "Smart IR, up to 40m (131 ft) IR distance",
+   "Supports Up to 256G Micro SD card",
+   "DC 12V±25%, PoE (IEEE 802.3af)"
+  ],
+  "img": "uniview-ipc2122sb-adf40km-i0.webp",
+  "slug": "uniview-ipc2122sb-adf40km-i0",
+  "verify": []
+ },
+ {
+  "model": "IPC2122LE-ADF40KMC-DL",
+  "line": "Uniview",
+  "name": "2MP HD ColorHunter Mini IR Fixed Bullet Network Camera",
+  "category": "cctv-cameras",
+  "sub": "IP Network Cameras",
+  "features": [
+   "1/2.8\", 2.0 megapixel, progressive scan, CMOS Sensor",
+   "4.0mm@F1.6 fixed lens",
+   "Up to 2MP (1920*1080),Max 30fps; Recording",
+   "Up to 30m (98ft) IR and Warmlight Distance, Smart IR",
+   "Micro SD, up to 128 GB",
+   "ONVIF (Profile S, Profile T, Profile G),API,SDK",
+   "DC12V±25% or PoE(IEEE 802.3af) power supply"
+  ],
+  "img": "uniview-ipc2122le-adf40kmc-dl.webp",
+  "slug": "uniview-ipc2122le-adf40kmc-dl",
+  "verify": []
+ },
+ {
+  "model": "IPC2122LB-ASF40K-A",
+  "line": "Uniview",
+  "name": "2MP HD IR Fixed Mini Bullet Network Camera",
+  "category": "cctv-cameras",
+  "sub": "IP Network Cameras",
+  "features": [
+   "1/2.9\", 2MP CMOS Sensor",
+   "2.8mm @ f2.0 fixed lens",
+   "Up to 2MP (1920*1080)@30/25fps; Recording",
+   "Smart IR, Up to 30m (98ft) IR distance",
+   "Micro SD, up to 128 GB",
+   "ONVIF (Profile S, Profile T, Profile G),API,SDK",
+   "DC12V±25% or PoE(IEEE 802.3af) power supply"
+  ],
+  "img": "uniview-ipc2122lb-asf40k-a.webp",
+  "slug": "uniview-ipc2122lb-asf40k-a",
+  "verify": []
+ },
+ {
+  "model": "IPC2122LB-AF40-A2",
+  "line": "Uniview",
+  "name": "2MP Fixed IR Bullet Network Camera",
+  "category": "cctv-cameras",
+  "sub": "IP Network Cameras",
+  "features": [
+   "2MP, 1/3.0\" CMOS sensor",
+   "2MP (1920 × 1080)@30/25 fps; 720P (1280 × 720)@30/25 fps",
+   "2.8mm@F2.0 lens",
+   "Ultra H.265, H.265, H.264",
+   "Smart IR, up to 30 m (98 ft) IR distance",
+   "2D/3D DNR (Digital Noise Reduction)",
+   "DC12 V or PoE (IEEE 802.3af) power supply"
+  ],
+  "img": "uniview-ipc2122lb-af40-a2.webp",
+  "slug": "uniview-ipc2122lb-af40-a2",
+  "verify": []
+ },
+ {
+  "model": "IPC6422SR-X25-VF-B",
+  "line": "Uniview",
+  "name": "2MP 25X LightHunter IR Network PTZ Camera",
+  "category": "cctv-cameras",
+  "sub": "PTZ Cameras",
+  "features": [
+   "1/2.8\" CMOS sensor, 2.0 megapixel, progressive scan",
+   "5–125mm lens, F1.5–F4.0, AF with 25× motorized optical zoom",
+   "Up to 1080p (1920×1080) @60fps recording",
+   "Audio compression: G.711U, G.711A; Two‑way audio supported(but no Built-in MIC)",
+   "DC12V ±25%, PoE+ (IEEE802.3at), Max 21W",
+   "MicroSD slot, supports up to 512GB edge storage",
+   "Smart IR up to 100m (328 ft), 850nm wavelength",
+   "IP67 weatherproof, IK10 vandal resistant",
+   "Alarm I/O: 2 in / 1 out, Audio I/O: 1 in / 1 out",
+   "Smart features: Intrusion prevention, face detection, people counting, auto‑tracking",
+   "Operating temperature: -40°C to +70°C"
+  ],
+  "img": "uniview-ipc6422sr-x25-vf-b.webp",
+  "slug": "uniview-ipc6422sr-x25-vf-b",
+  "verify": []
+ },
+ {
+  "model": "IPC6424SR-X25-VF-B",
+  "line": "Uniview",
+  "name": "4MP 25X LightHunter IR Network PTZ Camera",
+  "category": "cctv-cameras",
+  "sub": "PTZ Cameras",
+  "features": [
+   "1/2.8\" CMOS sensor, 4.0 megapixel, progressive scan",
+   "4.8 ~ 120mm lens, F1.5 ~ F3.8, AF with 25× motorized optical zoom",
+   "Up to 4MP (2688×1520) @30fps; Sub-stream supports 1080p (1920×1080)",
+   "Audio compression: G.711U, G.711A; Two-way audio supported(but no Built-in MIC)",
+   "DC12V ±25%, PoE+ (IEEE802.3at), Max power consumption 21W",
+   "MicroSD card slot, supports up to 512GB edge storage",
+   "Smart IR up to 100m (328 ft) with 850nm wavelength",
+   "IP67 weatherproof, IK10 vandal resistant",
+   "Alarm I/O: 2 in / 1 out, Audio I/O: 1 in / 1 out",
+   "Smart features: Intrusion detection, face detection, people counting, auto-tracking",
+   "Operating temperature: -40°C to +70°C"
+  ],
+  "img": "uniview-ipc6424sr-x25-vf-b.webp",
+  "slug": "uniview-ipc6424sr-x25-vf-b",
+  "verify": []
+ },
+ {
+  "model": "IPC6434LR-X16-VG1",
+  "line": "Uniview",
+  "name": "4MP 16X LightHunter Network PTZ Dome Camera",
+  "category": "cctv-cameras",
+  "sub": "PTZ Cameras",
+  "features": [
+   "4MP, 1/2.9\" CMOS sensor",
+   "5.5~88mm f1.78-f3.37, 16X AF motorized zoom lens",
+   "Up to 2MP (1920*1080)@30fps; Recording",
+   "Smart IR, up to 100m (328 ft)",
+   "DC 12V±25%,3A, PoE (IEEE 802.3at) with max power consumption of 20Watt"
+  ],
+  "img": "uniview-ipc6434lr-x16-vg1.webp",
+  "slug": "uniview-ipc6434lr-x16-vg1",
+  "verify": []
+ },
+ {
+  "model": "IPC6412LR-X16-VG",
+  "line": "Uniview",
+  "name": "2MP 16x LightHunter Network PTZ Dome Camera",
+  "category": "cctv-cameras",
+  "sub": "PTZ Cameras",
+  "features": [
+   "1/2.8\", 2MP progressive scan, CMOS Sensor",
+   "5 - 80mm f1.7-f2.8, AF automatic focusing and motorized zoom lens",
+   "Up to 2MP (1920*1080)@30fps; Recording",
+   "Smart IR, up to 100m (328 ft)",
+   "DC 12V±25%,3A, PoE (IEEE 802.3at) with max power consumption of 20Watt"
+  ],
+  "img": "uniview-ipc6412lr-x16-vg.webp",
+  "slug": "uniview-ipc6412lr-x16-vg",
+  "verify": []
+ },
+ {
+  "model": "IPC6312LR-AX4W-VG",
+  "line": "Uniview",
+  "name": "2MP LightHunter WIFI IR Network PTZ Camera",
+  "category": "cctv-cameras",
+  "sub": "PTZ Cameras",
+  "features": [
+   "1/21.7\", 2.0 megapixel, progressive scan, CMOS Sensor",
+   "2.8~12mm，AF and motorized zoom lens",
+   "Up to 2MP (1920*1080)@30fps; Recording",
+   "Built-in Mic and Speaker, G.711 Audio Compression",
+   "Smart IR, up to 50m (164ft) IR distance",
+   "Supports Up to 256G Micro SD card",
+   "DC 12V±25%"
+  ],
+  "img": "uniview-ipc6312lr-ax4w-vg.webp",
+  "slug": "uniview-ipc6312lr-ax4w-vg",
+  "verify": []
+ },
+ {
+  "model": "IPC6612SR-X25-VG",
+  "line": "Uniview",
+  "name": "2MP 25x LightHunter Network PTZ Dome Camera",
+  "category": "cctv-cameras",
+  "sub": "PTZ Cameras",
+  "features": [
+   "1/2.8\", 2.0 megapixel, progressive scan, CMOS sensor",
+   "5~125mm, AF and motorized zoom lens",
+   "Up to 2MP(1920*1080),Max 30fps; Recording",
+   "G.711U, G.711A Audio Compression",
+   "DC12V±10% , PoE+ (IEEE802.3 at)",
+   "Micro SD, up to 256GB",
+   "Smart IR, up to 150m (492 ft) IR distance"
+  ],
+  "img": "uniview-ipc6612sr-x25-vg.webp",
+  "slug": "uniview-ipc6612sr-x25-vg",
+  "verify": []
+ },
+ {
+  "model": "IPC94144SFW-X25-F40C",
+  "line": "Uniview",
+  "name": "4MP+4MP LightHunter Dual-lens Network PTZ Camera",
+  "category": "cctv-cameras",
+  "sub": "PTZ Cameras",
+  "features": [
+   "1/1.8\", 4MP, CMOS Sensor Panorama,1/2.7\",4MP, CMOS Details",
+   "4mm@F1.0 Panorama Lens, 4.8~120mm@F1.5, AF automatic focusing and motorized zoomlens",
+   "Up to 4MP(2688*1520),Max 30fps; Recording on both lens",
+   "Up to 30m(98.4 ft) Panorama Warmlight, Up to 100m (328.1 ft)Details IR",
+   "Supports Up to 256G Micro SD card",
+   "DC 12V±25%,3A, PoE (IEEE 802.3at) with max power consumption of 24Watt"
+  ],
+  "img": "uniview-ipc94144sfw-x25-f40c.webp",
+  "slug": "uniview-ipc94144sfw-x25-f40c",
+  "verify": []
+ },
+ {
+  "model": "IPC9312LFW-AF28-2X4",
+  "line": "Uniview",
+  "name": "2MP+2MP LightHunter Dual-lens Network PTZ Camera",
+  "category": "cctv-cameras",
+  "sub": "PTZ Cameras",
+  "features": [
+   "1/2.8\", 2MP progressive scan, CMOS Sensor",
+   "2.8mm@F1.60 Panorama Lens, 2.8~12mm@F1.6, AF automatic focusing and motorized zoom detail lens",
+   "Up to 1080P (1920*1080),Max 25fps; Recording on both lens",
+   "Smart IR, Up to 10m (32.8 ft) Panorama, Up to 50m (164.0 ft)IR",
+   "Details, Warm Light Up to Up to 10m (32.8 ft) Panorama",
+   "Supports Up to 256G Micro SD card",
+   "DC 12V±25%,3A, PoE (IEEE 802.3at) with max power consumption of 24Watt"
+  ],
+  "img": "uniview-ipc9312lfw-af28-2x4.webp",
+  "slug": "uniview-ipc9312lfw-af28-2x4",
+  "verify": []
+ },
+ {
+  "model": "IPC6612SR-X33-VG",
+  "line": "Uniview",
+  "name": "2MP 33x LightHunter Network PTZ Dome Camera",
+  "category": "cctv-cameras",
+  "sub": "PTZ Cameras",
+  "features": [
+   "1/2.8\", 2.0 megapixel, progressive scan, CMOS sensor",
+   "4.5~ 148.5mm, F1.5 ~ F4.0 AF and motorized zoom lens",
+   "Up to 2MP(1920*1080),Max 30fps; Recording",
+   "G.711U, G.711A Audio Compression",
+   "DC12V±10% , PoE+ (IEEE802.3 at)",
+   "Micro SD, up to 256GB",
+   "Smart IR, up to 150m (492 ft) IR distance"
+  ],
+  "img": "uniview-ipc6612sr-x33-vg.webp",
+  "slug": "uniview-ipc6612sr-x33-vg",
+  "verify": []
+ },
+ {
+  "model": "IPC6412LR-X5UPW-VG",
+  "line": "Uniview",
+  "name": "2MP WDR Starlight IR Network Indoor Mini PTZ Dome Camera",
+  "category": "cctv-cameras",
+  "sub": "PTZ Cameras",
+  "features": [
+   "1/2.7\", 2.0 megapixel, progressive scan, CMOS sensor",
+   "2.7~13.5mm@F1.2, AF and motorized zoom lens",
+   "Up to 2MP (1920*1080),Max 30fps; Recording",
+   "Smart IR, Up to 30m (98 ft) IR distance",
+   "G.711U, G.711A Audio Compression",
+   "Micro SD, up to 256GB",
+   "DC12V±10% , PoE+ (IEEE802.3 at)"
+  ],
+  "img": "uniview-ipc6412lr-x5upw-vg.webp",
+  "slug": "uniview-ipc6412lr-x5upw-vg",
+  "verify": []
+ },
+ {
+  "model": "IPC6412LR-X5P",
+  "line": "Uniview",
+  "name": "2MP WDR Starlight IR Network Indoor Mini PTZ Dome Camera",
+  "category": "cctv-cameras",
+  "sub": "PTZ Cameras",
+  "features": [
+   "1/2.9\" progressive scan, 2.0 megapixel, CMOS censor",
+   "2.7~13.5mm@F1.2, AF and motorized zoom lens",
+   "Up to 2MP (1920*1080),Max 30fps; Recording",
+   "Smart IR, Up to 30m (98 ft) IR distance",
+   "Micro SD, up to 256GB",
+   "DC12V±10% , PoE+ (IEEE802.3 at)"
+  ],
+  "img": "uniview-ipc6412lr-x5p.webp",
+  "slug": "uniview-ipc6412lr-x5p",
+  "verify": []
+ },
+ {
+  "model": "IPS-HC268@HDX4-WH-I1",
+  "line": "Uniview",
+  "name": "8MP Super LightHunter WDR VF LPR Bullet Network Camera",
+  "category": "cctv-cameras",
+  "sub": "ANPR / LPR Cameras",
+  "features": [
+   "1/1.8\", 8.0 megapixel, CMOS sensor",
+   "8~32mm, 4x Optical 16x Digital zoom lens",
+   "Up to 8MP(3840*2160), Max 60fps; Recording",
+   "G.711U, G.711A Audio Compression",
+   "DC12V±10% , PoE+ (IEEE802.3 at)",
+   "Micro SD, up to 512GB",
+   "Smart IR, up to 40m warmlight distance",
+   "ANPR supports capturing and recognizing car license plate according to the set country or area"
+  ],
+  "img": "uniview-ips-hc268-hdx4-wh-i1.webp",
+  "slug": "uniview-ips-hc268-hdx4-wh-i1",
+  "verify": []
+ },
+ {
+  "model": "IPS-HC264@HDX4-WH-I1",
+  "line": "Uniview",
+  "name": "4MP ANPR LightHunter Network Bullet Camera",
+  "category": "cctv-cameras",
+  "sub": "ANPR / LPR Cameras",
+  "features": [
+   "1/1.8\", 4.0 megapixel, CMOS sensor",
+   "8~32mm, 4x Optical 16x Digital zoom lens",
+   "Up to 4MP (2688*1520), Max 60fps; Recording",
+   "G.711U, G.711A Audio Compression",
+   "DC12V±10% , PoE+ (IEEE802.3 at)",
+   "Micro SD, up to 512GB",
+   "Smart IR, up to 40m warmlight distance",
+   "ANPR supports capturing and recognizing car license plate according to the set country or area"
+  ],
+  "img": "uniview-ips-hc264-hdx4-wh-i1.webp",
+  "slug": "uniview-ips-hc264-hdx4-wh-i1",
+  "verify": []
+ },
+ {
+  "model": "LAMP-W20@B30-T30-B",
+  "line": "Uniview",
+  "name": "Adjustable Brightness Warm Light Always-On Lamp",
+  "category": "cctv-cameras",
+  "sub": "Camera Accessories",
+  "features": [
+   "30° Light Emitting Angle 3000K Color Temperature",
+   "12m ~ 25m Optimal Illumination Distance, 4150 lm Luminous Flux",
+   "Dimming Method: RS485 control, button control",
+   "Power Supply: AC 90V ~ 264V, 50/60Hz",
+   "Power Consumption: Adjustable 3W ~ 50W (active power)",
+   "Operating Environment: -40℃ ~ +60℃, 10% ~ 95% RH (relative humidity, non-condensing)"
+  ],
+  "img": "uniview-lamp-w20-b30-t30-b.webp",
+  "slug": "uniview-lamp-w20-b30-t30-b",
+  "verify": []
+ },
+ {
+  "model": "NVR304-32B-IQ",
+  "line": "Uniview",
+  "name": "32-ch 4 HDDs 1U Network Video Recorder",
+  "category": "video-recorders",
+  "sub": "Network Video Recorders (NVR)",
+  "features": [
+   "32-channel IP video input",
+   "Third-party IP cameras supported with ONVIF conformance: Profile S, Profile G, Profile T",
+   "Support 1 HDMI and 1 VGA. HDMI and VGA simultaneous output",
+   "128/160Mbps outgoing/Incoming Bandwidth",
+   "Up to 12Megapixels resolution recording",
+   "4 SATA HDDs, Up to 10TB",
+   "2 RJ45 10M/100M/1000M self-adaptive Ethernet Port",
+   "2-ch SIP & 4-CH UDM by NVR, Support Traffic Monitoring By IPC"
+  ],
+  "img": "uniview-nvr304-32b-iq.webp",
+  "slug": "uniview-nvr304-32b-iq",
+  "verify": []
+ },
+ {
+  "model": "NVR508-128E-R",
+  "line": "Uniview",
+  "name": "128-ch 8 HDDs 2U Network Video Recorder",
+  "category": "video-recorders",
+  "sub": "Network Video Recorders (NVR)",
+  "features": [
+   "Support Ultra H.265/H.265/H.264 video formats",
+   "128-channel IP video input",
+   "Third-party IP cameras supported with ONVIF conformance: Profile S, Profile G, Profile T",
+   "Support 2 HDMI and 2 VGA",
+   "384Mbps outgoing/Incoming Bandwidth",
+   "VGA1 and HDMI1 simultaneous output, VGA2 and HDMI2 simultaneous output",
+   "VGA1/HDMI1 and VGA2/HDMI2 independent output",
+   "Up to 32Megapixels resolution recording",
+   "8 SATA HDDs, Up to 16TB",
+   "2 RJ45 10M/100M/1000M self-adaptive Ethernet Port"
+  ],
+  "img": "uniview-nvr508-128e-r.webp",
+  "slug": "uniview-nvr508-128e-r",
+  "verify": []
+ },
+ {
+  "model": "NVR508-64E-IQ",
+  "line": "Uniview",
+  "name": "64-ch 8 HDDs Network Video Recorder",
+  "category": "video-recorders",
+  "sub": "Network Video Recorders (NVR)",
+  "features": [
+   "Support Ultra H.265/H.265/H.264 video formats",
+   "64-channel IP video input",
+   "Third-party IP cameras supported with ONVIF conformance: Profile S, Profile G, Profile T",
+   "Support 2-ch HDMI, 2-ch VGA",
+   "VGA1 and HDMI1 simultaneous output, VGA2 and HDMI2 simultaneous output. VGA1/HDMI1 and VGA2/HDMI2 independent output",
+   "640Mbps outgoing/Incoming Bandwidth",
+   "Up to 32Megapixels resolution recording",
+   "8 SATA HDDs, Up to 16TB",
+   "2 RJ45 10M/100M/1000M self-adaptive Ethernet Port"
+  ],
+  "img": "uniview-nvr508-64e-iq.webp",
+  "slug": "uniview-nvr508-64e-iq",
+  "verify": []
+ },
+ {
+  "model": "NVR504-64E-IQ",
+  "line": "Uniview",
+  "name": "64-CH 4-SATA Network Video Recorder",
+  "category": "video-recorders",
+  "sub": "Network Video Recorders (NVR)",
+  "features": [
+   "Support Ultra H.265/H.265/H.264 video formats",
+   "64-channel IP video input with additional Intellegence function",
+   "Third-party IP cameras supported with ONVIF conformance: Profile S, Profile G, Profile T",
+   "Support 2-ch HDMI, 2-ch VGA. HDMI1 and HDMI2 up to 4K",
+   "(3840x2160) resolution",
+   "Incoming 384Mbps and outgoing 384Mbps Bandwidth",
+   "HDMI1/VGA1, HDMI2/VGA2 independent outputs provided",
+   "Up to 32 Megapixels resolution recording",
+   "Support RAID 0, 1, 5, 6, 10",
+   "4 SATA HDDs, Up to 16TB for each HDD",
+   "2 RJ45 10M/100M/1000M self-adaptive Ethernet Port",
+   "Support N+1 Hot spare",
+   "Support for 12V Power output"
+  ],
+  "img": "uniview-nvr504-64e-iq.webp",
+  "slug": "uniview-nvr504-64e-iq",
+  "verify": []
+ },
+ {
+  "model": "NVR308-64X",
+  "line": "Uniview",
+  "name": "64-CH 8-SATA Network Video Recorder",
+  "category": "video-recorders",
+  "sub": "Network Video Recorders (NVR)",
+  "features": [
+   "Support Ultra H.265/H.265/H.264 video formats",
+   "64-channel IP video input",
+   "Third-party IP cameras supported with ONVIF conformance: Profile S, Profile G, Profile T",
+   "Support 2-ch HDMI, 1-ch VGA. HDMI1 and HDMI2 up to 4K (3840x2160) resolution",
+   "Incoming 384Mbps and outgoing 384Mbps Bandwidth",
+   "HDMI1, HDMI2, VGA independent outputs provided",
+   "Up to 12 Megapixels resolution recording",
+   "Support RAID 0, 1, 5, 6, 10",
+   "8 SATA HDDs, Up to 10TB for each HDD",
+   "2 RJ45 10M/100M/1000M self-adaptive Ethernet Port",
+   "Support N+1 Hot spare",
+   "Support for 12V Power output"
+  ],
+  "img": "uniview-nvr308-64x.webp",
+  "slug": "uniview-nvr308-64x",
+  "verify": []
+ },
+ {
+  "model": "NVR304-32X",
+  "line": "Uniview",
+  "name": "32-Channel 4-SATA Network Video Recorder",
+  "category": "video-recorders",
+  "sub": "Network Video Recorders (NVR)",
+  "features": [
+   "Support Ultra265/H.265/H.264 video formats",
+   "32-channel IP video input",
+   "2 RJ45 10M/100M/1000M self-adaptive Ethernet",
+   "384Mbps incoming and 384Mbps Outgoing bandwidth",
+   "Supports cameras of ONVIF conformance(Profile S, Profile G, Profile T ) and RTSP protocols",
+   "HDMI and VGA independent outputs provided, 1-ch HDMI, 1-ch VGA. HDMI up to 4K (3840x2160) resolution",
+   "Up to 12 Megapixels resolution recording",
+   "4 SATA HDDs, up to 10TB for each HDD",
+   "ANR technology to enhance the storage reliability when the network is disconnected",
+   "Support cloud upgrade, Support RAID 1, 5"
+  ],
+  "img": "uniview-nvr304-32x.webp",
+  "slug": "uniview-nvr304-32x",
+  "verify": []
+ },
+ {
+  "model": "NVR304-32EP-B",
+  "line": "Uniview",
+  "name": "32-CH 4-SATA 4K Network Video Recorder",
+  "category": "video-recorders",
+  "sub": "Network Video Recorders (NVR)",
+  "features": [
+   "Third-party IP cameras supported with ONVIF conformance: Profile S, Profile G, Profile T",
+   "1 RJ45 10M/100M/1000M self-adaptive Ethernet Port",
+   "320Mbps incoming and 320Mbps Outgoing bandwidth",
+   "Up to 12 Megapixels resolution recording",
+   "Support Ultra 265/H.265/H.264 video formats",
+   "Plug & Play with up to 16 independent PoE network interfaces",
+   "4 SATA HDDs, Up to 8TB for each HDD",
+   "ANR technology to enhance the storage reliability when the network is disconnected",
+   "100 ~ 240 VAC Power Supply"
+  ],
+  "img": "uniview-nvr304-32ep-b.webp",
+  "slug": "uniview-nvr304-32ep-b",
+  "verify": []
+ },
+ {
+  "model": "NVR302-32S",
+  "line": "Uniview",
+  "name": "32-CH 2-SATA Network Video Recorder",
+  "category": "video-recorders",
+  "sub": "Network Video Recorders (NVR)",
+  "features": [
+   "Support Ultra265/H.265/H.264 video formats",
+   "32-channel IP video input",
+   "Third-party IP cameras supported with ONVIF conformance",
+   "160Mbps incoming and 64Mbps Outgoing bandwidth",
+   "HDMI and VGA simultaneous output",
+   "Up to 8 Megapixels resolution recording",
+   "2 SATA HDDs, up to 6TB for each HDD",
+   "ANR technology to enhance the storage reliability when the network is disconnected",
+   "12V DC power supply"
+  ],
+  "img": "uniview-nvr302-32s.webp",
+  "slug": "uniview-nvr302-32s",
+  "verify": []
+ },
+ {
+  "model": "NVR301-08LS2",
+  "line": "Uniview",
+  "name": "8-ch 1-SATA Network Video Recorder",
+  "category": "video-recorders",
+  "sub": "Network Video Recorders (NVR)",
+  "features": [
+   "Support Ultra 265/H.265/H.264 video formats",
+   "8-channel IP Video input",
+   "Third-party IP cameras supported with ONVIF conformance: Profile S, Profile G, Profile T",
+   "Support 1-ch HDMI, 1-ch VGA, HDMI at up to 4K(3840x2160) resolution",
+   "HDMI and VGA simultaneous output",
+   "Up to 6MP resolution recording",
+   "1 SATA HDD up to 6TB",
+   "50Mbps incoming and 40Mbps Outgoing bandwidth",
+   "12V DC Power Supply"
+  ],
+  "img": "uniview-nvr301-08ls2.webp",
+  "slug": "uniview-nvr301-08ls2",
+  "verify": []
+ },
+ {
+  "model": "NVR304-16B-IQ",
+  "line": "Uniview",
+  "name": "16-ch 4 HDDs 1U Network Video Recorder",
+  "category": "video-recorders",
+  "sub": "Network Video Recorders (NVR)",
+  "features": [
+   "16-channel IP video input",
+   "Third-party IP cameras supported with ONVIF conformance: Profile S, Profile G, Profile T",
+   "Support 1 HDMI and 1 VGA. HDMI and VGA simultaneous output",
+   "128/160Mbps outgoing/Incoming Bandwidth",
+   "Up to 12Megapixels resolution recording",
+   "4 SATA HDDs, Up to 24TB",
+   "2 RJ45 10M/100M/1000M self-adaptive Ethernet Port",
+   "2-ch SIP & 4-CH UDM by NVR, Support Traffic Monitoring By IPC"
+  ],
+  "img": "uniview-nvr304-16b-iq.webp",
+  "slug": "uniview-nvr304-16b-iq",
+  "verify": []
+ },
+ {
+  "model": "NVR508-64B",
+  "line": "Uniview",
+  "name": "64-CH 8-SATA Network Video Recorder",
+  "category": "video-recorders",
+  "sub": "Network Video Recorders (NVR)",
+  "features": [
+   "Support Ultra H.265/H.265/H.264 video formats",
+   "64-channel IP video input",
+   "Third-party IP cameras supported with ONVIF conformance: Profile S, Profile G, Profile T",
+   "Support 1-ch HDMI, 1-ch VGA. HDMI up to 4K (3840x2160) resolution",
+   "Incoming 320Mbps and outgoing 160Mbps Bandwidth",
+   "HDMI1, VGA independent outputs provided",
+   "Up to 16 Megapixels resolution recording",
+   "8 SATA HDDs, Up to 12TB for each HDD",
+   "2 RJ45 10M/100M/1000M self-adaptive Ethernet Port",
+   "Support N+1 Hot spare"
+  ],
+  "img": "uniview-nvr508-64b.webp",
+  "slug": "uniview-nvr508-64b",
+  "verify": []
+ },
+ {
+  "model": "NVR516-128E-R",
+  "line": "Uniview",
+  "name": "128-ch 16 HDDs 3U Network Video Recorder",
+  "category": "video-recorders",
+  "sub": "Network Video Recorders (NVR)",
+  "features": [
+   "Support Ultra H.265/H.265/H.264 video formats",
+   "128-channel IP video input",
+   "Third-party IP cameras supported with ONVIF conformance: Profile S, Profile G, Profile T",
+   "Support 2-ch HDMI, 2-ch VGA",
+   "VGA1 and HDMI1 simultaneous output, VGA2 and HDMI2 simultaneous output. VGA1/HDMI1 and VGA2/HDMI2 independent output",
+   "640Mbps outgoing/Incoming Bandwidth",
+   "Up to 12Megapixels resolution recording",
+   "16 SATA HDDs, Up to 16TB",
+   "2 RJ45 10M/100M/1000M self-adaptive Ethernet Port"
+  ],
+  "img": "uniview-nvr516-128e-r.webp",
+  "slug": "uniview-nvr516-128e-r",
+  "verify": []
+ },
+ {
+  "model": "NVR504-32E-IQ",
+  "line": "Uniview",
+  "name": "32-ch 4 HDDs Network Video Recorder",
+  "category": "video-recorders",
+  "sub": "Network Video Recorders (NVR)",
+  "features": [
+   "32-channel IP video input",
+   "Third-party IP cameras supported with ONVIF conformance: Profile S, Profile G, Profile T",
+   "Support 1 HDMI and 1 VGA. HDMI and VGA simultaneous output",
+   "384/384Mbps outgoing/Incoming Bandwidth",
+   "4 SATA HDDs, Up to 16TB",
+   "2 RJ45 10M/100M/1000M self-adaptive Ethernet Port",
+   "8-ch SIP & 16-CH UDM by NVR, Support Traffic Monitoring By IPC"
+  ],
+  "img": "uniview-nvr504-32e-iq.webp",
+  "slug": "uniview-nvr504-32e-iq",
+  "verify": []
+ },
+ {
+  "model": "NVR304-16S",
+  "line": "Uniview",
+  "name": "16-CH 4-SATA Network Video Recorder",
+  "category": "video-recorders",
+  "sub": "Network Video Recorders (NVR)",
+  "features": [
+   "Support Ultra265/H.265/H.264 video formats",
+   "16-channel IP Video input",
+   "Third-party IP cameras supported with ONVIF conformance",
+   "160Mbps incoming and 64Mbps Outgoing bandwidth",
+   "HDMI and VGA simultaneous output",
+   "Up to 8 Megapixels resolution recording",
+   "4 SATA HDDs, up to 6TB for each HDD",
+   "ANR technology to enhance the storage reliability when the network is disconnected",
+   "12V DC Power Supply"
+  ],
+  "img": "uniview-nvr304-16s.webp",
+  "slug": "uniview-nvr304-16s",
+  "verify": []
+ },
+ {
+  "model": "NVR304-16E2",
+  "line": "Uniview",
+  "name": "4 Hard Disks 16-Channel Network Video Recorder",
+  "category": "video-recorders",
+  "sub": "Network Video Recorders (NVR)",
+  "features": [
+   "Support Ultra265/H.265/H.264 video formats",
+   "16-channel IP video input",
+   "2 RJ45 10M/100M/1000M self-adaptive Ethernet",
+   "320Mbps incoming and 320Mbps Outgoing bandwidth",
+   "Supports cameras of ONVIF conformance(Profile S, Profile G, Profile T ) and RTSP protocols",
+   "HDMI and VGA independent outputs provided, 1-ch HDMI, 1-ch VGA. HDMI up to 4K (3840x2160) resolution",
+   "Up to 12 Megapixels resolution recording",
+   "4 SATA HDDs, up to 8TB for each HDD",
+   "ANR technology to enhance the storage reliability when the network is disconnected",
+   "Support cloud upgrade, Support RAID 1, 5"
+  ],
+  "img": "uniview-nvr304-16e2.webp",
+  "slug": "uniview-nvr304-16e2",
+  "verify": []
+ },
+ {
+  "model": "NVR302-32B-IQ",
+  "line": "Uniview",
+  "name": "32-ch 2 HDDs 1U Network Video Recorder",
+  "category": "video-recorders",
+  "sub": "Network Video Recorders (NVR)",
+  "features": [
+   "•Support Ultra H.265/H.265/H.264 video formats",
+   "32-channel IP video input",
+   "Third-party IP cameras supported with ONVIF conformance: Profile S, Profile G, Profile T",
+   "Support 1 HDMI and 1 VGA. HDMI and VGA simultaneous output",
+   "128/160Mbps outgoing/Incoming Bandwidth",
+   "Up to 12Megapixels resolution recording",
+   "2 SATA HDDs, Up to 10TB",
+   "2 RJ45 10M/100M/1000M self-adaptive Ethernet Port"
+  ],
+  "img": "uniview-nvr302-32b-iq.webp",
+  "slug": "uniview-nvr302-32b-iq",
+  "verify": []
+ },
+ {
+  "model": "NVR302-16S-P16",
+  "line": "Uniview",
+  "name": "16-Channel 4K Network Video Recorder",
+  "category": "video-recorders",
+  "sub": "Network Video Recorders (NVR)",
+  "features": [
+   "Support up to 16-channel IP camera input",
+   "Up to 4K recording and playback resolution",
+   "16 independent PoE network interfaces",
+   "2 SATA HDD interfaces, up to 10TB for each HDD",
+   "160Mbps incoming bandwidth / 96Mbps outgoing bandwidth",
+   "1×HDMI and 1×VGA independent video outputs"
+  ],
+  "img": "uniview-nvr302-16s-p16.webp",
+  "slug": "uniview-nvr302-16s-p16",
+  "verify": []
+ },
+ {
+  "model": "NVR302-16B-IQ",
+  "line": "Uniview",
+  "name": "16-ch 2 HDDs Network Video Recorder",
+  "category": "video-recorders",
+  "sub": "Network Video Recorders (NVR)",
+  "features": [
+   "Support Ultra H.265/H.265/H.264 video formats",
+   "16-channel IP video input",
+   "Third-party IP cameras supported with ONVIF conformance: Profile S, Profile G, Profile T",
+   "Support 1 HDMI and 1 VGA. HDMI and VGA simultaneous output",
+   "128/160Mbps outgoing/Incoming Bandwidth",
+   "Up to 12Megapixels resolution recording",
+   "2 SATA HDDs, Up to 10TB",
+   "2 RJ45 10M/100M/1000M self-adaptive Ethernet Port"
+  ],
+  "img": "uniview-nvr302-16b-iq.webp",
+  "slug": "uniview-nvr302-16b-iq",
+  "verify": []
+ },
+ {
+  "model": "NVR302-09S2",
+  "line": "Uniview",
+  "name": "9-ch 2-SATA Ultra 265/H.265/H.264 NVR",
+  "category": "video-recorders",
+  "sub": "Network Video Recorders (NVR)",
+  "features": [
+   "Support Ultra 265/H.265/H.264 video formats",
+   "9-channel IP Video input",
+   "Third-party IP cameras supported with ONVIF conformance: Profile S, Profile G, Profile T",
+   "Support 1-ch HDMI, 1-ch VGA, HDMI at up to 4K(3840x2160) resolution",
+   "HDMI and VGA simultaneous output",
+   "Up to 8MP resolution recording, 2 SATA HDD up to 8TB",
+   "160Mbps incoming and 64Mbps Outgoing bandwidth",
+   "Support cloud upgrade, 12V DC Power Supply"
+  ],
+  "img": "uniview-nvr302-09s2.webp",
+  "slug": "uniview-nvr302-09s2",
+  "verify": []
+ },
+ {
+  "model": "NVR302-08S",
+  "line": "Uniview",
+  "name": "8-Channel 2-SATA S-Series Network Video Recorder",
+  "category": "video-recorders",
+  "sub": "Network Video Recorders (NVR)",
+  "features": [
+   "8-channel IP video input",
+   "Third-party IP cameras supported with ONVIF conformance: Profile S, Profile G, Profile C, Profile Q, Profile A, Profile T",
+   "Support 1 HDMI and 1 VGA. HDMI and VGA simultaneous output",
+   "48/48Mbps outgoing/Incoming Bandwidth",
+   "2 SATA HDDs, Up to 8TB",
+   "1 RJ45 10M/100M self-adaptive Ethernet Port"
+  ],
+  "img": "uniview-nvr302-08s.webp",
+  "slug": "uniview-nvr302-08s",
+  "verify": []
+ },
+ {
+  "model": "NVR301-16S3",
+  "line": "Uniview",
+  "name": "16-ch 1-SATA Ultra 265/H.265/H.264 NVR",
+  "category": "video-recorders",
+  "sub": "Network Video Recorders (NVR)",
+  "features": [
+   "Support Ultra 265/H.265/H.264 video formats",
+   "16-channel IP Video input",
+   "Third-party IP cameras supported with ONVIF conformance: Profile S, Profile G, Profile T",
+   "Support 1-ch HDMI, 1-ch VGA, HDMI at up to 4K(3840x2160) resolution",
+   "HDMI and VGA simultaneous output",
+   "Up to 4K resolution recording, 1 SATA HDD up to 6TB",
+   "64Mbps incoming and 48Mbps Outgoing bandwidth",
+   "Support cloud upgrade, 12V DC Power Supply"
+  ],
+  "img": "uniview-nvr301-16s3.webp",
+  "slug": "uniview-nvr301-16s3",
+  "verify": []
+ },
+ {
+  "model": "NVR301-16E",
+  "line": "Uniview",
+  "name": "16-Channel 1-SATA E-Series Network Video Recorder",
+  "category": "video-recorders",
+  "sub": "Network Video Recorders (NVR)",
+  "features": [
+   "16-channel IP video input",
+   "Third-party IP cameras supported with ONVIF conformance: Profile S, Profile G, Profile C, Profile Q, Profile A, Profile T",
+   "Support 1 HDMI and 1 VGA. HDMI and VGA simultaneous output",
+   "80/80Mbps outgoing/Incoming Bandwidth",
+   "1 SATA HDDs, Up to 6TB",
+   "1 RJ45 10M/100M self-adaptive Ethernet Port"
+  ],
+  "img": "uniview-nvr301-16e.webp",
+  "slug": "uniview-nvr301-16e",
+  "verify": []
+ },
+ {
+  "model": "NVR301-08S3",
+  "line": "Uniview",
+  "name": "8-ch 1-SATA Ultra 265/H.265/H.264 Network Video Recorder",
+  "category": "video-recorders",
+  "sub": "Network Video Recorders (NVR)",
+  "features": [
+   "Support Ultra 265/H.265/H.264 video formats",
+   "8-channel IP video input",
+   "Third-party IP cameras supported with ONVIF conformance: Profile S, Profile G, Profile T",
+   "Support 1-ch HDMI, 1-ch VGA, HDMI at up to 4K(3840x2160) resolution",
+   "HDMI and VGA simultaneous output",
+   "Up to 4K resolution recording",
+   "1 SATA HDD up to 6TB",
+   "64Mbps incoming and 48Mbps Outgoing bandwidth",
+   "Support cloud upgrade, 12V DC Power Supply"
+  ],
+  "img": "uniview-nvr301-08s3.webp",
+  "slug": "uniview-nvr301-08s3",
+  "verify": []
+ },
+ {
+  "model": "NVR301-04S3",
+  "line": "Uniview",
+  "name": "4-ch 1-SATA Ultra 265/H.265/H.264 NVR",
+  "category": "video-recorders",
+  "sub": "Network Video Recorders (NVR)",
+  "features": [
+   "Support Ultra 265/H.265/H.264 video formats",
+   "4-channel IP Video input",
+   "Third-party IP cameras supported with ONVIF conformance: Profile S, Profile G, Profile T",
+   "Support 1-ch HDMI, 1-ch VGA, HDMI at up to 4K(3840x2160) resolution",
+   "HDMI and VGA simultaneous output",
+   "Up to 4K resolution recording",
+   "1 SATA HDD up to 6TB",
+   "64Mbps incoming and 48Mbps Outgoing bandwidth",
+   "12V DC Power Supply"
+  ],
+  "img": "uniview-nvr301-04s3.webp",
+  "slug": "uniview-nvr301-04s3",
+  "verify": []
+ },
+ {
+  "model": "NVR301-04LB-P4",
+  "line": "Uniview",
+  "name": "4-Channel 1-SATA PoE Network Video Recorder",
+  "category": "video-recorders",
+  "sub": "Network Video Recorders (NVR)",
+  "features": [
+   "4-channel IP video input",
+   "Plug & Play with 4 independent PoE network interfaces",
+   "Third-party IP cameras supported with ONVIF conformance: Profile S, Profile G, Profile C, Profile Q, Profile A, Profile T",
+   "Support 1 HDMI and 1 VGA. HDMI and VGA simultaneous output",
+   "40/40Mbps outgoing/Incoming Bandwidth",
+   "1 SATA HDDs, Up to 8TB",
+   "1 RJ45 10M/100M self-adaptive Ethernet Port"
+  ],
+  "img": "uniview-nvr301-04lb-p4.webp",
+  "slug": "uniview-nvr301-04lb-p4",
+  "verify": []
+ },
+ {
+  "model": "NSW3000-16T1GT1GC-LPOE-IN",
+  "line": "Uniview",
+  "name": "16-Port Cloud Managed Ethernet Low Power PoE Switch",
+  "category": "network-switches",
+  "sub": "Cloud-Managed PoE Switches",
+  "features": [
+   "Switching capacity: 7.2 Gbps",
+   "5.36Mpps Forwarding Performance",
+   "16 x 10/100Mbps POE port (RJ45) + 1 x Gigabit port (RJ45)+ 1 x Gigabit Combo Ports",
+   "150W Max Power Budget For PoE",
+   "AC: 100 to 240V, 50/60Hz Power Supply",
+   "4 M bit Packet Buffer",
+   "PoE ModeA (1236), ModeB (4578) Supported",
+   "Layer2 Switching Management Support Via Webui and Phone App",
+   "Supports Loop Detection",
+   "Supports N:1 port mirroring"
+  ],
+  "img": "uniview-nsw3000-16t1gt1gc-lpoe-in.webp",
+  "slug": "uniview-nsw3000-16t1gt1gc-lpoe-in",
+  "verify": []
+ },
+ {
+  "model": "NSW3000-8T2GT-POE-IN",
+  "line": "Uniview",
+  "name": "8PoE + 2Uplink Cloud Managed Ethernet PoE Switch",
+  "category": "network-switches",
+  "sub": "Cloud-Managed PoE Switches",
+  "features": [
+   "Switching capacity: 5.6 Gbps",
+   "4.17Mpps Forwarding Performance",
+   "8x10/100Mbps POE port (RJ45), 2xGigabit port (RJ45)",
+   "120W Max Power Budget For PoE",
+   "AC: 100 to 240V, 50/60Hz Power Supply",
+   "2 M bit Packet Buffer",
+   "PoE ModeA (1236), ModeB (4578) Supported",
+   "Layer2 Switching Management Support Via Webui and Phone App",
+   "Supports Loop Detection",
+   "Supports N:1 port mirroring"
+  ],
+  "img": "uniview-nsw3000-8t2gt-poe-in.webp",
+  "slug": "uniview-nsw3000-8t2gt-poe-in",
+  "verify": []
+ },
+ {
+  "model": "NSW3000-8T2GT-LPOE-IN",
+  "line": "Uniview",
+  "name": "8PoE + 2Uplink Cloud Managed Ethernet Low Power PoE Switch",
+  "category": "network-switches",
+  "sub": "Cloud-Managed PoE Switches",
+  "features": [
+   "Switching capacity: 5.6 Gbps",
+   "4.17Mpps Forwarding Performance",
+   "8x10/100Mbps POE port (RJ45), 2xGigabit port (RJ45)",
+   "65W Max Power Budget For PoE",
+   "AC: 100 to 240V, 50/60Hz Power Supply",
+   "2 M bit Packet Buffer",
+   "PoE ModeA (1236), ModeB (4578) Supported",
+   "Layer2 Switching Management Support Via Webui and Phone App",
+   "Supports Loop Detection",
+   "Supports N:1 port mirroring"
+  ],
+  "img": "uniview-nsw3000-8t2gt-lpoe-in.webp",
+  "slug": "uniview-nsw3000-8t2gt-lpoe-in",
+  "verify": []
+ },
+ {
+  "model": "NSW3000-25GT1GP1GC-POE-IN",
+  "line": "Uniview",
+  "name": "24-Port Cloud Managed Ethernet PoE Switch",
+  "category": "network-switches",
+  "sub": "Cloud-Managed PoE Switches",
+  "features": [
+   "Switching capacity: 54Gbps",
+   "40.176Mpps Forwarding Performance",
+   "24 x 10/100Mbps POE port (RJ45) + 1 x 10/100/1000Mbps port (RJ45) 1 x Gigabit SFP 1 x Gigabit Combo",
+   "370W Max Power Budget For PoE",
+   "AC: 100 to 240V, 50/60Hz Power Supply",
+   "4 M bit Packet Buffer",
+   "PoE ModeA (1236), ModeB (4578) Supported",
+   "Layer2 Switching Management Support Via Webui and Phone App",
+   "Supports Loop Detection",
+   "Supports N:1 port mirroring"
+  ],
+  "img": "uniview-nsw3000-25gt1gp1gc-poe-in.webp",
+  "slug": "uniview-nsw3000-25gt1gp1gc-poe-in",
+  "verify": []
+ },
+ {
+  "model": "NSW3000-25GT1GP1GC-LPOE-IN",
+  "line": "Uniview",
+  "name": "24-Port Cloud Managed Ethernet PoE Switch",
+  "category": "network-switches",
+  "sub": "Cloud-Managed PoE Switches",
+  "features": [
+   "Switching capacity: 54Gbps",
+   "40.176Mpps Forwarding Performance",
+   "24 x 10/100/1000 Mbps POE port (RJ45) + 2 x Gigabit port (RJ45) + 2 x Gigabit SFP 1 is Combo",
+   "370W Max Power Budget For PoE",
+   "AC: 100 to 240V, 50/60Hz Power Supply",
+   "4 M bit Packet Buffer",
+   "PoE ModeA (1236), ModeB (4578) Supported",
+   "Layer2 Switching Management Support Via Webui and Phone App",
+   "Supports Loop Detection",
+   "Supports N:1 port mirroring"
+  ],
+  "img": "uniview-nsw3000-25gt1gp1gc-lpoe-in.webp",
+  "slug": "uniview-nsw3000-25gt1gp1gc-lpoe-in",
+  "verify": []
+ },
+ {
+  "model": "NSW3000-24T1GT1GC-POE-IN",
+  "line": "Uniview",
+  "name": "24-Port Cloud Managed Ethernet PoE Switch",
+  "category": "network-switches",
+  "sub": "Cloud-Managed PoE Switches",
+  "features": [
+   "Switching capacity: 8.8Gbps",
+   "6.55Mpps Forwarding Performance",
+   "24 x 10/100Mbps POE port (RJ45) + 1 x Gigabit port (RJ45) + 1 x Gigabit Combo",
+   "370W Max Power Budget For PoE",
+   "AC: 100 to 240V, 50/60Hz Power Supply",
+   "4 M bit Packet Buffer",
+   "PoE ModeA (1236), ModeB (4578) Supported",
+   "Layer2 Switching Management Support Via Webui and Phone App",
+   "Supports Loop Detection",
+   "Supports N:1 port mirroring"
+  ],
+  "img": "uniview-nsw3000-24t1gt1gc-poe-in.webp",
+  "slug": "uniview-nsw3000-24t1gt1gc-poe-in",
+  "verify": []
+ },
+ {
+  "model": "NSW3000-24T1GT1GC-LPOE-IN",
+  "line": "Uniview",
+  "name": "24-Port Cloud Managed Ethernet PoE Switch",
+  "category": "network-switches",
+  "sub": "Cloud-Managed PoE Switches",
+  "features": [
+   "Switching capacity: 8.8Gbps",
+   "6.55Mpps Forwarding Performance",
+   "24 x 10/100Mbps POE port (RJ45) + 1 x Gigabit port (RJ45) + 1 x Gigabit Combo SFP",
+   "250W Max Power Budget For PoE",
+   "AC: 100 to 240V, 50/60Hz Power Supply",
+   "4 M bit Packet Buffer",
+   "PoE ModeA (1236), ModeB (4578) Supported",
+   "Layer2 Switching Management Support Via Webui and Phone App",
+   "Supports Loop Detection",
+   "Supports N:1 port mirroring"
+  ],
+  "img": "uniview-nsw3000-24t1gt1gc-lpoe-in.webp",
+  "slug": "uniview-nsw3000-24t1gt1gc-lpoe-in",
+  "verify": []
+ },
+ {
+  "model": "NSW3000-17GT1GP1GC-POE-IN",
+  "line": "Uniview",
+  "name": "16-Port Cloud Managed Ethernet Low Power PoE Switch",
+  "category": "network-switches",
+  "sub": "Cloud-Managed PoE Switches",
+  "features": [
+   "Switching capacity: 38Gbps",
+   "28.272Mpps Forwarding Performance",
+   "16 x 10/100/1000Mbps PoE port (RJ45), 1 x 10/100/1000Mbps port (RJ45) 1 x Gigabit SFP1 x Gigabit Combo",
+   "250W Max Power Budget For PoE",
+   "AC: 100 to 240V, 50/60Hz Power Supply",
+   "4 M bit Packet Buffer",
+   "PoE ModeA (1236), ModeB (4578) Supported",
+   "Layer2 Switching Management Support Via Webui and Phone App",
+   "Supports Loop Detection",
+   "Supports N:1 port mirroring"
+  ],
+  "img": "uniview-nsw3000-17gt1gp1gc-poe-in.webp",
+  "slug": "uniview-nsw3000-17gt1gp1gc-poe-in",
+  "verify": []
+ },
+ {
+  "model": "NSW3000-17GT1GP1GC-LPOE-IN",
+  "line": "Uniview",
+  "name": "16-Port Cloud Managed Ethernet Low Power PoE Switch",
+  "category": "network-switches",
+  "sub": "Cloud-Managed PoE Switches",
+  "features": [
+   "Switching capacity: 38Gbps",
+   "28.272Mpps Forwarding Performance",
+   "16 x 10/100/1000Mbps PoE port (RJ45), 1 x 10/100/1000Mbps port (RJ45) 1 x Gigabit SFP1 x Gigabit Combo",
+   "150W Max Power Budget For PoE",
+   "AC: 100 to 240V, 50/60Hz Power Supply",
+   "4 M bit Packet Buffer",
+   "PoE ModeA (1236), ModeB (4578) Supported",
+   "Layer2 Switching Management Support Via Webui and Phone App",
+   "Supports Loop Detection",
+   "Supports N:1 port mirroring"
+  ],
+  "img": "uniview-nsw3000-17gt1gp1gc-lpoe-in.webp",
+  "slug": "uniview-nsw3000-17gt1gp1gc-lpoe-in",
+  "verify": []
+ },
+ {
+  "model": "NSW3000-16T1GT1GC-POE-IN",
+  "line": "Uniview",
+  "name": "16-Port Cloud Managed Ethernet Low Power PoE Switch",
+  "category": "network-switches",
+  "sub": "Cloud-Managed PoE Switches",
+  "features": [
+   "Switching capacity: 7.2 Gbps",
+   "5.36Mpps Forwarding Performance",
+   "16 x 10/100Mbps POE port (RJ45) + 1 x Gigabit port (RJ45)+ 1 x Gigabit Combo Ports",
+   "250W Max Power Budget For PoE",
+   "AC: 100 to 240V, 50/60Hz Power Supply",
+   "4 M bit Packet Buffer",
+   "PoE ModeA (1236), ModeB (4578) Supported",
+   "Layer2 Switching Management Support Via Webui and Phone App",
+   "Supports Loop Detection",
+   "Supports N:1 port mirroring"
+  ],
+  "img": "uniview-nsw3000-16t1gt1gc-poe-in.webp",
+  "slug": "uniview-nsw3000-16t1gt1gc-poe-in",
+  "verify": []
+ },
+ {
+  "model": "NSW2100-9GT1GP-POE-IN",
+  "line": "Uniview",
+  "name": "8PoE + 2Uplink Lite-Managed Ethernet PoE Switch",
+  "category": "network-switches",
+  "sub": "Lite-Managed PoE Switches",
+  "features": [
+   "Switching capacity: 5.6 Gbps",
+   "4.17Mpps Forwarding Performance",
+   "8x10/100Mbps POE port (RJ45), 2xGigabit port (RJ45)",
+   "120W Max Power Budget For PoE",
+   "AC: 100 to 240V, 50/60Hz Power Supply",
+   "2 M bit Packet Buffer",
+   "PoE ModeA (1236), ModeB (4578) Supported",
+   "Layer2 Switching Management Support Via Webui and Phone App",
+   "Supports Loop Detection",
+   "Supports N:1 port mirroring"
+  ],
+  "img": "uniview-nsw2100-9gt1gp-poe-in.webp",
+  "slug": "uniview-nsw2100-9gt1gp-poe-in",
+  "verify": []
+ },
+ {
+  "model": "NSW2100-9GT1GP-LPOE-IN",
+  "line": "Uniview",
+  "name": "8-Port Gigabit PoE + 2 Uplink Lite-Managed PoE Switch",
+  "category": "network-switches",
+  "sub": "Lite-Managed PoE Switches",
+  "features": [
+   "Switching capacity: 20Gbps",
+   "14.88Mpps Forwarding Performance",
+   "8x10/100/1000Mbps POE port (RJ45) + 1xGigabit port (RJ45) + 1xGigabit SFP",
+   "370W Max Power Budget For PoE",
+   "AC: 100 to 240V, 50/60Hz Power Supply",
+   "4 M bit Packet Buffer",
+   "PoE ModeA (1236), ModeB (4578) Supported",
+   "Layer2 Switching Management Support Via Webui",
+   "Supports Loop Detection",
+   "Supports N:1 port mirroring"
+  ],
+  "img": "uniview-nsw2100-9gt1gp-lpoe-in.webp",
+  "slug": "uniview-nsw2100-9gt1gp-lpoe-in",
+  "verify": []
+ },
+ {
+  "model": "ISW2000-8T2GP-POE-IN",
+  "line": "Uniview",
+  "name": "8 PoE+2 Gig SFP Uplink Unmanaged Ethernet Harsh Switch",
+  "category": "network-switches",
+  "sub": "Industrial (Harsh) Switches",
+  "features": [
+   "Switching capacity: 20 Gbps",
+   "14.88Mpps Forwarding Performance",
+   "8×100Mbps network ports (RJ45), 2×1000Mbps SFP slots",
+   "Comply with IEEE802.3, IEEE802.3u, IEEE802.3z, IEEE802.3ab, IEEE802.3x, IEEE802.3af, IEEE802.3at standards",
+   "Max capacity: 120W, Max capacity for sin"
+  ],
+  "img": "uniview-isw2000-8t2gp-poe-in.webp",
+  "slug": "uniview-isw2000-8t2gp-poe-in",
+  "verify": []
+ },
+ {
+  "model": "ISW2000-4T2GP-POE-IN",
+  "line": "Uniview",
+  "name": "4+2 Uplink Unmanaged Ethernet Switch(PoE)",
+  "category": "network-switches",
+  "sub": "Industrial (Harsh) Switches",
+  "features": [
+   "Switching capacity: 4.8 Gbps",
+   "3.57Mpps Forwarding Performance",
+   "4×100Mbps PoE ports (RJ45), 2×1000Mbps SFP slots",
+   "Comply with IEEE802.3, IEEE802.3u, IEEE802.3z, IEEE802.3ab, IEEE802.3x, IEEE802.3af, IEEE802.3at",
+   "Max capacity: 65W, Max capacity for single port: 30 W",
+   "30°C to 65 °C Operating Temperature",
+   "DC:48-57V, powered by adapter. Adapter: AC100-240V, 50/60Hz"
+  ],
+  "img": "uniview-isw2000-4t2gp-poe-in.webp",
+  "slug": "uniview-isw2000-4t2gp-poe-in",
+  "verify": []
+ },
+ {
+  "model": "ISW2000-8GT2GP-IN",
+  "line": "Uniview",
+  "name": "8 Gig+2 Gig SFP Uplink Unmanaged Ethernet Harsh Switch",
+  "category": "network-switches",
+  "sub": "Industrial (Harsh) Switches",
+  "features": [
+   "Switching capacity: 20 Gbps",
+   "14.88Mpps Forwarding Performance",
+   "8×1000Mbps network ports (RJ45), 2×1000Mbps SFP ports",
+   "Comply with IEEE802.3, IEEE802.3u, IEEE802.3z, IEEE802.3ab, IEEE802.3x, IEEE802.3af, IEEE802.3at standards",
+   "Support RJ45 Auto-MDI/MDIX",
+   "30°C to 65 °C Operating Temperature"
+  ],
+  "img": "uniview-isw2000-8gt2gp-in.webp",
+  "slug": "uniview-isw2000-8gt2gp-in",
+  "verify": []
+ },
+ {
+  "model": "NSW2020-16T1GT1GC-LPOE-IN",
+  "line": "Uniview",
+  "name": "16-port, 2-RJ45+1SFP Combo Uplink Unmanaged Ethernet Switch(PoE)",
+  "category": "network-switches",
+  "sub": "Unmanaged PoE Switches",
+  "features": [
+   "Switching capacity: 7.2Gbps",
+   "5.36Mpps Forwarding Performance",
+   "16×100Mbps PoE ports (RJ45)+ 1×1000Mbps Gigaethernet ports",
+   "1×1000Mbps Combo ports",
+   "Support IEEE802.3 at standard, compatible with IEEE802.3 af by electrical equipment (PD)",
+   "Max capacity: 135 W, Max capacity for single port: 30 W",
+   "All metal housing, safe and reliable",
+   "Up to 250m transmission distance on surveillance mode",
+   "AC: 100-240V, 50/60Hz power input"
+  ],
+  "img": "uniview-nsw2020-16t1gt1gc-lpoe-in.webp",
+  "slug": "uniview-nsw2020-16t1gt1gc-lpoe-in",
+  "verify": []
+ },
+ {
+  "model": "NSW2020-24T1GT1GC-LPOE-IN",
+  "line": "Uniview",
+  "name": "24-port, 2-RJ45+1SFP Combo Uplink Unmanaged Ethernet Switch(PoE)",
+  "category": "network-switches",
+  "sub": "Unmanaged PoE Switches",
+  "features": [
+   "Switching capacity: 7.2Gbps",
+   "5.36Mpps Forwarding Performance",
+   "16×100Mbps PoE ports (RJ45)+ 1×1000Mbps Gigaethernet ports",
+   "1×1000Mbps Combo ports",
+   "Support IEEE802.3 at standard, compatible with IEEE802.3 af by electrical equipment (PD)",
+   "Max capacity: 135 W, Max capacity for single port: 30 W",
+   "All metal housing, safe and reliable",
+   "Up to 250m transmission distance on surveillance mode",
+   "AC: 100-240V, 50/60Hz power input"
+  ],
+  "img": "uniview-nsw2020-24t1gt1gc-lpoe-in.webp",
+  "slug": "uniview-nsw2020-24t1gt1gc-lpoe-in",
+  "verify": []
+ },
+ {
+  "model": "NSW2010-26GT2GC-POE-IN",
+  "line": "Uniview",
+  "name": "24-port, 4 Uplink port PoE Switch",
+  "category": "network-switches",
+  "sub": "Unmanaged PoE Switches",
+  "features": [
+   "Switching capacity: 56Gbps",
+   "24×1000Mbps PoE ports (RJ45)+2×1000Mbps ports(RJ45)+2×1000Mbps ports（Combo) SFP",
+   "Support IEEE802.3 at standard, compatible with IEEE802.3 af by electrical equipment (PD)",
+   "Supports PoE Power up to 30W for each PoE port",
+   "All metal housing, safe and reliable",
+   "Supports storage – and- forward for Data exchange;",
+   "AC: 100-240V, 50/60Hz power input"
+  ],
+  "img": "uniview-nsw2010-26gt2gc-poe-in.webp",
+  "slug": "uniview-nsw2010-26gt2gc-poe-in",
+  "verify": []
+ },
+ {
+  "model": "NSW2010-24T2GC-POE-IN",
+  "line": "Uniview",
+  "name": "24PoE+2GC Switch",
+  "category": "network-switches",
+  "sub": "Unmanaged PoE Switches",
+  "features": [
+   "Switching capacity: 8.8Gbps",
+   "24×100Mbps PoE ports (RJ45)+ 2×1000Mbps Combo ports",
+   "Max Switch PoE Power: 370W, Max capacity for single PoE port: 30W",
+   "Up to 250m transmission distance on EXTEND mode",
+   "Support buffer optimization",
+   "All metal housing, safe and reliable",
+   "Multiple working modes to address your business needs: Normal, Secure and Surveillance"
+  ],
+  "img": "uniview-nsw2010-24t2gc-poe-in.webp",
+  "slug": "uniview-nsw2010-24t2gc-poe-in",
+  "verify": []
+ },
+ {
+  "model": "NSW2020-6T-POE-IN",
+  "line": "Uniview",
+  "name": "4 PoE + 2 Uplink Unmanaged PoE Switch",
+  "category": "network-switches",
+  "sub": "Unmanaged PoE Switches",
+  "features": [
+   "Switching capacity: 1.2Gbps",
+   "6×100Mbps network ports (RJ45), including 4 PoE ports",
+   "Max Switch PoE Power: 60W, Max capacity for single PoE port: 30W",
+   "Up to 250m transmission distance on EXTEND mode",
+   "Support buffer optimization",
+   "All metal housing, safe and reliable",
+   "Multiple working modes to address your business needs: Normal, Secure and Surveillance"
+  ],
+  "img": "uniview-nsw2020-6t-poe-in.webp",
+  "slug": "uniview-nsw2020-6t-poe-in",
+  "verify": []
+ },
+ {
+  "model": "NSW2010-10GT-POE-IN",
+  "line": "Uniview",
+  "name": "8PoE+2PORT SWITCH",
+  "category": "network-switches",
+  "sub": "Unmanaged PoE Switches",
+  "features": [
+   "Switching capacity: 20Gbps",
+   "13.4Mpps Forwarding performance",
+   "8×1000Mbps PoE ports (RJ45)+2×1000Mbps ports(RJ45)",
+   "Max Switch PoE Power: 120W, Max capacity for single PoE port: 30W",
+   "Up to 250m transmission distance on EXTEND mode",
+   "Multiple working modes to address your business needs: Normal, Secure and Surveillance"
+  ],
+  "img": "uniview-nsw2010-10gt-poe-in.webp",
+  "slug": "uniview-nsw2010-10gt-poe-in",
+  "verify": []
+ },
+ {
+  "model": "NSW2010-5GT-POE-IN",
+  "line": "Uniview",
+  "name": "4PoE+1Gig Uplink Switch",
+  "category": "network-switches",
+  "sub": "Unmanaged PoE Switches",
+  "features": [
+   "Switching capacity: 10Gbps",
+   "7.44Mpps Forwarding performance",
+   "4×1000Mbps PoE ports (RJ45)+1×1000Mbps ports(RJ45)",
+   "Max Switch PoE Power: 60W, Max capacity for single PoE port: 30W",
+   "PoE 802.3at/af"
+  ],
+  "img": "uniview-nsw2010-5gt-poe-in.webp",
+  "slug": "uniview-nsw2010-5gt-poe-in",
+  "verify": []
+ },
+ {
+  "model": "NSW2020-8T2GT-LPOE-IN",
+  "line": "Uniview",
+  "name": "8+2 Uplink Unmanaged Ethernet Switch(PoE)",
+  "category": "network-switches",
+  "sub": "Unmanaged PoE Switches",
+  "features": [
+   "Switching capacity: 5.6 Gbps",
+   "4.17Mpps Forwarding Performance",
+   "8×100Mbps PoE ports (RJ45)+ 2×1000Mbps Gigaethernet ports",
+   "Support IEEE802.3 at standard, compatible with IEEE802.3 af by electrical equipment (PD)",
+   "Max capacity: 65W, Max capacity for single port: 30 W",
+   "Up to 250m transmission distance on EXTEND mode",
+   "AC: 100-240V, 50/60Hz power input on adaptor"
+  ],
+  "img": "uniview-nsw2020-8t2gt-lpoe-in.webp",
+  "slug": "uniview-nsw2020-8t2gt-lpoe-in",
+  "verify": []
+ },
+ {
+  "model": "NSW2020-10T-LPOE-IN",
+  "line": "Uniview",
+  "name": "8PoE+2PORT SWITCH",
+  "category": "network-switches",
+  "sub": "Unmanaged PoE Switches",
+  "features": [
+   "Switching capacity: 2Gbps",
+   "10×100Mbps network ports (RJ45), including 8 PoE port",
+   "Max Switch PoE Power: 60W, Max capacity for single PoE port: 30W",
+   "Up to 250m transmission distance on EXTEND mode",
+   "Support buffer optimization",
+   "All metal housing, safe and reliable",
+   "Multiple working modes to address your business needs: Normal, Secure and Surveillance",
+   "Power Supply DC 48/51V"
+  ],
+  "img": "uniview-nsw2020-10t-lpoe-in.webp",
+  "slug": "uniview-nsw2020-10t-lpoe-in",
+  "verify": []
+ },
+ {
+  "model": "NSW2010-6T-POE-S-IN",
+  "line": "Uniview",
+  "name": "4+2 Uplink Unmanaged Ethernet Switch(PoE)",
+  "category": "network-switches",
+  "sub": "Unmanaged PoE Switches",
+  "features": [
+   "Switching capacity: 1.2 Gbps",
+   "1.49Mpps Forwarding Performance",
+   "6×100Mbps network ports (RJ45), including 4 PoE ports",
+   "Comply with IEEE 802.3, IEEE 802.3u standards",
+   "Max capacity: 60W, Max capacity for single port: 30 W",
+   "Up to 250m transmission distance on EXTEND mode",
+   "AC: 100-240V, 50/60Hz power input"
+  ],
+  "img": "uniview-nsw2010-6t-poe-s-in.webp",
+  "slug": "uniview-nsw2010-6t-poe-s-in",
+  "verify": []
+ },
+ {
+  "model": "NSW2010-6T-POE-IN",
+  "line": "Uniview",
+  "name": "4PoE+2PORT SWITCH",
+  "category": "network-switches",
+  "sub": "Unmanaged PoE Switches",
+  "features": [
+   "Switching capacity: 1.2Gbps",
+   "6×100Mbps network ports (RJ45), including 4 PoE ports",
+   "Max Switch PoE Power: 67W, Max capacity for single PoE port: 30W",
+   "Up to 250m transmission distance on EXTEND mode",
+   "Support buffer optimization",
+   "All metal housing, safe and reliable",
+   "Multiple working modes to address your business needs: Normal, Secure and Surveillance"
+  ],
+  "img": "uniview-nsw2010-6t-poe-in.webp",
+  "slug": "uniview-nsw2010-6t-poe-in",
+  "verify": []
+ },
+ {
+  "model": "NSW2010-18GT2GP-POE-IN",
+  "line": "Uniview",
+  "name": "16-port, 4 Uplink port PoE Switch",
+  "category": "network-switches",
+  "sub": "Unmanaged PoE Switches",
+  "features": [
+   "Switching capacity: 40Gbps",
+   "16×1000Mbps PoE ports (RJ45)+2×1000Mbps ports(RJ45)+2×1000Mbps ports（SFP）",
+   "Support IEEE802.3 at standard, compatible with IEEE802.3 af by electrical equipment (PD)",
+   "Supports PoE Power up to 30W for each PoE port",
+   "All metal housing, safe and reliable",
+   "Supports storage – and- forward for Data exchange;",
+   "AC: 100-240V, 50/60Hz power input"
+  ],
+  "img": "uniview-nsw2010-18gt2gp-poe-in.webp",
+  "slug": "uniview-nsw2010-18gt2gp-poe-in",
+  "verify": []
+ },
+ {
+  "model": "NSW2010-10T-POE-S-IN",
+  "line": "Uniview",
+  "name": "8+2 Uplink Unmanaged Ethernet Switch(PoE)",
+  "category": "network-switches",
+  "sub": "Unmanaged PoE Switches",
+  "features": [
+   "Switching capacity: 2 Gbps",
+   "1.49Mpps Forwarding Performance",
+   "10×10/100Mbps network ports (RJ45), including 8 PoE ports",
+   "Comply with IEEE 802.3, IEEE 802.3u standards",
+   "Max capacity: 96W, Max capacity for single port: 30 W",
+   "Up to 250m transmission distance on EXTEND mode",
+   "AC: 100-240V, 50/60Hz power input"
+  ],
+  "img": "uniview-nsw2010-10t-poe-s-in.webp",
+  "slug": "uniview-nsw2010-10t-poe-s-in",
+  "verify": []
+ },
+ {
+  "model": "NSW2010-10T-POE-IN",
+  "line": "Uniview",
+  "name": "8PoE+2PORT SWITCH",
+  "category": "network-switches",
+  "sub": "Unmanaged PoE Switches",
+  "features": [
+   "Switching capacity: 2Gbps",
+   "10×100Mbps network ports (RJ45), including 8 PoE port",
+   "Max Switch PoE Power: 122W, Max capacity for single PoE port: 30W",
+   "Up to 250m transmission distance on EXTEND mode",
+   "Support buffer optimization",
+   "All metal housing, safe and reliable",
+   "Multiple working modes to address your business needs: Normal, Secure and Surveillance"
+  ],
+  "img": "uniview-nsw2010-10t-poe-in.webp",
+  "slug": "uniview-nsw2010-10t-poe-in",
+  "verify": []
+ },
+ {
+  "model": "NSW1010-8T-IN",
+  "line": "Uniview",
+  "name": "8-port 100 Megabit Plastic Shell Switch",
+  "category": "network-switches",
+  "sub": "Unmanaged Switches",
+  "features": [
+   "Switching capacity: 1.6Gbps",
+   "1.19Mpps Forwarding Performance",
+   "8×10/100Mbps ports (RJ45)",
+   "Plastic Housing",
+   "5V1A power input",
+   "Desktop Mount/Wall Mount"
+  ],
+  "img": "uniview-nsw1010-8t-in.webp",
+  "slug": "uniview-nsw1010-8t-in",
+  "verify": []
+ },
+ {
+  "model": "NSW1010-8GT-IN",
+  "line": "Uniview",
+  "name": "8-port Gigabit Plastic Shell Switch",
+  "category": "network-switches",
+  "sub": "Unmanaged Switches",
+  "features": [
+   "Switching capacity: 16Gbps",
+   "11.9Mpps Forwarding Performance",
+   "8×10/100/1000Mbps ports (RJ45)",
+   "Plastic Housing",
+   "5V1A power input",
+   "Desktop Mount/Wall Mount"
+  ],
+  "img": "uniview-nsw1010-8gt-in.webp",
+  "slug": "uniview-nsw1010-8gt-in",
+  "verify": []
+ },
+ {
+  "model": "NSW1010-5T-IN",
+  "line": "Uniview",
+  "name": "5-port 100 Megabit Plastic Shell Switch",
+  "category": "network-switches",
+  "sub": "Unmanaged Switches",
+  "features": [
+   "Switching capacity: 1Gbps",
+   "0.744Mpps Forwarding Performance",
+   "5×10/100Mbps ports (RJ45)",
+   "Plastic Housing",
+   "5V1A power input",
+   "Desktop Mount/Wall Mount"
+  ],
+  "img": "uniview-nsw1010-5t-in.webp",
+  "slug": "uniview-nsw1010-5t-in",
+  "verify": []
+ },
+ {
+  "model": "NSW1010-5GT-IN",
+  "line": "Uniview",
+  "name": "5-port Gigabit Plastic Shell Switch",
+  "category": "network-switches",
+  "sub": "Unmanaged Switches",
+  "features": [
+   "Switching capacity: 10Gbps",
+   "7.44Mpps Forwarding Performance",
+   "5×10/100/1000Mbps ports (RJ45)",
+   "Plastic Housing",
+   "5V1A power input",
+   "Desktop Mount/Wall Mount"
+  ],
+  "img": "uniview-nsw1010-5gt-in.webp",
+  "slug": "uniview-nsw1010-5gt-in",
+  "verify": []
+ },
+ {
+  "model": "SFP-GE-SX-MM850-IN",
+  "line": "Uniview",
+  "name": "1.25G Multi-Mode 850 nm SFP Optical Transceiver (Short Range)",
+  "category": "network-switches",
+  "sub": "SFP Modules",
+  "features": [
+   "850nm Wavelength",
+   "550m Transmission Distance",
+   "LC, Multi Mode, Dial Fiber interface"
+  ],
+  "img": "uniview-sfp-ge-sx-mm850-in.webp",
+  "slug": "uniview-sfp-ge-sx-mm850-in",
+  "verify": []
+ },
+ {
+  "model": "SFP-GE-LX-SM1310-IN",
+  "line": "Uniview",
+  "name": "1.25G Single-Mode 1310 nm 10 km SFP Optical Transceiver",
+  "category": "network-switches",
+  "sub": "SFP Modules",
+  "features": [
+   "1310nm Wavelength",
+   "10KM Transmission Distance",
+   "1.25Gb/s Data Transfer Rate",
+   "LC, Multi Mode, Dial Fiber interface"
+  ],
+  "img": "uniview-sfp-ge-lx-sm1310-in.webp",
+  "slug": "uniview-sfp-ge-lx-sm1310-in",
+  "verify": []
+ },
+ {
+  "model": "IOT-UNEAR A30T",
+  "line": "Uniview",
+  "name": "All-In-One Video Conference Camera",
+  "category": "video-conferencing",
+  "sub": "All-in-One Conference Cameras",
+  "features": [
+   "Omnidirectional 4 microphones array algorithm, 5-meter far-field clear voice pickup",
+   "Exclusive AI noise-suppression technology, significantly increase concentration of conference participants",
+   "Real full-duplex, HQ uninterrupted communication",
+   "100° full HD wide-angle camera, in-person conference experience",
+   "Plug & play, general compatibility with leading online conference platforms",
+   "Audio & video all-in-one, intuitive control experience"
+  ],
+  "img": "uniview-iot-unear-a30t.webp",
+  "slug": "uniview-iot-unear-a30t",
+  "verify": []
+ },
+ {
+  "model": "UPS800-SEA-CEE",
+  "line": "Uniview",
+  "name": "800VA/480W Uninterrupted Power Supply EU Socket",
+  "category": "ups-power",
+  "sub": "UPS",
+  "features": [
+   "Capacity: 800 VA / 480 W with 0.6 power factor",
+   "Input Voltage Range: 169–278 VAC, 50/60 Hz adaptive",
+   "Output Voltage: 198–242 VAC (Pure sine wave on mains, square wave on battery)",
+   "Battery: 1× 12V 9Ah lead-acid, 4–6 hours to 90% charge",
+   "Switch Time: <10 ms for seamless backup transition",
+   "Protection: Short circuit, surge, overload, overcharge, and deep discharge",
+   "Sockets: 2 universal output sockets, 1m input cable with European plug",
+   "Dimensions & Weight: 312×122×195 mm, 5.48 kg"
+  ],
+  "img": "uniview-ups800-sea-cee.webp",
+  "slug": "uniview-ups800-sea-cee",
+  "verify": []
+ },
+ {
+  "model": "UPS600-SEA-CEE",
+  "line": "Uniview",
+  "name": "600VA/360W Uninterrupted Power Supply EU Socket",
+  "category": "ups-power",
+  "sub": "UPS",
+  "features": [
+   "Capacity: 600 VA / 360 W with 0.6 power factor",
+   "Input Voltage Range: 169–278 VAC, 50/60 Hz adaptive",
+   "Output Voltage: 198–242 VAC, pure sine wave on mains, square wave on battery",
+   "Battery: 1× 12V 7Ah lead-acid, charges to 90% in 4–6 hours",
+   "Switch Time: <10 ms for fast failover to battery",
+   "Protection Features: Short circuit, surge, overload, overcharge, and deep discharge",
+   "Sockets: 2 universal output sockets, 1m input cable with European plug",
+   "Dimensions & Weight: 335×87×143 mm, 5.38 kg"
+  ],
+  "img": "uniview-ups600-sea-cee.webp",
+  "slug": "uniview-ups600-sea-cee",
+  "verify": []
+ },
+ {
+  "model": "UPS1200-SEA-CEE",
+  "line": "Uniview",
+  "name": "1200VA/720W Uninterrupted Power Supply EU Socket",
+  "category": "ups-power",
+  "sub": "UPS",
+  "features": [
+   "Capacity: 1200 VA / 720 W with 0.6 power factor",
+   "Input Voltage Range: 169–278 VAC, 50/60 Hz adaptive",
+   "Output Voltage: 198–242 VAC, pure sine wave on mains, square wave on battery",
+   "Battery: 2× 12V 7Ah lead-acid, charges to 90% in 4–6 hours",
+   "Switch Time: <10 ms for seamless transition to battery",
+   "Protection: Short circuit, surge, overload, overcharge, and deep discharge",
+   "Sockets: 4 universal output sockets, 1m input cable with European plug",
+   "Dimensions & Weight: 312×122×195 mm, 8.64 kg"
+  ],
+  "img": "uniview-ups1200-sea-cee.webp",
+  "slug": "uniview-ups1200-sea-cee",
+  "verify": []
+ },
+ {
+  "model": "CAB-LC3100B-E2-IN",
+  "line": "Uniview",
+  "name": "CAT6 Pure-Copper UTP Network Cable, 305 m (Orange)",
+  "category": "network-switches",
+  "sub": "Network Cables",
+  "features": [
+   "HSYV-6 4×2×0.50",
+   "Gauge: 24 awg",
+   "DC resistance: ≤95 Ω/km",
+   "Offset pitch ≤20 mm , Cable pitch ≤120 mm",
+   "Material Solid-Bare Copper",
+   "Tensile strength >13.8 Mpa",
+   "Thickness 0.55±0.1 mm",
+   "Packing length 305±1m"
+  ],
+  "img": "uniview-cab-lc3100b-e2-in.webp",
+  "slug": "uniview-cab-lc3100b-e2-in",
+  "verify": []
+ },
+ {
+  "model": "CAB-LC3110B-E-IN",
+  "line": "Uniview",
+  "name": "CAT6 Outdoor Double-Jacket Pure-Copper Network Cable, 305 m",
+  "category": "network-switches",
+  "sub": "Network Cables",
+  "features": [
+   "HSYV-6 4×2×0.585",
+   "Gauge: 23 awg",
+   "DC resistance: ≤65.8 Ω/km",
+   "Offset pitch ≤20 mm , Cable pitch ≤120 mm",
+   "Material OFC(Oxygen free copper)",
+   "Tensile strength >13.5 Mpa",
+   "Thickness 0.6±0.05 mm",
+   "Packing length 305±1m"
+  ],
+  "img": "uniview-cab-lc3110b-e-in.webp",
+  "slug": "uniview-cab-lc3110b-e-in",
+  "verify": []
+ },
+ {
+  "model": "CAB-LC3100B-E1-CCA-IN",
+  "line": "Uniview",
+  "name": "CAT6 CCA Network Cable, 305 m (E1)",
+  "category": "network-switches",
+  "sub": "Network Cables",
+  "features": [
+   "HSYV-6 4×2×0.585",
+   "Gauge: 23 awg",
+   "DC resistance: ≤12 Ω/100m",
+   "Offset pitch ≤20 mm , Cable pitch ≤120 mm",
+   "Material CCA(Copper content:27%)",
+   "Tensile strength >13.5 Mpa",
+   "Thickness 0.55±0.05 mm",
+   "Packing length 305±1 m"
+  ],
+  "img": "uniview-cab-lc3100b-e1-cca-in.webp",
+  "slug": "uniview-cab-lc3100b-e1-cca-in",
+  "verify": []
+ },
+ {
+  "model": "CAB-LC3100B-CCA-IN",
+  "line": "Uniview",
+  "name": "CAT6 CCA Network Cable, 305 m",
+  "category": "network-switches",
+  "sub": "Network Cables",
+  "features": [
+   "HSYV-6 4×2×0.585",
+   "Gauge: 23 awg",
+   "DC resistance: ≤12 Ω/km",
+   "Offset pitch ≤20 mm , Cable pitch ≤120 mm",
+   "Material CCA(Copper content:27%)",
+   "Tensile strength >13.5 Mpa",
+   "Thickness 0.55±0.05 mm",
+   "Packing length 305±1 m"
+  ],
+  "img": "uniview-cab-lc3100b-cca-in.webp",
+  "slug": "uniview-cab-lc3100b-cca-in",
+  "verify": []
+ },
+ {
+  "model": "MW-LC22-P1",
+  "line": "Uniview",
+  "name": "22\" Full HD LED Monitor",
+  "category": "monitors-displays",
+  "sub": "Monitors",
+  "features": [
+   "22\" Full HD LED display with 250 cd/m² brightness",
+   "Resolution 1920x1080 @ up to 75Hz Refresh Rate",
+   "Ultra-narrow bezel with built-in eye protection",
+   "12V 2A DC Power Supply",
+   "Wide field of view: 178° (H) / 178° (V) 1x VGA and 1x HDMI inputs",
+   "Adaptively recognize input signal automatically"
+  ],
+  "img": "uniview-mw-lc22-p1.webp",
+  "slug": "uniview-mw-lc22-p1",
+  "verify": []
+ },
+ {
+  "model": "MW3243-F-V2",
+  "line": "Uniview",
+  "name": "43\" LED UHD Monitor",
+  "category": "monitors-displays",
+  "sub": "Monitors",
+  "features": [
+   "True color display, 300 cd/m2 brightness",
+   "Resolution 3840×2160",
+   "200mm x200mm VESA stand bracket",
+   "AC 100 to 240V, 50/60Hz Power Supply",
+   "Wide view of field:178°(H)/ 178°(V)",
+   "2*HDMI, 2* DP input. 1, 3.5mm headphone jack",
+   "941.184x529.416 (mm) Active display size",
+   "2 × 5W Speaker"
+  ],
+  "img": "uniview-mw3243-f-v2.webp",
+  "slug": "uniview-mw3243-f-v2",
+  "verify": []
+ },
+ {
+  "model": "MW3255-F-V2",
+  "line": "Uniview",
+  "name": "55\" LED UHD Monitor",
+  "category": "monitors-displays",
+  "sub": "Monitors",
+  "features": [
+   "True color display, 300 cd/m2 brightness",
+   "Resolution 3840×2160",
+   "200mm x200mm VESA stand bracket",
+   "AC 100 to 240V, 50/60Hz Power Supply",
+   "Wide view of field:178°(H)/ 178°(V)",
+   "2*HDMI, 2* DP input. 1, 3.5mm headphone jack",
+   "1209.60 x 680.40(mm) Active display size",
+   "2 × 10W Speaker"
+  ],
+  "img": "uniview-mw3255-f-v2.webp",
+  "slug": "uniview-mw3255-f-v2",
+  "verify": []
+ },
+ {
+  "model": "MW3565-T-P",
+  "line": "Uniview",
+  "name": "65\" Smart Interactive Display",
+  "category": "monitors-displays",
+  "sub": "Interactive Flat Panels",
+  "features": [
+   "65-inch 4K UHD (3840 × 2160) resolution",
+   "20-point IR touch with <8 ms response",
+   "4 mm tempered anti-glare glass (Mohs 7 hardness)",
+   "Octa-core CPU + Mali-G52 GPU, 4 GB RAM, 32 GB storage",
+   "Rich I/O: HDMI, USB 3.0/2.0, Type‑C, RJ45, RS232, SPDIF",
+   "Dual 15W speakers, Wi‑Fi 5, Bluetooth 5.0, wireless screen mirroring",
+   "Android 12 OS, LED lifespan ≥30,000 hours, CE & RoHS certified"
+  ],
+  "img": "uniview-mw3565-t-p.webp",
+  "slug": "uniview-mw3565-t-p",
+  "verify": []
+ }
+]

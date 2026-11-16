@@ -76,7 +76,7 @@ export default function BrandsSection() {
             5 World-Class Brands
           </h2>
           <p style={{ fontSize: 16, maxWidth: 500, margin: '0 auto', lineHeight: 1.7, color: '#475569' }}>
-            Authorised distributor for five specialised AV manufacturers — every product is genuine with full manufacturer warranty.
+            Authorised distributor and partner for nine specialised AV and security manufacturers — every product is genuine with full manufacturer warranty.
           </p>
         </div>
 

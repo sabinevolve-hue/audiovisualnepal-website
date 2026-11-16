@@ -37,7 +37,7 @@ the Nepal map, brand catalog structures (InfoBit/DSPPA taxonomies), navigation, 
 
 - Never hotlink images — upload to the Media Library or let the GitHub Actions localize them.
 - Never present stock or AI images as real installation photos ("Illustration" label until real).
-- Only publish real model numbers and verifiable claims (500+ projects, 77 districts, 4 brands).
+- Only publish real model numbers and verifiable claims (500+ projects, 77 districts, 9 brands incl. Uniview authorised partner).
 
 ## Automated pipelines (GitHub Actions — run on their own)
 

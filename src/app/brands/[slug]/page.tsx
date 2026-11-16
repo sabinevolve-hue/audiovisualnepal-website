@@ -103,6 +103,17 @@ const BRAND_DATA = {
     highlights: ['288 Products: Pro Sound + Conference', '>95% Efficient Digital Amplifiers', 'EASE / EASE Focus Library Listed', '30+ Years OEM/ODM Manufacturing'],
     color: '#EA580C',
   },
+  uniview: {
+    name: 'Uniview',
+    tagline: 'IP Video Surveillance — Cameras, NVRs, PoE Switches & Displays',
+    country: 'China',
+    website: 'https://www.uniview.com',
+    founded: '2005',
+    description: "Uniview (Zhejiang Uniview Technologies Co., Ltd., UNV) is a video-surveillance manufacturer founded in 2005 and headquartered in Hangzhou, China. Its range covers IP network cameras (LightHunter low-light, ColorHunter full-colour night imaging, Wise-ISP and active-deterrence models), HD analog cameras, PTZ and ANPR licence-plate cameras, network and hybrid video recorders up to 128 channels, cloud-managed and industrial PoE switches, CAT6 cable, UPS units, monitors and a 4K interactive display — plus Uniarch, Uniview's value line of Wi-Fi, 4G and ECO cameras and NVRs. AudioVisual Nepal is an authorised Uniview partner and designs, supplies, installs and services complete Uniview surveillance systems across Nepal.",
+    categories: ['IP Network Cameras', 'HD Analog Cameras', 'PTZ Cameras', 'ANPR / LPR Cameras', 'Wi-Fi & 4G Cameras', 'Network Video Recorders', 'Hybrid Video Recorders', 'PoE Switches', 'Monitors & Interactive Displays', 'UPS & CAT6 Cable'],
+    highlights: ['219 Models in Nepal Range', 'ColorHunter Full-Colour Night Vision', 'NVRs from 4 to 128 Channels', 'Complete System: Camera to Monitor'],
+    color: '#1D4ED8',
+  },
 }
 
 type BrandSlug = keyof typeof BRAND_DATA
@@ -116,12 +127,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const brand = BRAND_DATA[slug as BrandSlug]
   if (!brand) return { title: 'Brand' }
   return {
-    title: slug === 'lampro' ? `${brand.name} Authorised Partner Nepal` : `${brand.name} Authorised Dealer Nepal`,
-    description: `${brand.name} authorised dealer in Nepal. ${brand.description.slice(0, 140)}`,
+    title: slug === 'lampro' || slug === 'uniview' ? `${brand.name} Authorised Partner Nepal` : `${brand.name} Authorised Dealer Nepal`,
+    description: `${brand.name} authorised ${slug === 'lampro' || slug === 'uniview' ? 'partner' : 'dealer'} in Nepal. ${brand.description.slice(0, 140)}`,
     alternates: { canonical: `https://www.audiovisualnepal.com/brands/${slug}` },
     openGraph: {
       title: `${brand.name} — Official Distributor in Nepal`,
-      description: `${brand.name} authorised dealer in Nepal. ${brand.description.slice(0, 140)}`,
+      description: `${brand.name} authorised ${slug === 'lampro' || slug === 'uniview' ? 'partner' : 'dealer'} in Nepal. ${brand.description.slice(0, 140)}`,
       url: `https://www.audiovisualnepal.com/brands/${slug}`,
       siteName: 'AudioVisual Nepal',
       images: [{ url: '/og-image.svg', width: 1200, height: 630, alt: `${brand.name} — AudioVisual Nepal` }],
@@ -168,7 +179,7 @@ export default async function BrandPage({ params }: Props) {
               </div>
               <p className="text-[18px] mb-2" style={{ color: brand.color, fontWeight: 600 }}>{brand.tagline}</p>
               <p className="text-[14px]" style={{ color: '#64748B' }}>
-                {brand.founded ? `Founded ${brand.founded} · ` : ''}{brand.country ? `${brand.country} · ` : ''}{slug === 'lampro' ? 'Authorised partner in Nepal' : 'Authorised dealer in Nepal'}
+                {brand.founded ? `Founded ${brand.founded} · ` : ''}{brand.country ? `${brand.country} · ` : ''}{slug === 'lampro' || slug === 'uniview' ? 'Authorised partner in Nepal' : 'Authorised dealer in Nepal'}
               </p>
               {(slug === 'infobit' || slug === 'dsppa' || slug === 'tenveo' || slug === 'lampro') && (
                 <Link href={`/brands/${slug}/catalog`}
