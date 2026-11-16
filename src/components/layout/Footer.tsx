@@ -26,6 +26,7 @@ const brandsLinks = [
   { label: 'Wincomn', href: '/brands/wincomn', desc: 'Laser Projectors' },
   { label: 'Triolion', href: '/brands/triolion', desc: 'LCD Video Walls' },
   { label: 'itc', href: '/brands/itc', desc: 'Pro Sound Systems' },
+  { label: 'Uniview', href: '/brands/uniview', desc: 'CCTV & Surveillance' },
 ]
 
 export default function Footer() {

@@ -81,7 +81,7 @@ export default function SolutionsPage() {
 
       <div className="border-b border-slate-200 bg-slate-50">
         <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-center gap-x-8 gap-y-2 px-6 py-4 text-sm font-medium text-slate-600">
-          <span>Authorized distributor — 4 brands</span>
+          <span>Authorised distributor & partner — 9 brands</span>
           <span className="hidden text-slate-300 sm:inline">•</span>
           <span>100+ projects delivered</span>
           <span className="hidden text-slate-300 sm:inline">•</span>

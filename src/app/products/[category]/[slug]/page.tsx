@@ -37,10 +37,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 const BRAND_COLORS: Record<string, string> = {
-  dsppa: '#00AEAD', infobit: '#6366F1', tenveo: '#0891B2', focus: '#1E40AF', lampro: '#0F58FB', wincomn: '#E11D48', triolion: '#0E7490', itc: '#EA580C',
+  dsppa: '#00AEAD', infobit: '#6366F1', tenveo: '#0891B2', focus: '#1E40AF', lampro: '#0F58FB', wincomn: '#E11D48', triolion: '#0E7490', itc: '#EA580C', uniview: '#1D4ED8',
 }
 const BRAND_LOGOS: Record<string, string> = {
-  dsppa: 'DSPPA', infobit: 'InfoBit', tenveo: 'Tenveo', focus: 'Evolve Podium', lampro: 'Lampro', wincomn: 'Wincomn', triolion: 'Triolion', itc: 'itc',
+  dsppa: 'DSPPA', infobit: 'InfoBit', tenveo: 'Tenveo', focus: 'Evolve Podium', lampro: 'Lampro', wincomn: 'Wincomn', triolion: 'Triolion', itc: 'itc', uniview: 'Uniview',
 }
 const DOWNLOAD_ICONS: Record<string, string> = {
   brochure: '📄',

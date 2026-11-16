@@ -8,10 +8,10 @@ const catSlug = (x: string) => x.toLowerCase().replace(/[^a-z0-9]+/g, '-').repla
 
 export const metadata: Metadata = {
   title: 'Our Brands | Authorized AV Distributor Nepal',
-  description: 'AudioVisual Nepal is the authorized distributor and partner for DSPPA, InfoBit, Tenveo, Evolve Podium, Lampro, Wincomn, Triolion and itc in Nepal. Genuine products, full manufacturer warranty.',
+  description: 'AudioVisual Nepal is the authorized distributor and partner for DSPPA, InfoBit, Tenveo, Evolve Podium, Lampro, Wincomn, Triolion, itc and Uniview in Nepal. Genuine products, full manufacturer warranty.',
   openGraph: {
-    title: 'Authorised AV Brands in Nepal — DSPPA, InfoBit, Tenveo, Evolve Podium',
-    description: 'Official authorised distributor and partner for DSPPA, InfoBit, Tenveo, Evolve Podium and Lampro in Nepal. Genuine products, full manufacturer warranty.',
+    title: 'Authorised AV & Security Brands in Nepal — DSPPA, InfoBit, Lampro, itc, Uniview',
+    description: 'Official authorised distributor and partner for DSPPA, InfoBit, Tenveo, Evolve Podium, Lampro, Wincomn, Triolion, itc and Uniview in Nepal. Genuine products, full manufacturer warranty.',
     url: 'https://www.audiovisualnepal.com/brands',
     siteName: 'AudioVisual Nepal',
     images: [{ url: '/og-image.svg', width: 1200, height: 630, alt: 'AudioVisual Nepal Brands' }],
@@ -101,6 +101,16 @@ const brands = [
     country: 'China', founded: '',
     color: '#EA580C', products: 288, range: '13 product series groups',
   },
+  {
+    name: 'Uniview',
+    slug: 'uniview',
+    tagline: 'CCTV & Video Surveillance — Authorised Partner',
+    description: 'IP network cameras (LightHunter, ColorHunter, Wise-ISP, active deterrence), HD analog cameras, PTZ and ANPR cameras, NVRs and hybrid XVRs up to 128 channels, cloud-managed and industrial PoE switches, CAT6 cable, UPS, monitors and a 65" interactive display — plus the Uniarch Wi-Fi, 4G and ECO range. 219 models, supplied, installed and serviced across Nepal.',
+    categories: ['IP Network Cameras', 'HD Analog Cameras', 'PTZ Cameras', 'Network Video Recorders', 'PoE Switches', 'Monitors & Displays'],
+    hasCatalog: false,
+    country: 'China', founded: '2005',
+    color: '#1D4ED8', products: 219, range: '21 series',
+  },
 ]
 
 export default function BrandsPage() {
@@ -112,10 +122,10 @@ export default function BrandsPage() {
         <div className="container-site text-center" style={{ maxWidth: 680 }}>
           <div style={{ fontSize: 11, fontWeight: 700, letterSpacing: '0.12em', textTransform: 'uppercase', color: '#2563EB', marginBottom: 14 }}>Our Technology Partners</div>
           <h1 style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(32px,5vw,56px)', fontWeight: 900, letterSpacing: '-0.03em', color: '#0B1E3D', marginBottom: 16 }}>
-            8 World-Class Brands
+            9 World-Class Brands
           </h1>
           <p style={{ fontSize: 17, lineHeight: 1.75, color: '#475569' }}>
-            Authorised distributor and partner for eight specialised AV manufacturers — every product is genuine with full manufacturer warranty and local after-sales support.
+            Authorised distributor and partner for nine specialised AV and security manufacturers — every product is genuine with full manufacturer warranty and local after-sales support.
           </p>
         </div>
       </section>

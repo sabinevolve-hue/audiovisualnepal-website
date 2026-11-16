@@ -18,6 +18,13 @@ for (const match of prod.matchAll(/slug: "([^"]+)",\s*\n\s*name: "([^"]+)", bran
   push(name.replace(new RegExp('^' + brand + '\\s+', 'i'), ''), brand, `/products/${category}/${slug}`, img)
 }
 
+// generated brand files (JSON-shaped arrays)
+for (const f of ['univiewProducts.ts']) {
+  const t = readFileSync(`src/data/${f}`, 'utf8')
+  for (const p of JSON.parse(t.slice(t.indexOf('= [') + 2)))
+    push(p.name.replace(new RegExp('^' + p.brand + '\\s+', 'i'), '').replace(/^Uniarch\s+/, ''), p.brand, `/products/${p.category}/${p.slug}`, p.imageUrl)
+}
+
 // catalog models
 const slugify = (s) => s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')
 for (const b of ['infobit', 'dsppa', 'tenveo', 'lampro']) {

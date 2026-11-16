@@ -55,7 +55,7 @@ const DEFAULT_TRUST = [
   { tt: 'All-Nepal Delivery', ts: 'All 77 districts' },
 ]
 
-const BRAND_COLORS: Record<string, string> = { dsppa: '#00AEAD', infobit: '#6366F1', tenveo: '#0891B2', focus: '#1E40AF', lampro: '#0F58FB', wincomn: '#E11D48', triolion: '#0E7490', itc: '#EA580C' }
+const BRAND_COLORS: Record<string, string> = { dsppa: '#00AEAD', infobit: '#6366F1', tenveo: '#0891B2', focus: '#1E40AF', lampro: '#0F58FB', wincomn: '#E11D48', triolion: '#0E7490', itc: '#EA580C', uniview: '#1D4ED8' }
 
 export default function ProductPageV2({ product, categoryKey }: { product: Product; categoryKey: string }) {
   const a = ARCHETYPES[categoryKey]

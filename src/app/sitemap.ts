@@ -33,7 +33,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/brands/lampro/catalog`, lastModified: now, changeFrequency: 'weekly', priority: 0.8 },
   ]
 
-  const brandPages: MetadataRoute.Sitemap = ['dsppa', 'infobit', 'tenveo', 'focus', 'lampro', 'wincomn', 'triolion', 'itc'].map(slug => ({
+  const brandPages: MetadataRoute.Sitemap = ['dsppa', 'infobit', 'tenveo', 'focus', 'lampro', 'wincomn', 'triolion', 'itc', 'uniview'].map(slug => ({
     url:             `${base}/brands/${slug}`,
     lastModified:    now,
     changeFrequency: 'monthly' as const,

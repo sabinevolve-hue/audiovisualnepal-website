@@ -13,6 +13,7 @@ Markdown reference docs generated from manufacturer catalogues. Source of truth:
 | [itc-conference-catalogue.md](itc-conference-catalogue.md) | itc | 137 conference & video-conference products |
 | [itc-conference-technical-specifications.md](itc-conference-technical-specifications.md) | itc | Conference full parameter tables |
 | [itc-drawings-and-diagrams-plan.md](itc-drawings-and-diagrams-plan.md) | itc | Drawings brainstorm & style rules |
+| [uniview-catalogue.md](uniview-catalogue.md) | Uniview / Uniarch (authorised partner) | 219 CCTV, NVR, PoE switch, monitor & UPS models — source `scripts/catalogues/uniview/`, regenerate with `python3 scripts/catalogues/uniview/gen.py .` |
 | [projectors-segment-plan.md](projectors-segment-plan.md) | — | Projector segment brainstorm & roadmap |
 
-Images: `public/images/projectors-catalog/`, `public/images/triolion-catalog/` · Datasheets: `public/downloads/projectors/`, `public/downloads/triolion/`.
+Images: `public/images/projectors-catalog/`, `public/images/triolion-catalog/`, `public/images/uniview-catalog/` · Datasheets: `public/downloads/projectors/`, `public/downloads/triolion/`.

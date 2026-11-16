@@ -61,7 +61,7 @@ export default function BoqLookup() {
         <button onClick={run} className="rounded-full bg-blue-500 px-6 py-2.5 text-sm font-semibold text-white transition hover:bg-blue-600">
           Check availability
         </button>
-        <p className="text-xs text-slate-500">Checks {ALL.length} models across DSPPA, InfoBit, Tenveo, Lampro & Focus</p>
+        <p className="text-xs text-slate-500">Checks {ALL.length} models across DSPPA, InfoBit, Tenveo, Lampro, Evolve Podium & Uniview</p>
       </div>
 
       {rows && (

@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description: 'AudioVisual Nepal has been delivering professional audio visual solutions across Nepal since 2010.',
   openGraph: {
     title: "About AudioVisual Nepal — Nepal's Leading AV Company",
-    description: 'Since 2010, AudioVisual Nepal delivers professional AV and LED display installations across Nepal — 100+ verified projects and counting. Authorised distributor for DSPPA, InfoBit, Tenveo and Evolve Podium, and Lampro authorised partner.',
+    description: 'Since 2010, AudioVisual Nepal delivers professional AV and LED display installations across Nepal — 100+ verified projects and counting. Authorised distributor for DSPPA, InfoBit, Tenveo, Evolve Podium, Wincomn, Triolion and itc, and authorised partner for Lampro and Uniview.',
     url: 'https://www.audiovisualnepal.com/about',
     siteName: 'AudioVisual Nepal',
     images: [{ url: '/og-image.svg', width: 1200, height: 630, alt: 'AudioVisual Nepal' }],
