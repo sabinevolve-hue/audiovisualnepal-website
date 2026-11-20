@@ -15,11 +15,26 @@ const WP_BASE  = (process.env.NEXT_PUBLIC_WP_URL  || 'https://www.audiovisualnep
 const WP_API   = `${WP_BASE}/wp-json/wp/v2`
 const AVN_API  = `${WP_BASE}/wp-json/avn/v1`
 
+// ─── CMS switch ──────────────────────────────────────────────────────────────
+// The headless WordPress CMS (cms.audiovisualnepal.com) was retired on 5 Nov 2026,
+// when it was removed from the server during the malware clean-up. Since then every
+// page renders from the static data in src/data and the fallbacks built into each
+// page, so CMS reads are off by default. Calling the dead host made /projects and
+// /blog fail with HTTP 500 (the server answered with an HTML page or timed out).
+// To read from a WordPress CMS again, set WP_ENABLED=1 and NEXT_PUBLIC_WP_URL in Vercel.
+export const WP_ENABLED = process.env.WP_ENABLED === '1'
+const WP_TIMEOUT_MS = 5000
+
 // ─── Core fetch with Next.js ISR ─────────────────────────────────────────────
+// Never throws: any failure returns an empty array so the calling page shows its
+// fallback content instead of an error page.
 async function wpFetch<T>(
   endpoint: string,
   options?: RequestInit & { revalidate?: number }
 ): Promise<T> {
+  const empty = ([] as unknown) as T
+  if (!WP_ENABLED) return empty
+
   const { revalidate = 3600, ...fetchOptions } = options ?? {}
   const url = endpoint.startsWith('http') ? endpoint : `${WP_API}${endpoint}`
 
@@ -27,6 +42,7 @@ async function wpFetch<T>(
   try {
     res = await fetch(url, {
       ...fetchOptions,
+      signal: fetchOptions.signal ?? AbortSignal.timeout(WP_TIMEOUT_MS),
       next: { revalidate },
       headers: {
         'Content-Type': 'application/json',
@@ -34,17 +50,29 @@ async function wpFetch<T>(
       },
     })
   } catch {
-    // Network/SSL error — return empty fallback so build doesn't fail
-    return ([] as unknown) as T
+    // Network/SSL error or timeout
+    console.warn(`WP API unreachable: ${endpoint}`)
+    return empty
   }
 
   if (!res.ok) {
-    // Return empty fallback for any non-200 to prevent page crashes
     console.warn(`WP API ${res.status}: ${endpoint}`)
-    return ([] as unknown) as T
+    return empty
   }
 
-  return res.json()
+  // A firewall, challenge or placeholder page can answer 200 with HTML.
+  const type = res.headers.get('content-type') || ''
+  if (!type.includes('json')) {
+    console.warn(`WP API non-JSON response (${type || 'no content-type'}): ${endpoint}`)
+    return empty
+  }
+
+  try {
+    return (await res.json()) as T
+  } catch {
+    console.warn(`WP API invalid JSON: ${endpoint}`)
+    return empty
+  }
 }
 
 // ─── TypeScript Types ─────────────────────────────────────────────────────────
