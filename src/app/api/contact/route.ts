@@ -62,14 +62,16 @@ export async function POST(request: Request) {
       }
     }
 
-    // 2) Secondary: WordPress endpoint if configured (best-effort, verified)
-    if (!delivered && process.env.NEXT_PUBLIC_WP_URL) {
+    // 2) Secondary: WordPress endpoint, only when a CMS is switched on (WP_ENABLED=1).
+    //    The old CMS was retired on 5 Nov 2026; see src/lib/wordpress.ts.
+    if (!delivered && process.env.WP_ENABLED === '1' && process.env.NEXT_PUBLIC_WP_URL) {
       try {
         const wpBase = process.env.NEXT_PUBLIC_WP_URL.replace(/\/$/, '')
         const r = await fetch(`${wpBase}/wp-json/avn/v1/contact`, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(enquiry),
+          signal: AbortSignal.timeout(5000),
         })
         if (r.ok) via = 'wp'
       } catch { /* ignore */ }
