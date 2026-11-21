@@ -6,31 +6,36 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "cf:build": "opennextjs-cloudflare build",
+    "cf:preview": "opennextjs-cloudflare build && wrangler dev",
+    "cf:deploy": "opennextjs-cloudflare deploy"
   },
   "dependencies": {
-    "next": "^15.0.0",
-    "react": "^18.3.0",
-    "react-dom": "^18.3.0",
-    "framer-motion": "^11.0.0",
-    "next-sanity": "^9.0.0",
     "@sanity/image-url": "^1.0.0",
     "clsx": "^2.1.0",
-    "tailwind-merge": "^2.3.0",
-    "react-intersection-observer": "^9.10.0",
-    "react-countup": "^6.5.0",
+    "framer-motion": "^11.0.0",
     "lucide-react": "^0.383.0",
-    "sharp": "^0.33.0"
+    "next": "^15.0.0",
+    "next-sanity": "^9.0.0",
+    "react": "^18.3.0",
+    "react-countup": "^6.5.0",
+    "react-dom": "^18.3.0",
+    "react-intersection-observer": "^9.10.0",
+    "sharp": "^0.33.0",
+    "tailwind-merge": "^2.3.0"
   },
   "devDependencies": {
+    "@opennextjs/cloudflare": "^1.20.18",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
-    "typescript": "^5",
-    "tailwindcss": "^3.4.0",
-    "postcss": "^8",
     "autoprefixer": "^10",
     "eslint": "^8",
-    "eslint-config-next": "^15"
+    "eslint-config-next": "^15",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.0",
+    "typescript": "^5",
+    "wrangler": "^4.166.0"
   }
 }
